@@ -1,0 +1,1 @@
+platform1_top_rtl.vdb

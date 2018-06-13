@@ -1,0 +1,82 @@
+
+**** Build of configuration Release for project UART ****
+
+make all 
+      1 [main] make 43464 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+mkdir: created directory `../platform1'
+mkdir: created directory `../platform1/Release'
+creating platform-rules makefile
+writing ../platform1/Release/platform_rules.mk done!
+perl C:/lscc/diamond/3.10_x64/micosystem/utilities/perlscript/build/\build_ddinit.pl ../../../../../../Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/platform1.msb ../platform1/Release
+generating dev driver files
+gpio : 1
+uart_core : 1
+perl C:/lscc/diamond/3.10_x64/micosystem/utilities/perlscript/build/\build_DeviceDrivers_makefile.pl ../../../../../../Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/platform1.msb ../platform1/Release ../../../../../../../Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components ../../../../../../Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components
+generating include makefile specified by peripherals 
+perl C:/lscc/diamond/3.10_x64/micosystem/utilities/perlscript/build/\build_platform_makefile.pl ../platform1/Release/settings.xml
+creating platform makefile 
+PLATFORM DIR ../platform1/Release
+writing to ../platform1/Release/makefile done!
+perl C:/lscc/diamond/3.10_x64/micosystem/utilities/perlscript/build//lm8/build_default_linker_script.pl ../platform1/Release/linker.ld ../../../../../../Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/platform1.msb ../user.pref
+generating linker file
+PROMSize is 2048 
+DATASIZE is 2048 
+done generating linker file
+perl C:/lscc/diamond/3.10_x64/micosystem/utilities/perlscript/build/\build_linker_settings.pl ../user.pref ../platform1/Release/linker_settings.mk ../platform1/Release/linker.ld
+creating linker_file_define.mk 
+done creating linker-settings file
+perl C:/lscc/diamond/3.10_x64/micosystem/utilities/perlscript/build/\build_stdstream_src.pl ../user.pref ../platform1/MicoStdStreams.c
+generating std/streams selection C-source file
+writing ../platform1/MicoStdStreams.c done
+
+make[1]: Entering directory `/cygdrive/c/lscc/diamond/3.10_x64/examples/UART/platform1/Release'
+lm8-elf-gcc -c -mcall-stack-size=16 -mcmodel=medium  -ffunction-sections -mcall-prologues -Os -Wall  -I. ../DDInit.c -o ../../Release/Release/DDInit.o
+echo -n ../../Release/Release/ > ../../Release/Release/DDInit.d && \
+lm8-elf-gcc -mcall-stack-size=16 -mcmodel=medium  -ffunction-sections -mcall-prologues -Os -Wall  -I. -MM -MG ../DDInit.c >> ../../Release/Release/DDInit.d
+lm8-elf-gcc -c -mcall-stack-size=16 -mcmodel=medium  -ffunction-sections -mcall-prologues -Os -Wall  -I. ../DDStructs.c -o ../../Release/Release/DDStructs.o
+echo -n ../../Release/Release/ > ../../Release/Release/DDStructs.d && \
+lm8-elf-gcc -mcall-stack-size=16 -mcmodel=medium  -ffunction-sections -mcall-prologues -Os -Wall  -I. -MM -MG ../DDStructs.c >> ../../Release/Release/DDStructs.d
+lm8-elf-gcc -c -mcall-stack-size=16 -mcmodel=medium  -ffunction-sections -mcall-prologues -Os -Wall  -I. ../MicoGPIO.c -o ../../Release/Release/MicoGPIO.o
+echo -n ../../Release/Release/ > ../../Release/Release/MicoGPIO.d && \
+lm8-elf-gcc -mcall-stack-size=16 -mcmodel=medium  -ffunction-sections -mcall-prologues -Os -Wall  -I. -MM -MG ../MicoGPIO.c >> ../../Release/Release/MicoGPIO.d
+lm8-elf-gcc -c -mcall-stack-size=16 -mcmodel=medium  -ffunction-sections -mcall-prologues -Os -Wall  -I. ../MicoGPIOService.c -o ../../Release/Release/MicoGPIOService.o
+echo -n ../../Release/Release/ > ../../Release/Release/MicoGPIOService.d && \
+lm8-elf-gcc -mcall-stack-size=16 -mcmodel=medium  -ffunction-sections -mcall-prologues -Os -Wall  -I. -MM -MG ../MicoGPIOService.c >> ../../Release/Release/MicoGPIOService.d
+lm8-elf-gcc -c -mcall-stack-size=16 -mcmodel=medium  -ffunction-sections -mcall-prologues -Os -Wall  -I. ../MicoInterrupts.c -o ../../Release/Release/MicoInterrupts.o
+echo -n ../../Release/Release/ > ../../Release/Release/MicoInterrupts.d && \
+lm8-elf-gcc -mcall-stack-size=16 -mcmodel=medium  -ffunction-sections -mcall-prologues -Os -Wall  -I. -MM -MG ../MicoInterrupts.c >> ../../Release/Release/MicoInterrupts.d
+lm8-elf-gcc -c -mcall-stack-size=16 -mcmodel=medium  -ffunction-sections -mcall-prologues -Os -Wall  -I.   ../MicoSleepHelper.S -o ../../Release/Release/MicoSleepHelper.o
+lm8-elf-gcc -c -mcall-stack-size=16 -mcmodel=medium  -ffunction-sections -mcall-prologues -Os -Wall  -I. ../MicoStdStreams.c -o ../../Release/Release/MicoStdStreams.o
+echo -n ../../Release/Release/ > ../../Release/Release/MicoStdStreams.d && \
+lm8-elf-gcc -mcall-stack-size=16 -mcmodel=medium  -ffunction-sections -mcall-prologues -Os -Wall  -I. -MM -MG ../MicoStdStreams.c >> ../../Release/Release/MicoStdStreams.d
+lm8-elf-gcc -c -mcall-stack-size=16 -mcmodel=medium  -ffunction-sections -mcall-prologues -Os -Wall  -I. ../MicoUart.c -o ../../Release/Release/MicoUart.o
+echo -n ../../Release/Release/ > ../../Release/Release/MicoUart.d && \
+lm8-elf-gcc -mcall-stack-size=16 -mcmodel=medium  -ffunction-sections -mcall-prologues -Os -Wall  -I. -MM -MG ../MicoUart.c >> ../../Release/Release/MicoUart.d
+creating ../../Release/Release/libplatform1.a...
+lm8-elf-ar: creating ../../Release/Release/libplatform1.a
+a - ../../Release/Release/DDInit.o
+a - ../../Release/Release/DDStructs.o
+a - ../../Release/Release/MicoGPIO.o
+a - ../../Release/Release/MicoGPIOService.o
+a - ../../Release/Release/MicoInterrupts.o
+a - ../../Release/Release/MicoSleepHelper.o
+a - ../../Release/Release/MicoStdStreams.o
+a - ../../Release/Release/MicoUart.o
+make[1]: Leaving directory `/cygdrive/c/lscc/diamond/3.10_x64/examples/UART/platform1/Release'
+detected change in user.pref or platform...
+force-cleaning archive objects...
+rm -f Release/../LM8_UART_Test.o
+rm -f Release/crt0.o
+
+touch force_clean_archive_objs
+
+lm8-elf-gcc -c -mcall-stack-size=16 -mcmodel=medium   -I./../platform1 -ffunction-sections -mcall-prologues -Os -Wall ../LM8_UART_Test.c -o Release/../LM8_UART_Test.o
+echo -n Release/../ > Release/../LM8_UART_Test.d && \
+lm8-elf-gcc -mcall-stack-size=16 -mcmodel=medium   -I./../platform1 -ffunction-sections -mcall-prologues -Os -Wall -MM -MG ../LM8_UART_Test.c >> Release/../LM8_UART_Test.d
+lm8-elf-gcc -c -mcall-stack-size=16 -mcmodel=medium   -I./../platform1 -ffunction-sections -mcall-prologues -Os -Wall   ./../platform1/crt0.S -o Release/crt0.o
+building application...
+lm8-elf-gcc -mcall-stack-size=16 -mcmodel=medium  -T ../platform1/Release/linker.ld -oUART.elf Release/../LM8_UART_Test.o Release/crt0.o   ./Release/libplatform1.a -lgcc  -nostdlib -Wl,--gc-sections 
+lm8-elf-size UART.elf
+   text	   data	    bss	    dec	    hex	filename
+   2022	    278	      0	   2300	    8fc	UART.elf

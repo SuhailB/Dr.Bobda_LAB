@@ -1,0 +1,90 @@
+[ START MERGED ]
+platform1_u/LM8/core_rst_n_N_593 platform1_u/core_rst_n
+platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/wren_inv_g platform1_u/LM8/prom_enable
+platform1_u/counter_2__N_142 counter_2
+platform1_u/reset_n_N_41 reset_n_c
+platform1_u/LM8interrupts_0__I_0/u_txmitt/n6549 platform1_u/LM8interrupts_0__I_0/u_txmitt/n20
+platform1_u/LM8interrupts_0__I_0/u_txmitt/n6552 platform1_u/LM8interrupts_0__I_0/u_txmitt/n21
+platform1_u/LM8interrupts_0__I_0/u_txmitt/n6555 platform1_u/LM8interrupts_0__I_0/u_txmitt/n22
+platform1_u/LM8interrupts_0__I_0/u_txmitt/n6558 platform1_u/LM8interrupts_0__I_0/u_txmitt/n23
+platform1_u/LM8interrupts_0__I_0/u_txmitt/n6561 platform1_u/LM8interrupts_0__I_0/u_txmitt/n18
+platform1_u/LM8interrupts_0__I_0/u_txmitt/n6580 platform1_u/LM8interrupts_0__I_0/u_txmitt/n19
+platform1_u/LM8interrupts_0__I_0/u_txmitt/n6583 platform1_u/LM8interrupts_0__I_0/u_txmitt/n14
+platform1_u/LM8interrupts_0__I_0/u_txmitt/n6586 platform1_u/LM8interrupts_0__I_0/u_txmitt/n15
+platform1_u/LM8interrupts_0__I_0/u_txmitt/n6589 platform1_u/LM8interrupts_0__I_0/u_txmitt/n16
+platform1_u/LM8interrupts_0__I_0/u_txmitt/n6592 platform1_u/LM8interrupts_0__I_0/u_txmitt/n17
+platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/dec0_wre3 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/sp_we
+platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO3LFoff88/add_sub_inv platform1_u/LM8/u1_isp8_core/u1_lm8_alu/add_sel_N_766
+[ END MERGED ]
+[ START CLIPPED ]
+GND_net
+VCC_net
+platform1_u/LM8/GND_net
+platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/wren_inv
+platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO3LFoff88/scuba_vlo
+platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/GND_net
+platform1_u/LM8/u1_isp8_core/pmi_distributed_dpramMachXO3LFbinarynonenoreg8532_62/scuba_vhi
+platform1_u/LM8/u1_isp8_core/pmi_distributed_dpramMachXO3LFbinarynonenoreg8532/scuba_vhi
+platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/scuba_vlo
+platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/scuba_vhi
+platform1_u/LM8/scratchpad_init.memspeedasyncdisablenoreg8112048/scuba_vlo
+platform1_u/LM8/scratchpad_init.memspeedasyncdisablenoreg8112048/scuba_vhi
+platform1_u/LM8interrupts_0__I_0/u_rxcver/GND_net
+platform1_u/LM8interrupts_0__I_0/u_txmitt/GND_net
+platform1_u/LM8/u1_isp8_core/GND_net
+platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO3LFoff88/scuba_vhi
+platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO3LFoff88/addsub_0/S0
+platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO3LFoff88/precin_inst30/S1
+platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO3LFoff88/precin_inst30/S0
+platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO3LFoff88/addsubd/S1
+platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO3LFoff88/co4d
+platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO3LFoff88/addsubd/COUT
+platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO3LFoff88/co4
+platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/add_521_11/CO
+platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_0/DO2
+platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_0/DO3
+platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_0/DO1
+platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/add_521_1/S0
+platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/add_521_1/CI
+platform1_u/LM8interrupts_0__I_0/u_rxcver/add_541_1/S0
+platform1_u/LM8interrupts_0__I_0/u_rxcver/add_541_1/CI
+platform1_u/LM8interrupts_0__I_0/u_rxcver/counter_15__I_0_15/S1
+platform1_u/LM8interrupts_0__I_0/u_rxcver/counter_15__I_0_15/S0
+platform1_u/LM8interrupts_0__I_0/u_rxcver/counter_15__I_0_0/S1
+platform1_u/LM8interrupts_0__I_0/u_rxcver/counter_15__I_0_0/S0
+platform1_u/LM8interrupts_0__I_0/u_rxcver/counter_15__I_0_0/CI
+platform1_u/LM8interrupts_0__I_0/u_rxcver/counter_15__I_0_11/S1
+platform1_u/LM8interrupts_0__I_0/u_rxcver/counter_15__I_0_11/S0
+platform1_u/LM8interrupts_0__I_0/u_rxcver/counter_15__I_0_16/S0
+platform1_u/LM8interrupts_0__I_0/u_rxcver/counter_15__I_0_16/CO
+platform1_u/LM8interrupts_0__I_0/u_rxcver/counter_15__I_0_13/S1
+platform1_u/LM8interrupts_0__I_0/u_rxcver/counter_15__I_0_13/S0
+platform1_u/LM8interrupts_0__I_0/u_rxcver/add_533_1/S1
+platform1_u/LM8interrupts_0__I_0/u_rxcver/add_533_1/S0
+platform1_u/LM8interrupts_0__I_0/u_rxcver/add_533_1/CI
+platform1_u/LM8interrupts_0__I_0/u_rxcver/add_533_17/CO
+platform1_u/LM8interrupts_0__I_0/u_rxcver/add_541_17/S1
+platform1_u/LM8interrupts_0__I_0/u_rxcver/add_541_17/CO
+platform1_u/LM8interrupts_0__I_0/u_txmitt/sub_10_add_2_1/S0
+platform1_u/LM8interrupts_0__I_0/u_txmitt/sub_10_add_2_1/CI
+platform1_u/LM8interrupts_0__I_0/u_txmitt/sub_10_add_2_17/S1
+platform1_u/LM8interrupts_0__I_0/u_txmitt/sub_10_add_2_17/CO
+[ END CLIPPED ]
+[ START OSC ]
+clk_in 24.18
+[ END OSC ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.10.0.111.2 -- WARNING: Map write only section -- Mon Jun 11 14:49:42 2018
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE DUALBOOTGOLDEN=INTERNAL BACKGROUND_RECONFIG=OFF INBUF=ON ;
+LOCATE COMP "uartSIN" SITE "D14" ;
+LOCATE COMP "reset_n" SITE "H5" ;
+LOCATE COMP "LEDPIO_OUT[0]" SITE "F4" ;
+LOCATE COMP "LEDPIO_OUT[1]" SITE "G4" ;
+LOCATE COMP "LEDPIO_OUT[2]" SITE "G3" ;
+LOCATE COMP "LEDPIO_OUT[3]" SITE "D1" ;
+LOCATE COMP "uartSOUT" SITE "C15" ;
+FREQUENCY NET "clk_in" 24.180000 MHz ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

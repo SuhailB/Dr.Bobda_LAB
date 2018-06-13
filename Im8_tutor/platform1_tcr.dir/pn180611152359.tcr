@@ -1,0 +1,16 @@
+#Start recording tcl command: 6/11/2018 14:40:28
+#Project Location: C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor; Project name: platform1
+prj_project open "C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1.ldf"
+prj_run Export -impl platform1
+pgr_project open "C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/platform1.xcf"
+pgr_program run
+prj_run Synthesis -impl platform1
+prj_run Synthesis -impl platform1
+prj_run Synthesis -impl platform1
+prj_run Synthesis -impl platform1 -forceOne
+pgr_project close
+prj_run Export -impl platform1
+pgr_project open "C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/platform1.xcf"
+pgr_program run
+prj_project close
+#Stop recording: 6/11/2018 15:23:59

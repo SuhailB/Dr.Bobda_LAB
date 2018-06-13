@@ -1,0 +1,7 @@
+#Start recording tcl command: 6/9/2018 11:55:18
+#Project Location: C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor; Project name: platform1
+prj_project open "C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1.ldf"
+prj_run Map -impl platform1
+prj_run PAR -impl platform1
+prj_project close
+#Stop recording: 6/9/2018 12:06:48

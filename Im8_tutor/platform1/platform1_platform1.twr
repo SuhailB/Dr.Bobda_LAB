@@ -1,0 +1,1283 @@
+
+Loading design for application trce from file platform1_platform1.ncd.
+Design name: platform1_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO3LF-9400C
+Package:     CABGA484
+Performance: 6
+Loading device for application trce from file 'xo3c9400.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.6.
+Performance Hardware Data Status:   Final          Version 37.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.0.111.2
+Mon Jun 11 14:50:02 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 6 -sphld m -o platform1_platform1.twr -gui -msgset C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/promote.xml platform1_platform1.ncd platform1_platform1.prf 
+Design file:     platform1_platform1.ncd
+Preference file: platform1_platform1.prf
+Device,speed:    LCMXO3LF-9400C,6
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "clk_in" 24.180000 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 19.061ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         DP8KC      Port           platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_0_1_2(ASIC)  (from clk_in +)
+   Destination:    FF         Data in        platform1_u/LM8interrupts_0__I_0/u_intface/cs_state_FSM_i3  (to clk_in +)
+
+   Delay:              22.029ns  (42.5% logic, 57.5% route), 14 logic levels.
+
+ Constraint Details:
+
+     22.029ns physical path delay platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_0_1_2 to platform1_u/LM8interrupts_0__I_0/SLICE_214 meets
+     41.356ns delay constraint less
+      0.133ns skew and
+      0.133ns DIN_SET requirement (totaling 41.090ns) by 19.061ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_0_1_2 to platform1_u/LM8interrupts_0__I_0/SLICE_214:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+C2Q_DEL     ---     4.057 *R_R22C35.CLKA to *R_R22C35.DOA8 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_0_1_2 (from clk_in)
+ROUTE         4     1.774 *R_R22C35.DOA8 to     R26C31B.B0 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/mdout0_0_17
+CTOF_DEL    ---     0.408     R26C31B.B0 to     R26C31B.F0 platform1_u/LM8/SLICE_293
+ROUTE         8     1.186     R26C31B.F0 to     R24C29A.B1 platform1_u/LM8/genblk1.instr_mem_out_17
+CTOF_DEL    ---     0.408     R24C29A.B1 to     R24C29A.F1 platform1_u/LM8/SLICE_134
+ROUTE         8     1.248     R24C29A.F1 to     R21C27C.B1 platform1_u/LM8/n6501
+CTOF_DEL    ---     0.408     R21C27C.B1 to     R21C27C.F1 platform1_u/LM8/SLICE_90
+ROUTE         4     1.587     R21C27C.F1 to      R9C26B.A1 platform1_u/LM8/n6482
+CTOF_DEL    ---     0.408      R9C26B.A1 to      R9C26B.F1 platform1_u/LM8/SLICE_267
+ROUTE        11     1.316      R9C26B.F1 to     R19C26A.D0 platform1_u/LM8/n6467
+CTOF_DEL    ---     0.408     R19C26A.D0 to     R19C26A.F0 platform1_u/LM8/SLICE_263
+ROUTE        11     0.819     R19C26A.F0 to     R18C26D.B1 platform1_u/LM8/n6464
+CTOF_DEL    ---     0.408     R18C26D.B1 to     R18C26D.F1 platform1_u/SLICE_275
+ROUTE         2     0.359     R18C26D.F1 to     R18C26D.C0 platform1_u/n6457
+CTOF_DEL    ---     0.408     R18C26D.C0 to     R18C26D.F0 platform1_u/SLICE_275
+ROUTE         1     0.916     R18C26D.F0 to     R18C25C.C1 platform1_u/n5900
+CTOF_DEL    ---     0.408     R18C25C.C1 to     R18C25C.F1 platform1_u/SLICE_83
+ROUTE         4     0.523     R18C25C.F1 to     R19C25B.D1 platform1_u/n2068
+CTOF_DEL    ---     0.408     R19C25B.D1 to     R19C25B.F1 platform1_u/SLICE_158
+ROUTE         8     0.838     R19C25B.F1 to     R19C23A.B1 platform1_u/LM8interrupts_0__N_34
+CTOF_DEL    ---     0.408     R19C23A.B1 to     R19C23A.F1 platform1_u/LM8interrupts_0__I_0/SLICE_146
+ROUTE         2     0.530     R19C23A.F1 to     R19C23C.A1 platform1_u/LM8interrupts_0__I_0/u_rxcver/n68
+CTOF_DEL    ---     0.408     R19C23C.A1 to     R19C23C.F1 platform1_u/LM8interrupts_0__I_0/SLICE_156
+ROUTE         2     0.791     R19C23C.F1 to     R19C22C.B0 platform1_u/LM8interrupts_0__I_0/n2143
+CTOF_DEL    ---     0.408     R19C22C.B0 to     R19C22C.F0 platform1_u/LM8interrupts_0__I_0/u_intface/SLICE_291
+ROUTE         1     0.781     R19C22C.F0 to     R19C24A.A0 platform1_u/LM8interrupts_0__I_0/u_intface/n17
+CTOF_DEL    ---     0.408     R19C24A.A0 to     R19C24A.F0 platform1_u/LM8interrupts_0__I_0/SLICE_214
+ROUTE         1     0.000     R19C24A.F0 to    R19C24A.DI0 platform1_u/LM8interrupts_0__I_0/u_intface/n5293 (to clk_in)
+                  --------
+                   22.029   (42.5% logic, 57.5% route), 14 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_0_1_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     2.187        OSC.OSC to *R_R22C35.CLKA clk_in
+                  --------
+                    2.187   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/LM8interrupts_0__I_0/SLICE_214:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     2.054        OSC.OSC to    R19C24A.CLK clk_in
+                  --------
+                    2.054   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 19.186ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         DP8KC      Port           platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_0_1_2(ASIC)  (from clk_in +)
+   Destination:    FF         Data in        platform1_u/LM8interrupts_0__I_0/u_intface/cs_state_FSM_i3  (to clk_in +)
+
+   Delay:              21.904ns  (42.7% logic, 57.3% route), 14 logic levels.
+
+ Constraint Details:
+
+     21.904ns physical path delay platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_0_1_2 to platform1_u/LM8interrupts_0__I_0/SLICE_214 meets
+     41.356ns delay constraint less
+      0.133ns skew and
+      0.133ns DIN_SET requirement (totaling 41.090ns) by 19.186ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_0_1_2 to platform1_u/LM8interrupts_0__I_0/SLICE_214:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+C2Q_DEL     ---     4.057 *R_R22C35.CLKA to *R_R22C35.DOA8 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_0_1_2 (from clk_in)
+ROUTE         4     1.774 *R_R22C35.DOA8 to     R26C31B.B0 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/mdout0_0_17
+CTOF_DEL    ---     0.408     R26C31B.B0 to     R26C31B.F0 platform1_u/LM8/SLICE_293
+ROUTE         8     1.186     R26C31B.F0 to     R24C29A.B1 platform1_u/LM8/genblk1.instr_mem_out_17
+CTOF_DEL    ---     0.408     R24C29A.B1 to     R24C29A.F1 platform1_u/LM8/SLICE_134
+ROUTE         8     1.248     R24C29A.F1 to     R21C27C.B1 platform1_u/LM8/n6501
+CTOF_DEL    ---     0.408     R21C27C.B1 to     R21C27C.F1 platform1_u/LM8/SLICE_90
+ROUTE         4     1.587     R21C27C.F1 to      R9C26B.A1 platform1_u/LM8/n6482
+CTOF_DEL    ---     0.408      R9C26B.A1 to      R9C26B.F1 platform1_u/LM8/SLICE_267
+ROUTE        11     1.316      R9C26B.F1 to     R19C26A.D0 platform1_u/LM8/n6467
+CTOF_DEL    ---     0.408     R19C26A.D0 to     R19C26A.F0 platform1_u/LM8/SLICE_263
+ROUTE        11     0.544     R19C26A.F0 to     R19C26A.A1 platform1_u/LM8/n6464
+CTOF_DEL    ---     0.408     R19C26A.A1 to     R19C26A.F1 platform1_u/LM8/SLICE_263
+ROUTE         2     0.509     R19C26A.F1 to     R18C26D.D0 platform1_u/n6456
+CTOF_DEL    ---     0.408     R18C26D.D0 to     R18C26D.F0 platform1_u/SLICE_275
+ROUTE         1     0.916     R18C26D.F0 to     R18C25C.C1 platform1_u/n5900
+CTOF_DEL    ---     0.408     R18C25C.C1 to     R18C25C.F1 platform1_u/SLICE_83
+ROUTE         4     0.523     R18C25C.F1 to     R19C25B.D1 platform1_u/n2068
+CTOF_DEL    ---     0.408     R19C25B.D1 to     R19C25B.F1 platform1_u/SLICE_158
+ROUTE         8     0.838     R19C25B.F1 to     R19C23A.B1 platform1_u/LM8interrupts_0__N_34
+CTOF_DEL    ---     0.408     R19C23A.B1 to     R19C23A.F1 platform1_u/LM8interrupts_0__I_0/SLICE_146
+ROUTE         2     0.530     R19C23A.F1 to     R19C23C.A1 platform1_u/LM8interrupts_0__I_0/u_rxcver/n68
+CTOF_DEL    ---     0.408     R19C23C.A1 to     R19C23C.F1 platform1_u/LM8interrupts_0__I_0/SLICE_156
+ROUTE         2     0.791     R19C23C.F1 to     R19C22C.B0 platform1_u/LM8interrupts_0__I_0/n2143
+CTOF_DEL    ---     0.408     R19C22C.B0 to     R19C22C.F0 platform1_u/LM8interrupts_0__I_0/u_intface/SLICE_291
+ROUTE         1     0.781     R19C22C.F0 to     R19C24A.A0 platform1_u/LM8interrupts_0__I_0/u_intface/n17
+CTOF_DEL    ---     0.408     R19C24A.A0 to     R19C24A.F0 platform1_u/LM8interrupts_0__I_0/SLICE_214
+ROUTE         1     0.000     R19C24A.F0 to    R19C24A.DI0 platform1_u/LM8interrupts_0__I_0/u_intface/n5293 (to clk_in)
+                  --------
+                   21.904   (42.7% logic, 57.3% route), 14 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_0_1_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     2.187        OSC.OSC to *R_R22C35.CLKA clk_in
+                  --------
+                    2.187   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/LM8interrupts_0__I_0/SLICE_214:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     2.054        OSC.OSC to    R19C24A.CLK clk_in
+                  --------
+                    2.054   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 19.256ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         DP8KC      Port           platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_1_1_0(ASIC)  (from clk_in +)
+   Destination:    FF         Data in        platform1_u/LM8interrupts_0__I_0/u_intface/cs_state_FSM_i3  (to clk_in +)
+
+   Delay:              21.834ns  (42.9% logic, 57.1% route), 14 logic levels.
+
+ Constraint Details:
+
+     21.834ns physical path delay platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_1_1_0 to platform1_u/LM8interrupts_0__I_0/SLICE_214 meets
+     41.356ns delay constraint less
+      0.133ns skew and
+      0.133ns DIN_SET requirement (totaling 41.090ns) by 19.256ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_1_1_0 to platform1_u/LM8interrupts_0__I_0/SLICE_214:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+C2Q_DEL     ---     4.057 *R_R22C32.CLKA to *R_R22C32.DOA8 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_1_1_0 (from clk_in)
+ROUTE         4     1.579 *R_R22C32.DOA8 to     R26C31B.C0 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/mdout0_1_17
+CTOF_DEL    ---     0.408     R26C31B.C0 to     R26C31B.F0 platform1_u/LM8/SLICE_293
+ROUTE         8     1.186     R26C31B.F0 to     R24C29A.B1 platform1_u/LM8/genblk1.instr_mem_out_17
+CTOF_DEL    ---     0.408     R24C29A.B1 to     R24C29A.F1 platform1_u/LM8/SLICE_134
+ROUTE         8     1.248     R24C29A.F1 to     R21C27C.B1 platform1_u/LM8/n6501
+CTOF_DEL    ---     0.408     R21C27C.B1 to     R21C27C.F1 platform1_u/LM8/SLICE_90
+ROUTE         4     1.587     R21C27C.F1 to      R9C26B.A1 platform1_u/LM8/n6482
+CTOF_DEL    ---     0.408      R9C26B.A1 to      R9C26B.F1 platform1_u/LM8/SLICE_267
+ROUTE        11     1.316      R9C26B.F1 to     R19C26A.D0 platform1_u/LM8/n6467
+CTOF_DEL    ---     0.408     R19C26A.D0 to     R19C26A.F0 platform1_u/LM8/SLICE_263
+ROUTE        11     0.819     R19C26A.F0 to     R18C26D.B1 platform1_u/LM8/n6464
+CTOF_DEL    ---     0.408     R18C26D.B1 to     R18C26D.F1 platform1_u/SLICE_275
+ROUTE         2     0.359     R18C26D.F1 to     R18C26D.C0 platform1_u/n6457
+CTOF_DEL    ---     0.408     R18C26D.C0 to     R18C26D.F0 platform1_u/SLICE_275
+ROUTE         1     0.916     R18C26D.F0 to     R18C25C.C1 platform1_u/n5900
+CTOF_DEL    ---     0.408     R18C25C.C1 to     R18C25C.F1 platform1_u/SLICE_83
+ROUTE         4     0.523     R18C25C.F1 to     R19C25B.D1 platform1_u/n2068
+CTOF_DEL    ---     0.408     R19C25B.D1 to     R19C25B.F1 platform1_u/SLICE_158
+ROUTE         8     0.838     R19C25B.F1 to     R19C23A.B1 platform1_u/LM8interrupts_0__N_34
+CTOF_DEL    ---     0.408     R19C23A.B1 to     R19C23A.F1 platform1_u/LM8interrupts_0__I_0/SLICE_146
+ROUTE         2     0.530     R19C23A.F1 to     R19C23C.A1 platform1_u/LM8interrupts_0__I_0/u_rxcver/n68
+CTOF_DEL    ---     0.408     R19C23C.A1 to     R19C23C.F1 platform1_u/LM8interrupts_0__I_0/SLICE_156
+ROUTE         2     0.791     R19C23C.F1 to     R19C22C.B0 platform1_u/LM8interrupts_0__I_0/n2143
+CTOF_DEL    ---     0.408     R19C22C.B0 to     R19C22C.F0 platform1_u/LM8interrupts_0__I_0/u_intface/SLICE_291
+ROUTE         1     0.781     R19C22C.F0 to     R19C24A.A0 platform1_u/LM8interrupts_0__I_0/u_intface/n17
+CTOF_DEL    ---     0.408     R19C24A.A0 to     R19C24A.F0 platform1_u/LM8interrupts_0__I_0/SLICE_214
+ROUTE         1     0.000     R19C24A.F0 to    R19C24A.DI0 platform1_u/LM8interrupts_0__I_0/u_intface/n5293 (to clk_in)
+                  --------
+                   21.834   (42.9% logic, 57.1% route), 14 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_1_1_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     2.187        OSC.OSC to *R_R22C32.CLKA clk_in
+                  --------
+                    2.187   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/LM8interrupts_0__I_0/SLICE_214:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     2.054        OSC.OSC to    R19C24A.CLK clk_in
+                  --------
+                    2.054   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 19.374ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         DP8KC      Port           platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_0_1_2(ASIC)  (from clk_in +)
+   Destination:    FF         Data in        platform1_u/LM8interrupts_0__I_0/u_intface/cs_state_FSM_i3  (to clk_in +)
+
+   Delay:              21.716ns  (39.3% logic, 60.7% route), 12 logic levels.
+
+ Constraint Details:
+
+     21.716ns physical path delay platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_0_1_2 to platform1_u/LM8interrupts_0__I_0/SLICE_214 meets
+     41.356ns delay constraint less
+      0.133ns skew and
+      0.133ns DIN_SET requirement (totaling 41.090ns) by 19.374ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_0_1_2 to platform1_u/LM8interrupts_0__I_0/SLICE_214:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+C2Q_DEL     ---     4.057 *R_R22C35.CLKA to *R_R22C35.DOA8 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_0_1_2 (from clk_in)
+ROUTE         4     1.774 *R_R22C35.DOA8 to     R26C31B.B0 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/mdout0_0_17
+CTOF_DEL    ---     0.408     R26C31B.B0 to     R26C31B.F0 platform1_u/LM8/SLICE_293
+ROUTE         8     1.186     R26C31B.F0 to     R24C29A.B1 platform1_u/LM8/genblk1.instr_mem_out_17
+CTOF_DEL    ---     0.408     R24C29A.B1 to     R24C29A.F1 platform1_u/LM8/SLICE_134
+ROUTE         8     1.248     R24C29A.F1 to     R21C27C.B1 platform1_u/LM8/n6501
+CTOF_DEL    ---     0.408     R21C27C.B1 to     R21C27C.F1 platform1_u/LM8/SLICE_90
+ROUTE         4     1.587     R21C27C.F1 to      R9C26B.A1 platform1_u/LM8/n6482
+CTOF_DEL    ---     0.408      R9C26B.A1 to      R9C26B.F1 platform1_u/LM8/SLICE_267
+ROUTE        11     1.316      R9C26B.F1 to     R19C26A.D0 platform1_u/LM8/n6467
+CTOF_DEL    ---     0.408     R19C26A.D0 to     R19C26A.F0 platform1_u/LM8/SLICE_263
+ROUTE        11     1.092     R19C26A.F0 to     R18C24A.B1 platform1_u/LM8/n6464
+CTOF_DEL    ---     0.408     R18C24A.B1 to     R18C24A.F1 platform1_u/SLICE_278
+ROUTE        17     1.463     R18C24A.F1 to     R20C24A.A1 platform1_u/n6462
+CTOF_DEL    ---     0.408     R20C24A.A1 to     R20C24A.F1 platform1_u/SLICE_277
+ROUTE        11     1.403     R20C24A.F1 to     R19C23A.D1 platform1_u/n7
+CTOF_DEL    ---     0.408     R19C23A.D1 to     R19C23A.F1 platform1_u/LM8interrupts_0__I_0/SLICE_146
+ROUTE         2     0.530     R19C23A.F1 to     R19C23C.A1 platform1_u/LM8interrupts_0__I_0/u_rxcver/n68
+CTOF_DEL    ---     0.408     R19C23C.A1 to     R19C23C.F1 platform1_u/LM8interrupts_0__I_0/SLICE_156
+ROUTE         2     0.791     R19C23C.F1 to     R19C22C.B0 platform1_u/LM8interrupts_0__I_0/n2143
+CTOF_DEL    ---     0.408     R19C22C.B0 to     R19C22C.F0 platform1_u/LM8interrupts_0__I_0/u_intface/SLICE_291
+ROUTE         1     0.781     R19C22C.F0 to     R19C24A.A0 platform1_u/LM8interrupts_0__I_0/u_intface/n17
+CTOF_DEL    ---     0.408     R19C24A.A0 to     R19C24A.F0 platform1_u/LM8interrupts_0__I_0/SLICE_214
+ROUTE         1     0.000     R19C24A.F0 to    R19C24A.DI0 platform1_u/LM8interrupts_0__I_0/u_intface/n5293 (to clk_in)
+                  --------
+                   21.716   (39.3% logic, 60.7% route), 12 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_0_1_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     2.187        OSC.OSC to *R_R22C35.CLKA clk_in
+                  --------
+                    2.187   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/LM8interrupts_0__I_0/SLICE_214:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     2.054        OSC.OSC to    R19C24A.CLK clk_in
+                  --------
+                    2.054   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 19.381ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         DP8KC      Port           platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_1_1_0(ASIC)  (from clk_in +)
+   Destination:    FF         Data in        platform1_u/LM8interrupts_0__I_0/u_intface/cs_state_FSM_i3  (to clk_in +)
+
+   Delay:              21.709ns  (43.1% logic, 56.9% route), 14 logic levels.
+
+ Constraint Details:
+
+     21.709ns physical path delay platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_1_1_0 to platform1_u/LM8interrupts_0__I_0/SLICE_214 meets
+     41.356ns delay constraint less
+      0.133ns skew and
+      0.133ns DIN_SET requirement (totaling 41.090ns) by 19.381ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_1_1_0 to platform1_u/LM8interrupts_0__I_0/SLICE_214:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+C2Q_DEL     ---     4.057 *R_R22C32.CLKA to *R_R22C32.DOA8 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_1_1_0 (from clk_in)
+ROUTE         4     1.579 *R_R22C32.DOA8 to     R26C31B.C0 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/mdout0_1_17
+CTOF_DEL    ---     0.408     R26C31B.C0 to     R26C31B.F0 platform1_u/LM8/SLICE_293
+ROUTE         8     1.186     R26C31B.F0 to     R24C29A.B1 platform1_u/LM8/genblk1.instr_mem_out_17
+CTOF_DEL    ---     0.408     R24C29A.B1 to     R24C29A.F1 platform1_u/LM8/SLICE_134
+ROUTE         8     1.248     R24C29A.F1 to     R21C27C.B1 platform1_u/LM8/n6501
+CTOF_DEL    ---     0.408     R21C27C.B1 to     R21C27C.F1 platform1_u/LM8/SLICE_90
+ROUTE         4     1.587     R21C27C.F1 to      R9C26B.A1 platform1_u/LM8/n6482
+CTOF_DEL    ---     0.408      R9C26B.A1 to      R9C26B.F1 platform1_u/LM8/SLICE_267
+ROUTE        11     1.316      R9C26B.F1 to     R19C26A.D0 platform1_u/LM8/n6467
+CTOF_DEL    ---     0.408     R19C26A.D0 to     R19C26A.F0 platform1_u/LM8/SLICE_263
+ROUTE        11     0.544     R19C26A.F0 to     R19C26A.A1 platform1_u/LM8/n6464
+CTOF_DEL    ---     0.408     R19C26A.A1 to     R19C26A.F1 platform1_u/LM8/SLICE_263
+ROUTE         2     0.509     R19C26A.F1 to     R18C26D.D0 platform1_u/n6456
+CTOF_DEL    ---     0.408     R18C26D.D0 to     R18C26D.F0 platform1_u/SLICE_275
+ROUTE         1     0.916     R18C26D.F0 to     R18C25C.C1 platform1_u/n5900
+CTOF_DEL    ---     0.408     R18C25C.C1 to     R18C25C.F1 platform1_u/SLICE_83
+ROUTE         4     0.523     R18C25C.F1 to     R19C25B.D1 platform1_u/n2068
+CTOF_DEL    ---     0.408     R19C25B.D1 to     R19C25B.F1 platform1_u/SLICE_158
+ROUTE         8     0.838     R19C25B.F1 to     R19C23A.B1 platform1_u/LM8interrupts_0__N_34
+CTOF_DEL    ---     0.408     R19C23A.B1 to     R19C23A.F1 platform1_u/LM8interrupts_0__I_0/SLICE_146
+ROUTE         2     0.530     R19C23A.F1 to     R19C23C.A1 platform1_u/LM8interrupts_0__I_0/u_rxcver/n68
+CTOF_DEL    ---     0.408     R19C23C.A1 to     R19C23C.F1 platform1_u/LM8interrupts_0__I_0/SLICE_156
+ROUTE         2     0.791     R19C23C.F1 to     R19C22C.B0 platform1_u/LM8interrupts_0__I_0/n2143
+CTOF_DEL    ---     0.408     R19C22C.B0 to     R19C22C.F0 platform1_u/LM8interrupts_0__I_0/u_intface/SLICE_291
+ROUTE         1     0.781     R19C22C.F0 to     R19C24A.A0 platform1_u/LM8interrupts_0__I_0/u_intface/n17
+CTOF_DEL    ---     0.408     R19C24A.A0 to     R19C24A.F0 platform1_u/LM8interrupts_0__I_0/SLICE_214
+ROUTE         1     0.000     R19C24A.F0 to    R19C24A.DI0 platform1_u/LM8interrupts_0__I_0/u_intface/n5293 (to clk_in)
+                  --------
+                   21.709   (43.1% logic, 56.9% route), 14 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_1_1_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     2.187        OSC.OSC to *R_R22C32.CLKA clk_in
+                  --------
+                    2.187   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/LM8interrupts_0__I_0/SLICE_214:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     2.054        OSC.OSC to    R19C24A.CLK clk_in
+                  --------
+                    2.054   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 19.415ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         DP8KC      Port           platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_0_1_2(ASIC)  (from clk_in +)
+   Destination:    FF         Data in        platform1_u/LM8interrupts_0__I_0/u_intface/cs_state_FSM_i3  (to clk_in +)
+
+   Delay:              21.675ns  (41.3% logic, 58.7% route), 13 logic levels.
+
+ Constraint Details:
+
+     21.675ns physical path delay platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_0_1_2 to platform1_u/LM8interrupts_0__I_0/SLICE_214 meets
+     41.356ns delay constraint less
+      0.133ns skew and
+      0.133ns DIN_SET requirement (totaling 41.090ns) by 19.415ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_0_1_2 to platform1_u/LM8interrupts_0__I_0/SLICE_214:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+C2Q_DEL     ---     4.057 *R_R22C35.CLKA to *R_R22C35.DOA5 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_0_1_2 (from clk_in)
+ROUTE         4     2.651 *R_R22C35.DOA5 to     R25C30A.C0 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/mdout0_0_14
+CTOF_DEL    ---     0.408     R25C30A.C0 to     R25C30A.F0 platform1_u/LM8/SLICE_302
+ROUTE         8     1.611     R25C30A.F0 to     R21C27C.A1 platform1_u/LM8/genblk1.instr_mem_out_14
+CTOF_DEL    ---     0.408     R21C27C.A1 to     R21C27C.F1 platform1_u/LM8/SLICE_90
+ROUTE         4     1.587     R21C27C.F1 to      R9C26B.A1 platform1_u/LM8/n6482
+CTOF_DEL    ---     0.408      R9C26B.A1 to      R9C26B.F1 platform1_u/LM8/SLICE_267
+ROUTE        11     1.316      R9C26B.F1 to     R19C26A.D0 platform1_u/LM8/n6467
+CTOF_DEL    ---     0.408     R19C26A.D0 to     R19C26A.F0 platform1_u/LM8/SLICE_263
+ROUTE        11     0.819     R19C26A.F0 to     R18C26D.B1 platform1_u/LM8/n6464
+CTOF_DEL    ---     0.408     R18C26D.B1 to     R18C26D.F1 platform1_u/SLICE_275
+ROUTE         2     0.359     R18C26D.F1 to     R18C26D.C0 platform1_u/n6457
+CTOF_DEL    ---     0.408     R18C26D.C0 to     R18C26D.F0 platform1_u/SLICE_275
+ROUTE         1     0.916     R18C26D.F0 to     R18C25C.C1 platform1_u/n5900
+CTOF_DEL    ---     0.408     R18C25C.C1 to     R18C25C.F1 platform1_u/SLICE_83
+ROUTE         4     0.523     R18C25C.F1 to     R19C25B.D1 platform1_u/n2068
+CTOF_DEL    ---     0.408     R19C25B.D1 to     R19C25B.F1 platform1_u/SLICE_158
+ROUTE         8     0.838     R19C25B.F1 to     R19C23A.B1 platform1_u/LM8interrupts_0__N_34
+CTOF_DEL    ---     0.408     R19C23A.B1 to     R19C23A.F1 platform1_u/LM8interrupts_0__I_0/SLICE_146
+ROUTE         2     0.530     R19C23A.F1 to     R19C23C.A1 platform1_u/LM8interrupts_0__I_0/u_rxcver/n68
+CTOF_DEL    ---     0.408     R19C23C.A1 to     R19C23C.F1 platform1_u/LM8interrupts_0__I_0/SLICE_156
+ROUTE         2     0.791     R19C23C.F1 to     R19C22C.B0 platform1_u/LM8interrupts_0__I_0/n2143
+CTOF_DEL    ---     0.408     R19C22C.B0 to     R19C22C.F0 platform1_u/LM8interrupts_0__I_0/u_intface/SLICE_291
+ROUTE         1     0.781     R19C22C.F0 to     R19C24A.A0 platform1_u/LM8interrupts_0__I_0/u_intface/n17
+CTOF_DEL    ---     0.408     R19C24A.A0 to     R19C24A.F0 platform1_u/LM8interrupts_0__I_0/SLICE_214
+ROUTE         1     0.000     R19C24A.F0 to    R19C24A.DI0 platform1_u/LM8interrupts_0__I_0/u_intface/n5293 (to clk_in)
+                  --------
+                   21.675   (41.3% logic, 58.7% route), 13 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_0_1_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     2.187        OSC.OSC to *R_R22C35.CLKA clk_in
+                  --------
+                    2.187   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/LM8interrupts_0__I_0/SLICE_214:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     2.054        OSC.OSC to    R19C24A.CLK clk_in
+                  --------
+                    2.054   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 19.423ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         DP8KC      Port           platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_0_1_2(ASIC)  (from clk_in +)
+   Destination:    FF         Data in        platform1_u/LM8/u1_isp8_core/pmi_distributed_dpramMachXO3LFbinarynonenoreg8532_62/mem_1_0/RAM0  (to clk_in +)
+                   FF                        platform1_u/LM8/u1_isp8_core/pmi_distributed_dpramMachXO3LFbinarynonenoreg8532_62/mem_1_0/RAM0
+
+   Delay:              22.129ns  (37.6% logic, 62.4% route), 12 logic levels.
+
+ Constraint Details:
+
+     22.129ns physical path delay platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_0_1_2 to platform1_u/LM8/u1_isp8_core/pmi_distributed_dpramMachXO3LFbinarynonenoreg8532_62/mem_1_0 meets
+     41.356ns delay constraint less
+      0.133ns skew and
+     -0.329ns WD_SET requirement (totaling 41.552ns) by 19.423ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_0_1_2 to platform1_u/LM8/u1_isp8_core/pmi_distributed_dpramMachXO3LFbinarynonenoreg8532_62/mem_1_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+C2Q_DEL     ---     4.057 *R_R22C35.CLKA to *R_R22C35.DOA8 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_0_1_2 (from clk_in)
+ROUTE         4     1.774 *R_R22C35.DOA8 to     R26C31B.B0 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/mdout0_0_17
+CTOF_DEL    ---     0.408     R26C31B.B0 to     R26C31B.F0 platform1_u/LM8/SLICE_293
+ROUTE         8     1.186     R26C31B.F0 to     R24C29A.B1 platform1_u/LM8/genblk1.instr_mem_out_17
+CTOF_DEL    ---     0.408     R24C29A.B1 to     R24C29A.F1 platform1_u/LM8/SLICE_134
+ROUTE         8     1.248     R24C29A.F1 to     R21C27C.B1 platform1_u/LM8/n6501
+CTOF_DEL    ---     0.408     R21C27C.B1 to     R21C27C.F1 platform1_u/LM8/SLICE_90
+ROUTE         4     1.587     R21C27C.F1 to      R9C26B.A1 platform1_u/LM8/n6482
+CTOF_DEL    ---     0.408      R9C26B.A1 to      R9C26B.F1 platform1_u/LM8/SLICE_267
+ROUTE        11     1.316      R9C26B.F1 to     R19C26A.D0 platform1_u/LM8/n6467
+CTOF_DEL    ---     0.408     R19C26A.D0 to     R19C26A.F0 platform1_u/LM8/SLICE_263
+ROUTE        11     0.819     R19C26A.F0 to     R18C26D.B1 platform1_u/LM8/n6464
+CTOF_DEL    ---     0.408     R18C26D.B1 to     R18C26D.F1 platform1_u/SLICE_275
+ROUTE         2     0.359     R18C26D.F1 to     R18C26D.C0 platform1_u/n6457
+CTOF_DEL    ---     0.408     R18C26D.C0 to     R18C26D.F0 platform1_u/SLICE_275
+ROUTE         1     0.916     R18C26D.F0 to     R18C25C.C1 platform1_u/n5900
+CTOF_DEL    ---     0.408     R18C25C.C1 to     R18C25C.F1 platform1_u/SLICE_83
+ROUTE         4     0.612     R18C25C.F1 to     R18C25A.C0 platform1_u/n2068
+CTOF_DEL    ---     0.408     R18C25A.C0 to     R18C25A.F0 platform1_u/SLICE_256
+ROUTE        16     1.428     R18C25A.F0 to     R19C27D.A1 platform1_u/n3032
+CTOOFX_DEL  ---     0.601     R19C27D.A1 to   R19C27D.OFX0 platform1_u/LM8/u1_isp8_core/SLICE_228
+ROUTE         5     2.554   R19C27D.OFX0 to     R20C30C.B1 platform1_u/LM8/u1_isp8_core/din_rd_5
+ZERO_DEL    ---     0.000     R20C30C.B1 to   R20C30C.WDO1 platform1_u/LM8/u1_isp8_core/pmi_distributed_dpramMachXO3LFbinarynonenoreg8532_62/mem_1_0.13
+ROUTE         1     0.000   R20C30C.WDO1 to    R20C30A.WD1 platform1_u/LM8/u1_isp8_core/pmi_distributed_dpramMachXO3LFbinarynonenoreg8532_62/mem_1_0/WD1_INT (to clk_in)
+                  --------
+                   22.129   (37.6% logic, 62.4% route), 12 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_0_1_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     2.187        OSC.OSC to *R_R22C35.CLKA clk_in
+                  --------
+                    2.187   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/pmi_distributed_dpramMachXO3LFbinarynonenoreg8532_62/mem_1_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     2.054        OSC.OSC to    R20C30A.WCK clk_in
+                  --------
+                    2.054   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 19.455ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         DP8KC      Port           platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_1_1_0(ASIC)  (from clk_in +)
+   Destination:    FF         Data in        platform1_u/LM8interrupts_0__I_0/u_intface/cs_state_FSM_i3  (to clk_in +)
+
+   Delay:              21.635ns  (43.3% logic, 56.7% route), 14 logic levels.
+
+ Constraint Details:
+
+     21.635ns physical path delay platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_1_1_0 to platform1_u/LM8interrupts_0__I_0/SLICE_214 meets
+     41.356ns delay constraint less
+      0.133ns skew and
+      0.133ns DIN_SET requirement (totaling 41.090ns) by 19.455ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_1_1_0 to platform1_u/LM8interrupts_0__I_0/SLICE_214:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+C2Q_DEL     ---     4.057 *R_R22C32.CLKA to *R_R22C32.DOA7 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_1_1_0 (from clk_in)
+ROUTE         2     1.572 *R_R22C32.DOA7 to     R26C31A.C0 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/mdout0_1_16
+CTOF_DEL    ---     0.408     R26C31A.C0 to     R26C31A.F0 platform1_u/LM8/SLICE_261
+ROUTE        11     0.994     R26C31A.F0 to     R24C29A.C1 platform1_u/LM8/genblk1.instr_mem_out_16
+CTOF_DEL    ---     0.408     R24C29A.C1 to     R24C29A.F1 platform1_u/LM8/SLICE_134
+ROUTE         8     1.248     R24C29A.F1 to     R21C27C.B1 platform1_u/LM8/n6501
+CTOF_DEL    ---     0.408     R21C27C.B1 to     R21C27C.F1 platform1_u/LM8/SLICE_90
+ROUTE         4     1.587     R21C27C.F1 to      R9C26B.A1 platform1_u/LM8/n6482
+CTOF_DEL    ---     0.408      R9C26B.A1 to      R9C26B.F1 platform1_u/LM8/SLICE_267
+ROUTE        11     1.316      R9C26B.F1 to     R19C26A.D0 platform1_u/LM8/n6467
+CTOF_DEL    ---     0.408     R19C26A.D0 to     R19C26A.F0 platform1_u/LM8/SLICE_263
+ROUTE        11     0.819     R19C26A.F0 to     R18C26D.B1 platform1_u/LM8/n6464
+CTOF_DEL    ---     0.408     R18C26D.B1 to     R18C26D.F1 platform1_u/SLICE_275
+ROUTE         2     0.359     R18C26D.F1 to     R18C26D.C0 platform1_u/n6457
+CTOF_DEL    ---     0.408     R18C26D.C0 to     R18C26D.F0 platform1_u/SLICE_275
+ROUTE         1     0.916     R18C26D.F0 to     R18C25C.C1 platform1_u/n5900
+CTOF_DEL    ---     0.408     R18C25C.C1 to     R18C25C.F1 platform1_u/SLICE_83
+ROUTE         4     0.523     R18C25C.F1 to     R19C25B.D1 platform1_u/n2068
+CTOF_DEL    ---     0.408     R19C25B.D1 to     R19C25B.F1 platform1_u/SLICE_158
+ROUTE         8     0.838     R19C25B.F1 to     R19C23A.B1 platform1_u/LM8interrupts_0__N_34
+CTOF_DEL    ---     0.408     R19C23A.B1 to     R19C23A.F1 platform1_u/LM8interrupts_0__I_0/SLICE_146
+ROUTE         2     0.530     R19C23A.F1 to     R19C23C.A1 platform1_u/LM8interrupts_0__I_0/u_rxcver/n68
+CTOF_DEL    ---     0.408     R19C23C.A1 to     R19C23C.F1 platform1_u/LM8interrupts_0__I_0/SLICE_156
+ROUTE         2     0.791     R19C23C.F1 to     R19C22C.B0 platform1_u/LM8interrupts_0__I_0/n2143
+CTOF_DEL    ---     0.408     R19C22C.B0 to     R19C22C.F0 platform1_u/LM8interrupts_0__I_0/u_intface/SLICE_291
+ROUTE         1     0.781     R19C22C.F0 to     R19C24A.A0 platform1_u/LM8interrupts_0__I_0/u_intface/n17
+CTOF_DEL    ---     0.408     R19C24A.A0 to     R19C24A.F0 platform1_u/LM8interrupts_0__I_0/SLICE_214
+ROUTE         1     0.000     R19C24A.F0 to    R19C24A.DI0 platform1_u/LM8interrupts_0__I_0/u_intface/n5293 (to clk_in)
+                  --------
+                   21.635   (43.3% logic, 56.7% route), 14 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_1_1_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     2.187        OSC.OSC to *R_R22C32.CLKA clk_in
+                  --------
+                    2.187   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/LM8interrupts_0__I_0/SLICE_214:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     2.054        OSC.OSC to    R19C24A.CLK clk_in
+                  --------
+                    2.054   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 19.540ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         DP8KC      Port           platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_0_1_2(ASIC)  (from clk_in +)
+   Destination:    FF         Data in        platform1_u/LM8interrupts_0__I_0/u_intface/cs_state_FSM_i3  (to clk_in +)
+
+   Delay:              21.550ns  (41.5% logic, 58.5% route), 13 logic levels.
+
+ Constraint Details:
+
+     21.550ns physical path delay platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_0_1_2 to platform1_u/LM8interrupts_0__I_0/SLICE_214 meets
+     41.356ns delay constraint less
+      0.133ns skew and
+      0.133ns DIN_SET requirement (totaling 41.090ns) by 19.540ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_0_1_2 to platform1_u/LM8interrupts_0__I_0/SLICE_214:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+C2Q_DEL     ---     4.057 *R_R22C35.CLKA to *R_R22C35.DOA5 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_0_1_2 (from clk_in)
+ROUTE         4     2.651 *R_R22C35.DOA5 to     R25C30A.C0 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/mdout0_0_14
+CTOF_DEL    ---     0.408     R25C30A.C0 to     R25C30A.F0 platform1_u/LM8/SLICE_302
+ROUTE         8     1.611     R25C30A.F0 to     R21C27C.A1 platform1_u/LM8/genblk1.instr_mem_out_14
+CTOF_DEL    ---     0.408     R21C27C.A1 to     R21C27C.F1 platform1_u/LM8/SLICE_90
+ROUTE         4     1.587     R21C27C.F1 to      R9C26B.A1 platform1_u/LM8/n6482
+CTOF_DEL    ---     0.408      R9C26B.A1 to      R9C26B.F1 platform1_u/LM8/SLICE_267
+ROUTE        11     1.316      R9C26B.F1 to     R19C26A.D0 platform1_u/LM8/n6467
+CTOF_DEL    ---     0.408     R19C26A.D0 to     R19C26A.F0 platform1_u/LM8/SLICE_263
+ROUTE        11     0.544     R19C26A.F0 to     R19C26A.A1 platform1_u/LM8/n6464
+CTOF_DEL    ---     0.408     R19C26A.A1 to     R19C26A.F1 platform1_u/LM8/SLICE_263
+ROUTE         2     0.509     R19C26A.F1 to     R18C26D.D0 platform1_u/n6456
+CTOF_DEL    ---     0.408     R18C26D.D0 to     R18C26D.F0 platform1_u/SLICE_275
+ROUTE         1     0.916     R18C26D.F0 to     R18C25C.C1 platform1_u/n5900
+CTOF_DEL    ---     0.408     R18C25C.C1 to     R18C25C.F1 platform1_u/SLICE_83
+ROUTE         4     0.523     R18C25C.F1 to     R19C25B.D1 platform1_u/n2068
+CTOF_DEL    ---     0.408     R19C25B.D1 to     R19C25B.F1 platform1_u/SLICE_158
+ROUTE         8     0.838     R19C25B.F1 to     R19C23A.B1 platform1_u/LM8interrupts_0__N_34
+CTOF_DEL    ---     0.408     R19C23A.B1 to     R19C23A.F1 platform1_u/LM8interrupts_0__I_0/SLICE_146
+ROUTE         2     0.530     R19C23A.F1 to     R19C23C.A1 platform1_u/LM8interrupts_0__I_0/u_rxcver/n68
+CTOF_DEL    ---     0.408     R19C23C.A1 to     R19C23C.F1 platform1_u/LM8interrupts_0__I_0/SLICE_156
+ROUTE         2     0.791     R19C23C.F1 to     R19C22C.B0 platform1_u/LM8interrupts_0__I_0/n2143
+CTOF_DEL    ---     0.408     R19C22C.B0 to     R19C22C.F0 platform1_u/LM8interrupts_0__I_0/u_intface/SLICE_291
+ROUTE         1     0.781     R19C22C.F0 to     R19C24A.A0 platform1_u/LM8interrupts_0__I_0/u_intface/n17
+CTOF_DEL    ---     0.408     R19C24A.A0 to     R19C24A.F0 platform1_u/LM8interrupts_0__I_0/SLICE_214
+ROUTE         1     0.000     R19C24A.F0 to    R19C24A.DI0 platform1_u/LM8interrupts_0__I_0/u_intface/n5293 (to clk_in)
+                  --------
+                   21.550   (41.5% logic, 58.5% route), 13 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_0_1_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     2.187        OSC.OSC to *R_R22C35.CLKA clk_in
+                  --------
+                    2.187   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/LM8interrupts_0__I_0/SLICE_214:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     2.054        OSC.OSC to    R19C24A.CLK clk_in
+                  --------
+                    2.054   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 19.548ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         DP8KC      Port           platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_0_1_2(ASIC)  (from clk_in +)
+   Destination:    FF         Data in        platform1_u/LM8/u1_isp8_core/pmi_distributed_dpramMachXO3LFbinarynonenoreg8532_62/mem_1_0/RAM0  (to clk_in +)
+                   FF                        platform1_u/LM8/u1_isp8_core/pmi_distributed_dpramMachXO3LFbinarynonenoreg8532_62/mem_1_0/RAM0
+
+   Delay:              22.004ns  (37.9% logic, 62.1% route), 12 logic levels.
+
+ Constraint Details:
+
+     22.004ns physical path delay platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_0_1_2 to platform1_u/LM8/u1_isp8_core/pmi_distributed_dpramMachXO3LFbinarynonenoreg8532_62/mem_1_0 meets
+     41.356ns delay constraint less
+      0.133ns skew and
+     -0.329ns WD_SET requirement (totaling 41.552ns) by 19.548ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_0_1_2 to platform1_u/LM8/u1_isp8_core/pmi_distributed_dpramMachXO3LFbinarynonenoreg8532_62/mem_1_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+C2Q_DEL     ---     4.057 *R_R22C35.CLKA to *R_R22C35.DOA8 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_0_1_2 (from clk_in)
+ROUTE         4     1.774 *R_R22C35.DOA8 to     R26C31B.B0 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/mdout0_0_17
+CTOF_DEL    ---     0.408     R26C31B.B0 to     R26C31B.F0 platform1_u/LM8/SLICE_293
+ROUTE         8     1.186     R26C31B.F0 to     R24C29A.B1 platform1_u/LM8/genblk1.instr_mem_out_17
+CTOF_DEL    ---     0.408     R24C29A.B1 to     R24C29A.F1 platform1_u/LM8/SLICE_134
+ROUTE         8     1.248     R24C29A.F1 to     R21C27C.B1 platform1_u/LM8/n6501
+CTOF_DEL    ---     0.408     R21C27C.B1 to     R21C27C.F1 platform1_u/LM8/SLICE_90
+ROUTE         4     1.587     R21C27C.F1 to      R9C26B.A1 platform1_u/LM8/n6482
+CTOF_DEL    ---     0.408      R9C26B.A1 to      R9C26B.F1 platform1_u/LM8/SLICE_267
+ROUTE        11     1.316      R9C26B.F1 to     R19C26A.D0 platform1_u/LM8/n6467
+CTOF_DEL    ---     0.408     R19C26A.D0 to     R19C26A.F0 platform1_u/LM8/SLICE_263
+ROUTE        11     0.544     R19C26A.F0 to     R19C26A.A1 platform1_u/LM8/n6464
+CTOF_DEL    ---     0.408     R19C26A.A1 to     R19C26A.F1 platform1_u/LM8/SLICE_263
+ROUTE         2     0.509     R19C26A.F1 to     R18C26D.D0 platform1_u/n6456
+CTOF_DEL    ---     0.408     R18C26D.D0 to     R18C26D.F0 platform1_u/SLICE_275
+ROUTE         1     0.916     R18C26D.F0 to     R18C25C.C1 platform1_u/n5900
+CTOF_DEL    ---     0.408     R18C25C.C1 to     R18C25C.F1 platform1_u/SLICE_83
+ROUTE         4     0.612     R18C25C.F1 to     R18C25A.C0 platform1_u/n2068
+CTOF_DEL    ---     0.408     R18C25A.C0 to     R18C25A.F0 platform1_u/SLICE_256
+ROUTE        16     1.428     R18C25A.F0 to     R19C27D.A1 platform1_u/n3032
+CTOOFX_DEL  ---     0.601     R19C27D.A1 to   R19C27D.OFX0 platform1_u/LM8/u1_isp8_core/SLICE_228
+ROUTE         5     2.554   R19C27D.OFX0 to     R20C30C.B1 platform1_u/LM8/u1_isp8_core/din_rd_5
+ZERO_DEL    ---     0.000     R20C30C.B1 to   R20C30C.WDO1 platform1_u/LM8/u1_isp8_core/pmi_distributed_dpramMachXO3LFbinarynonenoreg8532_62/mem_1_0.13
+ROUTE         1     0.000   R20C30C.WDO1 to    R20C30A.WD1 platform1_u/LM8/u1_isp8_core/pmi_distributed_dpramMachXO3LFbinarynonenoreg8532_62/mem_1_0/WD1_INT (to clk_in)
+                  --------
+                   22.004   (37.9% logic, 62.1% route), 12 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_0_1_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     2.187        OSC.OSC to *R_R22C35.CLKA clk_in
+                  --------
+                    2.187   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/pmi_distributed_dpramMachXO3LFbinarynonenoreg8532_62/mem_1_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     2.054        OSC.OSC to    R20C30A.WCK clk_in
+                  --------
+                    2.054   (0.0% logic, 100.0% route), 0 logic levels.
+
+Report:   44.853MHz is the maximum frequency for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk_in" 24.180000 MHz ;  |   24.180 MHz|   44.853 MHz|  14  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: clk_in   Source: OSCH_inst.OSC   Loads: 198
+   Covered under: FREQUENCY NET "clk_in" 24.180000 MHz ;
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 88795 paths, 1 nets, and 3389 connections (99.91% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.0.111.2
+Mon Jun 11 14:50:02 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 6 -sphld m -o platform1_platform1.twr -gui -msgset C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/promote.xml platform1_platform1.ncd platform1_platform1.prf 
+Design file:     platform1_platform1.ncd
+Preference file: platform1_platform1.prf
+Device,speed:    LCMXO3LF-9400C,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "clk_in" 24.180000 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.145ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_i3  (from clk_in +)
+   Destination:    FF         Data in        platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_1/RAM0  (to clk_in +)
+                   FF                        platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_1/RAM0
+
+   Delay:               0.276ns  (48.2% logic, 51.8% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.276ns physical path delay platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_131 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_1.18 meets
+      0.131ns WAD_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.131ns) by 0.145ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_131 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_1.18:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R25C33D.CLK to     R25C33D.Q1 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_131 (from clk_in)
+ROUTE        18     0.143     R25C33D.Q1 to     R24C33C.D0 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_3
+ZERO_DEL    ---     0.000     R24C33C.D0 to  R24C33C.WADO3 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_1
+ROUTE         2     0.000  R24C33C.WADO3 to   R24C33A.WAD3 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_1/AD3_INT (to clk_in)
+                  --------
+                    0.276   (48.2% logic, 51.8% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_131:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     1.001        OSC.OSC to    R25C33D.CLK clk_in
+                  --------
+                    1.001   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_1.18:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     1.001        OSC.OSC to    R24C33A.WCK clk_in
+                  --------
+                    1.001   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.145ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_i3  (from clk_in +)
+   Destination:    FF         Data in        platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_1/RAM1  (to clk_in +)
+                   FF                        platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_1/RAM1
+
+   Delay:               0.276ns  (48.2% logic, 51.8% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.276ns physical path delay platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_131 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_1.17 meets
+      0.131ns WAD_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.131ns) by 0.145ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_131 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_1.17:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R25C33D.CLK to     R25C33D.Q1 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_131 (from clk_in)
+ROUTE        18     0.143     R25C33D.Q1 to     R24C33C.D0 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_3
+ZERO_DEL    ---     0.000     R24C33C.D0 to  R24C33C.WADO3 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_1
+ROUTE         2     0.000  R24C33C.WADO3 to   R24C33B.WAD3 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_1/AD3_INT (to clk_in)
+                  --------
+                    0.276   (48.2% logic, 51.8% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_131:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     1.001        OSC.OSC to    R25C33D.CLK clk_in
+                  --------
+                    1.001   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_1.17:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     1.001        OSC.OSC to    R24C33B.WCK clk_in
+                  --------
+                    1.001   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.147ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_i2  (from clk_in +)
+   Destination:    FF         Data in        platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3/RAM0  (to clk_in +)
+                   FF                        platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3/RAM0
+
+   Delay:               0.278ns  (47.8% logic, 52.2% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.278ns physical path delay platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_131 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3 meets
+      0.131ns WAD_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.131ns) by 0.147ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_131 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R25C33D.CLK to     R25C33D.Q0 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_131 (from clk_in)
+ROUTE        19     0.145     R25C33D.Q0 to     R25C34C.C0 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_2
+ZERO_DEL    ---     0.000     R25C34C.C0 to  R25C34C.WADO2 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3.22
+ROUTE         2     0.000  R25C34C.WADO2 to   R25C34A.WAD2 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3/AD2_INT (to clk_in)
+                  --------
+                    0.278   (47.8% logic, 52.2% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_131:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     1.001        OSC.OSC to    R25C33D.CLK clk_in
+                  --------
+                    1.001   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     1.001        OSC.OSC to    R25C34A.WCK clk_in
+                  --------
+                    1.001   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.147ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_i2  (from clk_in +)
+   Destination:    FF         Data in        platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3/RAM1  (to clk_in +)
+                   FF                        platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3/RAM1
+
+   Delay:               0.278ns  (47.8% logic, 52.2% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.278ns physical path delay platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_131 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3.21 meets
+      0.131ns WAD_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.131ns) by 0.147ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_131 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3.21:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R25C33D.CLK to     R25C33D.Q0 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_131 (from clk_in)
+ROUTE        19     0.145     R25C33D.Q0 to     R25C34C.C0 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_2
+ZERO_DEL    ---     0.000     R25C34C.C0 to  R25C34C.WADO2 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3.22
+ROUTE         2     0.000  R25C34C.WADO2 to   R25C34B.WAD2 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3/AD2_INT (to clk_in)
+                  --------
+                    0.278   (47.8% logic, 52.2% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_131:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     1.001        OSC.OSC to    R25C33D.CLK clk_in
+                  --------
+                    1.001   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3.21:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     1.001        OSC.OSC to    R25C34B.WCK clk_in
+                  --------
+                    1.001   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.151ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_i3  (from clk_in +)
+   Destination:    FF         Data in        platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3/RAM0  (to clk_in +)
+                   FF                        platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3/RAM0
+
+   Delay:               0.282ns  (47.2% logic, 52.8% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.282ns physical path delay platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_131 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3 meets
+      0.131ns WAD_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.131ns) by 0.151ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_131 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R25C33D.CLK to     R25C33D.Q1 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_131 (from clk_in)
+ROUTE        18     0.149     R25C33D.Q1 to     R25C34C.D0 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_3
+ZERO_DEL    ---     0.000     R25C34C.D0 to  R25C34C.WADO3 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3.22
+ROUTE         2     0.000  R25C34C.WADO3 to   R25C34A.WAD3 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3/AD3_INT (to clk_in)
+                  --------
+                    0.282   (47.2% logic, 52.8% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_131:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     1.001        OSC.OSC to    R25C33D.CLK clk_in
+                  --------
+                    1.001   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     1.001        OSC.OSC to    R25C34A.WCK clk_in
+                  --------
+                    1.001   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.151ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_i3  (from clk_in +)
+   Destination:    FF         Data in        platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3/RAM1  (to clk_in +)
+                   FF                        platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3/RAM1
+
+   Delay:               0.282ns  (47.2% logic, 52.8% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.282ns physical path delay platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_131 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3.21 meets
+      0.131ns WAD_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.131ns) by 0.151ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_131 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3.21:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R25C33D.CLK to     R25C33D.Q1 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_131 (from clk_in)
+ROUTE        18     0.149     R25C33D.Q1 to     R25C34C.D0 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_3
+ZERO_DEL    ---     0.000     R25C34C.D0 to  R25C34C.WADO3 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3.22
+ROUTE         2     0.000  R25C34C.WADO3 to   R25C34B.WAD3 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3/AD3_INT (to clk_in)
+                  --------
+                    0.282   (47.2% logic, 52.8% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_131:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     1.001        OSC.OSC to    R25C33D.CLK clk_in
+                  --------
+                    1.001   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3.21:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     1.001        OSC.OSC to    R25C34B.WCK clk_in
+                  --------
+                    1.001   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.156ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_i2  (from clk_in +)
+   Destination:    FF         Data in        platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_0/RAM0  (to clk_in +)
+
+   Delay:               0.287ns  (46.3% logic, 53.7% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.287ns physical path delay platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_131 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_0.16 meets
+      0.131ns WAD_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.131ns) by 0.156ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_131 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_0.16:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R25C33D.CLK to     R25C33D.Q0 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_131 (from clk_in)
+ROUTE        19     0.154     R25C33D.Q0 to     R25C33C.C0 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_2
+ZERO_DEL    ---     0.000     R25C33C.C0 to  R25C33C.WADO2 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_0
+ROUTE         1     0.000  R25C33C.WADO2 to   R25C33A.WAD2 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_0/AD2_INT (to clk_in)
+                  --------
+                    0.287   (46.3% logic, 53.7% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_131:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     1.001        OSC.OSC to    R25C33D.CLK clk_in
+                  --------
+                    1.001   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_0.16:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     1.001        OSC.OSC to    R25C33A.WCK clk_in
+                  --------
+                    1.001   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.242ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_i1  (from clk_in +)
+   Destination:    FF         Data in        platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3/RAM0  (to clk_in +)
+                   FF                        platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3/RAM0
+
+   Delay:               0.373ns  (35.7% logic, 64.3% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.373ns physical path delay platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_130 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3 meets
+      0.131ns WAD_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.131ns) by 0.242ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_130 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R25C32B.CLK to     R25C32B.Q1 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_130 (from clk_in)
+ROUTE        19     0.240     R25C32B.Q1 to     R25C34C.B0 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_1
+ZERO_DEL    ---     0.000     R25C34C.B0 to  R25C34C.WADO1 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3.22
+ROUTE         2     0.000  R25C34C.WADO1 to   R25C34A.WAD1 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3/AD1_INT (to clk_in)
+                  --------
+                    0.373   (35.7% logic, 64.3% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_130:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     1.001        OSC.OSC to    R25C32B.CLK clk_in
+                  --------
+                    1.001   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     1.001        OSC.OSC to    R25C34A.WCK clk_in
+                  --------
+                    1.001   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.242ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_i1  (from clk_in +)
+   Destination:    FF         Data in        platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_0/RAM0  (to clk_in +)
+
+   Delay:               0.373ns  (35.7% logic, 64.3% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.373ns physical path delay platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_130 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_0.16 meets
+      0.131ns WAD_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.131ns) by 0.242ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_130 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_0.16:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R25C32B.CLK to     R25C32B.Q1 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_130 (from clk_in)
+ROUTE        19     0.240     R25C32B.Q1 to     R25C33C.B0 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_1
+ZERO_DEL    ---     0.000     R25C33C.B0 to  R25C33C.WADO1 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_0
+ROUTE         1     0.000  R25C33C.WADO1 to   R25C33A.WAD1 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_0/AD1_INT (to clk_in)
+                  --------
+                    0.373   (35.7% logic, 64.3% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_130:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     1.001        OSC.OSC to    R25C32B.CLK clk_in
+                  --------
+                    1.001   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_0.16:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     1.001        OSC.OSC to    R25C33A.WCK clk_in
+                  --------
+                    1.001   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.242ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_i1  (from clk_in +)
+   Destination:    FF         Data in        platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3/RAM1  (to clk_in +)
+                   FF                        platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3/RAM1
+
+   Delay:               0.373ns  (35.7% logic, 64.3% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.373ns physical path delay platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_130 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3.21 meets
+      0.131ns WAD_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.131ns) by 0.242ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_130 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3.21:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R25C32B.CLK to     R25C32B.Q1 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_130 (from clk_in)
+ROUTE        19     0.240     R25C32B.Q1 to     R25C34C.B0 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_1
+ZERO_DEL    ---     0.000     R25C34C.B0 to  R25C34C.WADO1 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3.22
+ROUTE         2     0.000  R25C34C.WADO1 to   R25C34B.WAD1 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3/AD1_INT (to clk_in)
+                  --------
+                    0.373   (35.7% logic, 64.3% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_130:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     1.001        OSC.OSC to    R25C32B.CLK clk_in
+                  --------
+                    1.001   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbinarynonenoreg13416/mem_0_3.21:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       198     1.001        OSC.OSC to    R25C34B.WCK clk_in
+                  --------
+                    1.001   (0.0% logic, 100.0% route), 0 logic levels.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk_in" 24.180000 MHz ;  |     0.000 ns|     0.145 ns|   2  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: clk_in   Source: OSCH_inst.OSC   Loads: 198
+   Covered under: FREQUENCY NET "clk_in" 24.180000 MHz ;
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 88795 paths, 1 nets, and 3389 connections (99.91% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+

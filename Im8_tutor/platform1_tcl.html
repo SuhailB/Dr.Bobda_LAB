@@ -1,0 +1,156 @@
+<HTML>
+<HEAD><TITLE>Lattice TCL Log</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="pn180606192310"></A><B><U><big>pn180606192310</big></U></B>
+#Start recording tcl command: 6/6/2018 13:57:56
+#Project Location: C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor; Project name: platform1
+prj_project new -name "platform1" -impl "platform1" -dev LCMXO3LF-9400C-6BG484C -synthesis "lse"
+prj_project save
+prj_src add "C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/platform1_top.v"
+prj_strgy set_value -strategy Strategy1 bd_consistent_bus_name_conv=Lattice
+file copy -force -- "C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/untitled.lpf" "C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/source"
+prj_src add -exclude "C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/source/untitled.lpf"
+prj_src enable "C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/source/untitled.lpf"
+prj_run Export -impl platform1 -task Jedecgen
+prj_run Export -impl platform1 -task Jedecgen
+pgr_project save "C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/platform1.xcf"
+prj_src add -exclude "C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/platform1.xcf"
+prj_src enable "C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/platform1.xcf"
+pgr_program run
+pgr_program set -cable USB2
+pgr_program set -port FTUSB-0
+pgr_program run
+pgr_project save "C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/platform1.xcf"
+pgr_project close
+pgr_project open "C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/platform1.xcf"
+pgr_program run
+pgr_project close
+#Stop recording: 6/6/2018 19:23:10
+
+
+
+<A name="pn180607225755"></A><B><U><big>pn180607225755</big></U></B>
+#Start recording tcl command: 6/7/2018 22:44:56
+#Project Location: C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor; Project name: platform1
+C:/Users/Suhail/Desktop/Work/Lattice/Test
+Test
+#Start recording tcl command: 6/7/2018 22:57:55
+#Project Location: C:/Users/Suhail/Desktop/Work/Lattice/Test; Project name: Test
+prj_project open "C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1.ldf"
+prj_run Export -impl platform1
+pgr_project open "C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/platform1.xcf"
+pgr_program run
+pgr_project save "C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/platform1.xcf"
+prj_project close
+prj_project open "C:/Users/Suhail/Desktop/Work/Lattice/Test/Test.ldf"
+#Stop recording: 6/7/2018 22:57:55
+
+
+
+<A name="pn180609111319"></A><B><U><big>pn180609111319</big></U></B>
+#Start recording tcl command: 6/9/2018 11:10:38
+#Project Location: C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor; Project name: platform1
+prj_project open "C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1.ldf"
+prj_src enable "C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/source/untitled.lpf"
+prj_project save
+prj_project close
+#Stop recording: 6/9/2018 11:13:19
+
+
+
+<A name="pn180609120648"></A><B><U><big>pn180609120648</big></U></B>
+#Start recording tcl command: 6/9/2018 11:55:18
+#Project Location: C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor; Project name: platform1
+prj_project open "C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1.ldf"
+prj_run Map -impl platform1
+prj_run PAR -impl platform1
+prj_project close
+#Stop recording: 6/9/2018 12:06:48
+
+
+
+<A name="pn180609141753"></A><B><U><big>pn180609141753</big></U></B>
+#Start recording tcl command: 6/9/2018 14:17:52
+#Project Location: C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor; Project name: platform1
+prj_project open "C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1.ldf"
+#Stop recording: 6/9/2018 14:17:53
+
+
+
+<A name="pn180611012806"></A><B><U><big>pn180611012806</big></U></B>
+#Start recording tcl command: 6/11/2018 01:11:44
+#Project Location: C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor; Project name: platform1
+prj_project open "C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1.ldf"
+#Stop recording: 6/11/2018 01:28:06
+
+
+
+<A name="pn180611143632"></A><B><U><big>pn180611143632</big></U></B>
+#Start recording tcl command: 6/11/2018 14:33:25
+#Project Location: C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor; Project name: platform1
+prj_project open "C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1.ldf"
+pgr_project open "C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/platform1.xcf"
+pgr_program run
+prj_project close
+#Stop recording: 6/11/2018 14:36:32
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

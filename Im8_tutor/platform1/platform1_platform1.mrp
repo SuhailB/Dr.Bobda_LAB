@@ -1,0 +1,864 @@
+
+        Lattice Mapping Report File for Design Module 'platform1_top'
+
+
+Design Information
+------------------
+
+Command line:   map -a MachXO3LF -p LCMXO3LF-9400C -t CABGA484 -s 6 -oc
+     Commercial platform1_platform1.ngd -o platform1_platform1_map.ncd -pr
+     platform1_platform1.prf -mp platform1_platform1.mrp -lpf C:/Users/Suhail/De
+     sktop/Work/Lattice/Im8_tutor/platform1/platform1_platform1.lpf -lpf
+     C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1.lpf -c 0 -gui
+     -msgset C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO3LF-9400CCABGA484
+Target Performance:   6
+Mapper:  xo3c00f,  version:  Diamond (64-bit) 3.10.0.111.2
+Mapped on:  06/11/18  14:49:41
+
+Design Summary
+--------------
+
+   Number of registers:    255 out of 10552 (2%)
+      PFU registers:          255 out of  9400 (3%)
+      PIO registers:            0 out of  1152 (0%)
+   Number of SLICEs:       373 out of  4700 (8%)
+      SLICEs as Logic/ROM:    337 out of  4700 (7%)
+      SLICEs as RAM:           36 out of  3525 (1%)
+      SLICEs as Carry:         44 out of  4700 (1%)
+   Number of LUT4s:        738 out of  9400 (8%)
+      Number used as logic LUTs:        578
+      Number used as distributed RAM:    72
+      Number used as ripple logic:       88
+      Number used as shift registers:     0
+   Number of PIO sites used: 7 + 4(JTAG) out of 384 (3%)
+   Number of block RAMs:  6 out of 48 (13%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  Yes
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  1
+     Net clk_in: 198 loads, 198 rising, 0 falling (Driver: OSCH_inst )
+   Number of Clock Enables:  29
+
+                                    Page 1
+
+
+
+
+Design:  platform1_top                                 Date:  06/11/18  14:49:41
+
+Design Summary (cont)
+---------------------
+     Net platform1_u/clk_in_enable_16: 1 loads, 1 LSLICEs
+     Net counter_2: 1 loads, 1 LSLICEs
+     Net platform1_u/LM8interrupts_0__N_34: 1 loads, 1 LSLICEs
+     Net platform1_u/clk_in_enable_82: 7 loads, 7 LSLICEs
+     Net platform1_u/clk_in_enable_79: 3 loads, 3 LSLICEs
+     Net platform1_u/PIO_OUT_3__N_933: 2 loads, 2 LSLICEs
+     Net platform1_u/clk_in_enable_15: 4 loads, 4 LSLICEs
+     Net platform1_u/clk_in_enable_43: 5 loads, 5 LSLICEs
+     Net platform1_u/LM8interrupts_0__I_0/u_txmitt/clk_in_enable_74: 4 loads, 4
+     LSLICEs
+     Net platform1_u/LM8interrupts_0__I_0/u_txmitt/clk_in_enable_108: 2 loads, 2
+     LSLICEs
+     Net platform1_u/LM8interrupts_0__I_0/u_txmitt/clk_in_enable_33: 1 loads, 1
+     LSLICEs
+     Net platform1_u/LM8interrupts_0__I_0/u_txmitt/clk_in_enable_97: 9 loads, 9
+     LSLICEs
+     Net platform1_u/LM8interrupts_0__I_0/u_txmitt/clk_in_enable_29: 1 loads, 1
+     LSLICEs
+     Net platform1_u/LM8interrupts_0__I_0/u_rxcver/clk_in_enable_25: 1 loads, 1
+     LSLICEs
+     Net platform1_u/LM8interrupts_0__I_0/u_rxcver/clk_in_enable_99: 2 loads, 2
+     LSLICEs
+     Net platform1_u/LM8interrupts_0__I_0/u_rxcver/hunt_one_N_1251: 1 loads, 1
+     LSLICEs
+     Net platform1_u/LM8interrupts_0__I_0/u_rxcver/clk_in_enable_107: 4 loads, 4
+     LSLICEs
+     Net platform1_u/LM8interrupts_0__I_0/u_rxcver/clk_in_enable_75: 1 loads, 1
+     LSLICEs
+     Net platform1_u/clk_in_enable_36: 4 loads, 4 LSLICEs
+     Net platform1_u/clk_in_enable_51: 2 loads, 2 LSLICEs
+     Net platform1_u/clk_in_enable_57: 4 loads, 4 LSLICEs
+     Net platform1_u/clk_in_enable_64: 4 loads, 4 LSLICEs
+     Net platform1_u/clk_in_enable_72: 4 loads, 4 LSLICEs
+     Net platform1_u/LM8/prom_enable: 10 loads, 2 LSLICEs
+     Net platform1_u/LM8/page_ptr1_7__N_639: 8 loads, 8 LSLICEs
+     Net platform1_u/LM8/im_nxt_7__N_915: 5 loads, 5 LSLICEs
+     Net platform1_u/LM8/u1_isp8_core/data_cyc: 6 loads, 6 LSLICEs
+     Net platform1_u/LM8/u1_isp8_core/clk_in_enable_26: 1 loads, 1 LSLICEs
+     Net platform1_u/LM8/u1_isp8_core/addr_cyc: 7 loads, 7 LSLICEs
+   Number of LSRs:  12
+     Net reset_n_c: 2 loads, 2 LSLICEs
+     Net platform1_u/n6459: 1 loads, 1 LSLICEs
+     Net platform1_u/core_rst_n: 67 loads, 67 LSLICEs
+     Net platform1_u/uartUART_ACK_O: 1 loads, 1 LSLICEs
+     Net platform1_u/n2661: 3 loads, 3 LSLICEs
+     Net platform1_u/LM8interrupts_0__I_0/u_txmitt/n3166: 2 loads, 2 LSLICEs
+     Net platform1_u/LM8interrupts_0__I_0/u_rxcver/n1415: 6 loads, 6 LSLICEs
+     Net platform1_u/LM8interrupts_0__I_0/u_rxcver/hunt: 1 loads, 1 LSLICEs
+     Net platform1_u/LM8interrupts_0__I_0/rbr_rd: 1 loads, 1 LSLICEs
+     Net platform1_u/LM8interrupts_0__I_0/u_rxcver/n2425: 1 loads, 1 LSLICEs
+     Net platform1_u/GPIO_WE_I_N_949: 1 loads, 1 LSLICEs
+     Net platform1_u/LM8/n3815: 1 loads, 1 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net platform1_u/LM8/prom_ready: 73 loads
+     Net platform1_u/core_rst_n: 72 loads
+
+                                    Page 2
+
+
+
+
+Design:  platform1_top                                 Date:  06/11/18  14:49:41
+
+Design Summary (cont)
+---------------------
+     Net platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/addr10_ff:
+     42 loads
+     Net platform1_u/LM8interrupts_0__I_0/u_txmitt/counter_0: 35 loads
+     Net platform1_u/LM8interrupts_0__I_0/u_txmitt/n2065: 35 loads
+     Net platform1_u/LM8interrupts_0__I_0/u_rxcver/n6487: 34 loads
+     Net platform1_u/selected_1: 30 loads
+     Net platform1_u/LM8/n6511: 26 loads
+     Net platform1_u/LM8/n6512: 26 loads
+     Net platform1_u/LM8/instr_11: 25 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+   No errors or warnings present.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| uartSIN             | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| reset_n             | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDPIO_OUT[0]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDPIO_OUT[1]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDPIO_OUT[2]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDPIO_OUT[3]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| uartSOUT            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3
+     LFbinarynonenoreg13416/scuba_vhi_inst undriven or does not drive anything -
+     clipped.
+Block platform1_u/LM8/u1_isp8_core/i1 undriven or does not drive anything -
+     clipped.
+Block platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO3LFoff88/scuba_vhi
+     _inst undriven or does not drive anything - clipped.
+Block platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO3LFoff88/addsubd
+     undriven or does not drive anything - clipped.
+
+                                    Page 3
+
+
+
+
+Design:  platform1_top                                 Date:  06/11/18  14:49:41
+
+Removed logic (cont)
+--------------------
+Block platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3
+     LFbinarynonenoreg13416/mem_0_0/RAM1 undriven or does not drive anything -
+     clipped.
+Signal platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO3LFoff88/add_sub_
+     inv was merged into signal
+     platform1_u/LM8/u1_isp8_core/u1_lm8_alu/add_sel_N_766
+Signal platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO
+     3LFbinarynonenoreg13416/dec0_wre3 was merged into signal
+     platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/sp_we
+Signal platform1_u/LM8/core_rst_n_N_593 was merged into signal
+     platform1_u/core_rst_n
+Signal platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/wren_inv_g
+     was merged into signal platform1_u/LM8/prom_enable
+Signal platform1_u/LM8interrupts_0__I_0/u_txmitt/n6592 was merged into signal
+     platform1_u/LM8interrupts_0__I_0/u_txmitt/n17
+Signal platform1_u/LM8interrupts_0__I_0/u_txmitt/n6589 was merged into signal
+     platform1_u/LM8interrupts_0__I_0/u_txmitt/n16
+Signal platform1_u/LM8interrupts_0__I_0/u_txmitt/n6586 was merged into signal
+     platform1_u/LM8interrupts_0__I_0/u_txmitt/n15
+Signal platform1_u/LM8interrupts_0__I_0/u_txmitt/n6583 was merged into signal
+     platform1_u/LM8interrupts_0__I_0/u_txmitt/n14
+Signal platform1_u/LM8interrupts_0__I_0/u_txmitt/n6580 was merged into signal
+     platform1_u/LM8interrupts_0__I_0/u_txmitt/n19
+Signal platform1_u/LM8interrupts_0__I_0/u_txmitt/n6561 was merged into signal
+     platform1_u/LM8interrupts_0__I_0/u_txmitt/n18
+Signal platform1_u/LM8interrupts_0__I_0/u_txmitt/n6558 was merged into signal
+     platform1_u/LM8interrupts_0__I_0/u_txmitt/n23
+Signal platform1_u/LM8interrupts_0__I_0/u_txmitt/n6555 was merged into signal
+     platform1_u/LM8interrupts_0__I_0/u_txmitt/n22
+Signal platform1_u/LM8interrupts_0__I_0/u_txmitt/n6552 was merged into signal
+     platform1_u/LM8interrupts_0__I_0/u_txmitt/n21
+Signal platform1_u/LM8interrupts_0__I_0/u_txmitt/n6549 was merged into signal
+     platform1_u/LM8interrupts_0__I_0/u_txmitt/n20
+Signal platform1_u/reset_n_N_41 was merged into signal reset_n_c
+Signal platform1_u/counter_2__N_142 was merged into signal counter_2
+Signal GND_net undriven or does not drive anything - clipped.
+Signal VCC_net undriven or does not drive anything - clipped.
+Signal platform1_u/LM8/GND_net undriven or does not drive anything - clipped.
+Signal platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/wren_inv
+     undriven or does not drive anything - clipped.
+Signal
+     platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO3LFoff88/scuba_vlo
+     undriven or does not drive anything - clipped.
+Signal platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/GND_net undriven or does
+     not drive anything - clipped.
+Signal platform1_u/LM8/u1_isp8_core/pmi_distributed_dpramMachXO3LFbinarynonenore
+     g8532_62/scuba_vhi undriven or does not drive anything - clipped.
+Signal platform1_u/LM8/u1_isp8_core/pmi_distributed_dpramMachXO3LFbinarynonenore
+     g8532/scuba_vhi undriven or does not drive anything - clipped.
+Signal platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/scuba_vlo
+     undriven or does not drive anything - clipped.
+Signal platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/scuba_vhi
+     undriven or does not drive anything - clipped.
+Signal
+     platform1_u/LM8/scratchpad_init.memspeedasyncdisablenoreg8112048/scuba_vlo
+     undriven or does not drive anything - clipped.
+
+                                    Page 4
+
+
+
+
+Design:  platform1_top                                 Date:  06/11/18  14:49:41
+
+Removed logic (cont)
+--------------------
+Signal
+     platform1_u/LM8/scratchpad_init.memspeedasyncdisablenoreg8112048/scuba_vhi
+     undriven or does not drive anything - clipped.
+Signal platform1_u/LM8interrupts_0__I_0/u_rxcver/GND_net undriven or does not
+     drive anything - clipped.
+Signal platform1_u/LM8interrupts_0__I_0/u_txmitt/GND_net undriven or does not
+     drive anything - clipped.
+Signal platform1_u/LM8/u1_isp8_core/GND_net undriven or does not drive anything
+     - clipped.
+Signal
+     platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO3LFoff88/scuba_vhi
+     undriven or does not drive anything - clipped.
+Signal platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO3LFoff88/addsub_0
+     /S0 undriven or does not drive anything - clipped.
+Signal platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO3LFoff88/precin_i
+     nst30/S1 undriven or does not drive anything - clipped.
+Signal platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO3LFoff88/precin_i
+     nst30/S0 undriven or does not drive anything - clipped.
+Signal platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO3LFoff88/addsubd/
+     S1 undriven or does not drive anything - clipped.
+Signal platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO3LFoff88/co4d
+     undriven or does not drive anything - clipped.
+Signal platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO3LFoff88/addsubd/
+     COUT undriven or does not drive anything - clipped.
+Signal platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO3LFoff88/co4
+     undriven or does not drive anything - clipped.
+Signal platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/add_521_11/CO undriven or
+     does not drive anything - clipped.
+Signal platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO
+     3LFbinarynonenoreg13416/mem_0_0/DO2 undriven or does not drive anything -
+     clipped.
+Signal platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO
+     3LFbinarynonenoreg13416/mem_0_0/DO3 undriven or does not drive anything -
+     clipped.
+Signal platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO
+     3LFbinarynonenoreg13416/mem_0_0/DO1 undriven or does not drive anything -
+     clipped.
+Signal platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/add_521_1/S0 undriven or
+     does not drive anything - clipped.
+Signal platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/add_521_1/CI undriven or
+     does not drive anything - clipped.
+Signal platform1_u/LM8interrupts_0__I_0/u_rxcver/add_541_1/S0 undriven or does
+     not drive anything - clipped.
+Signal platform1_u/LM8interrupts_0__I_0/u_rxcver/add_541_1/CI undriven or does
+     not drive anything - clipped.
+Signal platform1_u/LM8interrupts_0__I_0/u_rxcver/counter_15__I_0_15/S1 undriven
+     or does not drive anything - clipped.
+Signal platform1_u/LM8interrupts_0__I_0/u_rxcver/counter_15__I_0_15/S0 undriven
+     or does not drive anything - clipped.
+Signal platform1_u/LM8interrupts_0__I_0/u_rxcver/counter_15__I_0_0/S1 undriven
+     or does not drive anything - clipped.
+Signal platform1_u/LM8interrupts_0__I_0/u_rxcver/counter_15__I_0_0/S0 undriven
+     or does not drive anything - clipped.
+Signal platform1_u/LM8interrupts_0__I_0/u_rxcver/counter_15__I_0_0/CI undriven
+     or does not drive anything - clipped.
+Signal platform1_u/LM8interrupts_0__I_0/u_rxcver/counter_15__I_0_11/S1 undriven
+
+                                    Page 5
+
+
+
+
+Design:  platform1_top                                 Date:  06/11/18  14:49:41
+
+Removed logic (cont)
+--------------------
+     or does not drive anything - clipped.
+Signal platform1_u/LM8interrupts_0__I_0/u_rxcver/counter_15__I_0_11/S0 undriven
+     or does not drive anything - clipped.
+Signal platform1_u/LM8interrupts_0__I_0/u_rxcver/counter_15__I_0_16/S0 undriven
+     or does not drive anything - clipped.
+Signal platform1_u/LM8interrupts_0__I_0/u_rxcver/counter_15__I_0_16/CO undriven
+     or does not drive anything - clipped.
+Signal platform1_u/LM8interrupts_0__I_0/u_rxcver/counter_15__I_0_13/S1 undriven
+     or does not drive anything - clipped.
+Signal platform1_u/LM8interrupts_0__I_0/u_rxcver/counter_15__I_0_13/S0 undriven
+     or does not drive anything - clipped.
+Signal platform1_u/LM8interrupts_0__I_0/u_rxcver/add_533_1/S1 undriven or does
+     not drive anything - clipped.
+Signal platform1_u/LM8interrupts_0__I_0/u_rxcver/add_533_1/S0 undriven or does
+     not drive anything - clipped.
+Signal platform1_u/LM8interrupts_0__I_0/u_rxcver/add_533_1/CI undriven or does
+     not drive anything - clipped.
+Signal platform1_u/LM8interrupts_0__I_0/u_rxcver/add_533_17/CO undriven or does
+     not drive anything - clipped.
+Signal platform1_u/LM8interrupts_0__I_0/u_rxcver/add_541_17/S1 undriven or does
+     not drive anything - clipped.
+Signal platform1_u/LM8interrupts_0__I_0/u_rxcver/add_541_17/CO undriven or does
+     not drive anything - clipped.
+Signal platform1_u/LM8interrupts_0__I_0/u_txmitt/sub_10_add_2_1/S0 undriven or
+     does not drive anything - clipped.
+Signal platform1_u/LM8interrupts_0__I_0/u_txmitt/sub_10_add_2_1/CI undriven or
+     does not drive anything - clipped.
+Signal platform1_u/LM8interrupts_0__I_0/u_txmitt/sub_10_add_2_17/S1 undriven or
+     does not drive anything - clipped.
+Signal platform1_u/LM8interrupts_0__I_0/u_txmitt/sub_10_add_2_17/CO undriven or
+     does not drive anything - clipped.
+Block platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO3LFoff88/INV_0 was
+     optimized away.
+Block platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3
+     LFbinarynonenoreg13416/LUT4_0 was optimized away.
+Block platform1_u/LM8/u1_isp8_core/u1_lm8_interrupt/core_rst_n_I_0_1_lut was
+     optimized away.
+Block platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/AND2_t0 was
+     optimized away.
+Block platform1_u/LM8interrupts_0__I_0/u_txmitt/i1666_then_1_lut was optimized
+     away.
+Block platform1_u/LM8interrupts_0__I_0/u_txmitt/i1664_then_1_lut was optimized
+     away.
+Block platform1_u/LM8interrupts_0__I_0/u_txmitt/i1662_then_1_lut was optimized
+     away.
+Block platform1_u/LM8interrupts_0__I_0/u_txmitt/i1660_then_1_lut was optimized
+     away.
+Block platform1_u/LM8interrupts_0__I_0/u_txmitt/i1670_then_1_lut was optimized
+     away.
+Block platform1_u/LM8interrupts_0__I_0/u_txmitt/i1668_then_1_lut was optimized
+     away.
+Block platform1_u/LM8interrupts_0__I_0/u_txmitt/i1678_then_1_lut was optimized
+     away.
+Block platform1_u/LM8interrupts_0__I_0/u_txmitt/i1676_then_1_lut was optimized
+     away.
+Block platform1_u/LM8interrupts_0__I_0/u_txmitt/i1674_then_1_lut was optimized
+
+                                    Page 6
+
+
+
+
+Design:  platform1_top                                 Date:  06/11/18  14:49:41
+
+Removed logic (cont)
+--------------------
+     away.
+Block platform1_u/LM8interrupts_0__I_0/u_txmitt/i1672_then_1_lut was optimized
+     away.
+Block platform1_u/reset_n_I_0_1_lut was optimized away.
+Block platform1_u/counter_2__I_0_1_lut was optimized away.
+Block i1 was optimized away.
+Block i5 was optimized away.
+Block platform1_u/LM8/i1 was optimized away.
+Block platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/INV_0 was
+     optimized away.
+Block platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO3LFoff88/scuba_vlo
+     _inst was optimized away.
+Block platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/i1 was optimized away.
+Block platform1_u/LM8/u1_isp8_core/pmi_distributed_dpramMachXO3LFbinarynonenoreg
+     8532_62/scuba_vhi_inst was optimized away.
+Block platform1_u/LM8/u1_isp8_core/pmi_distributed_dpramMachXO3LFbinarynonenoreg
+     8532/scuba_vhi_inst was optimized away.
+Block platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/scuba_vlo_inst
+     was optimized away.
+Block platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/scuba_vhi_inst
+     was optimized away.
+Block platform1_u/LM8/scratchpad_init.memspeedasyncdisablenoreg8112048/scuba_vlo
+     _inst was optimized away.
+Block platform1_u/LM8/scratchpad_init.memspeedasyncdisablenoreg8112048/scuba_vhi
+     _inst was optimized away.
+Block platform1_u/LM8interrupts_0__I_0/u_rxcver/i1 was optimized away.
+Block platform1_u/LM8interrupts_0__I_0/u_txmitt/i1 was optimized away.
+
+Memory Usage
+------------
+
+    
+         
+    INFO: Design contains EBR with GSR enabled. The GSR is only applicable for
+         output registers except FIFO. 
+    /platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048:
+    EBRs: 4
+    RAM SLICEs: 0
+    Logic SLICEs: 1
+    PFU Registers: 0
+    -Contains EBR pmi_ram_dqMnhprom_initsadn18112048f62b550_1_1_0:  TYPE= DP8KC,
+         Width_A= 9,  Depth_A= 1024,  REGMODE_A= NOREG,  REGMODE_B= NOREG,
+         RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,
+         WRITEMODE_B= NORMAL,  GSR= ENABLED,  MEM_INIT_FILE= prom_init.mem,
+         MEM_LPC_FILE=
+         pmi_ram_dqMnhprom_initsadn18112048f62b550__PMIS__2048__18__18H
+    -Contains EBR pmi_ram_dqMnhprom_initsadn18112048f62b550_0_0_3:  TYPE= DP8KC,
+         Width_A= 9,  Depth_A= 1024,  REGMODE_A= NOREG,  REGMODE_B= NOREG,
+         RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,
+         WRITEMODE_B= NORMAL,  GSR= ENABLED,  MEM_INIT_FILE= prom_init.mem,
+         MEM_LPC_FILE=
+         pmi_ram_dqMnhprom_initsadn18112048f62b550__PMIS__2048__18__18H
+    -Contains EBR pmi_ram_dqMnhprom_initsadn18112048f62b550_0_1_2:  TYPE= DP8KC,
+         Width_A= 9,  Depth_A= 1024,  REGMODE_A= NOREG,  REGMODE_B= NOREG,
+         RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,
+         WRITEMODE_B= NORMAL,  GSR= ENABLED,  MEM_INIT_FILE= prom_init.mem,
+
+                                    Page 7
+
+
+
+
+Design:  platform1_top                                 Date:  06/11/18  14:49:41
+
+Memory Usage (cont)
+-------------------
+         MEM_LPC_FILE=
+         pmi_ram_dqMnhprom_initsadn18112048f62b550__PMIS__2048__18__18H
+    -Contains EBR pmi_ram_dqMnhprom_initsadn18112048f62b550_1_0_1:  TYPE= DP8KC,
+         Width_A= 9,  Depth_A= 1024,  REGMODE_A= NOREG,  REGMODE_B= NOREG,
+         RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,
+         WRITEMODE_B= NORMAL,  GSR= ENABLED,  MEM_INIT_FILE= prom_init.mem,
+         MEM_LPC_FILE=
+         pmi_ram_dqMnhprom_initsadn18112048f62b550__PMIS__2048__18__18H
+/platform1_u/LM8/scratchpad_init.memspeedasyncdisablenoreg8112048:
+    EBRs: 2
+    RAM SLICEs: 0
+    Logic SLICEs: 0
+    PFU Registers: 0
+    -Contains EBR pmi_ram_dqMnhscratchpad_initsadn8112048fc1a05a_0_1_0:  TYPE=
+         DP8KC,  Width_A= 4,  Depth_A= 2048,  REGMODE_A= NOREG,  REGMODE_B=
+         NOREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A=
+         NORMAL,  WRITEMODE_B= NORMAL,  GSR= ENABLED,  MEM_INIT_FILE=
+         scratchpad_init.mem,  MEM_LPC_FILE=
+         pmi_ram_dqMnhscratchpad_initsadn8112048fc1a05a__PMIS__2048__8__8H
+    -Contains EBR pmi_ram_dqMnhscratchpad_initsadn8112048fc1a05a_0_0_1:  TYPE=
+         DP8KC,  Width_A= 4,  Depth_A= 2048,  REGMODE_A= NOREG,  REGMODE_B=
+         NOREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A=
+         NORMAL,  WRITEMODE_B= NORMAL,  GSR= ENABLED,  MEM_INIT_FILE=
+         scratchpad_init.mem,  MEM_LPC_FILE=
+         pmi_ram_dqMnhscratchpad_initsadn8112048fc1a05a__PMIS__2048__8__8H
+/platform1_u/LM8/u1_isp8_core/pmi_distributed_dpramMachXO3LFbinarynonenoreg8532:
+     
+    EBRs: 0
+    RAM SLICEs: 12
+    Logic SLICEs: 0
+    PFU Registers: 0
+/platform1_u/LM8/u1_isp8_core/pmi_distributed_dpramMachXO3LFbinarynonenoreg8532_
+     62:
+    EBRs: 0
+    RAM SLICEs: 12
+    Logic SLICEs: 1
+    PFU Registers: 0
+/platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbin
+     arynonenoreg13416:
+    EBRs: 0
+    RAM SLICEs: 11
+    Logic SLICEs: 0
+    PFU Registers: 1
+/platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO3LFbin
+     arynonenoreg13416/mem_0_0/RAMW:
+    EBRs: 0
+    RAM SLICEs: 1
+    Logic SLICEs: 0
+    PFU Registers: 0
+
+     
+
+OSC Summary
+-----------
+
+OSC 1:                                     Pin/Node Value
+
+                                    Page 8
+
+
+
+
+Design:  platform1_top                                 Date:  06/11/18  14:49:41
+
+OSC Summary (cont)
+------------------
+  OSC Instance Name:                                OSCH_inst
+  OSC Type:                                         OSCH
+  STDBY Input:                                      NONE
+  OSC Output:                              NODE     clk_in
+  OSC Nominal Frequency (MHz):                      24.18
+
+ASIC Components
+---------------
+
+Instance Name: OSCH_inst
+         Type: OSCH
+Instance Name: platform1_u/LM8/scratchpad_init.memspeedasyncdisablenoreg8112048/
+     pmi_ram_dqMnhscratchpad_initsadn8112048fc1a05a_0_1_0
+         Type: DP8KC
+Instance Name: platform1_u/LM8/scratchpad_init.memspeedasyncdisablenoreg8112048/
+     pmi_ram_dqMnhscratchpad_initsadn8112048fc1a05a_0_0_1
+         Type: DP8KC
+Instance Name: platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_r
+     am_dqMnhprom_initsadn18112048f62b550_1_1_0
+         Type: DP8KC
+Instance Name: platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_r
+     am_dqMnhprom_initsadn18112048f62b550_0_0_3
+         Type: DP8KC
+Instance Name: platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_r
+     am_dqMnhprom_initsadn18112048f62b550_0_1_2
+         Type: DP8KC
+Instance Name: platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_r
+     am_dqMnhprom_initsadn18112048f62b550_1_0_1
+         Type: DP8KC
+
+GSR Usage
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is 'counter_2'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+     Components with disabled GSR Property
+-------------------------------------
+
+     These components have the GSR property set to DISABLED. The components will
+     not respond to the reset signal 'counter_2' via the GSR component.
+
+     Type and number of components of the type: 
+   Register = 98 
+
+     Type and instance name of component: 
+   Register : platform1_u/counter_693__i0
+   Register : platform1_u/counter_693__i2
+
+                                    Page 9
+
+
+
+
+Design:  platform1_top                                 Date:  06/11/18  14:49:41
+
+GSR Usage (cont)
+----------------
+   Register : platform1_u/counter_693__i1
+   Register : platform1_u/LM8/save_data__i5
+   Register : platform1_u/LM8/save_data__i4
+   Register : platform1_u/LM8/save_data__i3
+   Register : platform1_u/LM8/save_data__i2
+   Register : platform1_u/LM8/save_data__i1
+   Register : platform1_u/LM8/save_data__i0
+   Register : platform1_u/LM8/ext_wb_state_61
+   Register : platform1_u/LM8/genblk2.D_ACK_I_d_60
+   Register : platform1_u/LM8/save_data__i7
+   Register : platform1_u/LM8/save_data__i6
+   Register : platform1_u/LM8/genblk1.first_fetch_59
+   Register : platform1_u/LM8/u1_isp8_core/page_ptr1_i0_i0
+   Register : platform1_u/LM8/u1_isp8_core/page_ptr1_i0_i7
+   Register : platform1_u/LM8/u1_isp8_core/page_ptr1_i0_i6
+   Register : platform1_u/LM8/u1_isp8_core/page_ptr1_i0_i5
+   Register : platform1_u/LM8/u1_isp8_core/page_ptr1_i0_i4
+   Register : platform1_u/LM8/u1_isp8_core/page_ptr1_i0_i3
+   Register : platform1_u/LM8/u1_isp8_core/page_ptr1_i0_i2
+   Register : platform1_u/LM8/u1_isp8_core/page_ptr1_i0_i1
+   Register : platform1_u/LM8/u1_isp8_core/din_rd1_i0
+   Register : platform1_u/LM8/u1_isp8_core/wren_alu_rd_55
+   Register : platform1_u/LM8/u1_isp8_core/wren_il_rd_56
+   Register : platform1_u/LM8/u1_isp8_core/din_rd1_i1
+   Register : platform1_u/LM8/u1_isp8_core/din_rd1_i2
+   Register : platform1_u/LM8/u1_isp8_core/din_rd1_i3
+   Register : platform1_u/LM8/u1_isp8_core/din_rd1_i4
+   Register : platform1_u/LM8/u1_isp8_core/din_rd1_i5
+   Register : platform1_u/LM8/u1_isp8_core/din_rd1_i6
+   Register : platform1_u/LM8/u1_isp8_core/din_rd1_i7
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_interrupt/ie_30
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_interrupt/im_i0_i0
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_interrupt/ip_i0
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_interrupt/im_i0_i1
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_interrupt/im_i0_i2
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_interrupt/im_i0_i3
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_interrupt/im_i0_i4
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_interrupt/im_i0_i5
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_interrupt/im_i0_i6
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_interrupt/im_i0_i7
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/zero_flag_157
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/carry_flag_158
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pc_i0_i0
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/addr_cyc_152
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/br_enb_159
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/jump_address_i0_i0
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/ext_addr_cyc_153
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/data_cyc_154
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/rst_exception_150
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_i0
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/ret_reg_160
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/intr_ack_162
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/rst_n_reg_149
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pc_i0_i1
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pc_i0_i2
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pc_i0_i3
+
+                                   Page 10
+
+
+
+
+Design:  platform1_top                                 Date:  06/11/18  14:49:41
+
+GSR Usage (cont)
+----------------
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pc_i0_i4
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pc_i0_i5
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pc_i0_i6
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pc_i0_i7
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pc_i0_i8
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pc_i0_i9
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pc_i0_i10
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/jump_address_i0_i1
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/jump_address_i0_i2
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/jump_address_i0_i3
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/jump_address_i0_i4
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/jump_address_i0_i5
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/jump_address_i0_i6
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/jump_address_i0_i7
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/jump_address_i0_i8
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/jump_address_i0_i9
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/jump_address_i0_i10
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_i1
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_i2
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_i3
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_dout_i0
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_addr_i1
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_io_wr_30
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_io_rd_31
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_mem_wr_32
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_mem_rd_33
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_dout_i1
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_dout_i2
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_dout_i3
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_dout_i4
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_dout_i5
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_dout_i6
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_dout_i7
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_addr_i2
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_addr_i3
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_addr_i4
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_addr_i5
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_addr_i6
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_addr_i7
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_addr_i8
+
+     Components with synchronous local reset also reset by asynchronous GSR
+----------------------------------------------------------------------
+
+     These components have the GSR property set to ENABLED and the local reset
+     is synchronous. The components will respond to the synchronous local reset
+     and to the unrelated asynchronous reset signal 'counter_2' via the GSR
+     component.
+
+     Type and number of components of the type: 
+   Register = 25 
+
+     Type and instance name of component: 
+   Register : platform1_u/LM8interrupts_0__I_0/u_txmitt/tx_cnt_695__i1
+   Register : platform1_u/LM8interrupts_0__I_0/u_txmitt/tx_cnt_695__i2
+   Register : platform1_u/LM8interrupts_0__I_0/u_txmitt/tx_cnt_695__i0
+
+                                   Page 11
+
+
+
+
+Design:  platform1_top                                 Date:  06/11/18  14:49:41
+
+GSR Usage (cont)
+----------------
+   Register :
+        platform1_u/LM8interrupts_0__I_0/u_rxcver/databit_recved_num_694__i0
+   Register : platform1_u/LM8interrupts_0__I_0/u_rxcver/rbr_datardy_150
+   Register : platform1_u/LM8interrupts_0__I_0/u_rxcver/hunt_one_149
+   Register : platform1_u/LM8interrupts_0__I_0/u_rxcver/rsr__i0
+   Register : platform1_u/LM8interrupts_0__I_0/u_rxcver/break_int_int_169
+   Register : platform1_u/LM8interrupts_0__I_0/u_rxcver/frame_err_int_168
+   Register : platform1_u/LM8interrupts_0__I_0/u_rxcver/parity_err_int_167
+   Register : platform1_u/LM8interrupts_0__I_0/u_rxcver/overrun_err_int_166
+   Register : platform1_u/LM8interrupts_0__I_0/u_rxcver/rbr_i0_i6
+   Register :
+        platform1_u/LM8interrupts_0__I_0/u_rxcver/databit_recved_num_694__i1
+   Register :
+        platform1_u/LM8interrupts_0__I_0/u_rxcver/databit_recved_num_694__i2
+   Register :
+        platform1_u/LM8interrupts_0__I_0/u_rxcver/databit_recved_num_694__i3
+   Register : platform1_u/LM8interrupts_0__I_0/u_rxcver/rsr__i1
+   Register : platform1_u/LM8interrupts_0__I_0/u_rxcver/rsr__i2
+   Register : platform1_u/LM8interrupts_0__I_0/u_rxcver/rsr__i3
+   Register : platform1_u/LM8interrupts_0__I_0/u_rxcver/rsr__i4
+   Register : platform1_u/LM8interrupts_0__I_0/u_rxcver/rsr__i5
+   Register : platform1_u/LM8interrupts_0__I_0/u_rxcver/rsr__i6
+   Register : platform1_u/LM8interrupts_0__I_0/u_rxcver/rsr__i7
+   Register : platform1_u/LM8interrupts_0__I_0/u_intface/ack_o_129
+   Register : platform1_u/LM8interrupts_0__I_0/u_intface/thr_wr_122
+   Register : platform1_u/LM8interrupts_0__I_0/u_intface/rbr_rd_nonfifo_123
+
+     EBR components with enabled GSR
+-------------------------------
+
+     These EBR components have the GSR property set to ENABLED. The components
+     will respond to the asynchronous reset signal 'counter_2' via the GSR
+     component.
+
+     Type and number of components of the type: 
+   DP8KC = 6
+
+     Type and instance name of component: 
+   DP8KC : platform1_u/LM8/scratchpad_init.memspeedasyncdisablenoreg8112048/pmi_
+        ram_dqMnhscratchpad_initsadn8112048fc1a05a_0_1_0
+   DP8KC : platform1_u/LM8/scratchpad_init.memspeedasyncdisablenoreg8112048/pmi_
+        ram_dqMnhscratchpad_initsadn8112048fc1a05a_0_0_1
+   DP8KC : platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_d
+        qMnhprom_initsadn18112048f62b550_1_1_0
+   DP8KC : platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_d
+        qMnhprom_initsadn18112048f62b550_0_0_3
+   DP8KC : platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_d
+        qMnhprom_initsadn18112048f62b550_0_1_2
+   DP8KC : platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_d
+        qMnhprom_initsadn18112048f62b550_1_0_1
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 1 secs  
+   Total REAL Time: 0 secs  
+
+                                   Page 12
+
+
+
+
+Design:  platform1_top                                 Date:  06/11/18  14:49:41
+
+Run Time and Memory Usage (cont)
+--------------------------------
+   Peak Memory Usage: 70 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   Page 13
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     reserved.

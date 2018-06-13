@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="0" build_time="0">
+            <Task name="IBIS" build_result="2" update_result="0" update_time="1528746605"/>
+            <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
+            <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1528746608"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1528746612"/>
+            <Task name="Jedec4Xo3l" build_result="0" update_result="3" update_time="0"/>
+            <Task name="Bitgen4Xo3l" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="Map" build_result="2" build_time="1528746583">
+            <Task name="Map" build_result="2" update_result="0" update_time="1528746583"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1528746584"/>
+            <Task name="MapVerilogSimFile" build_result="0" update_result="2" update_time="0"/>
+            <Task name="MapVHDLSimFile" build_result="0" update_result="2" update_time="0"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="2" build_time="1528746601">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1528746601"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1528746602"/>
+            <Task name="IOTiming" build_result="2" update_result="0" update_time="1528746604"/>
+            <Task name="PowerCal" build_result="0" update_result="2" update_time="1528330073"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1528746435">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1528746435"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1528746435"/>
+        </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0">
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1528746028"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="0"/>
+            <Task name="SSO" build_result="0" update_result="2" update_time="0"/>
+            <Task name="PIODRC" build_result="0" update_result="2" update_time="0"/>
+            <Task name="DEC" build_result="0" update_result="2" update_time="0"/>
+        </Milestone>
+        <Report name=".vdbs/platform1_platform1_map.vdb" last_build_time="1528746583" last_build_size="291389"/>
+        <Report name="IBIS/platform1_platform1.ibs" last_build_time="1528746605" last_build_size="65216"/>
+        <Report name="platform1_platform1.bgn" last_build_time="1528746612" last_build_size="4435"/>
+        <Report name="platform1_platform1.bit" last_build_time="1528746608" last_build_size="47489"/>
+        <Report name="platform1_platform1.ior" last_build_time="1528746604" last_build_size="1627"/>
+        <Report name="platform1_platform1.jed" last_build_time="1528746612" last_build_size="2097014"/>
+        <Report name="platform1_platform1.lsedata" last_build_time="1528746425" last_build_size="1281237"/>
+        <Report name="platform1_platform1.ncd" last_build_time="1528746601" last_build_size="872415"/>
+        <Report name="platform1_platform1.ngd" last_build_time="1528746435" last_build_size="609065"/>
+        <Report name="platform1_platform1.pwrp" last_build_time="0" last_build_size="0"/>
+        <Report name="platform1_platform1.tw1" last_build_time="1528746584" last_build_size="10840"/>
+        <Report name="platform1_platform1.twr" last_build_time="1528746602" last_build_size="79017"/>
+        <Report name="platform1_platform1_map.ncd" last_build_time="1528746582" last_build_size="599791"/>
+    </Strategy>
+</BuildStatus>

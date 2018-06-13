@@ -1,0 +1,301 @@
+<HTML>
+<HEAD><TITLE>Lattice Map TRACE Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Map TRACE Report</big></U></B>
+
+Loading design for application trce from file platform1_platform1_map.ncd.
+Design name: platform1_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO3LF-9400C
+Package:     CABGA484
+Performance: 6
+Loading device for application trce from file 'xo3c9400.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.6.
+Performance Hardware Data Status:   Final          Version 37.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+<A name="Map_Twr_setup"></A><B><U><big>Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.0.111.2</big></U></B>
+Mon Jun 11 14:49:44 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_set_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o platform1_platform1.tw1 -gui -msgset C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/promote.xml platform1_platform1_map.ncd platform1_platform1.prf 
+Design file:     platform1_platform1_map.ncd
+Preference file: platform1_platform1.prf
+Device,speed:    LCMXO3LF-9400C,6
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+<A name="mtw1_set_ps"></A><B><U><big>Preference Summary</big></U></B>
+
+<LI><A href='#map_twr_pref_0_0' Target='right'>FREQUENCY NET "clk_in" 24.180000 MHz (0 errors)</A></LI>            4096 items scored, 0 timing errors detected.
+Report:   48.553MHz is the maximum frequency for this preference.
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+<A name="map_twr_pref_0_0"></A>Preference: FREQUENCY NET "clk_in" 24.180000 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 20.760ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         DP8KC      Port           platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_1_1_0(ASIC)  (from clk_in +)
+   Destination:    FF         Data in        platform1_u/LM8interrupts_0__I_0/u_intface/cs_state_FSM_i3  (to clk_in +)
+
+   Delay:              20.463ns  (45.7% logic, 54.3% route), 14 logic levels.
+
+ Constraint Details:
+
+     20.463ns physical path delay platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_1_1_0 to platform1_u/LM8interrupts_0__I_0/SLICE_214 meets
+     41.356ns delay constraint less
+      0.133ns DIN_SET requirement (totaling 41.223ns) by 20.760ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_1_1_0 to platform1_u/LM8interrupts_0__I_0/SLICE_214:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+C2Q_DEL     ---     4.057 *50_1_1_0.CLKA to *50_1_1_0.DOA7 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f62b550_1_1_0 (from clk_in)
+ROUTE         2   e 0.896 *50_1_1_0.DOA7 to */SLICE_261.B0 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/mdout0_1_16
+CTOF_DEL    ---     0.408 */SLICE_261.B0 to */SLICE_261.F0 platform1_u/LM8/SLICE_261
+ROUTE        11   e 0.896 */SLICE_261.F0 to */SLICE_134.A1 platform1_u/LM8/genblk1.instr_mem_out_16
+CTOF_DEL    ---     0.408 */SLICE_134.A1 to */SLICE_134.F1 platform1_u/LM8/SLICE_134
+ROUTE         8   e 0.896 */SLICE_134.F1 to *8/SLICE_90.D1 platform1_u/LM8/n6501
+CTOF_DEL    ---     0.408 *8/SLICE_90.D1 to *8/SLICE_90.F1 platform1_u/LM8/SLICE_90
+ROUTE         4   e 0.896 *8/SLICE_90.F1 to */SLICE_267.B1 platform1_u/LM8/n6482
+CTOF_DEL    ---     0.408 */SLICE_267.B1 to */SLICE_267.F1 platform1_u/LM8/SLICE_267
+ROUTE        11   e 0.896 */SLICE_267.F1 to */SLICE_263.A0 platform1_u/LM8/n6467
+CTOF_DEL    ---     0.408 */SLICE_263.A0 to */SLICE_263.F0 platform1_u/LM8/SLICE_263
+ROUTE        11   e 0.896 */SLICE_263.F0 to */SLICE_275.A1 platform1_u/LM8/n6464
+CTOF_DEL    ---     0.408 */SLICE_275.A1 to */SLICE_275.F1 platform1_u/SLICE_275
+ROUTE         2   e 0.349 */SLICE_275.F1 to */SLICE_275.B0 platform1_u/n6457
+CTOF_DEL    ---     0.408 */SLICE_275.B0 to */SLICE_275.F0 platform1_u/SLICE_275
+ROUTE         1   e 0.896 */SLICE_275.F0 to *u/SLICE_83.A1 platform1_u/n5900
+CTOF_DEL    ---     0.408 *u/SLICE_83.A1 to *u/SLICE_83.F1 platform1_u/SLICE_83
+ROUTE         4   e 0.896 *u/SLICE_83.F1 to */SLICE_158.C1 platform1_u/n2068
+CTOF_DEL    ---     0.408 */SLICE_158.C1 to */SLICE_158.F1 platform1_u/SLICE_158
+ROUTE         8   e 0.896 */SLICE_158.F1 to */SLICE_146.B1 platform1_u/LM8interrupts_0__N_34
+CTOF_DEL    ---     0.408 */SLICE_146.B1 to */SLICE_146.F1 platform1_u/LM8interrupts_0__I_0/SLICE_146
+ROUTE         2   e 0.896 */SLICE_146.F1 to */SLICE_156.B1 platform1_u/LM8interrupts_0__I_0/u_rxcver/n68
+CTOF_DEL    ---     0.408 */SLICE_156.B1 to */SLICE_156.F1 platform1_u/LM8interrupts_0__I_0/SLICE_156
+ROUTE         2   e 0.896 */SLICE_156.F1 to */SLICE_291.A0 platform1_u/LM8interrupts_0__I_0/n2143
+CTOF_DEL    ---     0.408 */SLICE_291.A0 to */SLICE_291.F0 platform1_u/LM8interrupts_0__I_0/u_intface/SLICE_291
+ROUTE         1   e 0.896 */SLICE_291.F0 to */SLICE_214.D0 platform1_u/LM8interrupts_0__I_0/u_intface/n17
+CTOF_DEL    ---     0.408 */SLICE_214.D0 to */SLICE_214.F0 platform1_u/LM8interrupts_0__I_0/SLICE_214
+ROUTE         1   e 0.001 */SLICE_214.F0 to *SLICE_214.DI0 platform1_u/LM8interrupts_0__I_0/u_intface/n5293 (to clk_in)
+                  --------
+                   20.463   (45.7% logic, 54.3% route), 14 logic levels.
+
+Report:   48.553MHz is the maximum frequency for this preference.
+
+<A name="mtw1_set_rs"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk_in" 24.180000 MHz ;  |   24.180 MHz|   48.553 MHz|  14  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+<A name="mtw1_set_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: clk_in   Source: OSCH_inst.OSC   Loads: 198
+   Covered under: FREQUENCY NET "clk_in" 24.180000 MHz ;
+
+
+<A name="mtw1_set_ts"></A><B><U><big>Timing summary (Setup):</big></U></B>
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 88795 paths, 1 nets, and 3389 connections (99.91% coverage)
+
+--------------------------------------------------------------------------------
+<A name="Map_Twr_hold"></A><B><U><big>Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.0.111.2</big></U></B>
+Mon Jun 11 14:49:44 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_hold_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o platform1_platform1.tw1 -gui -msgset C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/promote.xml platform1_platform1_map.ncd platform1_platform1.prf 
+Design file:     platform1_platform1_map.ncd
+Preference file: platform1_platform1.prf
+Device,speed:    LCMXO3LF-9400C,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+<A name="mtw1_hold_ps"></A><B><U><big>Preference Summary</big></U></B>
+
+<LI><A href='#map_twr_pref_1_0' Target='right'>FREQUENCY NET "clk_in" 24.180000 MHz (0 errors)</A></LI>            4096 items scored, 0 timing errors detected.
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+<A name="map_twr_pref_1_0"></A>Preference: FREQUENCY NET "clk_in" 24.180000 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.351ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              platform1_u/LM8interrupts_0__I_0/u_rxcver/rx_idle_153  (from clk_in +)
+   Destination:    FF         Data in        platform1_u/LM8interrupts_0__I_0/u_rxcver/rx_idle_d1_165  (to clk_in +)
+
+   Delay:               0.332ns  (40.1% logic, 59.9% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.332ns physical path delay platform1_u/LM8interrupts_0__I_0/SLICE_348 to platform1_u/LM8interrupts_0__I_0/SLICE_348 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint requirement (totaling -0.019ns) by 0.351ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8interrupts_0__I_0/SLICE_348 to platform1_u/LM8interrupts_0__I_0/SLICE_348:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133 *SLICE_348.CLK to */SLICE_348.Q0 platform1_u/LM8interrupts_0__I_0/SLICE_348 (from clk_in)
+ROUTE         5   e 0.199 */SLICE_348.Q0 to */SLICE_348.M1 platform1_u/LM8interrupts_0__I_0/u_rxcver/rx_idle (to clk_in)
+                  --------
+                    0.332   (40.1% logic, 59.9% route), 1 logic levels.
+
+<A name="mtw1_hold_rs"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk_in" 24.180000 MHz ;  |     0.000 ns|     0.351 ns|   1  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+<A name="mtw1_hold_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: clk_in   Source: OSCH_inst.OSC   Loads: 198
+   Covered under: FREQUENCY NET "clk_in" 24.180000 MHz ;
+
+
+<A name="mtw1_hold_ts"></A><B><U><big>Timing summary (Hold):</big></U></B>
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 88795 paths, 1 nets, and 3389 connections (99.91% coverage)
+
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary (Setup and Hold):</big></U></B>
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

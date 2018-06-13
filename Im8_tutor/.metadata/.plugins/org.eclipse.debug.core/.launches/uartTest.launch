@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.lattice.mdk.launch.mico8launchConfigurationType">
+<stringAttribute key="MEM_FILE_DIR" value="C:\Users\Suhail\Desktop\Work\Lattice\Im8_tutor\uartTest\uartTest"/>
+<stringAttribute key="org.eclipse.cdt.launch.COREFILE_PATH" value=""/>
+<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="Release\uartTest.elf"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="uartTest"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="com.lattice.mdk8.managedbuilder.ui.configuration.release.615260192"/>
+<booleanAttribute key="org.eclipse.cdt.launch.use_terminal" value="true"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/uartTest"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+</launchConfiguration>

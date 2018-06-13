@@ -1,0 +1,26 @@
+AUTOMOTIVE ;
+BLOCK RESETPATHS ;
+BLOCK ASYNCPATHS ;
+BLOCK INTERCLOCKDOMAIN PATHS ;
+LOCATE COMP "reset_n" SITE "AB3" ;
+IOBUF PORT "reset_n" IO_TYPE=LVCMOS18 ;
+#-----------------------------------------------------------
+# LEDs assumes the component instance name is LED & has
+# a width of 4
+#-----------------------------------------------------------
+LOCATE COMP "LEDPIO_OUT_0_" SITE "F4" ;
+LOCATE COMP "LEDPIO_OUT_1_" SITE "G4" ;
+LOCATE COMP "LEDPIO_OUT_2_" SITE "G3" ;
+LOCATE COMP "LEDPIO_OUT_3_" SITE "D1" ;
+IOBUF PORT "LEDPIO_OUT_0_" IO_TYPE=LVCMOS18 ;
+IOBUF PORT "LEDPIO_OUT_1_" IO_TYPE=LVCMOS18 ;
+IOBUF PORT "LEDPIO_OUT_2_" IO_TYPE=LVCMOS18 ;
+IOBUF PORT "LEDPIO_OUT_3_" IO_TYPE=LVCMOS18 ;
+#-----------------------------------------------------------
+# UART assumes the component instance name is uart
+#-----------------------------------------------------------
+LOCATE COMP "uartSIN" SITE "H1" ;
+LOCATE COMP "uartSOUT" SITE "H3" ;
+IOBUF PORT "uartSIN" IO_TYPE=LVCMOS18 ;
+IOBUF PORT "uartSOUT" IO_TYPE=LVCMOS18 ;
+BLOCK JTAGPATHS;

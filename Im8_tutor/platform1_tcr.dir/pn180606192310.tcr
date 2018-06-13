@@ -1,0 +1,24 @@
+#Start recording tcl command: 6/6/2018 13:57:56
+#Project Location: C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor; Project name: platform1
+prj_project new -name "platform1" -impl "platform1" -dev LCMXO3LF-9400C-6BG484C -synthesis "lse"
+prj_project save
+prj_src add "C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/platform1_top.v"
+prj_strgy set_value -strategy Strategy1 bd_consistent_bus_name_conv=Lattice
+file copy -force -- "C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/untitled.lpf" "C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/source"
+prj_src add -exclude "C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/source/untitled.lpf"
+prj_src enable "C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/source/untitled.lpf"
+prj_run Export -impl platform1 -task Jedecgen
+prj_run Export -impl platform1 -task Jedecgen
+pgr_project save "C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/platform1.xcf"
+prj_src add -exclude "C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/platform1.xcf"
+prj_src enable "C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/platform1.xcf"
+pgr_program run
+pgr_program set -cable USB2
+pgr_program set -port FTUSB-0
+pgr_program run
+pgr_project save "C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/platform1.xcf"
+pgr_project close
+pgr_project open "C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/platform1.xcf"
+pgr_program run
+pgr_project close
+#Stop recording: 6/6/2018 19:23:10

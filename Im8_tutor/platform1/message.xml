@@ -1,0 +1,1154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="IBIS">
+        <Message>
+            <ID>1191031</ID>
+            <Severity>Info</Severity>
+        </Message>
+    </Task>
+    <Task name="PowerCal">
+        <Message>
+            <ID>1171236</ID>
+            <Severity>Error</Severity>
+        </Message>
+    </Task>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/platform1_top.v(1): </Dynamic>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/platform1_top.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v(46): </Dynamic>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/system_conf.v</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v</Navigation>
+            <Navigation>46</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v(327): </Dynamic>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v</Navigation>
+            <Navigation>327</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(48): </Dynamic>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/pmi_def.v</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v</Navigation>
+            <Navigation>48</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(50): </Dynamic>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/system_conf.v</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v</Navigation>
+            <Navigation>50</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(51): </Dynamic>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_include.v</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v</Navigation>
+            <Navigation>51</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(52): </Dynamic>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_interrupt.v</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v</Navigation>
+            <Navigation>52</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_interrupt.v(47): </Dynamic>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/system_conf.v</Dynamic>
+            <Navigation>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_interrupt.v</Navigation>
+            <Navigation>47</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(53): </Dynamic>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_io_cntl.v</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v</Navigation>
+            <Navigation>53</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(54): </Dynamic>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_flow_cntl.v</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v</Navigation>
+            <Navigation>54</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(55): </Dynamic>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_idec.v</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v</Navigation>
+            <Navigation>55</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(56): </Dynamic>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_alu.v</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v</Navigation>
+            <Navigation>56</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(57): </Dynamic>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_core.v</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v</Navigation>
+            <Navigation>57</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_core.v(82): </Dynamic>
+            <Dynamic>lm8_core</Dynamic>
+            <Navigation>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_core.v</Navigation>
+            <Navigation>82</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_core.v(83): </Dynamic>
+            <Dynamic>lm8_core</Dynamic>
+            <Navigation>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_core.v</Navigation>
+            <Navigation>83</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_core.v(84): </Dynamic>
+            <Dynamic>lm8_core</Dynamic>
+            <Navigation>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_core.v</Navigation>
+            <Navigation>84</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(58): </Dynamic>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v</Navigation>
+            <Navigation>58</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v(113): </Dynamic>
+            <Dynamic>lm8</Dynamic>
+            <Navigation>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v</Navigation>
+            <Navigation>113</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v(114): </Dynamic>
+            <Dynamic>lm8</Dynamic>
+            <Navigation>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v</Navigation>
+            <Navigation>114</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v(328): </Dynamic>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v</Navigation>
+            <Navigation>328</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v(79): </Dynamic>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/system_conf.v</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v</Navigation>
+            <Navigation>79</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v(176): </Dynamic>
+            <Dynamic>gpio</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v</Navigation>
+            <Navigation>176</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v(329): </Dynamic>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/gpio/rtl/verilog/tpio.v</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v</Navigation>
+            <Navigation>329</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/gpio/rtl/verilog/tpio.v(65): </Dynamic>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/system_conf.v</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/gpio/rtl/verilog/tpio.v</Navigation>
+            <Navigation>65</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/gpio/rtl/verilog/tpio.v(87): </Dynamic>
+            <Dynamic>tpio</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/gpio/rtl/verilog/tpio.v</Navigation>
+            <Navigation>87</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v(330): </Dynamic>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/uart_core.v</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v</Navigation>
+            <Navigation>330</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/uart_core.v(124): </Dynamic>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/system_conf.v</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/uart_core.v</Navigation>
+            <Navigation>124</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/uart_core.v(125): </Dynamic>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/uart_core.v</Navigation>
+            <Navigation>125</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v(319): </Dynamic>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/system_conf.v</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v</Navigation>
+            <Navigation>319</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v(320): </Dynamic>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txcver_fifo.v</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v</Navigation>
+            <Navigation>320</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txcver_fifo.v(51): </Dynamic>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/system_conf.v</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txcver_fifo.v</Navigation>
+            <Navigation>51</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v(510): </Dynamic>
+            <Dynamic>intface</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v</Navigation>
+            <Navigation>510</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v(511): </Dynamic>
+            <Dynamic>intface</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v</Navigation>
+            <Navigation>511</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v(512): </Dynamic>
+            <Dynamic>intface</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v</Navigation>
+            <Navigation>512</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v(513): </Dynamic>
+            <Dynamic>intface</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v</Navigation>
+            <Navigation>513</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v(514): </Dynamic>
+            <Dynamic>intface</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v</Navigation>
+            <Navigation>514</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v(515): </Dynamic>
+            <Dynamic>intface</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v</Navigation>
+            <Navigation>515</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v(516): </Dynamic>
+            <Dynamic>intface</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v</Navigation>
+            <Navigation>516</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v(819): </Dynamic>
+            <Dynamic>intface</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v</Navigation>
+            <Navigation>819</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v(820): </Dynamic>
+            <Dynamic>intface</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v</Navigation>
+            <Navigation>820</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v(821): </Dynamic>
+            <Dynamic>intface</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v</Navigation>
+            <Navigation>821</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v(822): </Dynamic>
+            <Dynamic>intface</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v</Navigation>
+            <Navigation>822</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v(823): </Dynamic>
+            <Dynamic>intface</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v</Navigation>
+            <Navigation>823</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/uart_core.v(126): </Dynamic>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/rxcver.v</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/uart_core.v</Navigation>
+            <Navigation>126</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/rxcver.v(92): </Dynamic>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/system_conf.v</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/rxcver.v</Navigation>
+            <Navigation>92</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/rxcver.v(93): </Dynamic>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/rxcver_fifo.v</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/rxcver.v</Navigation>
+            <Navigation>93</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/rxcver_fifo.v(52): </Dynamic>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/system_conf.v</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/rxcver_fifo.v</Navigation>
+            <Navigation>52</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/rxcver.v(172): </Dynamic>
+            <Dynamic>rxcver</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/rxcver.v</Navigation>
+            <Navigation>172</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/rxcver.v(173): </Dynamic>
+            <Dynamic>rxcver</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/rxcver.v</Navigation>
+            <Navigation>173</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/rxcver.v(174): </Dynamic>
+            <Dynamic>rxcver</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/rxcver.v</Navigation>
+            <Navigation>174</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/rxcver.v(175): </Dynamic>
+            <Dynamic>rxcver</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/rxcver.v</Navigation>
+            <Navigation>175</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/rxcver.v(176): </Dynamic>
+            <Dynamic>rxcver</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/rxcver.v</Navigation>
+            <Navigation>176</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/rxcver.v(179): </Dynamic>
+            <Dynamic>rxcver</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/rxcver.v</Navigation>
+            <Navigation>179</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/uart_core.v(127): </Dynamic>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txmitt.v</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/uart_core.v</Navigation>
+            <Navigation>127</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txmitt.v(102): </Dynamic>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/system_conf.v</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txmitt.v</Navigation>
+            <Navigation>102</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txmitt.v(164): </Dynamic>
+            <Dynamic>txmitt</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txmitt.v</Navigation>
+            <Navigation>164</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txmitt.v(165): </Dynamic>
+            <Dynamic>txmitt</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txmitt.v</Navigation>
+            <Navigation>165</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txmitt.v(166): </Dynamic>
+            <Dynamic>txmitt</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txmitt.v</Navigation>
+            <Navigation>166</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txmitt.v(167): </Dynamic>
+            <Dynamic>txmitt</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txmitt.v</Navigation>
+            <Navigation>167</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txmitt.v(168): </Dynamic>
+            <Dynamic>txmitt</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txmitt.v</Navigation>
+            <Navigation>168</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txmitt.v(169): </Dynamic>
+            <Dynamic>txmitt</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txmitt.v</Navigation>
+            <Navigation>169</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txmitt.v(170): </Dynamic>
+            <Dynamic>txmitt</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txmitt.v</Navigation>
+            <Navigation>170</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/platform1_top.v(2): </Dynamic>
+            <Dynamic>platform1_top</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/platform1_top.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1759): </Dynamic>
+            <Dynamic>OSCH(NOM_FREQ=&quot;24.18&quot;)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v</Navigation>
+            <Navigation>1759</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v(333): </Dynamic>
+            <Dynamic>platform1</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v</Navigation>
+            <Navigation>333</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v(48): </Dynamic>
+            <Dynamic>arbiter2(MAX_DAT_WIDTH=8,WBS_DAT_WIDTH=8,WBM0_DAT_WIDTH=8,WBM1_DAT_WIDTH=8)</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v</Navigation>
+            <Navigation>48</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v(285): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>8</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v</Navigation>
+            <Navigation>285</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v(289): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v</Navigation>
+            <Navigation>289</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v(293): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v</Navigation>
+            <Navigation>293</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v(297): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v</Navigation>
+            <Navigation>297</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v(301): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>2</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v</Navigation>
+            <Navigation>301</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v(305): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v</Navigation>
+            <Navigation>305</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v(309): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v</Navigation>
+            <Navigation>309</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v(313): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v</Navigation>
+            <Navigation>313</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v(316): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v</Navigation>
+            <Navigation>316</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v(317): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v</Navigation>
+            <Navigation>317</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v(318): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v</Navigation>
+            <Navigation>318</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v(321): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v</Navigation>
+            <Navigation>321</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v(322): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v</Navigation>
+            <Navigation>322</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v(323): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v</Navigation>
+            <Navigation>323</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v(478): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v</Navigation>
+            <Navigation>478</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v(482): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v</Navigation>
+            <Navigation>482</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v(50): </Dynamic>
+            <Dynamic>lm8_renamed_due_excessive_length_1</Dynamic>
+            <Navigation>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v</Navigation>
+            <Navigation>50</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_core.v(47): </Dynamic>
+            <Dynamic>lm8_core(FAMILY_NAME=&quot;MachXO3LF&quot;,EXT_AW=16,PROM_AW=32'sb01011,PROM_AD=2048,REGISTERS_16=0,PGM_STACK_AW=32'sb0100)</Dynamic>
+            <Navigation>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_core.v</Navigation>
+            <Navigation>47</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_idec.v(47): </Dynamic>
+            <Dynamic>lm8_idec(PROM_AW=32'sb01011)</Dynamic>
+            <Navigation>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_idec.v</Navigation>
+            <Navigation>47</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_alu.v(47): </Dynamic>
+            <Dynamic>lm8_alu(FAMILY_NAME=&quot;MachXO3LF&quot;)</Dynamic>
+            <Navigation>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_alu.v</Navigation>
+            <Navigation>47</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/pmi_def.v(69): </Dynamic>
+            <Dynamic>pmi_addsub(pmi_family=&quot;MachXO3LF&quot;)</Dynamic>
+            <Navigation>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/pmi_def.v</Navigation>
+            <Navigation>69</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_flow_cntl.v(49): </Dynamic>
+            <Dynamic>lm8_flow_cntl(PGM_STACK_AW=32'sb0100,PROM_AW=32'sb01011,FAMILY_NAME=&quot;MachXO3LF&quot;)</Dynamic>
+            <Navigation>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_flow_cntl.v</Navigation>
+            <Navigation>49</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_flow_cntl.v(235): </Dynamic>
+            <Dynamic>export_</Dynamic>
+            <Navigation>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_flow_cntl.v</Navigation>
+            <Navigation>235</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_flow_cntl.v(235): </Dynamic>
+            <Dynamic>import_</Dynamic>
+            <Navigation>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_flow_cntl.v</Navigation>
+            <Navigation>235</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/pmi_def.v(48): </Dynamic>
+            <Dynamic>pmi_distributed_spram(pmi_addr_depth=16,pmi_addr_width=32'sb0100,pmi_data_width=32'sb01101,pmi_regmode=&quot;noreg&quot;,pmi_family=&quot;MachXO3LF&quot;)</Dynamic>
+            <Navigation>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/pmi_def.v</Navigation>
+            <Navigation>48</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_io_cntl.v(47): </Dynamic>
+            <Dynamic>lm8_io_cntl</Dynamic>
+            <Navigation>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_io_cntl.v</Navigation>
+            <Navigation>47</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_interrupt.v(49): </Dynamic>
+            <Dynamic>lm8_interrupt(INTERRUPTS=8)</Dynamic>
+            <Navigation>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_interrupt.v</Navigation>
+            <Navigation>49</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/pmi_def.v(24): </Dynamic>
+            <Dynamic>pmi_distributed_dpram(pmi_regmode=&quot;noreg&quot;,pmi_family=&quot;MachXO3LF&quot;)</Dynamic>
+            <Navigation>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/pmi_def.v</Navigation>
+            <Navigation>24</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/pmi_def.v(115): </Dynamic>
+            <Dynamic>pmi_ram_dq_renamed_due_excessive_length_2</Dynamic>
+            <Navigation>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/pmi_def.v</Navigation>
+            <Navigation>115</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/pmi_def.v(115): </Dynamic>
+            <Dynamic>pmi_ram_dq_renamed_due_excessive_length_3</Dynamic>
+            <Navigation>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/pmi_def.v</Navigation>
+            <Navigation>115</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v(214): </Dynamic>
+            <Dynamic>sp_waddr[10]</Dynamic>
+            <Navigation>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v</Navigation>
+            <Navigation>214</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v(215): </Dynamic>
+            <Dynamic>sp_wdata[7]</Dynamic>
+            <Navigation>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v</Navigation>
+            <Navigation>215</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v(541): </Dynamic>
+            <Dynamic>4</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v</Navigation>
+            <Navigation>541</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v(80): </Dynamic>
+            <Dynamic>gpio(GPIO_WB_DAT_WIDTH=8,DATA_WIDTH=32'b0100,INPUT_WIDTH=32'b01,OUTPUT_WIDTH=32'b01,EDGE=1,POSE_EDGE_IRQ=1,INPUT_PORTS_ONLY=0,OUTPUT_PORTS_ONLY=1)</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v</Navigation>
+            <Navigation>80</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v(180): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v</Navigation>
+            <Navigation>180</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v(181): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v</Navigation>
+            <Navigation>181</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v(182): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v</Navigation>
+            <Navigation>182</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v(183): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v</Navigation>
+            <Navigation>183</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/gpio/rtl/verilog/tpio.v(66): </Dynamic>
+            <Dynamic>tpio(DATA_WIDTH=1,IRQ_MODE=0)</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/gpio/rtl/verilog/tpio.v</Navigation>
+            <Navigation>66</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(82): </Dynamic>
+            <Dynamic>BB</Dynamic>
+            <Navigation>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v</Navigation>
+            <Navigation>82</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/gpio/rtl/verilog/tpio.v(109): </Dynamic>
+            <Dynamic>IRQ_MASK</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/gpio/rtl/verilog/tpio.v</Navigation>
+            <Navigation>109</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v(582): </Dynamic>
+            <Dynamic>4</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v</Navigation>
+            <Navigation>582</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/uart_core.v(131): </Dynamic>
+            <Dynamic>uart_core(CLK_IN_MHZ=25.0)</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/uart_core.v</Navigation>
+            <Navigation>131</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v(321): </Dynamic>
+            <Dynamic>intface(CLK_IN_MHZ=25.0)</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v</Navigation>
+            <Navigation>321</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v(501): </Dynamic>
+            <Dynamic>64</Dynamic>
+            <Dynamic>16</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/intface.v</Navigation>
+            <Navigation>501</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/rxcver.v(94): </Dynamic>
+            <Dynamic>rxcver</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/rxcver.v</Navigation>
+            <Navigation>94</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/rxcver.v(355): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/rxcver.v</Navigation>
+            <Navigation>355</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txmitt.v(103): </Dynamic>
+            <Dynamic>txmitt</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txmitt.v</Navigation>
+            <Navigation>103</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txmitt.v(373): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txmitt.v</Navigation>
+            <Navigation>373</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txmitt.v(159): </Dynamic>
+            <Dynamic>thr_rd_int</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txmitt.v</Navigation>
+            <Navigation>159</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txmitt.v(160): </Dynamic>
+            <Dynamic>thr_rd_delay</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/uart_core/rtl/verilog/txmitt.v</Navigation>
+            <Navigation>160</Navigation>
+        </Message>
+        <Message>
+            <ID>35931013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v(576): </Dynamic>
+            <Dynamic>PIO_IN[3]</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v</Navigation>
+            <Navigation>576</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v(214): </Dynamic>
+            <Dynamic>sp_waddr[10]</Dynamic>
+            <Navigation>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v</Navigation>
+            <Navigation>214</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v(215): </Dynamic>
+            <Dynamic>sp_wdata[7]</Dynamic>
+            <Navigation>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v</Navigation>
+            <Navigation>215</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/gpio/rtl/verilog/tpio.v(109): </Dynamic>
+            <Dynamic>IRQ_MASK</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/../components/gpio/rtl/verilog/tpio.v</Navigation>
+            <Navigation>109</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v(358): </Dynamic>
+            <Dynamic>\platform1_u/LM8I_ADR_O[31]</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v</Navigation>
+            <Navigation>358</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v(359): </Dynamic>
+            <Dynamic>\platform1_u/LM8I_DAT_O[7]</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v</Navigation>
+            <Navigation>359</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v(362): </Dynamic>
+            <Dynamic>\platform1_u/LM8I_WE_O</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v</Navigation>
+            <Navigation>362</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v(366): </Dynamic>
+            <Dynamic>\platform1_u/LM8I_CTI_O[2]</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v</Navigation>
+            <Navigation>366</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v(368): </Dynamic>
+            <Dynamic>\platform1_u/LM8I_LOCK_O</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v</Navigation>
+            <Navigation>368</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v(369): </Dynamic>
+            <Dynamic>\platform1_u/LM8I_CYC_O</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v</Navigation>
+            <Navigation>369</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v(370): </Dynamic>
+            <Dynamic>\platform1_u/LM8I_STB_O</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v</Navigation>
+            <Navigation>370</Navigation>
+        </Message>
+        <Message>
+            <ID>35001774</ID>
+            <Severity>Info</Severity>
+            <Dynamic>\platform1_u/LM8interrupts_0__I_0/u_rxcver/cs_state</Dynamic>
+            <Dynamic>one-hot</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001774</ID>
+            <Severity>Info</Severity>
+            <Dynamic>\platform1_u/LM8interrupts_0__I_0/u_txmitt/tx_state</Dynamic>
+            <Dynamic>one-hot</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001774</ID>
+            <Severity>Info</Severity>
+            <Dynamic>\platform1_u/LM8interrupts_0__I_0/u_intface/cs_state</Dynamic>
+            <Dynamic>one-hot</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>0</Dynamic>
+            <Dynamic>\platform1_u/LM8interrupts_0__I_0/u_txmitt/tx_state_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>0</Dynamic>
+            <Dynamic>\platform1_u/LM8interrupts_0__I_0/u_rxcver/cs_state_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+            <Dynamic>\platform1_u/LM8interrupts_0__I_0/u_rxcver/cs_state_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>2</Dynamic>
+            <Dynamic>\platform1_u/LM8interrupts_0__I_0/u_rxcver/cs_state_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v(275): </Dynamic>
+            <Dynamic>\platform1_u/arbiter/selected_i0</Dynamic>
+            <Navigation>c:/users/suhail/desktop/work/lattice/im8_tutor/platform1/soc/../soc/platform1.v</Navigation>
+            <Navigation>275</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_interrupt.v(134): </Dynamic>
+            <Dynamic>\platform1_u/LM8/u1_isp8_core/u1_lm8_interrupt/ip_i1</Dynamic>
+            <Navigation>C:/Users/Suhail/Desktop/Work/Lattice/Im8_tutor/platform1/soc/../components/lm8/rtl/verilog/lm8_interrupt.v</Navigation>
+            <Navigation>134</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>35001551</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:\Users\Suhail\Desktop\Work\Lattice\Im8_tutor\platform1/pmi_distributed_dpramMbnonen853294f10db.v</Dynamic>
+            <Dynamic>C:\Users\Suhail\Desktop\Work\Lattice\Im8_tutor\platform1/platform1_top_prim.v</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>platform1_u/LM8/u1_isp8_core/GND_net</Dynamic>
+            <Navigation>platform1_u/LM8/u1_isp8_core/GND_net</Navigation>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>
