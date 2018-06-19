@@ -1,0 +1,4 @@
+CKID0001:@|S:u_SB_HFOSC@|E:reset_delay_cnt[10]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0002:@|S:clk_gen[1]@|E:q_de[0]@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 
+CKID0003:@|S:divclk[0]@|E:clk_gen[0]@|F:@syn_sample_clock_path==CKID0003@|M:ClockId0003 
+CKID0004:@|S:divclkneg[0]@|E:mipi_dsi_tx_top.u_DPHY_TX_INST.DCK_P0@|F:@syn_sample_clock_path==CKID0004@|M:ClockId0004 

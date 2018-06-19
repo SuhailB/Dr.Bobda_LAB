@@ -1,0 +1,44 @@
+---------------------------------------
+Resource Usage Report for upduino_top 
+
+Mapping to part: ice40up5ksg48
+Cell usage:
+GND             21 uses
+SB_CARRY        662 uses
+SB_DFF          52 uses
+SB_DFFE         21 uses
+SB_DFFER        712 uses
+SB_DFFES        17 uses
+SB_DFFN         1 use
+SB_DFFR         463 uses
+SB_DFFS         6 uses
+SB_DFFSR        24 uses
+SB_DFFSS        1 use
+SB_GB           7 uses
+SB_HFOSC        1 use
+SB_RAM256x16    3 uses
+SB_RAM512x8     22 uses
+SB_SPRAM256KA   3 uses
+VCC             21 uses
+SB_MAC16            4 uses
+  MULTONLY  3 uses
+  MULTADD  1 use
+SB_LUT4         2860 uses
+
+I/O ports: 15
+I/O primitives: 4
+SB_IO          4 uses
+
+I/O Register bits:                  0
+Register bits not including I/Os:   1297 (24%)
+
+RAM/ROM usage summary
+Block Rams : 25 of 30 (83%)
+
+
+@S |Mapping Summary:
+Total  LUTs: 2860 (54%)
+
+Distribution of All Consumed LUTs = LUT4 
+Distribution of All Consumed Luts 2860 = 2860 
+

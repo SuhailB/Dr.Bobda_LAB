@@ -1,0 +1,33 @@
+@P:  Worst Slack : 12.350
+@P:  upduino_top|clk_gen_derived_clock[1] - Estimated Frequency : 2.5 MHz
+@P:  upduino_top|clk_gen_derived_clock[1] - Requested Frequency : 1.0 MHz
+@P:  upduino_top|clk_gen_derived_clock[1] - Estimated Period : 407.214
+@P:  upduino_top|clk_gen_derived_clock[1] - Requested Period : 1000.000
+@P:  upduino_top|clk_gen_derived_clock[1] - Slack : 15.072
+@P:  upduino_top|clk_o0_derived_clock - Estimated Frequency : 211.9 MHz
+@P:  upduino_top|clk_o0_derived_clock - Requested Frequency : 1.0 MHz
+@P:  upduino_top|clk_o0_derived_clock - Estimated Period : 4.718
+@P:  upduino_top|clk_o0_derived_clock - Requested Period : 1000.000
+@P:  upduino_top|clk_o0_derived_clock - Slack : 1993.249
+@P:  upduino_top|clk_o1_derived_clock - Estimated Frequency : NA
+@P:  upduino_top|clk_o1_derived_clock - Requested Frequency : 1.0 MHz
+@P:  upduino_top|clk_o1_derived_clock - Estimated Period : NA
+@P:  upduino_top|clk_o1_derived_clock - Requested Period : 1000.000
+@P:  upduino_top|clk_o1_derived_clock - Slack : NA
+@P:  upduino_top|int_osc_inferred_clock - Estimated Frequency : 117.9 MHz
+@P:  upduino_top|int_osc_inferred_clock - Requested Frequency : 48.0 MHz
+@P:  upduino_top|int_osc_inferred_clock - Estimated Period : 8.482
+@P:  upduino_top|int_osc_inferred_clock - Requested Period : 20.830
+@P:  upduino_top|int_osc_inferred_clock - Slack : 12.350
+@P:  System - Estimated Frequency : 235.2 MHz
+@P:  System - Requested Frequency : 1.0 MHz
+@P:  System - Estimated Period : 4.253
+@P:  System - Requested Period : 1000.000
+@P:  System - Slack : 995.747
+@P: upduino_top Part : ice40up5ksg48
+@P: upduino_top I/O primitives : 4
+@P: upduino_top I/O Register bits : 0
+@P: upduino_top Register bits (Non I/O) : 1297 (24%)
+@P: upduino_top Block Rams : 25 of 30 (83%)
+@P: upduino_top Total Luts : 2860 (54%)
+@P:  CPU Time : 0h:00m:10s

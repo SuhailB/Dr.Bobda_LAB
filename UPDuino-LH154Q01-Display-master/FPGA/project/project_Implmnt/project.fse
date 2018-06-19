@@ -1,0 +1,158 @@
+
+fsm_encoding {631323132} onehot
+
+fsm_state_encoding {631323132} GFX_IDLE {000000000000000000000000001}
+
+fsm_state_encoding {631323132} GFX_PUTPIXEL {000000000000000000000000010}
+
+fsm_state_encoding {631323132} GFX_DRAWLINE {000000000000000000000000100}
+
+fsm_state_encoding {631323132} GFX_LINW_LN1 {000000000000000000000001000}
+
+fsm_state_encoding {631323132} GFX_DRAWRGLE {000000000000000000000010000}
+
+fsm_state_encoding {631323132} GFX_RECW_LN1 {000000000000000000000100000}
+
+fsm_state_encoding {631323132} GFX_RECW_LN2 {000000000000000000001000000}
+
+fsm_state_encoding {631323132} GFX_RECW_LN3 {000000000000000000010000000}
+
+fsm_state_encoding {631323132} GFX_RECW_LN4 {000000000000000000100000000}
+
+fsm_state_encoding {631323132} GFX_DRAWTGLE {000000000000000001000000000}
+
+fsm_state_encoding {631323132} GFX_TRIW_LN1 {000000000000000010000000000}
+
+fsm_state_encoding {631323132} GFX_TRIW_LN2 {000000000000000100000000000}
+
+fsm_state_encoding {631323132} GFX_TRIW_LN3 {000000000000001000000000000}
+
+fsm_state_encoding {631323132} GFX_DRAWCRCL {000000000000010000000000000}
+
+fsm_state_encoding {631323132} GFX_CRCL_W {000000000000100000000000000}
+
+fsm_state_encoding {631323132} GFX_FILLRGLE {000000000001000000000000000}
+
+fsm_state_encoding {631323132} GFX_FLRGLE_W {000000000010000000000000000}
+
+fsm_state_encoding {631323132} GFX_FILLTGLE {000000000100000000000000000}
+
+fsm_state_encoding {631323132} GFX_FTGLE_W1 {000000001000000000000000000}
+
+fsm_state_encoding {631323132} GFX_FTGLE_W2 {000000010000000000000000000}
+
+fsm_state_encoding {631323132} GFX_FILLCRCL {000000100000000000000000000}
+
+fsm_state_encoding {631323132} GFX_FCRCL_W1 {000001000000000000000000000}
+
+fsm_state_encoding {631323132} GFX_FCRCL_W2 {000010000000000000000000000}
+
+fsm_state_encoding {631323132} GFX_DRAWBITM {000100000000000000000000000}
+
+fsm_state_encoding {631323132} GFX_BITMAP_W {001000000000000000000000000}
+
+fsm_state_encoding {631323132} GFX_DRAWFONT {010000000000000000000000000}
+
+fsm_state_encoding {631323132} GFX_FONTCH_W {100000000000000000000000000}
+
+fsm_registers {631323132} {gfx_cstate[26]}  {gfx_cstate[25]}  {gfx_cstate[24]}  {gfx_cstate[23]}  {gfx_cstate[22]}  {gfx_cstate[21]}  {gfx_cstate[20]}  {gfx_cstate[19]}  {gfx_cstate[18]}  {gfx_cstate[17]}  {gfx_cstate[16]}  {gfx_cstate[15]}  {gfx_cstate[14]}  {gfx_cstate[13]}  {gfx_cstate[12]}  {gfx_cstate[11]}  {gfx_cstate[10]}  {gfx_cstate[9]}  {gfx_cstate[8]}  {gfx_cstate[7]}  {gfx_cstate[6]}  {gfx_cstate[5]}  {gfx_cstate[4]}  {gfx_cstate[3]}  {gfx_cstate[2]}  {gfx_cstate[1]}  {gfx_cstate[0]} 
+
+fsm_encoding {618121813} sequential
+
+fsm_state_encoding {618121813} UART_IDLE {00}
+
+fsm_state_encoding {618121813} UART_RDY1 {01}
+
+fsm_state_encoding {618121813} UART_RDY2 {10}
+
+fsm_registers {618121813} {uart_cstate[1]}  {uart_cstate[0]} 
+
+fsm_encoding {10862869} sequential
+
+fsm_state_encoding {10862869} IDLE {00}
+
+fsm_state_encoding {10862869} PREP {01}
+
+fsm_state_encoding {10862869} DRAW {10}
+
+fsm_state_encoding {10862869} DONE {11}
+
+fsm_registers {10862869} {current_state[1]}  {current_state[0]} 
+
+fsm_encoding {9772778} sequential
+
+fsm_state_encoding {9772778} IDLE {00}
+
+fsm_state_encoding {9772778} PREP {01}
+
+fsm_state_encoding {9772778} DRAW {10}
+
+fsm_state_encoding {9772778} DONE {11}
+
+fsm_registers {9772778} {current_state[1]}  {current_state[0]} 
+
+fsm_encoding {1227922797} onehot
+
+fsm_state_encoding {1227922797} IDLE {0000001}
+
+fsm_state_encoding {1227922797} PREP1 {0000010}
+
+fsm_state_encoding {1227922797} WAITF {0000100}
+
+fsm_state_encoding {1227922797} DRAW1 {0001000}
+
+fsm_state_encoding {1227922797} PREP2 {0010000}
+
+fsm_state_encoding {1227922797} DRAW2 {0100000}
+
+fsm_state_encoding {1227922797} DONE {1000000}
+
+fsm_registers {1227922797} {current_state[6]}  {current_state[5]}  {current_state[4]}  {current_state[3]}  {current_state[2]}  {current_state[1]}  {current_state[0]} 
+
+fsm_encoding {11852856} onehot
+
+fsm_state_encoding {11852856} IDLE {00001}
+
+fsm_state_encoding {11852856} PREP {00010}
+
+fsm_state_encoding {11852856} WAIT {00100}
+
+fsm_state_encoding {11852856} DRAW {01000}
+
+fsm_state_encoding {11852856} DONE {10000}
+
+fsm_registers {11852856} {current_state[4]}  {current_state[3]}  {current_state[2]}  {current_state[1]}  {current_state[0]} 
+
+fsm_encoding {14782785} sequential
+
+fsm_state_encoding {14782785} IDLE {00}
+
+fsm_state_encoding {14782785} PREP {01}
+
+fsm_state_encoding {14782785} DRAW {10}
+
+fsm_state_encoding {14782785} DONE {11}
+
+fsm_registers {14782785} {current_state[1]}  {current_state[0]} 
+
+fsm_encoding {16842844} sequential
+
+fsm_state_encoding {16842844} IDLE {00}
+
+fsm_state_encoding {16842844} PREP {01}
+
+fsm_state_encoding {16842844} DRAW {10}
+
+fsm_state_encoding {16842844} DONE {11}
+
+fsm_registers {16842844} {current_state[1]}  {current_state[0]} 
+
+fsm_encoding {8612611} sequential
+
+fsm_state_encoding {8612611} IDLE {00}
+
+fsm_state_encoding {8612611} RAM_RD {01}
+
+fsm_state_encoding {8612611} RAM_WR {10}
+
+fsm_registers {8612611} {current_state[1]}  {current_state[0]} 

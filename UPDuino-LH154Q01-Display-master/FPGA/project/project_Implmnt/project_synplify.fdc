@@ -1,0 +1,2 @@
+define_attribute {i:w_clk_div4} {syn_noprune} 1
+define_attribute {i:byte_clk} {syn_noprune} 1

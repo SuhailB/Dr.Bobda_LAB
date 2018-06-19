@@ -1,0 +1,292 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG334 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\generic_fifo_lfsr.v":243:13:243:25|Read directive translate_off.
+@N: CG333 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\generic_fifo_lfsr.v":251:13:251:24|Read directive translate_on.
+@N: CG334 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\MIPI\pmi_fifo_dc.v":53:9:53:21|Read directive translate_off.
+@N: CG333 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\MIPI\pmi_fifo_dc.v":581:9:581:20|Read directive translate_on.
+@N: CG364 :"C:\lscc\iCEcube2.2017.08\synpbase\lib\generic\sb_ice40.v":4020:7:4020:14|Synthesizing module SB_HFOSC in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\UART\uart_rx.v":14:7:14:13|Synthesizing module UART_RX in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\UART\uart_tx.v":14:7:14:13|Synthesizing module uart_tx in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\UART\uart_ir_tx_ice.v":42:7:42:10|Synthesizing module uart in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawline.v":25:7:25:14|Synthesizing module drawline in library work.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawline.v":152:21:152:23|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawline.v":153:21:153:23|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawline.v":154:21:154:23|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawline.v":155:21:155:23|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawline.v":156:25:156:31|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawline.v":157:25:157:31|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawline.v":158:29:158:39|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawline.v":159:29:159:39|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawline.v":202:53:202:54|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawline.v":215:53:215:54|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawline.v":224:53:224:57|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawline.v":225:53:225:54|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawline.v":226:53:226:54|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawline.v":232:39:232:43|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawline.v":233:39:233:40|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawline.v":234:39:234:40|Removing redundant assignment.
+@N: CG364 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawcircle.v":23:7:23:16|Synthesizing module drawcircle in library work.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawcircle.v":133:22:133:24|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawcircle.v":134:22:134:24|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawcircle.v":135:22:135:25|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawcircle.v":182:47:182:53|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawcircle.v":184:47:184:48|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawcircle.v":189:45:189:49|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawcircle.v":190:45:190:51|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawcircle.v":191:45:191:51|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawcircle.v":192:45:192:46|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawcircle.v":193:45:193:46|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawcircle.v":226:32:226:47|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawcircle.v":282:39:282:45|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawcircle.v":283:39:283:45|Removing redundant assignment.
+@N: CG364 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":25:7:25:18|Synthesizing module filltriangle in library work.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":246:40:246:47|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":247:40:247:47|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":248:40:248:47|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":249:40:249:47|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":250:40:250:47|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":251:40:251:47|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":252:44:252:55|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":253:44:253:55|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":254:44:254:55|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":260:21:260:23|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":261:21:261:23|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":262:21:262:23|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":263:21:263:23|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":264:21:264:23|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":265:21:265:23|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":266:26:266:33|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":267:26:267:33|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":268:26:268:33|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":269:26:269:33|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":270:26:270:33|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":271:26:271:33|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":272:30:272:41|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":273:30:273:41|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":274:30:274:41|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":377:36:377:38|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":378:36:378:38|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":379:36:379:38|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":380:36:380:38|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":381:36:381:39|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":382:36:382:39|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":383:36:383:41|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":384:36:384:41|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":389:50:389:55|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":390:50:390:52|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":391:50:391:52|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":396:50:396:52|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":409:50:409:52|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":418:50:418:55|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":419:50:419:52|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":420:50:420:52|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":425:50:425:55|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":426:50:426:52|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":427:50:427:52|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":432:50:432:52|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":445:50:445:52|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":454:50:454:55|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":455:50:455:52|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":456:50:456:52|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":466:38:466:41|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":467:38:467:41|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":473:36:473:38|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":474:36:474:38|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":476:36:476:39|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":477:36:477:41|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":486:50:486:55|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":487:50:487:52|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":488:50:488:52|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":493:50:493:52|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":506:50:506:52|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":515:50:515:55|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":516:50:516:52|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":517:50:517:52|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":522:50:522:55|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":523:50:523:52|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":524:50:524:52|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":529:50:529:52|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":542:50:542:52|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":551:50:551:55|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":552:50:552:52|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":553:50:553:52|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":563:38:563:41|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":564:38:564:41|Removing redundant assignment.
+@N: CG364 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\fillcircle.v":25:7:25:16|Synthesizing module fillcircle in library work.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\fillcircle.v":144:22:144:24|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\fillcircle.v":145:22:145:24|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\fillcircle.v":146:22:146:25|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\fillcircle.v":179:39:179:43|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\fillcircle.v":180:39:180:45|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\fillcircle.v":181:39:181:45|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\fillcircle.v":182:39:182:40|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\fillcircle.v":183:39:183:40|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\fillcircle.v":200:47:200:53|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\fillcircle.v":202:47:202:48|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\fillcircle.v":207:43:207:47|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\fillcircle.v":208:43:208:49|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\fillcircle.v":209:43:209:49|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\fillcircle.v":210:43:210:44|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\fillcircle.v":211:43:211:44|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\fillcircle.v":244:32:244:47|Removing redundant assignment.
+@N: CG364 :"C:\lscc\iCEcube2.2017.08\synpbase\lib\generic\sb_ice40.v":1124:7:1124:17|Synthesizing module SB_RAM512x8 in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\ebr_bm_mem.v":23:7:23:16|Synthesizing module ebr_bm_mem in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawbitmap.v":25:7:25:16|Synthesizing module drawbitmap in library work.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawbitmap.v":134:22:134:24|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawbitmap.v":135:22:135:24|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawbitmap.v":136:22:136:25|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawbitmap.v":169:82:169:89|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawbitmap.v":173:42:173:43|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawbitmap.v":174:42:174:43|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawbitmap.v":175:42:175:48|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawbitmap.v":176:42:176:49|Removing redundant assignment.
+@N: CG364 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\ebr_font_mem.v":23:7:23:18|Synthesizing module ebr_font_mem in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawfont.v":25:7:25:14|Synthesizing module drawfont in library work.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawfont.v":142:23:142:25|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawfont.v":143:23:143:25|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawfont.v":144:23:144:27|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawfont.v":145:23:145:27|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawfont.v":210:98:210:103|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawfont.v":211:74:211:80|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawfont.v":212:73:212:79|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawfont.v":213:77:213:84|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawfont.v":217:42:217:43|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawfont.v":218:42:218:43|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawfont.v":219:42:219:47|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawfont.v":220:42:220:47|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawfont.v":221:42:221:48|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawfont.v":222:42:222:48|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawfont.v":223:42:223:49|Removing redundant assignment.
+@N: CG364 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":25:7:25:14|Synthesizing module cfg_ctrl in library work.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":222:28:222:39|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":234:20:234:23|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":260:24:260:29|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":261:24:261:29|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":262:24:262:29|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":263:24:263:29|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":264:24:264:29|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":265:24:265:29|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":266:24:266:29|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":267:24:267:29|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":268:24:268:29|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":269:24:269:29|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":270:24:270:29|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":271:24:271:29|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":272:24:272:29|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":273:24:273:29|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":296:24:296:29|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":297:24:297:29|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":298:24:298:29|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":299:24:299:29|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":300:24:300:29|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":301:24:301:29|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":302:24:302:29|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":303:24:303:29|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":304:24:304:29|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":305:24:305:29|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":306:24:306:29|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":307:24:307:29|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":308:24:308:29|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":507:23:507:27|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":508:23:508:27|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":509:23:509:27|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":510:23:510:27|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":511:23:511:27|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":512:23:512:27|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":513:24:513:29|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":514:25:514:31|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":515:25:515:31|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":561:47:561:51|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":562:47:562:51|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":563:47:563:51|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":564:47:564:51|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":579:47:579:51|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":580:47:580:51|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":581:47:581:51|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":582:47:582:51|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":597:47:597:51|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":598:47:598:51|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":599:47:599:51|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":600:47:600:51|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":626:47:626:51|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":627:47:627:51|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":628:47:628:51|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":629:47:629:51|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":644:47:644:51|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":645:47:645:51|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":646:47:646:51|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":647:47:647:51|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":687:47:687:51|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":689:47:689:51|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":696:47:696:51|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":697:47:697:51|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":698:47:698:51|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":699:47:699:51|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":700:49:700:55|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":956:23:956:33|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":1108:43:1108:47|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":1109:43:1109:47|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":1124:24:1124:31|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":1169:44:1169:55|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":1170:44:1170:55|Removing redundant assignment.
+@N: CG364 :"C:\lscc\iCEcube2.2017.08\synpbase\lib\generic\sb_ice40.v":4382:7:4382:19|Synthesizing module SB_SPRAM256KA in library work.
+@N: CG364 :"C:\lscc\iCEcube2.2017.08\synpbase\lib\generic\sb_ice40.v":993:7:993:18|Synthesizing module SB_RAM256x16 in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\generic_fifo_lfsr.v":62:7:62:23|Synthesizing module generic_fifo_lfsr in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\dpram.v":23:7:23:11|Synthesizing module DPRAM in library work.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\dpram.v":117:37:117:49|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\dpram.v":119:37:119:49|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\dpram.v":165:33:165:41|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\dpram.v":168:21:168:29|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\dpram.v":181:28:181:31|Removing redundant assignment.
+@N: CG364 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\colorbar_gen.v":24:7:24:18|Synthesizing module colorbar_gen in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\MIPI\parallel2byte_RGB888_lane1.v":23:7:23:19|Synthesizing module parallel2byte in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\MIPI\packetheader.v":23:7:23:18|Synthesizing module packetheader in library work.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\MIPI\packetheader.v":106:85:106:88|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\MIPI\packetheader.v":107:85:107:88|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\MIPI\packetheader.v":108:89:108:92|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\MIPI\packetheader.v":109:48:109:55|Removing redundant assignment.
+@N: CG364 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\MIPI\byte_packetizer.v":25:7:25:21|Synthesizing module BYTE_PACKETIZER in library work.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\MIPI\byte_packetizer.v":141:53:141:56|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\MIPI\byte_packetizer.v":147:32:147:35|Removing redundant assignment.
+@N: CG364 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\MIPI\LP_HS_dly_ctrl.v":23:7:23:23|Synthesizing module LP_HS_DELAY_CNTRL in library work.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\MIPI\LP_HS_dly_ctrl.v":128:78:128:86|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\MIPI\LP_HS_dly_ctrl.v":131:78:131:88|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\MIPI\LP_HS_dly_ctrl.v":134:78:134:87|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\MIPI\LP_HS_dly_ctrl.v":138:78:138:83|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\MIPI\LP_HS_dly_ctrl.v":142:78:142:84|Removing redundant assignment.
+@N: CG364 :"C:\lscc\iCEcube2.2017.08\synpbase\lib\generic\sb_ice40.v":501:7:501:11|Synthesizing module SB_IO in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\MIPI\dphy_tx_inst.v":25:7:25:18|Synthesizing module DPHY_TX_INST in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\MIPI\top.v":25:7:25:9|Synthesizing module top in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\upduino_top.v":24:7:24:17|Synthesizing module upduino_top in library work.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\upduino_top.v":131:27:131:41|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\upduino_top.v":143:27:143:41|Removing redundant assignment.
+@N: CL159 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\upduino_top.v":33:18:33:24|Input osc_clk is unused.
+@N: CL159 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\MIPI\dphy_tx_inst.v":66:24:66:32|Input lpclk_dir is unused.
+@N: CL159 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\MIPI\dphy_tx_inst.v":90:24:90:30|Input lp0_dir is unused.
+@N: CL135 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\MIPI\LP_HS_dly_ctrl.v":83:16:83:21|Found sequential shift data_dly[9].hold_data with address depth of 9 words and data bit width of 32.
+@N: CL135 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\MIPI\packetheader.v":203:4:203:9|Found sequential shift q_fifo_rd_data with address depth of 5 words and data bit width of 8.
+@N: CL135 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\MIPI\packetheader.v":79:0:79:5|Found sequential shift q_byte_data with address depth of 3 words and data bit width of 8.
+@N: CL159 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\MIPI\parallel2byte_RGB888_lane1.v":29:28:29:33|Input PIXCLK is unused.
+@N: CL201 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\dpram.v":61:2:61:7|Trying to extract state machine for register current_state.
+@N: CL201 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":313:2:313:7|Trying to extract state machine for register gfx_cstate.
+@N: CL201 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\cfg_ctrl.v":181:2:181:7|Trying to extract state machine for register uart_cstate.
+@N: CL201 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawfont.v":84:2:84:7|Trying to extract state machine for register current_state.
+@N: CL201 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawbitmap.v":78:2:78:7|Trying to extract state machine for register current_state.
+@N: CL201 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\fillcircle.v":85:2:85:7|Trying to extract state machine for register current_state.
+@N: CL201 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\filltriangle.v":279:2:279:7|Trying to extract state machine for register current_state.
+@N: CL201 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawcircle.v":77:2:77:7|Trying to extract state machine for register current_state.
+@N: CL201 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\GPU\drawline.v":86:2:86:7|Trying to extract state machine for register current_state.
+@N: CL159 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\UART\uart_ir_tx_ice.v":49:22:49:34|Input i_serial_data is unused.
+@N: CL189 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\UART\uart_tx.v":38:2:38:7|Register bit r_Clock_Count[3] is always 0.
+@N: CL189 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\UART\uart_tx.v":38:2:38:7|Register bit r_Clock_Count[4] is always 0.
+@N: CL189 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\UART\uart_tx.v":38:2:38:7|Register bit r_Clock_Count[5] is always 0.
+@N: CL189 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\UART\uart_tx.v":38:2:38:7|Register bit r_Clock_Count[6] is always 0.
+@N: CL189 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\UART\uart_tx.v":38:2:38:7|Register bit r_Clock_Count[7] is always 0.
+@N: CL189 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\UART\uart_tx.v":38:2:38:7|Register bit r_Clock_Count[8] is always 0.
+@N: CL189 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\UART\uart_tx.v":38:2:38:7|Register bit r_Clock_Count[9] is always 0.
+@N: CL189 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\UART\uart_tx.v":38:2:38:7|Register bit r_Clock_Count[10] is always 0.
+@N: CL189 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\UART\uart_tx.v":38:2:38:7|Register bit r_Clock_Count[11] is always 0.
+@N: CL201 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\UART\uart_tx.v":38:2:38:7|Trying to extract state machine for register r_SM_Main.
+@N: CL201 :"C:\Users\Suhail\Downloads\UPDuino-LH154Q01-Display-master\UPDuino-LH154Q01-Display-master\FPGA\source\UART\uart_rx.v":38:2:38:7|Trying to extract state machine for register r_SM_Main.
+@N|Running in 64-bit mode
+
