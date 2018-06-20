@@ -1,0 +1,18 @@
+# Current time Thu Apr 21 13:03:24 2016
+# ModelSim Stack Trace
+# Program = vish
+# Id = "10.2c"
+# Version = "2013.07"
+# Date = "Jul 19 2013"
+# Platform = win64
+
+Exception c0000005 has occurred at address 402206cf. Traceback:
+# 0    0x402206cf: 'Mtirpc_Init + 0x13851f'
+# 1    0x40221a78: 'Mtirpc_Init + 0x1398c8'
+# 2    0x02d7f0f0: '<unknown (@0x2d7f0f0)>'
+# 3    0x00000002: '<unknown (@0x2)>'
+# 4    0x407ba820: 'Sqlite_Unload + 0x2852d0'
+# 5    0x0f5ba8a0: '<unknown (@0xf5ba8a0)>'
+StackWalk failed 487
+# End of Stack Trace
+
