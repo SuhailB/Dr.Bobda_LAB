@@ -1,0 +1,88 @@
+# Mon Aug  6 16:39:43 2018
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1796R, Built Aug  4 2017 11:10:16
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version M-2017.03L-SP1-1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@A: MF827 |No constraint file specified.
+@L: C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\impl\Parallel2MIPI\Parallel2MIPI_Parallel2MIPI_scck.rpt 
+Printing clock  summary report in "C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\impl\Parallel2MIPI\Parallel2MIPI_Parallel2MIPI_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 103MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 103MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 114MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 116MB)
+
+@N: MO111 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\top.v":138:10:138:15|Tristate driver LED_1 (in view: work.top(verilog)) on net LED[0] (in view: work.top(verilog)) has its enable tied to GND.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\colorbar_gen.v":78:4:78:9|Removing sequential instance fv (in view: work.colorbar_gen_240_620_240_830_40_44_148_5_5_1s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":141:4:141:9|Removing sequential instance hs_clk_en (in view: work.LP_HS_DELAY_CNTRL(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":141:4:141:9|Removing sequential instance hs_data_en (in view: work.LP_HS_DELAY_CNTRL(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=8  set on top level netlist top
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
+
+
+
+Clock Summary
+******************
+
+          Start                                               Requested     Requested     Clock        Clock                   Clock
+Level     Clock                                               Frequency     Period        Type         Group                   Load 
+------------------------------------------------------------------------------------------------------------------------------------
+0 -       System                                              1.0 MHz       1000.000      system       system_clkgroup         0    
+                                                                                                                                    
+0 -       pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock     1.0 MHz       1000.000      inferred     Inferred_clkgroup_2     193  
+                                                                                                                                    
+0 -       top|PIXCLK                                          1.0 MHz       1000.000      inferred     Inferred_clkgroup_1     74   
+                                                                                                                                    
+0 -       oDDRx4|sclk_inferred_clock                          1.0 MHz       1000.000      inferred     Inferred_clkgroup_0     4    
+====================================================================================================================================
+
+@W: MT529 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\oddrx4.v":81:12:81:15|Found inferred clock oDDRx4|sclk_inferred_clock which controls 4 sequential elements including u_DPHY_TX_INST.u_oDDRx4.FF_3. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\users\suhail\documents\github\ice40ultrawearablereferencedesigns\mipi dsi tx bridge\parallel2dsi_rd1184_rgb888_1lane_v2_latest\rtl\pwr_sq_ctrl.v":76:0:76:5|Found inferred clock top|PIXCLK which controls 74 sequential elements including LCD_Power_Controller.state[7:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v":109:5:109:10|Found inferred clock pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock which controls 193 sequential elements including u_BYTE_PACKETIZER.q_WC[15:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+@N: MF203 |Set autoconstraint_io 
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
+
+Encoding state machine state[7:0] (in view: work.pwr_sq_ctrl(verilog))
+original code -> new code
+   000 -> 00000001
+   001 -> 00000010
+   010 -> 00000100
+   011 -> 00001000
+   100 -> 00010000
+   101 -> 00100000
+   110 -> 01000000
+   111 -> 10000000
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 57MB peak: 144MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Aug  6 16:39:43 2018
+
+###########################################################]

@@ -1,0 +1,16 @@
+.\..\..\tb\parallel2byte_24s_1s_3E.vo
+.\..\..\tb\packetheader_1s.vo
+.\..\..\tb\crc16_1lane.vo
+.\..\..\rtl\colorbar_gen.v
+.\..\..\rtl\DCS_Encoder.v
+.\..\..\rtl\DCS_ROM.v
+.\..\..\rtl\IO_Controller_TX.v
+.\..\..\rtl\oDDRx4.v
+.\..\..\rtl\DPHY_TX_INST.v
+.\..\..\rtl\LP_HS_dly_ctrl.v
+.\..\..\rtl\BYTE_PACKETIZER.v
+.\..\..\rtl\IPExpress\pll_pix2byte_RGB888_1lane.v
+.\..\..\rtl\top.v
+.\..\..\tb\Parallel2DSI_tb_1lane.v
+.\..\..\rtl\compiler_directives.v
+.\src\pwr_sq_ctrl.v

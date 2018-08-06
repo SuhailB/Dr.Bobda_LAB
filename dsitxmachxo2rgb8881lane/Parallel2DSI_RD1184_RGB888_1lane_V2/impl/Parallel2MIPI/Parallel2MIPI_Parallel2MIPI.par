@@ -1,0 +1,364 @@
+PAR: Place And Route Diamond (64-bit) 3.10.0.111.2.
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Mon Aug 06 16:39:52 2018
+
+C:/lscc/diamond/3.10_x64/ispfpga\bin\nt64\par -f
+Parallel2MIPI_Parallel2MIPI.p2t Parallel2MIPI_Parallel2MIPI_map.ncd
+Parallel2MIPI_Parallel2MIPI.dir Parallel2MIPI_Parallel2MIPI.prf -gui
+
+
+Preference file: Parallel2MIPI_Parallel2MIPI.prf.
+
+Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
+Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
+----------   --------     -----        ------       -----------  -----------  ----         ------
+5_1   *      0            -17.902      62924989     -            -            24           Success
+
+* : Design saved.
+
+Total (real) run time for 1-seed: 24 secs 
+
+par done!
+
+Lattice Place and Route Report for Design "Parallel2MIPI_Parallel2MIPI_map.ncd"
+Mon Aug 06 16:39:52 2018
+
+PAR: Place And Route Diamond (64-bit) 3.10.0.111.2.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF:parHold=0 Parallel2MIPI_Parallel2MIPI_map.ncd Parallel2MIPI_Parallel2MIPI.dir/5_1.ncd Parallel2MIPI_Parallel2MIPI.prf
+Preference file: Parallel2MIPI_Parallel2MIPI.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file Parallel2MIPI_Parallel2MIPI_map.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-2000ZE
+Package:     WLCSP49
+Performance: 1
+Loading device for application par from file 'xo2c2000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)   17+4(JTAG)/216     10% used
+                  17+4(JTAG)/39      54% bonded
+   IOLOGIC            5/216           2% used
+
+   SLICE            397/1056         37% used
+
+   CLKDIV             1/4            25% used
+   EBR                3/8            37% used
+   PLL                1/1           100% used
+   ECLKSYNC           2/4            50% used
+
+
+INFO: Design contains EBR with ASYNC Reset Mode that has a limitation: The use of the EBR block asynchronous reset requires that certain timing be met between the clock and the reset within the memory block. See the device specific data sheet for additional details.
+Based on the preference: FREQUENCY NET "CLKOP" 300.000000 MHz ;
+A new generated preference: FREQUENCY NET "u_DPHY_TX_INST/u_oDDRx4/sclk" 75.000000 MHz ;
+Number of Signals: 1300
+Number of Connections: 3698
+
+Pin Constraint Summary:
+   15 out of 15 pins locked (100% locked).
+
+The following 4 signals are selected to use the primary clock routing resources:
+    CLKOP (driver: u_pll_pix2byte_RGB888_1lane/PLLInst_0, clk load #: 0)
+    u_DPHY_TX_INST/u_oDDRx4/sclk (driver: u_DPHY_TX_INST/u_oDDRx4/Inst3_CLKDIVC, clk load #: 4)
+    byte_clk (driver: u_pll_pix2byte_RGB888_1lane/PLLInst_0, clk load #: 196)
+    PIXCLK_c (driver: PIXCLK, clk load #: 50)
+
+
+The following 4 signals are selected to use the secondary clock routing resources:
+    reset_n_c (driver: reset_n, clk load #: 0, sr load #: 158, ce load #: 0)
+    u_BYTE_PACKETIZER/u_packetheader/un1_q_bytepkt_en_0 (driver: SLICE_421, clk load #: 0, sr load #: 26, ce load #: 0)
+    LCD_backlight_PWM_c (driver: u_DCS_ROM/SLICE_147, clk load #: 0, sr load #: 23, ce load #: 0)
+    u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/rden_i (driver: SLICE_423, clk load #: 0, sr load #: 0, ce load #: 10)
+
+No signal is selected as Global Set/Reset.
+Starting Placer Phase 0.
+..........
+Finished Placer Phase 0.  REAL time: 3 secs 
+
+Starting Placer Phase 1.
+...
+Placer score = 195169545.
+Finished Placer Phase 1.  REAL time: 5 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  194431740
+Finished Placer Phase 2.  REAL time: 5 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 2 out of 8 (25%)
+  PLL        : 1 out of 1 (100%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Quadrants All (TL, TR, BL, BR) - Global Clocks:
+  PRIMARY "CLKOP" from CLKOP on comp "u_pll_pix2byte_RGB888_1lane/PLLInst_0" on PLL site "LPLL", clk load = 0
+  PRIMARY "u_DPHY_TX_INST/u_oDDRx4/sclk" from CDIVX on comp "u_DPHY_TX_INST/u_oDDRx4/Inst3_CLKDIVC" on CLKDIV site "TCLKDIV1", clk load = 4
+  PRIMARY "byte_clk" from CLKOS2 on comp "u_pll_pix2byte_RGB888_1lane/PLLInst_0" on PLL site "LPLL", clk load = 196
+  PRIMARY "PIXCLK_c" from comp "PIXCLK" on CLK_PIN site "E4 (PB11A)", clk load = 50
+  SECONDARY "reset_n_c" from comp "reset_n" on CLK_PIN site "B3 (PT18C)", clk load = 0, ce load = 0, sr load = 158
+  SECONDARY "u_BYTE_PACKETIZER/u_packetheader/un1_q_bytepkt_en_0" from F1 on comp "SLICE_421" on site "R9C15C", clk load = 0, ce load = 0, sr load = 26
+  SECONDARY "LCD_backlight_PWM_c" from Q0 on comp "u_DCS_ROM/SLICE_147" on site "R12C15A", clk load = 0, ce load = 0, sr load = 23
+  SECONDARY "u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/rden_i" from F1 on comp "SLICE_423" on site "R10C8A", clk load = 0, ce load = 10, sr load = 0
+
+  PRIMARY  : 4 out of 8 (50%)
+  SECONDARY: 4 out of 8 (50%)
+
+Edge Clocks:
+  ECLK "u_DPHY_TX_INST/u_oDDRx4/eclkc": TECLK0
+    - From GPLL_CLKOS "LPLL".CLKOS, driver "u_pll_pix2byte_RGB888_1lane/PLLInst_0".
+  ECLK "u_DPHY_TX_INST/u_oDDRx4/eclkd": TECLK1
+    - From GPLL_CLKOP "LPLL".CLKOP, driver "u_pll_pix2byte_RGB888_1lane/PLLInst_0".
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   17 + 4(JTAG) out of 216 (9.7%) PIO sites used.
+   17 + 4(JTAG) out of 39 (53.8%) bonded PIO sites used.
+   Number of PIO comps: 15; differential: 2.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+----------------+------------+-----------+
+| I/O Bank | Usage          | Bank Vccio | Bank Vref |
++----------+----------------+------------+-----------+
+| 0        | 10 / 20 ( 50%) | 2.5V       | -         |
+| 2        | 3 / 13 ( 23%)  | 2.5V       | -         |
+| 5        | 4 / 6 ( 66%)   | 1.2V       | -         |
++----------+----------------+------------+-----------+
+
+Total placer CPU time: 4 secs 
+
+Dumping design to file Parallel2MIPI_Parallel2MIPI.dir/5_1.ncd.
+
+0 connections routed; 3698 unrouted.
+Starting router resource preassignment
+
+Completed router resource preassignment. Real time: 7 secs 
+
+Start NBR router at 16:39:59 08/06/18
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 16:39:59 08/06/18
+
+Start NBR section for initial routing at 16:39:59 08/06/18
+Level 1, iteration 1
+42(0.03%) conflicts; 2531(68.44%) untouched conns; 9256796 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -14.677ns/-9256.796ns; real time: 8 secs 
+Level 2, iteration 1
+144(0.11%) conflicts; 1958(52.95%) untouched conns; 9175612 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.006ns/-9175.613ns; real time: 9 secs 
+Level 3, iteration 1
+92(0.07%) conflicts; 970(26.23%) untouched conns; 9655443 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -14.998ns/-9655.444ns; real time: 10 secs 
+Level 4, iteration 1
+92(0.07%) conflicts; 0(0.00%) untouched conn; 9715683 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.100ns/-9715.683ns; real time: 11 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 16:40:03 08/06/18
+Level 4, iteration 1
+97(0.07%) conflicts; 0(0.00%) untouched conn; 9702469 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.149ns/-9702.469ns; real time: 11 secs 
+Level 4, iteration 2
+79(0.06%) conflicts; 0(0.00%) untouched conn; 9784153 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.055ns/-9784.153ns; real time: 12 secs 
+Level 4, iteration 3
+70(0.05%) conflicts; 0(0.00%) untouched conn; 9779841 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.006ns/-9779.841ns; real time: 12 secs 
+Level 4, iteration 4
+57(0.04%) conflicts; 0(0.00%) untouched conn; 9779841 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.006ns/-9779.841ns; real time: 12 secs 
+Level 4, iteration 5
+51(0.04%) conflicts; 0(0.00%) untouched conn; 9790339 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.006ns/-9790.339ns; real time: 13 secs 
+Level 4, iteration 6
+59(0.05%) conflicts; 0(0.00%) untouched conn; 9790339 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.006ns/-9790.339ns; real time: 13 secs 
+Level 4, iteration 7
+60(0.05%) conflicts; 0(0.00%) untouched conn; 9871246 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.046ns/-9871.246ns; real time: 13 secs 
+Level 4, iteration 8
+47(0.04%) conflicts; 0(0.00%) untouched conn; 9871246 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.046ns/-9871.246ns; real time: 14 secs 
+Level 4, iteration 9
+44(0.03%) conflicts; 0(0.00%) untouched conn; 9915034 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.006ns/-9915.034ns; real time: 14 secs 
+Level 4, iteration 10
+43(0.03%) conflicts; 0(0.00%) untouched conn; 9915034 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.006ns/-9915.034ns; real time: 15 secs 
+Level 4, iteration 11
+37(0.03%) conflicts; 0(0.00%) untouched conn; 9980330 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.359ns/-9980.330ns; real time: 15 secs 
+Level 4, iteration 12
+26(0.02%) conflicts; 0(0.00%) untouched conn; 9980330 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.359ns/-9980.330ns; real time: 16 secs 
+Level 4, iteration 13
+28(0.02%) conflicts; 0(0.00%) untouched conn; 10129757 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.609ns/-10129.757ns; real time: 16 secs 
+Level 4, iteration 14
+28(0.02%) conflicts; 0(0.00%) untouched conn; 10129757 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.609ns/-10129.757ns; real time: 16 secs 
+Level 4, iteration 15
+21(0.02%) conflicts; 0(0.00%) untouched conn; 10213160 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.980ns/-10213.160ns; real time: 17 secs 
+Level 4, iteration 16
+22(0.02%) conflicts; 0(0.00%) untouched conn; 10213160 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.980ns/-10213.160ns; real time: 17 secs 
+Level 4, iteration 17
+14(0.01%) conflicts; 0(0.00%) untouched conn; 10362289 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -16.546ns/-10362.289ns; real time: 17 secs 
+Level 4, iteration 18
+22(0.02%) conflicts; 0(0.00%) untouched conn; 10362289 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -16.546ns/-10362.289ns; real time: 17 secs 
+Level 4, iteration 19
+16(0.01%) conflicts; 0(0.00%) untouched conn; 10259225 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.807ns/-10259.225ns; real time: 18 secs 
+Level 4, iteration 20
+9(0.01%) conflicts; 0(0.00%) untouched conn; 10259225 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.807ns/-10259.225ns; real time: 18 secs 
+Level 4, iteration 21
+3(0.00%) conflicts; 0(0.00%) untouched conn; 10697203 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -17.627ns/-10697.203ns; real time: 18 secs 
+Level 4, iteration 22
+4(0.00%) conflicts; 0(0.00%) untouched conn; 10697203 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -17.627ns/-10697.203ns; real time: 18 secs 
+Level 4, iteration 23
+4(0.00%) conflicts; 0(0.00%) untouched conn; 10407748 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.796ns/-10407.749ns; real time: 18 secs 
+Level 4, iteration 24
+2(0.00%) conflicts; 0(0.00%) untouched conn; 10407748 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.796ns/-10407.749ns; real time: 18 secs 
+Level 4, iteration 25
+2(0.00%) conflicts; 0(0.00%) untouched conn; 10344318 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.651ns/-10344.318ns; real time: 19 secs 
+Level 4, iteration 26
+5(0.00%) conflicts; 0(0.00%) untouched conn; 10344318 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.651ns/-10344.318ns; real time: 19 secs 
+Level 4, iteration 27
+3(0.00%) conflicts; 0(0.00%) untouched conn; 10549349 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -16.085ns/-10549.349ns; real time: 19 secs 
+Level 4, iteration 28
+4(0.00%) conflicts; 0(0.00%) untouched conn; 10549349 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -16.085ns/-10549.349ns; real time: 19 secs 
+Level 4, iteration 29
+3(0.00%) conflicts; 0(0.00%) untouched conn; 10766455 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -16.498ns/-10766.456ns; real time: 19 secs 
+Level 4, iteration 30
+3(0.00%) conflicts; 0(0.00%) untouched conn; 10766455 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -16.498ns/-10766.456ns; real time: 19 secs 
+Level 4, iteration 31
+1(0.00%) conflict; 0(0.00%) untouched conn; 10770823 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -16.498ns/-10770.824ns; real time: 20 secs 
+Level 4, iteration 32
+3(0.00%) conflicts; 0(0.00%) untouched conn; 10770823 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -16.498ns/-10770.824ns; real time: 20 secs 
+Level 4, iteration 33
+3(0.00%) conflicts; 0(0.00%) untouched conn; 10831807 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -16.979ns/-10831.808ns; real time: 20 secs 
+Level 4, iteration 34
+2(0.00%) conflicts; 0(0.00%) untouched conn; 10831807 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -16.979ns/-10831.808ns; real time: 20 secs 
+Level 4, iteration 35
+1(0.00%) conflict; 0(0.00%) untouched conn; 10934972 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -17.757ns/-10934.973ns; real time: 20 secs 
+Level 4, iteration 36
+1(0.00%) conflict; 0(0.00%) untouched conn; 10934972 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -17.757ns/-10934.973ns; real time: 20 secs 
+Level 4, iteration 37
+0(0.00%) conflict; 0(0.00%) untouched conn; 10946060 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -17.902ns/-10946.061ns; real time: 20 secs 
+
+Start NBR section for performance tuning (iteration 1) at 16:40:12 08/06/18
+Level 4, iteration 1
+5(0.00%) conflicts; 0(0.00%) untouched conn; 10382899 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.950ns/-10382.899ns; real time: 21 secs 
+Level 4, iteration 2
+2(0.00%) conflicts; 0(0.00%) untouched conn; 10706898 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -17.344ns/-10706.898ns; real time: 21 secs 
+Level 4, iteration 3
+0(0.00%) conflict; 0(0.00%) untouched conn; 10988987 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -18.967ns/-10988.988ns; real time: 21 secs 
+
+Start NBR section for re-routing at 16:40:13 08/06/18
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 10941466 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -17.902ns/-10941.467ns; real time: 22 secs 
+
+Start NBR section for post-routing at 16:40:14 08/06/18
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 1355 (36.64%)
+  Estimated worst slack<setup> : -17.902ns
+  Timing score<setup> : 62924989
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+Total CPU time 22 secs 
+Total REAL time: 24 secs 
+Completely routed.
+End of route.  3698 routed (100.00%); 0 unrouted.
+
+Timing score: 62924989 
+
+Dumping design to file Parallel2MIPI_Parallel2MIPI.dir/5_1.ncd.
+
+
+All signals are completely routed.
+
+
+PAR_SUMMARY::Run status = Success
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = -17.902
+PAR_SUMMARY::Timing score<setup/<ns>> = 62924.989
+PAR_SUMMARY::Worst  slack<hold /<ns>> = <n/a>
+PAR_SUMMARY::Timing score<hold /<ns>> = <n/a>
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 22 secs 
+Total REAL time to completion: 24 secs 
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.

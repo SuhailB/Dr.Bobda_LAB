@@ -1,0 +1,23 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Mon Aug 06 16:40:26 2018 *
+NOTE DESIGN NAME: top *
+NOTE DEVICE NAME: LCMXO2-2000ZE-1WLCSP49 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS DCK : C4 : out *
+NOTE PINS LPCLK[0] : C6 : out *
+NOTE PINS reset_n : B3 : in *
+NOTE PINS LCD_backlight_PWM : C3 : out *
+NOTE PINS LCD_enable_3v0 : C2 : out *
+NOTE PINS LCD_enable_1v8 : E2 : out *
+NOTE PINS LCD_reset : B2 : out *
+NOTE PINS LCD_sync : A3 : in *
+NOTE PINS LED[1] : E7 : out *
+NOTE PINS LED[0] : F7 : out *
+NOTE PINS PIXCLK : E4 : in *
+NOTE PINS LP0[1] : A7 : out *
+NOTE PINS LP0[0] : B6 : out *
+NOTE PINS LPCLK[1] : C7 : out *
+NOTE PINS D0 : C1 : out *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

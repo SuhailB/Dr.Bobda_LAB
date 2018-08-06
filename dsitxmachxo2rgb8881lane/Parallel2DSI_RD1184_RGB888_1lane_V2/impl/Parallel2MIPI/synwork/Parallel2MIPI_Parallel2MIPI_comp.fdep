@@ -1,0 +1,87 @@
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\Suhail\\Downloads\\Documents (7)\\dsitxmachxo2rgb8881lane\\Parallel2DSI_RD1184_RGB888_1lane_V2\\impl\\Parallel2MIPI\\synwork\\Parallel2MIPI_Parallel2MIPI_comp.srs|-top|top|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-I|C:\\Users\\Suhail\\Downloads\\Documents (7)\\dsitxmachxo2rgb8881lane\\Parallel2DSI_RD1184_RGB888_1lane_V2\\impl|-I|C:\\Users\\Suhail\\Downloads\\Documents (7)\\dsitxmachxo2rgb8881lane\\Parallel2DSI_RD1184_RGB888_1lane_V2\\impl\\Parallel2MIPI\\|-I|C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib|-v2001|-devicelib|C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\lucent\\machxo2.v|-devicelib|C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\lucent\\pmi_def.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-D_MULTIPLE_FILE_COMPILATION_UNIT_|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\bin64\\c_ver.exe":1501910016
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\lucent\\machxo2.v":1501914216
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\lucent\\pmi_def.v":1501914216
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\vlog\\hypermods.v":1501909424
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\vlog\\umr_capim.v":1501909424
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\vlog\\scemi_objects.v":1501909424
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\vlog\\scemi_pipes.svh":1501909424
+#CUR:"C:\\Users\\Suhail\\Downloads\\Documents (7)\\dsitxmachxo2rgb8881lane\\Parallel2DSI_RD1184_RGB888_1lane_V2\\rtl\\compiler_directives.v":1436212016
+#CUR:"C:\\Users\\Suhail\\Downloads\\Documents (7)\\dsitxmachxo2rgb8881lane\\Parallel2DSI_RD1184_RGB888_1lane_V2\\rtl\\top.v":1533591576
+#CUR:"C:\\Users\\Suhail\\Downloads\\Documents (7)\\dsitxmachxo2rgb8881lane\\Parallel2DSI_RD1184_RGB888_1lane_V2\\rtl\\compiler_directives.v":1436212016
+#CUR:"C:\\Users\\Suhail\\Downloads\\Documents (7)\\dsitxmachxo2rgb8881lane\\Parallel2DSI_RD1184_RGB888_1lane_V2\\rtl\\IPExpress\\pll_pix2byte_RGB888_1lane.v":1436212016
+#CUR:"C:\\Users\\Suhail\\Downloads\\Documents (7)\\dsitxmachxo2rgb8881lane\\Parallel2DSI_RD1184_RGB888_1lane_V2\\rtl\\DPHY_TX_INST.v":1436212016
+#CUR:"C:\\Users\\Suhail\\Downloads\\Documents (7)\\dsitxmachxo2rgb8881lane\\Parallel2DSI_RD1184_RGB888_1lane_V2\\rtl\\compiler_directives.v":1436212016
+#CUR:"C:\\Users\\Suhail\\Downloads\\Documents (7)\\dsitxmachxo2rgb8881lane\\Parallel2DSI_RD1184_RGB888_1lane_V2\\rtl\\IO_Controller_TX.v":1436212016
+#CUR:"C:\\Users\\Suhail\\Downloads\\Documents (7)\\dsitxmachxo2rgb8881lane\\Parallel2DSI_RD1184_RGB888_1lane_V2\\rtl\\oDDRx4.v":1436212016
+#CUR:"C:\\Users\\Suhail\\Downloads\\Documents (7)\\dsitxmachxo2rgb8881lane\\Parallel2DSI_RD1184_RGB888_1lane_V2\\rtl\\colorbar_gen.v":1436212016
+#CUR:"C:\\Users\\Suhail\\Downloads\\Documents (7)\\dsitxmachxo2rgb8881lane\\Parallel2DSI_RD1184_RGB888_1lane_V2\\rtl\\DCS_Encoder.v":1436212016
+#CUR:"C:\\Users\\Suhail\\Downloads\\Documents (7)\\dsitxmachxo2rgb8881lane\\Parallel2DSI_RD1184_RGB888_1lane_V2\\rtl\\DCS_ROM.v":1533581759
+#CUR:"C:\\Users\\Suhail\\Downloads\\Documents (7)\\dsitxmachxo2rgb8881lane\\Parallel2DSI_RD1184_RGB888_1lane_V2\\rtl\\BYTE_PACKETIZER.v":1436212016
+#CUR:"C:\\Users\\Suhail\\Downloads\\Documents (7)\\dsitxmachxo2rgb8881lane\\Parallel2DSI_RD1184_RGB888_1lane_V2\\rtl\\crc16_1lane_bb.v":1436212016
+#CUR:"C:\\Users\\Suhail\\Downloads\\Documents (7)\\dsitxmachxo2rgb8881lane\\Parallel2DSI_RD1184_RGB888_1lane_V2\\rtl\\parallel2byte_bb.v":1436212016
+#CUR:"C:\\Users\\Suhail\\Downloads\\Documents (7)\\dsitxmachxo2rgb8881lane\\Parallel2DSI_RD1184_RGB888_1lane_V2\\rtl\\packetheader_bb.v":1436212016
+#CUR:"C:\\Users\\Suhail\\Downloads\\Documents (7)\\dsitxmachxo2rgb8881lane\\Parallel2DSI_RD1184_RGB888_1lane_V2\\rtl\\LP_HS_dly_ctrl.v":1436212016
+#CUR:"C:\\Users\\Suhail\\Documents\\GitHub\\iCE40UltraWearableReferenceDesigns\\MIPI DSI TX Bridge\\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\\rtl\\pwr_sq_ctrl.v":1533319393
+0			"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\compiler_directives.v" verilog
+1			"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v" verilog
+2			"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\IPExpress\pll_pix2byte_RGB888_1lane.v" verilog
+3			"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v" verilog
+4			"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\IO_Controller_TX.v" verilog
+5			"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\oDDRx4.v" verilog
+6			"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v" verilog
+7			"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v" verilog
+8			"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v" verilog
+9			"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\BYTE_PACKETIZER.v" verilog
+10			"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\crc16_1lane_bb.v" verilog
+11			"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\parallel2byte_bb.v" verilog
+12			"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\packetheader_bb.v" verilog
+13			"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v" verilog
+14			"C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v" verilog
+#Dependency Lists(Uses List)
+0 -1
+1 6 7 8 3 13 9 2 14 0
+2 -1
+3 4 5 0
+4 -1
+5 -1
+6 -1
+7 -1
+8 -1
+9 10 12 11
+10 -1
+11 -1
+12 -1
+13 -1
+14 -1
+#Dependency Lists(Users Of)
+0 3 1
+1 -1
+2 1
+3 1
+4 3
+5 3
+6 1
+7 1
+8 1
+9 1
+10 9
+11 9
+12 9
+13 1
+14 1
+#Design Unit to File Association
+module work crc16_1lane 10
+module work packetheader 12
+module work parallel2byte 11
+module work IO_Controller_TX 4
+module work oDDRx4 5
+module work top 1
+module work colorbar_gen 6
+module work DCS_Encoder 7
+module work DCS_ROM 8
+module work DPHY_TX_INST 3
+module work LP_HS_DELAY_CNTRL 13
+module work BYTE_PACKETIZER 9
+module work pll_pix2byte_RGB888_1lane 2
+module work pwr_sq_ctrl 14

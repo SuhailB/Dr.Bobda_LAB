@@ -1,0 +1,89 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=work
+
+[Library]
+Simulation=.\Simulation\Simulation.lib
+
+[Settings]
+AccessRead=1
+AccessReadWrite=1
+AccessACCB=1
+AccessACCR=1
+AccessReadWriteSLP=1
+AccessReadTopLevel=0
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+fileopenfolder=C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+PriorityLibNames=pmi_work
+LibNames=ovi_machxo2
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+simulation=.
+work=.
+
+[LocalVerilogDirs]
+Count=0
+
+[DefineMacro]
+Global=
+
+[SpecTracer]
+WindowVisible=0
+
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/..\..\..\tb\parallel2byte_24s_1s_3E.vo=-1
+/..\..\..\tb\packetheader_1s.vo=-1
+/..\..\..\tb\crc16_1lane.vo=-1
+/..\..\..\rtl\colorbar_gen.v=-1
+/..\..\..\rtl\DCS_Encoder.v=-1
+/..\..\..\rtl\DCS_ROM.v=-1
+/..\..\..\rtl\IO_Controller_TX.v=-1
+/..\..\..\rtl\oDDRx4.v=-1
+/..\..\..\rtl\DPHY_TX_INST.v=-1
+/..\..\..\rtl\LP_HS_dly_ctrl.v=-1
+/..\..\..\rtl\BYTE_PACKETIZER.v=-1
+/..\..\..\rtl\IPExpress\pll_pix2byte_RGB888_1lane.v=-1
+/..\..\..\rtl\top.v=-1
+/..\..\..\tb\Parallel2DSI_tb_1lane.v=-1
+/..\..\..\rtl\compiler_directives.v=-1
+/pwr_sq_ctrl.v=-1
+
+[Files.Data]
+.\..\..\tb\parallel2byte_24s_1s_3E.vo=Verilog Source Code
+.\..\..\tb\packetheader_1s.vo=Verilog Source Code
+.\..\..\tb\crc16_1lane.vo=Verilog Source Code
+.\..\..\rtl\colorbar_gen.v=Verilog Source Code
+.\..\..\rtl\DCS_Encoder.v=Verilog Source Code
+.\..\..\rtl\DCS_ROM.v=Verilog Source Code
+.\..\..\rtl\IO_Controller_TX.v=Verilog Source Code
+.\..\..\rtl\oDDRx4.v=Verilog Source Code
+.\..\..\rtl\DPHY_TX_INST.v=Verilog Source Code
+.\..\..\rtl\LP_HS_dly_ctrl.v=Verilog Source Code
+.\..\..\rtl\BYTE_PACKETIZER.v=Verilog Source Code
+.\..\..\rtl\IPExpress\pll_pix2byte_RGB888_1lane.v=Verilog Source Code
+.\..\..\rtl\top.v=Verilog Source Code
+.\..\..\tb\Parallel2DSI_tb_1lane.v=Verilog Source Code
+.\..\..\rtl\compiler_directives.v=Verilog Source Code
+.\src\pwr_sq_ctrl.v=Verilog Source Code
+

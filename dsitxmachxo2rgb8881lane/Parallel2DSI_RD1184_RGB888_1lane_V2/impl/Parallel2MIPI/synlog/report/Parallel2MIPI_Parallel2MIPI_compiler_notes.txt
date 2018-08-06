@@ -1,0 +1,43 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG364 :"C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v":18:7:18:17|Synthesizing module pwr_sq_ctrl in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\parallel2byte_bb.v":49:7:49:19|Synthesizing module parallel2byte in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\packetheader_bb.v":49:7:49:18|Synthesizing module packetheader in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\BYTE_PACKETIZER.v":49:7:49:21|Synthesizing module BYTE_PACKETIZER in library work.
+@N: CG179 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\BYTE_PACKETIZER.v":117:53:117:56|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\BYTE_PACKETIZER.v":118:53:118:56|Removing redundant assignment.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\crc16_1lane_bb.v":49:7:49:17|Synthesizing module crc16_1lane in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":47:7:47:23|Synthesizing module LP_HS_DELAY_CNTRL in library work.
+@N: CG179 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":152:78:152:86|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":155:78:155:88|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":158:78:158:87|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":162:78:162:83|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":166:78:166:84|Removing redundant assignment.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1051:7:1051:14|Synthesizing module ROM16X1A in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":176:7:176:13|Synthesizing module FD1P3BX in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":187:7:187:13|Synthesizing module FD1P3DX in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1120:7:1120:9|Synthesizing module VHI in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1615:7:1615:13|Synthesizing module ODDRX4B in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1525:7:1525:15|Synthesizing module ECLKSYNCA in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1124:7:1124:9|Synthesizing module VLO in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1512:7:1512:13|Synthesizing module CLKDIVC in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\oDDRx4.v":8:7:8:12|Synthesizing module oDDRx4 in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\IO_Controller_TX.v":49:7:49:22|Synthesizing module IO_Controller_TX in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":50:7:50:18|Synthesizing module DPHY_TX_INST in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v":48:7:48:13|Synthesizing module DCS_ROM in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":48:7:48:17|Synthesizing module DCS_Encoder in library work.
+@N: CG179 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":107:53:107:63|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":115:41:115:46|Removing redundant assignment.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v":51:7:51:9|Synthesizing module top in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1730:7:1730:13|Synthesizing module EHXPLLJ in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\IPExpress\pll_pix2byte_RGB888_1lane.v":8:7:8:31|Synthesizing module pll_pix2byte_RGB888_1lane in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v":52:7:52:18|Synthesizing module colorbar_gen in library work.
+@N: CL159 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v":101:28:101:32|Input VSYNC is unused.
+@N: CL159 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v":102:28:102:32|Input HSYNC is unused.
+@N: CL159 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v":103:28:103:29|Input DE is unused.
+@N: CL159 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v":104:28:104:34|Input PIXDATA is unused.
+@N: CL159 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\IO_Controller_TX.v":50:11:50:17|Input reset_n is unused.
+@N: CL135 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":107:16:107:21|Found sequential shift data_dly[54].hold_data with address depth of 54 words and data bit width of 32.
+@N: CL201 :"C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v":76:0:76:5|Trying to extract state machine for register state.
+@N|Running in 64-bit mode
+

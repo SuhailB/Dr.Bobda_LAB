@@ -1,0 +1,996 @@
+
+             Lattice Mapping Report File for Design Module 'top'
+
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-2000ZE -t WLCSP49 -s 1 -oc Commercial
+     Parallel2MIPI_Parallel2MIPI.ngd -o Parallel2MIPI_Parallel2MIPI_map.ncd -pr
+     Parallel2MIPI_Parallel2MIPI.prf -mp Parallel2MIPI_Parallel2MIPI.mrp
+     C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DS
+     I_RD1184_RGB888_1lane_V2/impl/Parallel2MIPI.lpf -c 0 -gui 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-2000ZEWLCSP49
+Target Performance:   1
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.10.0.111.2
+Mapped on:  08/06/18  16:39:50
+
+Design Summary
+--------------
+
+   Number of registers:    384 out of  2229 (17%)
+      PFU registers:          381 out of  2112 (18%)
+      PIO registers:            3 out of   117 (3%)
+   Number of SLICEs:       397 out of  1056 (38%)
+      SLICEs as Logic/ROM:    361 out of  1056 (34%)
+      SLICEs as RAM:           36 out of   792 (5%)
+      SLICEs as Carry:        104 out of  1056 (10%)
+   Number of LUT4s:        788 out of  2112 (37%)
+      Number used as logic LUTs:        508
+      Number used as distributed RAM:    72
+      Number used as ripple logic:      208
+      Number used as shift registers:     0
+   Number of PIO sites used: 17 + 4(JTAG) out of 39 (54%)
+      Number of PIO sites used for single ended IOs: 17
+      Number of PIO sites used for differential IOs: 4 (represented by 2 PIO
+     comps in NCD)
+   Number of IDDR/ODDR/TDDR cells used: 2 out of 117 (2%)
+      Number of IDDR cells:   0
+      Number of ODDR cells:   2
+      Number of TDDR cells:   0
+   Number of PIO using at least one IDDR/ODDR/TDDR: 2 (2 differential)
+      Number of PIO using IDDR only:        0 (0 differential)
+      Number of PIO using ODDR only:        2 (2 differential)
+      Number of PIO using TDDR only:        0 (0 differential)
+      Number of PIO using IDDR/ODDR:        0 (0 differential)
+      Number of PIO using IDDR/TDDR:        0 (0 differential)
+      Number of PIO using ODDR/TDDR:        0 (0 differential)
+      Number of PIO using IDDR/ODDR/TDDR:   0 (0 differential)
+   Number of block RAMs:  3 out of 8 (38%)
+   Number of GSRs:  0 out of 1 (0%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+
+                                    Page 1
+
+
+
+
+Design:  top                                           Date:  08/06/18  16:39:50
+
+Design Summary (cont)
+---------------------
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  1 out of 1 (100%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  1 out of 4 (25%)
+   Number of ECLKSYNCA:  2 out of 4 (50%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  7
+     Net PIXCLK_c: 50 loads, 50 rising, 0 falling (Driver: PIO PIXCLK )
+     Net u_DPHY_TX_INST/u_oDDRx4/eclkc: 1 loads, 1 rising, 0 falling (Driver:
+     u_DPHY_TX_INST/u_oDDRx4/Inst4_ECLKSYNCA )
+     Net u_DPHY_TX_INST/u_oDDRx4/sclk: 4 loads, 4 rising, 0 falling (Driver:
+     u_DPHY_TX_INST/u_oDDRx4/Inst3_CLKDIVC )
+     Net u_DPHY_TX_INST/u_oDDRx4/eclkd: 2 loads, 2 rising, 0 falling (Driver:
+     u_DPHY_TX_INST/u_oDDRx4/Inst2_ECLKSYNCA )
+     Net CLKOS: 1 loads, 1 rising, 0 falling (Driver:
+     u_pll_pix2byte_RGB888_1lane/PLLInst_0 )
+     Net CLKOP: 2 loads, 2 rising, 0 falling (Driver:
+     u_pll_pix2byte_RGB888_1lane/PLLInst_0 )
+     Net byte_clk: 196 loads, 196 rising, 0 falling (Driver:
+     u_pll_pix2byte_RGB888_1lane/PLLInst_0 )
+   Number of Clock Enables:  28
+     Net LCD_Power_Controller.N_118_i: 1 loads, 0 LSLICEs
+     Net u_DPHY_TX_INST/u_oDDRx4/FF_0_Q: 2 loads, 2 LSLICEs
+     Net w_de: 3 loads, 0 LSLICEs
+     Net u_DCS_Encoder/un17_bitcntr_f0_0_o2[4]: 9 loads, 9 LSLICEs
+     Net u_DCS_ROM/un22_byte_cnt_0_a2: 6 loads, 6 LSLICEs
+     Net u_LP_HS_DELAY_CNTRL/un72_lp_data_i_0: 1 loads, 1 LSLICEs
+     Net u_LP_HS_DELAY_CNTRL/un72_lp_clk_i_0: 1 loads, 1 LSLICEs
+     Net u_LP_HS_DELAY_CNTRL/un48_hsxx_clk_en_i_0: 1 loads, 1 LSLICEs
+     Net u_LP_HS_DELAY_CNTRL/hs_extendede: 4 loads, 4 LSLICEs
+     Net u_LP_HS_DELAY_CNTRL/N_123_i: 9 loads, 9 LSLICEs
+     Net u_LP_HS_DELAY_CNTRL/N_126_i: 9 loads, 9 LSLICEs
+     Net u_BYTE_PACKETIZER/u_parallel2byte/un2_read_2_0_a3: 2 loads, 0 LSLICEs
+     Net u_BYTE_PACKETIZER/u_parallel2byte/un2_read_1_0_a3: 2 loads, 0 LSLICEs
+     Net u_BYTE_PACKETIZER/u_parallel2byte/un2_read_0_0_a3: 2 loads, 0 LSLICEs
+     Net u_BYTE_PACKETIZER/byte_en: 8 loads, 8 LSLICEs
+     Net u_BYTE_PACKETIZER/u_packetheader/un1_q_long_pkt_indicator_1_1_i: 5
+     loads, 5 LSLICEs
+     Net u_BYTE_PACKETIZER/u_packetheader/un1_q_long_pkt_indicator_1_i: 1 loads,
+     1 LSLICEs
+     Net u_BYTE_PACKETIZER/chksum_rdy: 8 loads, 8 LSLICEs
+     Net u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/wren_i: 6 loads, 6
+     LSLICEs
+     Net u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/rden_i: 10 loads, 10
+     LSLICEs
+     Net u_BYTE_PACKETIZER/u_packetheader/un3_q_wc_0: 8 loads, 8 LSLICEs
+     Net u_BYTE_PACKETIZER/u_packetheader/un5_q_ECC_0: 3 loads, 3 LSLICEs
+     Net u_BYTE_PACKETIZER/u_packetheader/un14_lpkt_cnt_En_i: 1 loads, 1 LSLICEs
+     
+     Net u_BYTE_PACKETIZER/w_edge_detect: 1 loads, 1 LSLICEs
+     Net LCD_Power_Controller/timer_i: 6 loads, 6 LSLICEs
+
+                                    Page 2
+
+
+
+
+Design:  top                                           Date:  08/06/18  16:39:50
+
+Design Summary (cont)
+---------------------
+     Net LCD_Power_Controller/state[7]: 1 loads, 1 LSLICEs
+     Net LCD_Power_Controller.N_117_i: 1 loads, 0 LSLICEs
+     Net LCD_Power_Controller.N_116_i: 1 loads, 0 LSLICEs
+   Number of LSRs:  7
+     Net reset_n_c: 158 loads, 147 LSLICEs
+     Net reset_n_c_i: 1 loads, 0 LSLICEs
+     Net LCD_backlight_PWM_c: 23 loads, 23 LSLICEs
+     Net hs_en: 4 loads, 4 LSLICEs
+     Net u_BYTE_PACKETIZER/u_packetheader/un1_q_bytepkt_en_0: 26 loads, 26
+     LSLICEs
+     Net u_BYTE_PACKETIZER/un1_w_edge_detect: 9 loads, 9 LSLICEs
+     Net powerSequenceDone_i: 1 loads, 0 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net reset_n_c: 159 loads
+     Net u_DCS_ROM/byte_cnt[1]: 88 loads
+     Net u_DCS_ROM/byte_cnt[2]: 87 loads
+     Net u_DCS_ROM/byte_cnt[3]: 87 loads
+     Net u_DCS_ROM/byte_cnt[5]: 67 loads
+     Net u_LP_HS_DELAY_CNTRL/tmp1[0]: 41 loads
+     Net u_DCS_ROM/byte_cnt[6]: 36 loads
+     Net u_DCS_ROM/byte_cnt[0]: 34 loads
+     Net u_LP_HS_DELAY_CNTRL/tmp1_i[1]: 32 loads
+     Net u_LP_HS_DELAY_CNTRL/tmp3[2]: 32 loads
+
+
+
+
+   Number of warnings:  28
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+WARNING - map: GSR inference not possible using signal 'reset_n_c_i' with
+     GSR_NET preference. The signal should be a local reset of asynchronous
+     registers with GSR enabled for GSR inference to be possible.
+WARNING - map: IO buffer missing for top level port VSYNC...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port HSYNC...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port DE...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port PIXDATA[23:0](23)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port PIXDATA[23:0](22)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port PIXDATA[23:0](21)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port PIXDATA[23:0](20)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port PIXDATA[23:0](19)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port PIXDATA[23:0](18)...logic
+     will be discarded.
+
+                                    Page 3
+
+
+
+
+Design:  top                                           Date:  08/06/18  16:39:50
+
+Design Errors/Warnings (cont)
+-----------------------------
+WARNING - map: IO buffer missing for top level port PIXDATA[23:0](17)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port PIXDATA[23:0](16)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port PIXDATA[23:0](15)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port PIXDATA[23:0](14)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port PIXDATA[23:0](13)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port PIXDATA[23:0](12)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port PIXDATA[23:0](11)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port PIXDATA[23:0](10)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port PIXDATA[23:0](9)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port PIXDATA[23:0](8)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port PIXDATA[23:0](7)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port PIXDATA[23:0](6)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port PIXDATA[23:0](5)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port PIXDATA[23:0](4)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port PIXDATA[23:0](3)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port PIXDATA[23:0](2)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port PIXDATA[23:0](1)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port PIXDATA[23:0](0)...logic
+     will be discarded.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| DCK                 | OUTPUT    | LVDS25E   |            |
++---------------------+-----------+-----------+------------+
+| LPCLK[0]            | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| reset_n             | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LCD_backlight_PWM   | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LCD_enable_3v0      | OUTPUT    | LVCMOS25  | OUT        |
++---------------------+-----------+-----------+------------+
+| LCD_enable_1v8      | OUTPUT    | LVCMOS25  | OUT        |
++---------------------+-----------+-----------+------------+
+
+                                    Page 4
+
+
+
+
+Design:  top                                           Date:  08/06/18  16:39:50
+
+IO (PIO) Attributes (cont)
+--------------------------
+| LCD_reset           | OUTPUT    | LVCMOS25  | OUT        |
++---------------------+-----------+-----------+------------+
+| LCD_sync            | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LED[1]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LED[0]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| PIXCLK              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LP0[1]              | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| LP0[0]              | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| LPCLK[1]            | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| D0                  | OUTPUT    | LVDS25E   |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block u_BYTE_PACKETIZER/u_parallel2byte/VCC_0 undriven or does not drive
+     anything - clipped.
+Block u_BYTE_PACKETIZER/genblk1.u_crc16/GSR_INST undriven or does not drive
+     anything - clipped.
+Block u_BYTE_PACKETIZER/u_packetheader/GSR_INST undriven or does not drive
+     anything - clipped.
+Block u_BYTE_PACKETIZER/u_parallel2byte/GSR_INST undriven or does not drive
+     anything - clipped.
+Block GSR_INST undriven or does not drive anything - clipped.
+Block LCD_Power_Controller/VCC undriven or does not drive anything - clipped.
+Block u_pll_pix2byte_RGB888_1lane/VCC undriven or does not drive anything -
+     clipped.
+Block u_BYTE_PACKETIZER/genblk1.u_crc16/GND_0 undriven or does not drive
+     anything - clipped.
+Block u_BYTE_PACKETIZER/u_parallel2byte/GND_0 undriven or does not drive
+     anything - clipped.
+Block u_DCS_ROM/VCC undriven or does not drive anything - clipped.
+Block u_DCS_Encoder/VCC undriven or does not drive anything - clipped.
+Block u_DCS_Encoder/GND undriven or does not drive anything - clipped.
+Block u_DPHY_TX_INST/GND undriven or does not drive anything - clipped.
+Block u_DPHY_TX_INST/VCC undriven or does not drive anything - clipped.
+Signal u_DPHY_TX_INST/u_oDDRx4/opensync_cken was merged into signal
+     u_DPHY_TX_INST/u_oDDRx4/FF_0_Q
+Signal LCD_Power_Controller/state_i[7] was merged into signal
+     LCD_Power_Controller/state[7]
+Signal hs_en_i was merged into signal hs_en
+Signal u_BYTE_PACKETIZER/u_packetheader/reset_n_i was merged into signal
+     reset_n_c
+Signal u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/invout_0 was merged into
+     signal u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/FF_1_Q
+Signal u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/invout_1 was merged into
+     signal u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/FF_0_Q
+Signal u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/rRst was merged into
+     signal u_BYTE_PACKETIZER/u_packetheader/un1_q_bytepkt_en_0
+
+                                    Page 5
+
+
+
+
+Design:  top                                           Date:  08/06/18  16:39:50
+
+Removed logic (cont)
+--------------------
+Signal u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/dec0_wre3 was merged into
+     signal u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/wren_i
+Signal u_BYTE_PACKETIZER/u_parallel2byte/reset_n_i was merged into signal
+     reset_n_c
+Signal LCD_backlight_PWM_c_i was merged into signal LCD_backlight_PWM_c
+Signal VCC undriven or does not drive anything - clipped.
+Signal LCD_Power_Controller/GND undriven or does not drive anything - clipped.
+Signal u_pll_pix2byte_RGB888_1lane/GND undriven or does not drive anything -
+     clipped.
+Signal u_BYTE_PACKETIZER/VCC undriven or does not drive anything - clipped.
+Signal u_BYTE_PACKETIZER/GND undriven or does not drive anything - clipped.
+Signal u_BYTE_PACKETIZER/byte_D1[0] undriven or does not drive anything -
+     clipped.
+Signal u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/GND undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/VCC undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/VCC undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/GND undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/VCC undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/GND undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/VCC undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/GND undriven or does not
+     drive anything - clipped.
+Signal u_LP_HS_DELAY_CNTRL/GND undriven or does not drive anything - clipped.
+Signal u_DCS_ROM/GND undriven or does not drive anything - clipped.
+Signal u_colorbar_gen/GND undriven or does not drive anything - clipped.
+Signal u_DPHY_TX_INST/u_oDDRx4/GND undriven or does not drive anything -
+     clipped.
+Signal u_DPHY_TX_INST/u_oDDRx4/VCC undriven or does not drive anything -
+     clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/VCC undriven or does not drive anything
+     - clipped.
+Signal LCD_Power_Controller/timer_cry_0_COUT[13] undriven or does not drive
+     anything - clipped.
+Signal LCD_Power_Controller/timer_1ms_cry_0_S0[0] undriven or does not drive
+     anything - clipped.
+Signal LCD_Power_Controller/N_10 undriven or does not drive anything - clipped.
+Signal LCD_Power_Controller/timer_1ms_cry_0_COUT[9] undriven or does not drive
+     anything - clipped.
+Signal LCD_Power_Controller/timer_cry_0_S0[0] undriven or does not drive
+     anything - clipped.
+Signal LCD_Power_Controller/N_9 undriven or does not drive anything - clipped.
+Signal u_pll_pix2byte_RGB888_1lane/CLKINTFB undriven or does not drive anything
+     - clipped.
+Signal u_pll_pix2byte_RGB888_1lane/DPHSRC undriven or does not drive anything -
+     clipped.
+Signal u_pll_pix2byte_RGB888_1lane/PLLACK undriven or does not drive anything -
+     clipped.
+Signal u_pll_pix2byte_RGB888_1lane/PLLDATO0 undriven or does not drive anything
+     - clipped.
+
+                                    Page 6
+
+
+
+
+Design:  top                                           Date:  08/06/18  16:39:50
+
+Removed logic (cont)
+--------------------
+Signal u_pll_pix2byte_RGB888_1lane/PLLDATO1 undriven or does not drive anything
+     - clipped.
+Signal u_pll_pix2byte_RGB888_1lane/PLLDATO2 undriven or does not drive anything
+     - clipped.
+Signal u_pll_pix2byte_RGB888_1lane/PLLDATO3 undriven or does not drive anything
+     - clipped.
+Signal u_pll_pix2byte_RGB888_1lane/PLLDATO4 undriven or does not drive anything
+     - clipped.
+Signal u_pll_pix2byte_RGB888_1lane/PLLDATO5 undriven or does not drive anything
+     - clipped.
+Signal u_pll_pix2byte_RGB888_1lane/PLLDATO6 undriven or does not drive anything
+     - clipped.
+Signal u_pll_pix2byte_RGB888_1lane/PLLDATO7 undriven or does not drive anything
+     - clipped.
+Signal u_pll_pix2byte_RGB888_1lane/REFCLK undriven or does not drive anything -
+     clipped.
+Signal u_pll_pix2byte_RGB888_1lane/INTLOCK undriven or does not drive anything -
+     clipped.
+Signal u_pll_pix2byte_RGB888_1lane/LOCK undriven or does not drive anything -
+     clipped.
+Signal u_pll_pix2byte_RGB888_1lane/CLKOS3 undriven or does not drive anything -
+     clipped.
+Signal u_BYTE_PACKETIZER/u_packetheader/lpkt_cnt_s_0_S1[15] undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_packetheader/lpkt_cnt_s_0_COUT[15] undriven or does
+     not drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_packetheader/un6_wc_end_flag_a_4_cry_0_0_S1 undriven
+     or does not drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_packetheader/un6_wc_end_flag_a_4_cry_0_0_S0 undriven
+     or does not drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_packetheader/N_2 undriven or does not drive anything
+     - clipped.
+Signal u_BYTE_PACKETIZER/u_packetheader/un6_wc_end_flag_a_4_cry_15_0_COUT
+     undriven or does not drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/full_cmp_ci_a_S1 undriven
+     or does not drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/full_cmp_ci_a_S0 undriven
+     or does not drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/a0_S1 undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/a0_COUT undriven or does
+     not drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/empty_cmp_ci_a_S1 undriven
+     or does not drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/empty_cmp_ci_a_S0 undriven
+     or does not drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/r_gctr_cia_S1 undriven or
+     does not drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/r_gctr_cia_S0 undriven or
+     does not drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/co1 undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/w_gctr_cia_S1 undriven or
+     does not drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/w_gctr_cia_S0 undriven or
+     does not drive anything - clipped.
+
+                                    Page 7
+
+
+
+
+Design:  top                                           Date:  08/06/18  16:39:50
+
+Removed logic (cont)
+--------------------
+Signal u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/a1_S1 undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/a1_COUT undriven or does
+     not drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/co1_1 undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_packetheader/lpkt_cnt_cry_0_S0[0] undriven or does
+     not drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_packetheader/N_1 undriven or does not drive anything
+     - clipped.
+Signal u_BYTE_PACKETIZER/byte_data[8] undriven or does not drive anything -
+     clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/AFF_1 undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/AEF_1 undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO17 undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO8 undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO7 undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO6 undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO5 undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO4 undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO3 undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO2 undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO1 undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO0 undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/AFF_0 undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/AEF_0 undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO17_0 undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO8_0 undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO7_0 undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO6_0 undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO5_0 undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO4_0 undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO3_0 undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO2_0 undriven or does not
+     drive anything - clipped.
+
+                                    Page 8
+
+
+
+
+Design:  top                                           Date:  08/06/18  16:39:50
+
+Removed logic (cont)
+--------------------
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO1_0 undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO0_0 undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/AFF undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/AEF undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO17_1 undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO8_1 undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO7_1 undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO6_1 undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO5_1 undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO4_1 undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO3_1 undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO2_1 undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO1_1 undriven or does not
+     drive anything - clipped.
+Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO0_1 undriven or does not
+     drive anything - clipped.
+Signal u_LP_HS_DELAY_CNTRL/hs_extended_cry_0_S0[0] undriven or does not drive
+     anything - clipped.
+Signal u_LP_HS_DELAY_CNTRL/N_1 undriven or does not drive anything - clipped.
+Signal u_LP_HS_DELAY_CNTRL/hs_extended_s_0_S1[5] undriven or does not drive
+     anything - clipped.
+Signal u_LP_HS_DELAY_CNTRL/hs_extended_s_0_COUT[5] undriven or does not drive
+     anything - clipped.
+Signal u_LP_HS_DELAY_CNTRL/hs_en_high_cnt_cry_0_S0[0] undriven or does not drive
+     anything - clipped.
+Signal u_LP_HS_DELAY_CNTRL/N_2 undriven or does not drive anything - clipped.
+Signal u_LP_HS_DELAY_CNTRL/hs_en_high_cnt_s_0_S1[15] undriven or does not drive
+     anything - clipped.
+Signal u_LP_HS_DELAY_CNTRL/hs_en_high_cnt_s_0_COUT[15] undriven or does not
+     drive anything - clipped.
+Signal u_LP_HS_DELAY_CNTRL/hs_en_low_cnt_cry_0_S0[0] undriven or does not drive
+     anything - clipped.
+Signal u_LP_HS_DELAY_CNTRL/N_3 undriven or does not drive anything - clipped.
+Signal u_LP_HS_DELAY_CNTRL/hs_en_low_cnt_s_0_S1[15] undriven or does not drive
+     anything - clipped.
+Signal u_LP_HS_DELAY_CNTRL/hs_en_low_cnt_s_0_COUT[15] undriven or does not drive
+     anything - clipped.
+Signal u_LP_HS_DELAY_CNTRL/hold_data_CF5_cry_0_S0[0] undriven or does not drive
+     anything - clipped.
+Signal u_LP_HS_DELAY_CNTRL/N_4 undriven or does not drive anything - clipped.
+Signal u_LP_HS_DELAY_CNTRL/hold_data_CF5_s_0_S1[5] undriven or does not drive
+     anything - clipped.
+Signal u_LP_HS_DELAY_CNTRL/hold_data_CF5_s_0_COUT[5] undriven or does not drive
+     anything - clipped.
+
+                                    Page 9
+
+
+
+
+Design:  top                                           Date:  08/06/18  16:39:50
+
+Removed logic (cont)
+--------------------
+Signal u_DCS_ROM/byte_cnt_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal u_DCS_ROM/N_1 undriven or does not drive anything - clipped.
+Signal u_DCS_ROM/byte_cnt_cry_0_COUT[9] undriven or does not drive anything -
+     clipped.
+Signal u_DCS_ROM/wait_cnt_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal u_DCS_ROM/N_2 undriven or does not drive anything - clipped.
+Signal u_DCS_ROM/wait_cnt_s_0_S1[11] undriven or does not drive anything -
+     clipped.
+Signal u_DCS_ROM/wait_cnt_s_0_COUT[11] undriven or does not drive anything -
+     clipped.
+Signal u_colorbar_gen/color_cntr_cry_0_S0[0] undriven or does not drive anything
+     - clipped.
+Signal u_colorbar_gen/N_2 undriven or does not drive anything - clipped.
+Signal u_colorbar_gen/color_cntr_s_0_S1[11] undriven or does not drive anything
+     - clipped.
+Signal u_colorbar_gen/color_cntr_s_0_COUT[11] undriven or does not drive
+     anything - clipped.
+Signal u_colorbar_gen/un2_linecnt_cry_0_0_S0 undriven or does not drive anything
+     - clipped.
+Signal u_colorbar_gen/N_3 undriven or does not drive anything - clipped.
+Signal u_colorbar_gen/un2_linecnt_s_9_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u_colorbar_gen/un2_linecnt_s_9_0_COUT undriven or does not drive anything
+     - clipped.
+Signal u_colorbar_gen/un7_pixcnt_cry_0_0_S1 undriven or does not drive anything
+     - clipped.
+Signal u_colorbar_gen/un7_pixcnt_cry_0_0_S0 undriven or does not drive anything
+     - clipped.
+Signal u_colorbar_gen/N_4 undriven or does not drive anything - clipped.
+Signal u_colorbar_gen/un7_pixcnt_s_9_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u_colorbar_gen/un7_pixcnt_s_9_0_COUT undriven or does not drive anything
+     - clipped.
+Signal u_DPHY_TX_INST/u_oDDRx4/cdiv1 undriven or does not drive anything -
+     clipped.
+Block u_DPHY_TX_INST/u_oDDRx4/LUT4_1 was optimized away.
+Block LCD_Power_Controller/clr_timer_RNO was optimized away.
+Block u_BYTE_PACKETIZER/u_packetheader_RNISO12 was optimized away.
+Block u_BYTE_PACKETIZER/u_packetheader/reset_n_RNIGUS4 was optimized away.
+Block u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/INV_0 was optimized away.
+Block u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/INV_1 was optimized away.
+Block u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/OR2_t6 was optimized away.
+Block u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/LUT4_10 was optimized away.
+     
+Block u_BYTE_PACKETIZER/u_parallel2byte/reset_n_RNIGUS4 was optimized away.
+Block u_DCS_ROM/done_RNIF1PE was optimized away.
+Block VCC was optimized away.
+Block LCD_Power_Controller/GND was optimized away.
+Block u_pll_pix2byte_RGB888_1lane/GND was optimized away.
+Block u_BYTE_PACKETIZER/VCC was optimized away.
+Block u_BYTE_PACKETIZER/GND was optimized away.
+Block u_BYTE_PACKETIZER/u_packetheader/GND_0 was optimized away.
+Block u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/GND_0 was optimized away.
+Block u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/VCC_0 was optimized away.
+
+                                   Page 10
+
+
+
+
+Design:  top                                           Date:  08/06/18  16:39:50
+
+Removed logic (cont)
+--------------------
+Block u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/VCC_0 was optimized away.
+Block u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/GND_0 was optimized away.
+Block u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/VCC_0 was optimized away.
+Block u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/GND_0 was optimized away.
+Block u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/VCC_0 was optimized away.
+Block u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/GND_0 was optimized away.
+Block u_LP_HS_DELAY_CNTRL/GND was optimized away.
+Block u_DCS_ROM/GND was optimized away.
+Block u_colorbar_gen/GND was optimized away.
+Block u_DPHY_TX_INST/u_oDDRx4/GND was optimized away.
+Block u_DPHY_TX_INST/u_oDDRx4/VCC was optimized away.
+
+Memory Usage
+------------
+
+/u_BYTE_PACKETIZER/u_packetheader/q_byte_data_CR31_ram:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/u_BYTE_PACKETIZER/u_packetheader/q_byte_data_CR31_ram_0:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO:
+    EBRs: 0
+    RAM SLICEs: 6
+    Logic SLICEs: 10
+    PFU Registers: 26
+/u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8:
+    EBRs: 1
+    RAM SLICEs: 0
+    Logic SLICEs: 0
+    PFU Registers: 0
+    -Contains EBR pixel2byte_fifo_0_0:  TYPE= FIFO8KB,  Width= 8,  REGMODE=
+         NOREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= SYNC,  GSR= DISABLED
+/u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16:
+    EBRs: 1
+    RAM SLICEs: 0
+    Logic SLICEs: 0
+    PFU Registers: 0
+    -Contains EBR pixel2byte_fifo_0_0:  TYPE= FIFO8KB,  Width= 8,  REGMODE=
+         NOREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= SYNC,  GSR= DISABLED
+/u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0:
+    EBRs: 1
+    RAM SLICEs: 0
+    Logic SLICEs: 0
+    PFU Registers: 0
+    -Contains EBR pixel2byte_fifo_0_0:  TYPE= FIFO8KB,  Width= 8,  REGMODE=
+         NOREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= SYNC,  GSR= DISABLED
+/u_LP_HS_DELAY_CNTRL/data_dly[54].hold_data_CR31_ram:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+
+                                   Page 11
+
+
+
+
+Design:  top                                           Date:  08/06/18  16:39:50
+
+Memory Usage (cont)
+-------------------
+/u_LP_HS_DELAY_CNTRL/data_dly[54].hold_data_CR31_ram_0:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/u_LP_HS_DELAY_CNTRL/data_dly[54].hold_data_CR31_ram_1:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/u_LP_HS_DELAY_CNTRL/data_dly[54].hold_data_CR31_ram_2:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/u_LP_HS_DELAY_CNTRL/data_dly[54].hold_data_CR31_ram_3:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/u_LP_HS_DELAY_CNTRL/data_dly[54].hold_data_CR31_ram_4:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/u_LP_HS_DELAY_CNTRL/data_dly[54].hold_data_CR31_ram_5:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/u_LP_HS_DELAY_CNTRL/data_dly[54].hold_data_CR31_ram_6:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+
+     
+
+PLL/DLL Summary
+---------------
+
+PLL 1:                                     Pin/Node Value
+  PLL Instance Name:
+       u_pll_pix2byte_RGB888_1lane/PLLInst_0
+  PLL Type:                                         EHXPLLJ
+  Input Clock:                             PIN      PIXCLK_c
+  Output Clock(P):                         NODE     CLKOP
+  Output Clock(S):                         NODE     CLKOS
+  Output Clock(S2):                        NODE     byte_clk
+  Output Clock(S3):                                 NONE
+  Feedback Signal:                         NODE     CLKOP
+  Reset Signal:                            NODE     powerSequenceDone_i
+  M Divider Reset Signal:                           NONE
+  C Divider Reset Signal:                           NONE
+  D Divider Reset Signal:                           NONE
+  Standby Signal:                                   NONE
+
+                                   Page 12
+
+
+
+
+Design:  top                                           Date:  08/06/18  16:39:50
+
+PLL/DLL Summary (cont)
+----------------------
+  PLL LOCK signal:                                  NONE
+  PLL Data bus CLK Signal:                          NONE
+  PLL Data bus Strobe Signal:                       NONE
+  PLL Data bus Reset Signal:                        NONE
+  PLL Data bus Write Enable Signal:                 NONE
+  PLL Data bus Address0:                            NONE
+  PLL Data bus Address1:                            NONE
+  PLL Data bus Address2:                            NONE
+  PLL Data bus Address3:                            NONE
+  PLL Data bus Address4:                            NONE
+  PLL Data In bus Data0:                            NONE
+  PLL Data In bus Data1:                            NONE
+  PLL Data In bus Data2:                            NONE
+  PLL Data In bus Data3:                            NONE
+  PLL Data In bus Data4:                            NONE
+  PLL Data In bus Data5:                            NONE
+  PLL Data In bus Data6:                            NONE
+  PLL Data In bus Data7:                            NONE
+  PLL Data bus Acknowledge:                         NONE
+  PLL Data Out bus Data0:                           NONE
+  PLL Data Out bus Data1:                           NONE
+  PLL Data Out bus Data2:                           NONE
+  PLL Data Out bus Data3:                           NONE
+  PLL Data Out bus Data4:                           NONE
+  PLL Data Out bus Data5:                           NONE
+  PLL Data Out bus Data6:                           NONE
+  PLL Data Out bus Data7:                           NONE
+  Input Clock Frequency (MHz):                      25.0000
+  Output Clock(P) Frequency (MHz):                  300.0000
+  Output Clock(S) Frequency (MHz):                  300.0000
+  Output Clock(S2) Frequency (MHz):                 75.0000
+  Output Clock(S3) Frequency (MHz):                 NA
+  CLKOP Post Divider A Input:                       DIVA
+  CLKOS Post Divider B Input:                       DIVB
+  CLKOS2 Post Divider C Input:                      DIVC
+  CLKOS3 Post Divider D Input:                      DIVD
+  Pre Divider A Input:                              VCO_PHASE
+  Pre Divider B Input:                              VCO_PHASE
+  Pre Divider C Input:                              VCO_PHASE
+  Pre Divider D Input:                              VCO_PHASE
+  VCO Bypass A Input:                               VCO_PHASE
+  VCO Bypass B Input:                               VCO_PHASE
+  VCO Bypass C Input:                               VCO_PHASE
+  VCO Bypass D Input:                               VCO_PHASE
+  FB_MODE:                                          CLKOP
+  CLKI Divider:                                     1
+  CLKFB Divider:                                    12
+  CLKOP Divider:                                    2
+  CLKOS Divider:                                    2
+  CLKOS2 Divider:                                   8
+  CLKOS3 Divider:                                   1
+  Fractional N Divider:                             0
+  CLKOP Desired Phase Shift(degree):                0
+  CLKOP Trim Option Rising/Falling:                 RISING
+  CLKOP Trim Option Delay:                          0
+  CLKOS Desired Phase Shift(degree):                90
+
+                                   Page 13
+
+
+
+
+Design:  top                                           Date:  08/06/18  16:39:50
+
+PLL/DLL Summary (cont)
+----------------------
+  CLKOS Trim Option Rising/Falling:                 RISING
+  CLKOS Trim Option Delay:                          0
+  CLKOS2 Desired Phase Shift(degree):               0
+  CLKOS3 Desired Phase Shift(degree):               0
+
+CLKDIV Summary
+--------------
+
+CLKDIV 1:                                     Pin/Node Value
+  CLKDIV Instance Name:
+       u_DPHY_TX_INST/u_oDDRx4/Inst3_CLKDIVC
+  CLKDIV Type:                                         CLKDIVC
+  GSR:                                              DISABLED
+  CLK DIVIDER:                                      4.0
+
+ECLKSYNC Summary
+----------------
+
+ECLKSYNC 1:                                     Pin/Node Value
+  ECLKSYNC Instance Name:
+       u_DPHY_TX_INST/u_oDDRx4/Inst4_ECLKSYNCA
+  ECLKSYNC Type:                                         ECLKSYNCA
+  ECLKI Input:                             NODE     CLKOS
+  STOP Input:                              NODE
+       u_DPHY_TX_INST/u_oDDRx4/xstop
+  ECLKO Output:                            NODE
+       u_DPHY_TX_INST/u_oDDRx4/eclkc
+ECLKSYNC 2:                                     Pin/Node Value
+  ECLKSYNC Instance Name:
+       u_DPHY_TX_INST/u_oDDRx4/Inst2_ECLKSYNCA
+  ECLKSYNC Type:                                         ECLKSYNCA
+  ECLKI Input:                             NODE     CLKOP
+  STOP Input:                                       NONE
+  ECLKO Output:                            NODE
+       u_DPHY_TX_INST/u_oDDRx4/eclkd
+
+ASIC Components
+---------------
+
+Instance Name: u_DPHY_TX_INST/u_oDDRx4/Inst3_CLKDIVC
+         Type: CLKDIVC
+Instance Name: u_DPHY_TX_INST/u_oDDRx4/Inst4_ECLKSYNCA
+         Type: ECLKSYNCA
+Instance Name: u_DPHY_TX_INST/u_oDDRx4/Inst2_ECLKSYNCA
+         Type: ECLKSYNCA
+Instance Name: u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/pixel2byte_fifo_0_0
+         Type: FIFO8KB
+Instance Name: u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/pixel2byte_fifo_0_0
+     
+         Type: FIFO8KB
+Instance Name:
+     u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/pixel2byte_fifo_0_0
+         Type: FIFO8KB
+Instance Name: u_pll_pix2byte_RGB888_1lane/PLLInst_0
+         Type: EHXPLLJ
+
+
+                                   Page 14
+
+
+
+
+Design:  top                                           Date:  08/06/18  16:39:50
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 48 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   Page 15
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     reserved.

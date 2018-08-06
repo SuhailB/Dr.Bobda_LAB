@@ -1,0 +1,849 @@
+
+Loading design for application trce from file parallel2mipi_parallel2mipi_map.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-2000ZE
+Package:     WLCSP49
+Performance: 1
+Loading device for application trce from file 'xo2c2000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.0.111.2
+Mon Aug 06 16:39:52 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o Parallel2MIPI_Parallel2MIPI.tw1 -gui Parallel2MIPI_Parallel2MIPI_map.ncd Parallel2MIPI_Parallel2MIPI.prf 
+Design file:     parallel2mipi_parallel2mipi_map.ncd
+Preference file: parallel2mipi_parallel2mipi.prf
+Device,speed:    LCMXO2-2000ZE,1
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+Based on the preference: FREQUENCY NET "CLKOP" 300.000000 MHz ;
+A new generated preference: FREQUENCY NET "u_DPHY_TX_INST/u_oDDRx4/sclk" 75.000000 MHz ;
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "CLKOP" 300.000000 MHz ;
+            0 items scored, 1 timing error detected.
+Note:       Component internal maximum frequency has been exceeded.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path exceeds requirements by 3.515ns
+        The internal maximum frequency of the following component is 146.028 MHz
+
+ Logical Details:  Cell type  Pin name       Component name
+
+   Destination:    TIOLOGIC   ECLK           D0_MGIOL
+
+   Delay:               6.848ns -- based on Minimum Pulse Width
+
+Warning: 146.028MHz is the maximum frequency for this preference.
+
+
+================================================================================
+Preference: FREQUENCY NET "CLKOS" 300.000000 MHz ;
+            0 items scored, 1 timing error detected.
+Note:       Component internal maximum frequency has been exceeded.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path exceeds requirements by 3.515ns
+        The internal maximum frequency of the following component is 146.028 MHz
+
+ Logical Details:  Cell type  Pin name       Component name
+
+   Destination:    TIOLOGIC   ECLK           DCK_MGIOL
+
+   Delay:               6.848ns -- based on Minimum Pulse Width
+
+Warning: 146.028MHz is the maximum frequency for this preference.
+
+
+================================================================================
+Preference: FREQUENCY NET "PIXCLK_c" 25.000000 MHz ;
+            3117 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 19.212ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_colorbar_gen/pixcnt[0]  (from PIXCLK_c +)
+   Destination:    FF         Data in        u_colorbar_gen/linecnt[9]  (to PIXCLK_c +)
+
+   Delay:              20.356ns  (49.5% logic, 50.5% route), 12 logic levels.
+
+ Constraint Details:
+
+     20.356ns physical path delay u_colorbar_gen/SLICE_274 to u_colorbar_gen/SLICE_273 meets
+     40.000ns delay constraint less
+      0.432ns DIN_SET requirement (totaling 39.568ns) by 19.212ns
+
+ Physical Path Details:
+
+      Data path u_colorbar_gen/SLICE_274 to u_colorbar_gen/SLICE_273:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.955 *SLICE_274.CLK to */SLICE_274.Q0 u_colorbar_gen/SLICE_274 (from PIXCLK_c)
+ROUTE         6   e 1.905 */SLICE_274.Q0 to */SLICE_337.A1 u_colorbar_gen/pixcnt[0]
+CTOF_DEL    ---     0.923 */SLICE_337.A1 to */SLICE_337.F1 u_colorbar_gen/SLICE_337
+ROUTE         1   e 0.742 */SLICE_337.F1 to */SLICE_337.A0 u_colorbar_gen/N_16
+CTOF_DEL    ---     0.923 */SLICE_337.A0 to */SLICE_337.F0 u_colorbar_gen/SLICE_337
+ROUTE         1   e 1.905 */SLICE_337.F0 to */SLICE_273.A1 u_colorbar_gen/N_36
+CTOF_DEL    ---     0.923 */SLICE_273.A1 to */SLICE_273.F1 u_colorbar_gen/SLICE_273
+ROUTE        13   e 1.905 */SLICE_273.F1 to */SLICE_336.D0 u_colorbar_gen/un5_pixcntlto9_0_o4
+CTOF_DEL    ---     0.923 */SLICE_336.D0 to */SLICE_336.F0 u_colorbar_gen/SLICE_336
+ROUTE         1   e 1.905 */SLICE_336.F0 to *n/SLICE_11.B0 u_colorbar_gen/N_34_i
+C0TOFCO_DE  ---     2.064 *n/SLICE_11.B0 to */SLICE_11.FCO u_colorbar_gen/SLICE_11
+ROUTE         1   e 0.001 */SLICE_11.FCO to */SLICE_10.FCI u_colorbar_gen/un2_linecnt_cry_0
+FCITOFCO_D  ---     0.317 */SLICE_10.FCI to */SLICE_10.FCO u_colorbar_gen/SLICE_10
+ROUTE         1   e 0.001 */SLICE_10.FCO to *n/SLICE_9.FCI u_colorbar_gen/un2_linecnt_cry_2
+FCITOFCO_D  ---     0.317 *n/SLICE_9.FCI to *n/SLICE_9.FCO u_colorbar_gen/SLICE_9
+ROUTE         1   e 0.001 *n/SLICE_9.FCO to *n/SLICE_8.FCI u_colorbar_gen/un2_linecnt_cry_4
+FCITOFCO_D  ---     0.317 *n/SLICE_8.FCI to *n/SLICE_8.FCO u_colorbar_gen/SLICE_8
+ROUTE         1   e 0.001 *n/SLICE_8.FCO to *n/SLICE_7.FCI u_colorbar_gen/un2_linecnt_cry_6
+FCITOFCO_D  ---     0.317 *n/SLICE_7.FCI to *n/SLICE_7.FCO u_colorbar_gen/SLICE_7
+ROUTE         1   e 0.001 *n/SLICE_7.FCO to *n/SLICE_6.FCI u_colorbar_gen/un2_linecnt_cry_8
+FCITOF0_DE  ---     1.181 *n/SLICE_6.FCI to *en/SLICE_6.F0 u_colorbar_gen/SLICE_6
+ROUTE         1   e 1.905 *en/SLICE_6.F0 to */SLICE_273.B0 u_colorbar_gen/un2_linecnt_s_9_0_S0
+CTOF_DEL    ---     0.923 */SLICE_273.B0 to */SLICE_273.F0 u_colorbar_gen/SLICE_273
+ROUTE         1   e 0.001 */SLICE_273.F0 to *SLICE_273.DI0 u_colorbar_gen/un65_linecnt[9] (to PIXCLK_c)
+                  --------
+                   20.356   (49.5% logic, 50.5% route), 12 logic levels.
+
+Report:   48.105MHz is the maximum frequency for this preference.
+
+
+================================================================================
+Preference: FREQUENCY NET "byte_clk" 75.000000 MHz ;
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 12.889ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_DCS_ROM/byte_cnt[1]  (from byte_clk +)
+   Destination:    FF         Data in        u_DCS_ROM/wait_cnt[11]  (to byte_clk +)
+
+   Delay:              25.790ns  (48.3% logic, 51.7% route), 16 logic levels.
+
+ Constraint Details:
+
+     25.790ns physical path delay u_DCS_ROM/SLICE_30 to u_DCS_ROM/SLICE_19 exceeds
+     13.333ns delay constraint less
+      0.432ns DIN_SET requirement (totaling 12.901ns) by 12.889ns
+
+ Physical Path Details:
+
+      Data path u_DCS_ROM/SLICE_30 to u_DCS_ROM/SLICE_19:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.955 */SLICE_30.CLK to *M/SLICE_30.Q0 u_DCS_ROM/SLICE_30 (from byte_clk)
+ROUTE        88   e 1.905 *M/SLICE_30.Q0 to */SLICE_329.B1 u_DCS_ROM/byte_cnt[1]
+CTOOFX_DEL  ---     1.359 */SLICE_329.B1 to *LICE_329.OFX0 u_DCS_ROM/SLICE_329
+ROUTE         1   e 0.001 *LICE_329.OFX0 to *SLICE_329.FXB u_DCS_ROM/current_data_20_5_1_1_f5b
+FXTOOFX_DE  ---     0.478 *SLICE_329.FXB to *LICE_329.OFX1 u_DCS_ROM/SLICE_329
+ROUTE         1   e 0.001 *LICE_329.OFX1 to *SLICE_328.FXB u_DCS_ROM/current_data_20_5_1_f5b
+FXTOOFX_DE  ---     0.478 *SLICE_328.FXB to *LICE_328.OFX1 u_DCS_ROM/SLICE_328
+ROUTE         1   e 1.905 *LICE_328.OFX1 to */SLICE_395.C0 u_DCS_ROM/current_data_20_5
+CTOF_DEL    ---     0.923 */SLICE_395.C0 to */SLICE_395.F0 u_DCS_ROM/SLICE_395
+ROUTE         1   e 1.905 */SLICE_395.F0 to */SLICE_155.B1 u_DCS_ROM/current_data_25mux_iv_0[0]
+CTOF_DEL    ---     0.923 */SLICE_155.B1 to */SLICE_155.F1 u_DCS_ROM/SLICE_155
+ROUTE         2   e 1.905 */SLICE_155.F1 to */SLICE_340.A1 u_DCS_ROM/current_data_2[5]
+CTOF_DEL    ---     0.923 */SLICE_340.A1 to */SLICE_340.F1 u_DCS_ROM/SLICE_340
+ROUTE         2   e 1.905 */SLICE_340.F1 to */SLICE_342.C0 u_DCS_ROM/un4_wait_cnt_4
+CTOF_DEL    ---     0.923 */SLICE_342.C0 to */SLICE_342.F0 u_DCS_ROM/SLICE_342
+ROUTE         8   e 1.905 */SLICE_342.F0 to */SLICE_439.A1 u_DCS_ROM/un4_wait_cnt
+CTOF_DEL    ---     0.923 */SLICE_439.A1 to */SLICE_439.F1 u_DCS_ROM/SLICE_439
+ROUTE        12   e 1.905 */SLICE_439.F1 to *M/SLICE_25.A1 u_DCS_ROM/un16_wait_cnt
+C1TOFCO_DE  ---     1.795 *M/SLICE_25.A1 to */SLICE_25.FCO u_DCS_ROM/SLICE_25
+ROUTE         1   e 0.001 */SLICE_25.FCO to */SLICE_24.FCI u_DCS_ROM/wait_cnt_cry[0]
+FCITOFCO_D  ---     0.317 */SLICE_24.FCI to */SLICE_24.FCO u_DCS_ROM/SLICE_24
+ROUTE         1   e 0.001 */SLICE_24.FCO to */SLICE_23.FCI u_DCS_ROM/wait_cnt_cry[2]
+FCITOFCO_D  ---     0.317 */SLICE_23.FCI to */SLICE_23.FCO u_DCS_ROM/SLICE_23
+ROUTE         1   e 0.001 */SLICE_23.FCO to */SLICE_22.FCI u_DCS_ROM/wait_cnt_cry[4]
+FCITOFCO_D  ---     0.317 */SLICE_22.FCI to */SLICE_22.FCO u_DCS_ROM/SLICE_22
+ROUTE         1   e 0.001 */SLICE_22.FCO to */SLICE_21.FCI u_DCS_ROM/wait_cnt_cry[6]
+FCITOFCO_D  ---     0.317 */SLICE_21.FCI to */SLICE_21.FCO u_DCS_ROM/SLICE_21
+ROUTE         1   e 0.001 */SLICE_21.FCO to */SLICE_20.FCI u_DCS_ROM/wait_cnt_cry[8]
+FCITOFCO_D  ---     0.317 */SLICE_20.FCI to */SLICE_20.FCO u_DCS_ROM/SLICE_20
+ROUTE         1   e 0.001 */SLICE_20.FCO to */SLICE_19.FCI u_DCS_ROM/wait_cnt_cry[10]
+FCITOF0_DE  ---     1.181 */SLICE_19.FCI to *M/SLICE_19.F0 u_DCS_ROM/SLICE_19
+ROUTE         1   e 0.001 *M/SLICE_19.F0 to */SLICE_19.DI0 u_DCS_ROM/wait_cnt_s[11] (to byte_clk)
+                  --------
+                   25.790   (48.3% logic, 51.7% route), 16 logic levels.
+
+Warning:  38.136MHz is the maximum frequency for this preference.
+
+
+================================================================================
+Internal Preference: Timing Rule Check
+            2 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+This section of the Trace report will identify any inherent timing rule violations
+in the design. These rules may be affected by other preferences.
+
+
+Passed: D0_MGIOL meets CLK to ECLK skew range from -6.394ns to 6.873ns
+
+   Max skew of 2.295ns meets timing requirement of 6.873ns by 4.578ns
+
+   Max CLK:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.504         E4.PAD to       E4.PADDI PIXCLK
+ROUTE        50   e 1.905       E4.PADDI to *LLInst_0.CLKI PIXCLK_c
+CLKI2OP_DE  ---     0.000 *LLInst_0.CLKI to *LInst_0.CLKOP u_pll_pix2byte_RGB888_1lane/PLLInst_0
+ROUTE         2   e 1.905 *LInst_0.CLKOP to *LKSYNCA.ECLKI CLKOP
+C2OUT_DEL   ---     0.000 *LKSYNCA.ECLKI to *LKSYNCA.ECLKO u_DPHY_TX_INST/u_oDDRx4/Inst2_ECLKSYNCA
+ROUTE         2   e 1.905 *LKSYNCA.ECLKO to *_CLKDIVC.CLKI u_DPHY_TX_INST/u_oDDRx4/eclkd
+CLKOUT_DEL  ---     0.390 *_CLKDIVC.CLKI to *CLKDIVC.CDIVX u_DPHY_TX_INST/u_oDDRx4/Inst3_CLKDIVC
+ROUTE         4   e 1.905 *CLKDIVC.CDIVX to   D0_MGIOL.CLK u_DPHY_TX_INST/u_oDDRx4/sclk (to u_DPHY_TX_INST/u_oDDRx4/eclkd)
+                  --------
+                    9.514   (19.9% logic, 80.1% route), 4 logic levels.
+
+   Feedback path:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000 *LInst_0.CLKFB to *LInst_0.CLKOP u_pll_pix2byte_RGB888_1lane/PLLInst_0
+ROUTE         2   e 0.742 *LInst_0.CLKOP to *LInst_0.CLKFB CLKOP
+                  --------
+                    0.742   (0.0% logic, 100.0% route), 1 logic levels.
+
+   Min ECLK:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.504         E4.PAD to       E4.PADDI PIXCLK
+ROUTE        50   e 1.905       E4.PADDI to *LLInst_0.CLKI PIXCLK_c
+CLKI2OP_DE  ---     0.000 *LLInst_0.CLKI to *LInst_0.CLKOP u_pll_pix2byte_RGB888_1lane/PLLInst_0
+ROUTE         2   e 1.905 *LInst_0.CLKOP to *LKSYNCA.ECLKI CLKOP
+C2OUT_DEL   ---     0.000 *LKSYNCA.ECLKI to *LKSYNCA.ECLKO u_DPHY_TX_INST/u_oDDRx4/Inst2_ECLKSYNCA
+ROUTE         2   e 1.905 *LKSYNCA.ECLKO to  D0_MGIOL.ECLK u_DPHY_TX_INST/u_oDDRx4/eclkd
+                  --------
+                    7.219   (20.8% logic, 79.2% route), 3 logic levels.
+
+   Feedback path:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000 *LInst_0.CLKFB to *LInst_0.CLKOP u_pll_pix2byte_RGB888_1lane/PLLInst_0
+ROUTE         2   e 0.742 *LInst_0.CLKOP to *LInst_0.CLKFB CLKOP
+                  --------
+                    0.742   (0.0% logic, 100.0% route), 1 logic levels.
+
+   Min skew of 2.281ns meets timing requirement of -6.394ns by 8.675ns
+
+   Min CLK:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.616         E4.PAD to       E4.PADDI PIXCLK
+ROUTE        50   e 1.905       E4.PADDI to *LLInst_0.CLKI PIXCLK_c
+CLKI2OP_DE  ---     0.000 *LLInst_0.CLKI to *LInst_0.CLKOP u_pll_pix2byte_RGB888_1lane/PLLInst_0
+ROUTE         2   e 1.905 *LInst_0.CLKOP to *LKSYNCA.ECLKI CLKOP
+C2OUT_DEL   ---     0.000 *LKSYNCA.ECLKI to *LKSYNCA.ECLKO u_DPHY_TX_INST/u_oDDRx4/Inst2_ECLKSYNCA
+ROUTE         2   e 1.905 *LKSYNCA.ECLKO to *_CLKDIVC.CLKI u_DPHY_TX_INST/u_oDDRx4/eclkd
+CLKOUT_DEL  ---     0.376 *_CLKDIVC.CLKI to *CLKDIVC.CDIVX u_DPHY_TX_INST/u_oDDRx4/Inst3_CLKDIVC
+ROUTE         4   e 1.905 *CLKDIVC.CDIVX to   D0_MGIOL.CLK u_DPHY_TX_INST/u_oDDRx4/sclk (to u_DPHY_TX_INST/u_oDDRx4/eclkd)
+                  --------
+                    9.612   (20.7% logic, 79.3% route), 4 logic levels.
+
+   Feedback path:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000 *LInst_0.CLKFB to *LInst_0.CLKOP u_pll_pix2byte_RGB888_1lane/PLLInst_0
+ROUTE         2   e 0.742 *LInst_0.CLKOP to *LInst_0.CLKFB CLKOP
+                  --------
+                    0.742   (0.0% logic, 100.0% route), 1 logic levels.
+
+   Max ECLK:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.616         E4.PAD to       E4.PADDI PIXCLK
+ROUTE        50   e 1.905       E4.PADDI to *LLInst_0.CLKI PIXCLK_c
+CLKI2OP_DE  ---     0.000 *LLInst_0.CLKI to *LInst_0.CLKOP u_pll_pix2byte_RGB888_1lane/PLLInst_0
+ROUTE         2   e 1.905 *LInst_0.CLKOP to *LKSYNCA.ECLKI CLKOP
+C2OUT_DEL   ---     0.000 *LKSYNCA.ECLKI to *LKSYNCA.ECLKO u_DPHY_TX_INST/u_oDDRx4/Inst2_ECLKSYNCA
+ROUTE         2   e 1.905 *LKSYNCA.ECLKO to  D0_MGIOL.ECLK u_DPHY_TX_INST/u_oDDRx4/eclkd
+                  --------
+                    7.331   (22.0% logic, 78.0% route), 3 logic levels.
+
+   Feedback path:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000 *LInst_0.CLKFB to *LInst_0.CLKOP u_pll_pix2byte_RGB888_1lane/PLLInst_0
+ROUTE         2   e 0.742 *LInst_0.CLKOP to *LInst_0.CLKFB CLKOP
+                  --------
+                    0.742   (0.0% logic, 100.0% route), 1 logic levels.
+
+
+================================================================================
+Internal Preference: FREQUENCY NET "u_DPHY_TX_INST/u_oDDRx4/sclk" 75.000000 MHz ;
+            378 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 1.228ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_LP_HS_DELAY_CNTRL/data_dly[54].hold_data_CF5[1]  (from byte_clk +)
+   Destination:    FF         Data in        u_DPHY_TX_INST/u_oDDRx4/Inst5_ODDRX4B0  (to u_DPHY_TX_INST/u_oDDRx4/sclk +)
+
+   Delay:              11.780ns  (35.3% logic, 64.7% route), 4 logic levels.
+
+ Constraint Details:
+
+     11.780ns physical path delay u_LP_HS_DELAY_CNTRL/SLICE_34 to D0_MGIOL meets
+     13.333ns delay constraint less
+      0.325ns DO_SET requirement (totaling 13.008ns) by 1.228ns
+
+ Physical Path Details:
+
+      Data path u_LP_HS_DELAY_CNTRL/SLICE_34 to D0_MGIOL:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.955 */SLICE_34.CLK to *L/SLICE_34.Q0 u_LP_HS_DELAY_CNTRL/SLICE_34 (from byte_clk)
+ROUTE        14   e 1.905 *L/SLICE_34.Q0 to */SLICE_399.A1 u_LP_HS_DELAY_CNTRL/tmp1[1]
+CTOF_DEL    ---     0.923 */SLICE_399.A1 to */SLICE_399.F1 u_LP_HS_DELAY_CNTRL/SLICE_399
+ROUTE        32   e 1.905 */SLICE_399.F1 to */SLICE_127.C0 u_LP_HS_DELAY_CNTRL/tmp3[2]
+CTOF_DEL    ---     0.923 */SLICE_127.C0 to */SLICE_127.F0 u_LP_HS_DELAY_CNTRL/data_dly[54].hold_data_CR31_ram_0/SLICE_127
+ROUTE         1   e 1.905 */SLICE_127.F0 to */SLICE_295.B0 u_LP_HS_DELAY_CNTRL/hold_data_CR31_ram_5
+CTOOFX_DEL  ---     1.359 */SLICE_295.B0 to *LICE_295.OFX0 u_LP_HS_DELAY_CNTRL/data_dly[54].hold_data_CR31_ram_0_RNIKEBD4_1/SLICE_295
+ROUTE         1   e 1.905 *LICE_295.OFX0 to  D0_MGIOL.TXD6 byte_D0_out[6] (to u_DPHY_TX_INST/u_oDDRx4/sclk)
+                  --------
+                   11.780   (35.3% logic, 64.7% route), 4 logic levels.
+
+Report:   82.610MHz is the maximum frequency for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "CLKOP" 300.000000 MHz ;  |  300.000 MHz|  146.028 MHz|   0 *
+                                        |             |             |
+FREQUENCY NET "CLKOS" 300.000000 MHz ;  |  300.000 MHz|  146.028 MHz|   0 *
+                                        |             |             |
+FREQUENCY NET "PIXCLK_c" 25.000000 MHz  |             |             |
+;                                       |   25.000 MHz|   48.105 MHz|  12  
+                                        |             |             |
+FREQUENCY NET "byte_clk" 75.000000 MHz  |             |             |
+;                                       |   75.000 MHz|   38.136 MHz|  16 *
+                                        |             |             |
+Timing Rule Check                       |            -|            -|   0  
+                                        |             |             |
+FREQUENCY NET                           |             |             |
+"u_DPHY_TX_INST/u_oDDRx4/sclk"          |             |             |
+75.000000 MHz ;                         |   75.000 MHz|   82.610 MHz|   4  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+3 preferences(marked by "*" above) not met.
+
+----------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+----------------------------------------------------------------------------
+u_DCS_ROM/un4_wait_cnt                  |       8|    4096|     99.95%
+                                        |        |        |
+u_DCS_ROM/un16_wait_cnt                 |      12|    3936|     96.05%
+                                        |        |        |
+u_DCS_ROM/wait_cnt_cry[4]               |       1|    3768|     91.95%
+                                        |        |        |
+u_DCS_ROM/wait_cnt_cry[6]               |       1|    3768|     91.95%
+                                        |        |        |
+u_DCS_ROM/un4_wait_cnt_5                |       2|    3278|     79.99%
+                                        |        |        |
+u_DCS_ROM/wait_cnt_cry[2]               |       1|    2808|     68.52%
+                                        |        |        |
+u_DCS_ROM/wait_cnt_cry[8]               |       1|    2808|     68.52%
+                                        |        |        |
+u_DCS_ROM/wait_cnt_cry[0]               |       1|    1168|     28.50%
+                                        |        |        |
+u_DCS_ROM/wait_cnt_cry[10]              |       1|    1168|     28.50%
+                                        |        |        |
+u_DCS_ROM/wait_cnt_s[11]                |       1|    1168|     28.50%
+                                        |        |        |
+u_DCS_ROM/byte_cnt[5]                   |      67|    1016|     24.79%
+                                        |        |        |
+u_DCS_ROM/wait_cnt_s[10]                |       1|    1000|     24.40%
+                                        |        |        |
+u_DCS_ROM/byte_cnt[3]                   |      87|    1000|     24.40%
+                                        |        |        |
+u_DCS_ROM/byte_cnt[2]                   |      87|    1000|     24.40%
+                                        |        |        |
+u_DCS_ROM/byte_cnt[1]                   |      88|    1000|     24.40%
+                                        |        |        |
+u_DCS_ROM/current_data_27mux_iv_0[0]    |       1|     830|     20.25%
+                                        |        |        |
+u_DCS_ROM/current_data_2[7]             |       2|     830|     20.25%
+                                        |        |        |
+u_DCS_ROM/current_data_20_7             |       1|     830|     20.25%
+                                        |        |        |
+u_DCS_ROM/current_data_20_5             |       1|     818|     19.96%
+                                        |        |        |
+u_DCS_ROM/current_data_25mux_iv_0[0]    |       1|     818|     19.96%
+                                        |        |        |
+u_DCS_ROM/current_data_2[5]             |       2|     818|     19.96%
+                                        |        |        |
+u_DCS_ROM/un4_wait_cnt_4                |       2|     818|     19.96%
+                                        |        |        |
+u_DCS_ROM/current_data_20_0             |       1|     816|     19.91%
+                                        |        |        |
+u_DCS_ROM/current_data_20_1             |       1|     816|     19.91%
+                                        |        |        |
+u_DCS_ROM/current_data_20_2             |       1|     816|     19.91%
+                                        |        |        |
+u_DCS_ROM/current_data_20mux_iv_0[0]    |       1|     816|     19.91%
+                                        |        |        |
+u_DCS_ROM/current_data_22mux_iv_0[0]    |       1|     816|     19.91%
+                                        |        |        |
+u_DCS_ROM/current_data_21mux_iv_0[0]    |       1|     816|     19.91%
+                                        |        |        |
+u_DCS_ROM/current_data_2[2]             |       2|     816|     19.91%
+                                        |        |        |
+u_DCS_ROM/current_data_2[1]             |       2|     816|     19.91%
+                                        |        |        |
+u_DCS_ROM/current_data_2[0]             |       2|     816|     19.91%
+                                        |        |        |
+u_DCS_ROM/wait_cnt_s[9]                 |       1|     640|     15.62%
+                                        |        |        |
+u_DCS_ROM/wait_cnt_s[8]                 |       1|     640|     15.62%
+                                        |        |        |
+u_DCS_ROM/current_data_20_7_0_f5a       |       1|     416|     10.15%
+                                        |        |        |
+u_DCS_ROM/current_data_20_7_1_f5b       |       1|     414|     10.10%
+                                        |        |        |
+u_DCS_ROM/current_data_20_5_0_f5a       |       1|     410|     10.00%
+                                        |        |        |
+----------------------------------------------------------------------------
+
+
+Clock Domains Analysis
+------------------------
+
+Found 8 clocks:
+
+Clock Domain: u_DPHY_TX_INST/u_oDDRx4/eclkc   Source: u_DPHY_TX_INST/u_oDDRx4/Inst4_ECLKSYNCA.ECLKO   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: u_DPHY_TX_INST/u_oDDRx4/eclkc   Source: u_DPHY_TX_INST/u_oDDRx4/Inst4_ECLKSYNCA.ECLKO   Loads: 1
+   Covered under: Timing Rule Check
+
+   Clock Domain: u_DPHY_TX_INST/u_oDDRx4/sclk   Source: u_DPHY_TX_INST/u_oDDRx4/Inst3_CLKDIVC.CDIVX
+      Covered under: Timing Rule Check   Transfers: 1
+
+Clock Domain: u_DPHY_TX_INST/u_oDDRx4/eclkc   Source: u_DPHY_TX_INST/u_oDDRx4/Inst4_ECLKSYNCA.ECLKO   Loads: 1
+   No transfer within this clock domain is found
+
+   Data transfers from:
+   Clock Domain: u_DPHY_TX_INST/u_oDDRx4/sclk   Source: u_DPHY_TX_INST/u_oDDRx4/Inst3_CLKDIVC.CDIVX
+      Covered under: FREQUENCY NET "u_DPHY_TX_INST/u_oDDRx4/sclk" 75.000000 MHz ;   Transfers: 2
+
+   Clock Domain: u_DPHY_TX_INST/u_oDDRx4/sclk   Source: u_DPHY_TX_INST/u_oDDRx4/Inst3_CLKDIVC.CDIVX
+      Covered under: FREQUENCY NET "u_DPHY_TX_INST/u_oDDRx4/sclk" 75.000000 MHz ;   Transfers: 2
+
+   Clock Domain: byte_clk   Source: u_pll_pix2byte_RGB888_1lane/PLLInst_0.CLKOS2
+      Covered under: FREQUENCY NET "u_DPHY_TX_INST/u_oDDRx4/sclk" 75.000000 MHz ;   Transfers: 39
+
+Clock Domain: u_DPHY_TX_INST/u_oDDRx4/eclkc   Source: u_DPHY_TX_INST/u_oDDRx4/Inst4_ECLKSYNCA.ECLKO   Loads: 1
+   Covered under: Timing Rule Check
+
+   Clock Domain: u_DPHY_TX_INST/u_oDDRx4/sclk   Source: u_DPHY_TX_INST/u_oDDRx4/Inst3_CLKDIVC.CDIVX
+      Covered under: Timing Rule Check   Transfers: 1
+
+Clock Domain: byte_clk   Source: u_pll_pix2byte_RGB888_1lane/PLLInst_0.CLKOS2   Loads: 196
+   Covered under: FREQUENCY NET "byte_clk" 75.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: PIXCLK_c   Source: PIXCLK.PAD
+      Covered under: FREQUENCY NET "byte_clk" 75.000000 MHz ;   Transfers: 3
+
+Clock Domain: CLKOS   Source: u_pll_pix2byte_RGB888_1lane/PLLInst_0.CLKOS   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: CLKOP   Source: u_pll_pix2byte_RGB888_1lane/PLLInst_0.CLKOP   Loads: 2
+   No transfer within this clock domain is found
+
+Clock Domain: PIXCLK_c   Source: PIXCLK.PAD   Loads: 50
+   Covered under: FREQUENCY NET "PIXCLK_c" 25.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: byte_clk   Source: u_pll_pix2byte_RGB888_1lane/PLLInst_0.CLKOS2
+      Covered under: FREQUENCY NET "PIXCLK_c" 25.000000 MHz ;   Transfers: 1
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 4098  Score: 50465120
+Cumulative negative slack: 50472150
+
+Note: Component internal maximum frequency has been exceeded.
+
+Constraints cover 75378 paths, 7 nets, and 3348 connections (90.54% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.0.111.2
+Mon Aug 06 16:39:52 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o Parallel2MIPI_Parallel2MIPI.tw1 -gui Parallel2MIPI_Parallel2MIPI_map.ncd Parallel2MIPI_Parallel2MIPI.prf 
+Design file:     parallel2mipi_parallel2mipi_map.ncd
+Preference file: parallel2mipi_parallel2mipi.prf
+Device,speed:    LCMXO2-2000ZE,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "CLKOP" 300.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: FREQUENCY NET "CLKOS" 300.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: FREQUENCY NET "PIXCLK_c" 25.000000 MHz ;
+            3117 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.187ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_colorbar_gen/color_cntr[9]  (from PIXCLK_c +)
+   Destination:    FIFO8KB    Port           u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/pixel2byte_fifo_0_0(ASIC)  (to PIXCLK_c +)
+
+   Delay:               0.257ns  (100.0% logic, 0.0% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.257ns physical path delay u_colorbar_gen/SLICE_13 to u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/pixel2byte_fifo_0_0 meets
+      0.070ns DATA_HLD and
+      0.000ns delay constraint requirement (totaling 0.070ns) by 0.187ns
+
+ Physical Path Details:
+
+      Data path u_colorbar_gen/SLICE_13 to u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/pixel2byte_fifo_0_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.257 */SLICE_13.CLK to *n/SLICE_13.Q0 u_colorbar_gen/SLICE_13 (from PIXCLK_c)
+ROUTE         2   e 0.000 *n/SLICE_13.Q0 to *_fifo_0_0.DI1 w_pixdata[9] (to PIXCLK_c)
+                  --------
+                    0.257   (100.0% logic, 0.0% route), 1 logic levels.
+
+
+================================================================================
+Preference: FREQUENCY NET "byte_clk" 75.000000 MHz ;
+            4096 items scored, 124 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 0.083ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_LP_HS_DELAY_CNTRL/hold_data[0][1]  (from byte_clk +)
+   Destination:    FF         Data in        u_LP_HS_DELAY_CNTRL/data_dly[54].hold_data_CR31_ram/RAM0  (to byte_clk +)
+                   FF                        u_LP_HS_DELAY_CNTRL/data_dly[54].hold_data_CR31_ram/RAM0
+
+   Delay:               0.257ns  (100.0% logic, 0.0% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.257ns physical path delay SLICE_265 to u_LP_HS_DELAY_CNTRL/data_dly[54].hold_data_CR31_ram/SLICE_105 exceeds
+      0.340ns WD_HLD and
+      0.000ns delay constraint requirement (totaling 0.340ns) by 0.083ns
+
+ Physical Path Details:
+
+      Data path SLICE_265 to u_LP_HS_DELAY_CNTRL/data_dly[54].hold_data_CR31_ram/SLICE_105:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.257  SLICE_265.CLK to   SLICE_265.Q1 SLICE_265 (from byte_clk)
+ROUTE         4   e 0.000   SLICE_265.Q1 to */SLICE_104.B1 u_LP_HS_DELAY_CNTRL/hold_data[0][1]
+ZERO_DEL    ---     0.000 */SLICE_104.B1 to *LICE_104.WDO1 u_LP_HS_DELAY_CNTRL/data_dly[54].hold_data_CR31_ram/SLICE_104
+ROUTE         1   e 0.000 *LICE_104.WDO1 to *SLICE_105.WD1 u_LP_HS_DELAY_CNTRL/data_dly[54].hold_data_CR31_ram/WD1_INT (to byte_clk)
+                  --------
+                    0.257   (100.0% logic, 0.0% route), 2 logic levels.
+
+
+================================================================================
+Preference: FREQUENCY NET "u_DPHY_TX_INST/u_oDDRx4/sclk" 75.000000 MHz ;
+            378 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.262ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_LP_HS_DELAY_CNTRL/hsxx_clk_en  (from byte_clk +)
+   Destination:    FF         Data in        u_DPHY_TX_INST/u_oDDRx4/Inst6_ODDRX4B  (to u_DPHY_TX_INST/u_oDDRx4/sclk +)
+
+   Delay:               0.257ns  (100.0% logic, 0.0% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.257ns physical path delay u_LP_HS_DELAY_CNTRL/SLICE_161 to DCK_MGIOL meets
+     -0.005ns DO_HLD and
+      0.000ns delay constraint requirement (totaling -0.005ns) by 0.262ns
+
+ Physical Path Details:
+
+      Data path u_LP_HS_DELAY_CNTRL/SLICE_161 to DCK_MGIOL:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.257 *SLICE_161.CLK to */SLICE_161.Q0 u_LP_HS_DELAY_CNTRL/SLICE_161 (from byte_clk)
+ROUTE         4   e 0.000 */SLICE_161.Q0 to DCK_MGIOL.TXD4 hsxx_clk_en (to u_DPHY_TX_INST/u_oDDRx4/sclk)
+                  --------
+                    0.257   (100.0% logic, 0.0% route), 1 logic levels.
+
+
+================================================================================
+Internal Preference: Timing Rule Check
+            2 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: DCK_MGIOL meets CLK to ECLK skew range from -6.618ns to 6.676ns
+
+   Max skew of -0.705ns meets timing requirement of 6.676ns by 7.381ns
+
+   Max CLK:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.552         E4.PAD to       E4.PADDI PIXCLK
+ROUTE        50   e 0.000       E4.PADDI to *LLInst_0.CLKI PIXCLK_c
+CLKI2OP_DE  ---     0.000 *LLInst_0.CLKI to *LInst_0.CLKOP u_pll_pix2byte_RGB888_1lane/PLLInst_0
+ROUTE         2   e 0.000 *LInst_0.CLKOP to *LKSYNCA.ECLKI CLKOP
+C2OUT_DEL   ---     0.000 *LKSYNCA.ECLKI to *LKSYNCA.ECLKO u_DPHY_TX_INST/u_oDDRx4/Inst2_ECLKSYNCA
+ROUTE         2   e 0.000 *LKSYNCA.ECLKO to *_CLKDIVC.CLKI u_DPHY_TX_INST/u_oDDRx4/eclkd
+CLKOUT_DEL  ---     0.128 *_CLKDIVC.CLKI to *CLKDIVC.CDIVX u_DPHY_TX_INST/u_oDDRx4/Inst3_CLKDIVC
+ROUTE         4   e 0.000 *CLKDIVC.CDIVX to  DCK_MGIOL.CLK u_DPHY_TX_INST/u_oDDRx4/sclk (to u_DPHY_TX_INST/u_oDDRx4/eclkc)
+                  --------
+                    0.680   (100.0% logic, 0.0% route), 4 logic levels.
+
+   Feedback path:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000 *LInst_0.CLKFB to *LInst_0.CLKOP u_pll_pix2byte_RGB888_1lane/PLLInst_0
+ROUTE         2   e 0.000 *LInst_0.CLKOP to *LInst_0.CLKFB CLKOP
+                  --------
+                    0.000   (0.0% logic, 0.0% route), 1 logic levels.
+
+   Min ECLK:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.552         E4.PAD to       E4.PADDI PIXCLK
+ROUTE        50   e 0.000       E4.PADDI to *LLInst_0.CLKI PIXCLK_c
+CLKI2OS_DE  ---     0.833 *LLInst_0.CLKI to *LInst_0.CLKOS u_pll_pix2byte_RGB888_1lane/PLLInst_0
+ROUTE         1   e 0.000 *LInst_0.CLKOS to *LKSYNCA.ECLKI CLKOS
+C2OUT_DEL   ---     0.000 *LKSYNCA.ECLKI to *LKSYNCA.ECLKO u_DPHY_TX_INST/u_oDDRx4/Inst4_ECLKSYNCA
+ROUTE         1   e 0.000 *LKSYNCA.ECLKO to DCK_MGIOL.ECLK u_DPHY_TX_INST/u_oDDRx4/eclkc
+                  --------
+                    1.385   (100.0% logic, 0.0% route), 3 logic levels.
+
+   Feedback path:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000 *LInst_0.CLKFB to *LInst_0.CLKOP u_pll_pix2byte_RGB888_1lane/PLLInst_0
+ROUTE         2   e 0.000 *LInst_0.CLKOP to *LInst_0.CLKFB CLKOP
+                  --------
+                    0.000   (0.0% logic, 0.0% route), 1 logic levels.
+
+   Min skew of -0.713ns meets timing requirement of -6.618ns by 5.905ns
+
+   Min CLK:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.573         E4.PAD to       E4.PADDI PIXCLK
+ROUTE        50   e 0.000       E4.PADDI to *LLInst_0.CLKI PIXCLK_c
+CLKI2OP_DE  ---     0.000 *LLInst_0.CLKI to *LInst_0.CLKOP u_pll_pix2byte_RGB888_1lane/PLLInst_0
+ROUTE         2   e 0.000 *LInst_0.CLKOP to *LKSYNCA.ECLKI CLKOP
+C2OUT_DEL   ---     0.000 *LKSYNCA.ECLKI to *LKSYNCA.ECLKO u_DPHY_TX_INST/u_oDDRx4/Inst2_ECLKSYNCA
+ROUTE         2   e 0.000 *LKSYNCA.ECLKO to *_CLKDIVC.CLKI u_DPHY_TX_INST/u_oDDRx4/eclkd
+CLKOUT_DEL  ---     0.120 *_CLKDIVC.CLKI to *CLKDIVC.CDIVX u_DPHY_TX_INST/u_oDDRx4/Inst3_CLKDIVC
+ROUTE         4   e 0.000 *CLKDIVC.CDIVX to  DCK_MGIOL.CLK u_DPHY_TX_INST/u_oDDRx4/sclk (to u_DPHY_TX_INST/u_oDDRx4/eclkc)
+                  --------
+                    0.693   (100.0% logic, 0.0% route), 4 logic levels.
+
+   Feedback path:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000 *LInst_0.CLKFB to *LInst_0.CLKOP u_pll_pix2byte_RGB888_1lane/PLLInst_0
+ROUTE         2   e 0.000 *LInst_0.CLKOP to *LInst_0.CLKFB CLKOP
+                  --------
+                    0.000   (0.0% logic, 0.0% route), 1 logic levels.
+
+   Max ECLK:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.573         E4.PAD to       E4.PADDI PIXCLK
+ROUTE        50   e 0.000       E4.PADDI to *LLInst_0.CLKI PIXCLK_c
+CLKI2OS_DE  ---     0.833 *LLInst_0.CLKI to *LInst_0.CLKOS u_pll_pix2byte_RGB888_1lane/PLLInst_0
+ROUTE         1   e 0.000 *LInst_0.CLKOS to *LKSYNCA.ECLKI CLKOS
+C2OUT_DEL   ---     0.000 *LKSYNCA.ECLKI to *LKSYNCA.ECLKO u_DPHY_TX_INST/u_oDDRx4/Inst4_ECLKSYNCA
+ROUTE         1   e 0.000 *LKSYNCA.ECLKO to DCK_MGIOL.ECLK u_DPHY_TX_INST/u_oDDRx4/eclkc
+                  --------
+                    1.406   (100.0% logic, 0.0% route), 3 logic levels.
+
+   Feedback path:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000 *LInst_0.CLKFB to *LInst_0.CLKOP u_pll_pix2byte_RGB888_1lane/PLLInst_0
+ROUTE         2   e 0.000 *LInst_0.CLKOP to *LInst_0.CLKFB CLKOP
+                  --------
+                    0.000   (0.0% logic, 0.0% route), 1 logic levels.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "CLKOP" 300.000000 MHz ;  |            -|            -|   0  
+                                        |             |             |
+FREQUENCY NET "CLKOS" 300.000000 MHz ;  |            -|            -|   0  
+                                        |             |             |
+FREQUENCY NET "PIXCLK_c" 25.000000 MHz  |             |             |
+;                                       |     0.000 ns|     0.187 ns|   1  
+                                        |             |             |
+FREQUENCY NET "byte_clk" 75.000000 MHz  |             |             |
+;                                       |     0.000 ns|    -0.083 ns|   2 *
+                                        |             |             |
+FREQUENCY NET                           |             |             |
+"u_DPHY_TX_INST/u_oDDRx4/sclk"          |             |             |
+75.000000 MHz ;                         |     0.000 ns|     0.262 ns|   1  
+                                        |             |             |
+Timing Rule Check                       |            -|            -|   0  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+1 preference(marked by "*" above) not met.
+
+----------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+----------------------------------------------------------------------------
+u_LP_HS_DELAY_CNTRL/tmp1[3]             |      12|      16|     12.90%
+                                        |        |        |
+u_LP_HS_DELAY_CNTRL/tmp1[2]             |      13|      16|     12.90%
+                                        |        |        |
+u_LP_HS_DELAY_CNTRL/tmp1[1]             |      14|      16|     12.90%
+                                        |        |        |
+u_LP_HS_DELAY_CNTRL/tmp1[0]             |      41|      16|     12.90%
+                                        |        |        |
+----------------------------------------------------------------------------
+
+
+Clock Domains Analysis
+------------------------
+
+Found 8 clocks:
+
+Clock Domain: u_DPHY_TX_INST/u_oDDRx4/eclkc   Source: u_DPHY_TX_INST/u_oDDRx4/Inst4_ECLKSYNCA.ECLKO   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: u_DPHY_TX_INST/u_oDDRx4/eclkd   Source: u_DPHY_TX_INST/u_oDDRx4/Inst2_ECLKSYNCA.ECLKO   Loads: 2
+   Covered under: Timing Rule Check
+
+   Clock Domain: u_DPHY_TX_INST/u_oDDRx4/sclk   Source: u_DPHY_TX_INST/u_oDDRx4/Inst3_CLKDIVC.CDIVX
+      Covered under: Timing Rule Check   Transfers: 1
+
+Clock Domain: u_DPHY_TX_INST/u_oDDRx4/sclk   Source: u_DPHY_TX_INST/u_oDDRx4/Inst3_CLKDIVC.CDIVX   Loads: 4
+   No transfer within this clock domain is found
+
+   Data transfers from:
+   Clock Domain: byte_clk   Source: u_pll_pix2byte_RGB888_1lane/PLLInst_0.CLKOS2
+      Covered under: FREQUENCY NET "u_DPHY_TX_INST/u_oDDRx4/sclk" 75.000000 MHz ;   Transfers: 39
+
+Clock Domain: u_DPHY_TX_INST/u_oDDRx4/eclkc   Source: u_DPHY_TX_INST/u_oDDRx4/Inst4_ECLKSYNCA.ECLKO   Loads: 1
+   No transfer within this clock domain is found
+
+   Data transfers from:
+   Clock Domain: u_DPHY_TX_INST/u_oDDRx4/sclk   Source: u_DPHY_TX_INST/u_oDDRx4/Inst3_CLKDIVC.CDIVX
+      Covered under: Timing Rule Check   Transfers: 1
+
+Clock Domain: byte_clk   Source: u_pll_pix2byte_RGB888_1lane/PLLInst_0.CLKOS2   Loads: 196
+   Covered under: FREQUENCY NET "byte_clk" 75.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: PIXCLK_c   Source: PIXCLK.PAD
+      Covered under: FREQUENCY NET "byte_clk" 75.000000 MHz ;   Transfers: 3
+
+Clock Domain: CLKOS   Source: u_pll_pix2byte_RGB888_1lane/PLLInst_0.CLKOS   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: CLKOP   Source: u_pll_pix2byte_RGB888_1lane/PLLInst_0.CLKOP   Loads: 2
+   No transfer within this clock domain is found
+
+Clock Domain: PIXCLK_c   Source: PIXCLK.PAD   Loads: 50
+   Covered under: FREQUENCY NET "PIXCLK_c" 25.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: byte_clk   Source: u_pll_pix2byte_RGB888_1lane/PLLInst_0.CLKOS2
+      Covered under: FREQUENCY NET "PIXCLK_c" 25.000000 MHz ;   Transfers: 1
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 124  Score: 9368
+Cumulative negative slack: 9368
+
+Constraints cover 75378 paths, 7 nets, and 3515 connections (95.05% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 4098 (setup), 124 (hold)
+Score: 50465120 (setup), 9368 (hold)
+Cumulative negative slack: 50481518 (50472150+9368)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+

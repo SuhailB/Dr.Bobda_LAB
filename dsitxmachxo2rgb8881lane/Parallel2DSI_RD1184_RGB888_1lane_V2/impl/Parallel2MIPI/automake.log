@@ -1,0 +1,1887 @@
+
+synpwrap -msg -prj "Parallel2MIPI_Parallel2MIPI_synplify.tcl" -log "Parallel2MIPI_Parallel2MIPI.srf"
+Copyright (C) 1992-2017 Lattice Semiconductor Corporation. All rights reserved.
+Lattice Diamond Version 3.10.0.111.2
+    <postMsg mid="2011000" type="Info"    dynamic="0" navigation="0"  />
+
+==contents of Parallel2MIPI_Parallel2MIPI.srf
+#Build: Synplify Pro (R) M-2017.03L-SP1-1, Build 086R, Aug  4 2017
+#install: C:\lscc\diamond\3.10_x64\synpbase
+#OS: Windows 8 6.2
+#Hostname: DESKTOP-483ND9B
+
+# Mon Aug  6 16:39:38 2018
+
+#Implementation: Parallel2MIPI
+
+Synopsys HDL Compiler, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v" (library work)
+@I::"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\pmi_def.v" (library work)
+@I::"C:\lscc\diamond\3.10_x64\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\diamond\3.10_x64\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\lscc\diamond\3.10_x64\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\lscc\diamond\3.10_x64\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\compiler_directives.v" (library work)
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v" (library work)
+@W: CG1249 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v":292:11:292:15|Redeclaration of implicit signal w_LP0
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\IPExpress\pll_pix2byte_RGB888_1lane.v" (library work)
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v" (library work)
+@W: CG1337 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":122:18:122:24|Net bit_clk is not declared.
+@W: CG1337 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":123:15:123:24|Net bit_clk_90 is not declared.
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\IO_Controller_TX.v" (library work)
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\oDDRx4.v" (library work)
+@W: CG1337 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\oDDRx4.v":99:11:99:14|Net clk0 is not declared.
+@W: CG1337 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\oDDRx4.v":100:11:100:14|Net clk2 is not declared.
+@W: CG1337 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\oDDRx4.v":101:11:101:14|Net clk4 is not declared.
+@W: CG1337 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\oDDRx4.v":102:11:102:14|Net clk6 is not declared.
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v" (library work)
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v" (library work)
+@W: CG1337 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":68:12:68:21|Net start_data is not declared.
+@W: CG1337 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":69:12:69:23|Net start_escape is not declared.
+@W: CG1337 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":70:12:70:20|Net stop_data is not declared.
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v" (library work)
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\BYTE_PACKETIZER.v" (library work)
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\crc16_1lane_bb.v" (library work)
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\parallel2byte_bb.v" (library work)
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\packetheader_bb.v" (library work)
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v" (library work)
+@I::"C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v" (library work)
+@W: CG921 :"C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v":39:11:39:17|lcd_rst is already declared in this scope.
+@W: CG921 :"C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v":40:11:40:20|lcd_1v8_en is already declared in this scope.
+@W: CG921 :"C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v":41:11:41:20|lcd_3v0_en is already declared in this scope.
+Verilog syntax check successful!
+File C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v changed - recompiling
+Selecting top level module top
+@N: CG364 :"C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v":18:7:18:17|Synthesizing module pwr_sq_ctrl in library work.
+@W: CL169 :"C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v":49:0:49:5|Pruning unused register timer_out. Make sure that there are no unused intermediate registers.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\parallel2byte_bb.v":49:7:49:19|Synthesizing module parallel2byte in library work.
+
+	word_width=32'b00000000000000000000000000011000
+	lane_width=32'b00000000000000000000000000000001
+	dt=6'b111110
+   Generated name = parallel2byte_24s_1s_62
+@W: CG146 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\parallel2byte_bb.v":49:7:49:19|Creating black box for empty module parallel2byte_24s_1s_62
+
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\packetheader_bb.v":49:7:49:18|Synthesizing module packetheader in library work.
+
+	lane_width=32'b00000000000000000000000000000001
+   Generated name = packetheader_1s
+@W: CG146 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\packetheader_bb.v":49:7:49:18|Creating black box for empty module packetheader_1s
+
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\BYTE_PACKETIZER.v":49:7:49:21|Synthesizing module BYTE_PACKETIZER in library work.
+
+	word_width=32'b00000000000000000000000000011000
+	lane_width=32'b00000000000000000000000000000001
+	dt=6'b111110
+	crc16=32'b00000000000000000000000000000001
+	version=32'b00000000000000000000000000000001
+   Generated name = BYTE_PACKETIZER_24s_1s_62_1s_1s
+@N: CG179 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\BYTE_PACKETIZER.v":117:53:117:56|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\BYTE_PACKETIZER.v":118:53:118:56|Removing redundant assignment.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\crc16_1lane_bb.v":49:7:49:17|Synthesizing module crc16_1lane in library work.
+@W: CG146 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\crc16_1lane_bb.v":49:7:49:17|Creating black box for empty module crc16_1lane
+
+@W: CS263 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\BYTE_PACKETIZER.v":148:27:148:35|Port-width mismatch for port data. The port definition is 8 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":47:7:47:23|Synthesizing module LP_HS_DELAY_CNTRL in library work.
+@N: CG179 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":152:78:152:86|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":155:78:155:88|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":158:78:158:87|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":162:78:162:83|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":166:78:166:84|Removing redundant assignment.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1051:7:1051:14|Synthesizing module ROM16X1A in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":176:7:176:13|Synthesizing module FD1P3BX in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":187:7:187:13|Synthesizing module FD1P3DX in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1120:7:1120:9|Synthesizing module VHI in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1615:7:1615:13|Synthesizing module ODDRX4B in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1525:7:1525:15|Synthesizing module ECLKSYNCA in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1124:7:1124:9|Synthesizing module VLO in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1512:7:1512:13|Synthesizing module CLKDIVC in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\oDDRx4.v":8:7:8:12|Synthesizing module oDDRx4 in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\IO_Controller_TX.v":49:7:49:22|Synthesizing module IO_Controller_TX in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":50:7:50:18|Synthesizing module DPHY_TX_INST in library work.
+@W: CS263 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":127:162:127:196|Port-width mismatch for port dataout. The port definition is 32 bits, but the actual port connection bit width is 11. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":155:20:155:26|Port-width mismatch for port lp1_out. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":156:20:156:26|Port-width mismatch for port lp2_out. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":157:20:157:26|Port-width mismatch for port lp3_out. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":160:19:160:24|Port-width mismatch for port lp1_in. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":161:19:161:24|Port-width mismatch for port lp2_in. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":162:19:162:24|Port-width mismatch for port lp3_in. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v":48:7:48:13|Synthesizing module DCS_ROM in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":48:7:48:17|Synthesizing module DCS_Encoder in library work.
+@N: CG179 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":107:53:107:63|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":115:41:115:46|Removing redundant assignment.
+@W:"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":113:53:113:64|Index into variable q_oneh_data could be out of range - a simulation mismatch is possible
+@W:"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":116:53:116:64|Index into variable q_oneh_data could be out of range - a simulation mismatch is possible
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Optimizing register bit q_oneh_data[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Optimizing register bit q_oneh_data[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Optimizing register bit q_oneh_data[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Optimizing register bit q_oneh_data[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Pruning register bits 5 to 4 of q_oneh_data[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Pruning register bits 1 to 0 of q_oneh_data[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v":51:7:51:9|Synthesizing module top in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1730:7:1730:13|Synthesizing module EHXPLLJ in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\IPExpress\pll_pix2byte_RGB888_1lane.v":8:7:8:31|Synthesizing module pll_pix2byte_RGB888_1lane in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v":52:7:52:18|Synthesizing module colorbar_gen in library work.
+
+	h_active=32'b00000000000000000000000011110000
+	h_total=32'b00000000000000000000001001101100
+	v_active=32'b00000000000000000000000011110000
+	v_total=32'b00000000000000000000001100111110
+	H_FRONT_PORCH=32'b00000000000000000000000000101000
+	H_SYNCH=32'b00000000000000000000000000101100
+	H_BACK_PORCH=32'b00000000000000000000000010010100
+	V_FRONT_PORCH=32'b00000000000000000000000000000101
+	V_SYNCH=32'b00000000000000000000000000000101
+	mode=32'b00000000000000000000000000000001
+   Generated name = colorbar_gen_240_620_240_830_40_44_148_5_5_1s
+@W: CS263 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v":190:28:190:29|Port-width mismatch for port VC. The port definition is 2 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v":200:28:200:31|Port-width mismatch for port EoTp. The port definition is 1 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v":78:4:78:9|Optimizing register bit pixcnt[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v":78:4:78:9|Optimizing register bit pixcnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v":78:4:78:9|Optimizing register bit linecnt[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v":78:4:78:9|Optimizing register bit linecnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v":78:4:78:9|Pruning register bits 11 to 10 of linecnt[11:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v":78:4:78:9|Pruning register bits 11 to 10 of pixcnt[11:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL157 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v":106:16:106:18|*Output LED has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@N: CL159 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v":101:28:101:32|Input VSYNC is unused.
+@N: CL159 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v":102:28:102:32|Input HSYNC is unused.
+@N: CL159 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v":103:28:103:29|Input DE is unused.
+@N: CL159 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v":104:28:104:34|Input PIXDATA is unused.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Optimizing register bit bitcntr[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Pruning register bit 5 of bitcntr[5:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Pruning register bits 29 to 28 of q_oneh_data[31:6]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Pruning register bits 25 to 24 of q_oneh_data[31:6]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Pruning register bits 21 to 20 of q_oneh_data[31:6]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Pruning register bits 17 to 16 of q_oneh_data[31:6]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Pruning register bits 13 to 12 of q_oneh_data[31:6]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Pruning register bit 9 of q_oneh_data[31:6]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v":67:3:67:8|Optimizing register bit wait_cnt[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v":67:3:67:8|Pruning register bit 15 of wait_cnt[15:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v":67:3:67:8|Optimizing register bit wait_cnt[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v":67:3:67:8|Pruning register bit 14 of wait_cnt[14:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v":67:3:67:8|Optimizing register bit wait_cnt[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v":67:3:67:8|Pruning register bit 13 of wait_cnt[13:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v":67:3:67:8|Optimizing register bit wait_cnt[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v":67:3:67:8|Pruning register bit 12 of wait_cnt[12:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL156 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":127:162:127:196|*Input un1_byte_D0[31:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":150:20:150:26|*Input lp1_dir to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":151:20:151:26|*Input lp2_dir to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":152:20:152:26|*Input lp3_dir to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":155:20:155:26|*Input un1_lp1_out[1:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":156:20:156:26|*Input un1_lp2_out[1:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":157:20:157:26|*Input un1_lp3_out[1:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@N: CL159 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\IO_Controller_TX.v":50:11:50:17|Input reset_n is unused.
+@N: CL135 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":107:16:107:21|Found sequential shift data_dly[54].hold_data with address depth of 54 words and data bit width of 32.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":118:4:118:9|Optimizing register bit hs_extended[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":118:4:118:9|Optimizing register bit hs_extended[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":118:4:118:9|Optimizing register bit hs_extended[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":118:4:118:9|Optimizing register bit hs_extended[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":118:4:118:9|Optimizing register bit hs_extended[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":118:4:118:9|Optimizing register bit hs_extended[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":118:4:118:9|Optimizing register bit hs_extended[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":118:4:118:9|Optimizing register bit hs_extended[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":118:4:118:9|Optimizing register bit hs_extended[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":118:4:118:9|Optimizing register bit hs_extended[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":118:4:118:9|Pruning register bits 15 to 6 of hs_extended[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@A: CL153 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\crc16_1lane_bb.v":56:16:56:20|*Unassigned bits of ready are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\crc16_1lane_bb.v":57:23:57:25|*Unassigned bits of crc[15:0] are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\packetheader_bb.v":65:22:65:31|*Unassigned bits of bytepkt_en are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\packetheader_bb.v":66:22:66:28|*Unassigned bits of bytepkt[31:0] are referenced and tied to 0 -- simulation mismatch possible.
+@W: CL190 :"C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v":49:0:49:5|Optimizing register bit timer[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v":49:0:49:5|Pruning register bit 15 of timer[15:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL201 :"C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v":76:0:76:5|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 8 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+   100
+   101
+   110
+   111
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 75MB peak: 76MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Mon Aug  6 16:39:40 2018
+
+###########################################################]
+Synopsys Netlist Linker, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+File C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\impl\Parallel2MIPI\synwork\layer0.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Mon Aug  6 16:39:40 2018
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Mon Aug  6 16:39:40 2018
+
+###########################################################]
+Synopsys Netlist Linker, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+File C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\impl\Parallel2MIPI\synwork\Parallel2MIPI_Parallel2MIPI_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Mon Aug  6 16:39:42 2018
+
+###########################################################]
+# Mon Aug  6 16:39:43 2018
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1796R, Built Aug  4 2017 11:10:16
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version M-2017.03L-SP1-1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@A: MF827 |No constraint file specified.
+@L: C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\impl\Parallel2MIPI\Parallel2MIPI_Parallel2MIPI_scck.rpt 
+Printing clock  summary report in "C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\impl\Parallel2MIPI\Parallel2MIPI_Parallel2MIPI_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 103MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 103MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 114MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 116MB)
+
+@N: MO111 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\top.v":138:10:138:15|Tristate driver LED_1 (in view: work.top(verilog)) on net LED[0] (in view: work.top(verilog)) has its enable tied to GND.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\colorbar_gen.v":78:4:78:9|Removing sequential instance fv (in view: work.colorbar_gen_240_620_240_830_40_44_148_5_5_1s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":141:4:141:9|Removing sequential instance hs_clk_en (in view: work.LP_HS_DELAY_CNTRL(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":141:4:141:9|Removing sequential instance hs_data_en (in view: work.LP_HS_DELAY_CNTRL(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=8  set on top level netlist top
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
+
+
+
+Clock Summary
+******************
+
+          Start                                               Requested     Requested     Clock        Clock                   Clock
+Level     Clock                                               Frequency     Period        Type         Group                   Load 
+------------------------------------------------------------------------------------------------------------------------------------
+0 -       System                                              1.0 MHz       1000.000      system       system_clkgroup         0    
+                                                                                                                                    
+0 -       pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock     1.0 MHz       1000.000      inferred     Inferred_clkgroup_2     193  
+                                                                                                                                    
+0 -       top|PIXCLK                                          1.0 MHz       1000.000      inferred     Inferred_clkgroup_1     74   
+                                                                                                                                    
+0 -       oDDRx4|sclk_inferred_clock                          1.0 MHz       1000.000      inferred     Inferred_clkgroup_0     4    
+====================================================================================================================================
+
+@W: MT529 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\oddrx4.v":81:12:81:15|Found inferred clock oDDRx4|sclk_inferred_clock which controls 4 sequential elements including u_DPHY_TX_INST.u_oDDRx4.FF_3. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\users\suhail\documents\github\ice40ultrawearablereferencedesigns\mipi dsi tx bridge\parallel2dsi_rd1184_rgb888_1lane_v2_latest\rtl\pwr_sq_ctrl.v":76:0:76:5|Found inferred clock top|PIXCLK which controls 74 sequential elements including LCD_Power_Controller.state[7:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v":109:5:109:10|Found inferred clock pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock which controls 193 sequential elements including u_BYTE_PACKETIZER.q_WC[15:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+@N: MF203 |Set autoconstraint_io 
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
+
+Encoding state machine state[7:0] (in view: work.pwr_sq_ctrl(verilog))
+original code -> new code
+   000 -> 00000001
+   001 -> 00000010
+   010 -> 00000100
+   011 -> 00001000
+   100 -> 00010000
+   101 -> 00100000
+   110 -> 01000000
+   111 -> 10000000
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 57MB peak: 144MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Aug  6 16:39:43 2018
+
+###########################################################]
+# Mon Aug  6 16:39:44 2018
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1796R, Built Aug  4 2017 11:10:16
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version M-2017.03L-SP1-1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 115MB)
+
+@N: MF203 |Set autoconstraint_io 
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 143MB)
+
+@N: MO111 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\top.v":138:10:138:15|Tristate driver LED_1 (in view: work.top(verilog)) on net LED[0] (in view: work.top(verilog)) has its enable tied to GND.
+@W: BN114 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\oddrx4.v":116:12:116:25|Removing instance u_oDDRx4.Inst5_ODDRX4B1 (in view: work.DPHY_TX_INST(verilog)) of black box view:work.ODDRX4B(verilog) because it does not drive other instances.
+@W: BN114 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\oddrx4.v":112:12:112:25|Removing instance u_oDDRx4.Inst5_ODDRX4B2 (in view: work.DPHY_TX_INST(verilog)) of black box view:work.ODDRX4B(verilog) because it does not drive other instances.
+@W: BN114 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\oddrx4.v":108:12:108:25|Removing instance u_oDDRx4.Inst5_ODDRX4B3 (in view: work.DPHY_TX_INST(verilog)) of black box view:work.ODDRX4B(verilog) because it does not drive other instances.
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 143MB)
+
+@W: BN132 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[15] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[14]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[14] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[13]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[13] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[12] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[11] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[8] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[5] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[3] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[2] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[1] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v":109:5:109:10|Removing sequential instance u_BYTE_PACKETIZER.q_WC[0] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v":109:5:109:10|Boundary register u_BYTE_PACKETIZER.q_WC[0] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+Encoding state machine state[7:0] (in view: work.pwr_sq_ctrl(verilog))
+original code -> new code
+   000 -> 00000001
+   001 -> 00000010
+   010 -> 00000100
+   011 -> 00001000
+   100 -> 00010000
+   101 -> 00100000
+   110 -> 01000000
+   111 -> 10000000
+@N: MO231 :"c:\users\suhail\documents\github\ice40ultrawearablereferencedesigns\mipi dsi tx bridge\parallel2dsi_rd1184_rgb888_1lane_v2_latest\rtl\pwr_sq_ctrl.v":49:0:49:5|Found counter in view:work.pwr_sq_ctrl(verilog) instance timer_1ms[10:0] 
+@N: MO231 :"c:\users\suhail\documents\github\ice40ultrawearablereferencedesigns\mipi dsi tx bridge\parallel2dsi_rd1184_rgb888_1lane_v2_latest\rtl\pwr_sq_ctrl.v":49:0:49:5|Found counter in view:work.pwr_sq_ctrl(verilog) instance timer[14:0] 
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][31] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][30] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][29] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][28] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][27] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][26] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][25] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][24] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][23] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][22] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][21] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][20] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][19] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][18] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][17] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][16] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][15] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][14] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][13] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][12] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][11] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][10] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][9] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][8] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: MO231 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":107:16:107:21|Found counter in view:work.LP_HS_DELAY_CNTRL(verilog) instance data_dly\[54\]\.hold_data_CF5[5:0] 
+@N: MO231 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":118:4:118:9|Found counter in view:work.LP_HS_DELAY_CNTRL(verilog) instance hs_en_low_cnt[15:0] 
+@N: MO231 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":118:4:118:9|Found counter in view:work.LP_HS_DELAY_CNTRL(verilog) instance hs_en_high_cnt[15:0] 
+@N: MO231 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":118:4:118:9|Found counter in view:work.LP_HS_DELAY_CNTRL(verilog) instance hs_extended[5:0] 
+@N: MO231 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\dcs_rom.v":67:3:67:8|Found counter in view:work.DCS_ROM(verilog) instance wait_cnt[11:0] 
+@N: MO231 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\dcs_rom.v":67:3:67:8|Found counter in view:work.DCS_ROM(verilog) instance byte_cnt[10:0] 
+@N: MO231 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\colorbar_gen.v":104:1:104:6|Found counter in view:work.colorbar_gen_240_620_240_830_40_44_148_5_5_1s(verilog) instance color_cntr[11:0] 
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 143MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 144MB)
+
+
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 145MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 145MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 145MB peak: 146MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 147MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 147MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 147MB)
+
+@N: FO126 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":107:16:107:21|Generating RAM u_LP_HS_DELAY_CNTRL.data_dly\[54\]\.hold_data_CR31[7:0]
+@N: FX214 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\dcs_rom.v":79:29:79:47|Generating ROM u_DCS_ROM.current_data_2[7:0] (in view: work.top(verilog)).
+
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 147MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 149MB peak: 151MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:01s		   988.25ns		 244 /       196
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 149MB peak: 151MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@N: MO111 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\top.v":106:16:106:18|Tristate driver LED_obuft_0_.un1[0] (in view: work.top(verilog)) on net LED[0] (in view: work.top(verilog)) has its enable tied to GND.
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 150MB peak: 151MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 74 clock pin(s) of sequential element(s)
+2 gated/generated clock tree(s) driving 134 clock pin(s) of sequential element(s)
+0 instances converted, 134 sequential instances remain driven by gated/generated clocks
+
+==================================== Non-Gated/Non-Generated Clocks =====================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                  
+---------------------------------------------------------------------------------------------------------
+@K:CKID0003       PIXCLK              port                   74         LCD_Power_Controller_lcd_1v8_enio
+=========================================================================================================
+============================================================================================================================== Gated/Generated Clocks ===============================================================================================================================
+Clock Tree ID     Driving Element                           Drive Element Type     Fanout     Sample Instance                                          Explanation                                                                                                                   
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       u_pll_pix2byte_RGB888_1lane.PLLInst_0     EHXPLLJ                130        u_LP_HS_DELAY_CNTRL.data_dly\[54\]\.hold_data_CF5[5]     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0002       u_DPHY_TX_INST.u_oDDRx4.Inst3_CLKDIVC     CLKDIVC                4          u_DPHY_TX_INST.u_oDDRx4.FF_0                             No gated clock conversion method for cell cell:LUCENT.FD1P3DX                                                                 
+=====================================================================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 115MB peak: 151MB)
+
+Writing Analyst data base C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\impl\Parallel2MIPI\synwork\Parallel2MIPI_Parallel2MIPI_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 149MB peak: 151MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\impl\Parallel2MIPI\Parallel2MIPI_Parallel2MIPI.edi
+M-2017.03L-SP1-1
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 153MB peak: 155MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 153MB peak: 155MB)
+
+@W: MT246 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\oddrx4.v":132:14:132:28|Blackbox ECLKSYNCA is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\oddrx4.v":129:12:129:24|Blackbox CLKDIVC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\oddrx4.v":120:12:120:25|Blackbox ODDRX4B is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v":144:26:144:32|Blackbox crc16_1lane is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v":123:8:123:21|Blackbox packetheader_1s is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v":89:8:89:22|Blackbox parallel2byte_24s_1s_62 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\ipexpress\pll_pix2byte_rgb888_1lane.v":69:12:69:20|Blackbox EHXPLLJ is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT420 |Found inferred clock top|PIXCLK with period 1000.00ns. Please declare a user-defined clock on object "p:PIXCLK"
+@W: MT420 |Found inferred clock oDDRx4|sclk_inferred_clock with period 1000.00ns. Please declare a user-defined clock on object "n:u_DPHY_TX_INST.u_oDDRx4.sclk"
+@W: MT420 |Found inferred clock pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock with period 1000.00ns. Please declare a user-defined clock on object "n:u_pll_pix2byte_RGB888_1lane.CLKOS2"
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Mon Aug  6 16:39:47 2018
+#
+
+
+Top view:               top
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        3
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 987.806
+
+                                                    Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock                                      Frequency     Frequency     Period        Period        Slack       Type         Group              
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+oDDRx4|sclk_inferred_clock                          1.0 MHz       360.7 MHz     1000.000      2.772         997.228     inferred     Inferred_clkgroup_0
+pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock     1.0 MHz       82.0 MHz      1000.000      12.194        987.806     inferred     Inferred_clkgroup_2
+top|PIXCLK                                          1.0 MHz       102.8 MHz     1000.000      9.728         990.272     inferred     Inferred_clkgroup_1
+System                                              1.0 MHz       214.8 MHz     1000.000      4.656         995.344     system       system_clkgroup    
+========================================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                                            |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                         Ending                                           |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                           System                                           |  1000.000    995.344  |  No paths    -      |  No paths    -      |  No paths    -    
+System                                           pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock  |  1000.000    994.481  |  No paths    -      |  No paths    -      |  No paths    -    
+oDDRx4|sclk_inferred_clock                       System                                           |  1000.000    997.875  |  No paths    -      |  No paths    -      |  No paths    -    
+oDDRx4|sclk_inferred_clock                       oDDRx4|sclk_inferred_clock                       |  1000.000    997.228  |  No paths    -      |  No paths    -      |  No paths    -    
+top|PIXCLK                                       System                                           |  1000.000    996.352  |  No paths    -      |  No paths    -      |  No paths    -    
+top|PIXCLK                                       top|PIXCLK                                       |  1000.000    990.272  |  No paths    -      |  No paths    -      |  No paths    -    
+top|PIXCLK                                       pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock  |  Diff grp    -        |  No paths    -      |  No paths    -      |  No paths    -    
+pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock  System                                           |  1000.000    995.560  |  No paths    -      |  No paths    -      |  No paths    -    
+pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock  pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock  |  1000.000    987.806  |  No paths    -      |  No paths    -      |  No paths    -    
+==========================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+
+
+Input Ports: 
+
+Port            Starting            User           Arrival     Required            
+Name            Reference           Constraint     Time        Time         Slack  
+                Clock                                                              
+-----------------------------------------------------------------------------------
+DE              NA                  NA             NA          NA           NA     
+HSYNC           NA                  NA             NA          NA           NA     
+LCD_sync        System (rising)     NA             0.000       995.344      995.344
+PIXCLK          NA                  NA             NA          NA           NA     
+PIXDATA[0]      NA                  NA             NA          NA           NA     
+PIXDATA[1]      NA                  NA             NA          NA           NA     
+PIXDATA[2]      NA                  NA             NA          NA           NA     
+PIXDATA[3]      NA                  NA             NA          NA           NA     
+PIXDATA[4]      NA                  NA             NA          NA           NA     
+PIXDATA[5]      NA                  NA             NA          NA           NA     
+PIXDATA[6]      NA                  NA             NA          NA           NA     
+PIXDATA[7]      NA                  NA             NA          NA           NA     
+PIXDATA[8]      NA                  NA             NA          NA           NA     
+PIXDATA[9]      NA                  NA             NA          NA           NA     
+PIXDATA[10]     NA                  NA             NA          NA           NA     
+PIXDATA[11]     NA                  NA             NA          NA           NA     
+PIXDATA[12]     NA                  NA             NA          NA           NA     
+PIXDATA[13]     NA                  NA             NA          NA           NA     
+PIXDATA[14]     NA                  NA             NA          NA           NA     
+PIXDATA[15]     NA                  NA             NA          NA           NA     
+PIXDATA[16]     NA                  NA             NA          NA           NA     
+PIXDATA[17]     NA                  NA             NA          NA           NA     
+PIXDATA[18]     NA                  NA             NA          NA           NA     
+PIXDATA[19]     NA                  NA             NA          NA           NA     
+PIXDATA[20]     NA                  NA             NA          NA           NA     
+PIXDATA[21]     NA                  NA             NA          NA           NA     
+PIXDATA[22]     NA                  NA             NA          NA           NA     
+PIXDATA[23]     NA                  NA             NA          NA           NA     
+VSYNC           NA                  NA             NA          NA           NA     
+reset_n         System (rising)     NA             0.000       997.316      997.316
+===================================================================================
+
+
+Output Ports: 
+
+Port                  Starting                                                     User           Arrival     Required            
+Name                  Reference                                                    Constraint     Time        Time         Slack  
+                      Clock                                                                                                       
+----------------------------------------------------------------------------------------------------------------------------------
+D0                    pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock (rising)     NA             4.440       1000.000     995.560
+DCK                   pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock (rising)     NA             4.440       1000.000     995.560
+LCD_backlight_PWM     pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock (rising)     NA             3.864       1000.000     996.136
+LCD_enable_1v8        top|PIXCLK (rising)                                          NA             3.648       1000.000     996.352
+LCD_enable_3v0        top|PIXCLK (rising)                                          NA             3.648       1000.000     996.352
+LCD_reset             top|PIXCLK (rising)                                          NA             3.648       1000.000     996.352
+LED[0]                NA                                                           NA             NA          NA           NA     
+LED[1]                System (rising)                                              NA             4.656       1000.000     995.344
+LP0[0]                pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock (rising)     NA             4.313       1000.000     995.687
+LP0[1]                pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock (rising)     NA             4.313       1000.000     995.687
+LPCLK[0]              pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock (rising)     NA             3.720       1000.000     996.280
+LPCLK[1]              pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock (rising)     NA             3.720       1000.000     996.280
+==================================================================================================================================
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 154MB peak: 155MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 154MB peak: 155MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_2000ze-1
+
+Register bits: 200 of 2112 (9%)
+PIC Latch:       0
+I/O cells:       15
+
+
+Details:
+CCU2D:          72
+CLKDIVC:        1
+DPR16X4C:       8
+ECLKSYNCA:      2
+EHXPLLJ:        1
+FD1P3BX:        22
+FD1P3DX:        66
+FD1S3AX:        6
+FD1S3BX:        3
+FD1S3DX:        92
+FD1S3IX:        8
+GSR:            1
+IB:             3
+INV:            8
+OB:             9
+OBZ:            3
+ODDRX4B:        2
+OFS1P3DX:       3
+ORCALUT4:       235
+PFUMX:          14
+PUR:            1
+ROM128X1A:      8
+ROM16X1A:       9
+ROM32X1A:       8
+VHI:            10
+VLO:            10
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 33MB peak: 155MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Mon Aug  6 16:39:47 2018
+
+###########################################################]
+
+
+Synthesis exit by 0.
+
+edif2ngd  -l "MachXO2" -d LCMXO2-2000ZE -path "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/impl/Parallel2MIPI" -path "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/impl"   "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/impl/Parallel2MIPI/Parallel2MIPI_Parallel2MIPI.edi" "Parallel2MIPI_Parallel2MIPI.ngo"   
+edif2ngd:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="dt"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="lane_width"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="word_width"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="lane_width"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="poly"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="mode"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="V_SYNCH"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="V_FRONT_PORCH"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="H_BACK_PORCH"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="H_SYNCH"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="H_FRONT_PORCH"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="v_total"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="v_active"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="h_total"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="h_active"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="wait_time"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="p_LP11_clk_end"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="p_LP00_clk_end"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="p_HS00_clk_end"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="p_data2clk"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="p_LP11_data_end"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="p_LP00_data_end"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="p_HS00_data_end"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="p_HSXX_data"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="p_HS00_data"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="p_LP00_data"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="p_LP01_data"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="p_clk2data"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="p_HSXX_clk"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="p_HS00_clk"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="p_LP00_clk"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="p_LP01_clk"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="HSXXDATA_dly"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="HS00DATA_dly"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="LP00DATA_dly"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="LP01DATA_dly"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="CLK2DATA_dly"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="HSXXCLK_dly"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="HS00CLK_dly"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="LP00CLK_dly"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="LP01CLK_dly"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="lane_width"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="word_width"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="lane_width"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="dt"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="crc16"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="dt"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="lane_width"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="word_width"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="TIMER_CNT_1MS"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="ST_SYS_RUN"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="ST_CMD11"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="ST_3V0_UP"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="ST_RES_UP1"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="ST_RES_DW"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="ST_RES_UP"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="ST_1V8_UP"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="ST_IDLE"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="word_width"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="lane_width"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="dt"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="crc16"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="h_active"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="h_total"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="v_active"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="v_total"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="H_FRONT_PORCH"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="H_SYNCH"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="V_FRONT_PORCH"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="V_SYNCH"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="mode"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="lane_width"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="reserved"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="EoTp"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="crc16"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="testmode"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="DT"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="word_width"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="WC"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="VC"  />
+Writing the design to Parallel2MIPI_Parallel2MIPI.ngo...
+
+Total CPU Time: 0 secs  
+
+Total REAL Time: 0 secs  
+
+
+ngdbuild  -a "MachXO2" -d LCMXO2-2000ZE  -p "C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data"  -p "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/impl/Parallel2MIPI" -p "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/impl" -p "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/ngo" "Parallel2MIPI_Parallel2MIPI.ngo" "Parallel2MIPI_Parallel2MIPI.ngd"  	
+ngdbuild:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Reading 'Parallel2MIPI_Parallel2MIPI.ngo' ...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading NGO design 'C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/ngo/parallel2byte_24s_1s_62.ngo'...
+Loading NGO design 'C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/ngo/packetheader_1s.ngo'...
+Loading NGO design 'C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/ngo/crc16_1lane.ngo'...
+
+
+Running DRC...
+
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_DPHY_TX_INST/u_oDDRx4/cdiv1" arg2="u_DPHY_TX_INST/u_oDDRx4/cdiv1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/byte_data[8]" arg2="u_BYTE_PACKETIZER/byte_data[8]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="VSYNC" arg2="VSYNC"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="HSYNC" arg2="HSYNC"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="DE" arg2="DE"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="PIXDATA[0]" arg2="PIXDATA[0]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="PIXDATA[1]" arg2="PIXDATA[1]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="PIXDATA[2]" arg2="PIXDATA[2]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="PIXDATA[3]" arg2="PIXDATA[3]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="PIXDATA[4]" arg2="PIXDATA[4]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="PIXDATA[5]" arg2="PIXDATA[5]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="PIXDATA[6]" arg2="PIXDATA[6]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="PIXDATA[7]" arg2="PIXDATA[7]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="PIXDATA[8]" arg2="PIXDATA[8]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="PIXDATA[9]" arg2="PIXDATA[9]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="PIXDATA[10]" arg2="PIXDATA[10]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="PIXDATA[11]" arg2="PIXDATA[11]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="PIXDATA[12]" arg2="PIXDATA[12]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="PIXDATA[13]" arg2="PIXDATA[13]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="PIXDATA[14]" arg2="PIXDATA[14]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="PIXDATA[15]" arg2="PIXDATA[15]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="PIXDATA[16]" arg2="PIXDATA[16]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="PIXDATA[17]" arg2="PIXDATA[17]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="PIXDATA[18]" arg2="PIXDATA[18]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="PIXDATA[19]" arg2="PIXDATA[19]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="PIXDATA[20]" arg2="PIXDATA[20]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="PIXDATA[21]" arg2="PIXDATA[21]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="PIXDATA[22]" arg2="PIXDATA[22]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="PIXDATA[23]" arg2="PIXDATA[23]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO0_1" arg2="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO0_1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO1_1" arg2="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO1_1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO2_1" arg2="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO2_1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO3_1" arg2="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO3_1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO4_1" arg2="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO4_1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO5_1" arg2="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO5_1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO6_1" arg2="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO6_1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO7_1" arg2="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO7_1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO8_1" arg2="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO8_1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO17_1" arg2="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO17_1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/AEF" arg2="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/AEF"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/AFF" arg2="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/AFF"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO0_0" arg2="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO0_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO1_0" arg2="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO1_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO2_0" arg2="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO2_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO3_0" arg2="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO3_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO4_0" arg2="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO4_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO5_0" arg2="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO5_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO6_0" arg2="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO6_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO7_0" arg2="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO7_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO8_0" arg2="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO8_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO17_0" arg2="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO17_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/AEF_0" arg2="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/AEF_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/AFF_0" arg2="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/AFF_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO0" arg2="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO1" arg2="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO2" arg2="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO2"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO3" arg2="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO3"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO4" arg2="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO4"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO5" arg2="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO5"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO6" arg2="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO6"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO7" arg2="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO7"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO8" arg2="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO8"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO17" arg2="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO17"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/AEF_1" arg2="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/AEF_1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/AFF_1" arg2="u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/AFF_1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/w_gctr_cia_S0" arg2="u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/w_gctr_cia_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/w_gctr_cia_S1" arg2="u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/w_gctr_cia_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/co1" arg2="u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/co1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/r_gctr_cia_S0" arg2="u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/r_gctr_cia_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/r_gctr_cia_S1" arg2="u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/r_gctr_cia_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/co1_1" arg2="u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/co1_1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/empty_cmp_ci_a_S0" arg2="u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/empty_cmp_ci_a_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/empty_cmp_ci_a_S1" arg2="u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/empty_cmp_ci_a_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/a0_COUT" arg2="u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/a0_COUT"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/a0_S1" arg2="u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/a0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/full_cmp_ci_a_S0" arg2="u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/full_cmp_ci_a_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/full_cmp_ci_a_S1" arg2="u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/full_cmp_ci_a_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/a1_COUT" arg2="u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/a1_COUT"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/a1_S1" arg2="u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/a1_S1"  />
+    <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="79"  />
+
+Design Results:
+   1030 blocks expanded
+Complete the first expansion.
+Writing 'Parallel2MIPI_Parallel2MIPI.ngd' ...
+Total CPU Time: 0 secs  
+
+Total REAL Time: 0 secs  
+
+
+map -a "MachXO2" -p LCMXO2-2000ZE -t WLCSP49 -s 1 -oc Commercial   "Parallel2MIPI_Parallel2MIPI.ngd" -o "Parallel2MIPI_Parallel2MIPI_map.ncd" -pr "Parallel2MIPI_Parallel2MIPI.prf" -mp "Parallel2MIPI_Parallel2MIPI.mrp" "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/impl/Parallel2MIPI.lpf" -c 0            
+map:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: Parallel2MIPI_Parallel2MIPI.ngd
+   Picdevice="LCMXO2-2000ZE"
+
+   Pictype="WLCSP49"
+
+   Picspeed=1
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO2-2000ZEWLCSP49, Performance used: 1.
+
+Loading device for application map from file 'xo2c2000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+
+Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+3 CCU2 constant inputs absorbed.
+
+    <postMsg mid="51001027" type="Warning" dynamic="1" navigation="0" arg0="reset_n_c_i"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="VSYNC"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="HSYNC"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="DE"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="PIXDATA[23:0](23)"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="PIXDATA[23:0](22)"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="PIXDATA[23:0](21)"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="PIXDATA[23:0](20)"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="PIXDATA[23:0](19)"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="PIXDATA[23:0](18)"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="PIXDATA[23:0](17)"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="PIXDATA[23:0](16)"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="PIXDATA[23:0](15)"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="PIXDATA[23:0](14)"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="PIXDATA[23:0](13)"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="PIXDATA[23:0](12)"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="PIXDATA[23:0](11)"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="PIXDATA[23:0](10)"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="PIXDATA[23:0](9)"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="PIXDATA[23:0](8)"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="PIXDATA[23:0](7)"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="PIXDATA[23:0](6)"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="PIXDATA[23:0](5)"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="PIXDATA[23:0](4)"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="PIXDATA[23:0](3)"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="PIXDATA[23:0](2)"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="PIXDATA[23:0](1)"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="PIXDATA[23:0](0)"  />
+
+
+
+Design Summary:
+   Number of registers:    384 out of  2229 (17%)
+      PFU registers:          381 out of  2112 (18%)
+      PIO registers:            3 out of   117 (3%)
+   Number of SLICEs:       397 out of  1056 (38%)
+      SLICEs as Logic/ROM:    361 out of  1056 (34%)
+      SLICEs as RAM:           36 out of   792 (5%)
+      SLICEs as Carry:        104 out of  1056 (10%)
+   Number of LUT4s:        788 out of  2112 (37%)
+      Number used as logic LUTs:        508
+      Number used as distributed RAM:    72
+      Number used as ripple logic:      208
+      Number used as shift registers:     0
+   Number of PIO sites used: 17 + 4(JTAG) out of 39 (54%)
+      Number of PIO sites used for single ended IOs: 17
+      Number of PIO sites used for differential IOs: 4 (represented by 2 PIO comps in NCD)
+   Number of IDDR/ODDR/TDDR cells used: 2 out of 117 (2%)
+      Number of IDDR cells:   0
+      Number of ODDR cells:   2
+      Number of TDDR cells:   0
+   Number of PIO using at least one IDDR/ODDR/TDDR: 2 (2 differential)
+      Number of PIO using IDDR only:        0 (0 differential)
+      Number of PIO using ODDR only:        2 (2 differential)
+      Number of PIO using TDDR only:        0 (0 differential)
+      Number of PIO using IDDR/ODDR:        0 (0 differential)
+      Number of PIO using IDDR/TDDR:        0 (0 differential)
+      Number of PIO using ODDR/TDDR:        0 (0 differential)
+      Number of PIO using IDDR/ODDR/TDDR:   0 (0 differential)
+   Number of block RAMs:  3 out of 8 (38%)
+   Number of GSRs:  0 out of 1 (0%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  1 out of 1 (100%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  1 out of 4 (25%)
+   Number of ECLKSYNCA:  2 out of 4 (50%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  7
+     Net PIXCLK_c: 50 loads, 50 rising, 0 falling (Driver: PIO PIXCLK )
+     Net u_DPHY_TX_INST/u_oDDRx4/eclkc: 1 loads, 1 rising, 0 falling (Driver: u_DPHY_TX_INST/u_oDDRx4/Inst4_ECLKSYNCA )
+     Net u_DPHY_TX_INST/u_oDDRx4/sclk: 4 loads, 4 rising, 0 falling (Driver: u_DPHY_TX_INST/u_oDDRx4/Inst3_CLKDIVC )
+     Net u_DPHY_TX_INST/u_oDDRx4/eclkd: 2 loads, 2 rising, 0 falling (Driver: u_DPHY_TX_INST/u_oDDRx4/Inst2_ECLKSYNCA )
+     Net CLKOS: 1 loads, 1 rising, 0 falling (Driver: u_pll_pix2byte_RGB888_1lane/PLLInst_0 )
+     Net CLKOP: 2 loads, 2 rising, 0 falling (Driver: u_pll_pix2byte_RGB888_1lane/PLLInst_0 )
+     Net byte_clk: 196 loads, 196 rising, 0 falling (Driver: u_pll_pix2byte_RGB888_1lane/PLLInst_0 )
+   Number of Clock Enables:  28
+     Net LCD_Power_Controller.N_118_i: 1 loads, 0 LSLICEs
+     Net u_DPHY_TX_INST/u_oDDRx4/FF_0_Q: 2 loads, 2 LSLICEs
+     Net w_de: 3 loads, 0 LSLICEs
+     Net u_DCS_Encoder/un17_bitcntr_f0_0_o2[4]: 9 loads, 9 LSLICEs
+     Net u_DCS_ROM/un22_byte_cnt_0_a2: 6 loads, 6 LSLICEs
+     Net u_LP_HS_DELAY_CNTRL/un72_lp_data_i_0: 1 loads, 1 LSLICEs
+     Net u_LP_HS_DELAY_CNTRL/un72_lp_clk_i_0: 1 loads, 1 LSLICEs
+     Net u_LP_HS_DELAY_CNTRL/un48_hsxx_clk_en_i_0: 1 loads, 1 LSLICEs
+     Net u_LP_HS_DELAY_CNTRL/hs_extendede: 4 loads, 4 LSLICEs
+     Net u_LP_HS_DELAY_CNTRL/N_123_i: 9 loads, 9 LSLICEs
+     Net u_LP_HS_DELAY_CNTRL/N_126_i: 9 loads, 9 LSLICEs
+     Net u_BYTE_PACKETIZER/u_parallel2byte/un2_read_2_0_a3: 2 loads, 0 LSLICEs
+     Net u_BYTE_PACKETIZER/u_parallel2byte/un2_read_1_0_a3: 2 loads, 0 LSLICEs
+     Net u_BYTE_PACKETIZER/u_parallel2byte/un2_read_0_0_a3: 2 loads, 0 LSLICEs
+     Net u_BYTE_PACKETIZER/byte_en: 8 loads, 8 LSLICEs
+     Net u_BYTE_PACKETIZER/u_packetheader/un1_q_long_pkt_indicator_1_1_i: 5 loads, 5 LSLICEs
+     Net u_BYTE_PACKETIZER/u_packetheader/un1_q_long_pkt_indicator_1_i: 1 loads, 1 LSLICEs
+     Net u_BYTE_PACKETIZER/chksum_rdy: 8 loads, 8 LSLICEs
+     Net u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/wren_i: 6 loads, 6 LSLICEs
+     Net u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/rden_i: 10 loads, 10 LSLICEs
+     Net u_BYTE_PACKETIZER/u_packetheader/un3_q_wc_0: 8 loads, 8 LSLICEs
+     Net u_BYTE_PACKETIZER/u_packetheader/un5_q_ECC_0: 3 loads, 3 LSLICEs
+     Net u_BYTE_PACKETIZER/u_packetheader/un14_lpkt_cnt_En_i: 1 loads, 1 LSLICEs
+     Net u_BYTE_PACKETIZER/w_edge_detect: 1 loads, 1 LSLICEs
+     Net LCD_Power_Controller/timer_i: 6 loads, 6 LSLICEs
+     Net LCD_Power_Controller/state[7]: 1 loads, 1 LSLICEs
+     Net LCD_Power_Controller.N_117_i: 1 loads, 0 LSLICEs
+     Net LCD_Power_Controller.N_116_i: 1 loads, 0 LSLICEs
+   Number of LSRs:  7
+     Net reset_n_c: 158 loads, 147 LSLICEs
+     Net reset_n_c_i: 1 loads, 0 LSLICEs
+     Net LCD_backlight_PWM_c: 23 loads, 23 LSLICEs
+     Net hs_en: 4 loads, 4 LSLICEs
+     Net u_BYTE_PACKETIZER/u_packetheader/un1_q_bytepkt_en_0: 26 loads, 26 LSLICEs
+     Net u_BYTE_PACKETIZER/un1_w_edge_detect: 9 loads, 9 LSLICEs
+     Net powerSequenceDone_i: 1 loads, 0 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net reset_n_c: 159 loads
+     Net u_DCS_ROM/byte_cnt[1]: 88 loads
+     Net u_DCS_ROM/byte_cnt[2]: 87 loads
+     Net u_DCS_ROM/byte_cnt[3]: 87 loads
+     Net u_DCS_ROM/byte_cnt[5]: 67 loads
+     Net u_LP_HS_DELAY_CNTRL/tmp1[0]: 41 loads
+     Net u_DCS_ROM/byte_cnt[6]: 36 loads
+     Net u_DCS_ROM/byte_cnt[0]: 34 loads
+     Net u_LP_HS_DELAY_CNTRL/tmp1_i[1]: 32 loads
+     Net u_LP_HS_DELAY_CNTRL/tmp3[2]: 32 loads
+ 
+
+   Number of warnings:  28
+   Number of errors:    0
+
+
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 48 MB
+
+Dumping design to file Parallel2MIPI_Parallel2MIPI_map.ncd.
+
+trce -f "Parallel2MIPI_Parallel2MIPI.mt" -o "Parallel2MIPI_Parallel2MIPI.tw1" "Parallel2MIPI_Parallel2MIPI_map.ncd" "Parallel2MIPI_Parallel2MIPI.prf"
+trce:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file parallel2mipi_parallel2mipi_map.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-2000ZE
+Package:     WLCSP49
+Performance: 1
+Loading device for application trce from file 'xo2c2000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.0.111.2
+Mon Aug 06 16:39:52 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o Parallel2MIPI_Parallel2MIPI.tw1 -gui Parallel2MIPI_Parallel2MIPI_map.ncd Parallel2MIPI_Parallel2MIPI.prf 
+Design file:     parallel2mipi_parallel2mipi_map.ncd
+Preference file: parallel2mipi_parallel2mipi.prf
+Device,speed:    LCMXO2-2000ZE,1
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+Based on the preference: FREQUENCY NET "CLKOP" 300.000000 MHz ;
+A new generated preference: FREQUENCY NET "u_DPHY_TX_INST/u_oDDRx4/sclk" 75.000000 MHz ;
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 4098  Score: 50465120
+Cumulative negative slack: 50472150
+
+Note: Component internal maximum frequency has been exceeded.
+
+Constraints cover 75378 paths, 7 nets, and 3348 connections (90.54% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.0.111.2
+Mon Aug 06 16:39:52 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o Parallel2MIPI_Parallel2MIPI.tw1 -gui Parallel2MIPI_Parallel2MIPI_map.ncd Parallel2MIPI_Parallel2MIPI.prf 
+Design file:     parallel2mipi_parallel2mipi_map.ncd
+Preference file: parallel2mipi_parallel2mipi.prf
+Device,speed:    LCMXO2-2000ZE,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 124  Score: 9368
+Cumulative negative slack: 9368
+
+Constraints cover 75378 paths, 7 nets, and 3515 connections (95.05% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 4098 (setup), 124 (hold)
+Score: 50465120 (setup), 9368 (hold)
+Cumulative negative slack: 50481518 (50472150+9368)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total time: 0 secs 
+
+mpartrce -p "Parallel2MIPI_Parallel2MIPI.p2t" -f "Parallel2MIPI_Parallel2MIPI.p3t" -tf "Parallel2MIPI_Parallel2MIPI.pt" "Parallel2MIPI_Parallel2MIPI_map.ncd" "Parallel2MIPI_Parallel2MIPI.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "Parallel2MIPI_Parallel2MIPI_map.ncd"
+Mon Aug 06 16:39:52 2018
+
+PAR: Place And Route Diamond (64-bit) 3.10.0.111.2.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF:parHold=0 Parallel2MIPI_Parallel2MIPI_map.ncd Parallel2MIPI_Parallel2MIPI.dir/5_1.ncd Parallel2MIPI_Parallel2MIPI.prf
+Preference file: Parallel2MIPI_Parallel2MIPI.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file Parallel2MIPI_Parallel2MIPI_map.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-2000ZE
+Package:     WLCSP49
+Performance: 1
+Loading device for application par from file 'xo2c2000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)   17+4(JTAG)/216     10% used
+                  17+4(JTAG)/39      54% bonded
+   IOLOGIC            5/216           2% used
+
+   SLICE            397/1056         37% used
+
+   CLKDIV             1/4            25% used
+   EBR                3/8            37% used
+   PLL                1/1           100% used
+   ECLKSYNC           2/4            50% used
+
+
+INFO: Design contains EBR with ASYNC Reset Mode that has a limitation: The use of the EBR block asynchronous reset requires that certain timing be met between the clock and the reset within the memory block. See the device specific data sheet for additional details.
+Based on the preference: FREQUENCY NET "CLKOP" 300.000000 MHz ;
+A new generated preference: FREQUENCY NET "u_DPHY_TX_INST/u_oDDRx4/sclk" 75.000000 MHz ;
+Number of Signals: 1300
+Number of Connections: 3698
+
+Pin Constraint Summary:
+   15 out of 15 pins locked (100% locked).
+
+The following 4 signals are selected to use the primary clock routing resources:
+    CLKOP (driver: u_pll_pix2byte_RGB888_1lane/PLLInst_0, clk load #: 0)
+    u_DPHY_TX_INST/u_oDDRx4/sclk (driver: u_DPHY_TX_INST/u_oDDRx4/Inst3_CLKDIVC, clk load #: 4)
+    byte_clk (driver: u_pll_pix2byte_RGB888_1lane/PLLInst_0, clk load #: 196)
+    PIXCLK_c (driver: PIXCLK, clk load #: 50)
+
+
+The following 4 signals are selected to use the secondary clock routing resources:
+    reset_n_c (driver: reset_n, clk load #: 0, sr load #: 158, ce load #: 0)
+    u_BYTE_PACKETIZER/u_packetheader/un1_q_bytepkt_en_0 (driver: SLICE_421, clk load #: 0, sr load #: 26, ce load #: 0)
+    LCD_backlight_PWM_c (driver: u_DCS_ROM/SLICE_147, clk load #: 0, sr load #: 23, ce load #: 0)
+    u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/rden_i (driver: SLICE_423, clk load #: 0, sr load #: 0, ce load #: 10)
+
+No signal is selected as Global Set/Reset.
+Starting Placer Phase 0.
+..........
+Finished Placer Phase 0.  REAL time: 3 secs 
+
+Starting Placer Phase 1.
+...
+Placer score = 195169545.
+Finished Placer Phase 1.  REAL time: 5 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  194431740
+Finished Placer Phase 2.  REAL time: 5 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 2 out of 8 (25%)
+  PLL        : 1 out of 1 (100%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Quadrants All (TL, TR, BL, BR) - Global Clocks:
+  PRIMARY "CLKOP" from CLKOP on comp "u_pll_pix2byte_RGB888_1lane/PLLInst_0" on PLL site "LPLL", clk load = 0
+  PRIMARY "u_DPHY_TX_INST/u_oDDRx4/sclk" from CDIVX on comp "u_DPHY_TX_INST/u_oDDRx4/Inst3_CLKDIVC" on CLKDIV site "TCLKDIV1", clk load = 4
+  PRIMARY "byte_clk" from CLKOS2 on comp "u_pll_pix2byte_RGB888_1lane/PLLInst_0" on PLL site "LPLL", clk load = 196
+  PRIMARY "PIXCLK_c" from comp "PIXCLK" on CLK_PIN site "E4 (PB11A)", clk load = 50
+  SECONDARY "reset_n_c" from comp "reset_n" on CLK_PIN site "B3 (PT18C)", clk load = 0, ce load = 0, sr load = 158
+  SECONDARY "u_BYTE_PACKETIZER/u_packetheader/un1_q_bytepkt_en_0" from F1 on comp "SLICE_421" on site "R9C15C", clk load = 0, ce load = 0, sr load = 26
+  SECONDARY "LCD_backlight_PWM_c" from Q0 on comp "u_DCS_ROM/SLICE_147" on site "R12C15A", clk load = 0, ce load = 0, sr load = 23
+  SECONDARY "u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/rden_i" from F1 on comp "SLICE_423" on site "R10C8A", clk load = 0, ce load = 10, sr load = 0
+
+  PRIMARY  : 4 out of 8 (50%)
+  SECONDARY: 4 out of 8 (50%)
+
+Edge Clocks:
+  ECLK "u_DPHY_TX_INST/u_oDDRx4/eclkc": TECLK0
+    - From GPLL_CLKOS "LPLL".CLKOS, driver "u_pll_pix2byte_RGB888_1lane/PLLInst_0".
+  ECLK "u_DPHY_TX_INST/u_oDDRx4/eclkd": TECLK1
+    - From GPLL_CLKOP "LPLL".CLKOP, driver "u_pll_pix2byte_RGB888_1lane/PLLInst_0".
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   17 + 4(JTAG) out of 216 (9.7%) PIO sites used.
+   17 + 4(JTAG) out of 39 (53.8%) bonded PIO sites used.
+   Number of PIO comps: 15; differential: 2.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+----------------+------------+-----------+
+| I/O Bank | Usage          | Bank Vccio | Bank Vref |
++----------+----------------+------------+-----------+
+| 0        | 10 / 20 ( 50%) | 2.5V       | -         |
+| 2        | 3 / 13 ( 23%)  | 2.5V       | -         |
+| 5        | 4 / 6 ( 66%)   | 1.2V       | -         |
++----------+----------------+------------+-----------+
+
+Total placer CPU time: 4 secs 
+
+Dumping design to file Parallel2MIPI_Parallel2MIPI.dir/5_1.ncd.
+
+0 connections routed; 3698 unrouted.
+Starting router resource preassignment
+
+Completed router resource preassignment. Real time: 7 secs 
+
+Start NBR router at 16:39:59 08/06/18
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 16:39:59 08/06/18
+
+Start NBR section for initial routing at 16:39:59 08/06/18
+Level 1, iteration 1
+42(0.03%) conflicts; 2531(68.44%) untouched conns; 9256796 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -14.677ns/-9256.796ns; real time: 8 secs 
+Level 2, iteration 1
+144(0.11%) conflicts; 1958(52.95%) untouched conns; 9175612 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.006ns/-9175.613ns; real time: 9 secs 
+Level 3, iteration 1
+92(0.07%) conflicts; 970(26.23%) untouched conns; 9655443 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -14.998ns/-9655.444ns; real time: 10 secs 
+Level 4, iteration 1
+92(0.07%) conflicts; 0(0.00%) untouched conn; 9715683 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.100ns/-9715.683ns; real time: 11 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 16:40:03 08/06/18
+Level 4, iteration 1
+97(0.07%) conflicts; 0(0.00%) untouched conn; 9702469 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.149ns/-9702.469ns; real time: 11 secs 
+Level 4, iteration 2
+79(0.06%) conflicts; 0(0.00%) untouched conn; 9784153 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.055ns/-9784.153ns; real time: 12 secs 
+Level 4, iteration 3
+70(0.05%) conflicts; 0(0.00%) untouched conn; 9779841 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.006ns/-9779.841ns; real time: 12 secs 
+Level 4, iteration 4
+57(0.04%) conflicts; 0(0.00%) untouched conn; 9779841 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.006ns/-9779.841ns; real time: 12 secs 
+Level 4, iteration 5
+51(0.04%) conflicts; 0(0.00%) untouched conn; 9790339 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.006ns/-9790.339ns; real time: 13 secs 
+Level 4, iteration 6
+59(0.05%) conflicts; 0(0.00%) untouched conn; 9790339 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.006ns/-9790.339ns; real time: 13 secs 
+Level 4, iteration 7
+60(0.05%) conflicts; 0(0.00%) untouched conn; 9871246 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.046ns/-9871.246ns; real time: 13 secs 
+Level 4, iteration 8
+47(0.04%) conflicts; 0(0.00%) untouched conn; 9871246 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.046ns/-9871.246ns; real time: 14 secs 
+Level 4, iteration 9
+44(0.03%) conflicts; 0(0.00%) untouched conn; 9915034 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.006ns/-9915.034ns; real time: 14 secs 
+Level 4, iteration 10
+43(0.03%) conflicts; 0(0.00%) untouched conn; 9915034 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.006ns/-9915.034ns; real time: 15 secs 
+Level 4, iteration 11
+37(0.03%) conflicts; 0(0.00%) untouched conn; 9980330 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.359ns/-9980.330ns; real time: 15 secs 
+Level 4, iteration 12
+26(0.02%) conflicts; 0(0.00%) untouched conn; 9980330 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.359ns/-9980.330ns; real time: 16 secs 
+Level 4, iteration 13
+28(0.02%) conflicts; 0(0.00%) untouched conn; 10129757 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.609ns/-10129.757ns; real time: 16 secs 
+Level 4, iteration 14
+28(0.02%) conflicts; 0(0.00%) untouched conn; 10129757 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.609ns/-10129.757ns; real time: 16 secs 
+Level 4, iteration 15
+21(0.02%) conflicts; 0(0.00%) untouched conn; 10213160 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.980ns/-10213.160ns; real time: 17 secs 
+Level 4, iteration 16
+22(0.02%) conflicts; 0(0.00%) untouched conn; 10213160 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.980ns/-10213.160ns; real time: 17 secs 
+Level 4, iteration 17
+14(0.01%) conflicts; 0(0.00%) untouched conn; 10362289 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -16.546ns/-10362.289ns; real time: 17 secs 
+Level 4, iteration 18
+22(0.02%) conflicts; 0(0.00%) untouched conn; 10362289 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -16.546ns/-10362.289ns; real time: 17 secs 
+Level 4, iteration 19
+16(0.01%) conflicts; 0(0.00%) untouched conn; 10259225 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.807ns/-10259.225ns; real time: 18 secs 
+Level 4, iteration 20
+9(0.01%) conflicts; 0(0.00%) untouched conn; 10259225 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.807ns/-10259.225ns; real time: 18 secs 
+Level 4, iteration 21
+3(0.00%) conflicts; 0(0.00%) untouched conn; 10697203 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -17.627ns/-10697.203ns; real time: 18 secs 
+Level 4, iteration 22
+4(0.00%) conflicts; 0(0.00%) untouched conn; 10697203 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -17.627ns/-10697.203ns; real time: 18 secs 
+Level 4, iteration 23
+4(0.00%) conflicts; 0(0.00%) untouched conn; 10407748 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.796ns/-10407.749ns; real time: 18 secs 
+Level 4, iteration 24
+2(0.00%) conflicts; 0(0.00%) untouched conn; 10407748 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.796ns/-10407.749ns; real time: 18 secs 
+Level 4, iteration 25
+2(0.00%) conflicts; 0(0.00%) untouched conn; 10344318 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.651ns/-10344.318ns; real time: 19 secs 
+Level 4, iteration 26
+5(0.00%) conflicts; 0(0.00%) untouched conn; 10344318 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.651ns/-10344.318ns; real time: 19 secs 
+Level 4, iteration 27
+3(0.00%) conflicts; 0(0.00%) untouched conn; 10549349 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -16.085ns/-10549.349ns; real time: 19 secs 
+Level 4, iteration 28
+4(0.00%) conflicts; 0(0.00%) untouched conn; 10549349 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -16.085ns/-10549.349ns; real time: 19 secs 
+Level 4, iteration 29
+3(0.00%) conflicts; 0(0.00%) untouched conn; 10766455 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -16.498ns/-10766.456ns; real time: 19 secs 
+Level 4, iteration 30
+3(0.00%) conflicts; 0(0.00%) untouched conn; 10766455 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -16.498ns/-10766.456ns; real time: 19 secs 
+Level 4, iteration 31
+1(0.00%) conflict; 0(0.00%) untouched conn; 10770823 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -16.498ns/-10770.824ns; real time: 20 secs 
+Level 4, iteration 32
+3(0.00%) conflicts; 0(0.00%) untouched conn; 10770823 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -16.498ns/-10770.824ns; real time: 20 secs 
+Level 4, iteration 33
+3(0.00%) conflicts; 0(0.00%) untouched conn; 10831807 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -16.979ns/-10831.808ns; real time: 20 secs 
+Level 4, iteration 34
+2(0.00%) conflicts; 0(0.00%) untouched conn; 10831807 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -16.979ns/-10831.808ns; real time: 20 secs 
+Level 4, iteration 35
+1(0.00%) conflict; 0(0.00%) untouched conn; 10934972 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -17.757ns/-10934.973ns; real time: 20 secs 
+Level 4, iteration 36
+1(0.00%) conflict; 0(0.00%) untouched conn; 10934972 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -17.757ns/-10934.973ns; real time: 20 secs 
+Level 4, iteration 37
+0(0.00%) conflict; 0(0.00%) untouched conn; 10946060 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -17.902ns/-10946.061ns; real time: 20 secs 
+
+Start NBR section for performance tuning (iteration 1) at 16:40:12 08/06/18
+Level 4, iteration 1
+5(0.00%) conflicts; 0(0.00%) untouched conn; 10382899 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -15.950ns/-10382.899ns; real time: 21 secs 
+Level 4, iteration 2
+2(0.00%) conflicts; 0(0.00%) untouched conn; 10706898 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -17.344ns/-10706.898ns; real time: 21 secs 
+Level 4, iteration 3
+0(0.00%) conflict; 0(0.00%) untouched conn; 10988987 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -18.967ns/-10988.988ns; real time: 21 secs 
+
+Start NBR section for re-routing at 16:40:13 08/06/18
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 10941466 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -17.902ns/-10941.467ns; real time: 22 secs 
+
+Start NBR section for post-routing at 16:40:14 08/06/18
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 1355 (36.64%)
+  Estimated worst slack<setup> : -17.902ns
+  Timing score<setup> : 62924989
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+Total CPU time 22 secs 
+Total REAL time: 24 secs 
+Completely routed.
+End of route.  3698 routed (100.00%); 0 unrouted.
+
+Timing score: 62924989 
+
+Dumping design to file Parallel2MIPI_Parallel2MIPI.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = Success
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = -17.902
+PAR_SUMMARY::Timing score<setup/<ns>> = 62924.989
+PAR_SUMMARY::Worst  slack<hold /<ns>> = <n/a>
+PAR_SUMMARY::Timing score<hold /<ns>> = <n/a>
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 22 secs 
+Total REAL time to completion: 24 secs 
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+trce -f "Parallel2MIPI_Parallel2MIPI.pt" -o "Parallel2MIPI_Parallel2MIPI.twr" "Parallel2MIPI_Parallel2MIPI.ncd" "Parallel2MIPI_Parallel2MIPI.prf"
+trce:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file parallel2mipi_parallel2mipi.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-2000ZE
+Package:     WLCSP49
+Performance: 1
+Loading device for application trce from file 'xo2c2000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.0.111.2
+Mon Aug 06 16:40:17 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 1 -sphld m -o Parallel2MIPI_Parallel2MIPI.twr -gui Parallel2MIPI_Parallel2MIPI.ncd Parallel2MIPI_Parallel2MIPI.prf 
+Design file:     parallel2mipi_parallel2mipi.ncd
+Preference file: parallel2mipi_parallel2mipi.prf
+Device,speed:    LCMXO2-2000ZE,1
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+Based on the preference: FREQUENCY NET "CLKOP" 300.000000 MHz ;
+A new generated preference: FREQUENCY NET "u_DPHY_TX_INST/u_oDDRx4/sclk" 75.000000 MHz ;
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 4306  Score: 62924989
+Cumulative negative slack: 62932019
+
+Note: Component internal maximum frequency has been exceeded.
+
+Constraints cover 75378 paths, 7 nets, and 3515 connections (95.05% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.0.111.2
+Mon Aug 06 16:40:17 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 1 -sphld m -o Parallel2MIPI_Parallel2MIPI.twr -gui Parallel2MIPI_Parallel2MIPI.ncd Parallel2MIPI_Parallel2MIPI.prf 
+Design file:     parallel2mipi_parallel2mipi.ncd
+Preference file: parallel2mipi_parallel2mipi.prf
+Device,speed:    LCMXO2-2000ZE,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 75378 paths, 7 nets, and 3515 connections (95.05% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 4306 (setup), 0 (hold)
+Score: 62924989 (setup), 0 (hold)
+Cumulative negative slack: 62932019 (62932019+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total time: 0 secs 
+
+iotiming  "Parallel2MIPI_Parallel2MIPI.ncd" "Parallel2MIPI_Parallel2MIPI.prf"
+I/O Timing Report:
+:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application iotiming from file parallel2mipi_parallel2mipi.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-2000ZE
+Package:     WLCSP49
+Performance: 1
+Loading device for application iotiming from file 'xo2c2000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Based on the preference: FREQUENCY NET "CLKOP" 300.000000 MHz ;
+A new generated preference: FREQUENCY NET "u_DPHY_TX_INST/u_oDDRx4/sclk" 75.000000 MHz ;
+Running Performance Grade: 1
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file parallel2mipi_parallel2mipi.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-2000ZE
+Package:     WLCSP49
+Performance: 2
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: 2
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file parallel2mipi_parallel2mipi.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-2000ZE
+Package:     WLCSP49
+Performance: 3
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: 3
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file parallel2mipi_parallel2mipi.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-2000ZE
+Package:     WLCSP49
+Performance: M
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: M
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+Done.
+
+bitgen -f "Parallel2MIPI_Parallel2MIPI.t2b" -w "Parallel2MIPI_Parallel2MIPI.ncd" "Parallel2MIPI_Parallel2MIPI.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.10.0.111.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file Parallel2MIPI_Parallel2MIPI.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-2000ZE
+Package:     WLCSP49
+Performance: 1
+Loading device for application Bitgen from file 'xo2c2000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+
+Running DRC.
+INFO: Design contains EBR with ASYNC Reset Mode that has a limitation: The use of the EBR block asynchronous reset requires that certain timing be met between the clock and the reset within the memory block. See the device specific data sheet for additional details.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from Parallel2MIPI_Parallel2MIPI.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.94.
+ 
+Saving bit stream in "Parallel2MIPI_Parallel2MIPI.bit".
+
+bitgen -f "Parallel2MIPI_Parallel2MIPI.t2b" -w "Parallel2MIPI_Parallel2MIPI.ncd" -jedec "Parallel2MIPI_Parallel2MIPI.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.10.0.111.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file Parallel2MIPI_Parallel2MIPI.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-2000ZE
+Package:     WLCSP49
+Performance: 1
+Loading device for application Bitgen from file 'xo2c2000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+
+Running DRC.
+INFO: Design contains EBR with ASYNC Reset Mode that has a limitation: The use of the EBR block asynchronous reset requires that certain timing be met between the clock and the reset within the memory block. See the device specific data sheet for additional details.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from Parallel2MIPI_Parallel2MIPI.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.94.
+ 
+Saving bit stream in "Parallel2MIPI_Parallel2MIPI.jed".
+ 
+===========
+UFM Summary.
+===========
+UFM Size:        639 Pages (128*639 Bits).
+UFM Utilization: General Purpose Flash Memory.
+ 
+Available General Purpose Flash Memory:  639 Pages (Page 0 to Page 638).
+Initialized UFM Pages:                     0 Page.
+ 

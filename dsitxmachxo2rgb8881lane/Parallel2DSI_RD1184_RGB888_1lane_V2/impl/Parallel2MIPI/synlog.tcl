@@ -1,0 +1,1 @@
+run_tcl -fg Parallel2MIPI_Parallel2MIPI_synplify.tcl

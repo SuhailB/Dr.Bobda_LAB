@@ -1,0 +1,224 @@
+Synopsys HDL Compiler, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v" (library work)
+@I::"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\pmi_def.v" (library work)
+@I::"C:\lscc\diamond\3.10_x64\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\diamond\3.10_x64\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\lscc\diamond\3.10_x64\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\lscc\diamond\3.10_x64\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\compiler_directives.v" (library work)
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v" (library work)
+@W: CG1249 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v":292:11:292:15|Redeclaration of implicit signal w_LP0
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\IPExpress\pll_pix2byte_RGB888_1lane.v" (library work)
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v" (library work)
+@W: CG1337 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":122:18:122:24|Net bit_clk is not declared.
+@W: CG1337 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":123:15:123:24|Net bit_clk_90 is not declared.
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\IO_Controller_TX.v" (library work)
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\oDDRx4.v" (library work)
+@W: CG1337 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\oDDRx4.v":99:11:99:14|Net clk0 is not declared.
+@W: CG1337 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\oDDRx4.v":100:11:100:14|Net clk2 is not declared.
+@W: CG1337 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\oDDRx4.v":101:11:101:14|Net clk4 is not declared.
+@W: CG1337 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\oDDRx4.v":102:11:102:14|Net clk6 is not declared.
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v" (library work)
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v" (library work)
+@W: CG1337 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":68:12:68:21|Net start_data is not declared.
+@W: CG1337 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":69:12:69:23|Net start_escape is not declared.
+@W: CG1337 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":70:12:70:20|Net stop_data is not declared.
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v" (library work)
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\BYTE_PACKETIZER.v" (library work)
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\crc16_1lane_bb.v" (library work)
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\parallel2byte_bb.v" (library work)
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\packetheader_bb.v" (library work)
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v" (library work)
+@I::"C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v" (library work)
+@W: CG921 :"C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v":39:11:39:17|lcd_rst is already declared in this scope.
+@W: CG921 :"C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v":40:11:40:20|lcd_1v8_en is already declared in this scope.
+@W: CG921 :"C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v":41:11:41:20|lcd_3v0_en is already declared in this scope.
+Verilog syntax check successful!
+File C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v changed - recompiling
+Selecting top level module top
+@N: CG364 :"C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v":18:7:18:17|Synthesizing module pwr_sq_ctrl in library work.
+@W: CL169 :"C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v":49:0:49:5|Pruning unused register timer_out. Make sure that there are no unused intermediate registers.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\parallel2byte_bb.v":49:7:49:19|Synthesizing module parallel2byte in library work.
+
+	word_width=32'b00000000000000000000000000011000
+	lane_width=32'b00000000000000000000000000000001
+	dt=6'b111110
+   Generated name = parallel2byte_24s_1s_62
+@W: CG146 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\parallel2byte_bb.v":49:7:49:19|Creating black box for empty module parallel2byte_24s_1s_62
+
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\packetheader_bb.v":49:7:49:18|Synthesizing module packetheader in library work.
+
+	lane_width=32'b00000000000000000000000000000001
+   Generated name = packetheader_1s
+@W: CG146 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\packetheader_bb.v":49:7:49:18|Creating black box for empty module packetheader_1s
+
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\BYTE_PACKETIZER.v":49:7:49:21|Synthesizing module BYTE_PACKETIZER in library work.
+
+	word_width=32'b00000000000000000000000000011000
+	lane_width=32'b00000000000000000000000000000001
+	dt=6'b111110
+	crc16=32'b00000000000000000000000000000001
+	version=32'b00000000000000000000000000000001
+   Generated name = BYTE_PACKETIZER_24s_1s_62_1s_1s
+@N: CG179 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\BYTE_PACKETIZER.v":117:53:117:56|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\BYTE_PACKETIZER.v":118:53:118:56|Removing redundant assignment.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\crc16_1lane_bb.v":49:7:49:17|Synthesizing module crc16_1lane in library work.
+@W: CG146 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\crc16_1lane_bb.v":49:7:49:17|Creating black box for empty module crc16_1lane
+
+@W: CS263 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\BYTE_PACKETIZER.v":148:27:148:35|Port-width mismatch for port data. The port definition is 8 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":47:7:47:23|Synthesizing module LP_HS_DELAY_CNTRL in library work.
+@N: CG179 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":152:78:152:86|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":155:78:155:88|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":158:78:158:87|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":162:78:162:83|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":166:78:166:84|Removing redundant assignment.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1051:7:1051:14|Synthesizing module ROM16X1A in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":176:7:176:13|Synthesizing module FD1P3BX in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":187:7:187:13|Synthesizing module FD1P3DX in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1120:7:1120:9|Synthesizing module VHI in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1615:7:1615:13|Synthesizing module ODDRX4B in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1525:7:1525:15|Synthesizing module ECLKSYNCA in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1124:7:1124:9|Synthesizing module VLO in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1512:7:1512:13|Synthesizing module CLKDIVC in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\oDDRx4.v":8:7:8:12|Synthesizing module oDDRx4 in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\IO_Controller_TX.v":49:7:49:22|Synthesizing module IO_Controller_TX in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":50:7:50:18|Synthesizing module DPHY_TX_INST in library work.
+@W: CS263 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":127:162:127:196|Port-width mismatch for port dataout. The port definition is 32 bits, but the actual port connection bit width is 11. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":155:20:155:26|Port-width mismatch for port lp1_out. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":156:20:156:26|Port-width mismatch for port lp2_out. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":157:20:157:26|Port-width mismatch for port lp3_out. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":160:19:160:24|Port-width mismatch for port lp1_in. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":161:19:161:24|Port-width mismatch for port lp2_in. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":162:19:162:24|Port-width mismatch for port lp3_in. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v":48:7:48:13|Synthesizing module DCS_ROM in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":48:7:48:17|Synthesizing module DCS_Encoder in library work.
+@N: CG179 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":107:53:107:63|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":115:41:115:46|Removing redundant assignment.
+@W:"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":113:53:113:64|Index into variable q_oneh_data could be out of range - a simulation mismatch is possible
+@W:"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":116:53:116:64|Index into variable q_oneh_data could be out of range - a simulation mismatch is possible
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Optimizing register bit q_oneh_data[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Optimizing register bit q_oneh_data[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Optimizing register bit q_oneh_data[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Optimizing register bit q_oneh_data[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Pruning register bits 5 to 4 of q_oneh_data[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Pruning register bits 1 to 0 of q_oneh_data[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v":51:7:51:9|Synthesizing module top in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1730:7:1730:13|Synthesizing module EHXPLLJ in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\IPExpress\pll_pix2byte_RGB888_1lane.v":8:7:8:31|Synthesizing module pll_pix2byte_RGB888_1lane in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v":52:7:52:18|Synthesizing module colorbar_gen in library work.
+
+	h_active=32'b00000000000000000000000011110000
+	h_total=32'b00000000000000000000001001101100
+	v_active=32'b00000000000000000000000011110000
+	v_total=32'b00000000000000000000001100111110
+	H_FRONT_PORCH=32'b00000000000000000000000000101000
+	H_SYNCH=32'b00000000000000000000000000101100
+	H_BACK_PORCH=32'b00000000000000000000000010010100
+	V_FRONT_PORCH=32'b00000000000000000000000000000101
+	V_SYNCH=32'b00000000000000000000000000000101
+	mode=32'b00000000000000000000000000000001
+   Generated name = colorbar_gen_240_620_240_830_40_44_148_5_5_1s
+@W: CS263 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v":190:28:190:29|Port-width mismatch for port VC. The port definition is 2 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v":200:28:200:31|Port-width mismatch for port EoTp. The port definition is 1 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v":78:4:78:9|Optimizing register bit pixcnt[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v":78:4:78:9|Optimizing register bit pixcnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v":78:4:78:9|Optimizing register bit linecnt[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v":78:4:78:9|Optimizing register bit linecnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v":78:4:78:9|Pruning register bits 11 to 10 of linecnt[11:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v":78:4:78:9|Pruning register bits 11 to 10 of pixcnt[11:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL157 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v":106:16:106:18|*Output LED has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@N: CL159 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v":101:28:101:32|Input VSYNC is unused.
+@N: CL159 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v":102:28:102:32|Input HSYNC is unused.
+@N: CL159 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v":103:28:103:29|Input DE is unused.
+@N: CL159 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v":104:28:104:34|Input PIXDATA is unused.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Optimizing register bit bitcntr[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Pruning register bit 5 of bitcntr[5:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Pruning register bits 29 to 28 of q_oneh_data[31:6]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Pruning register bits 25 to 24 of q_oneh_data[31:6]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Pruning register bits 21 to 20 of q_oneh_data[31:6]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Pruning register bits 17 to 16 of q_oneh_data[31:6]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Pruning register bits 13 to 12 of q_oneh_data[31:6]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Pruning register bit 9 of q_oneh_data[31:6]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v":67:3:67:8|Optimizing register bit wait_cnt[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v":67:3:67:8|Pruning register bit 15 of wait_cnt[15:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v":67:3:67:8|Optimizing register bit wait_cnt[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v":67:3:67:8|Pruning register bit 14 of wait_cnt[14:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v":67:3:67:8|Optimizing register bit wait_cnt[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v":67:3:67:8|Pruning register bit 13 of wait_cnt[13:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v":67:3:67:8|Optimizing register bit wait_cnt[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v":67:3:67:8|Pruning register bit 12 of wait_cnt[12:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL156 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":127:162:127:196|*Input un1_byte_D0[31:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":150:20:150:26|*Input lp1_dir to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":151:20:151:26|*Input lp2_dir to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":152:20:152:26|*Input lp3_dir to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":155:20:155:26|*Input un1_lp1_out[1:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":156:20:156:26|*Input un1_lp2_out[1:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":157:20:157:26|*Input un1_lp3_out[1:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@N: CL159 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\IO_Controller_TX.v":50:11:50:17|Input reset_n is unused.
+@N: CL135 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":107:16:107:21|Found sequential shift data_dly[54].hold_data with address depth of 54 words and data bit width of 32.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":118:4:118:9|Optimizing register bit hs_extended[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":118:4:118:9|Optimizing register bit hs_extended[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":118:4:118:9|Optimizing register bit hs_extended[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":118:4:118:9|Optimizing register bit hs_extended[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":118:4:118:9|Optimizing register bit hs_extended[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":118:4:118:9|Optimizing register bit hs_extended[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":118:4:118:9|Optimizing register bit hs_extended[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":118:4:118:9|Optimizing register bit hs_extended[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":118:4:118:9|Optimizing register bit hs_extended[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":118:4:118:9|Optimizing register bit hs_extended[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":118:4:118:9|Pruning register bits 15 to 6 of hs_extended[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@A: CL153 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\crc16_1lane_bb.v":56:16:56:20|*Unassigned bits of ready are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\crc16_1lane_bb.v":57:23:57:25|*Unassigned bits of crc[15:0] are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\packetheader_bb.v":65:22:65:31|*Unassigned bits of bytepkt_en are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\packetheader_bb.v":66:22:66:28|*Unassigned bits of bytepkt[31:0] are referenced and tied to 0 -- simulation mismatch possible.
+@W: CL190 :"C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v":49:0:49:5|Optimizing register bit timer[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v":49:0:49:5|Pruning register bit 15 of timer[15:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL201 :"C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v":76:0:76:5|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 8 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+   100
+   101
+   110
+   111
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 75MB peak: 76MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Mon Aug  6 16:39:40 2018
+
+###########################################################]
+Synopsys Netlist Linker, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+File C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\impl\Parallel2MIPI\synwork\layer0.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Mon Aug  6 16:39:40 2018
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Mon Aug  6 16:39:40 2018
+
+###########################################################]

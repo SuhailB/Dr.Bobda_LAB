@@ -1,0 +1,32 @@
+#
+# Logical Preferences generated for Lattice by Synplify maplat, Build 1796R.
+#
+
+# Period Constraints 
+#FREQUENCY NET "u_DPHY_TX_INST/u_oDDRx4/sclk" 1.0 MHz;
+#FREQUENCY PORT "PIXCLK" 1.0 MHz;
+#FREQUENCY NET "u_pll_pix2byte_RGB888_1lane/byte_clk" 1.0 MHz;
+
+
+# Output Constraints 
+#CLOCK_TO_OUT "LCD_reset" 1000.0 NS CLKPORT  = "PIXCLK";
+#CLOCK_TO_OUT "LCD_enable_1v8" 1000.0 NS CLKPORT  = "PIXCLK";
+#CLOCK_TO_OUT "LCD_enable_3v0" 1000.0 NS CLKPORT  = "PIXCLK";
+
+# Input Constraints 
+
+# Point-to-point Delay Constraints 
+
+
+
+# Block Path Constraints 
+#BLOCK PATH FROM CLKNET "u_pll_pix2byte_RGB888_1lane/byte_clk" TO CLKNET "PIXCLK_c";
+#BLOCK PATH FROM CLKNET "u_pll_pix2byte_RGB888_1lane/byte_clk" TO CLKNET "u_DPHY_TX_INST/u_oDDRx4/sclk";
+#BLOCK PATH FROM CLKNET "PIXCLK_c" TO CLKNET "u_pll_pix2byte_RGB888_1lane/byte_clk";
+#BLOCK PATH FROM CLKNET "PIXCLK_c" TO CLKNET "u_DPHY_TX_INST/u_oDDRx4/sclk";
+#BLOCK PATH FROM CLKNET "u_DPHY_TX_INST/u_oDDRx4/sclk" TO CLKNET "u_pll_pix2byte_RGB888_1lane/byte_clk";
+#BLOCK PATH FROM CLKNET "u_DPHY_TX_INST/u_oDDRx4/sclk" TO CLKNET "PIXCLK_c";
+
+BLOCK ASYNCPATHS;
+
+# End of generated Logical Preferences.

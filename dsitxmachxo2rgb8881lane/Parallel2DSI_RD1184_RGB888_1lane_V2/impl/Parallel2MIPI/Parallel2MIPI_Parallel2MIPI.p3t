@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "Parallel2MIPI_Parallel2MIPI.log"
+-o "Parallel2MIPI_Parallel2MIPI.csv"
+-pr "Parallel2MIPI_Parallel2MIPI.prf"

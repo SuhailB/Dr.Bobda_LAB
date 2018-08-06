@@ -1,0 +1,26 @@
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 74 clock pin(s) of sequential element(s)
+2 gated/generated clock tree(s) driving 134 clock pin(s) of sequential element(s)
+0 instances converted, 134 sequential instances remain driven by gated/generated clocks
+
+==================================== Non-Gated/Non-Generated Clocks =====================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                  
+---------------------------------------------------------------------------------------------------------
+@K:CKID0003       PIXCLK              port                   74         LCD_Power_Controller_lcd_1v8_enio
+=========================================================================================================
+============================================================================================================================== Gated/Generated Clocks ===============================================================================================================================
+Clock Tree ID     Driving Element                           Drive Element Type     Fanout     Sample Instance                                          Explanation                                                                                                                   
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       u_pll_pix2byte_RGB888_1lane.PLLInst_0     EHXPLLJ                130        u_LP_HS_DELAY_CNTRL.data_dly\[54\]\.hold_data_CF5[5]     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0002       u_DPHY_TX_INST.u_oDDRx4.Inst3_CLKDIVC     CLKDIVC                4          u_DPHY_TX_INST.u_oDDRx4.FF_0                             No gated clock conversion method for cell cell:LUCENT.FD1P3DX                                                                 
+=====================================================================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+

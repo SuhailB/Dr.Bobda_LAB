@@ -1,0 +1,16 @@
+"./../../rtl/LP_HS_dly_ctrl.v"	1
+"./../../rtl/top.v"	1
+"./../../rtl/IO_Controller_TX.v"	1
+"./../../rtl/compiler_directives.v"	2
+"./../../rtl/DCS_Encoder.v"	1
+"./../../rtl/oDDRx4.v"	1
+"./../../rtl/DCS_ROM.v"	1
+"./../../rtl/IPExpress/pll_pix2byte_RGB888_1lane.v"	1
+"./../../rtl/DPHY_TX_INST.v"	1
+"./../../rtl/colorbar_gen.v"	1
+"./../../tb/Parallel2DSI_tb_1lane.v"	2
+"./../../tb/parallel2byte_24s_1s_3E.vo"	1
+"./../../tb/packetheader_1s.vo"	1
+"./../../tb/crc16_1lane.vo"	1
+"./src/pwr_sq_ctrl.v"	2
+"./../../rtl/BYTE_PACKETIZER.v"	2

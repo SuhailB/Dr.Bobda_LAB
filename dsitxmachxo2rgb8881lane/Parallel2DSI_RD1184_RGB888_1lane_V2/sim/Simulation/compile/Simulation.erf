@@ -1,0 +1,155 @@
+MESSAGE "Pass 1. Scanning modules hierarchy."
+MESSAGE_SP VCP2113 "Module \$root found in current working library."
+BEGINPROGRESS Compiling...
+UPDATEPROGRESS 2
+UPDATEPROGRESS 4
+UPDATEPROGRESS 6
+UPDATEPROGRESS 8
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol start_data has not been declared in module DCS_Encoder." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/DCS_Encoder.v" 68  34
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol start_escape has not been declared in module DCS_Encoder." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/DCS_Encoder.v" 69  34
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol stop_data has not been declared in module DCS_Encoder." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/DCS_Encoder.v" 70  34
+UPDATEPROGRESS 10
+UPDATEPROGRESS 13
+UPDATEPROGRESS 15
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol clk0 has not been declared in module oDDRx4." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/oDDRx4.v" 99  18
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol clk2 has not been declared in module oDDRx4." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/oDDRx4.v" 100  18
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol clk4 has not been declared in module oDDRx4." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/oDDRx4.v" 101  18
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol clk6 has not been declared in module oDDRx4." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/oDDRx4.v" 102  18
+UPDATEPROGRESS 17
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol bit_clk has not been declared in module DPHY_TX_INST." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/DPHY_TX_INST.v" 122  31
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol bit_clk_90 has not been declared in module DPHY_TX_INST." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/DPHY_TX_INST.v" 123  31
+UPDATEPROGRESS 19
+UPDATEPROGRESS 21
+UPDATEPROGRESS 24
+UPDATEPROGRESS 26
+WARNING VCP5010 "Redefinition of the macro HS_0." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/compiler_directives.v" 48  13
+WARNING VCP5010 "Redefinition of the macro LP_CLK." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/compiler_directives.v" 49  15
+WARNING VCP5010 "Redefinition of the macro LP_0." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/compiler_directives.v" 50  13
+UPDATEPROGRESS 28
+UPDATEPROGRESS 30
+WARNING VCP5010 "Redefinition of the macro HS_0." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/compiler_directives.v" 48  13
+WARNING VCP5010 "Redefinition of the macro LP_CLK." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/compiler_directives.v" 49  15
+WARNING VCP5010 "Redefinition of the macro LP_0." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/compiler_directives.v" 50  13
+UPDATEPROGRESS 32
+WARNING VCP2603 "Type of port 'lcd_rst' is defined in module header and should not be overwritten in module body (mixing ANSI and NONANSI header style)." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/src/pwr_sq_ctrl.v" 39  20
+WARNING VCP2603 "Type of port 'lcd_1v8_en' is defined in module header and should not be overwritten in module body (mixing ANSI and NONANSI header style)." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/src/pwr_sq_ctrl.v" 40  23
+WARNING VCP2603 "Type of port 'lcd_3v0_en' is defined in module header and should not be overwritten in module body (mixing ANSI and NONANSI header style)." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/src/pwr_sq_ctrl.v" 41  23
+UPDATEPROGRESS 35
+MESSAGE "Pass 2. Processing instantiations."
+UPDATEPROGRESS 36
+UPDATEPROGRESS 37
+UPDATEPROGRESS 38
+UPDATEPROGRESS 39
+UPDATEPROGRESS 40
+UPDATEPROGRESS 41
+UPDATEPROGRESS 42
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol sclk has not been declared in module DPHY_TX_INST." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/DPHY_TX_INST.v" 127  34
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol hs_clk has not been declared in module DPHY_TX_INST." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/DPHY_TX_INST.v" 127  88
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol byte_D3 has not been declared in module DPHY_TX_INST." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/DPHY_TX_INST.v" 127  170
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol byte_D2 has not been declared in module DPHY_TX_INST." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/DPHY_TX_INST.v" 127  179
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol byte_D1 has not been declared in module DPHY_TX_INST." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/DPHY_TX_INST.v" 127  188
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol hs_D3 has not been declared in module DPHY_TX_INST." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/DPHY_TX_INST.v" 127  213
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol hs_D2 has not been declared in module DPHY_TX_INST." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/DPHY_TX_INST.v" 127  219
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol hs_D1 has not been declared in module DPHY_TX_INST." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/DPHY_TX_INST.v" 127  225
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol hs_D0 has not been declared in module DPHY_TX_INST." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/DPHY_TX_INST.v" 127  231
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol D1 has not been declared in module DPHY_TX_INST." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/DPHY_TX_INST.v" 138  23
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol D2 has not been declared in module DPHY_TX_INST." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/DPHY_TX_INST.v" 139  23
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol D3 has not been declared in module DPHY_TX_INST." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/DPHY_TX_INST.v" 140  23
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol lp1_dir has not been declared in module DPHY_TX_INST." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/DPHY_TX_INST.v" 150  28
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol lp2_dir has not been declared in module DPHY_TX_INST." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/DPHY_TX_INST.v" 151  28
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol lp3_dir has not been declared in module DPHY_TX_INST." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/DPHY_TX_INST.v" 152  28
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol lp1_out has not been declared in module DPHY_TX_INST." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/DPHY_TX_INST.v" 155  28
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol lp2_out has not been declared in module DPHY_TX_INST." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/DPHY_TX_INST.v" 156  28
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol lp3_out has not been declared in module DPHY_TX_INST." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/DPHY_TX_INST.v" 157  28
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol lp1_in has not been declared in module DPHY_TX_INST." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/DPHY_TX_INST.v" 160  26
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol lp2_in has not been declared in module DPHY_TX_INST." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/DPHY_TX_INST.v" 161  26
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol lp3_in has not been declared in module DPHY_TX_INST." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/DPHY_TX_INST.v" 162  26
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol byte_en has not been declared in module BYTE_PACKETIZER." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/BYTE_PACKETIZER.v" 95  30
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol VSYNC_start has not been declared in module BYTE_PACKETIZER." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/BYTE_PACKETIZER.v" 101  35
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol VSYNC_end has not been declared in module BYTE_PACKETIZER." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/BYTE_PACKETIZER.v" 102  33
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol HSYNC_start has not been declared in module BYTE_PACKETIZER." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/BYTE_PACKETIZER.v" 103  35
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol HSYNC_end has not been declared in module BYTE_PACKETIZER." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/BYTE_PACKETIZER.v" 104  33
+WARNING VCP2963 "Module parallel2byte has no parameters." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/BYTE_PACKETIZER.v" 106  7
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol chksum_rdy has not been declared in module BYTE_PACKETIZER." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/BYTE_PACKETIZER.v" 134  46
+WARNING VCP2963 "Module packetheader has no parameters." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/BYTE_PACKETIZER.v" 140  7
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol w_vsync has not been declared in module top." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/top.v" 185  36
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol w_hsync has not been declared in module top." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/top.v" 186  36
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol w_de has not been declared in module top." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/top.v" 187  33
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol hs_en has not been declared in module top." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/top.v" 195  34
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol hs_clk_en has not been declared in module top." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/top.v" 212  33
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol hsxx_clk_en has not been declared in module top." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/top.v" 213  29
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol hs_data_en has not been declared in module top." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/top.v" 214  28
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol done has not been declared in module top." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/top.v" 288  45
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol dcs_data_en has not been declared in module top." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/top.v" 302  34
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol dcs_escape_en has not been declared in module top." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/top.v" 303  34
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol dcs_stop_en has not been declared in module top." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/top.v" 304  34
+UPDATEPROGRESS 43
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol dcs_ready has not been declared in module top." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/top.v" 306  34
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol Lp has not been declared in module top." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/top.v" 318  35
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol Ln has not been declared in module top." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/top.v" 319  35
+UPDATEPROGRESS 45
+WARNING VCP2958 "Parameter word_width not found." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/BYTE_PACKETIZER.v" 86  33
+WARNING VCP2958 "Parameter lane_width not found." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/BYTE_PACKETIZER.v" 87  33
+WARNING VCP2958 "Parameter dt not found." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/BYTE_PACKETIZER.v" 88  17
+WARNING VCP2958 "Parameter lane_width not found." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../rtl/BYTE_PACKETIZER.v" 122  33
+WARNING VCP2597 "Some unconnected ports remain at instance: u_top. Module top has unconnected  port(s) : LED, LCD_sync, LCD_reset, LCD_enable_1v8, LCD_enable_3v0, LCD_backlight_PWM." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../tb/Parallel2DSI_tb_1lane.v" 25  1
+WARNING VCP2597 "Some unconnected ports remain at instance: u_colorbar_gen. Module colorbar_gen has unconnected  port(s) : fv." "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/../../tb/Parallel2DSI_tb_1lane.v" 57  1
+MESSAGE "Pass 3. Processing behavioral statements."
+UPDATEPROGRESS 46
+UPDATEPROGRESS 47
+UPDATEPROGRESS 48
+UPDATEPROGRESS 49
+UPDATEPROGRESS 50
+UPDATEPROGRESS 51
+UPDATEPROGRESS 52
+UPDATEPROGRESS 53
+UPDATEPROGRESS 54
+UPDATEPROGRESS 55
+UPDATEPROGRESS 56
+UPDATEPROGRESS 57
+UPDATEPROGRESS 58
+UPDATEPROGRESS 59
+UPDATEPROGRESS 60
+UPDATEPROGRESS 61
+UPDATEPROGRESS 62
+UPDATEPROGRESS 63
+UPDATEPROGRESS 64
+UPDATEPROGRESS 65
+UPDATEPROGRESS 66
+UPDATEPROGRESS 67
+UPDATEPROGRESS 68
+UPDATEPROGRESS 69
+UPDATEPROGRESS 70
+UPDATEPROGRESS 71
+UPDATEPROGRESS 72
+UPDATEPROGRESS 80
+MESSAGE "Parameters in case labels, will not check for overlapping labels (C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/src/pwr_sq_ctrl.v, ln 89)."
+MESSAGE "Running Optimizer."
+MESSAGE "ELB/DAG code generating."
+MESSAGE_SP VCP2113 "Module \$root found in current working library."
+UPDATEPROGRESS 81
+UPDATEPROGRESS 82
+UPDATEPROGRESS 83
+UPDATEPROGRESS 84
+UPDATEPROGRESS 85
+UPDATEPROGRESS 86
+UPDATEPROGRESS 87
+UPDATEPROGRESS 88
+UPDATEPROGRESS 89
+UPDATEPROGRESS 90
+UPDATEPROGRESS 91
+UPDATEPROGRESS 92
+UPDATEPROGRESS 93
+UPDATEPROGRESS 94
+UPDATEPROGRESS 95
+UPDATEPROGRESS 96
+UPDATEPROGRESS 97
+UPDATEPROGRESS 98
+UPDATEPROGRESS 99
+MESSAGE "Unit top modules: Parallel2DSI_tb."
+MESSAGE "$root top modules: Parallel2DSI_tb."
+UPDATEPROGRESS 100
+ENDPROGRESS Compiling...
+SUCCESS "Compile success 0 Errors 17 Warnings  Analysis time: 1[s]."
+WARNING ALOG: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "done"

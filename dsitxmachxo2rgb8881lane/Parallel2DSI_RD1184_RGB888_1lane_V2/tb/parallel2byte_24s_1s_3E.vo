@@ -1,0 +1,2102 @@
+
+// Verilog netlist produced by program ldbanno, Version Diamond (64-bit) 2.2.0.101
+
+// ldbanno -n Verilog -o Parallel2MIPI_Parallel2MIPI_mapvo.vo -w -neg Parallel2MIPI_Parallel2MIPI_map.ncd 
+// Netlist created on Mon Jul 22 15:31:02 2013
+// Netlist written on Mon Jul 22 15:31:04 2013
+// Design is for device LCMXO2-1200HC
+// Design is for package TQFP100
+// Design is for performance grade 6
+
+`timescale 1 ns / 1 ps
+
+module parallel2byte ( reset_n, PIXCLK, DE, PIXDATA, byte_en, byte_clk, 
+                       byte_data, VSYNC, HSYNC, VSYNC_start, VSYNC_end, 
+                       HSYNC_start, HSYNC_end, data_type );
+  input  reset_n, PIXCLK, DE;
+  input  [23:0] PIXDATA;
+  input  byte_clk, VSYNC, HSYNC;
+  output byte_en;
+  output [31:0] byte_data;
+  output VSYNC_start, VSYNC_end, HSYNC_start, HSYNC_end;
+  output [5:0] data_type;
+  wire   \read_cntr[1] , \read_cntr[0] , byte_clk_c, GND, \q_read_cntr[0] , 
+         \q_read_cntr[1] , \read_en[0] , N_9_i, N_7_i, empty2, empty1, empty0, 
+         \read_en_2[0] , un2_read_0_0_a3, \q_byte_en[0] , \data2[0] , 
+         \data0[0] , \data1[0] , N_79, \byte_data_2[0] , \data2[1] , 
+         \data0[1] , \data1[1] , N_80, \byte_data_2[1] , \data2[2] , 
+         \data0[2] , \data1[2] , N_81, \byte_data_2[2] , \data2[3] , 
+         \data0[3] , \data1[3] , N_82, \byte_data_2[3] , \data2[4] , 
+         \data0[4] , \data1[4] , N_83, \byte_data_2[4] , \data2[5] , 
+         \data0[5] , \data1[5] , N_84, \byte_data_2[5] , \data2[6] , 
+         \data0[6] , \data1[6] , N_85, \byte_data_2[6] , \data2[7] , 
+         \data0[7] , \data1[7] , N_86, \byte_data_2[7] , VSYNC_c, q_VSYNC, 
+         HSYNC_c, q_HSYNC, \data_type_c[0] , \data_type_c[3] , N_45_i, 
+         HSYNC_end_c, \data_type_c[5] , \q_byte_en[1] , VSYNC_start_c, 
+         un2_read_2_0_a3, un2_read_1_0_a3, HSYNC_start_c, N_46_i, byte_en_c, 
+         reset_n_c, \byte_data_c[7] , \byte_data_c[6] , \byte_data_c[5] , 
+         \byte_data_c[4] , \byte_data_c[3] , \byte_data_c[2] , 
+         \byte_data_c[1] , \byte_data_c[0] , \PIXDATA_c[23] , \PIXDATA_c[22] , 
+         \PIXDATA_c[21] , \PIXDATA_c[20] , \PIXDATA_c[19] , \PIXDATA_c[18] , 
+         \PIXDATA_c[17] , \PIXDATA_c[16] , \PIXDATA_c[15] , \PIXDATA_c[14] , 
+         \PIXDATA_c[13] , \PIXDATA_c[12] , \PIXDATA_c[11] , \PIXDATA_c[10] , 
+         \PIXDATA_c[9] , \PIXDATA_c[8] , \PIXDATA_c[7] , \PIXDATA_c[6] , 
+         \PIXDATA_c[5] , \PIXDATA_c[4] , \PIXDATA_c[3] , \PIXDATA_c[2] , 
+         \PIXDATA_c[1] , \PIXDATA_c[0] , DE_c, PIXCLK_c, \u_fifo_7_0/FF , 
+         \u_fifo_15_8/FF_0 , \u_fifo_23_16/FF_1 , VCCI;
+
+  SLICE_1 SLICE_1( .M1(\read_cntr[1] ), .M0(\read_cntr[0] ), .CLK(byte_clk_c), 
+    .F0(GND), .Q0(\q_read_cntr[0] ), .Q1(\q_read_cntr[1] ));
+  SLICE_2 SLICE_2( .C1(\read_en[0] ), .B1(\read_cntr[1] ), .A1(\read_cntr[0] ), 
+    .C0(\read_cntr[0] ), .B0(\read_cntr[1] ), .A0(\read_en[0] ), .DI1(N_9_i), 
+    .DI0(N_7_i), .CLK(byte_clk_c), .F0(N_7_i), .Q0(\read_cntr[0] ), .F1(N_9_i), 
+    .Q1(\read_cntr[1] ));
+  SLICE_3 SLICE_3( .B1(\read_cntr[1] ), .A1(\read_cntr[0] ), .C0(empty2), 
+    .B0(empty1), .A0(empty0), .DI0(\read_en_2[0] ), .M1(\read_en[0] ), 
+    .CLK(byte_clk_c), .F0(\read_en_2[0] ), .Q0(\read_en[0] ), 
+    .F1(un2_read_0_0_a3), .Q1(\q_byte_en[0] ));
+  SLICE_4 SLICE_4( .C1(\q_read_cntr[1] ), .B1(\data2[0] ), .A1(\data0[0] ), 
+    .D0(\q_read_cntr[1] ), .C0(\q_read_cntr[0] ), .B0(\data1[0] ), .A0(N_79), 
+    .F0(\byte_data_2[0] ), .F1(N_79));
+  SLICE_5 SLICE_5( .C1(\q_read_cntr[1] ), .B1(\data2[1] ), .A1(\data0[1] ), 
+    .D0(\q_read_cntr[1] ), .C0(\q_read_cntr[0] ), .B0(\data1[1] ), .A0(N_80), 
+    .F0(\byte_data_2[1] ), .F1(N_80));
+  SLICE_6 SLICE_6( .C1(\q_read_cntr[1] ), .B1(\data2[2] ), .A1(\data0[2] ), 
+    .D0(\q_read_cntr[1] ), .C0(\q_read_cntr[0] ), .B0(\data1[2] ), .A0(N_81), 
+    .F0(\byte_data_2[2] ), .F1(N_81));
+  SLICE_7 SLICE_7( .C1(\q_read_cntr[1] ), .B1(\data2[3] ), .A1(\data0[3] ), 
+    .D0(\q_read_cntr[1] ), .C0(\q_read_cntr[0] ), .B0(\data1[3] ), .A0(N_82), 
+    .F0(\byte_data_2[3] ), .F1(N_82));
+  SLICE_8 SLICE_8( .C1(\q_read_cntr[1] ), .B1(\data2[4] ), .A1(\data0[4] ), 
+    .D0(\q_read_cntr[1] ), .C0(\q_read_cntr[0] ), .B0(\data1[4] ), .A0(N_83), 
+    .F0(\byte_data_2[4] ), .F1(N_83));
+  SLICE_9 SLICE_9( .C1(\q_read_cntr[1] ), .B1(\data2[5] ), .A1(\data0[5] ), 
+    .D0(\q_read_cntr[1] ), .C0(\q_read_cntr[0] ), .B0(\data1[5] ), .A0(N_84), 
+    .F0(\byte_data_2[5] ), .F1(N_84));
+  SLICE_10 SLICE_10( .C1(\q_read_cntr[1] ), .B1(\data2[6] ), .A1(\data0[6] ), 
+    .D0(\q_read_cntr[1] ), .C0(\q_read_cntr[0] ), .B0(\data1[6] ), .A0(N_85), 
+    .F0(\byte_data_2[6] ), .F1(N_85));
+  SLICE_11 SLICE_11( .C1(\q_read_cntr[1] ), .B1(\data2[7] ), .A1(\data0[7] ), 
+    .D0(\q_read_cntr[1] ), .C0(\q_read_cntr[0] ), .B0(\data1[7] ), .A0(N_86), 
+    .F0(\byte_data_2[7] ), .F1(N_86));
+  SLICE_12 SLICE_12( .D1(VSYNC_c), .C1(q_VSYNC), .B1(HSYNC_c), .A1(q_HSYNC), 
+    .D0(q_HSYNC), .C0(HSYNC_c), .B0(q_VSYNC), .A0(VSYNC_c), 
+    .F0(\data_type_c[0] ), .F1(\data_type_c[3] ));
+  SLICE_13 SLICE_13( .B1(q_HSYNC), .A1(HSYNC_c), .D0(HSYNC_c), .C0(q_HSYNC), 
+    .B0(VSYNC_c), .A0(q_VSYNC), .F0(N_45_i), .F1(HSYNC_end_c));
+  SLICE_14 SLICE_14( .B1(q_VSYNC), .A1(VSYNC_c), .B0(q_VSYNC), .A0(VSYNC_c), 
+    .M0(\q_byte_en[0] ), .CLK(byte_clk_c), .F0(\data_type_c[5] ), 
+    .Q0(\q_byte_en[1] ), .F1(VSYNC_start_c));
+  SLICE_15 SLICE_15( .B1(\read_cntr[1] ), .A1(\read_cntr[0] ), 
+    .B0(\read_cntr[1] ), .A0(\read_cntr[0] ), .F0(un2_read_2_0_a3), 
+    .F1(un2_read_1_0_a3));
+  SLICE_16 SLICE_16( .B1(q_VSYNC), .A1(VSYNC_c), .B0(q_HSYNC), .A0(HSYNC_c), 
+    .F0(HSYNC_start_c), .F1(N_46_i));
+  byte_en byte_en_I( .IOLDO(byte_en_c), .byte_en(byte_en));
+  byte_en_MGIOL byte_en_MGIOL( .IOLDO(byte_en_c), .OPOS(\q_byte_en[1] ), 
+    .CLK(byte_clk_c));
+  reset_n reset_n_I( .PADDI(reset_n_c), .reset_n(reset_n));
+  data_type_5_ \data_type[5]_I ( .PADDO(\data_type_c[5] ), 
+    .datatype5(data_type[5]));
+  data_type_4_ \data_type[4]_I ( .PADDO(N_45_i), .datatype4(data_type[4]));
+  data_type_3_ \data_type[3]_I ( .PADDO(\data_type_c[3] ), 
+    .datatype3(data_type[3]));
+  data_type_2_ \data_type[2]_I ( .PADDO(\data_type_c[3] ), 
+    .datatype2(data_type[2]));
+  data_type_1_ \data_type[1]_I ( .PADDO(\data_type_c[3] ), 
+    .datatype1(data_type[1]));
+  data_type_0_ \data_type[0]_I ( .PADDO(\data_type_c[0] ), 
+    .datatype0(data_type[0]));
+  HSYNC_end HSYNC_end_I( .PADDO(HSYNC_end_c), .HSYNC_end(HSYNC_end));
+  HSYNC_start HSYNC_start_I( .PADDO(HSYNC_start_c), .HSYNC_start(HSYNC_start));
+  VSYNC_end VSYNC_end_I( .PADDO(N_46_i), .VSYNC_end(VSYNC_end));
+  VSYNC_start VSYNC_start_I( .PADDO(VSYNC_start_c), .VSYNC_start(VSYNC_start));
+  HSYNC HSYNC_I( .PADDI(HSYNC_c), .HSYNC(HSYNC));
+  HSYNC_MGIOL HSYNC_MGIOL( .DI(HSYNC_c), .CLK(byte_clk_c), .IN(q_HSYNC));
+  VSYNC VSYNC_I( .PADDI(VSYNC_c), .VSYNC(VSYNC));
+  VSYNC_MGIOL VSYNC_MGIOL( .DI(VSYNC_c), .CLK(byte_clk_c), .IN(q_VSYNC));
+  byte_data_31_ \byte_data[31]_I ( .PADDO(GND), .bytedata31(byte_data[31]));
+  byte_data_30_ \byte_data[30]_I ( .PADDO(GND), .bytedata30(byte_data[30]));
+  byte_data_29_ \byte_data[29]_I ( .PADDO(GND), .bytedata29(byte_data[29]));
+  byte_data_28_ \byte_data[28]_I ( .PADDO(GND), .bytedata28(byte_data[28]));
+  byte_data_27_ \byte_data[27]_I ( .PADDO(GND), .bytedata27(byte_data[27]));
+  byte_data_26_ \byte_data[26]_I ( .PADDO(GND), .bytedata26(byte_data[26]));
+  byte_data_25_ \byte_data[25]_I ( .PADDO(GND), .bytedata25(byte_data[25]));
+  byte_data_24_ \byte_data[24]_I ( .PADDO(GND), .bytedata24(byte_data[24]));
+  byte_data_23_ \byte_data[23]_I ( .PADDO(GND), .bytedata23(byte_data[23]));
+  byte_data_22_ \byte_data[22]_I ( .PADDO(GND), .bytedata22(byte_data[22]));
+  byte_data_21_ \byte_data[21]_I ( .PADDO(GND), .bytedata21(byte_data[21]));
+  byte_data_20_ \byte_data[20]_I ( .PADDO(GND), .bytedata20(byte_data[20]));
+  byte_data_19_ \byte_data[19]_I ( .PADDO(GND), .bytedata19(byte_data[19]));
+  byte_data_18_ \byte_data[18]_I ( .PADDO(GND), .bytedata18(byte_data[18]));
+  byte_data_17_ \byte_data[17]_I ( .PADDO(GND), .bytedata17(byte_data[17]));
+  byte_data_16_ \byte_data[16]_I ( .PADDO(GND), .bytedata16(byte_data[16]));
+  byte_data_15_ \byte_data[15]_I ( .PADDO(GND), .bytedata15(byte_data[15]));
+  byte_data_14_ \byte_data[14]_I ( .PADDO(GND), .bytedata14(byte_data[14]));
+  byte_data_13_ \byte_data[13]_I ( .PADDO(GND), .bytedata13(byte_data[13]));
+  byte_data_12_ \byte_data[12]_I ( .PADDO(GND), .bytedata12(byte_data[12]));
+  byte_data_11_ \byte_data[11]_I ( .PADDO(GND), .bytedata11(byte_data[11]));
+  byte_data_10_ \byte_data[10]_I ( .PADDO(GND), .bytedata10(byte_data[10]));
+  byte_data_9_ \byte_data[9]_I ( .PADDO(GND), .bytedata9(byte_data[9]));
+  byte_data_8_ \byte_data[8]_I ( .PADDO(GND), .bytedata8(byte_data[8]));
+  byte_data_7_ \byte_data[7]_I ( .IOLDO(\byte_data_c[7] ), 
+    .bytedata7(byte_data[7]));
+  byte_data_7__MGIOL \byte_data[7]_MGIOL ( .IOLDO(\byte_data_c[7] ), 
+    .OPOS(\byte_data_2[7] ), .CLK(byte_clk_c));
+  byte_data_6_ \byte_data[6]_I ( .IOLDO(\byte_data_c[6] ), 
+    .bytedata6(byte_data[6]));
+  byte_data_6__MGIOL \byte_data[6]_MGIOL ( .IOLDO(\byte_data_c[6] ), 
+    .OPOS(\byte_data_2[6] ), .CLK(byte_clk_c));
+  byte_data_5_ \byte_data[5]_I ( .IOLDO(\byte_data_c[5] ), 
+    .bytedata5(byte_data[5]));
+  byte_data_5__MGIOL \byte_data[5]_MGIOL ( .IOLDO(\byte_data_c[5] ), 
+    .OPOS(\byte_data_2[5] ), .CLK(byte_clk_c));
+  byte_data_4_ \byte_data[4]_I ( .IOLDO(\byte_data_c[4] ), 
+    .bytedata4(byte_data[4]));
+  byte_data_4__MGIOL \byte_data[4]_MGIOL ( .IOLDO(\byte_data_c[4] ), 
+    .OPOS(\byte_data_2[4] ), .CLK(byte_clk_c));
+  byte_data_3_ \byte_data[3]_I ( .IOLDO(\byte_data_c[3] ), 
+    .bytedata3(byte_data[3]));
+  byte_data_3__MGIOL \byte_data[3]_MGIOL ( .IOLDO(\byte_data_c[3] ), 
+    .OPOS(\byte_data_2[3] ), .CLK(byte_clk_c));
+  byte_data_2_ \byte_data[2]_I ( .IOLDO(\byte_data_c[2] ), 
+    .bytedata2(byte_data[2]));
+  byte_data_2__MGIOL \byte_data[2]_MGIOL ( .IOLDO(\byte_data_c[2] ), 
+    .OPOS(\byte_data_2[2] ), .CLK(byte_clk_c));
+  byte_data_1_ \byte_data[1]_I ( .IOLDO(\byte_data_c[1] ), 
+    .bytedata1(byte_data[1]));
+  byte_data_1__MGIOL \byte_data[1]_MGIOL ( .IOLDO(\byte_data_c[1] ), 
+    .OPOS(\byte_data_2[1] ), .CLK(byte_clk_c));
+  byte_data_0_ \byte_data[0]_I ( .IOLDO(\byte_data_c[0] ), 
+    .bytedata0(byte_data[0]));
+  byte_data_0__MGIOL \byte_data[0]_MGIOL ( .IOLDO(\byte_data_c[0] ), 
+    .OPOS(\byte_data_2[0] ), .CLK(byte_clk_c));
+  byte_clk byte_clk_I( .PADDI(byte_clk_c), .byte_clk(byte_clk));
+  PIXDATA_23_ \PIXDATA[23]_I ( .PADDI(\PIXDATA_c[23] ), 
+    .PIXDATA23(PIXDATA[23]));
+  PIXDATA_22_ \PIXDATA[22]_I ( .PADDI(\PIXDATA_c[22] ), 
+    .PIXDATA22(PIXDATA[22]));
+  PIXDATA_21_ \PIXDATA[21]_I ( .PADDI(\PIXDATA_c[21] ), 
+    .PIXDATA21(PIXDATA[21]));
+  PIXDATA_20_ \PIXDATA[20]_I ( .PADDI(\PIXDATA_c[20] ), 
+    .PIXDATA20(PIXDATA[20]));
+  PIXDATA_19_ \PIXDATA[19]_I ( .PADDI(\PIXDATA_c[19] ), 
+    .PIXDATA19(PIXDATA[19]));
+  PIXDATA_18_ \PIXDATA[18]_I ( .PADDI(\PIXDATA_c[18] ), 
+    .PIXDATA18(PIXDATA[18]));
+  PIXDATA_17_ \PIXDATA[17]_I ( .PADDI(\PIXDATA_c[17] ), 
+    .PIXDATA17(PIXDATA[17]));
+  PIXDATA_16_ \PIXDATA[16]_I ( .PADDI(\PIXDATA_c[16] ), 
+    .PIXDATA16(PIXDATA[16]));
+  PIXDATA_15_ \PIXDATA[15]_I ( .PADDI(\PIXDATA_c[15] ), 
+    .PIXDATA15(PIXDATA[15]));
+  PIXDATA_14_ \PIXDATA[14]_I ( .PADDI(\PIXDATA_c[14] ), 
+    .PIXDATA14(PIXDATA[14]));
+  PIXDATA_13_ \PIXDATA[13]_I ( .PADDI(\PIXDATA_c[13] ), 
+    .PIXDATA13(PIXDATA[13]));
+  PIXDATA_12_ \PIXDATA[12]_I ( .PADDI(\PIXDATA_c[12] ), 
+    .PIXDATA12(PIXDATA[12]));
+  PIXDATA_11_ \PIXDATA[11]_I ( .PADDI(\PIXDATA_c[11] ), 
+    .PIXDATA11(PIXDATA[11]));
+  PIXDATA_10_ \PIXDATA[10]_I ( .PADDI(\PIXDATA_c[10] ), 
+    .PIXDATA10(PIXDATA[10]));
+  PIXDATA_9_ \PIXDATA[9]_I ( .PADDI(\PIXDATA_c[9] ), .PIXDATA9(PIXDATA[9]));
+  PIXDATA_8_ \PIXDATA[8]_I ( .PADDI(\PIXDATA_c[8] ), .PIXDATA8(PIXDATA[8]));
+  PIXDATA_7_ \PIXDATA[7]_I ( .PADDI(\PIXDATA_c[7] ), .PIXDATA7(PIXDATA[7]));
+  PIXDATA_6_ \PIXDATA[6]_I ( .PADDI(\PIXDATA_c[6] ), .PIXDATA6(PIXDATA[6]));
+  PIXDATA_5_ \PIXDATA[5]_I ( .PADDI(\PIXDATA_c[5] ), .PIXDATA5(PIXDATA[5]));
+  PIXDATA_4_ \PIXDATA[4]_I ( .PADDI(\PIXDATA_c[4] ), .PIXDATA4(PIXDATA[4]));
+  PIXDATA_3_ \PIXDATA[3]_I ( .PADDI(\PIXDATA_c[3] ), .PIXDATA3(PIXDATA[3]));
+  PIXDATA_2_ \PIXDATA[2]_I ( .PADDI(\PIXDATA_c[2] ), .PIXDATA2(PIXDATA[2]));
+  PIXDATA_1_ \PIXDATA[1]_I ( .PADDI(\PIXDATA_c[1] ), .PIXDATA1(PIXDATA[1]));
+  PIXDATA_0_ \PIXDATA[0]_I ( .PADDI(\PIXDATA_c[0] ), .PIXDATA0(PIXDATA[0]));
+  DE DE_I( .PADDI(DE_c), .DE(DE));
+  PIXCLK PIXCLK_I( .PADDI(PIXCLK_c), .PIXCLK(PIXCLK));
+  u_fifo_7_0_pixel2byte_fifo_0_0 \u_fifo_7_0/pixel2byte_fifo_0_0 ( 
+    .DIA7(\PIXDATA_c[7] ), .DIA6(\PIXDATA_c[6] ), .DIA5(\PIXDATA_c[5] ), 
+    .DIA4(\PIXDATA_c[4] ), .DIA3(\PIXDATA_c[3] ), .DIA2(\PIXDATA_c[2] ), 
+    .DIA1(\PIXDATA_c[1] ), .DIA0(\PIXDATA_c[0] ), .DOA7(\data2[7] ), 
+    .DOA6(\data2[6] ), .DOA5(\data2[5] ), .DOA4(\data2[4] ), .DOA3(\data2[3] ), 
+    .DOA2(\data2[2] ), .DOA1(\data2[1] ), .DOA0(\data2[0] ), .CEA(DE_c), 
+    .RSTA(reset_n_c), .CLKA(PIXCLK_c), .CSA2(\u_fifo_7_0/FF ), 
+    .FF(\u_fifo_7_0/FF ), .EF(empty2), .CSB2(empty2), .CLKB(byte_clk_c), 
+    .RSTB(reset_n_c), .OCEB(un2_read_2_0_a3), .CEB(un2_read_2_0_a3));
+  u_fifo_15_8_pixel2byte_fifo_0_0 \u_fifo_15_8/pixel2byte_fifo_0_0 ( 
+    .DIA7(\PIXDATA_c[15] ), .DIA6(\PIXDATA_c[14] ), .DIA5(\PIXDATA_c[13] ), 
+    .DIA4(\PIXDATA_c[12] ), .DIA3(\PIXDATA_c[11] ), .DIA2(\PIXDATA_c[10] ), 
+    .DIA1(\PIXDATA_c[9] ), .DIA0(\PIXDATA_c[8] ), .DOA7(\data1[7] ), 
+    .DOA6(\data1[6] ), .DOA5(\data1[5] ), .DOA4(\data1[4] ), .DOA3(\data1[3] ), 
+    .DOA2(\data1[2] ), .DOA1(\data1[1] ), .DOA0(\data1[0] ), .CEA(DE_c), 
+    .RSTA(reset_n_c), .CLKA(PIXCLK_c), .CSA2(\u_fifo_15_8/FF_0 ), 
+    .FF(\u_fifo_15_8/FF_0 ), .EF(empty1), .CSB2(empty1), .CLKB(byte_clk_c), 
+    .RSTB(reset_n_c), .OCEB(un2_read_1_0_a3), .CEB(un2_read_1_0_a3));
+  u_fifo_23_16_pixel2byte_fifo_0_0 \u_fifo_23_16/pixel2byte_fifo_0_0 ( 
+    .DIA7(\PIXDATA_c[23] ), .DIA6(\PIXDATA_c[22] ), .DIA5(\PIXDATA_c[21] ), 
+    .DIA4(\PIXDATA_c[20] ), .DIA3(\PIXDATA_c[19] ), .DIA2(\PIXDATA_c[18] ), 
+    .DIA1(\PIXDATA_c[17] ), .DIA0(\PIXDATA_c[16] ), .DOA7(\data0[7] ), 
+    .DOA6(\data0[6] ), .DOA5(\data0[5] ), .DOA4(\data0[4] ), .DOA3(\data0[3] ), 
+    .DOA2(\data0[2] ), .DOA1(\data0[1] ), .DOA0(\data0[0] ), .CEA(DE_c), 
+    .RSTA(reset_n_c), .CLKA(PIXCLK_c), .CSA2(\u_fifo_23_16/FF_1 ), 
+    .FF(\u_fifo_23_16/FF_1 ), .EF(empty0), .CSB2(empty0), .CLKB(byte_clk_c), 
+    .RSTB(reset_n_c), .OCEB(un2_read_0_0_a3), .CEB(un2_read_0_0_a3));
+  GSR_INST GSR_INST( .GSRNET(reset_n_c));
+  VHI VHI_INST( .Z(VCCI));
+  PUR PUR_INST( .PUR(VCCI));
+endmodule
+
+module SLICE_1 ( input M1, M0, CLK, output F0, Q0, Q1 );
+  wire   GNDI, VCCI, M1_dly, CLK_dly, M0_dly;
+
+  lut4 GND( .A(GNDI), .B(GNDI), .C(GNDI), .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre \q_read_cntr[1] ( .D0(M1_dly), .D1(VCCI), .SD(GNDI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  vmuxregsre \q_read_cntr[0] ( .D0(M0_dly), .D1(VCCI), .SD(GNDI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+
+  specify
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, M1, 0:0:0, 0:0:0,,,, CLK_dly, M1_dly);
+    $setuphold (posedge CLK, M0, 0:0:0, 0:0:0,,,, CLK_dly, M0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut4 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h0000) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module gnd ( output PWR0 );
+
+  VLO INST1( .Z(PWR0));
+endmodule
+
+module vmuxregsre ( input D0, D1, SD, SP, CK, LSR, output Q );
+
+  FL1P3DX INST01( .D0(D0), .D1(D1), .SP(SP), .CK(CK), .SD(SD), .CD(LSR), .Q(Q));
+  defparam INST01.GSR = "ENABLED";
+endmodule
+
+module vcc ( output PWR1 );
+
+  VHI INST1( .Z(PWR1));
+endmodule
+
+module SLICE_2 ( input C1, B1, A1, C0, B0, A0, DI1, DI0, CLK, output F0, Q0, 
+    F1, Q1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, DI0_dly;
+
+  lut40001 \read_cntr_RNO[1] ( .A(A1), .B(B1), .C(C1), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40002 \read_cntr_RNO[0] ( .A(A0), .B(B0), .C(C0), .D(GNDI), .Z(F0));
+  vmuxregsre \read_cntr[1] ( .D0(VCCI), .D1(DI1_dly), .SD(VCCI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  vmuxregsre \read_cntr[0] ( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40001 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h6060) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40002 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h8A8A) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module SLICE_3 ( input B1, A1, C0, B0, A0, DI0, M1, CLK, output F0, Q0, F1, Q1 );
+  wire   GNDI, VCCI, DI0_dly, CLK_dly, M1_dly;
+
+  lut40003 un2_read_0_0_a3( .A(A1), .B(B1), .C(GNDI), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40004 \read_en_2[0] ( .A(A0), .B(B0), .C(C0), .D(GNDI), .Z(F0));
+  vmuxregsre \q_byte_en[0] ( .D0(M1_dly), .D1(VCCI), .SD(GNDI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  vmuxregsre \read_en[0] ( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+
+  specify
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, M1, 0:0:0, 0:0:0,,,, CLK_dly, M1_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40003 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h2222) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40004 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h0101) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module SLICE_4 ( input C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40005 \byte_data_2_2[0] ( .A(A1), .B(B1), .C(C1), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40006 \byte_data_2_3[0] ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40005 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hCACA) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40006 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hACA0) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module SLICE_5 ( input C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40005 \byte_data_2_2[1] ( .A(A1), .B(B1), .C(C1), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40006 \byte_data_2_3[1] ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module SLICE_6 ( input C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40005 \byte_data_2_2[2] ( .A(A1), .B(B1), .C(C1), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40006 \byte_data_2_3[2] ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module SLICE_7 ( input C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40005 \byte_data_2_2[3] ( .A(A1), .B(B1), .C(C1), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40006 \byte_data_2_3[3] ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module SLICE_8 ( input C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40005 \byte_data_2_2[4] ( .A(A1), .B(B1), .C(C1), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40006 \byte_data_2_3[4] ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module SLICE_9 ( input C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40005 \byte_data_2_2[5] ( .A(A1), .B(B1), .C(C1), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40006 \byte_data_2_3[5] ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module SLICE_10 ( input C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40005 \byte_data_2_2[6] ( .A(A1), .B(B1), .C(C1), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40006 \byte_data_2_3[6] ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module SLICE_11 ( input C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40005 \byte_data_2_2[7] ( .A(A1), .B(B1), .C(C1), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40006 \byte_data_2_3[7] ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module SLICE_12 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
+
+  lut40007 un8_data_type( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40008 \data_type_pad_RNO[0] ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40007 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h9009) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40008 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h6FF6) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module SLICE_13 ( input B1, A1, D0, C0, B0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40009 HSYNC_end( .A(A1), .B(B1), .C(GNDI), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40010 \data_type_pad_RNO[4] ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40009 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h4444) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40010 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hB2BB) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module SLICE_14 ( input B1, A1, B0, A0, M0, CLK, output F0, Q0, F1 );
+  wire   GNDI, VCCI, M0_dly, CLK_dly;
+
+  lut40003 VSYNC_start( .A(A1), .B(B1), .C(GNDI), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40011 un2_data_type( .A(A0), .B(B0), .C(GNDI), .D(GNDI), .Z(F0));
+  vmuxregsre \q_byte_en[1] ( .D0(M0_dly), .D1(VCCI), .SD(GNDI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, M0, 0:0:0, 0:0:0,,,, CLK_dly, M0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40011 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h9999) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module SLICE_15 ( input B1, A1, B0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40009 un2_read_1_0_a3( .A(A1), .B(B1), .C(GNDI), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40012 un2_read_2_0_a3( .A(A0), .B(B0), .C(GNDI), .D(GNDI), .Z(F0));
+
+  specify
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40012 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h8888) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module SLICE_16 ( input B1, A1, B0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40009 VSYNC_end_pad_RNO( .A(A1), .B(B1), .C(GNDI), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40003 HSYNC_start( .A(A0), .B(B0), .C(GNDI), .D(GNDI), .Z(F0));
+
+  specify
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module byte_en ( input IOLDO, output byte_en );
+  wire   GNDI;
+
+  xo2iobuf byte_en_pad( .I(IOLDO), .T(GNDI), .PAD(byte_en));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (IOLDO => byte_en) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module xo2iobuf ( input I, T, output PAD );
+
+  OBZPD INST5( .I(I), .T(T), .O(PAD));
+endmodule
+
+module byte_en_MGIOL ( output IOLDO, input OPOS, CLK );
+  wire   VCCI, GNDI, OPOS_dly, CLK_dly;
+
+  mfflsre \q_byte_en_0io[2] ( .D0(OPOS_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(GNDI), .Q(IOLDO));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (CLK => IOLDO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, OPOS, 0:0:0, 0:0:0,,,, CLK_dly, OPOS_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module mfflsre ( input D0, SP, CK, LSR, output Q );
+
+  FD1P3DX INST01( .D(D0), .SP(SP), .CK(CK), .CD(LSR), .Q(Q));
+  defparam INST01.GSR = "ENABLED";
+endmodule
+
+module reset_n ( output PADDI, input reset_n );
+
+  xo2iobuf0013 reset_n_pad( .Z(PADDI), .PAD(reset_n));
+
+  specify
+    (reset_n => PADDI) = (0:0:0,0:0:0);
+    $width (posedge reset_n, 0:0:0);
+    $width (negedge reset_n, 0:0:0);
+  endspecify
+
+endmodule
+
+module xo2iobuf0013 ( output Z, input PAD );
+
+  IBPU INST1( .I(PAD), .O(Z));
+endmodule
+
+module data_type_5_ ( input PADDO, output datatype5 );
+  wire   GNDI;
+
+  xo2iobuf \data_type_pad[5] ( .I(PADDO), .T(GNDI), .PAD(datatype5));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => datatype5) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module data_type_4_ ( input PADDO, output datatype4 );
+  wire   GNDI;
+
+  xo2iobuf \data_type_pad[4] ( .I(PADDO), .T(GNDI), .PAD(datatype4));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => datatype4) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module data_type_3_ ( input PADDO, output datatype3 );
+  wire   GNDI;
+
+  xo2iobuf \data_type_pad[3] ( .I(PADDO), .T(GNDI), .PAD(datatype3));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => datatype3) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module data_type_2_ ( input PADDO, output datatype2 );
+  wire   GNDI;
+
+  xo2iobuf \data_type_pad[2] ( .I(PADDO), .T(GNDI), .PAD(datatype2));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => datatype2) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module data_type_1_ ( input PADDO, output datatype1 );
+  wire   GNDI;
+
+  xo2iobuf \data_type_pad[1] ( .I(PADDO), .T(GNDI), .PAD(datatype1));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => datatype1) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module data_type_0_ ( input PADDO, output datatype0 );
+  wire   GNDI;
+
+  xo2iobuf \data_type_pad[0] ( .I(PADDO), .T(GNDI), .PAD(datatype0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => datatype0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module HSYNC_end ( input PADDO, output HSYNC_end );
+  wire   GNDI;
+
+  xo2iobuf HSYNC_end_pad( .I(PADDO), .T(GNDI), .PAD(HSYNC_end));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => HSYNC_end) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module HSYNC_start ( input PADDO, output HSYNC_start );
+  wire   GNDI;
+
+  xo2iobuf HSYNC_start_pad( .I(PADDO), .T(GNDI), .PAD(HSYNC_start));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => HSYNC_start) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module VSYNC_end ( input PADDO, output VSYNC_end );
+  wire   GNDI;
+
+  xo2iobuf VSYNC_end_pad( .I(PADDO), .T(GNDI), .PAD(VSYNC_end));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => VSYNC_end) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module VSYNC_start ( input PADDO, output VSYNC_start );
+  wire   GNDI;
+
+  xo2iobuf VSYNC_start_pad( .I(PADDO), .T(GNDI), .PAD(VSYNC_start));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => VSYNC_start) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module HSYNC ( output PADDI, input HSYNC );
+
+  xo2iobuf0014 HSYNC_pad( .Z(PADDI), .PAD(HSYNC));
+
+  specify
+    (HSYNC => PADDI) = (0:0:0,0:0:0);
+    $width (posedge HSYNC, 0:0:0);
+    $width (negedge HSYNC, 0:0:0);
+  endspecify
+
+endmodule
+
+module xo2iobuf0014 ( output Z, input PAD );
+
+  IBPD INST1( .I(PAD), .O(Z));
+endmodule
+
+module HSYNC_MGIOL ( input DI, CLK, output IN );
+  wire   VCCI, GNDI, DI_dly, CLK_dly;
+
+  smuxlregsre q_HSYNC_0io( .D0(DI_dly), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), 
+    .Q(IN));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (CLK => IN) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI, 0:0:0, 0:0:0,,,, CLK_dly, DI_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module smuxlregsre ( input D0, SP, CK, LSR, output Q );
+
+  IFS1P3DX INST01( .D(D0), .SP(SP), .SCLK(CK), .CD(LSR), .Q(Q));
+  defparam INST01.GSR = "ENABLED";
+endmodule
+
+module VSYNC ( output PADDI, input VSYNC );
+
+  xo2iobuf0014 VSYNC_pad( .Z(PADDI), .PAD(VSYNC));
+
+  specify
+    (VSYNC => PADDI) = (0:0:0,0:0:0);
+    $width (posedge VSYNC, 0:0:0);
+    $width (negedge VSYNC, 0:0:0);
+  endspecify
+
+endmodule
+
+module VSYNC_MGIOL ( input DI, CLK, output IN );
+  wire   VCCI, GNDI, DI_dly, CLK_dly;
+
+  smuxlregsre q_VSYNC_0io( .D0(DI_dly), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), 
+    .Q(IN));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (CLK => IN) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI, 0:0:0, 0:0:0,,,, CLK_dly, DI_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_31_ ( input PADDO, output bytedata31 );
+  wire   GNDI;
+
+  xo2iobuf \byte_data_pad[31] ( .I(PADDO), .T(GNDI), .PAD(bytedata31));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => bytedata31) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_30_ ( input PADDO, output bytedata30 );
+  wire   GNDI;
+
+  xo2iobuf \byte_data_pad[30] ( .I(PADDO), .T(GNDI), .PAD(bytedata30));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => bytedata30) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_29_ ( input PADDO, output bytedata29 );
+  wire   GNDI;
+
+  xo2iobuf \byte_data_pad[29] ( .I(PADDO), .T(GNDI), .PAD(bytedata29));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => bytedata29) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_28_ ( input PADDO, output bytedata28 );
+  wire   GNDI;
+
+  xo2iobuf \byte_data_pad[28] ( .I(PADDO), .T(GNDI), .PAD(bytedata28));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => bytedata28) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_27_ ( input PADDO, output bytedata27 );
+  wire   GNDI;
+
+  xo2iobuf \byte_data_pad[27] ( .I(PADDO), .T(GNDI), .PAD(bytedata27));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => bytedata27) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_26_ ( input PADDO, output bytedata26 );
+  wire   GNDI;
+
+  xo2iobuf \byte_data_pad[26] ( .I(PADDO), .T(GNDI), .PAD(bytedata26));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => bytedata26) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_25_ ( input PADDO, output bytedata25 );
+  wire   GNDI;
+
+  xo2iobuf \byte_data_pad[25] ( .I(PADDO), .T(GNDI), .PAD(bytedata25));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => bytedata25) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_24_ ( input PADDO, output bytedata24 );
+  wire   GNDI;
+
+  xo2iobuf \byte_data_pad[24] ( .I(PADDO), .T(GNDI), .PAD(bytedata24));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => bytedata24) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_23_ ( input PADDO, output bytedata23 );
+  wire   GNDI;
+
+  xo2iobuf \byte_data_pad[23] ( .I(PADDO), .T(GNDI), .PAD(bytedata23));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => bytedata23) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_22_ ( input PADDO, output bytedata22 );
+  wire   GNDI;
+
+  xo2iobuf \byte_data_pad[22] ( .I(PADDO), .T(GNDI), .PAD(bytedata22));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => bytedata22) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_21_ ( input PADDO, output bytedata21 );
+  wire   GNDI;
+
+  xo2iobuf \byte_data_pad[21] ( .I(PADDO), .T(GNDI), .PAD(bytedata21));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => bytedata21) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_20_ ( input PADDO, output bytedata20 );
+  wire   GNDI;
+
+  xo2iobuf \byte_data_pad[20] ( .I(PADDO), .T(GNDI), .PAD(bytedata20));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => bytedata20) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_19_ ( input PADDO, output bytedata19 );
+  wire   GNDI;
+
+  xo2iobuf \byte_data_pad[19] ( .I(PADDO), .T(GNDI), .PAD(bytedata19));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => bytedata19) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_18_ ( input PADDO, output bytedata18 );
+  wire   GNDI;
+
+  xo2iobuf \byte_data_pad[18] ( .I(PADDO), .T(GNDI), .PAD(bytedata18));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => bytedata18) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_17_ ( input PADDO, output bytedata17 );
+  wire   GNDI;
+
+  xo2iobuf \byte_data_pad[17] ( .I(PADDO), .T(GNDI), .PAD(bytedata17));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => bytedata17) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_16_ ( input PADDO, output bytedata16 );
+  wire   GNDI;
+
+  xo2iobuf \byte_data_pad[16] ( .I(PADDO), .T(GNDI), .PAD(bytedata16));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => bytedata16) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_15_ ( input PADDO, output bytedata15 );
+  wire   GNDI;
+
+  xo2iobuf \byte_data_pad[15] ( .I(PADDO), .T(GNDI), .PAD(bytedata15));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => bytedata15) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_14_ ( input PADDO, output bytedata14 );
+  wire   GNDI;
+
+  xo2iobuf \byte_data_pad[14] ( .I(PADDO), .T(GNDI), .PAD(bytedata14));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => bytedata14) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_13_ ( input PADDO, output bytedata13 );
+  wire   GNDI;
+
+  xo2iobuf \byte_data_pad[13] ( .I(PADDO), .T(GNDI), .PAD(bytedata13));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => bytedata13) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_12_ ( input PADDO, output bytedata12 );
+  wire   GNDI;
+
+  xo2iobuf \byte_data_pad[12] ( .I(PADDO), .T(GNDI), .PAD(bytedata12));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => bytedata12) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_11_ ( input PADDO, output bytedata11 );
+  wire   GNDI;
+
+  xo2iobuf \byte_data_pad[11] ( .I(PADDO), .T(GNDI), .PAD(bytedata11));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => bytedata11) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_10_ ( input PADDO, output bytedata10 );
+  wire   GNDI;
+
+  xo2iobuf \byte_data_pad[10] ( .I(PADDO), .T(GNDI), .PAD(bytedata10));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => bytedata10) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_9_ ( input PADDO, output bytedata9 );
+  wire   GNDI;
+
+  xo2iobuf \byte_data_pad[9] ( .I(PADDO), .T(GNDI), .PAD(bytedata9));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => bytedata9) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_8_ ( input PADDO, output bytedata8 );
+  wire   GNDI;
+
+  xo2iobuf \byte_data_pad[8] ( .I(PADDO), .T(GNDI), .PAD(bytedata8));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => bytedata8) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_7_ ( input IOLDO, output bytedata7 );
+  wire   GNDI;
+
+  xo2iobuf \byte_data_pad[7] ( .I(IOLDO), .T(GNDI), .PAD(bytedata7));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (IOLDO => bytedata7) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_7__MGIOL ( output IOLDO, input OPOS, CLK );
+  wire   VCCI, GNDI, OPOS_dly, CLK_dly;
+
+  mfflsre \byte_data_1_0io[7] ( .D0(OPOS_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(GNDI), .Q(IOLDO));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (CLK => IOLDO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, OPOS, 0:0:0, 0:0:0,,,, CLK_dly, OPOS_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_6_ ( input IOLDO, output bytedata6 );
+  wire   GNDI;
+
+  xo2iobuf \byte_data_pad[6] ( .I(IOLDO), .T(GNDI), .PAD(bytedata6));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (IOLDO => bytedata6) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_6__MGIOL ( output IOLDO, input OPOS, CLK );
+  wire   VCCI, GNDI, OPOS_dly, CLK_dly;
+
+  mfflsre \byte_data_1_0io[6] ( .D0(OPOS_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(GNDI), .Q(IOLDO));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (CLK => IOLDO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, OPOS, 0:0:0, 0:0:0,,,, CLK_dly, OPOS_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_5_ ( input IOLDO, output bytedata5 );
+  wire   GNDI;
+
+  xo2iobuf \byte_data_pad[5] ( .I(IOLDO), .T(GNDI), .PAD(bytedata5));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (IOLDO => bytedata5) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_5__MGIOL ( output IOLDO, input OPOS, CLK );
+  wire   VCCI, GNDI, OPOS_dly, CLK_dly;
+
+  mfflsre \byte_data_1_0io[5] ( .D0(OPOS_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(GNDI), .Q(IOLDO));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (CLK => IOLDO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, OPOS, 0:0:0, 0:0:0,,,, CLK_dly, OPOS_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_4_ ( input IOLDO, output bytedata4 );
+  wire   GNDI;
+
+  xo2iobuf \byte_data_pad[4] ( .I(IOLDO), .T(GNDI), .PAD(bytedata4));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (IOLDO => bytedata4) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_4__MGIOL ( output IOLDO, input OPOS, CLK );
+  wire   VCCI, GNDI, OPOS_dly, CLK_dly;
+
+  mfflsre \byte_data_1_0io[4] ( .D0(OPOS_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(GNDI), .Q(IOLDO));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (CLK => IOLDO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, OPOS, 0:0:0, 0:0:0,,,, CLK_dly, OPOS_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_3_ ( input IOLDO, output bytedata3 );
+  wire   GNDI;
+
+  xo2iobuf \byte_data_pad[3] ( .I(IOLDO), .T(GNDI), .PAD(bytedata3));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (IOLDO => bytedata3) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_3__MGIOL ( output IOLDO, input OPOS, CLK );
+  wire   VCCI, GNDI, OPOS_dly, CLK_dly;
+
+  mfflsre \byte_data_1_0io[3] ( .D0(OPOS_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(GNDI), .Q(IOLDO));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (CLK => IOLDO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, OPOS, 0:0:0, 0:0:0,,,, CLK_dly, OPOS_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_2_ ( input IOLDO, output bytedata2 );
+  wire   GNDI;
+
+  xo2iobuf \byte_data_pad[2] ( .I(IOLDO), .T(GNDI), .PAD(bytedata2));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (IOLDO => bytedata2) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_2__MGIOL ( output IOLDO, input OPOS, CLK );
+  wire   VCCI, GNDI, OPOS_dly, CLK_dly;
+
+  mfflsre \byte_data_1_0io[2] ( .D0(OPOS_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(GNDI), .Q(IOLDO));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (CLK => IOLDO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, OPOS, 0:0:0, 0:0:0,,,, CLK_dly, OPOS_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_1_ ( input IOLDO, output bytedata1 );
+  wire   GNDI;
+
+  xo2iobuf \byte_data_pad[1] ( .I(IOLDO), .T(GNDI), .PAD(bytedata1));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (IOLDO => bytedata1) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_1__MGIOL ( output IOLDO, input OPOS, CLK );
+  wire   VCCI, GNDI, OPOS_dly, CLK_dly;
+
+  mfflsre \byte_data_1_0io[1] ( .D0(OPOS_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(GNDI), .Q(IOLDO));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (CLK => IOLDO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, OPOS, 0:0:0, 0:0:0,,,, CLK_dly, OPOS_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_0_ ( input IOLDO, output bytedata0 );
+  wire   GNDI;
+
+  xo2iobuf \byte_data_pad[0] ( .I(IOLDO), .T(GNDI), .PAD(bytedata0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (IOLDO => bytedata0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module byte_data_0__MGIOL ( output IOLDO, input OPOS, CLK );
+  wire   VCCI, GNDI, OPOS_dly, CLK_dly;
+
+  mfflsre \byte_data_1_0io[0] ( .D0(OPOS_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(GNDI), .Q(IOLDO));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (CLK => IOLDO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, OPOS, 0:0:0, 0:0:0,,,, CLK_dly, OPOS_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module byte_clk ( output PADDI, input byte_clk );
+
+  xo2iobuf0014 byte_clk_pad( .Z(PADDI), .PAD(byte_clk));
+
+  specify
+    (byte_clk => PADDI) = (0:0:0,0:0:0);
+    $width (posedge byte_clk, 0:0:0);
+    $width (negedge byte_clk, 0:0:0);
+  endspecify
+
+endmodule
+
+module PIXDATA_23_ ( output PADDI, input PIXDATA23 );
+
+  xo2iobuf0014 \PIXDATA_pad[23] ( .Z(PADDI), .PAD(PIXDATA23));
+
+  specify
+    (PIXDATA23 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge PIXDATA23, 0:0:0);
+    $width (negedge PIXDATA23, 0:0:0);
+  endspecify
+
+endmodule
+
+module PIXDATA_22_ ( output PADDI, input PIXDATA22 );
+
+  xo2iobuf0014 \PIXDATA_pad[22] ( .Z(PADDI), .PAD(PIXDATA22));
+
+  specify
+    (PIXDATA22 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge PIXDATA22, 0:0:0);
+    $width (negedge PIXDATA22, 0:0:0);
+  endspecify
+
+endmodule
+
+module PIXDATA_21_ ( output PADDI, input PIXDATA21 );
+
+  xo2iobuf0014 \PIXDATA_pad[21] ( .Z(PADDI), .PAD(PIXDATA21));
+
+  specify
+    (PIXDATA21 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge PIXDATA21, 0:0:0);
+    $width (negedge PIXDATA21, 0:0:0);
+  endspecify
+
+endmodule
+
+module PIXDATA_20_ ( output PADDI, input PIXDATA20 );
+
+  xo2iobuf0014 \PIXDATA_pad[20] ( .Z(PADDI), .PAD(PIXDATA20));
+
+  specify
+    (PIXDATA20 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge PIXDATA20, 0:0:0);
+    $width (negedge PIXDATA20, 0:0:0);
+  endspecify
+
+endmodule
+
+module PIXDATA_19_ ( output PADDI, input PIXDATA19 );
+
+  xo2iobuf0014 \PIXDATA_pad[19] ( .Z(PADDI), .PAD(PIXDATA19));
+
+  specify
+    (PIXDATA19 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge PIXDATA19, 0:0:0);
+    $width (negedge PIXDATA19, 0:0:0);
+  endspecify
+
+endmodule
+
+module PIXDATA_18_ ( output PADDI, input PIXDATA18 );
+
+  xo2iobuf0014 \PIXDATA_pad[18] ( .Z(PADDI), .PAD(PIXDATA18));
+
+  specify
+    (PIXDATA18 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge PIXDATA18, 0:0:0);
+    $width (negedge PIXDATA18, 0:0:0);
+  endspecify
+
+endmodule
+
+module PIXDATA_17_ ( output PADDI, input PIXDATA17 );
+
+  xo2iobuf0014 \PIXDATA_pad[17] ( .Z(PADDI), .PAD(PIXDATA17));
+
+  specify
+    (PIXDATA17 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge PIXDATA17, 0:0:0);
+    $width (negedge PIXDATA17, 0:0:0);
+  endspecify
+
+endmodule
+
+module PIXDATA_16_ ( output PADDI, input PIXDATA16 );
+
+  xo2iobuf0014 \PIXDATA_pad[16] ( .Z(PADDI), .PAD(PIXDATA16));
+
+  specify
+    (PIXDATA16 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge PIXDATA16, 0:0:0);
+    $width (negedge PIXDATA16, 0:0:0);
+  endspecify
+
+endmodule
+
+module PIXDATA_15_ ( output PADDI, input PIXDATA15 );
+
+  xo2iobuf0014 \PIXDATA_pad[15] ( .Z(PADDI), .PAD(PIXDATA15));
+
+  specify
+    (PIXDATA15 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge PIXDATA15, 0:0:0);
+    $width (negedge PIXDATA15, 0:0:0);
+  endspecify
+
+endmodule
+
+module PIXDATA_14_ ( output PADDI, input PIXDATA14 );
+
+  xo2iobuf0014 \PIXDATA_pad[14] ( .Z(PADDI), .PAD(PIXDATA14));
+
+  specify
+    (PIXDATA14 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge PIXDATA14, 0:0:0);
+    $width (negedge PIXDATA14, 0:0:0);
+  endspecify
+
+endmodule
+
+module PIXDATA_13_ ( output PADDI, input PIXDATA13 );
+
+  xo2iobuf0014 \PIXDATA_pad[13] ( .Z(PADDI), .PAD(PIXDATA13));
+
+  specify
+    (PIXDATA13 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge PIXDATA13, 0:0:0);
+    $width (negedge PIXDATA13, 0:0:0);
+  endspecify
+
+endmodule
+
+module PIXDATA_12_ ( output PADDI, input PIXDATA12 );
+
+  xo2iobuf0014 \PIXDATA_pad[12] ( .Z(PADDI), .PAD(PIXDATA12));
+
+  specify
+    (PIXDATA12 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge PIXDATA12, 0:0:0);
+    $width (negedge PIXDATA12, 0:0:0);
+  endspecify
+
+endmodule
+
+module PIXDATA_11_ ( output PADDI, input PIXDATA11 );
+
+  xo2iobuf0014 \PIXDATA_pad[11] ( .Z(PADDI), .PAD(PIXDATA11));
+
+  specify
+    (PIXDATA11 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge PIXDATA11, 0:0:0);
+    $width (negedge PIXDATA11, 0:0:0);
+  endspecify
+
+endmodule
+
+module PIXDATA_10_ ( output PADDI, input PIXDATA10 );
+
+  xo2iobuf0014 \PIXDATA_pad[10] ( .Z(PADDI), .PAD(PIXDATA10));
+
+  specify
+    (PIXDATA10 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge PIXDATA10, 0:0:0);
+    $width (negedge PIXDATA10, 0:0:0);
+  endspecify
+
+endmodule
+
+module PIXDATA_9_ ( output PADDI, input PIXDATA9 );
+
+  xo2iobuf0014 \PIXDATA_pad[9] ( .Z(PADDI), .PAD(PIXDATA9));
+
+  specify
+    (PIXDATA9 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge PIXDATA9, 0:0:0);
+    $width (negedge PIXDATA9, 0:0:0);
+  endspecify
+
+endmodule
+
+module PIXDATA_8_ ( output PADDI, input PIXDATA8 );
+
+  xo2iobuf0014 \PIXDATA_pad[8] ( .Z(PADDI), .PAD(PIXDATA8));
+
+  specify
+    (PIXDATA8 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge PIXDATA8, 0:0:0);
+    $width (negedge PIXDATA8, 0:0:0);
+  endspecify
+
+endmodule
+
+module PIXDATA_7_ ( output PADDI, input PIXDATA7 );
+
+  xo2iobuf0014 \PIXDATA_pad[7] ( .Z(PADDI), .PAD(PIXDATA7));
+
+  specify
+    (PIXDATA7 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge PIXDATA7, 0:0:0);
+    $width (negedge PIXDATA7, 0:0:0);
+  endspecify
+
+endmodule
+
+module PIXDATA_6_ ( output PADDI, input PIXDATA6 );
+
+  xo2iobuf0014 \PIXDATA_pad[6] ( .Z(PADDI), .PAD(PIXDATA6));
+
+  specify
+    (PIXDATA6 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge PIXDATA6, 0:0:0);
+    $width (negedge PIXDATA6, 0:0:0);
+  endspecify
+
+endmodule
+
+module PIXDATA_5_ ( output PADDI, input PIXDATA5 );
+
+  xo2iobuf0014 \PIXDATA_pad[5] ( .Z(PADDI), .PAD(PIXDATA5));
+
+  specify
+    (PIXDATA5 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge PIXDATA5, 0:0:0);
+    $width (negedge PIXDATA5, 0:0:0);
+  endspecify
+
+endmodule
+
+module PIXDATA_4_ ( output PADDI, input PIXDATA4 );
+
+  xo2iobuf0014 \PIXDATA_pad[4] ( .Z(PADDI), .PAD(PIXDATA4));
+
+  specify
+    (PIXDATA4 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge PIXDATA4, 0:0:0);
+    $width (negedge PIXDATA4, 0:0:0);
+  endspecify
+
+endmodule
+
+module PIXDATA_3_ ( output PADDI, input PIXDATA3 );
+
+  xo2iobuf0014 \PIXDATA_pad[3] ( .Z(PADDI), .PAD(PIXDATA3));
+
+  specify
+    (PIXDATA3 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge PIXDATA3, 0:0:0);
+    $width (negedge PIXDATA3, 0:0:0);
+  endspecify
+
+endmodule
+
+module PIXDATA_2_ ( output PADDI, input PIXDATA2 );
+
+  xo2iobuf0014 \PIXDATA_pad[2] ( .Z(PADDI), .PAD(PIXDATA2));
+
+  specify
+    (PIXDATA2 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge PIXDATA2, 0:0:0);
+    $width (negedge PIXDATA2, 0:0:0);
+  endspecify
+
+endmodule
+
+module PIXDATA_1_ ( output PADDI, input PIXDATA1 );
+
+  xo2iobuf0014 \PIXDATA_pad[1] ( .Z(PADDI), .PAD(PIXDATA1));
+
+  specify
+    (PIXDATA1 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge PIXDATA1, 0:0:0);
+    $width (negedge PIXDATA1, 0:0:0);
+  endspecify
+
+endmodule
+
+module PIXDATA_0_ ( output PADDI, input PIXDATA0 );
+
+  xo2iobuf0014 \PIXDATA_pad[0] ( .Z(PADDI), .PAD(PIXDATA0));
+
+  specify
+    (PIXDATA0 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge PIXDATA0, 0:0:0);
+    $width (negedge PIXDATA0, 0:0:0);
+  endspecify
+
+endmodule
+
+module DE ( output PADDI, input DE );
+
+  xo2iobuf0014 DE_pad( .Z(PADDI), .PAD(DE));
+
+  specify
+    (DE => PADDI) = (0:0:0,0:0:0);
+    $width (posedge DE, 0:0:0);
+    $width (negedge DE, 0:0:0);
+  endspecify
+
+endmodule
+
+module PIXCLK ( output PADDI, input PIXCLK );
+
+  xo2iobuf0014 PIXCLK_pad( .Z(PADDI), .PAD(PIXCLK));
+
+  specify
+    (PIXCLK => PADDI) = (0:0:0,0:0:0);
+    $width (posedge PIXCLK, 0:0:0);
+    $width (negedge PIXCLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module u_fifo_7_0_pixel2byte_fifo_0_0 ( input DIA7, DIA6, DIA5, DIA4, DIA3, 
+    DIA2, DIA1, DIA0, output DOA7, DOA6, DOA5, DOA4, DOA3, DOA2, DOA1, DOA0, 
+    input CEA, RSTA, CLKA, CSA2, output FF, EF, input CSB2, CLKB, RSTB, OCEB, 
+    CEB );
+  wire   GNDI, VCCI, RSTA_NOTIN, RSTB_NOTIN, DIA7_dly, CLKA_dly, DIA6_dly, 
+         DIA5_dly, DIA4_dly, DIA3_dly, DIA2_dly, DIA1_dly, DIA0_dly, CEA_dly, 
+         RSTA_dly, CSA2_dly, CSB2_dly, CLKB_dly, RSTB_dly, OCEB_dly, CEB_dly;
+
+  FIFO8KB_B \u_fifo_7_0/pixel2byte_fifo_0_0_FIFO8KB ( .DI0(DIA0_dly), 
+    .DI1(DIA1_dly), .DI2(DIA2_dly), .DI3(DIA3_dly), .DI4(DIA4_dly), 
+    .DI5(DIA5_dly), .DI6(DIA6_dly), .DI7(DIA7_dly), .DI8(GNDI), .DI9(GNDI), 
+    .DI10(GNDI), .DI11(GNDI), .DI12(GNDI), .DI13(GNDI), .DI14(GNDI), 
+    .DI15(GNDI), .DI16(GNDI), .DI17(GNDI), .FULLI(CSA2_dly), .CSW0(VCCI), 
+    .CSW1(VCCI), .EMPTYI(CSB2_dly), .CSR0(VCCI), .CSR1(VCCI), .WE(CEA_dly), 
+    .RE(CEB_dly), .ORE(OCEB_dly), .CLKW(CLKA_dly), .CLKR(CLKB_dly), 
+    .RST(RSTA_NOTIN), .RPRST(RSTB_NOTIN), .DO0(), .DO1(), .DO2(), .DO3(), 
+    .DO4(), .DO5(), .DO6(), .DO7(), .DO8(), .DO9(DOA0), .DO10(DOA1), 
+    .DO11(DOA2), .DO12(DOA3), .DO13(DOA4), .DO14(DOA5), .DO15(DOA6), 
+    .DO16(DOA7), .DO17(), .EF(EF), .AEF(), .AFF(), .FF(FF));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  inverter RSTA_INVERTERIN( .I(RSTA_dly), .Z(RSTA_NOTIN));
+  inverter RSTB_INVERTERIN( .I(RSTB_dly), .Z(RSTB_NOTIN));
+
+  specify
+    (RSTA => DOA7) = (0:0:0,0:0:0);
+    (RSTA => DOA6) = (0:0:0,0:0:0);
+    (RSTA => DOA5) = (0:0:0,0:0:0);
+    (RSTA => DOA4) = (0:0:0,0:0:0);
+    (RSTA => DOA3) = (0:0:0,0:0:0);
+    (RSTA => DOA2) = (0:0:0,0:0:0);
+    (RSTA => DOA1) = (0:0:0,0:0:0);
+    (RSTA => DOA0) = (0:0:0,0:0:0);
+    (RSTA => FF) = (0:0:0,0:0:0);
+    (RSTA => EF) = (0:0:0,0:0:0);
+    (CLKA => FF) = (0:0:0,0:0:0);
+    (CLKB => DOA7) = (0:0:0,0:0:0);
+    (CLKB => DOA6) = (0:0:0,0:0:0);
+    (CLKB => DOA5) = (0:0:0,0:0:0);
+    (CLKB => DOA4) = (0:0:0,0:0:0);
+    (CLKB => DOA3) = (0:0:0,0:0:0);
+    (CLKB => DOA2) = (0:0:0,0:0:0);
+    (CLKB => DOA1) = (0:0:0,0:0:0);
+    (CLKB => DOA0) = (0:0:0,0:0:0);
+    (CLKB => EF) = (0:0:0,0:0:0);
+    (RSTB => DOA7) = (0:0:0,0:0:0);
+    (RSTB => DOA6) = (0:0:0,0:0:0);
+    (RSTB => DOA5) = (0:0:0,0:0:0);
+    (RSTB => DOA4) = (0:0:0,0:0:0);
+    (RSTB => DOA3) = (0:0:0,0:0:0);
+    (RSTB => DOA2) = (0:0:0,0:0:0);
+    (RSTB => DOA1) = (0:0:0,0:0:0);
+    (RSTB => DOA0) = (0:0:0,0:0:0);
+    (RSTB => EF) = (0:0:0,0:0:0);
+    $setuphold (posedge CLKA, DIA7, 0:0:0, 0:0:0,,,, CLKA_dly, DIA7_dly);
+    $setuphold (posedge CLKA, DIA6, 0:0:0, 0:0:0,,,, CLKA_dly, DIA6_dly);
+    $setuphold (posedge CLKA, DIA5, 0:0:0, 0:0:0,,,, CLKA_dly, DIA5_dly);
+    $setuphold (posedge CLKA, DIA4, 0:0:0, 0:0:0,,,, CLKA_dly, DIA4_dly);
+    $setuphold (posedge CLKA, DIA3, 0:0:0, 0:0:0,,,, CLKA_dly, DIA3_dly);
+    $setuphold (posedge CLKA, DIA2, 0:0:0, 0:0:0,,,, CLKA_dly, DIA2_dly);
+    $setuphold (posedge CLKA, DIA1, 0:0:0, 0:0:0,,,, CLKA_dly, DIA1_dly);
+    $setuphold (posedge CLKA, DIA0, 0:0:0, 0:0:0,,,, CLKA_dly, DIA0_dly);
+    $setuphold (posedge CLKA, CEA, 0:0:0, 0:0:0,,,, CLKA_dly, CEA_dly);
+    $setuphold (posedge CLKA, RSTA, 0:0:0, 0:0:0,,,, CLKA_dly, RSTA_dly);
+    $setuphold (posedge CLKA, CSA2, 0:0:0, 0:0:0,,,, CLKA_dly, CSA2_dly);
+    $setuphold (posedge CLKB, CSB2, 0:0:0, 0:0:0,,,, CLKB_dly, CSB2_dly);
+    $setuphold (posedge CLKA, RSTB, 0:0:0, 0:0:0,,,, CLKA_dly, RSTB_dly);
+    $setuphold (posedge CLKB, RSTB, 0:0:0, 0:0:0,,,, CLKB_dly, RSTB_dly);
+    $setuphold (posedge CLKB, OCEB, 0:0:0, 0:0:0,,,, CLKB_dly, OCEB_dly);
+    $setuphold (posedge CLKB, CEB, 0:0:0, 0:0:0,,,, CLKB_dly, CEB_dly);
+    $width (posedge RSTA, 0:0:0);
+    $width (negedge RSTA, 0:0:0);
+    $width (posedge CLKA, 0:0:0);
+    $width (negedge CLKA, 0:0:0);
+    $width (posedge CLKB, 0:0:0);
+    $width (negedge CLKB, 0:0:0);
+    $width (posedge RSTB, 0:0:0);
+    $width (negedge RSTB, 0:0:0);
+  endspecify
+
+endmodule
+
+module FIFO8KB_B ( input DI0, DI1, DI2, DI3, DI4, DI5, DI6, DI7, DI8, DI9, 
+    DI10, DI11, DI12, DI13, DI14, DI15, DI16, DI17, FULLI, CSW0, CSW1, EMPTYI, 
+    CSR0, CSR1, WE, RE, ORE, CLKW, CLKR, RST, RPRST, output DO0, DO1, DO2, DO3, 
+    DO4, DO5, DO6, DO7, DO8, DO9, DO10, DO11, DO12, DO13, DO14, DO15, DO16, 
+    DO17, EF, AEF, AFF, FF );
+
+  FIFO8KB INST10( .DI0(DI0), .DI1(DI1), .DI2(DI2), .DI3(DI3), .DI4(DI4), 
+    .DI5(DI5), .DI6(DI6), .DI7(DI7), .DI8(DI8), .DI9(DI9), .DI10(DI10), 
+    .DI11(DI11), .DI12(DI12), .DI13(DI13), .DI14(DI14), .DI15(DI15), 
+    .DI16(DI16), .DI17(DI17), .CSW0(CSW0), .CSW1(CSW1), .CSR0(CSR0), 
+    .CSR1(CSR1), .WE(WE), .RE(RE), .ORE(ORE), .CLKW(CLKW), .CLKR(CLKR), 
+    .RST(RST), .RPRST(RPRST), .FULLI(FULLI), .EMPTYI(EMPTYI), .DO0(DO0), 
+    .DO1(DO1), .DO2(DO2), .DO3(DO3), .DO4(DO4), .DO5(DO5), .DO6(DO6), 
+    .DO7(DO7), .DO8(DO8), .DO9(DO9), .DO10(DO10), .DO11(DO11), .DO12(DO12), 
+    .DO13(DO13), .DO14(DO14), .DO15(DO15), .DO16(DO16), .DO17(DO17), .EF(EF), 
+    .AEF(AEF), .AFF(AFF), .FF(FF));
+  defparam INST10.AEPOINTER = "0b00000000010000";
+  defparam INST10.AEPOINTER1 = "0b00000000100000";
+  defparam INST10.AFPOINTER = "0b00000010000000";
+  defparam INST10.AFPOINTER1 = "0b00000001110000";
+  defparam INST10.ASYNC_RESET_RELEASE = "SYNC";
+  defparam INST10.CSDECODE_R = "0b11";
+  defparam INST10.CSDECODE_W = "0b11";
+  defparam INST10.DATA_WIDTH_R = 18;
+  defparam INST10.DATA_WIDTH_W = 18;
+  defparam INST10.FULLPOINTER = "0b00000100000000";
+  defparam INST10.FULLPOINTER1 = "0b00000011110000";
+  defparam INST10.GSR = "DISABLED";
+  defparam INST10.REGMODE = "NOREG";
+  defparam INST10.RESETMODE = "ASYNC";
+endmodule
+
+module inverter ( input I, output Z );
+
+  INV INST1( .A(I), .Z(Z));
+endmodule
+
+module u_fifo_15_8_pixel2byte_fifo_0_0 ( input DIA7, DIA6, DIA5, DIA4, DIA3, 
+    DIA2, DIA1, DIA0, output DOA7, DOA6, DOA5, DOA4, DOA3, DOA2, DOA1, DOA0, 
+    input CEA, RSTA, CLKA, CSA2, output FF, EF, input CSB2, CLKB, RSTB, OCEB, 
+    CEB );
+  wire   GNDI, VCCI, RSTA_NOTIN, RSTB_NOTIN, DIA7_dly, CLKA_dly, DIA6_dly, 
+         DIA5_dly, DIA4_dly, DIA3_dly, DIA2_dly, DIA1_dly, DIA0_dly, CEA_dly, 
+         RSTA_dly, CSA2_dly, CSB2_dly, CLKB_dly, RSTB_dly, OCEB_dly, CEB_dly;
+
+  FIFO8KB0015 \u_fifo_15_8/pixel2byte_fifo_0_0_FIFO8KB ( .DI0(DIA0_dly), 
+    .DI1(DIA1_dly), .DI2(DIA2_dly), .DI3(DIA3_dly), .DI4(DIA4_dly), 
+    .DI5(DIA5_dly), .DI6(DIA6_dly), .DI7(DIA7_dly), .DI8(GNDI), .DI9(GNDI), 
+    .DI10(GNDI), .DI11(GNDI), .DI12(GNDI), .DI13(GNDI), .DI14(GNDI), 
+    .DI15(GNDI), .DI16(GNDI), .DI17(GNDI), .FULLI(CSA2_dly), .CSW0(VCCI), 
+    .CSW1(VCCI), .EMPTYI(CSB2_dly), .CSR0(VCCI), .CSR1(VCCI), .WE(CEA_dly), 
+    .RE(CEB_dly), .ORE(OCEB_dly), .CLKW(CLKA_dly), .CLKR(CLKB_dly), 
+    .RST(RSTA_NOTIN), .RPRST(RSTB_NOTIN), .DO0(), .DO1(), .DO2(), .DO3(), 
+    .DO4(), .DO5(), .DO6(), .DO7(), .DO8(), .DO9(DOA0), .DO10(DOA1), 
+    .DO11(DOA2), .DO12(DOA3), .DO13(DOA4), .DO14(DOA5), .DO15(DOA6), 
+    .DO16(DOA7), .DO17(), .EF(EF), .AEF(), .AFF(), .FF(FF));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  inverter RSTA_INVERTERIN( .I(RSTA_dly), .Z(RSTA_NOTIN));
+  inverter RSTB_INVERTERIN( .I(RSTB_dly), .Z(RSTB_NOTIN));
+
+  specify
+    (RSTA => DOA7) = (0:0:0,0:0:0);
+    (RSTA => DOA6) = (0:0:0,0:0:0);
+    (RSTA => DOA5) = (0:0:0,0:0:0);
+    (RSTA => DOA4) = (0:0:0,0:0:0);
+    (RSTA => DOA3) = (0:0:0,0:0:0);
+    (RSTA => DOA2) = (0:0:0,0:0:0);
+    (RSTA => DOA1) = (0:0:0,0:0:0);
+    (RSTA => DOA0) = (0:0:0,0:0:0);
+    (RSTA => FF) = (0:0:0,0:0:0);
+    (RSTA => EF) = (0:0:0,0:0:0);
+    (CLKA => FF) = (0:0:0,0:0:0);
+    (CLKB => DOA7) = (0:0:0,0:0:0);
+    (CLKB => DOA6) = (0:0:0,0:0:0);
+    (CLKB => DOA5) = (0:0:0,0:0:0);
+    (CLKB => DOA4) = (0:0:0,0:0:0);
+    (CLKB => DOA3) = (0:0:0,0:0:0);
+    (CLKB => DOA2) = (0:0:0,0:0:0);
+    (CLKB => DOA1) = (0:0:0,0:0:0);
+    (CLKB => DOA0) = (0:0:0,0:0:0);
+    (CLKB => EF) = (0:0:0,0:0:0);
+    (RSTB => DOA7) = (0:0:0,0:0:0);
+    (RSTB => DOA6) = (0:0:0,0:0:0);
+    (RSTB => DOA5) = (0:0:0,0:0:0);
+    (RSTB => DOA4) = (0:0:0,0:0:0);
+    (RSTB => DOA3) = (0:0:0,0:0:0);
+    (RSTB => DOA2) = (0:0:0,0:0:0);
+    (RSTB => DOA1) = (0:0:0,0:0:0);
+    (RSTB => DOA0) = (0:0:0,0:0:0);
+    (RSTB => EF) = (0:0:0,0:0:0);
+    $setuphold (posedge CLKA, DIA7, 0:0:0, 0:0:0,,,, CLKA_dly, DIA7_dly);
+    $setuphold (posedge CLKA, DIA6, 0:0:0, 0:0:0,,,, CLKA_dly, DIA6_dly);
+    $setuphold (posedge CLKA, DIA5, 0:0:0, 0:0:0,,,, CLKA_dly, DIA5_dly);
+    $setuphold (posedge CLKA, DIA4, 0:0:0, 0:0:0,,,, CLKA_dly, DIA4_dly);
+    $setuphold (posedge CLKA, DIA3, 0:0:0, 0:0:0,,,, CLKA_dly, DIA3_dly);
+    $setuphold (posedge CLKA, DIA2, 0:0:0, 0:0:0,,,, CLKA_dly, DIA2_dly);
+    $setuphold (posedge CLKA, DIA1, 0:0:0, 0:0:0,,,, CLKA_dly, DIA1_dly);
+    $setuphold (posedge CLKA, DIA0, 0:0:0, 0:0:0,,,, CLKA_dly, DIA0_dly);
+    $setuphold (posedge CLKA, CEA, 0:0:0, 0:0:0,,,, CLKA_dly, CEA_dly);
+    $setuphold (posedge CLKA, RSTA, 0:0:0, 0:0:0,,,, CLKA_dly, RSTA_dly);
+    $setuphold (posedge CLKA, CSA2, 0:0:0, 0:0:0,,,, CLKA_dly, CSA2_dly);
+    $setuphold (posedge CLKB, CSB2, 0:0:0, 0:0:0,,,, CLKB_dly, CSB2_dly);
+    $setuphold (posedge CLKA, RSTB, 0:0:0, 0:0:0,,,, CLKA_dly, RSTB_dly);
+    $setuphold (posedge CLKB, RSTB, 0:0:0, 0:0:0,,,, CLKB_dly, RSTB_dly);
+    $setuphold (posedge CLKB, OCEB, 0:0:0, 0:0:0,,,, CLKB_dly, OCEB_dly);
+    $setuphold (posedge CLKB, CEB, 0:0:0, 0:0:0,,,, CLKB_dly, CEB_dly);
+    $width (posedge RSTA, 0:0:0);
+    $width (negedge RSTA, 0:0:0);
+    $width (posedge CLKA, 0:0:0);
+    $width (negedge CLKA, 0:0:0);
+    $width (posedge CLKB, 0:0:0);
+    $width (negedge CLKB, 0:0:0);
+    $width (posedge RSTB, 0:0:0);
+    $width (negedge RSTB, 0:0:0);
+  endspecify
+
+endmodule
+
+module FIFO8KB0015 ( input DI0, DI1, DI2, DI3, DI4, DI5, DI6, DI7, DI8, DI9, 
+    DI10, DI11, DI12, DI13, DI14, DI15, DI16, DI17, FULLI, CSW0, CSW1, EMPTYI, 
+    CSR0, CSR1, WE, RE, ORE, CLKW, CLKR, RST, RPRST, output DO0, DO1, DO2, DO3, 
+    DO4, DO5, DO6, DO7, DO8, DO9, DO10, DO11, DO12, DO13, DO14, DO15, DO16, 
+    DO17, EF, AEF, AFF, FF );
+
+  FIFO8KB INST10( .DI0(DI0), .DI1(DI1), .DI2(DI2), .DI3(DI3), .DI4(DI4), 
+    .DI5(DI5), .DI6(DI6), .DI7(DI7), .DI8(DI8), .DI9(DI9), .DI10(DI10), 
+    .DI11(DI11), .DI12(DI12), .DI13(DI13), .DI14(DI14), .DI15(DI15), 
+    .DI16(DI16), .DI17(DI17), .CSW0(CSW0), .CSW1(CSW1), .CSR0(CSR0), 
+    .CSR1(CSR1), .WE(WE), .RE(RE), .ORE(ORE), .CLKW(CLKW), .CLKR(CLKR), 
+    .RST(RST), .RPRST(RPRST), .FULLI(FULLI), .EMPTYI(EMPTYI), .DO0(DO0), 
+    .DO1(DO1), .DO2(DO2), .DO3(DO3), .DO4(DO4), .DO5(DO5), .DO6(DO6), 
+    .DO7(DO7), .DO8(DO8), .DO9(DO9), .DO10(DO10), .DO11(DO11), .DO12(DO12), 
+    .DO13(DO13), .DO14(DO14), .DO15(DO15), .DO16(DO16), .DO17(DO17), .EF(EF), 
+    .AEF(AEF), .AFF(AFF), .FF(FF));
+  defparam INST10.AEPOINTER = "0b00000000010000";
+  defparam INST10.AEPOINTER1 = "0b00000000100000";
+  defparam INST10.AFPOINTER = "0b00000010000000";
+  defparam INST10.AFPOINTER1 = "0b00000001110000";
+  defparam INST10.ASYNC_RESET_RELEASE = "SYNC";
+  defparam INST10.CSDECODE_R = "0b11";
+  defparam INST10.CSDECODE_W = "0b11";
+  defparam INST10.DATA_WIDTH_R = 18;
+  defparam INST10.DATA_WIDTH_W = 18;
+  defparam INST10.FULLPOINTER = "0b00000100000000";
+  defparam INST10.FULLPOINTER1 = "0b00000011110000";
+  defparam INST10.GSR = "DISABLED";
+  defparam INST10.REGMODE = "NOREG";
+  defparam INST10.RESETMODE = "ASYNC";
+endmodule
+
+module u_fifo_23_16_pixel2byte_fifo_0_0 ( input DIA7, DIA6, DIA5, DIA4, DIA3, 
+    DIA2, DIA1, DIA0, output DOA7, DOA6, DOA5, DOA4, DOA3, DOA2, DOA1, DOA0, 
+    input CEA, RSTA, CLKA, CSA2, output FF, EF, input CSB2, CLKB, RSTB, OCEB, 
+    CEB );
+  wire   GNDI, VCCI, RSTA_NOTIN, RSTB_NOTIN, DIA7_dly, CLKA_dly, DIA6_dly, 
+         DIA5_dly, DIA4_dly, DIA3_dly, DIA2_dly, DIA1_dly, DIA0_dly, CEA_dly, 
+         RSTA_dly, CSA2_dly, CSB2_dly, CLKB_dly, RSTB_dly, OCEB_dly, CEB_dly;
+
+  FIFO8KB0016 \u_fifo_23_16/pixel2byte_fifo_0_0_FIFO8KB ( .DI0(DIA0_dly), 
+    .DI1(DIA1_dly), .DI2(DIA2_dly), .DI3(DIA3_dly), .DI4(DIA4_dly), 
+    .DI5(DIA5_dly), .DI6(DIA6_dly), .DI7(DIA7_dly), .DI8(GNDI), .DI9(GNDI), 
+    .DI10(GNDI), .DI11(GNDI), .DI12(GNDI), .DI13(GNDI), .DI14(GNDI), 
+    .DI15(GNDI), .DI16(GNDI), .DI17(GNDI), .FULLI(CSA2_dly), .CSW0(VCCI), 
+    .CSW1(VCCI), .EMPTYI(CSB2_dly), .CSR0(VCCI), .CSR1(VCCI), .WE(CEA_dly), 
+    .RE(CEB_dly), .ORE(OCEB_dly), .CLKW(CLKA_dly), .CLKR(CLKB_dly), 
+    .RST(RSTA_NOTIN), .RPRST(RSTB_NOTIN), .DO0(), .DO1(), .DO2(), .DO3(), 
+    .DO4(), .DO5(), .DO6(), .DO7(), .DO8(), .DO9(DOA0), .DO10(DOA1), 
+    .DO11(DOA2), .DO12(DOA3), .DO13(DOA4), .DO14(DOA5), .DO15(DOA6), 
+    .DO16(DOA7), .DO17(), .EF(EF), .AEF(), .AFF(), .FF(FF));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  inverter RSTA_INVERTERIN( .I(RSTA_dly), .Z(RSTA_NOTIN));
+  inverter RSTB_INVERTERIN( .I(RSTB_dly), .Z(RSTB_NOTIN));
+
+  specify
+    (RSTA => DOA7) = (0:0:0,0:0:0);
+    (RSTA => DOA6) = (0:0:0,0:0:0);
+    (RSTA => DOA5) = (0:0:0,0:0:0);
+    (RSTA => DOA4) = (0:0:0,0:0:0);
+    (RSTA => DOA3) = (0:0:0,0:0:0);
+    (RSTA => DOA2) = (0:0:0,0:0:0);
+    (RSTA => DOA1) = (0:0:0,0:0:0);
+    (RSTA => DOA0) = (0:0:0,0:0:0);
+    (RSTA => FF) = (0:0:0,0:0:0);
+    (RSTA => EF) = (0:0:0,0:0:0);
+    (CLKA => FF) = (0:0:0,0:0:0);
+    (CLKB => DOA7) = (0:0:0,0:0:0);
+    (CLKB => DOA6) = (0:0:0,0:0:0);
+    (CLKB => DOA5) = (0:0:0,0:0:0);
+    (CLKB => DOA4) = (0:0:0,0:0:0);
+    (CLKB => DOA3) = (0:0:0,0:0:0);
+    (CLKB => DOA2) = (0:0:0,0:0:0);
+    (CLKB => DOA1) = (0:0:0,0:0:0);
+    (CLKB => DOA0) = (0:0:0,0:0:0);
+    (CLKB => EF) = (0:0:0,0:0:0);
+    (RSTB => DOA7) = (0:0:0,0:0:0);
+    (RSTB => DOA6) = (0:0:0,0:0:0);
+    (RSTB => DOA5) = (0:0:0,0:0:0);
+    (RSTB => DOA4) = (0:0:0,0:0:0);
+    (RSTB => DOA3) = (0:0:0,0:0:0);
+    (RSTB => DOA2) = (0:0:0,0:0:0);
+    (RSTB => DOA1) = (0:0:0,0:0:0);
+    (RSTB => DOA0) = (0:0:0,0:0:0);
+    (RSTB => EF) = (0:0:0,0:0:0);
+    $setuphold (posedge CLKA, DIA7, 0:0:0, 0:0:0,,,, CLKA_dly, DIA7_dly);
+    $setuphold (posedge CLKA, DIA6, 0:0:0, 0:0:0,,,, CLKA_dly, DIA6_dly);
+    $setuphold (posedge CLKA, DIA5, 0:0:0, 0:0:0,,,, CLKA_dly, DIA5_dly);
+    $setuphold (posedge CLKA, DIA4, 0:0:0, 0:0:0,,,, CLKA_dly, DIA4_dly);
+    $setuphold (posedge CLKA, DIA3, 0:0:0, 0:0:0,,,, CLKA_dly, DIA3_dly);
+    $setuphold (posedge CLKA, DIA2, 0:0:0, 0:0:0,,,, CLKA_dly, DIA2_dly);
+    $setuphold (posedge CLKA, DIA1, 0:0:0, 0:0:0,,,, CLKA_dly, DIA1_dly);
+    $setuphold (posedge CLKA, DIA0, 0:0:0, 0:0:0,,,, CLKA_dly, DIA0_dly);
+    $setuphold (posedge CLKA, CEA, 0:0:0, 0:0:0,,,, CLKA_dly, CEA_dly);
+    $setuphold (posedge CLKA, RSTA, 0:0:0, 0:0:0,,,, CLKA_dly, RSTA_dly);
+    $setuphold (posedge CLKA, CSA2, 0:0:0, 0:0:0,,,, CLKA_dly, CSA2_dly);
+    $setuphold (posedge CLKB, CSB2, 0:0:0, 0:0:0,,,, CLKB_dly, CSB2_dly);
+    $setuphold (posedge CLKA, RSTB, 0:0:0, 0:0:0,,,, CLKA_dly, RSTB_dly);
+    $setuphold (posedge CLKB, RSTB, 0:0:0, 0:0:0,,,, CLKB_dly, RSTB_dly);
+    $setuphold (posedge CLKB, OCEB, 0:0:0, 0:0:0,,,, CLKB_dly, OCEB_dly);
+    $setuphold (posedge CLKB, CEB, 0:0:0, 0:0:0,,,, CLKB_dly, CEB_dly);
+    $width (posedge RSTA, 0:0:0);
+    $width (negedge RSTA, 0:0:0);
+    $width (posedge CLKA, 0:0:0);
+    $width (negedge CLKA, 0:0:0);
+    $width (posedge CLKB, 0:0:0);
+    $width (negedge CLKB, 0:0:0);
+    $width (posedge RSTB, 0:0:0);
+    $width (negedge RSTB, 0:0:0);
+  endspecify
+
+endmodule
+
+module FIFO8KB0016 ( input DI0, DI1, DI2, DI3, DI4, DI5, DI6, DI7, DI8, DI9, 
+    DI10, DI11, DI12, DI13, DI14, DI15, DI16, DI17, FULLI, CSW0, CSW1, EMPTYI, 
+    CSR0, CSR1, WE, RE, ORE, CLKW, CLKR, RST, RPRST, output DO0, DO1, DO2, DO3, 
+    DO4, DO5, DO6, DO7, DO8, DO9, DO10, DO11, DO12, DO13, DO14, DO15, DO16, 
+    DO17, EF, AEF, AFF, FF );
+
+  FIFO8KB INST10( .DI0(DI0), .DI1(DI1), .DI2(DI2), .DI3(DI3), .DI4(DI4), 
+    .DI5(DI5), .DI6(DI6), .DI7(DI7), .DI8(DI8), .DI9(DI9), .DI10(DI10), 
+    .DI11(DI11), .DI12(DI12), .DI13(DI13), .DI14(DI14), .DI15(DI15), 
+    .DI16(DI16), .DI17(DI17), .CSW0(CSW0), .CSW1(CSW1), .CSR0(CSR0), 
+    .CSR1(CSR1), .WE(WE), .RE(RE), .ORE(ORE), .CLKW(CLKW), .CLKR(CLKR), 
+    .RST(RST), .RPRST(RPRST), .FULLI(FULLI), .EMPTYI(EMPTYI), .DO0(DO0), 
+    .DO1(DO1), .DO2(DO2), .DO3(DO3), .DO4(DO4), .DO5(DO5), .DO6(DO6), 
+    .DO7(DO7), .DO8(DO8), .DO9(DO9), .DO10(DO10), .DO11(DO11), .DO12(DO12), 
+    .DO13(DO13), .DO14(DO14), .DO15(DO15), .DO16(DO16), .DO17(DO17), .EF(EF), 
+    .AEF(AEF), .AFF(AFF), .FF(FF));
+  defparam INST10.AEPOINTER = "0b00000000010000";
+  defparam INST10.AEPOINTER1 = "0b00000000100000";
+  defparam INST10.AFPOINTER = "0b00000010000000";
+  defparam INST10.AFPOINTER1 = "0b00000001110000";
+  defparam INST10.ASYNC_RESET_RELEASE = "SYNC";
+  defparam INST10.CSDECODE_R = "0b11";
+  defparam INST10.CSDECODE_W = "0b11";
+  defparam INST10.DATA_WIDTH_R = 18;
+  defparam INST10.DATA_WIDTH_W = 18;
+  defparam INST10.FULLPOINTER = "0b00000100000000";
+  defparam INST10.FULLPOINTER1 = "0b00000011110000";
+  defparam INST10.GSR = "DISABLED";
+  defparam INST10.REGMODE = "NOREG";
+  defparam INST10.RESETMODE = "ASYNC";
+endmodule
+
+module GSR_INST ( input GSRNET );
+
+  GSR5MODE GSR_INST_GSRMODE( .GSR(GSRNET));
+
+  specify
+  endspecify
+
+endmodule
+
+module GSR5MODE ( input GSR );
+  wire   GSRMODE;
+
+  BUFBA INST10( .A(GSR), .Z(GSRMODE));
+  GSR INST20( .GSR(GSRMODE));
+endmodule

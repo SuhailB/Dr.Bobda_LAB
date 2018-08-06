@@ -1,0 +1,2344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Map">
+        <Message>
+            <ID>51001027</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>reset_n_c_i</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>VSYNC</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>HSYNC</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>DE</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PIXDATA[23:0](23)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PIXDATA[23:0](22)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PIXDATA[23:0](21)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PIXDATA[23:0](20)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PIXDATA[23:0](19)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PIXDATA[23:0](18)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PIXDATA[23:0](17)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PIXDATA[23:0](16)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PIXDATA[23:0](15)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PIXDATA[23:0](14)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PIXDATA[23:0](13)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PIXDATA[23:0](12)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PIXDATA[23:0](11)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PIXDATA[23:0](10)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PIXDATA[23:0](9)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PIXDATA[23:0](8)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PIXDATA[23:0](7)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PIXDATA[23:0](6)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PIXDATA[23:0](5)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PIXDATA[23:0](4)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PIXDATA[23:0](3)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PIXDATA[23:0](2)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PIXDATA[23:0](1)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PIXDATA[23:0](0)</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Translate">
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>dt</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>lane_width</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>word_width</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>lane_width</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>poly</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>mode</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>V_SYNCH</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>V_FRONT_PORCH</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>H_BACK_PORCH</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>H_SYNCH</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>H_FRONT_PORCH</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>v_total</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>v_active</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>h_total</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>h_active</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>wait_time</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>p_LP11_clk_end</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>p_LP00_clk_end</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>p_HS00_clk_end</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>p_data2clk</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>p_LP11_data_end</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>p_LP00_data_end</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>p_HS00_data_end</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>p_HSXX_data</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>p_HS00_data</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>p_LP00_data</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>p_LP01_data</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>p_clk2data</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>p_HSXX_clk</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>p_HS00_clk</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>p_LP00_clk</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>p_LP01_clk</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>HSXXDATA_dly</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>HS00DATA_dly</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>LP00DATA_dly</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>LP01DATA_dly</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CLK2DATA_dly</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>HSXXCLK_dly</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>HS00CLK_dly</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>LP00CLK_dly</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>LP01CLK_dly</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>lane_width</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>word_width</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>lane_width</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>dt</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>crc16</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>dt</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>lane_width</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>word_width</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>TIMER_CNT_1MS</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>ST_SYS_RUN</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>ST_CMD11</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>ST_3V0_UP</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>ST_RES_UP1</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>ST_RES_DW</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>ST_RES_UP</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>ST_1V8_UP</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>ST_IDLE</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>word_width</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>lane_width</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>dt</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>crc16</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>h_active</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>h_total</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>v_active</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>v_total</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>H_FRONT_PORCH</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>H_SYNCH</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>V_FRONT_PORCH</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>V_SYNCH</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>mode</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>lane_width</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>reserved</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>EoTp</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>crc16</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>testmode</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>DT</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>word_width</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>WC</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>VC</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_DPHY_TX_INST/u_oDDRx4/cdiv1</Dynamic>
+            <Navigation>u_DPHY_TX_INST/u_oDDRx4/cdiv1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/byte_data[8]</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/byte_data[8]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>VSYNC</Dynamic>
+            <Navigation>VSYNC</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>HSYNC</Dynamic>
+            <Navigation>HSYNC</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>DE</Dynamic>
+            <Navigation>DE</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>PIXDATA[0]</Dynamic>
+            <Navigation>PIXDATA[0]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>PIXDATA[1]</Dynamic>
+            <Navigation>PIXDATA[1]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>PIXDATA[2]</Dynamic>
+            <Navigation>PIXDATA[2]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>PIXDATA[3]</Dynamic>
+            <Navigation>PIXDATA[3]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>PIXDATA[4]</Dynamic>
+            <Navigation>PIXDATA[4]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>PIXDATA[5]</Dynamic>
+            <Navigation>PIXDATA[5]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>PIXDATA[6]</Dynamic>
+            <Navigation>PIXDATA[6]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>PIXDATA[7]</Dynamic>
+            <Navigation>PIXDATA[7]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>PIXDATA[8]</Dynamic>
+            <Navigation>PIXDATA[8]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>PIXDATA[9]</Dynamic>
+            <Navigation>PIXDATA[9]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>PIXDATA[10]</Dynamic>
+            <Navigation>PIXDATA[10]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>PIXDATA[11]</Dynamic>
+            <Navigation>PIXDATA[11]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>PIXDATA[12]</Dynamic>
+            <Navigation>PIXDATA[12]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>PIXDATA[13]</Dynamic>
+            <Navigation>PIXDATA[13]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>PIXDATA[14]</Dynamic>
+            <Navigation>PIXDATA[14]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>PIXDATA[15]</Dynamic>
+            <Navigation>PIXDATA[15]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>PIXDATA[16]</Dynamic>
+            <Navigation>PIXDATA[16]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>PIXDATA[17]</Dynamic>
+            <Navigation>PIXDATA[17]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>PIXDATA[18]</Dynamic>
+            <Navigation>PIXDATA[18]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>PIXDATA[19]</Dynamic>
+            <Navigation>PIXDATA[19]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>PIXDATA[20]</Dynamic>
+            <Navigation>PIXDATA[20]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>PIXDATA[21]</Dynamic>
+            <Navigation>PIXDATA[21]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>PIXDATA[22]</Dynamic>
+            <Navigation>PIXDATA[22]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>PIXDATA[23]</Dynamic>
+            <Navigation>PIXDATA[23]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO0_1</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO0_1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO1_1</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO1_1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO2_1</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO2_1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO3_1</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO3_1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO4_1</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO4_1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO5_1</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO5_1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO6_1</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO6_1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO7_1</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO7_1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO8_1</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO8_1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO17_1</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO17_1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/AEF</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/AEF</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/AFF</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/AFF</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO0_0</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO0_0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO1_0</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO1_0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO2_0</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO2_0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO3_0</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO3_0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO4_0</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO4_0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO5_0</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO5_0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO6_0</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO6_0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO7_0</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO7_0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO8_0</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO8_0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO17_0</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/DO17_0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/AEF_0</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/AEF_0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/AFF_0</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/AFF_0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO0</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO1</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO2</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO2</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO3</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO3</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO4</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO4</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO5</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO5</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO6</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO6</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO7</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO7</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO8</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO8</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO17</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO17</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/AEF_1</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/AEF_1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/AFF_1</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/AFF_1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/w_gctr_cia_S0</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/w_gctr_cia_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/w_gctr_cia_S1</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/w_gctr_cia_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/co1</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/co1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/r_gctr_cia_S0</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/r_gctr_cia_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/r_gctr_cia_S1</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/r_gctr_cia_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/co1_1</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/co1_1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/empty_cmp_ci_a_S0</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/empty_cmp_ci_a_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/empty_cmp_ci_a_S1</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/empty_cmp_ci_a_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/a0_COUT</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/a0_COUT</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/a0_S1</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/a0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/full_cmp_ci_a_S0</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/full_cmp_ci_a_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/full_cmp_ci_a_S1</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/full_cmp_ci_a_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/a1_COUT</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/a1_COUT</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/a1_S1</Dynamic>
+            <Navigation>u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/a1_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>79</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Synplify_Synthesis">
+        <Message>
+            <ID>2011000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG1249 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v&quot;:292:11:292:15|Redeclaration of implicit signal w_LP0</Dynamic>
+            <Navigation>CG1249</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v</Navigation>
+            <Navigation>292</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>292</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>Redeclaration of implicit signal w_LP0</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG1337 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v&quot;:122:18:122:24|Net bit_clk is not declared.</Dynamic>
+            <Navigation>CG1337</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v</Navigation>
+            <Navigation>122</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>122</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>Net bit_clk is not declared.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG1337 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v&quot;:123:15:123:24|Net bit_clk_90 is not declared.</Dynamic>
+            <Navigation>CG1337</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>Net bit_clk_90 is not declared.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG1337 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\oDDRx4.v&quot;:99:11:99:14|Net clk0 is not declared.</Dynamic>
+            <Navigation>CG1337</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\oDDRx4.v</Navigation>
+            <Navigation>99</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>99</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>Net clk0 is not declared.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG1337 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\oDDRx4.v&quot;:100:11:100:14|Net clk2 is not declared.</Dynamic>
+            <Navigation>CG1337</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\oDDRx4.v</Navigation>
+            <Navigation>100</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>100</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>Net clk2 is not declared.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG1337 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\oDDRx4.v&quot;:101:11:101:14|Net clk4 is not declared.</Dynamic>
+            <Navigation>CG1337</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\oDDRx4.v</Navigation>
+            <Navigation>101</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>101</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>Net clk4 is not declared.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG1337 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\oDDRx4.v&quot;:102:11:102:14|Net clk6 is not declared.</Dynamic>
+            <Navigation>CG1337</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\oDDRx4.v</Navigation>
+            <Navigation>102</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>102</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>Net clk6 is not declared.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG1337 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v&quot;:68:12:68:21|Net start_data is not declared.</Dynamic>
+            <Navigation>CG1337</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v</Navigation>
+            <Navigation>68</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>68</Navigation>
+            <Navigation>21</Navigation>
+            <Navigation>Net start_data is not declared.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG1337 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v&quot;:69:12:69:23|Net start_escape is not declared.</Dynamic>
+            <Navigation>CG1337</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v</Navigation>
+            <Navigation>69</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>69</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>Net start_escape is not declared.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG1337 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v&quot;:70:12:70:20|Net stop_data is not declared.</Dynamic>
+            <Navigation>CG1337</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v</Navigation>
+            <Navigation>70</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>70</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>Net stop_data is not declared.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG921 :&quot;C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v&quot;:39:11:39:17|lcd_rst is already declared in this scope.</Dynamic>
+            <Navigation>CG921</Navigation>
+            <Navigation>C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v</Navigation>
+            <Navigation>39</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>39</Navigation>
+            <Navigation>17</Navigation>
+            <Navigation>lcd_rst is already declared in this scope.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG921 :&quot;C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v&quot;:40:11:40:20|lcd_1v8_en is already declared in this scope.</Dynamic>
+            <Navigation>CG921</Navigation>
+            <Navigation>C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v</Navigation>
+            <Navigation>40</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>40</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>lcd_1v8_en is already declared in this scope.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG921 :&quot;C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v&quot;:41:11:41:20|lcd_3v0_en is already declared in this scope.</Dynamic>
+            <Navigation>CG921</Navigation>
+            <Navigation>C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v</Navigation>
+            <Navigation>41</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>41</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>lcd_3v0_en is already declared in this scope.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v&quot;:49:0:49:5|Pruning unused register timer_out. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v</Navigation>
+            <Navigation>49</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>49</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning unused register timer_out. Make sure that there are no unused intermediate registers.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG146 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\parallel2byte_bb.v&quot;:49:7:49:19|Creating black box for empty module parallel2byte_24s_1s_62</Dynamic>
+            <Navigation>CG146</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\parallel2byte_bb.v</Navigation>
+            <Navigation>49</Navigation>
+            <Navigation>7</Navigation>
+            <Navigation>49</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>Creating black box for empty module parallel2byte_24s_1s_62</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG146 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\packetheader_bb.v&quot;:49:7:49:18|Creating black box for empty module packetheader_1s</Dynamic>
+            <Navigation>CG146</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\packetheader_bb.v</Navigation>
+            <Navigation>49</Navigation>
+            <Navigation>7</Navigation>
+            <Navigation>49</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>Creating black box for empty module packetheader_1s</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG146 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\crc16_1lane_bb.v&quot;:49:7:49:17|Creating black box for empty module crc16_1lane</Dynamic>
+            <Navigation>CG146</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\crc16_1lane_bb.v</Navigation>
+            <Navigation>49</Navigation>
+            <Navigation>7</Navigation>
+            <Navigation>49</Navigation>
+            <Navigation>17</Navigation>
+            <Navigation>Creating black box for empty module crc16_1lane</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CS263 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\BYTE_PACKETIZER.v&quot;:148:27:148:35|Port-width mismatch for port data. The port definition is 8 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.</Dynamic>
+            <Navigation>CS263</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\BYTE_PACKETIZER.v</Navigation>
+            <Navigation>148</Navigation>
+            <Navigation>27</Navigation>
+            <Navigation>148</Navigation>
+            <Navigation>35</Navigation>
+            <Navigation>Port-width mismatch for port data. The port definition is 8 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CS263 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v&quot;:127:162:127:196|Port-width mismatch for port dataout. The port definition is 32 bits, but the actual port connection bit width is 11. Adjust either the definition or the instantiation of this port.</Dynamic>
+            <Navigation>CS263</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v</Navigation>
+            <Navigation>127</Navigation>
+            <Navigation>162</Navigation>
+            <Navigation>127</Navigation>
+            <Navigation>196</Navigation>
+            <Navigation>Port-width mismatch for port dataout. The port definition is 32 bits, but the actual port connection bit width is 11. Adjust either the definition or the instantiation of this port.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CS263 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v&quot;:155:20:155:26|Port-width mismatch for port lp1_out. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.</Dynamic>
+            <Navigation>CS263</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v</Navigation>
+            <Navigation>155</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>155</Navigation>
+            <Navigation>26</Navigation>
+            <Navigation>Port-width mismatch for port lp1_out. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CS263 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v&quot;:156:20:156:26|Port-width mismatch for port lp2_out. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.</Dynamic>
+            <Navigation>CS263</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v</Navigation>
+            <Navigation>156</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>156</Navigation>
+            <Navigation>26</Navigation>
+            <Navigation>Port-width mismatch for port lp2_out. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CS263 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v&quot;:157:20:157:26|Port-width mismatch for port lp3_out. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.</Dynamic>
+            <Navigation>CS263</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v</Navigation>
+            <Navigation>157</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>157</Navigation>
+            <Navigation>26</Navigation>
+            <Navigation>Port-width mismatch for port lp3_out. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CS263 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v&quot;:160:19:160:24|Port-width mismatch for port lp1_in. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.</Dynamic>
+            <Navigation>CS263</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v</Navigation>
+            <Navigation>160</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>160</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>Port-width mismatch for port lp1_in. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CS263 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v&quot;:161:19:161:24|Port-width mismatch for port lp2_in. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.</Dynamic>
+            <Navigation>CS263</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v</Navigation>
+            <Navigation>161</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>161</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>Port-width mismatch for port lp2_in. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CS263 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v&quot;:162:19:162:24|Port-width mismatch for port lp3_in. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.</Dynamic>
+            <Navigation>CS263</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v</Navigation>
+            <Navigation>162</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>162</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>Port-width mismatch for port lp3_in. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v&quot;:113:53:113:64|Index into variable q_oneh_data could be out of range - a simulation mismatch is possible</Dynamic>
+            <Navigation></Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v</Navigation>
+            <Navigation>113</Navigation>
+            <Navigation>53</Navigation>
+            <Navigation>113</Navigation>
+            <Navigation>64</Navigation>
+            <Navigation>Index into variable q_oneh_data could be out of range - a simulation mismatch is possible</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v&quot;:116:53:116:64|Index into variable q_oneh_data could be out of range - a simulation mismatch is possible</Dynamic>
+            <Navigation></Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v</Navigation>
+            <Navigation>116</Navigation>
+            <Navigation>53</Navigation>
+            <Navigation>116</Navigation>
+            <Navigation>64</Navigation>
+            <Navigation>Index into variable q_oneh_data could be out of range - a simulation mismatch is possible</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v&quot;:89:5:89:10|Optimizing register bit q_oneh_data[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v</Navigation>
+            <Navigation>89</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>89</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Optimizing register bit q_oneh_data[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v&quot;:89:5:89:10|Optimizing register bit q_oneh_data[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v</Navigation>
+            <Navigation>89</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>89</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Optimizing register bit q_oneh_data[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v&quot;:89:5:89:10|Optimizing register bit q_oneh_data[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v</Navigation>
+            <Navigation>89</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>89</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Optimizing register bit q_oneh_data[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v&quot;:89:5:89:10|Optimizing register bit q_oneh_data[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v</Navigation>
+            <Navigation>89</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>89</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Optimizing register bit q_oneh_data[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v&quot;:89:5:89:10|Pruning register bits 5 to 4 of q_oneh_data[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v</Navigation>
+            <Navigation>89</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>89</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Pruning register bits 5 to 4 of q_oneh_data[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v&quot;:89:5:89:10|Pruning register bits 1 to 0 of q_oneh_data[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v</Navigation>
+            <Navigation>89</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>89</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Pruning register bits 1 to 0 of q_oneh_data[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CS263 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v&quot;:190:28:190:29|Port-width mismatch for port VC. The port definition is 2 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.</Dynamic>
+            <Navigation>CS263</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v</Navigation>
+            <Navigation>190</Navigation>
+            <Navigation>28</Navigation>
+            <Navigation>190</Navigation>
+            <Navigation>29</Navigation>
+            <Navigation>Port-width mismatch for port VC. The port definition is 2 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CS263 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v&quot;:200:28:200:31|Port-width mismatch for port EoTp. The port definition is 1 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.</Dynamic>
+            <Navigation>CS263</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v</Navigation>
+            <Navigation>200</Navigation>
+            <Navigation>28</Navigation>
+            <Navigation>200</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>Port-width mismatch for port EoTp. The port definition is 1 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v&quot;:78:4:78:9|Optimizing register bit pixcnt[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v</Navigation>
+            <Navigation>78</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>78</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit pixcnt[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v&quot;:78:4:78:9|Optimizing register bit pixcnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v</Navigation>
+            <Navigation>78</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>78</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit pixcnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v&quot;:78:4:78:9|Optimizing register bit linecnt[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v</Navigation>
+            <Navigation>78</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>78</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit linecnt[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v&quot;:78:4:78:9|Optimizing register bit linecnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v</Navigation>
+            <Navigation>78</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>78</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit linecnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v&quot;:78:4:78:9|Pruning register bits 11 to 10 of linecnt[11:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v</Navigation>
+            <Navigation>78</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>78</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Pruning register bits 11 to 10 of linecnt[11:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v&quot;:78:4:78:9|Pruning register bits 11 to 10 of pixcnt[11:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v</Navigation>
+            <Navigation>78</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>78</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Pruning register bits 11 to 10 of pixcnt[11:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL157 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v&quot;:106:16:106:18|*Output LED has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.</Dynamic>
+            <Navigation>CL157</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v</Navigation>
+            <Navigation>106</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>106</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>*Output LED has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v&quot;:89:5:89:10|Optimizing register bit bitcntr[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v</Navigation>
+            <Navigation>89</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>89</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Optimizing register bit bitcntr[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v&quot;:89:5:89:10|Pruning register bit 5 of bitcntr[5:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v</Navigation>
+            <Navigation>89</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>89</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Pruning register bit 5 of bitcntr[5:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v&quot;:89:5:89:10|Pruning register bits 29 to 28 of q_oneh_data[31:6]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v</Navigation>
+            <Navigation>89</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>89</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Pruning register bits 29 to 28 of q_oneh_data[31:6]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v&quot;:89:5:89:10|Pruning register bits 25 to 24 of q_oneh_data[31:6]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v</Navigation>
+            <Navigation>89</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>89</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Pruning register bits 25 to 24 of q_oneh_data[31:6]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v&quot;:89:5:89:10|Pruning register bits 21 to 20 of q_oneh_data[31:6]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v</Navigation>
+            <Navigation>89</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>89</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Pruning register bits 21 to 20 of q_oneh_data[31:6]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v&quot;:89:5:89:10|Pruning register bits 17 to 16 of q_oneh_data[31:6]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v</Navigation>
+            <Navigation>89</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>89</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Pruning register bits 17 to 16 of q_oneh_data[31:6]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v&quot;:89:5:89:10|Pruning register bits 13 to 12 of q_oneh_data[31:6]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v</Navigation>
+            <Navigation>89</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>89</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Pruning register bits 13 to 12 of q_oneh_data[31:6]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v&quot;:89:5:89:10|Pruning register bit 9 of q_oneh_data[31:6]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v</Navigation>
+            <Navigation>89</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>89</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Pruning register bit 9 of q_oneh_data[31:6]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v&quot;:67:3:67:8|Optimizing register bit wait_cnt[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v</Navigation>
+            <Navigation>67</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>67</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Optimizing register bit wait_cnt[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v&quot;:67:3:67:8|Pruning register bit 15 of wait_cnt[15:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v</Navigation>
+            <Navigation>67</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>67</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Pruning register bit 15 of wait_cnt[15:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v&quot;:67:3:67:8|Optimizing register bit wait_cnt[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v</Navigation>
+            <Navigation>67</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>67</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Optimizing register bit wait_cnt[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v&quot;:67:3:67:8|Pruning register bit 14 of wait_cnt[14:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v</Navigation>
+            <Navigation>67</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>67</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Pruning register bit 14 of wait_cnt[14:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v&quot;:67:3:67:8|Optimizing register bit wait_cnt[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v</Navigation>
+            <Navigation>67</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>67</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Optimizing register bit wait_cnt[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v&quot;:67:3:67:8|Pruning register bit 13 of wait_cnt[13:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v</Navigation>
+            <Navigation>67</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>67</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Pruning register bit 13 of wait_cnt[13:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v&quot;:67:3:67:8|Optimizing register bit wait_cnt[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v</Navigation>
+            <Navigation>67</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>67</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Optimizing register bit wait_cnt[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v&quot;:67:3:67:8|Pruning register bit 12 of wait_cnt[12:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v</Navigation>
+            <Navigation>67</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>67</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Pruning register bit 12 of wait_cnt[12:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL156 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v&quot;:127:162:127:196|*Input un1_byte_D0[31:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Dynamic>
+            <Navigation>CL156</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v</Navigation>
+            <Navigation>127</Navigation>
+            <Navigation>162</Navigation>
+            <Navigation>127</Navigation>
+            <Navigation>196</Navigation>
+            <Navigation>*Input un1_byte_D0[31:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL156 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v&quot;:150:20:150:26|*Input lp1_dir to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Dynamic>
+            <Navigation>CL156</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v</Navigation>
+            <Navigation>150</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>150</Navigation>
+            <Navigation>26</Navigation>
+            <Navigation>*Input lp1_dir to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL156 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v&quot;:151:20:151:26|*Input lp2_dir to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Dynamic>
+            <Navigation>CL156</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v</Navigation>
+            <Navigation>151</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>151</Navigation>
+            <Navigation>26</Navigation>
+            <Navigation>*Input lp2_dir to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL156 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v&quot;:152:20:152:26|*Input lp3_dir to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Dynamic>
+            <Navigation>CL156</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v</Navigation>
+            <Navigation>152</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>152</Navigation>
+            <Navigation>26</Navigation>
+            <Navigation>*Input lp3_dir to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL156 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v&quot;:155:20:155:26|*Input un1_lp1_out[1:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Dynamic>
+            <Navigation>CL156</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v</Navigation>
+            <Navigation>155</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>155</Navigation>
+            <Navigation>26</Navigation>
+            <Navigation>*Input un1_lp1_out[1:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL156 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v&quot;:156:20:156:26|*Input un1_lp2_out[1:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Dynamic>
+            <Navigation>CL156</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v</Navigation>
+            <Navigation>156</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>156</Navigation>
+            <Navigation>26</Navigation>
+            <Navigation>*Input un1_lp2_out[1:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL156 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v&quot;:157:20:157:26|*Input un1_lp3_out[1:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Dynamic>
+            <Navigation>CL156</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v</Navigation>
+            <Navigation>157</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>157</Navigation>
+            <Navigation>26</Navigation>
+            <Navigation>*Input un1_lp3_out[1:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v&quot;:118:4:118:9|Optimizing register bit hs_extended[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v</Navigation>
+            <Navigation>118</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>118</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit hs_extended[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v&quot;:118:4:118:9|Optimizing register bit hs_extended[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v</Navigation>
+            <Navigation>118</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>118</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit hs_extended[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v&quot;:118:4:118:9|Optimizing register bit hs_extended[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v</Navigation>
+            <Navigation>118</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>118</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit hs_extended[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v&quot;:118:4:118:9|Optimizing register bit hs_extended[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v</Navigation>
+            <Navigation>118</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>118</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit hs_extended[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v&quot;:118:4:118:9|Optimizing register bit hs_extended[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v</Navigation>
+            <Navigation>118</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>118</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit hs_extended[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v&quot;:118:4:118:9|Optimizing register bit hs_extended[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v</Navigation>
+            <Navigation>118</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>118</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit hs_extended[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v&quot;:118:4:118:9|Optimizing register bit hs_extended[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v</Navigation>
+            <Navigation>118</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>118</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit hs_extended[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v&quot;:118:4:118:9|Optimizing register bit hs_extended[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v</Navigation>
+            <Navigation>118</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>118</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit hs_extended[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v&quot;:118:4:118:9|Optimizing register bit hs_extended[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v</Navigation>
+            <Navigation>118</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>118</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit hs_extended[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v&quot;:118:4:118:9|Optimizing register bit hs_extended[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v</Navigation>
+            <Navigation>118</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>118</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit hs_extended[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v&quot;:118:4:118:9|Pruning register bits 15 to 6 of hs_extended[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v</Navigation>
+            <Navigation>118</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>118</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Pruning register bits 15 to 6 of hs_extended[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v&quot;:49:0:49:5|Optimizing register bit timer[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v</Navigation>
+            <Navigation>49</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>49</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit timer[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v&quot;:49:0:49:5|Pruning register bit 15 of timer[15:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v</Navigation>
+            <Navigation>49</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>49</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 15 of timer[15:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\oddrx4.v&quot;:81:12:81:15|Found inferred clock oDDRx4|sclk_inferred_clock which controls 4 sequential elements including u_DPHY_TX_INST.u_oDDRx4.FF_3. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Navigation>MT529</Navigation>
+            <Navigation>c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\oddrx4.v</Navigation>
+            <Navigation>81</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>81</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>Found inferred clock oDDRx4|sclk_inferred_clock which controls 4 sequential elements including u_DPHY_TX_INST.u_oDDRx4.FF_3. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;c:\users\suhail\documents\github\ice40ultrawearablereferencedesigns\mipi dsi tx bridge\parallel2dsi_rd1184_rgb888_1lane_v2_latest\rtl\pwr_sq_ctrl.v&quot;:76:0:76:5|Found inferred clock top|PIXCLK which controls 74 sequential elements including LCD_Power_Controller.state[7:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Navigation>MT529</Navigation>
+            <Navigation>c:\users\suhail\documents\github\ice40ultrawearablereferencedesigns\mipi dsi tx bridge\parallel2dsi_rd1184_rgb888_1lane_v2_latest\rtl\pwr_sq_ctrl.v</Navigation>
+            <Navigation>76</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>76</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Found inferred clock top|PIXCLK which controls 74 sequential elements including LCD_Power_Controller.state[7:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v&quot;:109:5:109:10|Found inferred clock pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock which controls 193 sequential elements including u_BYTE_PACKETIZER.q_WC[15:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Navigation>MT529</Navigation>
+            <Navigation>c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v</Navigation>
+            <Navigation>109</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>109</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Found inferred clock pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock which controls 193 sequential elements including u_BYTE_PACKETIZER.q_WC[15:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN114 :&quot;c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\oddrx4.v&quot;:116:12:116:25|Removing instance u_oDDRx4.Inst5_ODDRX4B1 (in view: work.DPHY_TX_INST(verilog)) of black box view:work.ODDRX4B(verilog) because it does not drive other instances.</Dynamic>
+            <Navigation>BN114</Navigation>
+            <Navigation>c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\oddrx4.v</Navigation>
+            <Navigation>116</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>116</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>Removing instance u_oDDRx4.Inst5_ODDRX4B1 (in view: work.DPHY_TX_INST(verilog)) of black box view:work.ODDRX4B(verilog) because it does not drive other instances.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN114 :&quot;c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\oddrx4.v&quot;:112:12:112:25|Removing instance u_oDDRx4.Inst5_ODDRX4B2 (in view: work.DPHY_TX_INST(verilog)) of black box view:work.ODDRX4B(verilog) because it does not drive other instances.</Dynamic>
+            <Navigation>BN114</Navigation>
+            <Navigation>c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\oddrx4.v</Navigation>
+            <Navigation>112</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>112</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>Removing instance u_oDDRx4.Inst5_ODDRX4B2 (in view: work.DPHY_TX_INST(verilog)) of black box view:work.ODDRX4B(verilog) because it does not drive other instances.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN114 :&quot;c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\oddrx4.v&quot;:108:12:108:25|Removing instance u_oDDRx4.Inst5_ODDRX4B3 (in view: work.DPHY_TX_INST(verilog)) of black box view:work.ODDRX4B(verilog) because it does not drive other instances.</Dynamic>
+            <Navigation>BN114</Navigation>
+            <Navigation>c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\oddrx4.v</Navigation>
+            <Navigation>108</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>108</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>Removing instance u_oDDRx4.Inst5_ODDRX4B3 (in view: work.DPHY_TX_INST(verilog)) of black box view:work.ODDRX4B(verilog) because it does not drive other instances.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[15] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[14]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v</Navigation>
+            <Navigation>109</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>109</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[15] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[14]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[14] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[13]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v</Navigation>
+            <Navigation>109</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>109</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[14] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[13]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[13] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v</Navigation>
+            <Navigation>109</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>109</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[13] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[12] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v</Navigation>
+            <Navigation>109</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>109</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[12] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[11] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v</Navigation>
+            <Navigation>109</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>109</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[11] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[8] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v</Navigation>
+            <Navigation>109</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>109</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[8] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[5] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v</Navigation>
+            <Navigation>109</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>109</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[5] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[3] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v</Navigation>
+            <Navigation>109</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>109</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[3] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[2] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v</Navigation>
+            <Navigation>109</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>109</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[2] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[1] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v</Navigation>
+            <Navigation>109</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>109</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[1] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT246 :&quot;c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\oddrx4.v&quot;:132:14:132:28|Blackbox ECLKSYNCA is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Navigation>MT246</Navigation>
+            <Navigation>c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\oddrx4.v</Navigation>
+            <Navigation>132</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>132</Navigation>
+            <Navigation>28</Navigation>
+            <Navigation>Blackbox ECLKSYNCA is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT246 :&quot;c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\oddrx4.v&quot;:129:12:129:24|Blackbox CLKDIVC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Navigation>MT246</Navigation>
+            <Navigation>c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\oddrx4.v</Navigation>
+            <Navigation>129</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>129</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>Blackbox CLKDIVC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT246 :&quot;c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\oddrx4.v&quot;:120:12:120:25|Blackbox ODDRX4B is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Navigation>MT246</Navigation>
+            <Navigation>c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\oddrx4.v</Navigation>
+            <Navigation>120</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>120</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>Blackbox ODDRX4B is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT246 :&quot;c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v&quot;:144:26:144:32|Blackbox crc16_1lane is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Navigation>MT246</Navigation>
+            <Navigation>c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v</Navigation>
+            <Navigation>144</Navigation>
+            <Navigation>26</Navigation>
+            <Navigation>144</Navigation>
+            <Navigation>32</Navigation>
+            <Navigation>Blackbox crc16_1lane is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT246 :&quot;c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v&quot;:123:8:123:21|Blackbox packetheader_1s is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Navigation>MT246</Navigation>
+            <Navigation>c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>21</Navigation>
+            <Navigation>Blackbox packetheader_1s is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT246 :&quot;c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v&quot;:89:8:89:22|Blackbox parallel2byte_24s_1s_62 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Navigation>MT246</Navigation>
+            <Navigation>c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v</Navigation>
+            <Navigation>89</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>89</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>Blackbox parallel2byte_24s_1s_62 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT246 :&quot;c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\ipexpress\pll_pix2byte_rgb888_1lane.v&quot;:69:12:69:20|Blackbox EHXPLLJ is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Navigation>MT246</Navigation>
+            <Navigation>c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\ipexpress\pll_pix2byte_rgb888_1lane.v</Navigation>
+            <Navigation>69</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>69</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>Blackbox EHXPLLJ is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT420 |Found inferred clock top|PIXCLK with period 1000.00ns. Please declare a user-defined clock on object &quot;p:PIXCLK&quot;</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock top|PIXCLK with period 1000.00ns. Please declare a user-defined clock on object &quot;p:PIXCLK&quot;</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT420 |Found inferred clock oDDRx4|sclk_inferred_clock with period 1000.00ns. Please declare a user-defined clock on object &quot;n:u_DPHY_TX_INST.u_oDDRx4.sclk&quot;</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock oDDRx4|sclk_inferred_clock with period 1000.00ns. Please declare a user-defined clock on object &quot;n:u_DPHY_TX_INST.u_oDDRx4.sclk&quot;</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT420 |Found inferred clock pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock with period 1000.00ns. Please declare a user-defined clock on object &quot;n:u_pll_pix2byte_RGB888_1lane.CLKOS2&quot;</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock with period 1000.00ns. Please declare a user-defined clock on object &quot;n:u_pll_pix2byte_RGB888_1lane.CLKOS2&quot;</Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>

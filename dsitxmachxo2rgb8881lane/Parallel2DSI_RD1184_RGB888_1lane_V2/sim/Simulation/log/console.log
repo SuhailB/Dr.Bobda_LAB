@@ -1,0 +1,290 @@
+designverincludedir -clear
+designverlibrarysim -PL -clear
+designverlibrarysim -L -clear
+designverlibrarysim -PL pmi_work
+designverlibrarysim ovi_machxo2
+designverdefinemacro -clear
+removefile -Y -D *
+addfile {C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/tb/parallel2byte_24s_1s_3E.vo}
+# Adding file C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\tb\parallel2byte_24s_1s_3E.vo ... Done
+addfile {C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/tb/packetheader_1s.vo}
+# Adding file C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\tb\packetheader_1s.vo ... Done
+addfile {C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/tb/crc16_1lane.vo}
+# Adding file C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\tb\crc16_1lane.vo ... Done
+addfile {C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/colorbar_gen.v}
+# Adding file C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v ... Done
+addfile {C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/DCS_Encoder.v}
+# Adding file C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v ... Done
+addfile {C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/DCS_ROM.v}
+# Adding file C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v ... Done
+addfile {C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/IO_Controller_TX.v}
+# Adding file C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\IO_Controller_TX.v ... Done
+addfile {C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/oDDRx4.v}
+# Adding file C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\oDDRx4.v ... Done
+addfile {C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/DPHY_TX_INST.v}
+# Adding file C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v ... Done
+addfile {C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/LP_HS_dly_ctrl.v}
+# Adding file C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v ... Done
+addfile {C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/BYTE_PACKETIZER.v}
+# Adding file C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\BYTE_PACKETIZER.v ... Done
+addfile {C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/IPExpress/pll_pix2byte_RGB888_1lane.v}
+# Adding file C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\IPExpress\pll_pix2byte_RGB888_1lane.v ... Done
+addfile {C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/top.v}
+# Adding file C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v ... Done
+addfile {C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/tb/Parallel2DSI_tb_1lane.v}
+# Adding file C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\tb\Parallel2DSI_tb_1lane.v ... Done
+addfile {C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/compiler_directives.v}
+# Adding file C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\compiler_directives.v ... Done
+vlib {C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/work}
+# Warning: Library work already exists
+adel -all
+# Library contents cleared.
+vlog -dbg {C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/tb/parallel2byte_24s_1s_3E.vo}
+vlog -dbg {C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/tb/packetheader_1s.vo}
+vlog -dbg {C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/tb/crc16_1lane.vo}
+vlog -dbg -work work {C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/colorbar_gen.v}
+vlog -dbg -work work {C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/DCS_Encoder.v}
+vlog -dbg -work work {C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/DCS_ROM.v}
+vlog -dbg -work work {C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/IO_Controller_TX.v}
+vlog -dbg -work work {C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/oDDRx4.v}
+vlog -dbg -work work {C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/DPHY_TX_INST.v}
+vlog -dbg -work work {C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/LP_HS_dly_ctrl.v}
+vlog -dbg -work work {C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/BYTE_PACKETIZER.v}
+vlog -dbg -work work {C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/IPExpress/pll_pix2byte_RGB888_1lane.v}
+vlog -dbg -work work {C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/top.v}
+vlog -dbg {C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/tb/Parallel2DSI_tb_1lane.v}
+vlog -dbg -work work {C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/compiler_directives.v}
+module Parallel2DSI_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'colorbar_gen' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'BYTE_PACKETIZER' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'LP_HS_DELAY_CNTRL' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'DPHY_TX_INST' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'DCS_ROM' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'DCS_Encoder' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'IO_Controller_TX' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.4 [s].
+vsim +access +r Parallel2DSI_tb -PL pmi_work -L ovi_machxo2
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'colorbar_gen' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'BYTE_PACKETIZER' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'LP_HS_DELAY_CNTRL' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'DPHY_TX_INST' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'DCS_ROM' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'DCS_Encoder' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'IO_Controller_TX' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.4 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 10fs.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELBREAD: Warning: Parameter 'word_width' not found in work.parallel2byte instantiated in unit work.BYTE_PACKETIZER.
+# ELBREAD: Warning: Parameter 'lane_width' not found in work.parallel2byte instantiated in unit work.BYTE_PACKETIZER.
+# ELBREAD: Warning: Parameter 'dt' not found in work.parallel2byte instantiated in unit work.BYTE_PACKETIZER.
+# ELBREAD: Warning: Parameter 'lane_width' not found in work.packetheader instantiated in unit work.BYTE_PACKETIZER.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: top.v (133): Length of connection (32) does not match the length of port "VC" (2) on instance "/Parallel2DSI_tb/u_top/u_BYTE_PACKETIZER".
+# SLP: Warning: top.v (133): Length of connection (32) does not match the length of port "EoTp" (1) on instance "/Parallel2DSI_tb/u_top/u_BYTE_PACKETIZER".
+# SLP: Warning: BYTE_PACKETIZER.v (144): Length of connection (32) does not match the length of port "data" (8) on instance "/Parallel2DSI_tb/u_top/u_BYTE_PACKETIZER/genblk1/u_crc16".
+# SLP: Warning: DPHY_TX_INST.v (129): Length of connection (1) does not match the length of port "lp1_out" (2) on instance "/Parallel2DSI_tb/u_top/u_DPHY_TX_INST/u_IO_Controller_TX".
+# SLP: Warning: DPHY_TX_INST.v (129): Length of connection (1) does not match the length of port "lp2_out" (2) on instance "/Parallel2DSI_tb/u_top/u_DPHY_TX_INST/u_IO_Controller_TX".
+# SLP: Warning: DPHY_TX_INST.v (129): Length of connection (1) does not match the length of port "lp3_out" (2) on instance "/Parallel2DSI_tb/u_top/u_DPHY_TX_INST/u_IO_Controller_TX".
+# SLP: Warning: DPHY_TX_INST.v (129): Length of connection (1) does not match the length of port "lp1_in" (2) on instance "/Parallel2DSI_tb/u_top/u_DPHY_TX_INST/u_IO_Controller_TX".
+# SLP: Warning: DPHY_TX_INST.v (129): Length of connection (1) does not match the length of port "lp2_in" (2) on instance "/Parallel2DSI_tb/u_top/u_DPHY_TX_INST/u_IO_Controller_TX".
+# SLP: Warning: DPHY_TX_INST.v (129): Length of connection (1) does not match the length of port "lp3_in" (2) on instance "/Parallel2DSI_tb/u_top/u_DPHY_TX_INST/u_IO_Controller_TX".
+# SLP: Warning: DPHY_TX_INST.v (127): Length of connection (11) does not match the length of port "dataout" (32) on instance "/Parallel2DSI_tb/u_top/u_DPHY_TX_INST/u_oDDRx4".
+# SLP: Elaboration phase ... done : 0.3 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 1.1 [s]
+# SLP: Finished : 1.4 [s]
+# SLP: 4558 (68.46%) primitives and 2100 (31.54%) other processes in SLP
+# SLP: 20810 (99.96%) signals in SLP and 9 (0.04%) interface signals
+# ELAB2: Elaboration final pass complete - time: 2.2 [s].
+# KERNEL: SLP loading done - time: 1.6 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 9127 kB (elbread=3353 elab2=5485 kernel=289 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\sim\Simulation\src\wave.asdb
+#  3:50 PM, Monday, August 6, 2018
+#  Simulation has been initialized
+add wave *
+# 10 signal(s) traced.
+run 1000ns
+# Waveform file 'untitled.awc' connected to 'C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/src/wave.asdb'.
+# KERNEL: stopped at time: 1 us
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'colorbar_gen' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'BYTE_PACKETIZER' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'LP_HS_DELAY_CNTRL' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'DPHY_TX_INST' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'DCS_ROM' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'DCS_Encoder' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'IO_Controller_TX' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.4 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 10fs.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELBREAD: Warning: Parameter 'word_width' not found in work.parallel2byte instantiated in unit work.BYTE_PACKETIZER.
+# ELBREAD: Warning: Parameter 'lane_width' not found in work.parallel2byte instantiated in unit work.BYTE_PACKETIZER.
+# ELBREAD: Warning: Parameter 'dt' not found in work.parallel2byte instantiated in unit work.BYTE_PACKETIZER.
+# ELBREAD: Warning: Parameter 'lane_width' not found in work.packetheader instantiated in unit work.BYTE_PACKETIZER.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, using existing simulator library: 0.1 [s]
+# SLP: Finished : 0.1 [s]
+# SLP: 4558 (68.46%) primitives and 2100 (31.54%) other processes in SLP
+# SLP: 20810 (99.96%) signals in SLP and 9 (0.04%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.9 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 9127 kB (elbread=3353 elab2=5485 kernel=289 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\sim\Simulation\src\wave.asdb
+#  3:51 PM, Monday, August 6, 2018
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/src/wave.asdb'.
+run
+# KERNEL: stopped at time: 564018000010 fs
+alog -O2 -sve -msg 5 -sv2k12 -work work $dsn/../../tb/parallel2byte_24s_1s_3E.vo $dsn/../../tb/packetheader_1s.vo $dsn/../../tb/crc16_1lane.vo $dsn/../../rtl/colorbar_gen.v $dsn/../../rtl/DCS_Encoder.v $dsn/../../rtl/DCS_ROM.v $dsn/../../rtl/IO_Controller_TX.v $dsn/../../rtl/oDDRx4.v $dsn/../../rtl/DPHY_TX_INST.v $dsn/../../rtl/LP_HS_dly_ctrl.v $dsn/../../rtl/BYTE_PACKETIZER.v $dsn/../../rtl/IPExpress/pll_pix2byte_RGB888_1lane.v $dsn/../../rtl/top.v $dsn/../../tb/Parallel2DSI_tb_1lane.v $dsn/../../rtl/compiler_directives.v
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: ELBREAD_0081 top.v (143): Design unit pwr_sq_ctrl instantiated in work.top not found in searched libraries: pmi_work, work, ovi_machxo2.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# 
+# Error: Cannot initialize simulation - no top level  entity/architecture or configuration is selected
+# Design: Design Simulation already active.
+# 
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: ELBREAD_0081 top.v (143): Design unit pwr_sq_ctrl instantiated in work.top not found in searched libraries: pmi_work, work, ovi_machxo2.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+alog -O2 -sve -msg 5 -sv2k12 -work work $dsn/../../tb/parallel2byte_24s_1s_3E.vo $dsn/../../tb/packetheader_1s.vo $dsn/../../tb/crc16_1lane.vo $dsn/../../rtl/colorbar_gen.v $dsn/../../rtl/DCS_Encoder.v $dsn/../../rtl/DCS_ROM.v $dsn/../../rtl/IO_Controller_TX.v $dsn/../../rtl/oDDRx4.v $dsn/../../rtl/DPHY_TX_INST.v $dsn/../../rtl/LP_HS_dly_ctrl.v $dsn/../../rtl/BYTE_PACKETIZER.v $dsn/../../rtl/IPExpress/pll_pix2byte_RGB888_1lane.v $dsn/../../rtl/top.v $dsn/../../tb/Parallel2DSI_tb_1lane.v $dsn/../../rtl/compiler_directives.v
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: ELBREAD_0081 top.v (143): Design unit pwr_sq_ctrl instantiated in work.top not found in searched libraries: pmi_work, work, ovi_machxo2.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: ELBREAD_0081 top.v (143): Design unit pwr_sq_ctrl instantiated in work.top not found in searched libraries: pmi_work, work, ovi_machxo2.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+alog -O2 -sve -msg 5 -sv2k12 -work work $dsn/../../tb/parallel2byte_24s_1s_3E.vo $dsn/../../tb/packetheader_1s.vo $dsn/../../tb/crc16_1lane.vo $dsn/../../rtl/colorbar_gen.v $dsn/../../rtl/DCS_Encoder.v $dsn/../../rtl/DCS_ROM.v $dsn/../../rtl/IO_Controller_TX.v $dsn/../../rtl/oDDRx4.v $dsn/../../rtl/DPHY_TX_INST.v $dsn/../../rtl/LP_HS_dly_ctrl.v $dsn/../../rtl/BYTE_PACKETIZER.v $dsn/../../rtl/IPExpress/pll_pix2byte_RGB888_1lane.v $dsn/../../rtl/top.v $dsn/../../tb/Parallel2DSI_tb_1lane.v $dsn/../../rtl/compiler_directives.v $dsn/src/pwr_sq_ctrl.v
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.4 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.4 [s].
+asim -O5 -L ovi_machxo2 -PL pmi_work +access +w_nets +accb +accr +access +r +access +r+w Parallel2DSI_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.4 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 10fs.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: top.v (176): Length of connection (32) does not match the length of port "VC" (2) on instance "/Parallel2DSI_tb/u_top/u_BYTE_PACKETIZER".
+# SLP: Warning: top.v (176): Length of connection (32) does not match the length of port "EoTp" (1) on instance "/Parallel2DSI_tb/u_top/u_BYTE_PACKETIZER".
+# SLP: Warning: BYTE_PACKETIZER.v (144): Length of connection (32) does not match the length of port "data" (8) on instance "/Parallel2DSI_tb/u_top/u_BYTE_PACKETIZER/genblk1/u_crc16".
+# SLP: Warning: DPHY_TX_INST.v (129): Length of connection (1) does not match the length of port "lp1_out" (2) on instance "/Parallel2DSI_tb/u_top/u_DPHY_TX_INST/u_IO_Controller_TX".
+# SLP: Warning: DPHY_TX_INST.v (129): Length of connection (1) does not match the length of port "lp2_out" (2) on instance "/Parallel2DSI_tb/u_top/u_DPHY_TX_INST/u_IO_Controller_TX".
+# SLP: Warning: DPHY_TX_INST.v (129): Length of connection (1) does not match the length of port "lp3_out" (2) on instance "/Parallel2DSI_tb/u_top/u_DPHY_TX_INST/u_IO_Controller_TX".
+# SLP: Warning: DPHY_TX_INST.v (129): Length of connection (1) does not match the length of port "lp1_in" (2) on instance "/Parallel2DSI_tb/u_top/u_DPHY_TX_INST/u_IO_Controller_TX".
+# SLP: Warning: DPHY_TX_INST.v (129): Length of connection (1) does not match the length of port "lp2_in" (2) on instance "/Parallel2DSI_tb/u_top/u_DPHY_TX_INST/u_IO_Controller_TX".
+# SLP: Warning: DPHY_TX_INST.v (129): Length of connection (1) does not match the length of port "lp3_in" (2) on instance "/Parallel2DSI_tb/u_top/u_DPHY_TX_INST/u_IO_Controller_TX".
+# SLP: Warning: DPHY_TX_INST.v (127): Length of connection (11) does not match the length of port "dataout" (32) on instance "/Parallel2DSI_tb/u_top/u_DPHY_TX_INST/u_oDDRx4".
+# SLP: Elaboration phase ... done : 0.3 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 1.5 [s]
+# SLP: Finished : 1.8 [s]
+# SLP: 4558 (68.44%) primitives and 2102 (31.56%) other processes in SLP
+# SLP: 691 (3.23%) signals in SLP and 20150 (94.05%) interface signals
+# ELAB2: Elaboration final pass complete - time: 2.6 [s].
+# KERNEL: SLP loading done - time: 1.8 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 10635 kB (elbread=3353 elab2=6951 kernel=330 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\sim\Simulation\src\wave.asdb
+#  3:54 PM, Monday, August 6, 2018
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/src/wave.asdb'.
+# KERNEL: Warning: KERNEL_0291 Signal '/Parallel2DSI_tb/rstn' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/Parallel2DSI_tb/pixclk' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/Parallel2DSI_tb/DCK' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/Parallel2DSI_tb/D0' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/Parallel2DSI_tb/LPCLK' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/Parallel2DSI_tb/LP0' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/Parallel2DSI_tb/pixdata' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/Parallel2DSI_tb/vsync' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/Parallel2DSI_tb/hsync' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/Parallel2DSI_tb/de' has already been traced.
+# 1 signal(s) traced.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.4 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 10fs.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, using existing simulator library: 0.1 [s]
+# SLP: Finished : 0.1 [s]
+# SLP: 4558 (68.44%) primitives and 2102 (31.56%) other processes in SLP
+# SLP: 691 (3.23%) signals in SLP and 20150 (94.05%) interface signals
+# ELAB2: Elaboration final pass complete - time: 1.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 10635 kB (elbread=3353 elab2=6951 kernel=330 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\sim\Simulation\src\wave.asdb
+#  3:55 PM, Monday, August 6, 2018
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/sim/Simulation/src/wave.asdb'.
+run
+# KERNEL: stopped at time: 14815675 ns
+run
+# KERNEL: stopped at time: 67804208 ns
+run
+# KERNEL: stopped at time: 243832026666720 fs
+run
+# KERNEL: stopped at time: 244955162666720 fs
+run
+# KERNEL: stopped at time: 246353505333340 fs
+# 11 signal(s) traced.
+run
+# KERNEL: stopped at time: 246431658666720 fs
+run
+# KERNEL: stopped at time: 246512048 ns
+restart
+# ELBREAD: Elaboration process.
+# EL

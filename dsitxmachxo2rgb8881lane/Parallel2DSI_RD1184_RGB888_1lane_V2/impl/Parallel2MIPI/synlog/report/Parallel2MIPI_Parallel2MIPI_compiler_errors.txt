@@ -1,0 +1,2 @@
+@E: CG389 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\impl\Parallel2MIPI\reveal_workspace\tmpreveal\top_rvl.v":196:16:196:35|Reference to undefined module pwr_sq_ctrl
+

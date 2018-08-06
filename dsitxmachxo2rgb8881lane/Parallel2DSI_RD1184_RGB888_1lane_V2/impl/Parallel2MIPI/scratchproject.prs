@@ -1,0 +1,94 @@
+#--  Synopsys, Inc.
+#--  Version M-2017.03L-SP1-1
+#--  Project file C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\impl\Parallel2MIPI\scratchproject.prs
+
+#project files
+add_file -verilog "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/compiler_directives.v"
+add_file -verilog "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/top.v"
+add_file -verilog "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/IPExpress/pll_pix2byte_RGB888_1lane.v"
+add_file -verilog "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/DPHY_TX_INST.v"
+add_file -verilog "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/IO_Controller_TX.v"
+add_file -verilog "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/oDDRx4.v"
+add_file -verilog "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/colorbar_gen.v"
+add_file -verilog "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/DCS_Encoder.v"
+add_file -verilog "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/DCS_ROM.v"
+add_file -verilog "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/BYTE_PACKETIZER.v"
+add_file -verilog "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/crc16_1lane_bb.v"
+add_file -verilog "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/parallel2byte_bb.v"
+add_file -verilog "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/packetheader_bb.v"
+add_file -verilog "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/LP_HS_dly_ctrl.v"
+add_file -verilog "C:/Users/Suhail/Documents/GitHub/iCE40UltraWearableReferenceDesigns/MIPI DSI TX Bridge/Parallel2DSI_RD1184_RGB888_1lane_V2_latest/rtl/pwr_sq_ctrl.v"
+
+
+
+#implementation: "Parallel2MIPI"
+impl -add "C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\impl\Parallel2MIPI" -type fpga
+
+#
+#implementation attributes
+
+set_option -vlog_std v2001
+set_option -num_critical_paths 3
+set_option -num_startend_points 0
+set_option -project_relative_includes 1
+set_option -include_path {C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/impl/Parallel2MIPI/}
+set_option -include_path {C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/impl}
+
+#device options
+set_option -technology MACHXO2
+set_option -part LCMXO2_2000ZE
+set_option -package UWG49CTR
+set_option -speed_grade -1
+set_option -part_companion ""
+
+#compilation/mapping options
+set_option -top_module "top"
+
+# hdl_compiler_options
+set_option -distributed_compile 0
+
+# mapper_without_write_options
+set_option -frequency 1
+set_option -auto_constrain_io 1
+set_option -resolve_multiple_driver 1
+set_option -srs_instrumentation 1
+
+# mapper_options
+set_option -write_verilog 0
+set_option -write_vhdl 0
+
+# Lattice XP
+set_option -maxfan 100
+set_option -disable_io_insertion 0
+set_option -retiming 0
+set_option -pipe 0
+set_option -forcegsr false
+set_option -fix_gated_and_generated_clocks 1
+set_option -rw_check_on_ram 1
+set_option -update_models_cp 0
+set_option -syn_edif_array_rename 1
+set_option -Write_declared_clocks_only 1
+
+# NFilter
+set_option -no_sequential_opt 0
+
+# sequential_optimization_options
+set_option -symbolic_fsm_compiler 1
+
+# Compiler Options
+set_option -compiler_compatible 0
+set_option -resource_sharing 1
+set_option -multi_file_compilation_unit 1
+
+# Compiler Options
+set_option -auto_infer_blackbox 0
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+project -result_file "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/impl/Parallel2MIPI/Parallel2MIPI_Parallel2MIPI.edi"
+
+#set log file 
+set_option log_file "C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/impl/Parallel2MIPI/Parallel2MIPI_Parallel2MIPI.srf" 
+impl -active "Parallel2MIPI"

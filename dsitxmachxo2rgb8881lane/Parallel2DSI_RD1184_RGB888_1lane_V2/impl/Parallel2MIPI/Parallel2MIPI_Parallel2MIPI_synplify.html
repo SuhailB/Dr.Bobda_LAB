@@ -1,0 +1,762 @@
+<HTML>
+<HEAD><TITLE>Synthesis Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Syn"></A><B><U><big>Synthesis Report</big></U></B>
+#Build: Synplify Pro (R) M-2017.03L-SP1-1, Build 086R, Aug  4 2017
+#install: C:\lscc\diamond\3.10_x64\synpbase
+#OS: Windows 8 6.2
+#Hostname: DESKTOP-483ND9B
+
+# Mon Aug  6 16:39:38 2018
+
+#Implementation: Parallel2MIPI
+
+Synopsys HDL Compiler, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v" (library work)
+@I::"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\pmi_def.v" (library work)
+@I::"C:\lscc\diamond\3.10_x64\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\diamond\3.10_x64\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\lscc\diamond\3.10_x64\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\lscc\diamond\3.10_x64\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\compiler_directives.v" (library work)
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v" (library work)
+@W: CG1249 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v":292:11:292:15|Redeclaration of implicit signal w_LP0
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\IPExpress\pll_pix2byte_RGB888_1lane.v" (library work)
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v" (library work)
+@W: CG1337 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":122:18:122:24|Net bit_clk is not declared.
+@W: CG1337 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":123:15:123:24|Net bit_clk_90 is not declared.
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\IO_Controller_TX.v" (library work)
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\oDDRx4.v" (library work)
+@W: CG1337 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\oDDRx4.v":99:11:99:14|Net clk0 is not declared.
+@W: CG1337 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\oDDRx4.v":100:11:100:14|Net clk2 is not declared.
+@W: CG1337 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\oDDRx4.v":101:11:101:14|Net clk4 is not declared.
+@W: CG1337 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\oDDRx4.v":102:11:102:14|Net clk6 is not declared.
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v" (library work)
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v" (library work)
+@W: CG1337 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":68:12:68:21|Net start_data is not declared.
+@W: CG1337 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":69:12:69:23|Net start_escape is not declared.
+@W: CG1337 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":70:12:70:20|Net stop_data is not declared.
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v" (library work)
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\BYTE_PACKETIZER.v" (library work)
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\crc16_1lane_bb.v" (library work)
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\parallel2byte_bb.v" (library work)
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\packetheader_bb.v" (library work)
+@I::"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v" (library work)
+@I::"C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v" (library work)
+@W: CG921 :"C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v":39:11:39:17|lcd_rst is already declared in this scope.
+@W: CG921 :"C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v":40:11:40:20|lcd_1v8_en is already declared in this scope.
+@W: CG921 :"C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v":41:11:41:20|lcd_3v0_en is already declared in this scope.
+Verilog syntax check successful!
+File C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v changed - recompiling
+Selecting top level module top
+@N: CG364 :"C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v":18:7:18:17|Synthesizing module pwr_sq_ctrl in library work.
+@W: CL169 :"C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v":49:0:49:5|Pruning unused register timer_out. Make sure that there are no unused intermediate registers.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\parallel2byte_bb.v":49:7:49:19|Synthesizing module parallel2byte in library work.
+
+	word_width=32'b00000000000000000000000000011000
+	lane_width=32'b00000000000000000000000000000001
+	dt=6'b111110
+   Generated name = parallel2byte_24s_1s_62
+@W: CG146 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\parallel2byte_bb.v":49:7:49:19|Creating black box for empty module parallel2byte_24s_1s_62
+
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\packetheader_bb.v":49:7:49:18|Synthesizing module packetheader in library work.
+
+	lane_width=32'b00000000000000000000000000000001
+   Generated name = packetheader_1s
+@W: CG146 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\packetheader_bb.v":49:7:49:18|Creating black box for empty module packetheader_1s
+
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\BYTE_PACKETIZER.v":49:7:49:21|Synthesizing module BYTE_PACKETIZER in library work.
+
+	word_width=32'b00000000000000000000000000011000
+	lane_width=32'b00000000000000000000000000000001
+	dt=6'b111110
+	crc16=32'b00000000000000000000000000000001
+	version=32'b00000000000000000000000000000001
+   Generated name = BYTE_PACKETIZER_24s_1s_62_1s_1s
+@N: CG179 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\BYTE_PACKETIZER.v":117:53:117:56|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\BYTE_PACKETIZER.v":118:53:118:56|Removing redundant assignment.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\crc16_1lane_bb.v":49:7:49:17|Synthesizing module crc16_1lane in library work.
+@W: CG146 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\crc16_1lane_bb.v":49:7:49:17|Creating black box for empty module crc16_1lane
+
+@W: CS263 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\BYTE_PACKETIZER.v":148:27:148:35|Port-width mismatch for port data. The port definition is 8 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":47:7:47:23|Synthesizing module LP_HS_DELAY_CNTRL in library work.
+@N: CG179 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":152:78:152:86|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":155:78:155:88|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":158:78:158:87|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":162:78:162:83|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":166:78:166:84|Removing redundant assignment.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1051:7:1051:14|Synthesizing module ROM16X1A in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":176:7:176:13|Synthesizing module FD1P3BX in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":187:7:187:13|Synthesizing module FD1P3DX in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1120:7:1120:9|Synthesizing module VHI in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1615:7:1615:13|Synthesizing module ODDRX4B in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1525:7:1525:15|Synthesizing module ECLKSYNCA in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1124:7:1124:9|Synthesizing module VLO in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1512:7:1512:13|Synthesizing module CLKDIVC in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\oDDRx4.v":8:7:8:12|Synthesizing module oDDRx4 in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\IO_Controller_TX.v":49:7:49:22|Synthesizing module IO_Controller_TX in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":50:7:50:18|Synthesizing module DPHY_TX_INST in library work.
+@W: CS263 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":127:162:127:196|Port-width mismatch for port dataout. The port definition is 32 bits, but the actual port connection bit width is 11. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":155:20:155:26|Port-width mismatch for port lp1_out. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":156:20:156:26|Port-width mismatch for port lp2_out. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":157:20:157:26|Port-width mismatch for port lp3_out. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":160:19:160:24|Port-width mismatch for port lp1_in. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":161:19:161:24|Port-width mismatch for port lp2_in. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":162:19:162:24|Port-width mismatch for port lp3_in. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v":48:7:48:13|Synthesizing module DCS_ROM in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":48:7:48:17|Synthesizing module DCS_Encoder in library work.
+@N: CG179 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":107:53:107:63|Removing redundant assignment.
+@N: CG179 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":115:41:115:46|Removing redundant assignment.
+@W:"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":113:53:113:64|Index into variable q_oneh_data could be out of range - a simulation mismatch is possible
+@W:"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":116:53:116:64|Index into variable q_oneh_data could be out of range - a simulation mismatch is possible
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Optimizing register bit q_oneh_data[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Optimizing register bit q_oneh_data[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Optimizing register bit q_oneh_data[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Optimizing register bit q_oneh_data[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Pruning register bits 5 to 4 of q_oneh_data[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Pruning register bits 1 to 0 of q_oneh_data[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v":51:7:51:9|Synthesizing module top in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1730:7:1730:13|Synthesizing module EHXPLLJ in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\IPExpress\pll_pix2byte_RGB888_1lane.v":8:7:8:31|Synthesizing module pll_pix2byte_RGB888_1lane in library work.
+@N: CG364 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v":52:7:52:18|Synthesizing module colorbar_gen in library work.
+
+	h_active=32'b00000000000000000000000011110000
+	h_total=32'b00000000000000000000001001101100
+	v_active=32'b00000000000000000000000011110000
+	v_total=32'b00000000000000000000001100111110
+	H_FRONT_PORCH=32'b00000000000000000000000000101000
+	H_SYNCH=32'b00000000000000000000000000101100
+	H_BACK_PORCH=32'b00000000000000000000000010010100
+	V_FRONT_PORCH=32'b00000000000000000000000000000101
+	V_SYNCH=32'b00000000000000000000000000000101
+	mode=32'b00000000000000000000000000000001
+   Generated name = colorbar_gen_240_620_240_830_40_44_148_5_5_1s
+@W: CS263 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v":190:28:190:29|Port-width mismatch for port VC. The port definition is 2 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v":200:28:200:31|Port-width mismatch for port EoTp. The port definition is 1 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v":78:4:78:9|Optimizing register bit pixcnt[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v":78:4:78:9|Optimizing register bit pixcnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v":78:4:78:9|Optimizing register bit linecnt[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v":78:4:78:9|Optimizing register bit linecnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v":78:4:78:9|Pruning register bits 11 to 10 of linecnt[11:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\colorbar_gen.v":78:4:78:9|Pruning register bits 11 to 10 of pixcnt[11:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL157 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v":106:16:106:18|*Output LED has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@N: CL159 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v":101:28:101:32|Input VSYNC is unused.
+@N: CL159 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v":102:28:102:32|Input HSYNC is unused.
+@N: CL159 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v":103:28:103:29|Input DE is unused.
+@N: CL159 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\top.v":104:28:104:34|Input PIXDATA is unused.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Optimizing register bit bitcntr[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Pruning register bit 5 of bitcntr[5:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Pruning register bits 29 to 28 of q_oneh_data[31:6]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Pruning register bits 25 to 24 of q_oneh_data[31:6]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Pruning register bits 21 to 20 of q_oneh_data[31:6]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Pruning register bits 17 to 16 of q_oneh_data[31:6]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Pruning register bits 13 to 12 of q_oneh_data[31:6]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_Encoder.v":89:5:89:10|Pruning register bit 9 of q_oneh_data[31:6]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v":67:3:67:8|Optimizing register bit wait_cnt[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v":67:3:67:8|Pruning register bit 15 of wait_cnt[15:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v":67:3:67:8|Optimizing register bit wait_cnt[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v":67:3:67:8|Pruning register bit 14 of wait_cnt[14:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v":67:3:67:8|Optimizing register bit wait_cnt[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v":67:3:67:8|Pruning register bit 13 of wait_cnt[13:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v":67:3:67:8|Optimizing register bit wait_cnt[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DCS_ROM.v":67:3:67:8|Pruning register bit 12 of wait_cnt[12:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL156 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":127:162:127:196|*Input un1_byte_D0[31:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":150:20:150:26|*Input lp1_dir to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":151:20:151:26|*Input lp2_dir to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":152:20:152:26|*Input lp3_dir to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":155:20:155:26|*Input un1_lp1_out[1:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":156:20:156:26|*Input un1_lp2_out[1:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\DPHY_TX_INST.v":157:20:157:26|*Input un1_lp3_out[1:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@N: CL159 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\IO_Controller_TX.v":50:11:50:17|Input reset_n is unused.
+@N: CL135 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":107:16:107:21|Found sequential shift data_dly[54].hold_data with address depth of 54 words and data bit width of 32.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":118:4:118:9|Optimizing register bit hs_extended[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":118:4:118:9|Optimizing register bit hs_extended[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":118:4:118:9|Optimizing register bit hs_extended[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":118:4:118:9|Optimizing register bit hs_extended[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":118:4:118:9|Optimizing register bit hs_extended[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":118:4:118:9|Optimizing register bit hs_extended[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":118:4:118:9|Optimizing register bit hs_extended[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":118:4:118:9|Optimizing register bit hs_extended[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":118:4:118:9|Optimizing register bit hs_extended[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":118:4:118:9|Optimizing register bit hs_extended[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\LP_HS_dly_ctrl.v":118:4:118:9|Pruning register bits 15 to 6 of hs_extended[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@A: CL153 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\crc16_1lane_bb.v":56:16:56:20|*Unassigned bits of ready are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\crc16_1lane_bb.v":57:23:57:25|*Unassigned bits of crc[15:0] are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\packetheader_bb.v":65:22:65:31|*Unassigned bits of bytepkt_en are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\rtl\packetheader_bb.v":66:22:66:28|*Unassigned bits of bytepkt[31:0] are referenced and tied to 0 -- simulation mismatch possible.
+@W: CL190 :"C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v":49:0:49:5|Optimizing register bit timer[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v":49:0:49:5|Pruning register bit 15 of timer[15:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL201 :"C:\Users\Suhail\Documents\GitHub\iCE40UltraWearableReferenceDesigns\MIPI DSI TX Bridge\Parallel2DSI_RD1184_RGB888_1lane_V2_latest\rtl\pwr_sq_ctrl.v":76:0:76:5|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 8 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+   100
+   101
+   110
+   111
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 75MB peak: 76MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Mon Aug  6 16:39:40 2018
+
+###########################################################]
+Synopsys Netlist Linker, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+File C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\impl\Parallel2MIPI\synwork\layer0.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Mon Aug  6 16:39:40 2018
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Mon Aug  6 16:39:40 2018
+
+###########################################################]
+Synopsys Netlist Linker, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+File C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\impl\Parallel2MIPI\synwork\Parallel2MIPI_Parallel2MIPI_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Mon Aug  6 16:39:42 2018
+
+###########################################################]
+# Mon Aug  6 16:39:43 2018
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1796R, Built Aug  4 2017 11:10:16
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version M-2017.03L-SP1-1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@A: MF827 |No constraint file specified.
+@L: C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\impl\Parallel2MIPI\Parallel2MIPI_Parallel2MIPI_scck.rpt 
+Printing clock  summary report in "C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\impl\Parallel2MIPI\Parallel2MIPI_Parallel2MIPI_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 103MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 103MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 114MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 116MB)
+
+@N: MO111 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\top.v":138:10:138:15|Tristate driver LED_1 (in view: work.top(verilog)) on net LED[0] (in view: work.top(verilog)) has its enable tied to GND.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\colorbar_gen.v":78:4:78:9|Removing sequential instance fv (in view: work.colorbar_gen_240_620_240_830_40_44_148_5_5_1s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":141:4:141:9|Removing sequential instance hs_clk_en (in view: work.LP_HS_DELAY_CNTRL(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":141:4:141:9|Removing sequential instance hs_data_en (in view: work.LP_HS_DELAY_CNTRL(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=8  set on top level netlist top
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
+
+
+
+Clock Summary
+******************
+
+          Start                                               Requested     Requested     Clock        Clock                   Clock
+Level     Clock                                               Frequency     Period        Type         Group                   Load 
+------------------------------------------------------------------------------------------------------------------------------------
+0 -       System                                              1.0 MHz       1000.000      system       system_clkgroup         0    
+                                                                                                                                    
+0 -       pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock     1.0 MHz       1000.000      inferred     Inferred_clkgroup_2     193  
+                                                                                                                                    
+0 -       top|PIXCLK                                          1.0 MHz       1000.000      inferred     Inferred_clkgroup_1     74   
+                                                                                                                                    
+0 -       oDDRx4|sclk_inferred_clock                          1.0 MHz       1000.000      inferred     Inferred_clkgroup_0     4    
+====================================================================================================================================
+
+@W: MT529 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\oddrx4.v":81:12:81:15|Found inferred clock oDDRx4|sclk_inferred_clock which controls 4 sequential elements including u_DPHY_TX_INST.u_oDDRx4.FF_3. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\users\suhail\documents\github\ice40ultrawearablereferencedesigns\mipi dsi tx bridge\parallel2dsi_rd1184_rgb888_1lane_v2_latest\rtl\pwr_sq_ctrl.v":76:0:76:5|Found inferred clock top|PIXCLK which controls 74 sequential elements including LCD_Power_Controller.state[7:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v":109:5:109:10|Found inferred clock pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock which controls 193 sequential elements including u_BYTE_PACKETIZER.q_WC[15:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+@N: MF203 |Set autoconstraint_io 
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
+
+Encoding state machine state[7:0] (in view: work.pwr_sq_ctrl(verilog))
+original code -> new code
+   000 -> 00000001
+   001 -> 00000010
+   010 -> 00000100
+   011 -> 00001000
+   100 -> 00010000
+   101 -> 00100000
+   110 -> 01000000
+   111 -> 10000000
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 57MB peak: 144MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Aug  6 16:39:43 2018
+
+###########################################################]
+# Mon Aug  6 16:39:44 2018
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1796R, Built Aug  4 2017 11:10:16
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version M-2017.03L-SP1-1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 115MB)
+
+@N: MF203 |Set autoconstraint_io 
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 143MB)
+
+@N: MO111 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\top.v":138:10:138:15|Tristate driver LED_1 (in view: work.top(verilog)) on net LED[0] (in view: work.top(verilog)) has its enable tied to GND.
+@W: BN114 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\oddrx4.v":116:12:116:25|Removing instance u_oDDRx4.Inst5_ODDRX4B1 (in view: work.DPHY_TX_INST(verilog)) of black box view:work.ODDRX4B(verilog) because it does not drive other instances.
+@W: BN114 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\oddrx4.v":112:12:112:25|Removing instance u_oDDRx4.Inst5_ODDRX4B2 (in view: work.DPHY_TX_INST(verilog)) of black box view:work.ODDRX4B(verilog) because it does not drive other instances.
+@W: BN114 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\oddrx4.v":108:12:108:25|Removing instance u_oDDRx4.Inst5_ODDRX4B3 (in view: work.DPHY_TX_INST(verilog)) of black box view:work.ODDRX4B(verilog) because it does not drive other instances.
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 143MB)
+
+@W: BN132 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[15] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[14]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[14] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[13]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[13] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[12] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[11] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[8] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[5] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[3] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[2] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[1] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v":109:5:109:10|Removing sequential instance u_BYTE_PACKETIZER.q_WC[0] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v":109:5:109:10|Boundary register u_BYTE_PACKETIZER.q_WC[0] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+Encoding state machine state[7:0] (in view: work.pwr_sq_ctrl(verilog))
+original code -> new code
+   000 -> 00000001
+   001 -> 00000010
+   010 -> 00000100
+   011 -> 00001000
+   100 -> 00010000
+   101 -> 00100000
+   110 -> 01000000
+   111 -> 10000000
+@N: MO231 :"c:\users\suhail\documents\github\ice40ultrawearablereferencedesigns\mipi dsi tx bridge\parallel2dsi_rd1184_rgb888_1lane_v2_latest\rtl\pwr_sq_ctrl.v":49:0:49:5|Found counter in view:work.pwr_sq_ctrl(verilog) instance timer_1ms[10:0] 
+@N: MO231 :"c:\users\suhail\documents\github\ice40ultrawearablereferencedesigns\mipi dsi tx bridge\parallel2dsi_rd1184_rgb888_1lane_v2_latest\rtl\pwr_sq_ctrl.v":49:0:49:5|Found counter in view:work.pwr_sq_ctrl(verilog) instance timer[14:0] 
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][31] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][30] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][29] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][28] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][27] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][26] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][25] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][24] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][23] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][22] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][21] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][20] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][19] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][18] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][17] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][16] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][15] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][14] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][13] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][12] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][11] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][10] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][9] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":112:4:112:9|Removing sequential instance hold_data\[0\][8] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: MO231 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":107:16:107:21|Found counter in view:work.LP_HS_DELAY_CNTRL(verilog) instance data_dly\[54\]\.hold_data_CF5[5:0] 
+@N: MO231 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":118:4:118:9|Found counter in view:work.LP_HS_DELAY_CNTRL(verilog) instance hs_en_low_cnt[15:0] 
+@N: MO231 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":118:4:118:9|Found counter in view:work.LP_HS_DELAY_CNTRL(verilog) instance hs_en_high_cnt[15:0] 
+@N: MO231 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":118:4:118:9|Found counter in view:work.LP_HS_DELAY_CNTRL(verilog) instance hs_extended[5:0] 
+@N: MO231 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\dcs_rom.v":67:3:67:8|Found counter in view:work.DCS_ROM(verilog) instance wait_cnt[11:0] 
+@N: MO231 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\dcs_rom.v":67:3:67:8|Found counter in view:work.DCS_ROM(verilog) instance byte_cnt[10:0] 
+@N: MO231 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\colorbar_gen.v":104:1:104:6|Found counter in view:work.colorbar_gen_240_620_240_830_40_44_148_5_5_1s(verilog) instance color_cntr[11:0] 
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 143MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 144MB)
+
+
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 145MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 145MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 145MB peak: 146MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 147MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 147MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 147MB)
+
+@N: FO126 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":107:16:107:21|Generating RAM u_LP_HS_DELAY_CNTRL.data_dly\[54\]\.hold_data_CR31[7:0]
+@N: FX214 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\dcs_rom.v":79:29:79:47|Generating ROM u_DCS_ROM.current_data_2[7:0] (in view: work.top(verilog)).
+
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 147MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 149MB peak: 151MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:01s		   988.25ns		 244 /       196
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 149MB peak: 151MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@N: MO111 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\top.v":106:16:106:18|Tristate driver LED_obuft_0_.un1[0] (in view: work.top(verilog)) on net LED[0] (in view: work.top(verilog)) has its enable tied to GND.
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 150MB peak: 151MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 74 clock pin(s) of sequential element(s)
+2 gated/generated clock tree(s) driving 134 clock pin(s) of sequential element(s)
+0 instances converted, 134 sequential instances remain driven by gated/generated clocks
+
+==================================== Non-Gated/Non-Generated Clocks =====================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                  
+---------------------------------------------------------------------------------------------------------
+@K:CKID0003       PIXCLK              port                   74         LCD_Power_Controller_lcd_1v8_enio
+=========================================================================================================
+============================================================================================================================== Gated/Generated Clocks ===============================================================================================================================
+Clock Tree ID     Driving Element                           Drive Element Type     Fanout     Sample Instance                                          Explanation                                                                                                                   
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       u_pll_pix2byte_RGB888_1lane.PLLInst_0     EHXPLLJ                130        u_LP_HS_DELAY_CNTRL.data_dly\[54\]\.hold_data_CF5[5]     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0002       u_DPHY_TX_INST.u_oDDRx4.Inst3_CLKDIVC     CLKDIVC                4          u_DPHY_TX_INST.u_oDDRx4.FF_0                             No gated clock conversion method for cell cell:LUCENT.FD1P3DX                                                                 
+=====================================================================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 115MB peak: 151MB)
+
+Writing Analyst data base C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\impl\Parallel2MIPI\synwork\Parallel2MIPI_Parallel2MIPI_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 149MB peak: 151MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: C:\Users\Suhail\Downloads\Documents (7)\dsitxmachxo2rgb8881lane\Parallel2DSI_RD1184_RGB888_1lane_V2\impl\Parallel2MIPI\Parallel2MIPI_Parallel2MIPI.edi
+M-2017.03L-SP1-1
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 153MB peak: 155MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 153MB peak: 155MB)
+
+@W: MT246 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\oddrx4.v":132:14:132:28|Blackbox ECLKSYNCA is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\oddrx4.v":129:12:129:24|Blackbox CLKDIVC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\oddrx4.v":120:12:120:25|Blackbox ODDRX4B is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v":144:26:144:32|Blackbox crc16_1lane is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v":123:8:123:21|Blackbox packetheader_1s is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\byte_packetizer.v":89:8:89:22|Blackbox parallel2byte_24s_1s_62 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\ipexpress\pll_pix2byte_rgb888_1lane.v":69:12:69:20|Blackbox EHXPLLJ is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT420 |Found inferred clock top|PIXCLK with period 1000.00ns. Please declare a user-defined clock on object "p:PIXCLK"
+@W: MT420 |Found inferred clock oDDRx4|sclk_inferred_clock with period 1000.00ns. Please declare a user-defined clock on object "n:u_DPHY_TX_INST.u_oDDRx4.sclk"
+@W: MT420 |Found inferred clock pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock with period 1000.00ns. Please declare a user-defined clock on object "n:u_pll_pix2byte_RGB888_1lane.CLKOS2"
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Mon Aug  6 16:39:47 2018
+#
+
+
+Top view:               top
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        3
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 987.806
+
+                                                    Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock                                      Frequency     Frequency     Period        Period        Slack       Type         Group              
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+oDDRx4|sclk_inferred_clock                          1.0 MHz       360.7 MHz     1000.000      2.772         997.228     inferred     Inferred_clkgroup_0
+pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock     1.0 MHz       82.0 MHz      1000.000      12.194        987.806     inferred     Inferred_clkgroup_2
+top|PIXCLK                                          1.0 MHz       102.8 MHz     1000.000      9.728         990.272     inferred     Inferred_clkgroup_1
+System                                              1.0 MHz       214.8 MHz     1000.000      4.656         995.344     system       system_clkgroup    
+========================================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                                            |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                         Ending                                           |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                           System                                           |  1000.000    995.344  |  No paths    -      |  No paths    -      |  No paths    -    
+System                                           pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock  |  1000.000    994.481  |  No paths    -      |  No paths    -      |  No paths    -    
+oDDRx4|sclk_inferred_clock                       System                                           |  1000.000    997.875  |  No paths    -      |  No paths    -      |  No paths    -    
+oDDRx4|sclk_inferred_clock                       oDDRx4|sclk_inferred_clock                       |  1000.000    997.228  |  No paths    -      |  No paths    -      |  No paths    -    
+top|PIXCLK                                       System                                           |  1000.000    996.352  |  No paths    -      |  No paths    -      |  No paths    -    
+top|PIXCLK                                       top|PIXCLK                                       |  1000.000    990.272  |  No paths    -      |  No paths    -      |  No paths    -    
+top|PIXCLK                                       pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock  |  Diff grp    -        |  No paths    -      |  No paths    -      |  No paths    -    
+pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock  System                                           |  1000.000    995.560  |  No paths    -      |  No paths    -      |  No paths    -    
+pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock  pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock  |  1000.000    987.806  |  No paths    -      |  No paths    -      |  No paths    -    
+==========================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+
+
+Input Ports: 
+
+Port            Starting            User           Arrival     Required            
+Name            Reference           Constraint     Time        Time         Slack  
+                Clock                                                              
+-----------------------------------------------------------------------------------
+DE              NA                  NA             NA          NA           NA     
+HSYNC           NA                  NA             NA          NA           NA     
+LCD_sync        System (rising)     NA             0.000       995.344      995.344
+PIXCLK          NA                  NA             NA          NA           NA     
+PIXDATA[0]      NA                  NA             NA          NA           NA     
+PIXDATA[1]      NA                  NA             NA          NA           NA     
+PIXDATA[2]      NA                  NA             NA          NA           NA     
+PIXDATA[3]      NA                  NA             NA          NA           NA     
+PIXDATA[4]      NA                  NA             NA          NA           NA     
+PIXDATA[5]      NA                  NA             NA          NA           NA     
+PIXDATA[6]      NA                  NA             NA          NA           NA     
+PIXDATA[7]      NA                  NA             NA          NA           NA     
+PIXDATA[8]      NA                  NA             NA          NA           NA     
+PIXDATA[9]      NA                  NA             NA          NA           NA     
+PIXDATA[10]     NA                  NA             NA          NA           NA     
+PIXDATA[11]     NA                  NA             NA          NA           NA     
+PIXDATA[12]     NA                  NA             NA          NA           NA     
+PIXDATA[13]     NA                  NA             NA          NA           NA     
+PIXDATA[14]     NA                  NA             NA          NA           NA     
+PIXDATA[15]     NA                  NA             NA          NA           NA     
+PIXDATA[16]     NA                  NA             NA          NA           NA     
+PIXDATA[17]     NA                  NA             NA          NA           NA     
+PIXDATA[18]     NA                  NA             NA          NA           NA     
+PIXDATA[19]     NA                  NA             NA          NA           NA     
+PIXDATA[20]     NA                  NA             NA          NA           NA     
+PIXDATA[21]     NA                  NA             NA          NA           NA     
+PIXDATA[22]     NA                  NA             NA          NA           NA     
+PIXDATA[23]     NA                  NA             NA          NA           NA     
+VSYNC           NA                  NA             NA          NA           NA     
+reset_n         System (rising)     NA             0.000       997.316      997.316
+===================================================================================
+
+
+Output Ports: 
+
+Port                  Starting                                                     User           Arrival     Required            
+Name                  Reference                                                    Constraint     Time        Time         Slack  
+                      Clock                                                                                                       
+----------------------------------------------------------------------------------------------------------------------------------
+D0                    pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock (rising)     NA             4.440       1000.000     995.560
+DCK                   pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock (rising)     NA             4.440       1000.000     995.560
+LCD_backlight_PWM     pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock (rising)     NA             3.864       1000.000     996.136
+LCD_enable_1v8        top|PIXCLK (rising)                                          NA             3.648       1000.000     996.352
+LCD_enable_3v0        top|PIXCLK (rising)                                          NA             3.648       1000.000     996.352
+LCD_reset             top|PIXCLK (rising)                                          NA             3.648       1000.000     996.352
+LED[0]                NA                                                           NA             NA          NA           NA     
+LED[1]                System (rising)                                              NA             4.656       1000.000     995.344
+LP0[0]                pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock (rising)     NA             4.313       1000.000     995.687
+LP0[1]                pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock (rising)     NA             4.313       1000.000     995.687
+LPCLK[0]              pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock (rising)     NA             3.720       1000.000     996.280
+LPCLK[1]              pll_pix2byte_RGB888_1lane|CLKOS2_inferred_clock (rising)     NA             3.720       1000.000     996.280
+==================================================================================================================================
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 154MB peak: 155MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 154MB peak: 155MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_2000ze-1
+
+Register bits: 200 of 2112 (9%)
+PIC Latch:       0
+I/O cells:       15
+
+
+Details:
+CCU2D:          72
+CLKDIVC:        1
+DPR16X4C:       8
+ECLKSYNCA:      2
+EHXPLLJ:        1
+FD1P3BX:        22
+FD1P3DX:        66
+FD1S3AX:        6
+FD1S3BX:        3
+FD1S3DX:        92
+FD1S3IX:        8
+GSR:            1
+IB:             3
+INV:            8
+OB:             9
+OBZ:            3
+ODDRX4B:        2
+OFS1P3DX:       3
+ORCALUT4:       235
+PFUMX:          14
+PUR:            1
+ROM128X1A:      8
+ROM16X1A:       9
+ROM32X1A:       8
+VHI:            10
+VLO:            10
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 33MB peak: 155MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Mon Aug  6 16:39:47 2018
+
+###########################################################]
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

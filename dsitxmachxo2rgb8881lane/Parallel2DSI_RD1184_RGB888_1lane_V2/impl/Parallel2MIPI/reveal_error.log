@@ -1,0 +1,71 @@
+all messages logged in file C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/impl/Parallel2MIPI/reveal_error.log
+Analyzing Verilog file C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/impl/Parallel2MIPI/reveal_workspace/tmpreveal/top_reveal_coretop.v (VERI-1482)
+Analyzing Verilog file C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/compiler_directives.v (VERI-1482)
+Analyzing Verilog file C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/top.v (VERI-1482)
+INFO: C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/top.v(49): analyzing included file C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/compiler_directives.v (VERI-1328)
+WARNING - C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/top.v(292): w_LP0 is already implicitly declared earlier. VERI-1362
+WARNING - C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/top.v(159): parameter declaration becomes local in top with formal parameter declaration list. VERI-1199
+Analyzing Verilog file C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/IPExpress/pll_pix2byte_RGB888_1lane.v (VERI-1482)
+Analyzing Verilog file C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/DPHY_TX_INST.v (VERI-1482)
+INFO: C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/DPHY_TX_INST.v(48): analyzing included file C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/compiler_directives.v (VERI-1328)
+Analyzing Verilog file C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/IO_Controller_TX.v (VERI-1482)
+Analyzing Verilog file C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/oDDRx4.v (VERI-1482)
+Analyzing Verilog file C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/colorbar_gen.v (VERI-1482)
+Analyzing Verilog file C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/DCS_Encoder.v (VERI-1482)
+Analyzing Verilog file C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/DCS_ROM.v (VERI-1482)
+Analyzing Verilog file C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/BYTE_PACKETIZER.v (VERI-1482)
+Analyzing Verilog file C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/crc16_1lane_bb.v (VERI-1482)
+Analyzing Verilog file C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/parallel2byte_bb.v (VERI-1482)
+Analyzing Verilog file C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/packetheader_bb.v (VERI-1482)
+Analyzing Verilog file C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/LP_HS_dly_ctrl.v (VERI-1482)
+WARNING - C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/LP_HS_dly_ctrl.v(80): parameter declaration becomes local in LP_HS_DELAY_CNTRL with formal parameter declaration list. VERI-1199
+WARNING - C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/LP_HS_dly_ctrl.v(81): parameter declaration becomes local in LP_HS_DELAY_CNTRL with formal parameter declaration list. VERI-1199
+WARNING - C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/LP_HS_dly_ctrl.v(82): parameter declaration becomes local in LP_HS_DELAY_CNTRL with formal parameter declaration list. VERI-1199
+WARNING - C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/LP_HS_dly_ctrl.v(83): parameter declaration becomes local in LP_HS_DELAY_CNTRL with formal parameter declaration list. VERI-1199
+WARNING - C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/LP_HS_dly_ctrl.v(84): parameter declaration becomes local in LP_HS_DELAY_CNTRL with formal parameter declaration list. VERI-1199
+WARNING - C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/LP_HS_dly_ctrl.v(85): parameter declaration becomes local in LP_HS_DELAY_CNTRL with formal parameter declaration list. VERI-1199
+WARNING - C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/LP_HS_dly_ctrl.v(86): parameter declaration becomes local in LP_HS_DELAY_CNTRL with formal parameter declaration list. VERI-1199
+WARNING - C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/LP_HS_dly_ctrl.v(87): parameter declaration becomes local in LP_HS_DELAY_CNTRL with formal parameter declaration list. VERI-1199
+WARNING - C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/LP_HS_dly_ctrl.v(88): parameter declaration becomes local in LP_HS_DELAY_CNTRL with formal parameter declaration list. VERI-1199
+WARNING - C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/LP_HS_dly_ctrl.v(91): parameter declaration becomes local in LP_HS_DELAY_CNTRL with formal parameter declaration list. VERI-1199
+WARNING - C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/LP_HS_dly_ctrl.v(92): parameter declaration becomes local in LP_HS_DELAY_CNTRL with formal parameter declaration list. VERI-1199
+WARNING - C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/LP_HS_dly_ctrl.v(93): parameter declaration becomes local in LP_HS_DELAY_CNTRL with formal parameter declaration list. VERI-1199
+WARNING - C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/LP_HS_dly_ctrl.v(94): parameter declaration becomes local in LP_HS_DELAY_CNTRL with formal parameter declaration list. VERI-1199
+WARNING - C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/LP_HS_dly_ctrl.v(95): parameter declaration becomes local in LP_HS_DELAY_CNTRL with formal parameter declaration list. VERI-1199
+WARNING - C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/LP_HS_dly_ctrl.v(96): parameter declaration becomes local in LP_HS_DELAY_CNTRL with formal parameter declaration list. VERI-1199
+WARNING - C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/LP_HS_dly_ctrl.v(97): parameter declaration becomes local in LP_HS_DELAY_CNTRL with formal parameter declaration list. VERI-1199
+Analyzing Verilog file C:/Users/Suhail/Documents/GitHub/iCE40UltraWearableReferenceDesigns/MIPI DSI TX Bridge/Parallel2DSI_RD1184_RGB888_1lane_V2_latest/rtl/pwr_sq_ctrl.v (VERI-1482)
+WARNING - C:/Users/Suhail/Documents/GitHub/iCE40UltraWearableReferenceDesigns/MIPI DSI TX Bridge/Parallel2DSI_RD1184_RGB888_1lane_V2_latest/rtl/pwr_sq_ctrl.v(39): redeclaration of ansi port lcd_rst is not allowed. VERI-1372
+WARNING - C:/Users/Suhail/Documents/GitHub/iCE40UltraWearableReferenceDesigns/MIPI DSI TX Bridge/Parallel2DSI_RD1184_RGB888_1lane_V2_latest/rtl/pwr_sq_ctrl.v(40): redeclaration of ansi port lcd_1v8_en is not allowed. VERI-1372
+WARNING - C:/Users/Suhail/Documents/GitHub/iCE40UltraWearableReferenceDesigns/MIPI DSI TX Bridge/Parallel2DSI_RD1184_RGB888_1lane_V2_latest/rtl/pwr_sq_ctrl.v(41): redeclaration of ansi port lcd_3v0_en is not allowed. VERI-1372
+INFO: C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/top.v(51): compiling module top (VERI-1018)
+INFO: C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/top.v(363): elaborating module 'top' (VERI-9000)
+INFO: C:/Users/Suhail/Documents/GitHub/iCE40UltraWearableReferenceDesigns/MIPI DSI TX Bridge/Parallel2DSI_RD1184_RGB888_1lane_V2_latest/rtl/pwr_sq_ctrl.v(215): elaborating module 'pwr_sq_ctrl_uniq_1' (VERI-9000)
+INFO: C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/BYTE_PACKETIZER.v(181): elaborating module 'BYTE_PACKETIZER_uniq_1' (VERI-9000)
+INFO: C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/LP_HS_dly_ctrl.v(171): elaborating module 'LP_HS_DELAY_CNTRL_uniq_1' (VERI-9000)
+INFO: C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/DPHY_TX_INST.v(165): elaborating module 'DPHY_TX_INST_uniq_1' (VERI-9000)
+INFO: C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/DCS_ROM.v(275): elaborating module 'DCS_ROM_uniq_1' (VERI-9000)
+INFO: C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/DCS_Encoder.v(127): elaborating module 'DCS_Encoder_uniq_1' (VERI-9000)
+INFO: C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/oDDRx4.v(192): elaborating module 'oDDRx4_uniq_1' (VERI-9000)
+INFO: C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/IO_Controller_TX.v(113): elaborating module 'IO_Controller_TX_uniq_1' (VERI-9000)
+INFO: C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/top.v(363): elaborating module 'top' (VERI-9000)
+INFO: C:/Users/Suhail/Documents/GitHub/iCE40UltraWearableReferenceDesigns/MIPI DSI TX Bridge/Parallel2DSI_RD1184_RGB888_1lane_V2_latest/rtl/pwr_sq_ctrl.v(215): elaborating module 'pwr_sq_ctrl_uniq_1' (VERI-9000)
+INFO: C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/BYTE_PACKETIZER.v(181): elaborating module 'BYTE_PACKETIZER_uniq_1' (VERI-9000)
+INFO: C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/LP_HS_dly_ctrl.v(171): elaborating module 'LP_HS_DELAY_CNTRL_uniq_1' (VERI-9000)
+INFO: C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/DPHY_TX_INST.v(165): elaborating module 'DPHY_TX_INST_uniq_1' (VERI-9000)
+INFO: C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/DCS_ROM.v(275): elaborating module 'DCS_ROM_uniq_1' (VERI-9000)
+INFO: C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/DCS_Encoder.v(127): elaborating module 'DCS_Encoder_uniq_1' (VERI-9000)
+INFO: C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/IPExpress/pll_pix2byte_RGB888_1lane.v(104): elaborating module 'pll_pix2byte_RGB888_1lane_uniq_1' (VERI-9000)
+INFO: C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/colorbar_gen.v(116): elaborating module 'colorbar_gen_uniq_1' (VERI-9000)
+INFO: C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/oDDRx4.v(192): elaborating module 'oDDRx4_uniq_1' (VERI-9000)
+INFO: C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/IO_Controller_TX.v(113): elaborating module 'IO_Controller_TX_uniq_1' (VERI-9000)
+WARNING - C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/top.v(190): actual bit length 32 differs from formal bit length 2 for port VC. VERI-1330
+WARNING - C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/top.v(200): actual bit length 32 differs from formal bit length 1 for port EoTp. VERI-1330
+WARNING - C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/DPHY_TX_INST.v(127): actual bit length 11 differs from formal bit length 32 for port dataout. VERI-1330
+WARNING - C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/DPHY_TX_INST.v(155): actual bit length 1 differs from formal bit length 2 for port lp1_out. VERI-1330
+WARNING - C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/DPHY_TX_INST.v(156): actual bit length 1 differs from formal bit length 2 for port lp2_out. VERI-1330
+WARNING - C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/DPHY_TX_INST.v(157): actual bit length 1 differs from formal bit length 2 for port lp3_out. VERI-1330
+WARNING - C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/DPHY_TX_INST.v(160): actual bit length 1 differs from formal bit length 2 for port lp1_in. VERI-1330
+WARNING - C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/DPHY_TX_INST.v(161): actual bit length 1 differs from formal bit length 2 for port lp2_in. VERI-1330
+WARNING - C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/rtl/DPHY_TX_INST.v(162): actual bit length 1 differs from formal bit length 2 for port lp3_in. VERI-1330
+Pretty printing all modules in library work to file C:/Users/Suhail/Downloads/Documents (7)/dsitxmachxo2rgb8881lane/Parallel2DSI_RD1184_RGB888_1lane_V2/impl/Parallel2MIPI/reveal_workspace/tmpreveal/top_rvl.v (VERI-1491)

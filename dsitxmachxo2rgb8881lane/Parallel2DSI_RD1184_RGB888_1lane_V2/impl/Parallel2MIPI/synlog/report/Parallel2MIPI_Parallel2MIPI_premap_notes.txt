@@ -1,0 +1,7 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: MO111 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\top.v":138:10:138:15|Tristate driver LED_1 (in view: work.top(verilog)) on net LED[0] (in view: work.top(verilog)) has its enable tied to GND.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\colorbar_gen.v":78:4:78:9|Removing sequential instance fv (in view: work.colorbar_gen_240_620_240_830_40_44_148_5_5_1s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":141:4:141:9|Removing sequential instance hs_clk_en (in view: work.LP_HS_DELAY_CNTRL(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\suhail\downloads\documents (7)\dsitxmachxo2rgb8881lane\parallel2dsi_rd1184_rgb888_1lane_v2\rtl\lp_hs_dly_ctrl.v":141:4:141:9|Removing sequential instance hs_data_en (in view: work.LP_HS_DELAY_CNTRL(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: MF203 |Set autoconstraint_io 
