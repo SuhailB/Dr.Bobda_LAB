@@ -1,0 +1,1412 @@
+
+synthesis -f "platform1_impl1_lattice.synproj"
+synthesis:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Mon Aug 13 14:00:02 2018
+
+
+Command Line:  synthesis -f platform1_impl1_lattice.synproj -gui -msgset C:/Users/Suhail/Desktop/Work/Machxo2_SPI/promote.xml 
+
+    <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 1.
+The -t option is WLCSP49.
+The -d option is LCMXO2-2000ZE.
+Using package WLCSP49.
+Using performance grade 1.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-2000ZE
+
+### Package : WLCSP49
+
+### Speed   : 1
+
+##########################################################
+
+                                                          
+
+    <postMsg mid="35001781" type="Info"    dynamic="0" navigation="0"  />
+Optimization goal = Balanced
+Top-level module name = platform1_top.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/Users/Suhail/Desktop/Work/Machxo2_SPI (searchpath added)
+-p C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data (searchpath added)
+-p C:/Users/Suhail/Desktop/Work/Machxo2_SPI/impl1 (searchpath added)
+-p C:/Users/Suhail/Desktop/Work/Machxo2_SPI (searchpath added)
+Verilog design file = C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/platform1_top.v
+NGD file = platform1_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/platform1_top.v. VERI-1482
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/platform1_top.v(1): " arg1="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/platform1_top.v" arg3="1"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(46): " arg1="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/system_conf.v" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg3="46"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(327): " arg1="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg3="327"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(48): " arg1="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/pmi_def.v" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v" arg3="48"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(50): " arg1="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/system_conf.v" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v" arg3="50"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(51): " arg1="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_include.v" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v" arg3="51"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(52): " arg1="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_interrupt.v" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v" arg3="52"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_interrupt.v(47): " arg1="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/system_conf.v" arg2="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_interrupt.v" arg3="47"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(53): " arg1="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_io_cntl.v" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v" arg3="53"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(54): " arg1="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_flow_cntl.v" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v" arg3="54"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(55): " arg1="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_idec.v" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v" arg3="55"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(56): " arg1="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_alu.v" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v" arg3="56"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(57): " arg1="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_core.v" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v" arg3="57"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_core.v(82): " arg1="lm8_core" arg2="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_core.v" arg3="82"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_core.v(83): " arg1="lm8_core" arg2="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_core.v" arg3="83"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_core.v(84): " arg1="lm8_core" arg2="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_core.v" arg3="84"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(58): " arg1="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v" arg3="58"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v(113): " arg1="lm8" arg2="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v" arg3="113"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v(114): " arg1="lm8" arg2="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v" arg3="114"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(328): " arg1="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg3="328"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v(79): " arg1="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/system_conf.v" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v" arg3="79"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v(176): " arg1="gpio" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v" arg3="176"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(329): " arg1="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/tpio.v" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg3="329"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/tpio.v(65): " arg1="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/system_conf.v" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/tpio.v" arg3="65"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/tpio.v(87): " arg1="tpio" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/tpio.v" arg3="87"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(330): " arg1="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash.v" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg3="330"  />
+    <postMsg mid="35901214" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash.v(125): " arg1="value" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash.v" arg3="125"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash.v(129): " arg1="spi_flash" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash.v" arg3="129"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash.v(130): " arg1="spi_flash" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash.v" arg3="130"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash.v(131): " arg1="spi_flash" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash.v" arg3="131"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash.v(132): " arg1="spi_flash" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash.v" arg3="132"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(331): " arg1="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg3="331"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v(176): " arg1="wb_intf" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v" arg3="176"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v(177): " arg1="wb_intf" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v" arg3="177"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v(178): " arg1="wb_intf" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v" arg3="178"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v(180): " arg1="wb_intf" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v" arg3="180"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v(181): " arg1="wb_intf" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v" arg3="181"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(332): " arg1="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg3="332"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(93): " arg1="spi_flash_intf" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v" arg3="93"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(94): " arg1="spi_flash_intf" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v" arg3="94"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(95): " arg1="spi_flash_intf" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v" arg3="95"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(96): " arg1="spi_flash_intf" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v" arg3="96"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(98): " arg1="spi_flash_intf" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v" arg3="98"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(99): " arg1="spi_flash_intf" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v" arg3="99"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(100): " arg1="spi_flash_intf" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v" arg3="100"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(101): " arg1="spi_flash_intf" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v" arg3="101"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(102): " arg1="spi_flash_intf" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v" arg3="102"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(103): " arg1="spi_flash_intf" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v" arg3="103"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(104): " arg1="spi_flash_intf" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v" arg3="104"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(106): " arg1="spi_flash_intf" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v" arg3="106"  />
+Analyzing Verilog file C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Top module name (Verilog): platform1_top
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/platform1_top.v(3): " arg1="platform1_top" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/platform1_top.v" arg3="3"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): " arg1="OSCH(NOM_FREQ=&quot;26.60&quot;)" arg2="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1793"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(335): " arg1="platform1" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg3="335"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(48): " arg1="arbiter2(MAX_DAT_WIDTH=8,WBS_DAT_WIDTH=8,WBM0_DAT_WIDTH=8,WBM1_DAT_WIDTH=8)" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg3="48"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(285): " arg1="32" arg2="8" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg4="285"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(289): " arg1="32" arg2="1" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg4="289"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(293): " arg1="32" arg2="1" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg4="293"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(297): " arg1="32" arg2="3" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg4="297"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(301): " arg1="32" arg2="2" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg4="301"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(305): " arg1="32" arg2="1" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg4="305"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(309): " arg1="32" arg2="1" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg4="309"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(313): " arg1="32" arg2="1" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg4="313"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(316): " arg1="32" arg2="1" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg4="316"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(317): " arg1="32" arg2="1" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg4="317"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(318): " arg1="32" arg2="1" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg4="318"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(321): " arg1="32" arg2="1" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg4="321"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(322): " arg1="32" arg2="1" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg4="322"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(323): " arg1="32" arg2="1" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg4="323"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(493): " arg1="32" arg2="1" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg4="493"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(498): " arg1="32" arg2="1" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg4="498"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v(50): " arg1="lm8_renamed_due_excessive_length_1" arg2="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v" arg3="50"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_core.v(47): " arg1="lm8_core(FAMILY_NAME=&quot;MachXO2&quot;,EXT_AW=32,PROM_AW=32&apos;sb01011,PROM_AD=2048,REGISTERS_16=0,PGM_STACK_AW=32&apos;sb0100)" arg2="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_core.v" arg3="47"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_idec.v(47): " arg1="lm8_idec(PROM_AW=32&apos;sb01011)" arg2="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_idec.v" arg3="47"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_alu.v(47): " arg1="lm8_alu(FAMILY_NAME=&quot;MachXO2&quot;)" arg2="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_alu.v" arg3="47"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/pmi_def.v(69): " arg1="pmi_addsub(pmi_family=&quot;MachXO2&quot;)" arg2="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/pmi_def.v" arg3="69"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_flow_cntl.v(49): " arg1="lm8_flow_cntl(PGM_STACK_AW=32&apos;sb0100,PROM_AW=32&apos;sb01011,FAMILY_NAME=&quot;MachXO2&quot;)" arg2="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_flow_cntl.v" arg3="49"  />
+    <postMsg mid="35901221" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_flow_cntl.v(235): " arg1="export_" arg2="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_flow_cntl.v" arg3="235"  />
+    <postMsg mid="35901221" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_flow_cntl.v(235): " arg1="import_" arg2="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_flow_cntl.v" arg3="235"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/pmi_def.v(48): " arg1="pmi_distributed_spram(pmi_addr_depth=16,pmi_addr_width=32&apos;sb0100,pmi_data_width=32&apos;sb01101,pmi_regmode=&quot;noreg&quot;,pmi_family=&quot;MachXO2&quot;)" arg2="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/pmi_def.v" arg3="48"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_io_cntl.v(47): " arg1="lm8_io_cntl" arg2="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_io_cntl.v" arg3="47"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_interrupt.v(49): " arg1="lm8_interrupt(INTERRUPTS=8)" arg2="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_interrupt.v" arg3="49"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/pmi_def.v(24): " arg1="pmi_distributed_dpram(pmi_regmode=&quot;noreg&quot;,pmi_family=&quot;MachXO2&quot;)" arg2="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/pmi_def.v" arg3="24"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/pmi_def.v(115): " arg1="pmi_ram_dq_renamed_due_excessive_length_2" arg2="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/pmi_def.v" arg3="115"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/pmi_def.v(115): " arg1="pmi_ram_dq_renamed_due_excessive_length_3" arg2="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/pmi_def.v" arg3="115"  />
+    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v(214): " arg1="sp_waddr[10]" arg2="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v" arg3="214"  />
+    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v(215): " arg1="sp_wdata[7]" arg2="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v" arg3="215"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(557): " arg1="4" arg2="1" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg4="557"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v(80): " arg1="gpio(GPIO_WB_DAT_WIDTH=8,DATA_WIDTH=32&apos;b010,INPUT_WIDTH=32&apos;b01,OUTPUT_WIDTH=32&apos;b01,EDGE=1,POSE_EDGE_IRQ=1,INPUT_PORTS_ONLY=0,OUTPUT_PORTS_ONLY=1)" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v" arg3="80"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v(180): " arg1="32" arg2="1" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v" arg4="180"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v(181): " arg1="32" arg2="1" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v" arg4="181"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v(182): " arg1="32" arg2="1" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v" arg4="182"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v(183): " arg1="32" arg2="1" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v" arg4="183"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/tpio.v(66): " arg1="tpio(DATA_WIDTH=1,IRQ_MODE=0)" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/tpio.v" arg3="66"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(82): " arg1="BB" arg2="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="82"  />
+    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/tpio.v(109): " arg1="IRQ_MASK" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/tpio.v" arg3="109"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(600): " arg1="4" arg2="1" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg4="600"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(602): " arg1="4" arg2="1" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg4="602"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash.v(47): " arg1="spi_flash_renamed_due_excessive_length_4" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash.v" arg3="47"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash.v(168): " arg1="32" arg2="4" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash.v" arg4="168"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash.v(180): " arg1="32" arg2="4" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash.v" arg4="180"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v(52): " arg1="wb_intf_renamed_due_excessive_length_5" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v" arg3="52"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v(690): " arg1="8" arg2="4" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v" arg4="690"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v(696): " arg1="8" arg2="3" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v" arg4="696"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v(1137): " arg1="16" arg2="3" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v" arg4="1137"  />
+    <postMsg mid="35901221" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v(1146): " arg1="reg_fast_read" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v" arg3="1146"  />
+    <postMsg mid="35901221" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v(1147): " arg1="spi_fast_read" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v" arg3="1147"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v(1151): " arg1="16" arg2="3" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v" arg4="1151"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(47): " arg1="spi_flash_intf(WB_DAT_WIDTH=8,C_PORT_ENABLE=1,C_WB_DAT_WIDTH=8,BUF_WIDTH=0,PAGE_WIDTH=2)" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v" arg3="47"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(228): " arg1="32" arg2="12" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v" arg4="228"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(251): " arg1="32" arg2="6" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v" arg4="251"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(273): " arg1="32" arg2="2" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v" arg4="273"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(283): " arg1="32" arg2="2" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v" arg4="283"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(287): " arg1="32" arg2="6" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v" arg4="287"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(298): " arg1="32" arg2="6" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v" arg4="298"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(311): " arg1="32" arg2="2" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v" arg4="311"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(315): " arg1="32" arg2="6" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v" arg4="315"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(329): " arg1="32" arg2="2" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v" arg4="329"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(333): " arg1="32" arg2="6" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v" arg4="333"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(343): " arg1="32" arg2="6" arg3="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v" arg4="343"  />
+    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash.v(149): " arg1="spi2wb_q[7]" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash.v" arg3="149"  />
+    <postMsg mid="35931013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(592): " arg1="PIO_IN[1]" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg3="592"  />
+Last elaborated design is platform1_top()
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c2000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Top-level module name = platform1_top.
+    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v(214): " arg1="sp_waddr[10]" arg2="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v" arg3="214"  />
+    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v(215): " arg1="sp_wdata[7]" arg2="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v" arg3="215"  />
+    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/tpio.v(109): " arg1="IRQ_MASK" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/tpio.v" arg3="109"  />
+    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(363): " arg1="\platform1_u/LM8I_ADR_O[31]" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg3="363"  />
+    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(364): " arg1="\platform1_u/LM8I_DAT_O[7]" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg3="364"  />
+    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(367): " arg1="\platform1_u/LM8I_WE_O" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg3="367"  />
+    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(371): " arg1="\platform1_u/LM8I_CTI_O[2]" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg3="371"  />
+    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(373): " arg1="\platform1_u/LM8I_LOCK_O" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg3="373"  />
+    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(374): " arg1="\platform1_u/LM8I_CYC_O" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg3="374"  />
+    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(375): " arg1="\platform1_u/LM8I_STB_O" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg3="375"  />
+######## Missing driver on net \platform1_u/LM8I_ADR_O[31]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[30]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[29]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[28]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[27]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[26]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[25]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[24]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[23]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[22]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[21]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[20]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[19]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[18]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[17]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[16]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[15]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[14]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[13]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[12]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[11]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[10]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[9]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[8]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[7]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[6]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[5]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[4]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[3]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[2]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[1]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[0]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_DAT_O[7]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_DAT_O[6]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_DAT_O[5]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_DAT_O[4]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_DAT_O[3]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_DAT_O[2]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_DAT_O[1]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_DAT_O[0]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_WE_O. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_CTI_O[2]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_CTI_O[1]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_CTI_O[0]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_LOCK_O. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_CYC_O. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_STB_O. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_waddr[10]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_waddr[9]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_waddr[8]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_waddr[7]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_waddr[6]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_waddr[5]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_waddr[4]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_waddr[3]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_waddr[2]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_waddr[1]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_waddr[0]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_wdata[7]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_wdata[6]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_wdata[5]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_wdata[4]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_wdata[3]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_wdata[2]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_wdata[1]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_wdata[0]. Patching with GND.
+######## Missing driver on net \platform1_u/SPIFlashS_DAT_O_7__I_0/spi2wb_q[7]. Patching with GND.
+######## Missing driver on net \platform1_u/SPIFlashS_DAT_O_7__I_0/spi2wb_q[6]. Patching with GND.
+######## Missing driver on net \platform1_u/SPIFlashS_DAT_O_7__I_0/spi2wb_q[5]. Patching with GND.
+######## Missing driver on net \platform1_u/SPIFlashS_DAT_O_7__I_0/spi2wb_q[4]. Patching with GND.
+######## Missing driver on net \platform1_u/SPIFlashS_DAT_O_7__I_0/spi2wb_q[3]. Patching with GND.
+######## Missing driver on net \platform1_u/SPIFlashS_DAT_O_7__I_0/spi2wb_q[2]. Patching with GND.
+######## Missing driver on net \platform1_u/SPIFlashS_DAT_O_7__I_0/spi2wb_q[1]. Patching with GND.
+######## Missing driver on net \platform1_u/SPIFlashS_DAT_O_7__I_0/spi2wb_q[0]. Patching with GND.
+Removed duplicate sequential element \platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/dout_alu_reg(8 bit), because it is equivalent to \platform1_u/LM8/u1_isp8_core/din_rd1
+
+    <postMsg mid="35001774" type="Info"    dynamic="2" navigation="0" arg0="\platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/wb_state" arg1="gray"  />
+State machine has 3 reachable states with original encodings of:
+
+ 00 
+
+ 01 
+
+ 10 
+
+original encoding -> new encoding (gray encoding)
+
+ 00 -> 00
+
+ 01 -> 01
+
+ 10 -> 11
+
+    <postMsg mid="35001774" type="Info"    dynamic="2" navigation="0" arg0="\platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/cmd_state" arg1="one-hot"  />
+State machine has 4 reachable states with original encodings of:
+
+ 00 
+
+ 01 
+
+ 10 
+
+ 11 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 00 -> 0001
+
+ 01 -> 0010
+
+ 10 -> 0100
+
+ 11 -> 1000
+
+    <postMsg mid="35001774" type="Info"    dynamic="2" navigation="0" arg0="\platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/spi_state" arg1="one-hot"  />
+State machine has 7 reachable states with original encodings of:
+
+ 000 
+
+ 001 
+
+ 010 
+
+ 011 
+
+ 100 
+
+ 101 
+
+ 110 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 000 -> 0000001
+
+ 001 -> 0000010
+
+ 010 -> 0000100
+
+ 011 -> 0001000
+
+ 100 -> 0010000
+
+ 101 -> 0100000
+
+ 110 -> 1000000
+
+
+
+
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="\platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/spi_state_FSM"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="7" arg1="\platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/byte_wr"  />
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(479): " arg1="\platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/dword_wr_i0" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v" arg3="479"  />
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(275): " arg1="\platform1_u/arbiter/selected_i0" arg2="c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v" arg3="275"  />
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_interrupt.v(134): " arg1="\platform1_u/LM8/u1_isp8_core/u1_lm8_interrupt/ip_i0_i0" arg2="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_interrupt.v" arg3="134"  />
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_flow_cntl.v(532): " arg1="\platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/intr_ack_162" arg2="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_flow_cntl.v" arg3="532"  />
+GSR instance connected to net \platform1_u/counter[2].
+Applying 200.000000 MHz constraint to all clocks
+
+    <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
+    <postMsg mid="35001551" type="Warning" dynamic="2" navigation="0" arg0="C:\Users\Suhail\Desktop\Work\Machxo2_SPI\impl1/pmi_distributed_dpramMbnonen853292a5343.v" arg1="C:\Users\Suhail\Desktop\Work\Machxo2_SPI\impl1/platform1_top_prim.v"  />
+Results of NGD DRC are available in platform1_top_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading NGO design 'lngotmp/pmi_ram_dqmnhscratchpad_initsadn8112048f9ce2e6.ngo'...
+Loading NGO design 'lngotmp/pmi_ram_dqmnhprom_initsadn18112048f3df93e.ngo'...
+Loading NGO design 'lngotmp/pmi_distributed_dprammbnonen853292a5343.ngo'...
+Loading NGO design 'lngotmp/pmi_distributed_sprammbnonen1341693c3d10.ngo'...
+Loading NGO design 'lngotmp/pmi_addsubmo884942741.ngo'...
+
+
+Running DRC...
+
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="platform1_u/LM8/u1_isp8_core/GND_net" arg2="platform1_u/LM8/u1_isp8_core/GND_net"  />
+    <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="1"  />
+
+Design Results:
+   1953 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file platform1_impl1.ngd.
+
+################### Begin Area Report (platform1_top)######################
+Number of register bits => 517 of 2229 (23 % )
+CCU2D => 17
+FD1P3AX => 285
+FD1P3AY => 47
+FD1P3BX => 9
+FD1P3DX => 52
+FD1P3IX => 56
+FD1P3JX => 2
+FD1S3AX => 17
+FD1S3AY => 2
+FD1S3BX => 2
+FD1S3DX => 38
+FD1S3IX => 7
+GSR => 1
+IB => 2
+L6MUX21 => 23
+LUT4 => 1098
+OB => 6
+OSCH => 1
+PFUMX => 195
+pmi_addsubMo884942741 => 1
+pmi_distributed_dpramMbnonen853292a5343 => 2
+pmi_distributed_spramMbnonen1341693c3d10 => 1
+pmi_ram_dqMnhprom_initsadn18112048f3df93e => 1
+pmi_ram_dqMnhscratchpad_initsadn8112048f9ce2e6 => 1
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 2
+  Net : interalClock, loads : 435
+  Net : platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div, loads : 91
+Clock Enable Nets
+Number of Clock Enables: 67
+Top 10 highest fanout Clock Enables:
+  Net : platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_312, loads : 48
+  Net : platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/clk_div_enable_70, loads : 33
+  Net : platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/dword_wr_31__N_1809, loads : 32
+  Net : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/addr_cyc, loads : 20
+  Net : platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/clk_div_enable_39, loads : 18
+  Net : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/data_cyc, loads : 14
+  Net : platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_284, loads : 8
+  Net : platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_291, loads : 8
+  Net : platform1_u/LM8/u1_isp8_core/page_ptr2_7__N_691, loads : 8
+  Net : platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_298, loads : 8
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : platform1_u/LM8/n20101, loads : 143
+  Net : platform1_u/LM8/u1_isp8_core/u1_lm8_interrupt/n20162, loads : 106
+  Net : platform1_u/LM8/n20090, loads : 98
+  Net : platform1_u/arbiter/selected_1, loads : 97
+  Net : platform1_u/LM8/n20100, loads : 57
+  Net : platform1_u/LM8/n20102, loads : 57
+  Net : platform1_u/LM8/prom_ready, loads : 51
+  Net : platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_5, loads : 50
+  Net : platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_312, loads : 48
+  Net : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_addr_0, loads : 46
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets                          |             |             |
+\platform1_u/SPIFlashS_DAT_O_7__I_0/clk_|             |             |
+div]                                    |  200.000 MHz|   35.404 MHz|     8 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets interalClock]            |  200.000 MHz|   14.460 MHz|    18 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+2 constraints not met.
+
+
+Peak Memory Usage: 90.875  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 8.750  secs
+--------------------------------------------------------------
+
+map -a "MachXO2" -p LCMXO2-2000ZE -t WLCSP49 -s 1 -oc Commercial   "platform1_impl1.ngd" -o "platform1_impl1_map.ncd" -pr "platform1_impl1.prf" -mp "platform1_impl1.mrp" -lpf "C:/Users/Suhail/Desktop/Work/Machxo2_SPI/impl1/platform1_impl1.lpf" -lpf "C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1.lpf" -c 0            
+map:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: platform1_impl1.ngd
+   Picdevice="LCMXO2-2000ZE"
+
+   Pictype="WLCSP49"
+
+   Picspeed=1
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO2-2000ZEWLCSP49, Performance used: 1.
+
+Loading device for application map from file 'xo2c2000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+
+Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+
+
+
+Design Summary:
+   Number of registers:    518 out of  2229 (23%)
+      PFU registers:          518 out of  2112 (25%)
+      PIO registers:            0 out of   117 (0%)
+   Number of SLICEs:       637 out of  1056 (60%)
+      SLICEs as Logic/ROM:    601 out of  1056 (57%)
+      SLICEs as RAM:           36 out of   792 (5%)
+      SLICEs as Carry:         23 out of  1056 (2%)
+   Number of LUT4s:        1261 out of  2112 (60%)
+      Number used as logic LUTs:        1143
+      Number used as distributed RAM:    72
+      Number used as ripple logic:       46
+      Number used as shift registers:     0
+   Number of PIO sites used: 8 + 4(JTAG) out of 39 (31%)
+   Number of block RAMs:  6 out of 8 (75%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  Yes
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 1 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  2
+     Net interalClock: 291 loads, 291 rising, 0 falling (Driver: OSCH_inst )
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div: 68 loads, 68 rising, 0 falling (Driver: platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div_16 )
+   Number of Clock Enables:  67
+     Net platform1_u/interalClock_enable_100: 1 loads, 1 LSLICEs
+     Net counter_2: 1 loads, 1 LSLICEs
+     Net platform1_u/PIO_OUT_1__N_987: 1 loads, 1 LSLICEs
+     Net platform1_u/interalClock_enable_118: 4 loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_52: 4 loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_312: 36 loads, 36 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_7: 2 loads, 2 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_10: 2 loads, 2 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_99: 4 loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_12: 1 loads, 1 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_102: 2 loads, 2 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_111: 4 loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_19: 1 loads, 1 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_20: 1 loads, 1 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_177: 4 loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_184: 4 loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_191: 4 loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_206: 4 loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_221: 4 loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_228: 4 loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_235: 4 loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_242: 4 loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_249: 4 loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_256: 4 loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_263: 4 loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_270: 4 loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_277: 4 loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_284: 4 loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_291: 4 loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_298: 4 loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_305: 4 loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_309: 2 loads, 2 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_43: 1 loads, 1 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_45: 1 loads, 1 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_154: 4 loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_199: 4 loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_170: 1 loads, 1 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_162: 4 loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/wb_state_1: 1 loads, 1 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_104: 1 loads, 1 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_146: 4 loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_169: 4 loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_123: 3 loads, 3 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_131: 4 loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_139: 4 loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_195: 1 loads, 1 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_214: 4 loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_310: 1 loads, 1 LSLICEs
+     Net clk_div_enable_19: 4 loads, 4 LSLICEs
+     Net dword_wr_31__N_1809: 4 loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/clk_div_enable_70: 32 loads, 32 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/clk_div_enable_39: 7 loads, 7 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/clk_div_enable_4: 1 loads, 1 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/clk_div_enable_51: 4 loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/clk_div_enable_45: 4 loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/clk_div_enable_24: 1 loads, 1 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/clk_div_enable_21: 1 loads, 1 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/clk_div_enable_22: 1 loads, 1 LSLICEs
+     Net platform1_u/LM8/interalClock_enable_59: 4 loads, 4 LSLICEs
+     Net platform1_u/LM8/prom_enable: 11 loads, 3 LSLICEs
+     Net platform1_u/LM8/page_ptr3_7__N_693: 4 loads, 4 LSLICEs
+     Net platform1_u/LM8/page_ptr1_7__N_689: 8 loads, 8 LSLICEs
+     Net platform1_u/LM8/data_cyc: 6 loads, 6 LSLICEs
+     Net platform1_u/LM8/addr_cyc: 7 loads, 7 LSLICEs
+     Net platform1_u/LM8/u1_isp8_core/page_ptr2_7__N_691: 4 loads, 4 LSLICEs
+     Net platform1_u/LM8/u1_isp8_core/im_nxt_7__N_969: 5 loads, 5 LSLICEs
+     Net platform1_u/LM8/u1_isp8_core/interalClock_enable_44: 1 loads, 1 LSLICEs
+   Number of LSRs:  13
+     Net reset_n_c: 2 loads, 2 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/n8751: 2 loads, 2 LSLICEs
+     Net n8767: 2 loads, 2 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n8756: 4 loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n8744: 1 loads, 1 LSLICEs
+     Net dword_wr_31__N_1809: 4 loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/n8713: 24 loads, 24 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/n13031: 1 loads, 1 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/n8752: 1 loads, 1 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/n8748: 1 loads, 1 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/n8768: 2 loads, 2 LSLICEs
+     Net platform1_u/LM8/core_rst_n: 74 loads, 74 LSLICEs
+     Net platform1_u/LM8/n13100: 1 loads, 1 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net n20101: 145 loads
+     Net platform1_u/n20090: 99 loads
+     Net platform1_u/selected_1: 98 loads
+     Net platform1_u/LM8/core_rst_n: 79 loads
+     Net n20100: 59 loads
+     Net platform1_u/n20102: 58 loads
+     Net platform1_u/LM8/prom_ready: 51 loads
+     Net platform1_u/ext_addr_0: 50 loads
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_5: 50 loads
+     Net ext_addr_4: 48 loads
+ 
+
+   Number of warnings:  0
+   Number of errors:    0
+
+
+
+INFO: Design contains EBR with GSR enabled. The GSR is only applicable for output registers except FIFO. 
+
+
+Total CPU Time: 1 secs  
+Total REAL Time: 2 secs  
+Peak Memory Usage: 52 MB
+
+Dumping design to file platform1_impl1_map.ncd.
+
+ncd2vdb "platform1_impl1_map.ncd" ".vdbs/platform1_impl1_map.vdb"
+
+Loading device for application ncd2vdb from file 'xo2c2000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+
+trce -f "platform1_impl1.mt" -o "platform1_impl1.tw1" "platform1_impl1_map.ncd" "platform1_impl1.prf"
+trce:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file platform1_impl1_map.ncd.
+Design name: platform1_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-2000ZE
+Package:     WLCSP49
+Performance: 1
+Loading device for application trce from file 'xo2c2000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.0.111.2
+Mon Aug 13 14:00:21 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o platform1_impl1.tw1 -gui -msgset C:/Users/Suhail/Desktop/Work/Machxo2_SPI/promote.xml platform1_impl1_map.ncd platform1_impl1.prf 
+Design file:     platform1_impl1_map.ncd
+Preference file: platform1_impl1.prf
+Device,speed:    LCMXO2-2000ZE,1
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 4096  Score: 30056238
+Cumulative negative slack: 30056238
+
+Constraints cover 380973 paths, 1 nets, and 6317 connections (99.95% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.0.111.2
+Mon Aug 13 14:00:21 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o platform1_impl1.tw1 -gui -msgset C:/Users/Suhail/Desktop/Work/Machxo2_SPI/promote.xml platform1_impl1_map.ncd platform1_impl1.prf 
+Design file:     platform1_impl1_map.ncd
+Preference file: platform1_impl1.prf
+Device,speed:    LCMXO2-2000ZE,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 28  Score: 2016
+Cumulative negative slack: 2016
+
+Constraints cover 380973 paths, 1 nets, and 6317 connections (99.95% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 4096 (setup), 28 (hold)
+Score: 30056238 (setup), 2016 (hold)
+Cumulative negative slack: 30058254 (30056238+2016)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total time: 2 secs 
+
+mpartrce -p "platform1_impl1.p2t" -f "platform1_impl1.p3t" -tf "platform1_impl1.pt" "platform1_impl1_map.ncd" "platform1_impl1.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "platform1_impl1_map.ncd"
+Mon Aug 13 14:00:22 2018
+
+PAR: Place And Route Diamond (64-bit) 3.10.0.111.2.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/Users/Suhail/Desktop/Work/Machxo2_SPI/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF platform1_impl1_map.ncd platform1_impl1.dir/5_1.ncd platform1_impl1.prf
+Preference file: platform1_impl1.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file platform1_impl1_map.ncd.
+Design name: platform1_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-2000ZE
+Package:     WLCSP49
+Performance: 1
+Loading device for application par from file 'xo2c2000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)    8+4(JTAG)/216     6% used
+                   8+4(JTAG)/39      31% bonded
+
+   SLICE            637/1056         60% used
+
+   GSR                1/1           100% used
+   OSC                1/1           100% used
+   EBR                6/8            75% used
+
+
+INFO: Design contains EBR with ASYNC Reset Mode that has a limitation: The use of the EBR block asynchronous reset requires that certain timing be met between the clock and the reset within the memory block. See the device specific data sheet for additional details.
+Number of Signals: 1738
+Number of Connections: 6320
+
+Pin Constraint Summary:
+   8 out of 8 pins locked (100% locked).
+
+The following 2 signals are selected to use the primary clock routing resources:
+    interalClock (driver: OSCH_inst, clk load #: 291)
+    platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div (driver: platform1_u/SPIFlashS_DAT_O_7__I_0/SLICE_144, clk load #: 68)
+
+
+The following 5 signals are selected to use the secondary clock routing resources:
+    platform1_u/LM8/core_rst_n (driver: platform1_u/LM8/SLICE_675, clk load #: 0, sr load #: 74, ce load #: 0)
+    platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_312 (driver: platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_225, clk load #: 0, sr load #: 0, ce load #: 36)
+    platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/clk_div_enable_70 (driver: platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/SLICE_629, clk load #: 0, sr load #: 0, ce load #: 32)
+    platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/n8713 (driver: platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/SLICE_627, clk load #: 0, sr load #: 24, ce load #: 0)
+    platform1_u/LM8/prom_enable (driver: platform1_u/LM8/SLICE_93, clk load #: 0, sr load #: 0, ce load #: 11)
+
+Signal counter_2 is selected as Global Set/Reset.
+Starting Placer Phase 0.
+..........
+Finished Placer Phase 0.  REAL time: 6 secs 
+
+Starting Placer Phase 1.
+....................
+Placer score = 533589.
+Finished Placer Phase 1.  REAL time: 21 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  524391
+Finished Placer Phase 2.  REAL time: 22 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 0 out of 8 (0%)
+  PLL        : 0 out of 1 (0%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Quadrants All (TL, TR, BL, BR) - Global Clocks:
+  PRIMARY "interalClock" from OSC on comp "OSCH_inst" on site "OSC", clk load = 291
+  PRIMARY "platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div" from Q0 on comp "platform1_u/SPIFlashS_DAT_O_7__I_0/SLICE_144" on site "R2C14C", clk load = 68
+  SECONDARY "platform1_u/LM8/core_rst_n" from Q0 on comp "platform1_u/LM8/SLICE_675" on site "R9C17B", clk load = 0, ce load = 0, sr load = 74
+  SECONDARY "platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_312" from F1 on comp "platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_225" on site "R9C13C", clk load = 0, ce load = 36, sr load = 0
+  SECONDARY "platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/clk_div_enable_70" from F0 on comp "platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/SLICE_629" on site "R13C12D", clk load = 0, ce load = 32, sr load = 0
+  SECONDARY "platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/n8713" from F0 on comp "platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/SLICE_627" on site "R9C12C", clk load = 0, ce load = 0, sr load = 24
+  SECONDARY "platform1_u/LM8/prom_enable" from F1 on comp "platform1_u/LM8/SLICE_93" on site "R9C15B", clk load = 0, ce load = 11, sr load = 0
+
+  PRIMARY  : 2 out of 8 (25%)
+  SECONDARY: 5 out of 8 (62%)
+
+Edge Clocks:
+  No edge clock selected.
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   8 + 4(JTAG) out of 216 (5.6%) PIO sites used.
+   8 + 4(JTAG) out of 39 (30.8%) bonded PIO sites used.
+   Number of PIO comps: 8; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+---------------+------------+-----------+
+| I/O Bank | Usage         | Bank Vccio | Bank Vref |
++----------+---------------+------------+-----------+
+| 0        | 1 / 20 (  5%) | 2.5V       | -         |
+| 2        | 7 / 13 ( 53%) | 2.5V       | -         |
+| 5        | 0 / 6 (  0%)  | -          | -         |
++----------+---------------+------------+-----------+
+
+Total placer CPU time: 21 secs 
+
+Dumping design to file platform1_impl1.dir/5_1.ncd.
+
+0 connections routed; 6320 unrouted.
+Starting router resource preassignment
+
+Completed router resource preassignment. Real time: 26 secs 
+
+Start NBR router at 14:00:48 08/13/18
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 14:00:48 08/13/18
+
+Start NBR section for initial routing at 14:00:49 08/13/18
+Level 1, iteration 1
+55(0.04%) conflicts; 5083(80.43%) untouched conns; 18809305 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -17.398ns/-18809.305ns; real time: 30 secs 
+Level 2, iteration 1
+39(0.03%) conflicts; 4267(67.52%) untouched conns; 16694044 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -17.695ns/-16694.044ns; real time: 32 secs 
+Level 3, iteration 1
+30(0.02%) conflicts; 3392(53.67%) untouched conns; 17412406 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -18.006ns/-17412.407ns; real time: 33 secs 
+Level 4, iteration 1
+188(0.14%) conflicts; 0(0.00%) untouched conn; 18050743 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -18.369ns/-18050.744ns; real time: 36 secs 
+
+Info: Initial congestion level at 75% usage is 1
+Info: Initial congestion area  at 75% usage is 37 (11.38%)
+
+Start NBR section for normal routing at 14:00:59 08/13/18
+Level 4, iteration 1
+146(0.11%) conflicts; 0(0.00%) untouched conn; 18276529 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -18.369ns/-18276.529ns; real time: 38 secs 
+Level 4, iteration 2
+97(0.07%) conflicts; 0(0.00%) untouched conn; 18414715 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -18.369ns/-18414.715ns; real time: 40 secs 
+Level 4, iteration 3
+72(0.06%) conflicts; 0(0.00%) untouched conn; 18302628 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -18.369ns/-18302.629ns; real time: 41 secs 
+Level 4, iteration 4
+48(0.04%) conflicts; 0(0.00%) untouched conn; 18302628 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -18.369ns/-18302.629ns; real time: 41 secs 
+Level 4, iteration 5
+32(0.02%) conflicts; 0(0.00%) untouched conn; 18370539 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -18.329ns/-18370.539ns; real time: 42 secs 
+Level 4, iteration 6
+26(0.02%) conflicts; 0(0.00%) untouched conn; 18370539 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -18.329ns/-18370.539ns; real time: 43 secs 
+Level 4, iteration 7
+20(0.02%) conflicts; 0(0.00%) untouched conn; 18430843 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -18.369ns/-18430.843ns; real time: 43 secs 
+Level 4, iteration 8
+12(0.01%) conflicts; 0(0.00%) untouched conn; 18430843 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -18.369ns/-18430.843ns; real time: 43 secs 
+Level 4, iteration 9
+8(0.01%) conflicts; 0(0.00%) untouched conn; 18457312 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -18.329ns/-18457.312ns; real time: 44 secs 
+Level 4, iteration 10
+9(0.01%) conflicts; 0(0.00%) untouched conn; 18457312 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -18.329ns/-18457.312ns; real time: 44 secs 
+Level 4, iteration 11
+13(0.01%) conflicts; 0(0.00%) untouched conn; 18441718 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -18.369ns/-18441.718ns; real time: 44 secs 
+Level 4, iteration 12
+10(0.01%) conflicts; 0(0.00%) untouched conn; 18441718 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -18.369ns/-18441.718ns; real time: 44 secs 
+Level 4, iteration 13
+4(0.00%) conflicts; 0(0.00%) untouched conn; 18795156 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -18.369ns/-18795.156ns; real time: 44 secs 
+Level 4, iteration 14
+3(0.00%) conflicts; 0(0.00%) untouched conn; 18795156 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -18.369ns/-18795.156ns; real time: 44 secs 
+Level 4, iteration 15
+3(0.00%) conflicts; 0(0.00%) untouched conn; 18802798 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -18.369ns/-18802.798ns; real time: 44 secs 
+Level 4, iteration 16
+4(0.00%) conflicts; 0(0.00%) untouched conn; 18802798 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -18.369ns/-18802.798ns; real time: 44 secs 
+Level 4, iteration 17
+3(0.00%) conflicts; 0(0.00%) untouched conn; 18809636 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -18.369ns/-18809.636ns; real time: 45 secs 
+Level 4, iteration 18
+5(0.00%) conflicts; 0(0.00%) untouched conn; 18809636 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -18.369ns/-18809.636ns; real time: 45 secs 
+Level 4, iteration 19
+2(0.00%) conflicts; 0(0.00%) untouched conn; 19405497 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -18.369ns/-19405.498ns; real time: 45 secs 
+Level 4, iteration 20
+1(0.00%) conflict; 0(0.00%) untouched conn; 19405497 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -18.369ns/-19405.498ns; real time: 45 secs 
+Level 4, iteration 21
+1(0.00%) conflict; 0(0.00%) untouched conn; 19440377 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -18.416ns/-19440.378ns; real time: 45 secs 
+Level 4, iteration 22
+1(0.00%) conflict; 0(0.00%) untouched conn; 19440377 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -18.416ns/-19440.378ns; real time: 45 secs 
+Level 4, iteration 23
+1(0.00%) conflict; 0(0.00%) untouched conn; 19440377 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -18.416ns/-19440.378ns; real time: 45 secs 
+Level 4, iteration 24
+0(0.00%) conflict; 0(0.00%) untouched conn; 19440377 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -18.416ns/-19440.378ns; real time: 45 secs 
+
+Start NBR section for performance tuning (iteration 1) at 14:01:07 08/13/18
+Level 4, iteration 1
+1(0.00%) conflict; 0(0.00%) untouched conn; 19556348 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -18.612ns/-19556.349ns; real time: 45 secs 
+
+Start NBR section for re-routing at 14:01:07 08/13/18
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 19396817 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -18.659ns/-19396.818ns; real time: 48 secs 
+
+Start NBR section for post-routing at 14:01:10 08/13/18
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 2096 (33.16%)
+  Estimated worst slack<setup> : -18.659ns
+  Timing score<setup> : 55616674
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+Total CPU time 48 secs 
+Total REAL time: 50 secs 
+Completely routed.
+End of route.  6320 routed (100.00%); 0 unrouted.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 55616674 
+
+Dumping design to file platform1_impl1.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = Success
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = -18.659
+PAR_SUMMARY::Timing score<setup/<ns>> = 55616.674
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.378
+PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 49 secs 
+Total REAL time to completion: 50 secs 
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+trce -f "platform1_impl1.pt" -o "platform1_impl1.twr" "platform1_impl1.ncd" "platform1_impl1.prf"
+trce:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file platform1_impl1.ncd.
+Design name: platform1_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-2000ZE
+Package:     WLCSP49
+Performance: 1
+Loading device for application trce from file 'xo2c2000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.0.111.2
+Mon Aug 13 14:01:13 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 1 -sphld m -o platform1_impl1.twr -gui -msgset C:/Users/Suhail/Desktop/Work/Machxo2_SPI/promote.xml platform1_impl1.ncd platform1_impl1.prf 
+Design file:     platform1_impl1.ncd
+Preference file: platform1_impl1.prf
+Device,speed:    LCMXO2-2000ZE,1
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 4096  Score: 55616674
+Cumulative negative slack: 55616674
+
+Constraints cover 380973 paths, 1 nets, and 6317 connections (99.95% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.0.111.2
+Mon Aug 13 14:01:14 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 1 -sphld m -o platform1_impl1.twr -gui -msgset C:/Users/Suhail/Desktop/Work/Machxo2_SPI/promote.xml platform1_impl1.ncd platform1_impl1.prf 
+Design file:     platform1_impl1.ncd
+Preference file: platform1_impl1.prf
+Device,speed:    LCMXO2-2000ZE,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 380973 paths, 1 nets, and 6317 connections (99.95% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 4096 (setup), 0 (hold)
+Score: 55616674 (setup), 0 (hold)
+Cumulative negative slack: 55616674 (55616674+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total time: 2 secs 
+
+iotiming  "platform1_impl1.ncd" "platform1_impl1.prf"
+I/O Timing Report:
+:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application iotiming from file platform1_impl1.ncd.
+Design name: platform1_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-2000ZE
+Package:     WLCSP49
+Performance: 1
+Loading device for application iotiming from file 'xo2c2000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: 1
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file platform1_impl1.ncd.
+Design name: platform1_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-2000ZE
+Package:     WLCSP49
+Performance: 2
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: 2
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file platform1_impl1.ncd.
+Design name: platform1_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-2000ZE
+Package:     WLCSP49
+Performance: 3
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: 3
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file platform1_impl1.ncd.
+Design name: platform1_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-2000ZE
+Package:     WLCSP49
+Performance: M
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: M
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+Done.
+
+bitgen -f "platform1_impl1.t2b" -w "platform1_impl1.ncd" "platform1_impl1.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.10.0.111.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file platform1_impl1.ncd.
+Design name: platform1_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-2000ZE
+Package:     WLCSP49
+Performance: 1
+Loading device for application Bitgen from file 'xo2c2000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+
+Running DRC.
+INFO: Design contains EBR with ASYNC Reset Mode that has a limitation: The use of the EBR block asynchronous reset requires that certain timing be met between the clock and the reset within the memory block. See the device specific data sheet for additional details.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from platform1_impl1.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.94.
+ 
+Saving bit stream in "platform1_impl1.bit".
+
+bitgen -f "platform1_impl1.t2b" -w "platform1_impl1.ncd" -jedec "platform1_impl1.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.10.0.111.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file platform1_impl1.ncd.
+Design name: platform1_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-2000ZE
+Package:     WLCSP49
+Performance: 1
+Loading device for application Bitgen from file 'xo2c2000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+
+Running DRC.
+INFO: Design contains EBR with ASYNC Reset Mode that has a limitation: The use of the EBR block asynchronous reset requires that certain timing be met between the clock and the reset within the memory block. See the device specific data sheet for additional details.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from platform1_impl1.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.94.
+ 
+Saving bit stream in "platform1_impl1.jed".
+ 
+===========
+UFM Summary.
+===========
+UFM Size:        639 Pages (128*639 Bits).
+UFM Utilization: General Purpose Flash Memory.
+ 
+Available General Purpose Flash Memory:  639 Pages (Page 0 to Page 638).
+Initialized UFM Pages:                     0 Page.
+ 

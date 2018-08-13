@@ -1,0 +1,24 @@
+[Files List]
+C:\lscc\diamond\3.10_x64\active-hdl\vlib\std/src/standard.vhd=S
+C:\lscc\diamond\3.10_x64\active-hdl\vlib\pmi_work/src/pmi_ram_dp.v=S
+C:\lscc\diamond\3.10_x64\active-hdl\vlib\pmi_work/src/pmi_distributed_dpram.v=S
+C:\Users\Suhail\Desktop\Work\Machxo2_SPI/platform1/components/spi_flash/rtl/verilog/spi_flash_intf.v=S
+C:\Users\Suhail\Desktop\Work\Machxo2_SPI/platform1/soc/platform1_top.v=S
+C:\Users\Suhail\Desktop\Work\Machxo2_SPI/platform1/components/spi_flash/rtl/verilog/wb_intf.v=S
+C:\lscc\diamond\3.10_x64\active-hdl\vlib\ovi_machxo2/src/BB.v=S
+C:\Users\Suhail\Desktop\Work\Machxo2_SPI/platform1/components/gpio/rtl/verilog/tpio.v=S
+C:\lscc\diamond\3.10_x64\active-hdl\vlib\pmi_work/src/pmi_distributed_spram.v=S
+C:\lscc\diamond\3.10_x64\active-hdl\vlib\pmi_work/src/pmi_addsub.v=S
+C:\Users\Suhail\Desktop\Work\Machxo2_SPI/platform1/components/lm8/rtl/verilog/lm8_interrupt.v=S
+C:\Users\Suhail\Desktop\Work\Machxo2_SPI/platform1/components/lm8/rtl/verilog/lm8_io_cntl.v=S
+C:\Users\Suhail\Desktop\Work\Machxo2_SPI/platform1/components/lm8/rtl/verilog/lm8_flow_cntl.v=S
+C:\Users\Suhail\Desktop\Work\Machxo2_SPI/platform1/components/lm8/rtl/verilog/lm8_alu.v=S
+C:\Users\Suhail\Desktop\Work\Machxo2_SPI/platform1/components/lm8/rtl/verilog/lm8_idec.v=S
+C:\lscc\diamond\3.10_x64\active-hdl\vlib\pmi_work/src/pmi_ram_dq.v=S
+C:\Users\Suhail\Desktop\Work\Machxo2_SPI/platform1/components/lm8/rtl/verilog/lm8_core.v=S
+C:\Users\Suhail\Desktop\Work\Machxo2_SPI/platform1/components/spi_flash/rtl/verilog/spi_flash.v=S
+C:\Users\Suhail\Desktop\Work\Machxo2_SPI/platform1/components/gpio/rtl/verilog/gpio.v=S
+C:\Users\Suhail\Desktop\Work\Machxo2_SPI/platform1/components/lm8/rtl/verilog/lm8_top.v=S
+C:\Users\Suhail\Desktop\Work\Machxo2_SPI/platform1/soc/platform1.v=S
+C:\lscc\diamond\3.10_x64\active-hdl\vlib\ovi_machxo2/src/OSCH.v=S
+C:\Users\Suhail\Desktop\Work\Machxo2_SPI/platform1/soc/platform1_tb.v=S

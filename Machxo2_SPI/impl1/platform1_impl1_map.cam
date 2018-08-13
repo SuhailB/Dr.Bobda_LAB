@@ -1,0 +1,65 @@
+[ START MERGED ]
+platform1_u/counter_2__N_176 counter_2
+platform1_u/reset_n_N_43 reset_n_c
+platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_11 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/wb_state_1
+platform1_u/LM8/n20162 platform1_u/LM8/core_rst_n
+platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/wren_inv_g platform1_u/LM8/prom_enable
+platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/dec0_wre3 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/sp_we_N_946
+platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO2off88/add_sub_inv platform1_u/LM8/u1_isp8_core/u1_lm8_alu/add_sel_N_820
+[ END MERGED ]
+[ START CLIPPED ]
+VCC_net
+platform1_u/LM8/GND_net
+platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/wren_inv
+platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO2off88/scuba_vlo
+platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/GND_net
+platform1_u/LM8/u1_isp8_core/pmi_distributed_dpramMachXO2binarynonenoreg8532_98/scuba_vhi
+platform1_u/LM8/u1_isp8_core/pmi_distributed_dpramMachXO2binarynonenoreg8532/scuba_vhi
+platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/scuba_vlo
+platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/scuba_vhi
+platform1_u/LM8/scratchpad_init.memspeedasyncdisablenoreg8112048/scuba_vlo
+platform1_u/LM8/scratchpad_init.memspeedasyncdisablenoreg8112048/scuba_vhi
+platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/GND_net
+platform1_u/LM8/u1_isp8_core/GND_net
+platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO2off88/scuba_vhi
+platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO2off88/addsub_0/S0
+platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO2off88/precin_inst30/S1
+platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO2off88/precin_inst30/S0
+platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO2off88/addsubd/S1
+platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO2off88/co4d
+platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO2off88/addsubd/COUT
+platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO2off88/co4
+platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/add_1030_1/S0
+platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/add_1030_1/CI
+platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/add_1030_11/CO
+platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_0/DO2
+platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_0/DO3
+platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_0/DO1
+platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/sub_43_add_2_1/S0
+platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/sub_43_add_2_1/CI
+platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/sub_43_add_2_13/S1
+platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/sub_43_add_2_13/CO
+platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672_add_4_1/S0
+platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672_add_4_1/CI
+platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672_add_4_7/S1
+platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672_add_4_7/CO
+[ END CLIPPED ]
+[ START OSC ]
+interalClock 26.60
+[ END OSC ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.10.0.111.2 -- WARNING: Map write only section -- Mon Aug 13 14:00:19 2018
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
+LOCATE COMP "SPIFlashSCK" SITE "F6" ;
+LOCATE COMP "SPIFlashCEJ" SITE "G7" ;
+LOCATE COMP "LEDPIO_OUT[0]" SITE "E7" ;
+LOCATE COMP "LEDPIO_OUT[1]" SITE "F7" ;
+LOCATE COMP "SPIFlashSO" SITE "F5" ;
+LOCATE COMP "reset_n" SITE "B3" ;
+LOCATE COMP "SPIFlashWPJ" SITE "F3" ;
+LOCATE COMP "SPIFlashSI" SITE "G1" ;
+FREQUENCY NET "interalClock" 26.600000 MHz ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

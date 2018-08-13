@@ -1,0 +1,81 @@
+all messages logged in file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/impl1/reveal_error.log
+Analyzing Verilog file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/impl1/reveal_workspace/tmpreveal/platform1_tb_reveal_coretop.v (VERI-1482)
+Analyzing Verilog file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/aes_decipher_block.v (VERI-1482)
+Analyzing Verilog file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/aes_core.v (VERI-1482)
+Analyzing Verilog file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/aes.v (VERI-1482)
+Analyzing Verilog file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/aes_sbox.v (VERI-1482)
+Analyzing Verilog file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/aes_key_mem.v (VERI-1482)
+Analyzing Verilog file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/aes_encipher_block.v (VERI-1482)
+Analyzing Verilog file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/aes_inv_sbox.v (VERI-1482)
+Analyzing Verilog file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/pmi_def.v (VERI-1482)
+Analyzing Verilog file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/platform1_top.v (VERI-1482)
+INFO: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/platform1_top.v(1): analyzing included file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/platform1.v (VERI-1328)
+INFO: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/platform1.v(46): analyzing included file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/system_conf.v (VERI-1328)
+INFO: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/platform1.v(327): analyzing included file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v (VERI-1328)
+INFO: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(48): analyzing included file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/pmi_def.v (VERI-1328)
+ERROR - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/pmi_def.v(46): duplicate module name pmi_distributed_dpram. VERI-1206
+ERROR - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/pmi_def.v(67): module pmi_distributed_spram ignored due to previous errors. VERI-1072
+ERROR - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/pmi_def.v(84): module pmi_addsub ignored due to previous errors. VERI-1072
+ERROR - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/pmi_def.v(113): module pmi_ram_dp ignored due to previous errors. VERI-1072
+ERROR - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/pmi_def.v(137): module pmi_ram_dq ignored due to previous errors. VERI-1072
+ERROR - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/pmi_def.v(158): module pmi_rom ignored due to previous errors. VERI-1072
+INFO: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(50): analyzing included file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/system_conf.v (VERI-1328)
+INFO: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(51): analyzing included file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_include.v (VERI-1328)
+INFO: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(52): analyzing included file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_interrupt.v (VERI-1328)
+INFO: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_interrupt.v(47): analyzing included file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/system_conf.v (VERI-1328)
+ERROR - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_interrupt.v(136): module lm8_interrupt ignored due to previous errors. VERI-1072
+INFO: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(53): analyzing included file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_io_cntl.v (VERI-1328)
+ERROR - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_io_cntl.v(131): module lm8_io_cntl ignored due to previous errors. VERI-1072
+INFO: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(54): analyzing included file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_flow_cntl.v (VERI-1328)
+ERROR - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_flow_cntl.v(534): module lm8_flow_cntl ignored due to previous errors. VERI-1072
+INFO: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(55): analyzing included file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_idec.v (VERI-1328)
+ERROR - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_idec.v(283): module lm8_idec ignored due to previous errors. VERI-1072
+INFO: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(56): analyzing included file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_alu.v (VERI-1328)
+ERROR - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_alu.v(137): module lm8_alu ignored due to previous errors. VERI-1072
+INFO: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(57): analyzing included file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_core.v (VERI-1328)
+WARNING - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_core.v(82): parameter declaration becomes local in lm8_core with formal parameter declaration list. VERI-1199
+WARNING - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_core.v(83): parameter declaration becomes local in lm8_core with formal parameter declaration list. VERI-1199
+WARNING - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_core.v(84): parameter declaration becomes local in lm8_core with formal parameter declaration list. VERI-1199
+ERROR - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_core.v(661): module lm8_core ignored due to previous errors. VERI-1072
+INFO: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(58): analyzing included file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v (VERI-1328)
+WARNING - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v(113): parameter declaration becomes local in lm8 with formal parameter declaration list. VERI-1199
+WARNING - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v(114): parameter declaration becomes local in lm8 with formal parameter declaration list. VERI-1199
+ERROR - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v(1126): module lm8 ignored due to previous errors. VERI-1072
+INFO: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/platform1.v(328): analyzing included file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v (VERI-1328)
+INFO: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v(79): analyzing included file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/system_conf.v (VERI-1328)
+WARNING - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v(176): parameter declaration becomes local in gpio with formal parameter declaration list. VERI-1199
+ERROR - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v(1887): module gpio ignored due to previous errors. VERI-1072
+INFO: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/platform1.v(329): analyzing included file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/gpio/rtl/verilog/tpio.v (VERI-1328)
+INFO: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/gpio/rtl/verilog/tpio.v(65): analyzing included file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/system_conf.v (VERI-1328)
+WARNING - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/gpio/rtl/verilog/tpio.v(87): parameter declaration becomes local in tpio with formal parameter declaration list. VERI-1199
+ERROR - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/gpio/rtl/verilog/tpio.v(189): module tpio ignored due to previous errors. VERI-1072
+INFO: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/platform1.v(330): analyzing included file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash.v (VERI-1328)
+WARNING - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash.v(125): assignment to input valueVERI-1214
+WARNING - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash.v(129): parameter declaration becomes local in spi_flash with formal parameter declaration list. VERI-1199
+WARNING - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash.v(130): parameter declaration becomes local in spi_flash with formal parameter declaration list. VERI-1199
+WARNING - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash.v(131): parameter declaration becomes local in spi_flash with formal parameter declaration list. VERI-1199
+WARNING - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash.v(132): parameter declaration becomes local in spi_flash with formal parameter declaration list. VERI-1199
+ERROR - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash.v(484): module spi_flash ignored due to previous errors. VERI-1072
+INFO: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/platform1.v(331): analyzing included file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v (VERI-1328)
+WARNING - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v(176): parameter declaration becomes local in wb_intf with formal parameter declaration list. VERI-1199
+WARNING - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v(177): parameter declaration becomes local in wb_intf with formal parameter declaration list. VERI-1199
+WARNING - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v(178): parameter declaration becomes local in wb_intf with formal parameter declaration list. VERI-1199
+WARNING - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v(180): parameter declaration becomes local in wb_intf with formal parameter declaration list. VERI-1199
+WARNING - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v(181): parameter declaration becomes local in wb_intf with formal parameter declaration list. VERI-1199
+ERROR - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v(1336): module wb_intf ignored due to previous errors. VERI-1072
+INFO: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/platform1.v(332): analyzing included file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v (VERI-1328)
+WARNING - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(93): parameter declaration becomes local in spi_flash_intf with formal parameter declaration list. VERI-1199
+WARNING - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(94): parameter declaration becomes local in spi_flash_intf with formal parameter declaration list. VERI-1199
+WARNING - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(95): parameter declaration becomes local in spi_flash_intf with formal parameter declaration list. VERI-1199
+WARNING - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(96): parameter declaration becomes local in spi_flash_intf with formal parameter declaration list. VERI-1199
+WARNING - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(98): parameter declaration becomes local in spi_flash_intf with formal parameter declaration list. VERI-1199
+WARNING - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(99): parameter declaration becomes local in spi_flash_intf with formal parameter declaration list. VERI-1199
+WARNING - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(100): parameter declaration becomes local in spi_flash_intf with formal parameter declaration list. VERI-1199
+WARNING - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(101): parameter declaration becomes local in spi_flash_intf with formal parameter declaration list. VERI-1199
+WARNING - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(102): parameter declaration becomes local in spi_flash_intf with formal parameter declaration list. VERI-1199
+WARNING - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(103): parameter declaration becomes local in spi_flash_intf with formal parameter declaration list. VERI-1199
+WARNING - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(104): parameter declaration becomes local in spi_flash_intf with formal parameter declaration list. VERI-1199
+WARNING - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(106): parameter declaration becomes local in spi_flash_intf with formal parameter declaration list. VERI-1199
+ERROR - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(599): module spi_flash_intf ignored due to previous errors. VERI-1072
+ERROR - C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../soc/platform1.v(678): module platform1 ignored due to previous errors. VERI-1072
+Sorry, too many errors..

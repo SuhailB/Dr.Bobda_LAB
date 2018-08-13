@@ -1,0 +1,16 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Mon Aug 13 14:01:24 2018 *
+NOTE DESIGN NAME: platform1_top *
+NOTE DEVICE NAME: LCMXO2-2000ZE-1WLCSP49 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS SPIFlashSCK : F6 : out *
+NOTE PINS SPIFlashCEJ : G7 : out *
+NOTE PINS LEDPIO_OUT[0] : E7 : out *
+NOTE PINS LEDPIO_OUT[1] : F7 : out *
+NOTE PINS SPIFlashSO : F5 : in *
+NOTE PINS reset_n : B3 : in *
+NOTE PINS SPIFlashWPJ : F3 : out *
+NOTE PINS SPIFlashSI : G1 : out *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

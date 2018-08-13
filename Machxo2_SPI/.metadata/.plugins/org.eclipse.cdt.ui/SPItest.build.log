@@ -1,0 +1,86 @@
+
+**** Build of configuration Release for project SPItest ****
+
+make all 
+      1 [main] make 3004 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+creating platform-rules makefile
+deleting ../platform1/Release/platform_rules.mk done!
+writing ../platform1/Release/platform_rules.mk done!
+perl C:/lscc/diamond/3.10_x64/micosystem/utilities/perlscript/build/\build_ddinit.pl ../../soc/platform1.msb ../platform1/Release
+generating dev driver files
+gpio : 1
+perl C:/lscc/diamond/3.10_x64/micosystem/utilities/perlscript/build/\build_DeviceDrivers_makefile.pl ../../soc/platform1.msb ../platform1/Release ../../../soc/../components ../../soc/../components
+generating include makefile specified by peripherals 
+perl C:/lscc/diamond/3.10_x64/micosystem/utilities/perlscript/build/\build_platform_makefile.pl ../platform1/Release/settings.xml
+creating platform makefile 
+deleting ../platform1/Release/makefile done!
+PLATFORM DIR ../platform1/Release
+writing to ../platform1/Release/makefile done!
+perl C:/lscc/diamond/3.10_x64/micosystem/utilities/perlscript/build//lm8/build_default_linker_script.pl ../platform1/Release/linker.ld ../../soc/platform1.msb ../user.pref
+generating linker file
+PROMSize is 2048 
+DATASIZE is 2048 
+done generating linker file
+perl C:/lscc/diamond/3.10_x64/micosystem/utilities/perlscript/build/\build_linker_settings.pl ../user.pref ../platform1/Release/linker_settings.mk ../platform1/Release/linker.ld
+creating linker_file_define.mk 
+done creating linker-settings file
+perl C:/lscc/diamond/3.10_x64/micosystem/utilities/perlscript/build/\build_stdstream_src.pl ../user.pref ../platform1/MicoStdStreams.c
+generating std/streams selection C-source file
+writing ../platform1/MicoStdStreams.c done
+
+make[1]: Entering directory `/cygdrive/c/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/SPItest/platform1/Release'
+lm8-elf-gcc -c -mcall-stack-size=16 -mcmodel=large  -ffunction-sections -mcall-prologues -Os -Wall  -I. ../DDInit.c -o ../../Release/Release/DDInit.o
+echo -n ../../Release/Release/ > ../../Release/Release/DDInit.d && \
+lm8-elf-gcc -mcall-stack-size=16 -mcmodel=large  -ffunction-sections -mcall-prologues -Os -Wall  -I. -MM -MG ../DDInit.c >> ../../Release/Release/DDInit.d
+lm8-elf-gcc -c -mcall-stack-size=16 -mcmodel=large  -ffunction-sections -mcall-prologues -Os -Wall  -I. ../DDStructs.c -o ../../Release/Release/DDStructs.o
+echo -n ../../Release/Release/ > ../../Release/Release/DDStructs.d && \
+lm8-elf-gcc -mcall-stack-size=16 -mcmodel=large  -ffunction-sections -mcall-prologues -Os -Wall  -I. -MM -MG ../DDStructs.c >> ../../Release/Release/DDStructs.d
+lm8-elf-gcc -c -mcall-stack-size=16 -mcmodel=large  -ffunction-sections -mcall-prologues -Os -Wall  -I. ../MicoGPIO.c -o ../../Release/Release/MicoGPIO.o
+echo -n ../../Release/Release/ > ../../Release/Release/MicoGPIO.d && \
+lm8-elf-gcc -mcall-stack-size=16 -mcmodel=large  -ffunction-sections -mcall-prologues -Os -Wall  -I. -MM -MG ../MicoGPIO.c >> ../../Release/Release/MicoGPIO.d
+lm8-elf-gcc -c -mcall-stack-size=16 -mcmodel=large  -ffunction-sections -mcall-prologues -Os -Wall  -I. ../MicoGPIOService.c -o ../../Release/Release/MicoGPIOService.o
+echo -n ../../Release/Release/ > ../../Release/Release/MicoGPIOService.d && \
+lm8-elf-gcc -mcall-stack-size=16 -mcmodel=large  -ffunction-sections -mcall-prologues -Os -Wall  -I. -MM -MG ../MicoGPIOService.c >> ../../Release/Release/MicoGPIOService.d
+lm8-elf-gcc -c -mcall-stack-size=16 -mcmodel=large  -ffunction-sections -mcall-prologues -Os -Wall  -I. ../MicoInterrupts.c -o ../../Release/Release/MicoInterrupts.o
+echo -n ../../Release/Release/ > ../../Release/Release/MicoInterrupts.d && \
+lm8-elf-gcc -mcall-stack-size=16 -mcmodel=large  -ffunction-sections -mcall-prologues -Os -Wall  -I. -MM -MG ../MicoInterrupts.c >> ../../Release/Release/MicoInterrupts.d
+lm8-elf-gcc -c -mcall-stack-size=16 -mcmodel=large  -ffunction-sections -mcall-prologues -Os -Wall  -I. ../MicoSPIFlash.c -o ../../Release/Release/MicoSPIFlash.o
+echo -n ../../Release/Release/ > ../../Release/Release/MicoSPIFlash.d && \
+lm8-elf-gcc -mcall-stack-size=16 -mcmodel=large  -ffunction-sections -mcall-prologues -Os -Wall  -I. -MM -MG ../MicoSPIFlash.c >> ../../Release/Release/MicoSPIFlash.d
+lm8-elf-gcc -c -mcall-stack-size=16 -mcmodel=large  -ffunction-sections -mcall-prologues -Os -Wall  -I.   ../MicoSleepHelper.S -o ../../Release/Release/MicoSleepHelper.o
+lm8-elf-gcc -c -mcall-stack-size=16 -mcmodel=large  -ffunction-sections -mcall-prologues -Os -Wall  -I. ../MicoStdStreams.c -o ../../Release/Release/MicoStdStreams.o
+echo -n ../../Release/Release/ > ../../Release/Release/MicoStdStreams.d && \
+lm8-elf-gcc -mcall-stack-size=16 -mcmodel=large  -ffunction-sections -mcall-prologues -Os -Wall  -I. -MM -MG ../MicoStdStreams.c >> ../../Release/Release/MicoStdStreams.d
+creating ../../Release/Release/libplatform1.a...
+r - ../../Release/Release/DDInit.o
+r - ../../Release/Release/DDStructs.o
+r - ../../Release/Release/MicoGPIO.o
+r - ../../Release/Release/MicoGPIOService.o
+r - ../../Release/Release/MicoInterrupts.o
+r - ../../Release/Release/MicoSPIFlash.o
+r - ../../Release/Release/MicoSleepHelper.o
+r - ../../Release/Release/MicoStdStreams.o
+make[1]: Leaving directory `/cygdrive/c/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/SPItest/platform1/Release'
+detected change in user.pref or platform...
+force-cleaning archive objects...
+rm -f Release/../LM8_SPI_Test.o
+rm -f Release/../Mico8Interrupts.o
+rm -f Release/crt0.o
+
+touch force_clean_archive_objs
+
+lm8-elf-gcc -c -mcall-stack-size=16 -mcmodel=large   -I./../platform1 -ffunction-sections -mcall-prologues -Os -Wall ../LM8_SPI_Test.c -o Release/../LM8_SPI_Test.o
+../LM8_SPI_Test.c: In function ‘main’:
+../LM8_SPI_Test.c:34: warning: unused variable ‘spiFlash’
+echo -n Release/../ > Release/../LM8_SPI_Test.d && \
+lm8-elf-gcc -mcall-stack-size=16 -mcmodel=large   -I./../platform1 -ffunction-sections -mcall-prologues -Os -Wall -MM -MG ../LM8_SPI_Test.c >> Release/../LM8_SPI_Test.d
+lm8-elf-gcc -c -mcall-stack-size=16 -mcmodel=large   -I./../platform1 -ffunction-sections -mcall-prologues -Os -Wall ../Mico8Interrupts.c -o Release/../Mico8Interrupts.o
+echo -n Release/../ > Release/../Mico8Interrupts.d && \
+lm8-elf-gcc -mcall-stack-size=16 -mcmodel=large   -I./../platform1 -ffunction-sections -mcall-prologues -Os -Wall -MM -MG ../Mico8Interrupts.c >> Release/../Mico8Interrupts.d
+lm8-elf-gcc -c -mcall-stack-size=16 -mcmodel=large   -I./../platform1 -ffunction-sections -mcall-prologues -Os -Wall   ./../platform1/crt0.S -o Release/crt0.o
+building application...
+lm8-elf-gcc -mcall-stack-size=16 -mcmodel=large  -T ../platform1/Release/linker.ld -oSPItest.elf Release/../LM8_SPI_Test.o Release/../Mico8Interrupts.o Release/crt0.o   ./Release/libplatform1.a -lgcc  -nostdlib -Wl,--gc-sections 
+lm8-elf-size SPItest.elf
+   text	   data	    bss	    dec	    hex	filename
+   5097	     60	    512	   5669	   1625	SPItest.elf

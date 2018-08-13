@@ -1,0 +1,40 @@
+#-- Lattice Semiconductor Corporation Ltd.
+#-- Bali Reveal project file
+
+#device options
+[Device]
+part = LCMXO2-2000ZE-1UWG49CTR
+family = MachXO2
+device = LCMXO2-2000ZE
+speed = 1
+package = WLCSP49
+operation = Commercial
+
+#design options
+[Design]
+title = platform1
+path = C:/Users/Suhail/Desktop/Work/Machxo2_SPI/impl1
+core_generate = C:/Users/Suhail/Desktop/Work/Machxo2_SPI/impl1
+search_path = C:/Users/Suhail/Desktop/Work/Machxo2_SPI
+top = platform1_tb
+lpf = C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1.lpf
+synthesis = lse
+
+#strategy options
+VHDL2008 = false
+
+#HDLs options
+[HDLs]
+C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/aes_decipher_block.v = Verilog
+C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/aes_core.v = Verilog
+C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/aes.v = Verilog
+C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/aes_sbox.v = Verilog
+C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/aes_key_mem.v = Verilog
+C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/aes_encipher_block.v = Verilog
+C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/aes_inv_sbox.v = Verilog
+C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/pmi_def.v = Verilog
+C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/platform1_top.v = Verilog
+C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/platform1_tb.v = Verilog
+[HDL_Defines]
+SBP_SYNTHESIS=
+[HDL_Param]

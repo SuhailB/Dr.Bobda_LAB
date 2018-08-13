@@ -1,0 +1,283 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Wed Jul 11 11:47:37 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     aes
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets clk_c]
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 53.757ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             \core/enc_block/round_ctr_reg_910__i3  (from clk_c +)
+   Destination:    FD1P3AX    D              \core/keymem/key_mem[14]__i25  (to clk_c +)
+
+   Delay:                  58.457ns  (21.1% logic, 78.9% route), 14 logic levels.
+
+ Constraint Details:
+
+     58.457ns data_path \core/enc_block/round_ctr_reg_910__i3 to \core/keymem/key_mem[14]__i25 violates
+      5.000ns delay constraint less
+      0.300ns L_S requirement (totaling 4.700ns) by 53.757ns
+
+ Path Details: \core/enc_block/round_ctr_reg_910__i3 to \core/keymem/key_mem[14]__i25
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.829             CK to Q              \core/enc_block/round_ctr_reg_910__i3 (from clk_c)
+Route         8   e 3.965                                  \core/enc_round_nr[3]
+LUT4        ---     0.922              D to Z              \core/enc_block/i1_2_lut_rep_544_4_lut
+Route         3   e 3.115                                  \core/n33848
+LUT4        ---     0.922              D to Z              \core/dec_block/i1_4_lut_rep_542
+Route       390   e 4.684                                  \core/n33846
+LUT4        ---     0.922              C to Z              \core/enc_block/i2_3_lut
+Route        32   e 5.069                                  \core/n5
+LUT4        ---     0.922              A to Z              \core/keymem/i11_4_lut_adj_608
+Route         8   e 3.821                                  muxed_sboxw[20]
+LUT4        ---     0.922          AD[8] to DO0            sboxw_23__I_0_Mux_0
+Route         7   e 3.725                                  new_sboxw[16]
+LUT4        ---     0.922              A to Z              \core/keymem/new_sboxw_23__I_0_i25_2_lut_rep_419
+Route         4   e 3.322                                  \core/keymem/n33723
+LUT4        ---     0.922              B to Z              \core/keymem/i1_4_lut_adj_568
+Route         4   e 3.322                                  \core/keymem/n4_adj_8428
+LUT4        ---     0.922              B to Z              \core/keymem/i2_2_lut_rep_269
+Route         3   e 3.115                                  \core/keymem/n33573
+LUT4        ---     0.922              B to Z              \core/keymem/i11219_4_lut
+Route         1   e 0.020                                  \core/keymem/n16802
+MUXL5       ---     0.436           ALUT to Z              \core/keymem/i11220
+Route         1   e 2.324                                  \core/keymem/n16803
+LUT4        ---     0.922              C to Z              \core/keymem/i1_2_lut_3_lut_4_lut_adj_720
+Route         2   e 2.823                                  n16804
+LUT4        ---     0.922              C to Z              \core/keymem/i1_3_lut_4_lut_adj_628
+Route        15   e 4.499                                  \core/keymem/key_mem_new[24]
+LUT4        ---     0.922              D to Z              \core/keymem/mux_9_i25_3_lut_4_lut
+Route         1   e 2.324                                  \core/keymem/key_mem_0__127__N_6752[24]
+                  --------
+                   58.457  (21.1% logic, 78.9% route), 14 logic levels.
+
+
+Error:  The following path violates requirements by 53.757ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             \core/enc_block/round_ctr_reg_910__i3  (from clk_c +)
+   Destination:    FD1P3AX    D              \core/keymem/key_mem[14]__i25  (to clk_c +)
+
+   Delay:                  58.457ns  (21.1% logic, 78.9% route), 14 logic levels.
+
+ Constraint Details:
+
+     58.457ns data_path \core/enc_block/round_ctr_reg_910__i3 to \core/keymem/key_mem[14]__i25 violates
+      5.000ns delay constraint less
+      0.300ns L_S requirement (totaling 4.700ns) by 53.757ns
+
+ Path Details: \core/enc_block/round_ctr_reg_910__i3 to \core/keymem/key_mem[14]__i25
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.829             CK to Q              \core/enc_block/round_ctr_reg_910__i3 (from clk_c)
+Route         8   e 3.965                                  \core/enc_round_nr[3]
+LUT4        ---     0.922              D to Z              \core/enc_block/i1_2_lut_rep_544_4_lut
+Route         3   e 3.115                                  \core/n33848
+LUT4        ---     0.922              D to Z              \core/dec_block/i1_4_lut_rep_542
+Route       390   e 4.684                                  \core/n33846
+LUT4        ---     0.922              C to Z              \core/enc_block/i2_3_lut
+Route        32   e 5.069                                  \core/n5
+LUT4        ---     0.922              A to Z              \core/keymem/i11_4_lut_adj_607
+Route         8   e 3.821                                  muxed_sboxw[19]
+LUT4        ---     0.922          AD[8] to DO0            sboxw_23__I_0_Mux_0
+Route         7   e 3.725                                  new_sboxw[16]
+LUT4        ---     0.922              A to Z              \core/keymem/new_sboxw_23__I_0_i25_2_lut_rep_419
+Route         4   e 3.322                                  \core/keymem/n33723
+LUT4        ---     0.922              B to Z              \core/keymem/i1_4_lut_adj_568
+Route         4   e 3.322                                  \core/keymem/n4_adj_8428
+LUT4        ---     0.922              B to Z              \core/keymem/i2_2_lut_rep_269
+Route         3   e 3.115                                  \core/keymem/n33573
+LUT4        ---     0.922              B to Z              \core/keymem/i11219_4_lut
+Route         1   e 0.020                                  \core/keymem/n16802
+MUXL5       ---     0.436           ALUT to Z              \core/keymem/i11220
+Route         1   e 2.324                                  \core/keymem/n16803
+LUT4        ---     0.922              C to Z              \core/keymem/i1_2_lut_3_lut_4_lut_adj_720
+Route         2   e 2.823                                  n16804
+LUT4        ---     0.922              C to Z              \core/keymem/i1_3_lut_4_lut_adj_628
+Route        15   e 4.499                                  \core/keymem/key_mem_new[24]
+LUT4        ---     0.922              D to Z              \core/keymem/mux_9_i25_3_lut_4_lut
+Route         1   e 2.324                                  \core/keymem/key_mem_0__127__N_6752[24]
+                  --------
+                   58.457  (21.1% logic, 78.9% route), 14 logic levels.
+
+
+Error:  The following path violates requirements by 53.757ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             \core/enc_block/round_ctr_reg_910__i3  (from clk_c +)
+   Destination:    FD1P3AX    D              \core/keymem/key_mem[14]__i25  (to clk_c +)
+
+   Delay:                  58.457ns  (21.1% logic, 78.9% route), 14 logic levels.
+
+ Constraint Details:
+
+     58.457ns data_path \core/enc_block/round_ctr_reg_910__i3 to \core/keymem/key_mem[14]__i25 violates
+      5.000ns delay constraint less
+      0.300ns L_S requirement (totaling 4.700ns) by 53.757ns
+
+ Path Details: \core/enc_block/round_ctr_reg_910__i3 to \core/keymem/key_mem[14]__i25
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.829             CK to Q              \core/enc_block/round_ctr_reg_910__i3 (from clk_c)
+Route         8   e 3.965                                  \core/enc_round_nr[3]
+LUT4        ---     0.922              D to Z              \core/enc_block/i1_2_lut_rep_544_4_lut
+Route         3   e 3.115                                  \core/n33848
+LUT4        ---     0.922              D to Z              \core/dec_block/i1_4_lut_rep_542
+Route       390   e 4.684                                  \core/n33846
+LUT4        ---     0.922              C to Z              \core/enc_block/i2_3_lut
+Route        32   e 5.069                                  \core/n5
+LUT4        ---     0.922              A to Z              \core/keymem/i11_4_lut_adj_611
+Route         8   e 3.821                                  muxed_sboxw[23]
+LUT4        ---     0.922          AD[8] to DO0            sboxw_23__I_0_Mux_0
+Route         7   e 3.725                                  new_sboxw[16]
+LUT4        ---     0.922              A to Z              \core/keymem/new_sboxw_23__I_0_i25_2_lut_rep_419
+Route         4   e 3.322                                  \core/keymem/n33723
+LUT4        ---     0.922              B to Z              \core/keymem/i1_4_lut_adj_568
+Route         4   e 3.322                                  \core/keymem/n4_adj_8428
+LUT4        ---     0.922              B to Z              \core/keymem/i2_2_lut_rep_269
+Route         3   e 3.115                                  \core/keymem/n33573
+LUT4        ---     0.922              B to Z              \core/keymem/i11219_4_lut
+Route         1   e 0.020                                  \core/keymem/n16802
+MUXL5       ---     0.436           ALUT to Z              \core/keymem/i11220
+Route         1   e 2.324                                  \core/keymem/n16803
+LUT4        ---     0.922              C to Z              \core/keymem/i1_2_lut_3_lut_4_lut_adj_720
+Route         2   e 2.823                                  n16804
+LUT4        ---     0.922              C to Z              \core/keymem/i1_3_lut_4_lut_adj_628
+Route        15   e 4.499                                  \core/keymem/key_mem_new[24]
+LUT4        ---     0.922              D to Z              \core/keymem/mux_9_i25_3_lut_4_lut
+Route         1   e 2.324                                  \core/keymem/key_mem_0__127__N_6752[24]
+                  --------
+                   58.457  (21.1% logic, 78.9% route), 14 logic levels.
+
+Warning: 58.757 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c]                   |     5.000 ns|    58.757 ns|    14 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+\core/n5                                |      32|    4096|     99.00%
+                                        |        |        |
+\core/n33846                            |     390|    3960|     96.68%
+                                        |        |        |
+\core/n33848                            |       3|    3960|     96.68%
+                                        |        |        |
+\core/enc_round_nr[3]                   |       8|    1560|     38.09%
+                                        |        |        |
+\core/enc_round_nr[1]                   |       7|    1200|     29.30%
+                                        |        |        |
+\core/enc_round_nr[2]                   |       6|    1200|     29.30%
+                                        |        |        |
+\core/keymem/n4_adj_8451                |       4|     828|     20.21%
+                                        |        |        |
+\core/keymem/n33562                     |       3|     828|     20.21%
+                                        |        |        |
+\core/keymem/n33718                     |       4|     828|     20.21%
+                                        |        |        |
+new_sboxw[21]                           |       7|     828|     20.21%
+                                        |        |        |
+\core/keymem/n4_adj_8428                |       4|     727|     17.75%
+                                        |        |        |
+\core/keymem/n4_adj_8438                |       4|     727|     17.75%
+                                        |        |        |
+\core/keymem/n4_adj_8444                |       4|     727|     17.75%
+                                        |        |        |
+\core/keymem/n4_adj_8449                |       4|     727|     17.75%
+                                        |        |        |
+\core/keymem/n33565                     |       3|     727|     17.75%
+                                        |        |        |
+\core/keymem/n33567                     |       3|     727|     17.75%
+                                        |        |        |
+\core/keymem/n33568                     |       3|     727|     17.75%
+                                        |        |        |
+\core/keymem/n33573                     |       3|     727|     17.75%
+                                        |        |        |
+\core/keymem/n33719                     |       4|     727|     17.75%
+                                        |        |        |
+\core/keymem/n33720                     |       4|     727|     17.75%
+                                        |        |        |
+\core/keymem/n33721                     |       4|     727|     17.75%
+                                        |        |        |
+\core/keymem/n33723                     |       4|     727|     17.75%
+                                        |        |        |
+new_sboxw[16]                           |       7|     727|     17.75%
+                                        |        |        |
+new_sboxw[18]                           |       7|     727|     17.75%
+                                        |        |        |
+new_sboxw[19]                           |       7|     727|     17.75%
+                                        |        |        |
+new_sboxw[20]                           |       7|     727|     17.75%
+                                        |        |        |
+muxed_sboxw[23]                         |       8|     533|     13.01%
+                                        |        |        |
+muxed_sboxw[19]                         |       8|     515|     12.57%
+                                        |        |        |
+muxed_sboxw[20]                         |       8|     515|     12.57%
+                                        |        |        |
+muxed_sboxw[21]                         |       8|     515|     12.57%
+                                        |        |        |
+muxed_sboxw[22]                         |       8|     515|     12.57%
+                                        |        |        |
+muxed_sboxw[18]                         |       8|     509|     12.43%
+                                        |        |        |
+muxed_sboxw[16]                         |       8|     497|     12.13%
+                                        |        |        |
+muxed_sboxw[17]                         |       8|     497|     12.13%
+                                        |        |        |
+\core/keymem/key_mem_new[29]            |      15|     468|     11.43%
+                                        |        |        |
+\core/keymem/n17102                     |       1|     468|     11.43%
+                                        |        |        |
+\core/keymem/n17103                     |       1|     468|     11.43%
+                                        |        |        |
+n17104                                  |       2|     468|     11.43%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+Timing summary:
+---------------
+
+Timing errors: 4096  Score: 218501512
+
+Constraints cover  1874261 paths, 10380 nets, and 34727 connections (96.3% coverage)
+
+
+Peak memory: 159125504 bytes, TRCE: 25313280 bytes, DLYMAN: 2785280 bytes
+CPU_TIME_REPORT: 0 secs 

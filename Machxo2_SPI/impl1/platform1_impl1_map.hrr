@@ -1,0 +1,204 @@
+---------------------------------------------------
+Report for cell platform1_top
+   Instance path: platform1_top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     637.00        100.0
+                                  LUT4	    1143.00        100.0
+                               DISTRAM	      36.00        100.0
+                                 IOBUF	          8        100.0
+                                PFUREG	        518        100.0
+                                RIPPLE	         23        100.0
+                                   EBR	          6        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                             platform1	          1        96.5
+---------------------------------------------------
+Report for cell platform1
+   Instance path: platform1_top/platform1_u
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     614.50        96.5
+                                  LUT4	    1092.33        95.6
+                               DISTRAM	      35.00        97.2
+                                PFUREG	        518        100.0
+                                RIPPLE	         23        100.0
+                                   EBR	          6        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+spi_flash_renamed_due_excessive_length_4	          1        55.8
+    lm8_renamed_due_excessive_length_1	          1        28.7
+arbiter2(MAX_DAT_WIDTH=8,WBS_DAT_WIDTH=8,WBM0_DAT_WIDTH=8,WBM1_DAT_WIDTH=8)	          1         9.9
+gpio(GPIO_WB_DAT_WIDTH=8,DATA_WIDTH=32'b010,INPUT_WIDTH=32'b01,OUTPUT_WIDTH=32'b01,EDGE=1,POSE_EDGE_IRQ=1,INPUT_PORTS_ONLY=0,OUTPUT_PORTS_ONLY=1)	          1         0.1
+---------------------------------------------------
+Report for cell arbiter2(MAX_DAT_WIDTH=8,WBS_DAT_WIDTH=8,WBM0_DAT_WIDTH=8,WBM1_DAT_WIDTH=8)
+   Instance path: platform1_top/platform1_u/arbiter
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      63.17         9.9
+                                  LUT4	     171.33        15.0
+                                PFUREG	          1         0.2
+---------------------------------------------------
+Report for cell spi_flash_renamed_due_excessive_length_4
+   Instance path: platform1_top/platform1_u/SPIFlashS_DAT_O_7__I_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     355.62        55.8
+                                  LUT4	     590.00        51.6
+                                PFUREG	        398        76.8
+                                RIPPLE	         11        47.8
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+wb_intf_renamed_due_excessive_length_5	          1        36.5
+spi_flash_intf(WB_DAT_WIDTH=8,C_PORT_ENABLE=1,C_WB_DAT_WIDTH=8,BUF_WIDTH=0,PAGE_WIDTH=2)	          1        18.8
+---------------------------------------------------
+Report for cell wb_intf_renamed_due_excessive_length_5
+   Instance path: platform1_top/platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     232.37        36.5
+                                  LUT4	     369.33        32.3
+                                PFUREG	        304        58.7
+---------------------------------------------------
+Report for cell spi_flash_intf(WB_DAT_WIDTH=8,C_PORT_ENABLE=1,C_WB_DAT_WIDTH=8,BUF_WIDTH=0,PAGE_WIDTH=2)
+   Instance path: platform1_top/platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     119.75        18.8
+                                  LUT4	     213.67        18.7
+                                PFUREG	         89        17.2
+                                RIPPLE	         11        47.8
+---------------------------------------------------
+Report for cell lm8_renamed_due_excessive_length_1
+   Instance path: platform1_top/platform1_u/LM8
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     182.88        28.7
+                                  LUT4	     290.00        25.4
+                               DISTRAM	      35.00        97.2
+                                PFUREG	        113        21.8
+                                RIPPLE	         12        52.2
+                                   EBR	          6        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+pmi_ram_dqMnhscratchpad_initsadn8112048f9ce2e6	          1         0.0
+pmi_ram_dqMnhprom_initsadn18112048f3df93e	          1         1.9
+lm8_core(FAMILY_NAME="MachXO2",EXT_AW=32,PROM_AW=32'sb01011,PROM_AD=2048,REGISTERS_16=0,PGM_STACK_AW=32'sb0100)	          1        21.9
+---------------------------------------------------
+Report for cell pmi_ram_dqMnhscratchpad_initsadn8112048f9ce2e6
+   Instance path: platform1_top/platform1_u/LM8/scratchpad_init.memspeedasyncdisablenoreg8112048
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          2        33.3
+---------------------------------------------------
+Report for cell pmi_ram_dqMnhprom_initsadn18112048f3df93e
+   Instance path: platform1_top/platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      11.87         1.9
+                                  LUT4	      29.00         2.5
+                                PFUREG	          1         0.2
+                                   EBR	          4        66.7
+---------------------------------------------------
+Report for cell lm8_core(FAMILY_NAME="MachXO2",EXT_AW=32,PROM_AW=32'sb01011,PROM_AD=2048,REGISTERS_16=0,PGM_STACK_AW=32'sb0100)
+   Instance path: platform1_top/platform1_u/LM8/u1_isp8_core
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     139.23        21.9
+                                  LUT4	     182.00        15.9
+                               DISTRAM	      35.00        97.2
+                                PFUREG	         98        18.9
+                                RIPPLE	         12        52.2
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+pmi_distributed_dpramMbnonen853292a5343	          2         3.1
+          lm8_idec(PROM_AW=32'sb01011)	          1         2.9
+           lm8_interrupt(INTERRUPTS=8)	          1         0.5
+                           lm8_io_cntl	          1         1.1
+lm8_flow_cntl(PGM_STACK_AW=32'sb0100,PROM_AW=32'sb01011,FAMILY_NAME="MachXO2")	          1         6.0
+        lm8_alu(FAMILY_NAME="MachXO2")	          1         4.0
+---------------------------------------------------
+Report for cell pmi_distributed_dpramMbnonen853292a5343
+   Instance path: platform1_top/platform1_u/LM8/u1_isp8_core/pmi_distributed_dpramMachXO2binarynonenoreg8532
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       9.75         1.5
+                                  LUT4	       9.00         0.8
+                               DISTRAM	      12.00        33.3
+---------------------------------------------------
+Report for cell pmi_distributed_dpramMbnonen853292a5343
+   Instance path: platform1_top/platform1_u/LM8/u1_isp8_core/pmi_distributed_dpramMachXO2binarynonenoreg8532_98
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      15.78         2.5
+                                  LUT4	      10.50         0.9
+                               DISTRAM	      12.00        33.3
+---------------------------------------------------
+Report for cell lm8_interrupt(INTERRUPTS=8)
+   Instance path: platform1_top/platform1_u/LM8/u1_isp8_core/u1_lm8_interrupt
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       3.08         0.5
+                                  LUT4	       1.00         0.1
+                                PFUREG	          9         1.7
+---------------------------------------------------
+Report for cell lm8_idec(PROM_AW=32'sb01011)
+   Instance path: platform1_top/platform1_u/LM8/u1_isp8_core/u1_lm8_idec
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      18.65         2.9
+                                  LUT4	      45.00         3.9
+---------------------------------------------------
+Report for cell lm8_flow_cntl(PGM_STACK_AW=32'sb0100,PROM_AW=32'sb01011,FAMILY_NAME="MachXO2")
+   Instance path: platform1_top/platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      37.95         6.0
+                                  LUT4	      36.00         3.1
+                               DISTRAM	      11.00        30.6
+                                PFUREG	         35         6.8
+                                RIPPLE	          6        26.1
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+pmi_distributed_spramMbnonen1341693c3d10	          1         1.6
+---------------------------------------------------
+Report for cell pmi_distributed_spramMbnonen1341693c3d10
+   Instance path: platform1_top/platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      10.50         1.6
+                               DISTRAM	      11.00        30.6
+---------------------------------------------------
+Report for cell lm8_io_cntl
+   Instance path: platform1_top/platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       7.10         1.1
+                                  LUT4	       3.50         0.3
+                                PFUREG	         20         3.9
+---------------------------------------------------
+Report for cell lm8_alu(FAMILY_NAME="MachXO2")
+   Instance path: platform1_top/platform1_u/LM8/u1_isp8_core/u1_lm8_alu
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      25.33         4.0
+                                  LUT4	      46.00         4.0
+                                RIPPLE	          6        26.1
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                 pmi_addsubMo884942741	          1         1.0
+---------------------------------------------------
+Report for cell pmi_addsubMo884942741
+   Instance path: platform1_top/platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO2off88
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       6.50         1.0
+                                  LUT4	       1.00         0.1
+                                RIPPLE	          6        26.1
+---------------------------------------------------
+Report for cell gpio(GPIO_WB_DAT_WIDTH=8,DATA_WIDTH=32'b010,INPUT_WIDTH=32'b01,OUTPUT_WIDTH=32'b01,EDGE=1,POSE_EDGE_IRQ=1,INPUT_PORTS_ONLY=0,OUTPUT_PORTS_ONLY=1)
+   Instance path: platform1_top/platform1_u/LEDGPIO_DAT_O_7__I_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.83         0.1
+                                PFUREG	          3         0.6

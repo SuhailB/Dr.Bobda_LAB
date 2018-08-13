@@ -1,0 +1,1496 @@
+<HTML>
+<HEAD><TITLE>Lattice TRACE Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Par_Twr"></A><B><U><big>Place & Route TRACE Report</big></U></B>
+
+Loading design for application trce from file platform1_impl1.ncd.
+Design name: platform1_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-2000ZE
+Package:     WLCSP49
+Performance: 1
+Loading device for application trce from file 'xo2c2000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+<A name="Par_Twr_setup"></A><B><U><big>Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.0.111.2</big></U></B>
+Mon Aug 13 14:01:13 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="ptwr_set_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 1 -sphld m -o platform1_impl1.twr -gui -msgset C:/Users/Suhail/Desktop/Work/Machxo2_SPI/promote.xml platform1_impl1.ncd platform1_impl1.prf 
+Design file:     platform1_impl1.ncd
+Preference file: platform1_impl1.prf
+Device,speed:    LCMXO2-2000ZE,1
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+<A name="ptwr_set_ps"></A><B><U><big>Preference Summary</big></U></B>
+
+<FONT COLOR=red><LI><A href='#par_twr_pref_0_0' Target='right'><FONT COLOR=red>FREQUENCY NET "interalClock" 26.600000 MHz (4096 errors)</FONT></A></LI>
+</FONT>            4096 items scored, 4096 timing errors detected.
+Warning:  17.777MHz is the maximum frequency for this preference.
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+<A name="par_twr_pref_0_0"></A>Preference: FREQUENCY NET "interalClock" 26.600000 MHz ;
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 18.659ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         DP8KC      Port           platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0(ASIC)  (from interalClock +)
+   Destination:    FF         Data in        platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/bytes_arb_i0_i1  (to interalClock +)
+                   FF                        platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/bytes_arb_i0_i0
+
+   Delay:              55.409ns  (37.4% logic, 62.6% route), 13 logic levels.
+
+ Constraint Details:
+
+     55.409ns physical path delay platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0 to platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_596 exceeds
+     37.594ns delay constraint less
+      0.274ns skew and
+      0.570ns CE_SET requirement (totaling 36.750ns) by 18.659ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0 to platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_596:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+C2Q_DEL     ---     9.644 EBR_R8C24.CLKA to EBR_R8C24.DOA6 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0 (from interalClock)
+ROUTE         2     3.414 EBR_R8C24.DOA6 to      R9C20A.C0 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/mdout0_1_15
+CTOF_DEL    ---     0.923      R9C20A.C0 to      R9C20A.F0 platform1_u/LM8/SLICE_526
+ROUTE        11     2.391      R9C20A.F0 to      R7C20A.D1 platform1_u/LM8/genblk1.instr_mem_out_15
+CTOF_DEL    ---     0.923      R7C20A.D1 to      R7C20A.F1 platform1_u/LM8/u1_isp8_core/u1_lm8_idec/SLICE_678
+ROUTE         7     1.994      R7C20A.F1 to      R7C18B.C1 platform1_u/LM8/u1_isp8_core/u1_lm8_idec/n20161
+CTOF_DEL    ---     0.923      R7C18B.C1 to      R7C18B.F1 platform1_u/LM8/u1_isp8_core/SLICE_674
+ROUTE         9     2.739      R7C18B.F1 to      R9C12D.D1 platform1_u/LM8/u1_isp8_core/ext_cycle_type
+CTOF_DEL    ---     0.923      R9C12D.D1 to      R9C12D.F1 platform1_u/SLICE_660
+ROUTE         1     2.198      R9C12D.F1 to     R10C11A.D1 platform1_u/LM8/n20104
+CTOF_DEL    ---     0.923     R10C11A.D1 to     R10C11A.F1 platform1_u/SLICE_547
+ROUTE        58     3.587     R10C11A.F1 to      R9C17C.D0 platform1_u/n20102
+CTOF_DEL    ---     0.923      R9C17C.D0 to      R9C17C.F0 platform1_u/SLICE_584
+ROUTE         2     1.043      R9C17C.F0 to      R9C17C.C1 platform1_u/n4818
+CTOF_DEL    ---     0.923      R9C17C.C1 to      R9C17C.F1 platform1_u/SLICE_584
+ROUTE         4     1.924      R9C17C.F1 to      R7C17C.C0 platform1_u/n7926
+CTOF_DEL    ---     0.923      R7C17C.C0 to      R7C17C.F0 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_601
+ROUTE         2     1.043      R7C17C.F0 to      R7C17C.C1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n6_adj_2139
+CTOF_DEL    ---     0.923      R7C17C.C1 to      R7C17C.F1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_601
+ROUTE        10     2.424      R7C17C.F1 to      R7C15D.D1 platform1_u/n166
+CTOF_DEL    ---     0.923      R7C15D.D1 to      R7C15D.F1 platform1_u/SLICE_563
+ROUTE         2     1.523      R7C15D.F1 to      R7C15A.D1 platform1_u/n992
+CTOF_DEL    ---     0.923      R7C15A.D1 to      R7C15A.F1 platform1_u/SLICE_717
+ROUTE         2     5.774      R7C15A.F1 to      R6C15B.C1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n18337
+CTOF_DEL    ---     0.923      R6C15B.C1 to      R6C15B.F1 platform1_u/SLICE_585
+ROUTE         2     4.635      R6C15B.F1 to      R6C10D.CE platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_309 (to interalClock)
+                  --------
+                   55.409   (37.4% logic, 62.6% route), 13 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     9.085        OSC.OSC to EBR_R8C24.CLKA interalClock
+                  --------
+                    9.085   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_596:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     8.811        OSC.OSC to     R6C10D.CLK interalClock
+                  --------
+                    8.811   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 18.612ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         DP8KC      Port           platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0(ASIC)  (from interalClock +)
+   Destination:    FF         Data in        platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/bytes_arb_i0_i1  (to interalClock +)
+                   FF                        platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/bytes_arb_i0_i0
+
+   Delay:              55.362ns  (37.4% logic, 62.6% route), 13 logic levels.
+
+ Constraint Details:
+
+     55.362ns physical path delay platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0 to platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_596 exceeds
+     37.594ns delay constraint less
+      0.274ns skew and
+      0.570ns CE_SET requirement (totaling 36.750ns) by 18.612ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0 to platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_596:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+C2Q_DEL     ---     9.644 EBR_R8C24.CLKA to EBR_R8C24.DOA5 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0 (from interalClock)
+ROUTE         4     3.901 EBR_R8C24.DOA5 to      R7C19C.A0 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/mdout0_1_14
+CTOF_DEL    ---     0.923      R7C19C.A0 to      R7C19C.F0 platform1_u/LM8/SLICE_657
+ROUTE         8     1.857      R7C19C.F0 to      R7C20A.C1 platform1_u/LM8/genblk1.instr_mem_out_14
+CTOF_DEL    ---     0.923      R7C20A.C1 to      R7C20A.F1 platform1_u/LM8/u1_isp8_core/u1_lm8_idec/SLICE_678
+ROUTE         7     1.994      R7C20A.F1 to      R7C18B.C1 platform1_u/LM8/u1_isp8_core/u1_lm8_idec/n20161
+CTOF_DEL    ---     0.923      R7C18B.C1 to      R7C18B.F1 platform1_u/LM8/u1_isp8_core/SLICE_674
+ROUTE         9     2.739      R7C18B.F1 to      R9C12D.D1 platform1_u/LM8/u1_isp8_core/ext_cycle_type
+CTOF_DEL    ---     0.923      R9C12D.D1 to      R9C12D.F1 platform1_u/SLICE_660
+ROUTE         1     2.198      R9C12D.F1 to     R10C11A.D1 platform1_u/LM8/n20104
+CTOF_DEL    ---     0.923     R10C11A.D1 to     R10C11A.F1 platform1_u/SLICE_547
+ROUTE        58     3.587     R10C11A.F1 to      R9C17C.D0 platform1_u/n20102
+CTOF_DEL    ---     0.923      R9C17C.D0 to      R9C17C.F0 platform1_u/SLICE_584
+ROUTE         2     1.043      R9C17C.F0 to      R9C17C.C1 platform1_u/n4818
+CTOF_DEL    ---     0.923      R9C17C.C1 to      R9C17C.F1 platform1_u/SLICE_584
+ROUTE         4     1.924      R9C17C.F1 to      R7C17C.C0 platform1_u/n7926
+CTOF_DEL    ---     0.923      R7C17C.C0 to      R7C17C.F0 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_601
+ROUTE         2     1.043      R7C17C.F0 to      R7C17C.C1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n6_adj_2139
+CTOF_DEL    ---     0.923      R7C17C.C1 to      R7C17C.F1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_601
+ROUTE        10     2.424      R7C17C.F1 to      R7C15D.D1 platform1_u/n166
+CTOF_DEL    ---     0.923      R7C15D.D1 to      R7C15D.F1 platform1_u/SLICE_563
+ROUTE         2     1.523      R7C15D.F1 to      R7C15A.D1 platform1_u/n992
+CTOF_DEL    ---     0.923      R7C15A.D1 to      R7C15A.F1 platform1_u/SLICE_717
+ROUTE         2     5.774      R7C15A.F1 to      R6C15B.C1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n18337
+CTOF_DEL    ---     0.923      R6C15B.C1 to      R6C15B.F1 platform1_u/SLICE_585
+ROUTE         2     4.635      R6C15B.F1 to      R6C10D.CE platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_309 (to interalClock)
+                  --------
+                   55.362   (37.4% logic, 62.6% route), 13 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     9.085        OSC.OSC to EBR_R8C24.CLKA interalClock
+                  --------
+                    9.085   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_596:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     8.811        OSC.OSC to     R6C10D.CLK interalClock
+                  --------
+                    8.811   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 18.416ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         DP8KC      Port           platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0(ASIC)  (from interalClock +)
+   Destination:    FF         Data in        platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/reg_C_DAT_O_i1  (to interalClock +)
+
+   Delay:              55.304ns  (43.3% logic, 56.7% route), 16 logic levels.
+
+ Constraint Details:
+
+     55.304ns physical path delay platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0 to platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_131 exceeds
+     37.594ns delay constraint less
+      0.274ns skew and
+      0.432ns DIN_SET requirement (totaling 36.888ns) by 18.416ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0 to platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_131:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+C2Q_DEL     ---     9.644 EBR_R8C24.CLKA to EBR_R8C24.DOA6 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0 (from interalClock)
+ROUTE         2     3.414 EBR_R8C24.DOA6 to      R9C20A.C0 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/mdout0_1_15
+CTOF_DEL    ---     0.923      R9C20A.C0 to      R9C20A.F0 platform1_u/LM8/SLICE_526
+ROUTE        11     2.391      R9C20A.F0 to      R7C20A.D1 platform1_u/LM8/genblk1.instr_mem_out_15
+CTOF_DEL    ---     0.923      R7C20A.D1 to      R7C20A.F1 platform1_u/LM8/u1_isp8_core/u1_lm8_idec/SLICE_678
+ROUTE         7     1.994      R7C20A.F1 to      R7C18B.C1 platform1_u/LM8/u1_isp8_core/u1_lm8_idec/n20161
+CTOF_DEL    ---     0.923      R7C18B.C1 to      R7C18B.F1 platform1_u/LM8/u1_isp8_core/SLICE_674
+ROUTE         9     2.739      R7C18B.F1 to      R9C12D.D1 platform1_u/LM8/u1_isp8_core/ext_cycle_type
+CTOF_DEL    ---     0.923      R9C12D.D1 to      R9C12D.F1 platform1_u/SLICE_660
+ROUTE         1     2.198      R9C12D.F1 to     R10C11A.D1 platform1_u/LM8/n20104
+CTOF_DEL    ---     0.923     R10C11A.D1 to     R10C11A.F1 platform1_u/SLICE_547
+ROUTE        58     2.308     R10C11A.F1 to     R10C13B.C0 platform1_u/n20102
+CTOF_DEL    ---     0.923     R10C13B.C0 to     R10C13B.F0 platform1_u/SLICE_587
+ROUTE         2     1.766     R10C13B.F0 to      R9C13D.C1 platform1_u/n18296
+CTOF_DEL    ---     0.923      R9C13D.C1 to      R9C13D.F1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_722
+ROUTE         1     1.559      R9C13D.F1 to      R9C11A.D1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n18298
+CTOF_DEL    ---     0.923      R9C11A.D1 to      R9C11A.F1 platform1_u/SLICE_582
+ROUTE         1     2.270      R9C11A.F1 to      R7C11B.D0 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n30_adj_2167
+CTOF_DEL    ---     0.923      R7C11B.D0 to      R7C11B.F0 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_615
+ROUTE         3     2.279      R7C11B.F0 to      R7C13D.D1 platform1_u/n39
+CTOF_DEL    ---     0.923      R7C13D.D1 to      R7C13D.F1 platform1_u/SLICE_552
+ROUTE        10     2.485      R7C13D.F1 to      R9C13B.D0 platform1_u/n20047
+CTOF_DEL    ---     0.923      R9C13B.D0 to      R9C13B.F0 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_613
+ROUTE         1     1.002      R9C13B.F0 to      R9C13B.C1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n8265
+CTOF_DEL    ---     0.923      R9C13B.C1 to      R9C13B.F1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_613
+ROUTE         4     1.846      R9C13B.F1 to      R9C12A.C0 platform1_u/n18346
+CTOF_DEL    ---     0.923      R9C12A.C0 to      R9C12A.F0 platform1_u/SLICE_533
+ROUTE         1     1.646      R9C12A.F0 to      R7C12D.D1 platform1_u/n4
+CTOOFX_DEL  ---     1.359      R7C12D.D1 to    R7C12D.OFX0 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/mux_338_i2/SLICE_449
+ROUTE         1     1.482    R7C12D.OFX0 to      R7C12A.D1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n1519
+CTOF_DEL    ---     0.923      R7C12A.D1 to      R7C12A.F1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_131
+ROUTE         1     0.000      R7C12A.F1 to     R7C12A.DI1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/C_DAT_O_7_N_1036_1 (to interalClock)
+                  --------
+                   55.304   (43.3% logic, 56.7% route), 16 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     9.085        OSC.OSC to EBR_R8C24.CLKA interalClock
+                  --------
+                    9.085   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_131:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     8.811        OSC.OSC to     R7C12A.CLK interalClock
+                  --------
+                    8.811   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 18.369ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         DP8KC      Port           platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0(ASIC)  (from interalClock +)
+   Destination:    FF         Data in        platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/reg_C_DAT_O_i1  (to interalClock +)
+
+   Delay:              55.257ns  (43.3% logic, 56.7% route), 16 logic levels.
+
+ Constraint Details:
+
+     55.257ns physical path delay platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0 to platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_131 exceeds
+     37.594ns delay constraint less
+      0.274ns skew and
+      0.432ns DIN_SET requirement (totaling 36.888ns) by 18.369ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0 to platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_131:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+C2Q_DEL     ---     9.644 EBR_R8C24.CLKA to EBR_R8C24.DOA5 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0 (from interalClock)
+ROUTE         4     3.901 EBR_R8C24.DOA5 to      R7C19C.A0 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/mdout0_1_14
+CTOF_DEL    ---     0.923      R7C19C.A0 to      R7C19C.F0 platform1_u/LM8/SLICE_657
+ROUTE         8     1.857      R7C19C.F0 to      R7C20A.C1 platform1_u/LM8/genblk1.instr_mem_out_14
+CTOF_DEL    ---     0.923      R7C20A.C1 to      R7C20A.F1 platform1_u/LM8/u1_isp8_core/u1_lm8_idec/SLICE_678
+ROUTE         7     1.994      R7C20A.F1 to      R7C18B.C1 platform1_u/LM8/u1_isp8_core/u1_lm8_idec/n20161
+CTOF_DEL    ---     0.923      R7C18B.C1 to      R7C18B.F1 platform1_u/LM8/u1_isp8_core/SLICE_674
+ROUTE         9     2.739      R7C18B.F1 to      R9C12D.D1 platform1_u/LM8/u1_isp8_core/ext_cycle_type
+CTOF_DEL    ---     0.923      R9C12D.D1 to      R9C12D.F1 platform1_u/SLICE_660
+ROUTE         1     2.198      R9C12D.F1 to     R10C11A.D1 platform1_u/LM8/n20104
+CTOF_DEL    ---     0.923     R10C11A.D1 to     R10C11A.F1 platform1_u/SLICE_547
+ROUTE        58     2.308     R10C11A.F1 to     R10C13B.C0 platform1_u/n20102
+CTOF_DEL    ---     0.923     R10C13B.C0 to     R10C13B.F0 platform1_u/SLICE_587
+ROUTE         2     1.766     R10C13B.F0 to      R9C13D.C1 platform1_u/n18296
+CTOF_DEL    ---     0.923      R9C13D.C1 to      R9C13D.F1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_722
+ROUTE         1     1.559      R9C13D.F1 to      R9C11A.D1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n18298
+CTOF_DEL    ---     0.923      R9C11A.D1 to      R9C11A.F1 platform1_u/SLICE_582
+ROUTE         1     2.270      R9C11A.F1 to      R7C11B.D0 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n30_adj_2167
+CTOF_DEL    ---     0.923      R7C11B.D0 to      R7C11B.F0 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_615
+ROUTE         3     2.279      R7C11B.F0 to      R7C13D.D1 platform1_u/n39
+CTOF_DEL    ---     0.923      R7C13D.D1 to      R7C13D.F1 platform1_u/SLICE_552
+ROUTE        10     2.485      R7C13D.F1 to      R9C13B.D0 platform1_u/n20047
+CTOF_DEL    ---     0.923      R9C13B.D0 to      R9C13B.F0 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_613
+ROUTE         1     1.002      R9C13B.F0 to      R9C13B.C1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n8265
+CTOF_DEL    ---     0.923      R9C13B.C1 to      R9C13B.F1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_613
+ROUTE         4     1.846      R9C13B.F1 to      R9C12A.C0 platform1_u/n18346
+CTOF_DEL    ---     0.923      R9C12A.C0 to      R9C12A.F0 platform1_u/SLICE_533
+ROUTE         1     1.646      R9C12A.F0 to      R7C12D.D1 platform1_u/n4
+CTOOFX_DEL  ---     1.359      R7C12D.D1 to    R7C12D.OFX0 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/mux_338_i2/SLICE_449
+ROUTE         1     1.482    R7C12D.OFX0 to      R7C12A.D1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n1519
+CTOF_DEL    ---     0.923      R7C12A.D1 to      R7C12A.F1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_131
+ROUTE         1     0.000      R7C12A.F1 to     R7C12A.DI1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/C_DAT_O_7_N_1036_1 (to interalClock)
+                  --------
+                   55.257   (43.3% logic, 56.7% route), 16 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     9.085        OSC.OSC to EBR_R8C24.CLKA interalClock
+                  --------
+                    9.085   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_131:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     8.811        OSC.OSC to     R7C12A.CLK interalClock
+                  --------
+                    8.811   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 17.676ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         DP8KC      Port           platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0(ASIC)  (from interalClock +)
+   Destination:    FF         Data in        platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/bytes_arb_i0_i1  (to interalClock +)
+                   FF                        platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/bytes_arb_i0_i0
+
+   Delay:              54.426ns  (36.4% logic, 63.6% route), 12 logic levels.
+
+ Constraint Details:
+
+     54.426ns physical path delay platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0 to platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_596 exceeds
+     37.594ns delay constraint less
+      0.274ns skew and
+      0.570ns CE_SET requirement (totaling 36.750ns) by 17.676ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0 to platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_596:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+C2Q_DEL     ---     9.644 EBR_R8C24.CLKA to EBR_R8C24.DOA8 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0 (from interalClock)
+ROUTE         3     3.913 EBR_R8C24.DOA8 to      R7C20B.C1 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/mdout0_1_17
+CTOF_DEL    ---     0.923      R7C20B.C1 to      R7C20B.F1 platform1_u/LM8/SLICE_685
+ROUTE         8     2.496      R7C20B.F1 to      R7C20C.B1 platform1_u/LM8/n20195
+CTOF_DEL    ---     0.923      R7C20C.B1 to      R7C20C.F1 platform1_u/LM8/u1_isp8_core/u1_lm8_idec/SLICE_681
+ROUTE        10     2.776      R7C20C.F1 to      R9C17B.D1 platform1_u/LM8/u1_isp8_core/u1_lm8_idec/n20132
+CTOF_DEL    ---     0.923      R9C17B.D1 to      R9C17B.F1 platform1_u/LM8/SLICE_675
+ROUTE        11     2.325      R9C17B.F1 to      R9C15A.D1 platform1_u/LM8/n20110
+CTOF_DEL    ---     0.923      R9C15A.D1 to      R9C15A.F1 platform1_u/SLICE_546
+ROUTE        19     3.420      R9C15A.F1 to      R9C17A.B1 platform1_u/n20103
+CTOF_DEL    ---     0.923      R9C17A.B1 to      R9C17A.F1 platform1_u/SLICE_600
+ROUTE        19     2.376      R9C17A.F1 to      R9C17C.B1 platform1_u/n20088
+CTOF_DEL    ---     0.923      R9C17C.B1 to      R9C17C.F1 platform1_u/SLICE_584
+ROUTE         4     1.924      R9C17C.F1 to      R7C17C.C0 platform1_u/n7926
+CTOF_DEL    ---     0.923      R7C17C.C0 to      R7C17C.F0 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_601
+ROUTE         2     1.043      R7C17C.F0 to      R7C17C.C1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n6_adj_2139
+CTOF_DEL    ---     0.923      R7C17C.C1 to      R7C17C.F1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_601
+ROUTE        10     2.424      R7C17C.F1 to      R7C15D.D1 platform1_u/n166
+CTOF_DEL    ---     0.923      R7C15D.D1 to      R7C15D.F1 platform1_u/SLICE_563
+ROUTE         2     1.523      R7C15D.F1 to      R7C15A.D1 platform1_u/n992
+CTOF_DEL    ---     0.923      R7C15A.D1 to      R7C15A.F1 platform1_u/SLICE_717
+ROUTE         2     5.774      R7C15A.F1 to      R6C15B.C1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n18337
+CTOF_DEL    ---     0.923      R6C15B.C1 to      R6C15B.F1 platform1_u/SLICE_585
+ROUTE         2     4.635      R6C15B.F1 to      R6C10D.CE platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_309 (to interalClock)
+                  --------
+                   54.426   (36.4% logic, 63.6% route), 12 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     9.085        OSC.OSC to EBR_R8C24.CLKA interalClock
+                  --------
+                    9.085   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_596:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     8.811        OSC.OSC to     R6C10D.CLK interalClock
+                  --------
+                    8.811   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 17.629ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         DP8KC      Port           platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0(ASIC)  (from interalClock +)
+   Destination:    FF         Data in        platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/bytes_arb_i0_i3  (to interalClock +)
+                   FF                        platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/bytes_arb_i0_i2
+
+   Delay:              54.379ns  (38.1% logic, 61.9% route), 13 logic levels.
+
+ Constraint Details:
+
+     54.379ns physical path delay platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0 to platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_517 exceeds
+     37.594ns delay constraint less
+      0.274ns skew and
+      0.570ns CE_SET requirement (totaling 36.750ns) by 17.629ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0 to platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_517:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+C2Q_DEL     ---     9.644 EBR_R8C24.CLKA to EBR_R8C24.DOA6 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0 (from interalClock)
+ROUTE         2     3.414 EBR_R8C24.DOA6 to      R9C20A.C0 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/mdout0_1_15
+CTOF_DEL    ---     0.923      R9C20A.C0 to      R9C20A.F0 platform1_u/LM8/SLICE_526
+ROUTE        11     2.391      R9C20A.F0 to      R7C20A.D1 platform1_u/LM8/genblk1.instr_mem_out_15
+CTOF_DEL    ---     0.923      R7C20A.D1 to      R7C20A.F1 platform1_u/LM8/u1_isp8_core/u1_lm8_idec/SLICE_678
+ROUTE         7     1.994      R7C20A.F1 to      R7C18B.C1 platform1_u/LM8/u1_isp8_core/u1_lm8_idec/n20161
+CTOF_DEL    ---     0.923      R7C18B.C1 to      R7C18B.F1 platform1_u/LM8/u1_isp8_core/SLICE_674
+ROUTE         9     2.739      R7C18B.F1 to      R9C12D.D1 platform1_u/LM8/u1_isp8_core/ext_cycle_type
+CTOF_DEL    ---     0.923      R9C12D.D1 to      R9C12D.F1 platform1_u/SLICE_660
+ROUTE         1     2.198      R9C12D.F1 to     R10C11A.D1 platform1_u/LM8/n20104
+CTOF_DEL    ---     0.923     R10C11A.D1 to     R10C11A.F1 platform1_u/SLICE_547
+ROUTE        58     3.587     R10C11A.F1 to      R9C17C.D0 platform1_u/n20102
+CTOF_DEL    ---     0.923      R9C17C.D0 to      R9C17C.F0 platform1_u/SLICE_584
+ROUTE         2     1.043      R9C17C.F0 to      R9C17C.C1 platform1_u/n4818
+CTOF_DEL    ---     0.923      R9C17C.C1 to      R9C17C.F1 platform1_u/SLICE_584
+ROUTE         4     1.924      R9C17C.F1 to      R7C17C.C0 platform1_u/n7926
+CTOF_DEL    ---     0.923      R7C17C.C0 to      R7C17C.F0 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_601
+ROUTE         2     1.043      R7C17C.F0 to      R7C17C.C1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n6_adj_2139
+CTOF_DEL    ---     0.923      R7C17C.C1 to      R7C17C.F1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_601
+ROUTE        10     2.424      R7C17C.F1 to      R7C15D.D1 platform1_u/n166
+CTOF_DEL    ---     0.923      R7C15D.D1 to      R7C15D.F1 platform1_u/SLICE_563
+ROUTE         2     1.523      R7C15D.F1 to      R7C15A.D1 platform1_u/n992
+CTOF_DEL    ---     0.923      R7C15A.D1 to      R7C15A.F1 platform1_u/SLICE_717
+ROUTE         2     5.774      R7C15A.F1 to      R6C15B.C1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n18337
+CTOF_DEL    ---     0.923      R6C15B.C1 to      R6C15B.F1 platform1_u/SLICE_585
+ROUTE         2     3.605      R6C15B.F1 to      R5C14A.CE platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_309 (to interalClock)
+                  --------
+                   54.379   (38.1% logic, 61.9% route), 13 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     9.085        OSC.OSC to EBR_R8C24.CLKA interalClock
+                  --------
+                    9.085   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_517:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     8.811        OSC.OSC to     R5C14A.CLK interalClock
+                  --------
+                    8.811   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 17.599ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         DP8KC      Port           platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0(ASIC)  (from interalClock +)
+   Destination:    FF         Data in        platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/reg_C_DAT_O_i6  (to interalClock +)
+
+   Delay:              54.487ns  (42.2% logic, 57.8% route), 15 logic levels.
+
+ Constraint Details:
+
+     54.487ns physical path delay platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0 to platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_134 exceeds
+     37.594ns delay constraint less
+      0.274ns skew and
+      0.432ns DIN_SET requirement (totaling 36.888ns) by 17.599ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0 to platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_134:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+C2Q_DEL     ---     9.644 EBR_R8C24.CLKA to EBR_R8C24.DOA6 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0 (from interalClock)
+ROUTE         2     3.414 EBR_R8C24.DOA6 to      R9C20A.C0 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/mdout0_1_15
+CTOF_DEL    ---     0.923      R9C20A.C0 to      R9C20A.F0 platform1_u/LM8/SLICE_526
+ROUTE        11     2.391      R9C20A.F0 to      R7C20A.D1 platform1_u/LM8/genblk1.instr_mem_out_15
+CTOF_DEL    ---     0.923      R7C20A.D1 to      R7C20A.F1 platform1_u/LM8/u1_isp8_core/u1_lm8_idec/SLICE_678
+ROUTE         7     1.994      R7C20A.F1 to      R7C18B.C1 platform1_u/LM8/u1_isp8_core/u1_lm8_idec/n20161
+CTOF_DEL    ---     0.923      R7C18B.C1 to      R7C18B.F1 platform1_u/LM8/u1_isp8_core/SLICE_674
+ROUTE         9     2.739      R7C18B.F1 to      R9C12D.D1 platform1_u/LM8/u1_isp8_core/ext_cycle_type
+CTOF_DEL    ---     0.923      R9C12D.D1 to      R9C12D.F1 platform1_u/SLICE_660
+ROUTE         1     2.198      R9C12D.F1 to     R10C11A.D1 platform1_u/LM8/n20104
+CTOF_DEL    ---     0.923     R10C11A.D1 to     R10C11A.F1 platform1_u/SLICE_547
+ROUTE        58     2.308     R10C11A.F1 to     R10C13B.C0 platform1_u/n20102
+CTOF_DEL    ---     0.923     R10C13B.C0 to     R10C13B.F0 platform1_u/SLICE_587
+ROUTE         2     1.766     R10C13B.F0 to      R9C13D.C1 platform1_u/n18296
+CTOF_DEL    ---     0.923      R9C13D.C1 to      R9C13D.F1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_722
+ROUTE         1     1.559      R9C13D.F1 to      R9C11A.D1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n18298
+CTOF_DEL    ---     0.923      R9C11A.D1 to      R9C11A.F1 platform1_u/SLICE_582
+ROUTE         1     2.270      R9C11A.F1 to      R7C11B.D0 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n30_adj_2167
+CTOF_DEL    ---     0.923      R7C11B.D0 to      R7C11B.F0 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_615
+ROUTE         3     2.279      R7C11B.F0 to      R7C13D.D1 platform1_u/n39
+CTOF_DEL    ---     0.923      R7C13D.D1 to      R7C13D.F1 platform1_u/SLICE_552
+ROUTE        10     2.485      R7C13D.F1 to      R9C13B.D0 platform1_u/n20047
+CTOF_DEL    ---     0.923      R9C13B.D0 to      R9C13B.F0 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_613
+ROUTE         1     1.002      R9C13B.F0 to      R9C13B.C1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n8265
+CTOF_DEL    ---     0.923      R9C13B.C1 to      R9C13B.F1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_613
+ROUTE         4     3.355      R9C13B.F1 to      R7C15C.D1 platform1_u/n18346
+CTOOFX_DEL  ---     1.359      R7C15C.D1 to    R7C15C.OFX0 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/i32/SLICE_455
+ROUTE         1     1.725    R7C15C.OFX0 to      R6C15D.C0 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n1514
+CTOF_DEL    ---     0.923      R6C15D.C0 to      R6C15D.F0 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_134
+ROUTE         1     0.000      R6C15D.F0 to     R6C15D.DI0 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/C_DAT_O_7_N_1036_6 (to interalClock)
+                  --------
+                   54.487   (42.2% logic, 57.8% route), 15 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     9.085        OSC.OSC to EBR_R8C24.CLKA interalClock
+                  --------
+                    9.085   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_134:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     8.811        OSC.OSC to     R6C15D.CLK interalClock
+                  --------
+                    8.811   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 17.582ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         DP8KC      Port           platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0(ASIC)  (from interalClock +)
+   Destination:    FF         Data in        platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/bytes_arb_i0_i3  (to interalClock +)
+                   FF                        platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/bytes_arb_i0_i2
+
+   Delay:              54.332ns  (38.1% logic, 61.9% route), 13 logic levels.
+
+ Constraint Details:
+
+     54.332ns physical path delay platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0 to platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_517 exceeds
+     37.594ns delay constraint less
+      0.274ns skew and
+      0.570ns CE_SET requirement (totaling 36.750ns) by 17.582ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0 to platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_517:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+C2Q_DEL     ---     9.644 EBR_R8C24.CLKA to EBR_R8C24.DOA5 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0 (from interalClock)
+ROUTE         4     3.901 EBR_R8C24.DOA5 to      R7C19C.A0 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/mdout0_1_14
+CTOF_DEL    ---     0.923      R7C19C.A0 to      R7C19C.F0 platform1_u/LM8/SLICE_657
+ROUTE         8     1.857      R7C19C.F0 to      R7C20A.C1 platform1_u/LM8/genblk1.instr_mem_out_14
+CTOF_DEL    ---     0.923      R7C20A.C1 to      R7C20A.F1 platform1_u/LM8/u1_isp8_core/u1_lm8_idec/SLICE_678
+ROUTE         7     1.994      R7C20A.F1 to      R7C18B.C1 platform1_u/LM8/u1_isp8_core/u1_lm8_idec/n20161
+CTOF_DEL    ---     0.923      R7C18B.C1 to      R7C18B.F1 platform1_u/LM8/u1_isp8_core/SLICE_674
+ROUTE         9     2.739      R7C18B.F1 to      R9C12D.D1 platform1_u/LM8/u1_isp8_core/ext_cycle_type
+CTOF_DEL    ---     0.923      R9C12D.D1 to      R9C12D.F1 platform1_u/SLICE_660
+ROUTE         1     2.198      R9C12D.F1 to     R10C11A.D1 platform1_u/LM8/n20104
+CTOF_DEL    ---     0.923     R10C11A.D1 to     R10C11A.F1 platform1_u/SLICE_547
+ROUTE        58     3.587     R10C11A.F1 to      R9C17C.D0 platform1_u/n20102
+CTOF_DEL    ---     0.923      R9C17C.D0 to      R9C17C.F0 platform1_u/SLICE_584
+ROUTE         2     1.043      R9C17C.F0 to      R9C17C.C1 platform1_u/n4818
+CTOF_DEL    ---     0.923      R9C17C.C1 to      R9C17C.F1 platform1_u/SLICE_584
+ROUTE         4     1.924      R9C17C.F1 to      R7C17C.C0 platform1_u/n7926
+CTOF_DEL    ---     0.923      R7C17C.C0 to      R7C17C.F0 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_601
+ROUTE         2     1.043      R7C17C.F0 to      R7C17C.C1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n6_adj_2139
+CTOF_DEL    ---     0.923      R7C17C.C1 to      R7C17C.F1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_601
+ROUTE        10     2.424      R7C17C.F1 to      R7C15D.D1 platform1_u/n166
+CTOF_DEL    ---     0.923      R7C15D.D1 to      R7C15D.F1 platform1_u/SLICE_563
+ROUTE         2     1.523      R7C15D.F1 to      R7C15A.D1 platform1_u/n992
+CTOF_DEL    ---     0.923      R7C15A.D1 to      R7C15A.F1 platform1_u/SLICE_717
+ROUTE         2     5.774      R7C15A.F1 to      R6C15B.C1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n18337
+CTOF_DEL    ---     0.923      R6C15B.C1 to      R6C15B.F1 platform1_u/SLICE_585
+ROUTE         2     3.605      R6C15B.F1 to      R5C14A.CE platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_309 (to interalClock)
+                  --------
+                   54.332   (38.1% logic, 61.9% route), 13 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     9.085        OSC.OSC to EBR_R8C24.CLKA interalClock
+                  --------
+                    9.085   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_517:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     8.811        OSC.OSC to     R5C14A.CLK interalClock
+                  --------
+                    8.811   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 17.552ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         DP8KC      Port           platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0(ASIC)  (from interalClock +)
+   Destination:    FF         Data in        platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/reg_C_DAT_O_i6  (to interalClock +)
+
+   Delay:              54.440ns  (42.3% logic, 57.7% route), 15 logic levels.
+
+ Constraint Details:
+
+     54.440ns physical path delay platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0 to platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_134 exceeds
+     37.594ns delay constraint less
+      0.274ns skew and
+      0.432ns DIN_SET requirement (totaling 36.888ns) by 17.552ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0 to platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_134:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+C2Q_DEL     ---     9.644 EBR_R8C24.CLKA to EBR_R8C24.DOA5 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0 (from interalClock)
+ROUTE         4     3.901 EBR_R8C24.DOA5 to      R7C19C.A0 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/mdout0_1_14
+CTOF_DEL    ---     0.923      R7C19C.A0 to      R7C19C.F0 platform1_u/LM8/SLICE_657
+ROUTE         8     1.857      R7C19C.F0 to      R7C20A.C1 platform1_u/LM8/genblk1.instr_mem_out_14
+CTOF_DEL    ---     0.923      R7C20A.C1 to      R7C20A.F1 platform1_u/LM8/u1_isp8_core/u1_lm8_idec/SLICE_678
+ROUTE         7     1.994      R7C20A.F1 to      R7C18B.C1 platform1_u/LM8/u1_isp8_core/u1_lm8_idec/n20161
+CTOF_DEL    ---     0.923      R7C18B.C1 to      R7C18B.F1 platform1_u/LM8/u1_isp8_core/SLICE_674
+ROUTE         9     2.739      R7C18B.F1 to      R9C12D.D1 platform1_u/LM8/u1_isp8_core/ext_cycle_type
+CTOF_DEL    ---     0.923      R9C12D.D1 to      R9C12D.F1 platform1_u/SLICE_660
+ROUTE         1     2.198      R9C12D.F1 to     R10C11A.D1 platform1_u/LM8/n20104
+CTOF_DEL    ---     0.923     R10C11A.D1 to     R10C11A.F1 platform1_u/SLICE_547
+ROUTE        58     2.308     R10C11A.F1 to     R10C13B.C0 platform1_u/n20102
+CTOF_DEL    ---     0.923     R10C13B.C0 to     R10C13B.F0 platform1_u/SLICE_587
+ROUTE         2     1.766     R10C13B.F0 to      R9C13D.C1 platform1_u/n18296
+CTOF_DEL    ---     0.923      R9C13D.C1 to      R9C13D.F1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_722
+ROUTE         1     1.559      R9C13D.F1 to      R9C11A.D1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n18298
+CTOF_DEL    ---     0.923      R9C11A.D1 to      R9C11A.F1 platform1_u/SLICE_582
+ROUTE         1     2.270      R9C11A.F1 to      R7C11B.D0 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n30_adj_2167
+CTOF_DEL    ---     0.923      R7C11B.D0 to      R7C11B.F0 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_615
+ROUTE         3     2.279      R7C11B.F0 to      R7C13D.D1 platform1_u/n39
+CTOF_DEL    ---     0.923      R7C13D.D1 to      R7C13D.F1 platform1_u/SLICE_552
+ROUTE        10     2.485      R7C13D.F1 to      R9C13B.D0 platform1_u/n20047
+CTOF_DEL    ---     0.923      R9C13B.D0 to      R9C13B.F0 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_613
+ROUTE         1     1.002      R9C13B.F0 to      R9C13B.C1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n8265
+CTOF_DEL    ---     0.923      R9C13B.C1 to      R9C13B.F1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_613
+ROUTE         4     3.355      R9C13B.F1 to      R7C15C.D1 platform1_u/n18346
+CTOOFX_DEL  ---     1.359      R7C15C.D1 to    R7C15C.OFX0 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/i32/SLICE_455
+ROUTE         1     1.725    R7C15C.OFX0 to      R6C15D.C0 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n1514
+CTOF_DEL    ---     0.923      R6C15D.C0 to      R6C15D.F0 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_134
+ROUTE         1     0.000      R6C15D.F0 to     R6C15D.DI0 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/C_DAT_O_7_N_1036_6 (to interalClock)
+                  --------
+                   54.440   (42.3% logic, 57.7% route), 15 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     9.085        OSC.OSC to EBR_R8C24.CLKA interalClock
+                  --------
+                    9.085   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_134:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     8.811        OSC.OSC to     R6C15D.CLK interalClock
+                  --------
+                    8.811   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 17.306ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         DP8KC      Port           platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_0_1_2(ASIC)  (from interalClock +)
+   Destination:    FF         Data in        platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/bytes_arb_i0_i1  (to interalClock +)
+                   FF                        platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/bytes_arb_i0_i0
+
+   Delay:              54.056ns  (38.3% logic, 61.7% route), 13 logic levels.
+
+ Constraint Details:
+
+     54.056ns physical path delay platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_0_1_2 to platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_596 exceeds
+     37.594ns delay constraint less
+      0.274ns skew and
+      0.570ns CE_SET requirement (totaling 36.750ns) by 17.306ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_0_1_2 to platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_596:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+C2Q_DEL     ---     9.644 EBR_R8C18.CLKA to EBR_R8C18.DOA6 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_0_1_2 (from interalClock)
+ROUTE         2     2.061 EBR_R8C18.DOA6 to      R9C20A.D0 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/mdout0_0_15
+CTOF_DEL    ---     0.923      R9C20A.D0 to      R9C20A.F0 platform1_u/LM8/SLICE_526
+ROUTE        11     2.391      R9C20A.F0 to      R7C20A.D1 platform1_u/LM8/genblk1.instr_mem_out_15
+CTOF_DEL    ---     0.923      R7C20A.D1 to      R7C20A.F1 platform1_u/LM8/u1_isp8_core/u1_lm8_idec/SLICE_678
+ROUTE         7     1.994      R7C20A.F1 to      R7C18B.C1 platform1_u/LM8/u1_isp8_core/u1_lm8_idec/n20161
+CTOF_DEL    ---     0.923      R7C18B.C1 to      R7C18B.F1 platform1_u/LM8/u1_isp8_core/SLICE_674
+ROUTE         9     2.739      R7C18B.F1 to      R9C12D.D1 platform1_u/LM8/u1_isp8_core/ext_cycle_type
+CTOF_DEL    ---     0.923      R9C12D.D1 to      R9C12D.F1 platform1_u/SLICE_660
+ROUTE         1     2.198      R9C12D.F1 to     R10C11A.D1 platform1_u/LM8/n20104
+CTOF_DEL    ---     0.923     R10C11A.D1 to     R10C11A.F1 platform1_u/SLICE_547
+ROUTE        58     3.587     R10C11A.F1 to      R9C17C.D0 platform1_u/n20102
+CTOF_DEL    ---     0.923      R9C17C.D0 to      R9C17C.F0 platform1_u/SLICE_584
+ROUTE         2     1.043      R9C17C.F0 to      R9C17C.C1 platform1_u/n4818
+CTOF_DEL    ---     0.923      R9C17C.C1 to      R9C17C.F1 platform1_u/SLICE_584
+ROUTE         4     1.924      R9C17C.F1 to      R7C17C.C0 platform1_u/n7926
+CTOF_DEL    ---     0.923      R7C17C.C0 to      R7C17C.F0 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_601
+ROUTE         2     1.043      R7C17C.F0 to      R7C17C.C1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n6_adj_2139
+CTOF_DEL    ---     0.923      R7C17C.C1 to      R7C17C.F1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_601
+ROUTE        10     2.424      R7C17C.F1 to      R7C15D.D1 platform1_u/n166
+CTOF_DEL    ---     0.923      R7C15D.D1 to      R7C15D.F1 platform1_u/SLICE_563
+ROUTE         2     1.523      R7C15D.F1 to      R7C15A.D1 platform1_u/n992
+CTOF_DEL    ---     0.923      R7C15A.D1 to      R7C15A.F1 platform1_u/SLICE_717
+ROUTE         2     5.774      R7C15A.F1 to      R6C15B.C1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n18337
+CTOF_DEL    ---     0.923      R6C15B.C1 to      R6C15B.F1 platform1_u/SLICE_585
+ROUTE         2     4.635      R6C15B.F1 to      R6C10D.CE platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_309 (to interalClock)
+                  --------
+                   54.056   (38.3% logic, 61.7% route), 13 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_0_1_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     9.085        OSC.OSC to EBR_R8C18.CLKA interalClock
+                  --------
+                    9.085   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_596:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     8.811        OSC.OSC to     R6C10D.CLK interalClock
+                  --------
+                    8.811   (0.0% logic, 100.0% route), 0 logic levels.
+
+Warning:  17.777MHz is the maximum frequency for this preference.
+
+<A name="ptwr_set_rs"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "interalClock" 26.600000  |             |             |
+MHz ;                                   |   26.600 MHz|   17.777 MHz|  13 *
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+1 preference(marked by "*" above) not met.
+
+----------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+----------------------------------------------------------------------------
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=platform1_u/LM8/n20110">platform1_u/LM8/n20110</a>                  |      11|    2688|     65.63%
+                                        |        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=platform1_u/n20103">platform1_u/n20103</a>                      |      19|    2688|     65.63%
+                                        |        |        |
+platform1_u/LM8/u1_isp8_core/u1_lm8_idec|        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=platform1_u/LM8/u1_isp8_core/u1_lm8_idec/n20132">/n20132</a>                                 |      10|    2513|     61.35%
+                                        |        |        |
+platform1_u/SPIFlashS_DAT_O_7__I_0/wb_in|        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n20046">tf_inst/n20046</a>                          |       2|    2379|     58.08%
+                                        |        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=platform1_u/n7955">platform1_u/n7955</a>                       |       2|    2302|     56.20%
+                                        |        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=platform1_u/n166">platform1_u/n166</a>                        |      10|    1825|     44.56%
+                                        |        |        |
+platform1_u/SPIFlashS_DAT_O_7__I_0/wb_in|        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n18245">tf_inst/n18245</a>                          |       8|    1594|     38.92%
+                                        |        |        |
+platform1_u/LM8/u1_isp8_core/ext_cycle_t|        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=platform1_u/LM8/u1_isp8_core/ext_cycle_type">ype</a>                                     |       9|    1369|     33.42%
+                                        |        |        |
+platform1_u/SPIFlashS_DAT_O_7__I_0/wb_in|        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n6_adj_2139">tf_inst/n6_adj_2139</a>                     |       2|    1315|     32.10%
+                                        |        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=platform1_u/LM8/n20195">platform1_u/LM8/n20195</a>                  |       8|    1204|     29.39%
+                                        |        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=platform1_u/n7926">platform1_u/n7926</a>                       |       4|    1167|     28.49%
+                                        |        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=platform1_u/LM8/n20104">platform1_u/LM8/n20104</a>                  |       1|    1046|     25.54%
+                                        |        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=platform1_u/n20102">platform1_u/n20102</a>                      |      58|    1046|     25.54%
+                                        |        |        |
+platform1_u/LM8/u1_isp8_core/u1_lm8_idec|        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=platform1_u/LM8/u1_isp8_core/u1_lm8_idec/n20161">/n20161</a>                                 |       7|     966|     23.58%
+                                        |        |        |
+platform1_u/LM8/genblk1.instr_mem_out_14|       8|     961|     23.46%
+                                        |        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=n20101">n20101</a>                                  |     145|     877|     21.41%
+                                        |        |        |
+platform1_u/LM8/prom_init.memspeedasyncd|        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=isablenoreg18112048/mdout0_1_17">isablenoreg18112048/mdout0_1_17</a>         |       3|     862|     21.04%
+                                        |        |        |
+platform1_u/LM8/prom_init.memspeedasyncd|        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=isablenoreg18112048/mdout0_1_14">isablenoreg18112048/mdout0_1_14</a>         |       4|     776|     18.95%
+                                        |        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=platform1_u/n20043">platform1_u/n20043</a>                      |       7|     708|     17.29%
+                                        |        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=platform1_u/n20057">platform1_u/n20057</a>                      |       7|     695|     16.97%
+                                        |        |        |
+platform1_u/LM8/prom_init.memspeedasyncd|        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=isablenoreg18112048/mdout0_1_15">isablenoreg18112048/mdout0_1_15</a>         |       2|     690|     16.85%
+                                        |        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=platform1_u/n10456">platform1_u/n10456</a>                      |      13|     688|     16.80%
+                                        |        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=platform1_u/LM8/n20196">platform1_u/LM8/n20196</a>                  |       6|     660|     16.11%
+                                        |        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=platform1_u/SHAREDBUS_ADR_I_31">platform1_u/SHAREDBUS_ADR_I_31</a>          |       2|     576|     14.06%
+                                        |        |        |
+platform1_u/LM8/prom_init.memspeedasyncd|        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=isablenoreg18112048/mdout0_1_16">isablenoreg18112048/mdout0_1_16</a>         |       2|     572|     13.96%
+                                        |        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=platform1_u/n39">platform1_u/n39</a>                         |       3|     566|     13.82%
+                                        |        |        |
+platform1_u/SPIFlashS_DAT_O_7__I_0/wb_in|        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n30_adj_2167">tf_inst/n30_adj_2167</a>                    |       1|     538|     13.13%
+                                        |        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=platform1_u/n20088">platform1_u/n20088</a>                      |      19|     537|     13.11%
+                                        |        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=platform1_u/n4818">platform1_u/n4818</a>                       |       2|     529|     12.92%
+                                        |        |        |
+platform1_u/SPIFlashS_DAT_O_7__I_0/wb_in|        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n17041">tf_inst/n17041</a>                          |       1|     507|     12.38%
+                                        |        |        |
+platform1_u/LM8/genblk1.instr_mem_out_15|      11|     504|     12.30%
+                                        |        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=n20061">n20061</a>                                  |      12|     479|     11.69%
+                                        |        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=platform1_u/LM8/u1_isp8_core/n20193">platform1_u/LM8/u1_isp8_core/n20193</a>     |       6|     477|     11.65%
+                                        |        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=platform1_u/n20047">platform1_u/n20047</a>                      |      10|     455|     11.11%
+                                        |        |        |
+platform1_u/SPIFlashS_DAT_O_7__I_0/wb_in|        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n18298">tf_inst/n18298</a>                          |       1|     449|     10.96%
+                                        |        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=platform1_u/n11492">platform1_u/n11492</a>                      |      24|     433|     10.57%
+                                        |        |        |
+----------------------------------------------------------------------------
+
+
+<A name="ptwr_set_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 2 clocks:
+
+Clock Domain: interalClock   Source: OSCH_inst.OSC   Loads: 291
+   Covered under: FREQUENCY NET "interalClock" 26.600000 MHz ;
+
+   Data transfers from:
+   Clock Domain: platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div   Source: platform1_u/SPIFlashS_DAT_O_7__I_0/SLICE_144.Q0
+      Covered under: FREQUENCY NET "interalClock" 26.600000 MHz ;   Transfers: 2
+
+   Clock Domain: platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div   Source: platform1_u/SPIFlashS_DAT_O_7__I_0/SLICE_144.Q0
+      Covered under: FREQUENCY NET "interalClock" 26.600000 MHz ;   Transfers: 2
+
+   Clock Domain: platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div   Source: platform1_u/SPIFlashS_DAT_O_7__I_0/SLICE_144.Q0
+      Covered under: FREQUENCY NET "interalClock" 26.600000 MHz ;   Transfers: 4
+
+   Clock Domain: platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div   Source: platform1_u/SPIFlashS_DAT_O_7__I_0/SLICE_144.Q0
+      Covered under: FREQUENCY NET "interalClock" 26.600000 MHz ;   Transfers: 1
+
+Clock Domain: platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div   Source: platform1_u/SPIFlashS_DAT_O_7__I_0/SLICE_144.Q0   Loads: 70
+   No transfer within this clock domain is found
+
+
+<A name="ptwr_set_ts"></A><B><U><big>Timing summary (Setup):</big></U></B>
+---------------
+
+Timing errors: 4096  Score: 55616674
+Cumulative negative slack: 55616674
+
+Constraints cover 380973 paths, 1 nets, and 6317 connections (99.95% coverage)
+
+--------------------------------------------------------------------------------
+<A name="Par_Twr_hold"></A><B><U><big>Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.0.111.2</big></U></B>
+Mon Aug 13 14:01:14 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="ptwr_hold_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 1 -sphld m -o platform1_impl1.twr -gui -msgset C:/Users/Suhail/Desktop/Work/Machxo2_SPI/promote.xml platform1_impl1.ncd platform1_impl1.prf 
+Design file:     platform1_impl1.ncd
+Preference file: platform1_impl1.prf
+Device,speed:    LCMXO2-2000ZE,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+<A name="ptwr_hold_ps"></A><B><U><big>Preference Summary</big></U></B>
+
+<LI><A href='#par_twr_pref_1_0' Target='right'>FREQUENCY NET "interalClock" 26.600000 MHz (0 errors)</A></LI>            4096 items scored, 0 timing errors detected.
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+<A name="par_twr_pref_1_0"></A>Preference: FREQUENCY NET "interalClock" 26.600000 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.378ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_i2  (from interalClock +)
+   Destination:    FF         Data in        platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_0/RAM0  (to interalClock +)
+
+   Delay:               0.707ns  (36.4% logic, 63.6% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.707ns physical path delay platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_122 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_0.16 meets
+      0.329ns WAD_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.329ns) by 0.378ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_122 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_0.16:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.257     R7C24A.CLK to      R7C24A.Q0 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_122 (from interalClock)
+ROUTE        19     0.450      R7C24A.Q0 to      R7C25C.C0 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_2
+ZERO_DEL    ---     0.000      R7C25C.C0 to   R7C25C.WADO2 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_0
+ROUTE         1     0.000   R7C25C.WADO2 to    R7C25A.WAD2 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_0/AD2_INT (to interalClock)
+                  --------
+                    0.707   (36.4% logic, 63.6% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_122:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     2.806        OSC.OSC to     R7C24A.CLK interalClock
+                  --------
+                    2.806   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_0.16:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     2.806        OSC.OSC to     R7C25A.WCK interalClock
+                  --------
+                    2.806   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.516ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_i0  (from interalClock +)
+   Destination:    FF         Data in        platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_0/RAM0  (to interalClock +)
+
+   Delay:               0.845ns  (30.4% logic, 69.6% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.845ns physical path delay platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_121 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_0.16 meets
+      0.329ns WAD_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.329ns) by 0.516ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_121 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_0.16:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.257     R7C24C.CLK to      R7C24C.Q0 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_121 (from interalClock)
+ROUTE        19     0.588      R7C24C.Q0 to      R7C25C.A0 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_0
+ZERO_DEL    ---     0.000      R7C25C.A0 to   R7C25C.WADO0 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_0
+ROUTE         2     0.000   R7C25C.WADO0 to    R7C25A.WAD0 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_0/AD0_INT (to interalClock)
+                  --------
+                    0.845   (30.4% logic, 69.6% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_121:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     2.806        OSC.OSC to     R7C24C.CLK interalClock
+                  --------
+                    2.806   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_0.16:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     2.806        OSC.OSC to     R7C25A.WCK interalClock
+                  --------
+                    2.806   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.524ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_i1  (from interalClock +)
+   Destination:    FF         Data in        platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_0/RAM0  (to interalClock +)
+
+   Delay:               0.853ns  (30.1% logic, 69.9% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.853ns physical path delay platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_121 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_0.16 meets
+      0.329ns WAD_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.329ns) by 0.524ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_121 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_0.16:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.257     R7C24C.CLK to      R7C24C.Q1 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_121 (from interalClock)
+ROUTE        20     0.596      R7C24C.Q1 to      R7C25C.B0 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_1
+ZERO_DEL    ---     0.000      R7C25C.B0 to   R7C25C.WADO1 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_0
+ROUTE         1     0.000   R7C25C.WADO1 to    R7C25A.WAD1 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_0/AD1_INT (to interalClock)
+                  --------
+                    0.853   (30.1% logic, 69.9% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_121:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     2.806        OSC.OSC to     R7C24C.CLK interalClock
+                  --------
+                    2.806   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_0.16:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     2.806        OSC.OSC to     R7C25A.WCK interalClock
+                  --------
+                    2.806   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.745ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              platform1_u/counter_1669__i2  (from interalClock +)
+   Destination:    FF         Data in        platform1_u/counter_1669__i0  (to interalClock +)
+                   FF                        platform1_u/counter_1669__i1
+
+   Delay:               0.693ns  (37.1% logic, 62.9% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.693ns physical path delay SLICE_65 to platform1_u/SLICE_297 meets
+     -0.052ns CE_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.052ns) by 0.745ns
+
+ Physical Path Details:
+
+      Data path SLICE_65 to platform1_u/SLICE_297:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.257      R3C9B.CLK to       R3C9B.Q0 SLICE_65 (from interalClock)
+ROUTE         5     0.436       R3C9B.Q0 to       R3C9C.CE counter_2 (to interalClock)
+                  --------
+                    0.693   (37.1% logic, 62.9% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to SLICE_65:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     2.806        OSC.OSC to      R3C9B.CLK interalClock
+                  --------
+                    2.806   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/SLICE_297:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     2.806        OSC.OSC to      R3C9C.CLK interalClock
+                  --------
+                    2.806   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.747ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/wb_state_i1  (from interalClock +)
+   Destination:    FF         Data in        platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/S_ACK_O_565  (to interalClock +)
+
+   Delay:               0.695ns  (37.0% logic, 63.0% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.695ns physical path delay platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_269 to SLICE_135 meets
+     -0.052ns CE_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.052ns) by 0.747ns
+
+ Physical Path Details:
+
+      Data path platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_269 to SLICE_135:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.257    R13C15D.CLK to     R13C15D.Q0 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_269 (from interalClock)
+ROUTE        12     0.438     R13C15D.Q0 to     R13C15A.CE platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/wb_state_1 (to interalClock)
+                  --------
+                    0.695   (37.0% logic, 63.0% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_269:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     2.806        OSC.OSC to    R13C15D.CLK interalClock
+                  --------
+                    2.806   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to SLICE_135:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     2.806        OSC.OSC to    R13C15A.CLK interalClock
+                  --------
+                    2.806   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.766ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_i1  (from interalClock +)
+   Destination:    FF         Data in        platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_3/RAM1  (to interalClock +)
+                   FF                        platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_3/RAM1
+
+   Delay:               1.095ns  (23.5% logic, 76.5% route), 2 logic levels.
+
+ Constraint Details:
+
+      1.095ns physical path delay platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_121 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_3.22 meets
+      0.329ns WAD_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.329ns) by 0.766ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_121 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_3.22:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.257     R7C24C.CLK to      R7C24C.Q1 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_121 (from interalClock)
+ROUTE        20     0.838      R7C24C.Q1 to     R10C24C.B0 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_1
+ZERO_DEL    ---     0.000     R10C24C.B0 to  R10C24C.WADO1 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_3.21
+ROUTE         2     0.000  R10C24C.WADO1 to   R10C24B.WAD1 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_3/AD1_INT (to interalClock)
+                  --------
+                    1.095   (23.5% logic, 76.5% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_121:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     2.806        OSC.OSC to     R7C24C.CLK interalClock
+                  --------
+                    2.806   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_3.22:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     2.806        OSC.OSC to    R10C24B.WCK interalClock
+                  --------
+                    2.806   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.766ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_i1  (from interalClock +)
+   Destination:    FF         Data in        platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_3/RAM0  (to interalClock +)
+                   FF                        platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_3/RAM0
+
+   Delay:               1.095ns  (23.5% logic, 76.5% route), 2 logic levels.
+
+ Constraint Details:
+
+      1.095ns physical path delay platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_121 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_3 meets
+      0.329ns WAD_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.329ns) by 0.766ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_121 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.257     R7C24C.CLK to      R7C24C.Q1 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_121 (from interalClock)
+ROUTE        20     0.838      R7C24C.Q1 to     R10C24C.B0 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_1
+ZERO_DEL    ---     0.000     R10C24C.B0 to  R10C24C.WADO1 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_3.21
+ROUTE         2     0.000  R10C24C.WADO1 to   R10C24A.WAD1 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_3/AD1_INT (to interalClock)
+                  --------
+                    1.095   (23.5% logic, 76.5% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_121:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     2.806        OSC.OSC to     R7C24C.CLK interalClock
+                  --------
+                    2.806   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     2.806        OSC.OSC to    R10C24A.WCK interalClock
+                  --------
+                    2.806   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.809ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_i0  (from interalClock +)
+   Destination:    FF         Data in        platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_3/RAM1  (to interalClock +)
+                   FF                        platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_3/RAM1
+
+   Delay:               1.138ns  (22.6% logic, 77.4% route), 2 logic levels.
+
+ Constraint Details:
+
+      1.138ns physical path delay platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_121 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_3.22 meets
+      0.329ns WAD_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.329ns) by 0.809ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_121 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_3.22:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.257     R7C24C.CLK to      R7C24C.Q0 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_121 (from interalClock)
+ROUTE        19     0.881      R7C24C.Q0 to     R10C24C.A0 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_0
+ZERO_DEL    ---     0.000     R10C24C.A0 to  R10C24C.WADO0 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_3.21
+ROUTE         2     0.000  R10C24C.WADO0 to   R10C24B.WAD0 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_3/AD0_INT (to interalClock)
+                  --------
+                    1.138   (22.6% logic, 77.4% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_121:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     2.806        OSC.OSC to     R7C24C.CLK interalClock
+                  --------
+                    2.806   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_3.22:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     2.806        OSC.OSC to    R10C24B.WCK interalClock
+                  --------
+                    2.806   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.809ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_i0  (from interalClock +)
+   Destination:    FF         Data in        platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_3/RAM0  (to interalClock +)
+                   FF                        platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_3/RAM0
+
+   Delay:               1.138ns  (22.6% logic, 77.4% route), 2 logic levels.
+
+ Constraint Details:
+
+      1.138ns physical path delay platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_121 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_3 meets
+      0.329ns WAD_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.329ns) by 0.809ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_121 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.257     R7C24C.CLK to      R7C24C.Q0 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_121 (from interalClock)
+ROUTE        19     0.881      R7C24C.Q0 to     R10C24C.A0 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_0
+ZERO_DEL    ---     0.000     R10C24C.A0 to  R10C24C.WADO0 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_3.21
+ROUTE         2     0.000  R10C24C.WADO0 to   R10C24A.WAD0 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_3/AD0_INT (to interalClock)
+                  --------
+                    1.138   (22.6% logic, 77.4% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_121:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     2.806        OSC.OSC to     R7C24C.CLK interalClock
+                  --------
+                    2.806   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     2.806        OSC.OSC to    R10C24A.WCK interalClock
+                  --------
+                    2.806   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.817ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_i0  (from interalClock +)
+   Destination:    FF         Data in        platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_1/RAM1  (to interalClock +)
+                   FF                        platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_1/RAM1
+
+   Delay:               1.146ns  (22.4% logic, 77.6% route), 2 logic levels.
+
+ Constraint Details:
+
+      1.146ns physical path delay platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_121 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_1 meets
+      0.329ns WAD_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.329ns) by 0.817ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_121 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.257     R7C24C.CLK to      R7C24C.Q0 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_121 (from interalClock)
+ROUTE        19     0.889      R7C24C.Q0 to      R9C25C.A0 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_0
+ZERO_DEL    ---     0.000      R9C25C.A0 to   R9C25C.WADO0 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_1.17
+ROUTE         2     0.000   R9C25C.WADO0 to    R9C25B.WAD0 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_1/AD0_INT (to interalClock)
+                  --------
+                    1.146   (22.4% logic, 77.6% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_121:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     2.806        OSC.OSC to     R7C24C.CLK interalClock
+                  --------
+                    2.806   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCH_inst to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       291     2.806        OSC.OSC to     R9C25B.WCK interalClock
+                  --------
+                    2.806   (0.0% logic, 100.0% route), 0 logic levels.
+
+<A name="ptwr_hold_rs"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "interalClock" 26.600000  |             |             |
+MHz ;                                   |     0.000 ns|     0.378 ns|   2  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+<A name="ptwr_hold_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 2 clocks:
+
+Clock Domain: interalClock   Source: OSCH_inst.OSC   Loads: 291
+   Covered under: FREQUENCY NET "interalClock" 26.600000 MHz ;
+
+   Data transfers from:
+   Clock Domain: platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div   Source: platform1_u/SPIFlashS_DAT_O_7__I_0/SLICE_144.Q0
+      Covered under: FREQUENCY NET "interalClock" 26.600000 MHz ;   Transfers: 2
+
+   Clock Domain: platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div   Source: platform1_u/SPIFlashS_DAT_O_7__I_0/SLICE_144.Q0
+      Covered under: FREQUENCY NET "interalClock" 26.600000 MHz ;   Transfers: 2
+
+   Clock Domain: platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div   Source: platform1_u/SPIFlashS_DAT_O_7__I_0/SLICE_144.Q0
+      Covered under: FREQUENCY NET "interalClock" 26.600000 MHz ;   Transfers: 4
+
+   Clock Domain: platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div   Source: platform1_u/SPIFlashS_DAT_O_7__I_0/SLICE_144.Q0
+      Covered under: FREQUENCY NET "interalClock" 26.600000 MHz ;   Transfers: 1
+
+Clock Domain: platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div   Source: platform1_u/SPIFlashS_DAT_O_7__I_0/SLICE_144.Q0   Loads: 70
+   No transfer within this clock domain is found
+
+
+<A name="ptwr_hold_ts"></A><B><U><big>Timing summary (Hold):</big></U></B>
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 380973 paths, 1 nets, and 6317 connections (99.95% coverage)
+
+
+
+<A name="ptwr_ts"></A><B><U><big>Timing summary (Setup and Hold):</big></U></B>
+---------------
+
+Timing errors: 4096 (setup), 0 (hold)
+Score: 55616674 (setup), 0 (hold)
+Cumulative negative slack: 55616674 (55616674+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

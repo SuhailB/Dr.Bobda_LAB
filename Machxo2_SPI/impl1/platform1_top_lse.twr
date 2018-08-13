@@ -1,0 +1,398 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Mon Aug 13 14:00:15 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     platform1_top
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk1 [get_nets \platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div]
+            2342 items scored, 2342 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 23.245ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672__i4  (from \platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div +)
+   Destination:    FD1P3AX    D              \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672__i3  (to \platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div +)
+
+   Delay:                  27.945ns  (26.7% logic, 73.3% route), 8 logic levels.
+
+ Constraint Details:
+
+     27.945ns data_path \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672__i4 to \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672__i3 violates
+      5.000ns delay constraint less
+      0.300ns L_S requirement (totaling 4.700ns) by 23.245ns
+
+ Path Details: \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672__i4 to \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672__i3
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.829             CK to Q              \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672__i4 (from \platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div)
+Route         4   e 3.466                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt[4]
+LUT4        ---     0.922              C to Z              \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/i2_3_lut_rep_320
+Route        12   e 4.113                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/n20179
+LUT4        ---     0.922              C to Z              \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/i1_2_lut_rep_289_3_lut
+Route        37   e 5.090                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/n20148
+LUT4        ---     0.922              B to Z              \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/i10544_2_lut_3_lut_4_lut
+Route         3   e 3.115                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/n12959
+A1_TO_FCO   ---     1.545           B[2] to COUT           \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672_add_4_1
+Route         1   e 0.020                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/n16824
+FCI_TO_FCO  ---     0.293            CIN to COUT           \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672_add_4_3
+Route         1   e 0.020                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/n16825
+FCI_TO_F    ---     1.118            CIN to S[2]           \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672_add_4_5
+Route         1   e 2.324                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/n32
+LUT4        ---     0.922              A to Z              \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672_mux_6_i4_3_lut
+Route         1   e 2.324                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/n40
+                  --------
+                   27.945  (26.7% logic, 73.3% route), 8 logic levels.
+
+
+Error:  The following path violates requirements by 23.245ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672__i2  (from \platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div +)
+   Destination:    FD1P3AX    D              \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672__i3  (to \platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div +)
+
+   Delay:                  27.945ns  (26.7% logic, 73.3% route), 8 logic levels.
+
+ Constraint Details:
+
+     27.945ns data_path \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672__i2 to \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672__i3 violates
+      5.000ns delay constraint less
+      0.300ns L_S requirement (totaling 4.700ns) by 23.245ns
+
+ Path Details: \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672__i2 to \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672__i3
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.829             CK to Q              \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672__i2 (from \platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div)
+Route         4   e 3.466                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt[2]
+LUT4        ---     0.922              A to Z              \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/i2_3_lut_rep_320
+Route        12   e 4.113                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/n20179
+LUT4        ---     0.922              C to Z              \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/i1_2_lut_rep_289_3_lut
+Route        37   e 5.090                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/n20148
+LUT4        ---     0.922              B to Z              \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/i10544_2_lut_3_lut_4_lut
+Route         3   e 3.115                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/n12959
+A1_TO_FCO   ---     1.545           B[2] to COUT           \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672_add_4_1
+Route         1   e 0.020                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/n16824
+FCI_TO_FCO  ---     0.293            CIN to COUT           \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672_add_4_3
+Route         1   e 0.020                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/n16825
+FCI_TO_F    ---     1.118            CIN to S[2]           \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672_add_4_5
+Route         1   e 2.324                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/n32
+LUT4        ---     0.922              A to Z              \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672_mux_6_i4_3_lut
+Route         1   e 2.324                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/n40
+                  --------
+                   27.945  (26.7% logic, 73.3% route), 8 logic levels.
+
+
+Error:  The following path violates requirements by 23.245ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672__i3  (from \platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div +)
+   Destination:    FD1P3AX    D              \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672__i3  (to \platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div +)
+
+   Delay:                  27.945ns  (26.7% logic, 73.3% route), 8 logic levels.
+
+ Constraint Details:
+
+     27.945ns data_path \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672__i3 to \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672__i3 violates
+      5.000ns delay constraint less
+      0.300ns L_S requirement (totaling 4.700ns) by 23.245ns
+
+ Path Details: \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672__i3 to \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672__i3
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.829             CK to Q              \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672__i3 (from \platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div)
+Route         4   e 3.466                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt[3]
+LUT4        ---     0.922              B to Z              \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/i2_3_lut_rep_320
+Route        12   e 4.113                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/n20179
+LUT4        ---     0.922              C to Z              \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/i1_2_lut_rep_289_3_lut
+Route        37   e 5.090                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/n20148
+LUT4        ---     0.922              B to Z              \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/i10544_2_lut_3_lut_4_lut
+Route         3   e 3.115                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/n12959
+A1_TO_FCO   ---     1.545           B[2] to COUT           \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672_add_4_1
+Route         1   e 0.020                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/n16824
+FCI_TO_FCO  ---     0.293            CIN to COUT           \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672_add_4_3
+Route         1   e 0.020                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/n16825
+FCI_TO_F    ---     1.118            CIN to S[2]           \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672_add_4_5
+Route         1   e 2.324                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/n32
+LUT4        ---     0.922              A to Z              \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672_mux_6_i4_3_lut
+Route         1   e 2.324                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/n40
+                  --------
+                   27.945  (26.7% logic, 73.3% route), 8 logic levels.
+
+Warning: 28.245 ns is the maximum delay for this constraint.
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets interalClock]
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 64.155ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3DX    CK             \platform1_u/LM8/u1_isp8_core/page_ptr3_i0_i0  (from interalClock +)
+   Destination:    FD1P3AX    D              \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/reg_C_DAT_O_i1  (to interalClock +)
+
+   Delay:                  68.855ns  (23.3% logic, 76.7% route), 18 logic levels.
+
+ Constraint Details:
+
+     68.855ns data_path \platform1_u/LM8/u1_isp8_core/page_ptr3_i0_i0 to \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/reg_C_DAT_O_i1 violates
+      5.000ns delay constraint less
+      0.300ns L_S requirement (totaling 4.700ns) by 64.155ns
+
+ Path Details: \platform1_u/LM8/u1_isp8_core/page_ptr3_i0_i0 to \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/reg_C_DAT_O_i1
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.829             CK to Q              \platform1_u/LM8/u1_isp8_core/page_ptr3_i0_i0 (from interalClock)
+Route         4   e 3.466                                  \platform1_u/page_ptr3[0]
+LUT4        ---     0.922              C to Z              \platform1_u/i2_3_lut
+Route         2   e 2.823                                  \platform1_u/n18396
+LUT4        ---     0.922              D to Z              \platform1_u/i3_4_lut
+Route         2   e 2.823                                  \platform1_u/n18141
+LUT4        ---     0.922              C to Z              \platform1_u/i3_3_lut_4_lut
+Route         1   e 2.324                                  \platform1_u/n8
+LUT4        ---     0.922              C to Z              \platform1_u/LM8/i16433_4_lut
+Route         4   e 3.322                                  \platform1_u/LM8/n18961
+LUT4        ---     0.922              C to Z              \platform1_u/LM8/u1_isp8_core/u1_lm8_idec/i16434_2_lut_rep_251_3_lut_4_lut
+Route        11   e 4.050                                  \platform1_u/LM8/n20110
+LUT4        ---     0.922              A to Z              \platform1_u/LM8/ext_cyc_I_16_3_lut_rep_244_4_lut_4_lut
+Route        19   e 4.533                                  \platform1_u/n20103
+LUT4        ---     0.922              A to Z              \platform1_u/LM8/i1_2_lut_rep_236_3_lut_4_lut
+Route        44   e 5.115                                  \platform1_u/n20095
+LUT4        ---     0.922              C to Z              \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/i1_4_lut_4_lut_adj_169
+Route         1   e 2.324                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n18298
+LUT4        ---     0.922              B to Z              \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/i1_4_lut_adj_204
+Route         1   e 2.324                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n30_adj_2167
+LUT4        ---     0.922              D to Z              \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/i1_4_lut_adj_203
+Route         3   e 3.115                                  \platform1_u/n39
+LUT4        ---     0.922              D to Z              \platform1_u/arbiter/i16474_3_lut_rep_188_3_lut_4_lut
+Route        10   e 3.981                                  \platform1_u/n20047
+LUT4        ---     0.922              C to Z              \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/i1_2_lut_3_lut_4_lut_4_lut
+Route         1   e 2.324                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n8265
+LUT4        ---     0.922              C to Z              \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/i3_4_lut_adj_207
+Route         4   e 3.322                                  \platform1_u/n18346
+LUT4        ---     0.922              C to Z              \platform1_u/i1_3_lut_4_lut
+Route         1   e 2.324                                  \platform1_u/n4
+LUT4        ---     0.922              C to Z              \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/i1_4_lut_adj_189
+Route         1   e 0.020                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n18224
+MUXL5       ---     0.436           ALUT to Z              \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/mux_338_i2
+Route         1   e 2.324                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n1519
+LUT4        ---     0.922              A to Z              \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/i5758_4_lut
+Route         1   e 2.324                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/C_DAT_O_7__N_1036[1]
+                  --------
+                   68.855  (23.3% logic, 76.7% route), 18 logic levels.
+
+
+Error:  The following path violates requirements by 64.130ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3DX    CK             \platform1_u/LM8/u1_isp8_core/page_ptr3_i0_i0  (from interalClock +)
+   Destination:    FD1P3AX    D              \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/reg_C_DAT_O_i1  (to interalClock +)
+
+   Delay:                  68.830ns  (23.3% logic, 76.7% route), 18 logic levels.
+
+ Constraint Details:
+
+     68.830ns data_path \platform1_u/LM8/u1_isp8_core/page_ptr3_i0_i0 to \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/reg_C_DAT_O_i1 violates
+      5.000ns delay constraint less
+      0.300ns L_S requirement (totaling 4.700ns) by 64.130ns
+
+ Path Details: \platform1_u/LM8/u1_isp8_core/page_ptr3_i0_i0 to \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/reg_C_DAT_O_i1
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.829             CK to Q              \platform1_u/LM8/u1_isp8_core/page_ptr3_i0_i0 (from interalClock)
+Route         4   e 3.466                                  \platform1_u/page_ptr3[0]
+LUT4        ---     0.922              C to Z              \platform1_u/i2_3_lut
+Route         2   e 2.823                                  \platform1_u/n18396
+LUT4        ---     0.922              D to Z              \platform1_u/i3_4_lut
+Route         2   e 2.823                                  \platform1_u/n18141
+LUT4        ---     0.922              C to Z              \platform1_u/i3_3_lut_4_lut
+Route         1   e 2.324                                  \platform1_u/n8
+LUT4        ---     0.922              C to Z              \platform1_u/LM8/i16433_4_lut
+Route         4   e 3.322                                  \platform1_u/LM8/n18961
+LUT4        ---     0.922              C to Z              \platform1_u/LM8/u1_isp8_core/u1_lm8_idec/i16434_2_lut_rep_251_3_lut_4_lut
+Route        11   e 4.050                                  \platform1_u/LM8/n20110
+LUT4        ---     0.922              A to Z              \platform1_u/LM8/ext_cyc_I_16_3_lut_rep_244_4_lut_4_lut
+Route        19   e 4.533                                  \platform1_u/n20103
+LUT4        ---     0.922              A to Z              \platform1_u/LM8/i10160_2_lut_rep_240_3_lut_4_lut
+Route        37   e 5.090                                  n20099
+LUT4        ---     0.922              A to Z              \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/i1_4_lut_4_lut_adj_169
+Route         1   e 2.324                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n18298
+LUT4        ---     0.922              B to Z              \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/i1_4_lut_adj_204
+Route         1   e 2.324                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n30_adj_2167
+LUT4        ---     0.922              D to Z              \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/i1_4_lut_adj_203
+Route         3   e 3.115                                  \platform1_u/n39
+LUT4        ---     0.922              D to Z              \platform1_u/arbiter/i16474_3_lut_rep_188_3_lut_4_lut
+Route        10   e 3.981                                  \platform1_u/n20047
+LUT4        ---     0.922              C to Z              \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/i1_2_lut_3_lut_4_lut_4_lut
+Route         1   e 2.324                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n8265
+LUT4        ---     0.922              C to Z              \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/i3_4_lut_adj_207
+Route         4   e 3.322                                  \platform1_u/n18346
+LUT4        ---     0.922              C to Z              \platform1_u/i1_3_lut_4_lut
+Route         1   e 2.324                                  \platform1_u/n4
+LUT4        ---     0.922              C to Z              \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/i1_4_lut_adj_189
+Route         1   e 0.020                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n18224
+MUXL5       ---     0.436           ALUT to Z              \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/mux_338_i2
+Route         1   e 2.324                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n1519
+LUT4        ---     0.922              A to Z              \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/i5758_4_lut
+Route         1   e 2.324                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/C_DAT_O_7__N_1036[1]
+                  --------
+                   68.830  (23.3% logic, 76.7% route), 18 logic levels.
+
+
+Error:  The following path violates requirements by 64.104ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3DX    CK             \platform1_u/LM8/u1_isp8_core/page_ptr3_i0_i0  (from interalClock +)
+   Destination:    FD1P3AX    D              \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/reg_C_DAT_O_i1  (to interalClock +)
+
+   Delay:                  68.804ns  (23.3% logic, 76.7% route), 18 logic levels.
+
+ Constraint Details:
+
+     68.804ns data_path \platform1_u/LM8/u1_isp8_core/page_ptr3_i0_i0 to \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/reg_C_DAT_O_i1 violates
+      5.000ns delay constraint less
+      0.300ns L_S requirement (totaling 4.700ns) by 64.104ns
+
+ Path Details: \platform1_u/LM8/u1_isp8_core/page_ptr3_i0_i0 to \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/reg_C_DAT_O_i1
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.829             CK to Q              \platform1_u/LM8/u1_isp8_core/page_ptr3_i0_i0 (from interalClock)
+Route         4   e 3.466                                  \platform1_u/page_ptr3[0]
+LUT4        ---     0.922              C to Z              \platform1_u/i2_3_lut
+Route         2   e 2.823                                  \platform1_u/n18396
+LUT4        ---     0.922              D to Z              \platform1_u/i3_4_lut
+Route         2   e 2.823                                  \platform1_u/n18141
+LUT4        ---     0.922              C to Z              \platform1_u/i3_3_lut_4_lut
+Route         1   e 2.324                                  \platform1_u/n8
+LUT4        ---     0.922              C to Z              \platform1_u/LM8/i16433_4_lut
+Route         4   e 3.322                                  \platform1_u/LM8/n18961
+LUT4        ---     0.922              C to Z              \platform1_u/LM8/u1_isp8_core/u1_lm8_idec/i16434_2_lut_rep_251_3_lut_4_lut
+Route        11   e 4.050                                  \platform1_u/LM8/n20110
+LUT4        ---     0.922              A to Z              \platform1_u/LM8/ext_cyc_I_16_3_lut_rep_244_4_lut_4_lut
+Route        19   e 4.533                                  \platform1_u/n20103
+LUT4        ---     0.922              A to Z              \platform1_u/LM8/i10161_2_lut_rep_230_3_lut_4_lut
+Route        31   e 5.064                                  n20089
+LUT4        ---     0.922              B to Z              \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/i1_4_lut_4_lut_adj_169
+Route         1   e 2.324                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n18298
+LUT4        ---     0.922              B to Z              \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/i1_4_lut_adj_204
+Route         1   e 2.324                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n30_adj_2167
+LUT4        ---     0.922              D to Z              \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/i1_4_lut_adj_203
+Route         3   e 3.115                                  \platform1_u/n39
+LUT4        ---     0.922              D to Z              \platform1_u/arbiter/i16474_3_lut_rep_188_3_lut_4_lut
+Route        10   e 3.981                                  \platform1_u/n20047
+LUT4        ---     0.922              C to Z              \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/i1_2_lut_3_lut_4_lut_4_lut
+Route         1   e 2.324                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n8265
+LUT4        ---     0.922              C to Z              \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/i3_4_lut_adj_207
+Route         4   e 3.322                                  \platform1_u/n18346
+LUT4        ---     0.922              C to Z              \platform1_u/i1_3_lut_4_lut
+Route         1   e 2.324                                  \platform1_u/n4
+LUT4        ---     0.922              C to Z              \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/i1_4_lut_adj_189
+Route         1   e 0.020                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n18224
+MUXL5       ---     0.436           ALUT to Z              \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/mux_338_i2
+Route         1   e 2.324                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n1519
+LUT4        ---     0.922              A to Z              \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/i5758_4_lut
+Route         1   e 2.324                                  \platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/C_DAT_O_7__N_1036[1]
+                  --------
+                   68.804  (23.3% logic, 76.7% route), 18 logic levels.
+
+Warning: 69.155 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets                          |             |             |
+\platform1_u/SPIFlashS_DAT_O_7__I_0/clk_|             |             |
+div]                                    |     5.000 ns|    28.245 ns|     8 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets interalClock]            |     5.000 ns|    69.155 ns|    18 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+2 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+\platform1_u/LM8/n18961                 |       4|    4087|     63.48%
+                                        |        |        |
+\platform1_u/n8                         |       1|    4087|     63.48%
+                                        |        |        |
+\platform1_u/n18141                     |       2|    4087|     63.48%
+                                        |        |        |
+\platform1_u/SPIFlashS_DAT_O_7__I_0/wb_i|        |        |
+ntf_inst/n6_adj_2139                    |       2|    3832|     59.52%
+                                        |        |        |
+\platform1_u/SPIFlashS_DAT_O_7__I_0/wb_i|        |        |
+ntf_inst/n20046                         |       2|    3832|     59.52%
+                                        |        |        |
+\platform1_u/n166                       |      10|    3832|     59.52%
+                                        |        |        |
+\platform1_u/n7926                      |       4|    3832|     59.52%
+                                        |        |        |
+\platform1_u/n7955                      |       2|    3832|     59.52%
+                                        |        |        |
+\platform1_u/LM8/n20110                 |      11|    3495|     54.29%
+                                        |        |        |
+\platform1_u/n20103                     |      19|    3495|     54.29%
+                                        |        |        |
+\platform1_u/SPIFlashS_DAT_O_7__I_0/wb_i|        |        |
+ntf_inst/n18245                         |       8|    2264|     35.17%
+                                        |        |        |
+\platform1_u/n18383                     |       2|    1804|     28.02%
+                                        |        |        |
+\platform1_u/n20043                     |       7|    1568|     24.36%
+                                        |        |        |
+\platform1_u/n18396                     |       2|    1378|     21.40%
+                                        |        |        |
+\platform1_u/n20095                     |      44|    1164|     18.08%
+                                        |        |        |
+n20089                                  |      31|    1156|     17.96%
+                                        |        |        |
+\platform1_u/n20088                     |      19|    1080|     16.78%
+                                        |        |        |
+\platform1_u/n18393                     |       2|     902|     14.01%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+Timing summary:
+---------------
+
+Timing errors: 6438  Score: 276009544
+
+Constraints cover  313748 paths, 1718 nets, and 5631 connections (91.7% coverage)
+
+
+Peak memory: 94666752 bytes, TRCE: 11993088 bytes, DLYMAN: 491520 bytes
+CPU_TIME_REPORT: 0 secs 

@@ -1,0 +1,13 @@
+This template demonstrates the use of SPI flash device.
+
+This template supports those SPI flash devices that are supported by LatticeMico8 SPI flash driver.
+
+ PREREQUISITES:
+                                                            
+ - A platform with a SPI flash device.(LM8_PlatformB)                                                            
+
+
+
+
+
+

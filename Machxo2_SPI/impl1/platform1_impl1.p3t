@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "platform1_impl1.log"
+-o "platform1_impl1.csv"
+-pr "platform1_impl1.prf"

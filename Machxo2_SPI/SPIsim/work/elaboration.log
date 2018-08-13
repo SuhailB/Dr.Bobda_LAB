@@ -1,0 +1,47 @@
+Active-HDL 10.3.3558.6081  2018-07-02 14:04:28
+
+Elaboration top modules:
+Verilog Module                platform1_tb
+
+
+----------------------------------------------------------------------------------------------------
+Verilog Module              | Library     | Info | Compiler Version          | Compilation Options
+----------------------------------------------------------------------------------------------------
+platform1_tb                | work        |      | 10.3.3558.6081  (Windows) | -dbg
+platform1_top               | work        |      | 10.3.3558.6081  (Windows) | -O2 -sv2k12
+OSCH                        | ovi_machxo2 |      | 10.3.3558.6081  (Windows) | -vendor lattice -v2k
+platform1                   | work        |      | 10.3.3558.6081  (Windows) | -O2 -sv2k12
+arbiter2                    | work        |      | 10.3.3558.6081  (Windows) | -O2 -sv2k12
+lm8                         | work        |      | 10.3.3558.6081  (Windows) | -O2 -sv2k12
+gpio                        | work        |      | 10.3.3558.6081  (Windows) | -O2 -sv2k12
+spi_flash                   | work        |      | 10.3.3558.6081  (Windows) | -O2 -sv2k12
+lm8_core                    | work        |      | 10.3.3558.6081  (Windows) | -O2 -sv2k12
+pmi_ram_dq                  | pmi_work    |      | 10.3.3558.6081  (Windows) | -vendor lattice -v2k
+lm8_idec                    | work        |      | 10.3.3558.6081  (Windows) | -O2 -sv2k12
+lm8_alu                     | work        |      | 10.3.3558.6081  (Windows) | -O2 -sv2k12
+lm8_flow_cntl               | work        |      | 10.3.3558.6081  (Windows) | -O2 -sv2k12
+lm8_io_cntl                 | work        |      | 10.3.3558.6081  (Windows) | -O2 -sv2k12
+lm8_interrupt               | work        |      | 10.3.3558.6081  (Windows) | -O2 -sv2k12
+pmi_distributed_dpram       | pmi_work    |      | 10.3.3558.6081  (Windows) | -vendor lattice -v2k
+pmi_distributed_dpram_reg   | pmi_work    |      | 10.3.3558.6081  (Windows) | -vendor lattice -v2k
+pmi_distributed_dpram_noreg | pmi_work    |      | 10.3.3558.6081  (Windows) | -vendor lattice -v2k
+pmi_ram_dp                  | pmi_work    |      | 10.3.3558.6081  (Windows) | -vendor lattice -v2k
+pmi_addsub                  | pmi_work    |      | 10.3.3558.6081  (Windows) | -vendor lattice -v2k
+pmi_addsub_unsign           | pmi_work    |      | 10.3.3558.6081  (Windows) | -vendor lattice -v2k
+pmi_addsub_sign             | pmi_work    |      | 10.3.3558.6081  (Windows) | -vendor lattice -v2k
+pmi_distributed_spram       | pmi_work    |      | 10.3.3558.6081  (Windows) | -vendor lattice -v2k
+pmi_distributed_spram_reg   | pmi_work    |      | 10.3.3558.6081  (Windows) | -vendor lattice -v2k
+pmi_distributed_spram_noreg | pmi_work    |      | 10.3.3558.6081  (Windows) | -vendor lattice -v2k
+tpio                        | work        |      | 10.3.3558.6081  (Windows) | -O2 -sv2k12
+BB                          | ovi_machxo2 |      | 10.3.3558.6081  (Windows) | -vendor lattice -v2k
+wb_intf                     | work        |      | 10.3.3558.6081  (Windows) | -O2 -sv2k12
+spi_flash_intf              | work        |      | 10.3.3558.6081  (Windows) | -O2 -sv2k12
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Library                     | Comment
+----------------------------------------------------------------------------------------------------
+ovi_machxo2                 | LATTICE Diamond 3.10, MACHXO2 VERILOG LIBRARY
+pmi_work                    | LATTICE Diamond 3.10, PMI_WORK LIBRARY
+work                        | None
+----------------------------------------------------------------------------------------------------

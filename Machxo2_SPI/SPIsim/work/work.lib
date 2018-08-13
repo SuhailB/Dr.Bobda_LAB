@@ -1,0 +1,199 @@
+timestamp=1530558137818
+
+[~A]
+C:/Users/Suhail/Desktop/Work/Machxo2_SPI/SPIsim/../platform1/soc/platform1_top.v=0*77665*131787
+C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/platform1_tb.v=0*65791*66396
+C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/platform1_top.v=0*10735*64799
+LastVerilogToplevel=pmi_rom
+ModifyID=3
+Version=74
+
+[$root]
+A/$root=22|||1*334688
+BinI32/$root=3*283057
+SLP=3*283161
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c73a565f2ade592f8ac1c68f484c921685ce21a797c859a310a54ab918a38b5f
+
+[arbiter2]
+A/arbiter2=22|./../../platform1/soc/platform1.v|48|1*335078
+BinI32/arbiter2=3*283229
+R=./../../platform1/soc/platform1.v|48
+SLP=3*294550
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|acb0f0848495f05259f0fc3b89f056716614b9a403616cf177329f91d267641449918aa5790c2964bb8dc66e6edabf54
+
+[gpio]
+A/gpio=22|./../../platform1/components/gpio/rtl/verilog/gpio.v|80|1*461593
+BinI32/gpio=3*368854
+R=./../../platform1/components/gpio/rtl/verilog/gpio.v|80
+SLP=3*441507
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|f190082b60e985a131774fc59f1741159f9b12eaac88f8c9bad904ee21b7125b
+
+[lm8]
+A/lm8=22|./../../platform1/components/lm8/rtl/verilog/lm8_top.v|50|1*425775
+BinI32/lm8=3*336992
+R=./../../platform1/components/lm8/rtl/verilog/lm8_top.v|50
+SLP=3*359230
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|af649fcaa6f824dd9c80d193d617e089644224cb4e921713a0ef72f362ca68cf
+
+[lm8_alu]
+A/lm8_alu=22|./../../platform1/components/lm8/rtl/verilog/lm8_alu.v|47|1*393692
+BinI32/lm8_alu=3*325701
+R=./../../platform1/components/lm8/rtl/verilog/lm8_alu.v|47
+SLP=3*328708
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|290991179ab4a6204fd97ef6f731320f26527262ddaa47cb266f3a3c4d9b973a85914991bb330cafd0774e51b6f2df29
+
+[lm8_core]
+A/lm8_core=22|./../../platform1/components/lm8/rtl/verilog/lm8_core.v|47|1*398586
+BinI32/lm8_core=3*329796
+R=./../../platform1/components/lm8/rtl/verilog/lm8_core.v|47
+SLP=3*334725
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|f682a0b452def204761fe5362b20f4d23779737f0702b035ba5287f3ae82ef4fa1ddd3857fe027896c03266d0c34705e
+
+[lm8_flow_cntl]
+A/lm8_flow_cntl=22|./../../platform1/components/lm8/rtl/verilog/lm8_flow_cntl.v|49|1*372167
+BinI32/lm8_flow_cntl=3*307642
+R=./../../platform1/components/lm8/rtl/verilog/lm8_flow_cntl.v|49
+SLP=3*315119
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|5fb54b67509953441645079c5a361b0424e33e74b61c20647a13ff87a4556c800efae9d22e11c64dcc464f94d8987914
+
+[lm8_idec]
+A/lm8_idec=22|./../../platform1/components/lm8/rtl/verilog/lm8_idec.v|47|1*385862
+BinI32/lm8_idec=3*318789
+R=./../../platform1/components/lm8/rtl/verilog/lm8_idec.v|47
+SLP=3*323446
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|315ba9d831d8a2a1c415a5c95a2e4e338b567c2a8ad34a91a127a83c7d72dbac811f977c735af14595618d89a3a593d7
+
+[lm8_interrupt]
+A/lm8_interrupt=22|./../../platform1/components/lm8/rtl/verilog/lm8_interrupt.v|49|1*365195
+BinI32/lm8_interrupt=3*301197
+R=./../../platform1/components/lm8/rtl/verilog/lm8_interrupt.v|49
+SLP=3*304059
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|f01fce10fbb361f9882b2d662bd1b9d6db1cdeb79d91efe6c4ba1ced87da0ad80a6735828dd4d58fe031dea83edadf42
+
+[lm8_io_cntl]
+A/lm8_io_cntl=22|./../../platform1/components/lm8/rtl/verilog/lm8_io_cntl.v|47|1*368921
+BinI32/lm8_io_cntl=3*305074
+R=./../../platform1/components/lm8/rtl/verilog/lm8_io_cntl.v|47
+SLP=3*306789
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|edb17f09eab08c82b009140a9345f16e869e5f45101f4c4b93dcc80a45938b304790a6a22c60a8be62d35e895a67745d
+
+[platform1]
+A/platform1=22|./../../platform1/soc/platform1.v|335|1*640290
+BinI32/platform1=3*526184
+R=./../../platform1/soc/platform1.v|335
+SLP=3*528849
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|a48f1c6c0a5f3888e246f4665cc5d0a2d9ee32c7bf8a9bc126833dd076531c3d74426f22dfccd826a77bcee81c26818f
+
+[platform1_tb]
+A/platform1_tb=22|./../../platform1/soc/platform1_tb.v|3|1*333162
+BinI32/platform1_tb=3*282330
+R=./../../platform1/soc/platform1_tb.v|3
+SLP=3*282798
+Version=10.3.3558.6081  (Windows)|00000004789cd34d494a0700030f015b|b3ca77d9766fda4dc832c38145955eb640d7e2b6c97a8b68c818ab35dc34e3675c98149a36c46e98faa5903d1681b194
+
+[platform1_top]
+A/platform1_top=22|./../../platform1/soc/platform1_top.v|3|1*657044
+BinI32/platform1_top=3*530547
+R=./../../platform1/soc/platform1_top.v|3
+SLP=3*530659
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|405545769236392a480e4dca8ca97f52a1bdc5856a8eeb47a2b76e330f3c34eea6175e34adea4125f810aa726dbf349f
+
+[pmi_addsub]
+A/pmi_addsub=22|./../../platform1/soc/pmi_def.v|69|1*353202
+BinI32/pmi_addsub=3*298664
+R=./../../platform1/soc/pmi_def.v|69
+SLP=3*299064
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|7cf9dcdf182bdb89db52e6f2b6019dc28fb212b42418c9a11b410e60de8f44acd637ab998e9b1b17bd69b1c5cb3efdce
+
+[pmi_distributed_dpram]
+A/pmi_distributed_dpram=22|./../../platform1/soc/pmi_def.v|24|1*347707
+BinI32/pmi_distributed_dpram=3*297327
+R=./../../platform1/soc/pmi_def.v|24
+SLP=3*297791
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|4d5183cd29d46949b8807a211163e5a56ad6e42feaa80f0ad1afba12cd82d4dd4d2a842ae01afa0072f8a21d6c0917b3
+
+[pmi_distributed_spram]
+A/pmi_distributed_spram=22|./../../platform1/soc/pmi_def.v|48|1*350581
+BinI32/pmi_distributed_spram=3*298005
+R=./../../platform1/soc/pmi_def.v|48
+SLP=3*298469
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|4d5183cd29d46949b8807a211163e5a500e3217720afa4660a26805930fa70adfa45cf2a4e9ff4bfdc724f8f22e4af40
+
+[pmi_ram_dp]
+A/pmi_ram_dp=22|./../../platform1/soc/pmi_def.v|86|1*355245
+BinI32/pmi_ram_dp=3*299228
+R=./../../platform1/soc/pmi_def.v|86
+SLP=3*299740
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|954193f7fe33e45696312cf5394b53227107efc2957ca38fd99266456bbe60972992cbf9e8e50801559e0a5f61efa14d
+
+[pmi_ram_dq]
+A/pmi_ram_dq=22|./../../platform1/soc/pmi_def.v|115|1*359136
+BinI32/pmi_ram_dq=3*299946
+R=./../../platform1/soc/pmi_def.v|115
+SLP=3*300400
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|6c85cb72432aa0a85fe413bde8c95c6443ffa2ddd881f7920fb311655d9080712992cbf9e8e50801559e0a5f61efa14d
+
+[pmi_rom]
+A/pmi_rom=22|./../../platform1/soc/pmi_def.v|139|1*362332
+BinI32/pmi_rom=3*300585
+R=./../../platform1/soc/pmi_def.v|139
+SLP=3*301035
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|35f6cf8da1afe37fdb4b208448c231a926527262ddaa47cb266f3a3c4d9b973aaf6f0df581814b83fbd949bc12cf82a2
+
+[spi_flash]
+A/spi_flash=22|./../../platform1/components/spi_flash/rtl/verilog/spi_flash.v|47|1*574205
+BinI32/spi_flash=3*468980
+R=./../../platform1/components/spi_flash/rtl/verilog/spi_flash.v|47
+SLP=3*474828
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|2fe99081ce759e36d2baf0741216418a5fb4070a7fdfd8da59b6a7357a41e9dcd9ce72dc7aedd993983dfd22352d1da4
+
+[spi_flash_intf]
+A/spi_flash_intf=22|./../../platform1/components/spi_flash/rtl/verilog/spi_flash_intf.v|47|1*625281
+BinI32/spi_flash_intf=3*509230
+R=./../../platform1/components/spi_flash/rtl/verilog/spi_flash_intf.v|47
+SLP=3*520221
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|0d225baf13a87a2f2d63c337abcd3d6822bc03297609c44b4074cbecbafe778eef15b8e919e163aaa40fdc0d5ca6c702
+
+[tpio]
+A/tpio=22|./../../platform1/components/gpio/rtl/verilog/tpio.v|66|1*568471
+BinI32/tpio=3*464124
+R=./../../platform1/components/gpio/rtl/verilog/tpio.v|66
+SLP=3*467702
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|db5e3b537589b887d1dc7674c95b48d68e821d7219696ac075373637fc16b005
+
+[wb_intf]
+A/wb_intf=22|./../../platform1/components/spi_flash/rtl/verilog/wb_intf.v|52|1*598523
+BinI32/wb_intf=3*476314
+R=./../../platform1/components/spi_flash/rtl/verilog/wb_intf.v|52
+SLP=3*496012
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|220317672100790c399ddb1616bd92dd26527262ddaa47cb266f3a3c4d9b973ac8df4fa3ea088691e30d20591c6f27e4
+
+[~MFT]
+0=24|0work.mgf|131787|0
+1=44|1work.mgf|657044|333162
+3=88|3work.mgf|530659|282330
+
+[~U]
+$root=12|0*66946|
+arbiter2=12|0*67208|
+gpio=12|0*73674|
+lm8=12|0*72673|
+lm8_alu=12|0*71769|
+lm8_core=12|0*72084|
+lm8_flow_cntl=12|0*70692|
+lm8_idec=12|0*71255|
+lm8_interrupt=12|0*70034|
+lm8_io_cntl=12|0*70351|
+platform1=12|0*76934|
+platform1_tb=12|0*65628||0x10
+platform1_top=12|0*77301|
+pmi_addsub=12|0*68512|
+pmi_distributed_dpram=12|0*67747|
+pmi_distributed_spram=12|0*68140|
+pmi_ram_dp=12|0*68834|
+pmi_ram_dq=12|0*69263|
+pmi_rom=12|0*69663||0x10
+spi_flash=12|0*74548|
+spi_flash_intf=12|0*76307|
+tpio=12|0*74189|
+wb_intf=12|0*75464|

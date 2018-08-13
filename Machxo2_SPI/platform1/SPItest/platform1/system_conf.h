@@ -1,0 +1,90 @@
+#ifndef __SYSTEM_CONFIG_H_
+#define __SYSTEM_CONFIG_H_
+
+
+#define FPGA_DEVICE_FAMILY    "MachXO2"
+#define PLATFORM_NAME         "platform1"
+#define USE_PLL               (0)
+#define CPU_FREQUENCY         (27000000)
+
+
+/* FOUND 1 CPU UNIT(S) */
+
+/*
+ * CPU Instance LM8 component configuration
+ */
+#define CPU_NAME "LM8"
+
+/*
+ * LED component configuration
+ */
+#define LED_NAME  "LED"
+#define LED_BASE_ADDRESS  (0x80000800)
+#define LED_SIZE  (16)
+#define LED_CHARIO_IN        (0)
+#define LED_CHARIO_OUT       (0)
+#define LED_WB_DAT_WIDTH  (8)
+#define LED_WB_ADR_WIDTH  (4)
+#define LED_ADDRESS_LOCK  (1)
+#define LED_DISABLE  (0)
+#define LED_OUTPUT_PORTS_ONLY  (1)
+#define LED_INPUT_PORTS_ONLY  (0)
+#define LED_TRISTATE_PORTS  (0)
+#define LED_BOTH_INPUT_AND_OUTPUT  (0)
+#define LED_DATA_WIDTH  (2)
+#define LED_INPUT_WIDTH  (1)
+#define LED_OUTPUT_WIDTH  (1)
+#define LED_IRQ_MODE  (0)
+#define LED_LEVEL  (0)
+#define LED_EDGE  (0)
+#define LED_EITHER_EDGE_IRQ  (0)
+#define LED_POSE_EDGE_IRQ  (0)
+#define LED_NEGE_EDGE_IRQ  (0)
+
+/*
+ * SPIFlash component configuration
+ */
+#define SPIFLASH_NAME  "SPIFlash"
+#define SPIFLASH_BASE_ADDRESS  (0x01000000)
+#define SPIFLASH_SIZE  (16777216)
+#define SPIFLASH_IS_READABLE   (1)
+#define SPIFLASH_IS_WRITABLE   (1)
+#define SPIFLASH_LATTICE_FAMILY  "XP"
+#define SPIFLASH_PORT_TYPE  "Memory"
+#define SPIFLASH_WB_DAT_WIDTH  (8)
+#define SPIFLASH_WB_ADR_WIDTH  (32)
+#define SPIFLASH_PORT_TYPE  "Memory"
+#define SPIFLASH_PORT_ENABLE  (1)
+#define SPIFLASH_WB_DAT_WIDTH  (8)
+#define SPIFLASH_WB_ADR_WIDTH  (32)
+#define SPIFLASH_PORT_CONNECTION  "S;C;S:C"
+#define SPIFLASH_CLOCK_SEL  (4)
+#define SPIFLASH_PAGE_SIZE  (256)
+#define SPIFLASH_SECTOR_SIZE  (32768)
+#define SPIFLASH_PAGE_PRG_BUF_ENA  (0)
+#define SPIFLASH_PAGE_PRG_BUFFER_EBR  (0)
+#define SPIFLASH_PAGE_PRG_BUFFER_DISTRIBUTED_RAM  (0)
+#define SPIFLASH_PAGE_READ_BUF_ENA  (0)
+#define SPIFLASH_PAGE_READ_BUFFER_EBR  (0)
+#define SPIFLASH_PAGE_READ_BUFFER_DISTRIBUTED_RAM  (0)
+#define SPIFLASH_SPI_READ  (3)
+#define SPIFLASH_SPI_FAST_READ  (11)
+#define SPIFLASH_SPI_BYTE_PRG  (2)
+#define SPIFLASH_SPI_PAGE_PRG  (2)
+#define SPIFLASH_SPI_BLK1_ERS  (32)
+#define SPIFLASH_SPI_BLK2_ERS  (82)
+#define SPIFLASH_SPI_BLK3_ERS  (216)
+#define SPIFLASH_SPI_CHIP_ERS  (199)
+#define SPIFLASH_SPI_WRT_ENB  (6)
+#define SPIFLASH_SPI_WRT_DISB  (4)
+#define SPIFLASH_SPI_READ_STAT  (5)
+#define SPIFLASH_SPI_WRT_STAT  (1)
+#define SPIFLASH_SPI_PWD_DOWN  (185)
+#define SPIFLASH_SPI_PWD_UP  (171)
+#define SPIFLASH_SPI_DEV_ID  (159)
+#define SPIFLASH_ADDRESS_LOCK  (1)
+#define SPIFLASH_DISABLE  (0)
+#define SPIFLASH_ADDRESS_LOCK  (1)
+
+
+#endif /* __SYSTEM_CONFIG_H_ */

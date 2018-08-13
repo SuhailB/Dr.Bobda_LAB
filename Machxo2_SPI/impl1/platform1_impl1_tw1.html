@@ -1,0 +1,443 @@
+<HTML>
+<HEAD><TITLE>Lattice Map TRACE Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Map TRACE Report</big></U></B>
+
+Loading design for application trce from file platform1_impl1_map.ncd.
+Design name: platform1_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-2000ZE
+Package:     WLCSP49
+Performance: 1
+Loading device for application trce from file 'xo2c2000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+<A name="Map_Twr_setup"></A><B><U><big>Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.0.111.2</big></U></B>
+Mon Aug 13 14:00:21 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_set_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o platform1_impl1.tw1 -gui -msgset C:/Users/Suhail/Desktop/Work/Machxo2_SPI/promote.xml platform1_impl1_map.ncd platform1_impl1.prf 
+Design file:     platform1_impl1_map.ncd
+Preference file: platform1_impl1.prf
+Device,speed:    LCMXO2-2000ZE,1
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+<A name="mtw1_set_ps"></A><B><U><big>Preference Summary</big></U></B>
+
+<FONT COLOR=red><LI><A href='#map_twr_pref_0_0' Target='right'><FONT COLOR=red>FREQUENCY NET "interalClock" 26.600000 MHz (4096 errors)</FONT></A></LI>
+</FONT>            4096 items scored, 4096 timing errors detected.
+Warning:  19.316MHz is the maximum frequency for this preference.
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+<A name="map_twr_pref_0_0"></A>Preference: FREQUENCY NET "interalClock" 26.600000 MHz ;
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 14.176ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         DP8KC      Port           platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0(ASIC)  (from interalClock +)
+   Destination:    FF         Data in        platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/reg_C_DAT_O_i1  (to interalClock +)
+
+   Delay:              51.338ns  (46.6% logic, 53.4% route), 16 logic levels.
+
+ Constraint Details:
+
+     51.338ns physical path delay platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0 to platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_131 exceeds
+     37.594ns delay constraint less
+      0.432ns DIN_SET requirement (totaling 37.162ns) by 14.176ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0 to platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_131:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+C2Q_DEL     ---     9.644 *3e_1_1_0.CLKA to *3e_1_1_0.DOA6 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0 (from interalClock)
+ROUTE         2   e 1.905 *3e_1_1_0.DOA6 to */SLICE_526.B0 platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/mdout0_1_15
+CTOF_DEL    ---     0.923 */SLICE_526.B0 to */SLICE_526.F0 platform1_u/LM8/SLICE_526
+ROUTE        11   e 1.905 */SLICE_526.F0 to */SLICE_678.A1 platform1_u/LM8/genblk1.instr_mem_out_15
+CTOF_DEL    ---     0.923 */SLICE_678.A1 to */SLICE_678.F1 platform1_u/LM8/u1_isp8_core/u1_lm8_idec/SLICE_678
+ROUTE         7   e 1.905 */SLICE_678.F1 to */SLICE_674.D1 platform1_u/LM8/u1_isp8_core/u1_lm8_idec/n20161
+CTOF_DEL    ---     0.923 */SLICE_674.D1 to */SLICE_674.F1 platform1_u/LM8/u1_isp8_core/SLICE_674
+ROUTE         9   e 1.905 */SLICE_674.F1 to */SLICE_660.B1 platform1_u/LM8/u1_isp8_core/ext_cycle_type
+CTOF_DEL    ---     0.923 */SLICE_660.B1 to */SLICE_660.F1 platform1_u/SLICE_660
+ROUTE         1   e 1.905 */SLICE_660.F1 to */SLICE_547.A1 platform1_u/LM8/n20104
+CTOF_DEL    ---     0.923 */SLICE_547.A1 to */SLICE_547.F1 platform1_u/SLICE_547
+ROUTE        58   e 1.905 */SLICE_547.F1 to */SLICE_587.A0 platform1_u/n20102
+CTOF_DEL    ---     0.923 */SLICE_587.A0 to */SLICE_587.F0 platform1_u/SLICE_587
+ROUTE         2   e 1.905 */SLICE_587.F0 to */SLICE_722.D1 platform1_u/n18296
+CTOF_DEL    ---     0.923 */SLICE_722.D1 to */SLICE_722.F1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_722
+ROUTE         1   e 1.905 */SLICE_722.F1 to */SLICE_582.B1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n18298
+CTOF_DEL    ---     0.923 */SLICE_582.B1 to */SLICE_582.F1 platform1_u/SLICE_582
+ROUTE         1   e 1.905 */SLICE_582.F1 to */SLICE_615.D0 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n30_adj_2167
+CTOF_DEL    ---     0.923 */SLICE_615.D0 to */SLICE_615.F0 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_615
+ROUTE         3   e 1.905 */SLICE_615.F0 to */SLICE_552.D1 platform1_u/n39
+CTOF_DEL    ---     0.923 */SLICE_552.D1 to */SLICE_552.F1 platform1_u/SLICE_552
+ROUTE        10   e 1.905 */SLICE_552.F1 to */SLICE_613.C0 platform1_u/n20047
+CTOF_DEL    ---     0.923 */SLICE_613.C0 to */SLICE_613.F0 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_613
+ROUTE         1   e 0.742 */SLICE_613.F0 to */SLICE_613.C1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n8265
+CTOF_DEL    ---     0.923 */SLICE_613.C1 to */SLICE_613.F1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_613
+ROUTE         4   e 1.905 */SLICE_613.F1 to */SLICE_533.C0 platform1_u/n18346
+CTOF_DEL    ---     0.923 */SLICE_533.C0 to */SLICE_533.F0 platform1_u/SLICE_533
+ROUTE         1   e 1.905 */SLICE_533.F0 to */SLICE_449.C1 platform1_u/n4
+CTOOFX_DEL  ---     1.359 */SLICE_449.C1 to *LICE_449.OFX0 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/mux_338_i2/SLICE_449
+ROUTE         1   e 1.905 *LICE_449.OFX0 to */SLICE_131.A1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n1519
+CTOF_DEL    ---     0.923 */SLICE_131.A1 to */SLICE_131.F1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/SLICE_131
+ROUTE         1   e 0.001 */SLICE_131.F1 to *SLICE_131.DI1 platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/C_DAT_O_7_N_1036_1 (to interalClock)
+                  --------
+                   51.338   (46.6% logic, 53.4% route), 16 logic levels.
+
+Warning:  19.316MHz is the maximum frequency for this preference.
+
+<A name="mtw1_set_rs"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "interalClock" 26.600000  |             |             |
+MHz ;                                   |   26.600 MHz|   19.316 MHz|  16 *
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+1 preference(marked by "*" above) not met.
+
+----------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+----------------------------------------------------------------------------
+platform1_u/n166                        |      10|    2526|     61.67%
+                                        |        |        |
+platform1_u/SPIFlashS_DAT_O_7__I_0/wb_in|        |        |
+tf_inst/n20046                          |       2|    2506|     61.18%
+                                        |        |        |
+platform1_u/n7955                       |       2|    2438|     59.52%
+                                        |        |        |
+platform1_u/LM8/n20110                  |      11|    2427|     59.25%
+                                        |        |        |
+platform1_u/n20103                      |      19|    2427|     59.25%
+                                        |        |        |
+platform1_u/LM8/u1_isp8_core/u1_lm8_idec|        |        |
+/n20132                                 |      10|    2240|     54.69%
+                                        |        |        |
+platform1_u/SPIFlashS_DAT_O_7__I_0/wb_in|        |        |
+tf_inst/n6_adj_2139                     |       2|    2050|     50.05%
+                                        |        |        |
+platform1_u/n7926                       |       4|    2050|     50.05%
+                                        |        |        |
+platform1_u/LM8/n20104                  |       1|    1655|     40.41%
+                                        |        |        |
+platform1_u/n20102                      |      58|    1655|     40.41%
+                                        |        |        |
+platform1_u/LM8/u1_isp8_core/ext_cycle_t|        |        |
+ype                                     |       9|    1622|     39.60%
+                                        |        |        |
+platform1_u/n39                         |       3|    1516|     37.01%
+                                        |        |        |
+platform1_u/SPIFlashS_DAT_O_7__I_0/wb_in|        |        |
+tf_inst/n30_adj_2167                    |       1|    1384|     33.79%
+                                        |        |        |
+platform1_u/SPIFlashS_DAT_O_7__I_0/wb_in|        |        |
+tf_inst/n18245                          |       8|    1314|     32.08%
+                                        |        |        |
+platform1_u/SPIFlashS_DAT_O_7__I_0/wb_in|        |        |
+tf_inst/n18298                          |       1|    1192|     29.10%
+                                        |        |        |
+platform1_u/n20043                      |       7|    1124|     27.44%
+                                        |        |        |
+platform1_u/LM8/u1_isp8_core/u1_lm8_idec|        |        |
+/n20161                                 |       7|    1120|     27.34%
+                                        |        |        |
+platform1_u/LM8/genblk1.instr_mem_out_14|       8|    1120|     27.34%
+                                        |        |        |
+platform1_u/n20047                      |      10|     806|     19.68%
+                                        |        |        |
+n20089                                  |      31|     773|     18.87%
+                                        |        |        |
+platform1_u/n20095                      |      44|     757|     18.48%
+                                        |        |        |
+platform1_u/LM8/n20196                  |       6|     726|     17.72%
+                                        |        |        |
+platform1_u/LM8/n20195                  |       8|     726|     17.72%
+                                        |        |        |
+platform1_u/SPIFlashS_DAT_O_7__I_0/wb_in|        |        |
+tf_inst/n18194                          |       2|     698|     17.04%
+                                        |        |        |
+platform1_u/n4818                       |       2|     634|     15.48%
+                                        |        |        |
+platform1_u/n18346                      |       4|     565|     13.79%
+                                        |        |        |
+platform1_u/LM8/genblk1.instr_mem_out_15|      11|     562|     13.72%
+                                        |        |        |
+platform1_u/LM8/prom_init.memspeedasyncd|        |        |
+isablenoreg18112048/mdout0_0_15         |       2|     561|     13.70%
+                                        |        |        |
+platform1_u/LM8/prom_init.memspeedasyncd|        |        |
+isablenoreg18112048/mdout0_1_15         |       2|     561|     13.70%
+                                        |        |        |
+platform1_u/LM8/u1_isp8_core/n20193     |       6|     560|     13.67%
+                                        |        |        |
+platform1_u/LM8/prom_init.memspeedasyncd|        |        |
+isablenoreg18112048/mdout0_0_14         |       4|     560|     13.67%
+                                        |        |        |
+platform1_u/LM8/prom_init.memspeedasyncd|        |        |
+isablenoreg18112048/mdout0_1_14         |       4|     560|     13.67%
+                                        |        |        |
+platform1_u/n4422                       |       3|     487|     11.89%
+                                        |        |        |
+platform1_u/SPIFlashS_DAT_O_7__I_0/wb_in|        |        |
+tf_inst/n17041                          |       1|     476|     11.62%
+                                        |        |        |
+platform1_u/n20088                      |      19|     472|     11.52%
+                                        |        |        |
+----------------------------------------------------------------------------
+
+
+<A name="mtw1_set_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 2 clocks:
+
+Clock Domain: interalClock   Source: OSCH_inst.OSC   Loads: 291
+   Covered under: FREQUENCY NET "interalClock" 26.600000 MHz ;
+
+   Data transfers from:
+   Clock Domain: platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div   Source: platform1_u/SPIFlashS_DAT_O_7__I_0/SLICE_144.Q0
+      Covered under: FREQUENCY NET "interalClock" 26.600000 MHz ;   Transfers: 2
+
+   Clock Domain: platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div   Source: platform1_u/SPIFlashS_DAT_O_7__I_0/SLICE_144.Q0
+      Covered under: FREQUENCY NET "interalClock" 26.600000 MHz ;   Transfers: 5
+
+   Clock Domain: platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div   Source: platform1_u/SPIFlashS_DAT_O_7__I_0/SLICE_144.Q0
+      Covered under: FREQUENCY NET "interalClock" 26.600000 MHz ;   Transfers: 2
+
+Clock Domain: platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div   Source: platform1_u/SPIFlashS_DAT_O_7__I_0/SLICE_144.Q0   Loads: 70
+   No transfer within this clock domain is found
+
+
+<A name="mtw1_set_ts"></A><B><U><big>Timing summary (Setup):</big></U></B>
+---------------
+
+Timing errors: 4096  Score: 30056238
+Cumulative negative slack: 30056238
+
+Constraints cover 380973 paths, 1 nets, and 6317 connections (99.95% coverage)
+
+--------------------------------------------------------------------------------
+<A name="Map_Twr_hold"></A><B><U><big>Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.0.111.2</big></U></B>
+Mon Aug 13 14:00:21 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_hold_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o platform1_impl1.tw1 -gui -msgset C:/Users/Suhail/Desktop/Work/Machxo2_SPI/promote.xml platform1_impl1_map.ncd platform1_impl1.prf 
+Design file:     platform1_impl1_map.ncd
+Preference file: platform1_impl1.prf
+Device,speed:    LCMXO2-2000ZE,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+<A name="mtw1_hold_ps"></A><B><U><big>Preference Summary</big></U></B>
+
+<FONT COLOR=red><LI><A href='#map_twr_pref_1_0' Target='right'><FONT COLOR=red>FREQUENCY NET "interalClock" 26.600000 MHz (28 errors)</FONT></A></LI>
+</FONT>            4096 items scored, 28 timing errors detected.
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+<A name="map_twr_pref_1_0"></A>Preference: FREQUENCY NET "interalClock" 26.600000 MHz ;
+            4096 items scored, 28 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 0.072ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_i2  (from interalClock +)
+   Destination:    FF         Data in        platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_1/RAM0  (to interalClock +)
+                   FF                        platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_1/RAM0
+
+   Delay:               0.257ns  (100.0% logic, 0.0% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.257ns physical path delay platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_122 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_1.18 exceeds
+      0.329ns WAD_HLD and
+      0.000ns delay constraint requirement (totaling 0.329ns) by 0.072ns
+
+ Physical Path Details:
+
+      Data path platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_122 to platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_1.18:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.257 *SLICE_122.CLK to */SLICE_122.Q0 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/SLICE_122 (from interalClock)
+ROUTE        19   e 0.000 */SLICE_122.Q0 to *mem_0_1.17.C0 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_2
+ZERO_DEL    ---     0.000 *mem_0_1.17.C0 to *_0_1.17.WADO2 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_1.17
+ROUTE         2   e 0.000 *_0_1.17.WADO2 to *m_0_1.18.WAD2 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binarynonenoreg13416/mem_0_1/AD2_INT (to interalClock)
+                  --------
+                    0.257   (100.0% logic, 0.0% route), 2 logic levels.
+
+<A name="mtw1_hold_rs"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "interalClock" 26.600000  |             |             |
+MHz ;                                   |     0.000 ns|    -0.072 ns|   2 *
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+1 preference(marked by "*" above) not met.
+
+----------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+----------------------------------------------------------------------------
+platform1_u/LM8/u1_isp8_core/u1_lm8_flow|        |        |
+_cntl/stack_ptr_3                       |      18|       7|     25.00%
+                                        |        |        |
+platform1_u/LM8/u1_isp8_core/u1_lm8_flow|        |        |
+_cntl/stack_ptr_0                       |      19|       7|     25.00%
+                                        |        |        |
+platform1_u/LM8/u1_isp8_core/u1_lm8_flow|        |        |
+_cntl/stack_ptr_2                       |      19|       7|     25.00%
+                                        |        |        |
+platform1_u/LM8/u1_isp8_core/u1_lm8_flow|        |        |
+_cntl/stack_ptr_1                       |      20|       7|     25.00%
+                                        |        |        |
+----------------------------------------------------------------------------
+
+
+<A name="mtw1_hold_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 2 clocks:
+
+Clock Domain: interalClock   Source: OSCH_inst.OSC   Loads: 291
+   Covered under: FREQUENCY NET "interalClock" 26.600000 MHz ;
+
+   Data transfers from:
+   Clock Domain: platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div   Source: platform1_u/SPIFlashS_DAT_O_7__I_0/SLICE_144.Q0
+      Covered under: FREQUENCY NET "interalClock" 26.600000 MHz ;   Transfers: 2
+
+   Clock Domain: platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div   Source: platform1_u/SPIFlashS_DAT_O_7__I_0/SLICE_144.Q0
+      Covered under: FREQUENCY NET "interalClock" 26.600000 MHz ;   Transfers: 7
+
+Clock Domain: platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div   Source: platform1_u/SPIFlashS_DAT_O_7__I_0/SLICE_144.Q0   Loads: 70
+   No transfer within this clock domain is found
+
+
+<A name="mtw1_hold_ts"></A><B><U><big>Timing summary (Hold):</big></U></B>
+---------------
+
+Timing errors: 28  Score: 2016
+Cumulative negative slack: 2016
+
+Constraints cover 380973 paths, 1 nets, and 6317 connections (99.95% coverage)
+
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary (Setup and Hold):</big></U></B>
+---------------
+
+Timing errors: 4096 (setup), 28 (hold)
+Score: 30056238 (setup), 2016 (hold)
+Cumulative negative slack: 30058254 (30056238+2016)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

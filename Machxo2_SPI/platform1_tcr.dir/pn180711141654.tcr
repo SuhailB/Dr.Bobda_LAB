@@ -1,0 +1,14 @@
+#Start recording tcl command: 7/11/2018 11:40:24
+#Project Location: C:/Users/Suhail/Desktop/Work/Machxo2_SPI; Project name: platform1
+prj_project new -name "platform1" -impl "impl1" -dev LCMXO2-2000ZE-1UWG49CTR -synthesis "lse"
+prj_project save
+prj_src add "C:/Users/Suhail/Downloads/aes-master/aes-master/src/rtl/aes_decipher_block.v" "C:/Users/Suhail/Downloads/aes-master/aes-master/src/rtl/aes_core.v" "C:/Users/Suhail/Downloads/aes-master/aes-master/src/rtl/aes.v" "C:/Users/Suhail/Downloads/aes-master/aes-master/src/rtl/aes_sbox.v" "C:/Users/Suhail/Downloads/aes-master/aes-master/src/rtl/aes_key_mem.v" "C:/Users/Suhail/Downloads/aes-master/aes-master/src/rtl/aes_encipher_block.v" "C:/Users/Suhail/Downloads/aes-master/aes-master/src/rtl/aes_inv_sbox.v"
+prj_run Synthesis -impl impl1
+prj_src add "C:/Users/Suhail/Downloads/aes-master/aes-master/src/tb/tb_aes_key_mem.v" "C:/Users/Suhail/Downloads/aes-master/aes-master/src/tb/tb_aes_encipher_block.v" "C:/Users/Suhail/Downloads/aes-master/aes-master/src/tb/tb_aes.v" "C:/Users/Suhail/Downloads/aes-master/aes-master/src/tb/tb_aes_core.v" "C:/Users/Suhail/Downloads/aes-master/aes-master/src/tb/tb_aes_decipher_block.v"
+prj_src syn_sim -src "C:/Users/Suhail/Downloads/aes-master/aes-master/src/tb/tb_aes_decipher_block.v" SimulateOnly
+prj_src syn_sim -src "C:/Users/Suhail/Downloads/aes-master/aes-master/src/tb/tb_aes_core.v" SimulateOnly
+prj_src syn_sim -src "C:/Users/Suhail/Downloads/aes-master/aes-master/src/tb/tb_aes.v" SimulateOnly
+prj_src syn_sim -src "C:/Users/Suhail/Downloads/aes-master/aes-master/src/tb/tb_aes_encipher_block.v" SimulateOnly
+prj_src syn_sim -src "C:/Users/Suhail/Downloads/aes-master/aes-master/src/tb/tb_aes_key_mem.v" SimulateOnly
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+#Stop recording: 7/11/2018 14:16:54

@@ -1,0 +1,47 @@
+<!DOCTYPE ispTLA>
+<ispTLA>
+ <CreationDate>Wed Jun 27 01:56:40 2018</CreationDate>
+ <XCFFileName/>
+ <CableSetting>
+  <IsTRSTConnected val="false"/>
+  <TRSTSetting val="0"/>
+  <IsBSCANConnected val="false"/>
+  <BSCANSetting val="0"/>
+  <CableType val="USB2"/>
+  <PortAddress val="1"/>
+  <PortSetting val="0"/>
+  <TCKDelay val="1"/>
+ </CableSetting>
+ <DeviceCount>1</DeviceCount>
+ <Device>
+  <DeviceIndex>0</DeviceIndex>
+  <DeviceName>1. LCMXO2-2000ZE</DeviceName>
+  <DeviceID>0x012B3043</DeviceID>
+  <HasIspTRACY>true</HasIspTRACY>
+  <HasJTAG2WB>false</HasJTAG2WB>
+  <SERDES/>
+  <IRBypassLen>8</IRBypassLen>
+  <RVLFileName>SPIreveal.rvl</RVLFileName>
+  <RVSFileName>SPIreveal.rvs</RVSFileName>
+  <LACoreCount>1</LACoreCount>
+  <WinUI CoreIndex="0">
+   <TraceSigTreeData>
+    <TraceSignal IsHidden="false" Name="LEDPIO_OUT" NodeType="1" PortIndex="0">
+     <BusRadix Radix="0"/>
+     <IsExpanded Expand="false"/>
+    </TraceSignal>
+    <TraceSignal IsHidden="false" Name="LEDPIO_OUT:0" NodeType="2" PortIndex="0"/>
+    <TraceSignal IsHidden="false" Name="LEDPIO_OUT:1" NodeType="2" PortIndex="1"/>
+    <TraceSignal IsHidden="false" Name="SPIFlashCEJ" NodeType="0" PortIndex="2"/>
+    <TraceSignal IsHidden="false" Name="SPIFlashSCK" NodeType="0" PortIndex="3"/>
+    <TraceSignal IsHidden="false" Name="SPIFlashSI" NodeType="0" PortIndex="4"/>
+    <TraceSignal IsHidden="false" Name="SPIFlashSO" NodeType="0" PortIndex="5"/>
+   </TraceSigTreeData>
+   <TriggerUI UserSelect="1" PreSelectType="1" PreSelect="0" UserSelectPos="1001"/>
+   <CoreRun Run="true"/>
+   <CoreWndUIData>
+    <ClockFrequency Unit="ns" Frequency="-1.0"/>
+   </CoreWndUIData>
+  </WinUI>
+ </Device>
+</ispTLA>

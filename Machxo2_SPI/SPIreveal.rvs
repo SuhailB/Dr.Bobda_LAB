@@ -1,0 +1,25 @@
+<Project ModBy="Analyzer" Name="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/SPIreveal.rvs" Date="2018-06-27">
+ <Core Name="platform1_top_LA0">
+  <Setting>
+   <Capture SamplesPerTrig="1024" NumTrigsCap="1"/>
+   <Event EventCnt="0" CntEnableRun="0"/>
+   <TrigSetting PreTrgSamples="" AND_ALL="0" PostTrgSamples="" TURadix="0"/>
+  </Setting>
+  <Dataset Name="Base">
+   <Trace>
+    <Bus Name="LEDPIO_OUT" Radix="0">
+     <Sig Name="LEDPIO_OUT:0"/>
+     <Sig Name="LEDPIO_OUT:1"/>
+    </Bus>
+    <Sig Name="SPIFlashCEJ"/>
+    <Sig Name="SPIFlashSCK"/>
+    <Sig Name="SPIFlashSI"/>
+    <Sig Name="SPIFlashSO"/>
+   </Trace>
+   <Trigger>
+    <TU Operator="6" Name="TU1" ID="1" Value="0" Radix="0"/>
+    <TE Enable="1" Expression="TU1" Name="TE1" ID="1"/>
+   </Trigger>
+  </Dataset>
+ </Core>
+</Project>

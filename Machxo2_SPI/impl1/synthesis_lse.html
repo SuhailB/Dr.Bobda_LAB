@@ -1,0 +1,549 @@
+<HTML>
+<HEAD><TITLE>Synthesis and Ngdbuild Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Syn"></A><B><U><big>Synthesis and Ngdbuild  Report</big></U></B>
+synthesis:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Mon Aug 13 14:00:02 2018
+
+
+Command Line:  synthesis -f platform1_impl1_lattice.synproj -gui -msgset C:/Users/Suhail/Desktop/Work/Machxo2_SPI/promote.xml 
+
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 1.
+The -t option is WLCSP49.
+The -d option is LCMXO2-2000ZE.
+Using package WLCSP49.
+Using performance grade 1.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-2000ZE
+
+### Package : WLCSP49
+
+### Speed   : 1
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Balanced
+Top-level module name = platform1_top.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/Users/Suhail/Desktop/Work/Machxo2_SPI (searchpath added)
+-p C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data (searchpath added)
+-p C:/Users/Suhail/Desktop/Work/Machxo2_SPI/impl1 (searchpath added)
+-p C:/Users/Suhail/Desktop/Work/Machxo2_SPI (searchpath added)
+Verilog design file = C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/platform1_top.v
+NGD file = platform1_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/platform1_top.v. VERI-1482
+INFO - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/platform1_top.v(1): analyzing included file c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v. VERI-1328
+INFO - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(46): analyzing included file c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/system_conf.v. VERI-1328
+INFO - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(327): analyzing included file c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v. VERI-1328
+INFO - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(48): analyzing included file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/pmi_def.v. VERI-1328
+INFO - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(50): analyzing included file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/system_conf.v. VERI-1328
+INFO - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(51): analyzing included file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_include.v. VERI-1328
+INFO - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(52): analyzing included file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_interrupt.v. VERI-1328
+INFO - synthesis: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_interrupt.v(47): analyzing included file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/system_conf.v. VERI-1328
+INFO - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(53): analyzing included file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_io_cntl.v. VERI-1328
+INFO - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(54): analyzing included file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_flow_cntl.v. VERI-1328
+INFO - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(55): analyzing included file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_idec.v. VERI-1328
+INFO - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(56): analyzing included file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_alu.v. VERI-1328
+INFO - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(57): analyzing included file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_core.v. VERI-1328
+WARNING - synthesis: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_core.v(82): parameter declaration becomes local in lm8_core with formal parameter declaration list. VERI-1199
+WARNING - synthesis: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_core.v(83): parameter declaration becomes local in lm8_core with formal parameter declaration list. VERI-1199
+WARNING - synthesis: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_core.v(84): parameter declaration becomes local in lm8_core with formal parameter declaration list. VERI-1199
+INFO - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/lm8/rtl/verilog/lm8_include_all.v(58): analyzing included file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v. VERI-1328
+WARNING - synthesis: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v(113): parameter declaration becomes local in lm8 with formal parameter declaration list. VERI-1199
+WARNING - synthesis: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v(114): parameter declaration becomes local in lm8 with formal parameter declaration list. VERI-1199
+INFO - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(328): analyzing included file c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v. VERI-1328
+INFO - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v(79): analyzing included file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/system_conf.v. VERI-1328
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v(176): parameter declaration becomes local in gpio with formal parameter declaration list. VERI-1199
+INFO - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(329): analyzing included file c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/tpio.v. VERI-1328
+INFO - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/tpio.v(65): analyzing included file C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/system_conf.v. VERI-1328
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/tpio.v(87): parameter declaration becomes local in tpio with formal parameter declaration list. VERI-1199
+INFO - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(330): analyzing included file c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash.v. VERI-1328
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash.v(125): assignment to input valueVERI-1214
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash.v(129): parameter declaration becomes local in spi_flash with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash.v(130): parameter declaration becomes local in spi_flash with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash.v(131): parameter declaration becomes local in spi_flash with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash.v(132): parameter declaration becomes local in spi_flash with formal parameter declaration list. VERI-1199
+INFO - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(331): analyzing included file c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v. VERI-1328
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v(176): parameter declaration becomes local in wb_intf with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v(177): parameter declaration becomes local in wb_intf with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v(178): parameter declaration becomes local in wb_intf with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v(180): parameter declaration becomes local in wb_intf with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v(181): parameter declaration becomes local in wb_intf with formal parameter declaration list. VERI-1199
+INFO - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(332): analyzing included file c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v. VERI-1328
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(93): parameter declaration becomes local in spi_flash_intf with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(94): parameter declaration becomes local in spi_flash_intf with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(95): parameter declaration becomes local in spi_flash_intf with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(96): parameter declaration becomes local in spi_flash_intf with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(98): parameter declaration becomes local in spi_flash_intf with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(99): parameter declaration becomes local in spi_flash_intf with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(100): parameter declaration becomes local in spi_flash_intf with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(101): parameter declaration becomes local in spi_flash_intf with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(102): parameter declaration becomes local in spi_flash_intf with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(103): parameter declaration becomes local in spi_flash_intf with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(104): parameter declaration becomes local in spi_flash_intf with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(106): parameter declaration becomes local in spi_flash_intf with formal parameter declaration list. VERI-1199
+Analyzing Verilog file C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Top module name (Verilog): platform1_top
+INFO - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/platform1_top.v(3): compiling module platform1_top. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): compiling module OSCH(NOM_FREQ="26.60"). VERI-1018
+INFO - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(335): compiling module platform1. VERI-1018
+INFO - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(48): compiling module arbiter2(MAX_DAT_WIDTH=8,WBS_DAT_WIDTH=8,WBM0_DAT_WIDTH=8,WBM1_DAT_WIDTH=8). VERI-1018
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(285): expression size 32 truncated to fit in target size 8. VERI-1209
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(289): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(293): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(297): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(301): expression size 32 truncated to fit in target size 2. VERI-1209
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(305): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(309): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(313): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(316): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(317): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(318): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(321): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(322): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(323): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(493): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(498): expression size 32 truncated to fit in target size 1. VERI-1209
+INFO - synthesis: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v(50): compiling module lm8_renamed_due_excessive_length_1. VERI-1018
+INFO - synthesis: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_core.v(47): compiling module lm8_core(FAMILY_NAME="MachXO2",EXT_AW=32,PROM_AW=32'sb01011,PROM_AD=2048,REGISTERS_16=0,PGM_STACK_AW=32'sb0100). VERI-1018
+INFO - synthesis: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_idec.v(47): compiling module lm8_idec(PROM_AW=32'sb01011). VERI-1018
+INFO - synthesis: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_alu.v(47): compiling module lm8_alu(FAMILY_NAME="MachXO2"). VERI-1018
+INFO - synthesis: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/pmi_def.v(69): compiling module pmi_addsub(pmi_family="MachXO2"). VERI-1018
+INFO - synthesis: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_flow_cntl.v(49): compiling module lm8_flow_cntl(PGM_STACK_AW=32'sb0100,PROM_AW=32'sb01011,FAMILY_NAME="MachXO2"). VERI-1018
+WARNING - synthesis: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_flow_cntl.v(235): export_ should be on the sensitivity list. VERI-1221
+WARNING - synthesis: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_flow_cntl.v(235): import_ should be on the sensitivity list. VERI-1221
+INFO - synthesis: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/pmi_def.v(48): compiling module pmi_distributed_spram(pmi_addr_depth=16,pmi_addr_width=32'sb0100,pmi_data_width=32'sb01101,pmi_regmode="noreg",pmi_family="MachXO2"). VERI-1018
+INFO - synthesis: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_io_cntl.v(47): compiling module lm8_io_cntl. VERI-1018
+INFO - synthesis: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_interrupt.v(49): compiling module lm8_interrupt(INTERRUPTS=8). VERI-1018
+INFO - synthesis: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/pmi_def.v(24): compiling module pmi_distributed_dpram(pmi_regmode="noreg",pmi_family="MachXO2"). VERI-1018
+INFO - synthesis: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/pmi_def.v(115): compiling module pmi_ram_dq_renamed_due_excessive_length_2. VERI-1018
+INFO - synthesis: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/pmi_def.v(115): compiling module pmi_ram_dq_renamed_due_excessive_length_3. VERI-1018
+WARNING - synthesis: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v(214): net sp_waddr[10] does not have a driver. VDB-1002
+WARNING - synthesis: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v(215): net sp_wdata[7] does not have a driver. VDB-1002
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(557): expression size 4 truncated to fit in target size 1. VERI-1209
+INFO - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v(80): compiling module gpio(GPIO_WB_DAT_WIDTH=8,DATA_WIDTH=32'b010,INPUT_WIDTH=32'b01,OUTPUT_WIDTH=32'b01,EDGE=1,POSE_EDGE_IRQ=1,INPUT_PORTS_ONLY=0,OUTPUT_PORTS_ONLY=1). VERI-1018
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v(180): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v(181): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v(182): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/gpio.v(183): expression size 32 truncated to fit in target size 1. VERI-1209
+INFO - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/tpio.v(66): compiling module tpio(DATA_WIDTH=1,IRQ_MODE=0). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(82): compiling module BB. VERI-1018
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/tpio.v(109): net IRQ_MASK does not have a driver. VDB-1002
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(600): expression size 4 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(602): expression size 4 truncated to fit in target size 1. VERI-1209
+INFO - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash.v(47): compiling module spi_flash_renamed_due_excessive_length_4. VERI-1018
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash.v(168): expression size 32 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash.v(180): expression size 32 truncated to fit in target size 4. VERI-1209
+INFO - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v(52): compiling module wb_intf_renamed_due_excessive_length_5. VERI-1018
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v(690): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v(696): expression size 8 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v(1137): expression size 16 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v(1146): reg_fast_read should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v(1147): spi_fast_read should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/wb_intf.v(1151): expression size 16 truncated to fit in target size 3. VERI-1209
+INFO - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(47): compiling module spi_flash_intf(WB_DAT_WIDTH=8,C_PORT_ENABLE=1,C_WB_DAT_WIDTH=8,BUF_WIDTH=0,PAGE_WIDTH=2). VERI-1018
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(228): expression size 32 truncated to fit in target size 12. VERI-1209
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(251): expression size 32 truncated to fit in target size 6. VERI-1209
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(273): expression size 32 truncated to fit in target size 2. VERI-1209
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(283): expression size 32 truncated to fit in target size 2. VERI-1209
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(287): expression size 32 truncated to fit in target size 6. VERI-1209
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(298): expression size 32 truncated to fit in target size 6. VERI-1209
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(311): expression size 32 truncated to fit in target size 2. VERI-1209
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(315): expression size 32 truncated to fit in target size 6. VERI-1209
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(329): expression size 32 truncated to fit in target size 2. VERI-1209
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(333): expression size 32 truncated to fit in target size 6. VERI-1209
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(343): expression size 32 truncated to fit in target size 6. VERI-1209
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash.v(149): net spi2wb_q[7] does not have a driver. VDB-1002
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(592): input port PIO_IN[1] is not connected on this instance. VDB-1013
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c2000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Top-level module name = platform1_top.
+WARNING - synthesis: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v(214): net sp_waddr[10] does not have a driver. VDB-1002
+WARNING - synthesis: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_top.v(215): net sp_wdata[7] does not have a driver. VDB-1002
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/gpio/rtl/verilog/tpio.v(109): net IRQ_MASK does not have a driver. VDB-1002
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(363): net \platform1_u/LM8I_ADR_O[31] does not have a driver. VDB-1002
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(364): net \platform1_u/LM8I_DAT_O[7] does not have a driver. VDB-1002
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(367): net \platform1_u/LM8I_WE_O does not have a driver. VDB-1002
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(371): net \platform1_u/LM8I_CTI_O[2] does not have a driver. VDB-1002
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(373): net \platform1_u/LM8I_LOCK_O does not have a driver. VDB-1002
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(374): net \platform1_u/LM8I_CYC_O does not have a driver. VDB-1002
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(375): net \platform1_u/LM8I_STB_O does not have a driver. VDB-1002
+######## Missing driver on net \platform1_u/LM8I_ADR_O[31]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[30]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[29]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[28]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[27]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[26]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[25]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[24]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[23]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[22]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[21]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[20]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[19]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[18]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[17]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[16]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[15]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[14]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[13]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[12]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[11]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[10]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[9]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[8]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[7]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[6]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[5]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[4]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[3]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[2]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[1]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_ADR_O[0]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_DAT_O[7]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_DAT_O[6]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_DAT_O[5]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_DAT_O[4]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_DAT_O[3]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_DAT_O[2]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_DAT_O[1]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_DAT_O[0]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_WE_O. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_CTI_O[2]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_CTI_O[1]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_CTI_O[0]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_LOCK_O. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_CYC_O. Patching with GND.
+######## Missing driver on net \platform1_u/LM8I_STB_O. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_waddr[10]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_waddr[9]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_waddr[8]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_waddr[7]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_waddr[6]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_waddr[5]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_waddr[4]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_waddr[3]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_waddr[2]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_waddr[1]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_waddr[0]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_wdata[7]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_wdata[6]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_wdata[5]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_wdata[4]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_wdata[3]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_wdata[2]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_wdata[1]. Patching with GND.
+######## Missing driver on net \platform1_u/LM8/sp_wdata[0]. Patching with GND.
+######## Missing driver on net \platform1_u/SPIFlashS_DAT_O_7__I_0/spi2wb_q[7]. Patching with GND.
+######## Missing driver on net \platform1_u/SPIFlashS_DAT_O_7__I_0/spi2wb_q[6]. Patching with GND.
+######## Missing driver on net \platform1_u/SPIFlashS_DAT_O_7__I_0/spi2wb_q[5]. Patching with GND.
+######## Missing driver on net \platform1_u/SPIFlashS_DAT_O_7__I_0/spi2wb_q[4]. Patching with GND.
+######## Missing driver on net \platform1_u/SPIFlashS_DAT_O_7__I_0/spi2wb_q[3]. Patching with GND.
+######## Missing driver on net \platform1_u/SPIFlashS_DAT_O_7__I_0/spi2wb_q[2]. Patching with GND.
+######## Missing driver on net \platform1_u/SPIFlashS_DAT_O_7__I_0/spi2wb_q[1]. Patching with GND.
+######## Missing driver on net \platform1_u/SPIFlashS_DAT_O_7__I_0/spi2wb_q[0]. Patching with GND.
+Removed duplicate sequential element \platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/dout_alu_reg(8 bit), because it is equivalent to \platform1_u/LM8/u1_isp8_core/din_rd1
+
+INFO - synthesis: Extracted state machine for register '\platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/wb_state' with gray encoding
+State machine has 3 reachable states with original encodings of:
+
+ 00 
+
+ 01 
+
+ 10 
+
+original encoding -> new encoding (gray encoding)
+
+ 00 -> 00
+
+ 01 -> 01
+
+ 10 -> 11
+
+INFO - synthesis: Extracted state machine for register '\platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/cmd_state' with one-hot encoding
+State machine has 4 reachable states with original encodings of:
+
+ 00 
+
+ 01 
+
+ 10 
+
+ 11 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 00 -> 0001
+
+ 01 -> 0010
+
+ 10 -> 0100
+
+ 11 -> 1000
+
+INFO - synthesis: Extracted state machine for register '\platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/spi_state' with one-hot encoding
+State machine has 7 reachable states with original encodings of:
+
+ 000 
+
+ 001 
+
+ 010 
+
+ 011 
+
+ 100 
+
+ 101 
+
+ 110 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 000 -> 0000001
+
+ 001 -> 0000010
+
+ 010 -> 0000100
+
+ 011 -> 0001000
+
+ 100 -> 0010000
+
+ 101 -> 0100000
+
+ 110 -> 1000000
+
+
+
+
+WARNING - synthesis: Bit 0 of Register \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/spi_state_FSM is stuck at Zero
+WARNING - synthesis: Bit 7 of Register \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/byte_wr is stuck at Zero
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/../components/spi_flash/rtl/verilog/spi_flash_intf.v(479): Register \platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/dword_wr_i0 is stuck at Zero. VDB-5013
+WARNING - synthesis: c:/users/suhail/desktop/work/machxo2_spi/platform1/soc/../soc/platform1.v(275): Register \platform1_u/arbiter/selected_i0 is stuck at Zero. VDB-5013
+WARNING - synthesis: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_interrupt.v(134): Register \platform1_u/LM8/u1_isp8_core/u1_lm8_interrupt/ip_i0_i0 is stuck at Zero. VDB-5013
+WARNING - synthesis: C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/../components/lm8/rtl/verilog/lm8_flow_cntl.v(532): Register \platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/intr_ack_162 is stuck at Zero. VDB-5013
+GSR instance connected to net \platform1_u/counter[2].
+Applying 200.000000 MHz constraint to all clocks
+
+WARNING - synthesis: No user .sdc file.
+WARNING - synthesis: Appending of file C:\Users\Suhail\Desktop\Work\Machxo2_SPI\impl1/pmi_distributed_dpramMbnonen853292a5343.v to file C:\Users\Suhail\Desktop\Work\Machxo2_SPI\impl1/platform1_top_prim.v failed.
+Results of NGD DRC are available in platform1_top_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading NGO design 'lngotmp/pmi_ram_dqmnhscratchpad_initsadn8112048f9ce2e6.ngo'...
+Loading NGO design 'lngotmp/pmi_ram_dqmnhprom_initsadn18112048f3df93e.ngo'...
+Loading NGO design 'lngotmp/pmi_distributed_dprammbnonen853292a5343.ngo'...
+Loading NGO design 'lngotmp/pmi_distributed_sprammbnonen1341693c3d10.ngo'...
+Loading NGO design 'lngotmp/pmi_addsubmo884942741.ngo'...
+WARNING - synthesis: logical net 'platform1_u/LM8/u1_isp8_core/GND_net' has no load.
+WARNING - synthesis: DRC complete with 1 warnings.
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file platform1_impl1.ngd.
+
+################### Begin Area Report (platform1_top)######################
+Number of register bits => 517 of 2229 (23 % )
+CCU2D => 17
+FD1P3AX => 285
+FD1P3AY => 47
+FD1P3BX => 9
+FD1P3DX => 52
+FD1P3IX => 56
+FD1P3JX => 2
+FD1S3AX => 17
+FD1S3AY => 2
+FD1S3BX => 2
+FD1S3DX => 38
+FD1S3IX => 7
+GSR => 1
+IB => 2
+L6MUX21 => 23
+LUT4 => 1098
+OB => 6
+OSCH => 1
+PFUMX => 195
+pmi_addsubMo884942741 => 1
+pmi_distributed_dpramMbnonen853292a5343 => 2
+pmi_distributed_spramMbnonen1341693c3d10 => 1
+pmi_ram_dqMnhprom_initsadn18112048f3df93e => 1
+pmi_ram_dqMnhscratchpad_initsadn8112048f9ce2e6 => 1
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 2
+  Net : interalClock, loads : 435
+  Net : platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div, loads : 91
+Clock Enable Nets
+Number of Clock Enables: 67
+Top 10 highest fanout Clock Enables:
+  Net : platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_312, loads : 48
+  Net : platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/clk_div_enable_70, loads : 33
+  Net : platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/dword_wr_31__N_1809, loads : 32
+  Net : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/addr_cyc, loads : 20
+  Net : platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/clk_div_enable_39, loads : 18
+  Net : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/data_cyc, loads : 14
+  Net : platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_284, loads : 8
+  Net : platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_291, loads : 8
+  Net : platform1_u/LM8/u1_isp8_core/page_ptr2_7__N_691, loads : 8
+  Net : platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_298, loads : 8
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : platform1_u/LM8/n20101, loads : 143
+  Net : platform1_u/LM8/u1_isp8_core/u1_lm8_interrupt/n20162, loads : 106
+  Net : platform1_u/LM8/n20090, loads : 98
+  Net : platform1_u/arbiter/selected_1, loads : 97
+  Net : platform1_u/LM8/n20100, loads : 57
+  Net : platform1_u/LM8/n20102, loads : 57
+  Net : platform1_u/LM8/prom_ready, loads : 51
+  Net : platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_5, loads : 50
+  Net : platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_312, loads : 48
+  Net : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_addr_0, loads : 46
+################### End Clock Report ##################
+
+<A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets                          |             |             |
+\platform1_u/SPIFlashS_DAT_O_7__I_0/clk_|             |             |
+div]                                    |  200.000 MHz|   35.404 MHz|     8 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets interalClock]            |  200.000 MHz|   14.460 MHz|    18 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+2 constraints not met.
+
+
+Peak Memory Usage: 90.875  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 8.750  secs
+--------------------------------------------------------------
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

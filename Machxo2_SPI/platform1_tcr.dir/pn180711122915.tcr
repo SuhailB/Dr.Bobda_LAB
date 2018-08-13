@@ -1,0 +1,6 @@
+#Start recording tcl command: 7/11/2018 12:26:51
+#Project Location: C:/Users/Suhail/Desktop/Work/Machxo2_SPI; Project name: platform1
+prj_project new -name "platform1" -impl "impl1" -dev LCMXO2-2000ZE-1UWG49CTR -synthesis "lse"
+prj_project save
+prj_project close
+#Stop recording: 7/11/2018 12:29:15

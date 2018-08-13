@@ -1,0 +1,70 @@
+Loading design for application iotiming from file platform1_impl1.ncd.
+Design name: platform1_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-2000ZE
+Package:     WLCSP49
+Performance: 2
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Loading design for application iotiming from file platform1_impl1.ncd.
+Design name: platform1_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-2000ZE
+Package:     WLCSP49
+Performance: 3
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Loading design for application iotiming from file platform1_impl1.ncd.
+Design name: platform1_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-2000ZE
+Package:     WLCSP49
+Performance: M
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+// Design: platform1_top
+// Package: WLCSP49
+// ncd File: platform1_impl1.ncd
+// Version: Diamond (64-bit) 3.10.0.111.2
+// Written on Mon Aug 13 14:01:17 2018
+// M: Minimum Performance Grade
+// iotiming platform1_impl1.ncd platform1_impl1.prf -gui -msgset C:/Users/Suhail/Desktop/Work/Machxo2_SPI/promote.xml
+
+I/O Timing Report (All units are in ns)
+
+Worst Case Results across Performance Grades (M, 3, 2, 1):
+
+// Input Setup and Hold Times
+
+Port  Clock Edge  Setup Performance_Grade  Hold Performance_Grade
+----------------------------------------------------------------------
+(no input setup/hold data)
+
+
+// Clock to Output Delay
+
+Port  Clock Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
+------------------------------------------------------------------------
+(no clock to output min/max data)
+
+
+// Internal_Clock to Input
+
+Port  Internal_Clock                            
+--------------------------------------------------------
+SPIFl platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div
+reset interalClock                              
+
+
+// Internal_Clock to Output
+
+Port          Internal_Clock                            
+--------------------------------------------------------
+LEDPIO_OUT[0] interalClock                              
+LEDPIO_OUT[1] interalClock                              
+SPIFlashCEJ   platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div
+SPIFlashSCK   interalClock                              
+SPIFlashSI    platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div

@@ -1,0 +1,295 @@
+designverincludedir -clear
+designverlibrarysim -PL -clear
+designverlibrarysim -L -clear
+designverlibrarysim -PL pmi_work
+designverlibrarysim ovi_machxo2
+designverdefinemacro -clear
+removefile -Y -D *
+addfile C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/platform1_top.v
+# Adding file C:\Users\Suhail\Desktop\Work\Machxo2_SPI\platform1\soc\platform1_top.v ... Done
+addfile C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/platform1_tb.v
+# Adding file C:\Users\Suhail\Desktop\Work\Machxo2_SPI\platform1\soc\platform1_tb.v ... Done
+vlib C:/Users/Suhail/Desktop/Work/Machxo2_SPI/SPIsim/work
+# Warning: Library work already exists
+adel -all
+# Library contents cleared.
+vlog -dbg -work work C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/platform1_top.v
+# Pass 1. Scanning modules hierarchy.
+# Warning: VCP5010 platform1/soc/system_conf.v : (2, 31): Redefinition of the macro LATTICE_FAMILY_MachXO2.
+# Warning: VCP5010 platform1/soc/system_conf.v : (2, 31): Redefinition of the macro LATTICE_FAMILY_MachXO2.
+# Warning: VCP5010 platform1/soc/system_conf.v : (2, 31): Redefinition of the macro LATTICE_FAMILY_MachXO2.
+# Warning: VCP5010 platform1/soc/system_conf.v : (2, 31): Redefinition of the macro LATTICE_FAMILY_MachXO2.
+# Pass 2. Processing instantiations.
+# Warning: VCP2597 platform1/soc/platform1.v : (559, 1): Some unconnected ports remain at instance: LED. Module gpio has unconnected  port(s) : PIO_IN, PIO_BOTH_IN, PIO_BOTH_OUT, PIO_IO.
+# Pass 3. Processing behavioral statements.
+# Parameters in case labels, will not check for overlapping labels (C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/components/spi_flash/rtl/verilog/wb_intf.v, ln 217).
+# Parameters in case labels, will not check for overlapping labels (C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/components/spi_flash/rtl/verilog/wb_intf.v, ln 318).
+# Parameters in case labels, will not check for overlapping labels (C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/components/spi_flash/rtl/verilog/wb_intf.v, ln 616).
+# Parameters in case labels, will not check for overlapping labels (C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/components/spi_flash/rtl/verilog/wb_intf.v, ln 914).
+# Parameters in case labels, will not check for overlapping labels (C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/components/spi_flash/rtl/verilog/spi_flash_intf.v, ln 127).
+# Parameters in case labels, will not check for overlapping labels (C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/components/spi_flash/rtl/verilog/spi_flash_intf.v, ln 226).
+# ELB/DAG code generating.
+# Unit top modules: pmi_rom platform1_top.
+# $root top modules: pmi_rom platform1_top.
+# Compile success 0 Errors 5 Warnings  Analysis time: 1[s].
+# done
+vlog -dbg -work work C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/platform1_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module platform1_top found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: platform1_tb.
+# $root top modules: pmi_rom platform1_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+module platform1_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+vsim +access +r platform1_tb -PL pmi_work -L ovi_machxo2
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\diamond\3.10_x64\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: lm8_top.v (515): Replication multiplier is not positive (0).
+# SLP: Warning: lm8_top.v (517): Replication multiplier is not positive (0).
+# SLP: Elaboration phase ... done : 0.1 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.6 [s]
+# SLP: Finished : 0.7 [s]
+# SLP: 21 (6.34%) primitives and 310 (93.66%) other processes in SLP
+# SLP: 1048 (99.53%) signals in SLP and 5 (0.47%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.8 [s].
+# KERNEL: SLP loading done - time: 0.3 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7596 kB (elbread=1281 elab2=5991 kernel=322 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Suhail\Desktop\Work\Machxo2_SPI\SPIsim\src\wave.asdb
+#  1:59 PM, Monday, July 2, 2018
+#  Simulation has been initialized
+add wave *
+# 7 signal(s) traced.
+run 1000ns
+# Waveform file 'untitled.awc' connected to 'C:/Users/Suhail/Desktop/Work/Machxo2_SPI/SPIsim/src/wave.asdb'.
+# KERNEL: stopped at time: 1 us
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\diamond\3.10_x64\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: lm8_top.v (515): Replication multiplier is not positive (0).
+# SLP: Warning: lm8_top.v (517): Replication multiplier is not positive (0).
+# SLP: Elaboration phase ... skipped, using existing simulator library: 0.0 [s]
+# SLP: Finished : 0.1 [s]
+# SLP: 21 (6.34%) primitives and 310 (93.66%) other processes in SLP
+# SLP: 1048 (99.53%) signals in SLP and 5 (0.47%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7596 kB (elbread=1281 elab2=5991 kernel=322 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Suhail\Desktop\Work\Machxo2_SPI\SPIsim\src\wave.asdb
+#  2:02 PM, Monday, July 2, 2018
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Suhail/Desktop/Work/Machxo2_SPI/SPIsim/src/wave.asdb'.
+run 1000 ns
+alog -O2 -sve -msg 5 -sv2k12 -work work $dsn/../platform1/soc/platform1_top.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Warning: VCP5010 platform1/soc/system_conf.v : (2, 31): Redefinition of the macro LATTICE_FAMILY_MachXO2.
+# Warning: VCP5010 platform1/soc/system_conf.v : (2, 31): Redefinition of the macro LATTICE_FAMILY_MachXO2.
+# Warning: VCP5010 platform1/soc/system_conf.v : (2, 31): Redefinition of the macro LATTICE_FAMILY_MachXO2.
+# Warning: VCP5010 platform1/soc/system_conf.v : (2, 31): Redefinition of the macro LATTICE_FAMILY_MachXO2.
+# Pass 2. Processing instantiations.
+# Warning: VCP2597 platform1/soc/platform1.v : (559, 1): Some unconnected ports remain at instance: LED. Module gpio has unconnected  port(s) : PIO_IN, PIO_BOTH_IN, PIO_BOTH_OUT, PIO_IO.
+# Pass 3. Processing behavioral statements.
+# Parameters in case labels, will not check for overlapping labels (C:/Users/Suhail/Desktop/Work/Machxo2_SPI/SPIsim/../platform1/components/spi_flash/rtl/verilog/wb_intf.v, ln 217).
+# Parameters in case labels, will not check for overlapping labels (C:/Users/Suhail/Desktop/Work/Machxo2_SPI/SPIsim/../platform1/components/spi_flash/rtl/verilog/wb_intf.v, ln 318).
+# Parameters in case labels, will not check for overlapping labels (C:/Users/Suhail/Desktop/Work/Machxo2_SPI/SPIsim/../platform1/components/spi_flash/rtl/verilog/wb_intf.v, ln 616).
+# Parameters in case labels, will not check for overlapping labels (C:/Users/Suhail/Desktop/Work/Machxo2_SPI/SPIsim/../platform1/components/spi_flash/rtl/verilog/wb_intf.v, ln 914).
+# Parameters in case labels, will not check for overlapping labels (C:/Users/Suhail/Desktop/Work/Machxo2_SPI/SPIsim/../platform1/components/spi_flash/rtl/verilog/spi_flash_intf.v, ln 127).
+# Parameters in case labels, will not check for overlapping labels (C:/Users/Suhail/Desktop/Work/Machxo2_SPI/SPIsim/../platform1/components/spi_flash/rtl/verilog/spi_flash_intf.v, ln 226).
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: pmi_rom.
+# $root top modules: pmi_rom platform1_tb.
+# Compile success 0 Errors 5 Warnings  Analysis time: 1[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\diamond\3.10_x64\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: lm8_top.v (515): Replication multiplier is not positive (0).
+# SLP: Warning: lm8_top.v (517): Replication multiplier is not positive (0).
+# SLP: Elaboration phase ... done : 0.1 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.6 [s]
+# SLP: Finished : 0.7 [s]
+# SLP: 21 (7.75%) primitives and 250 (92.25%) other processes in SLP
+# SLP: 1048 (99.53%) signals in SLP and 5 (0.47%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.8 [s].
+# KERNEL: SLP loading done - time: 2.9 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7363 kB (elbread=1281 elab2=5772 kernel=308 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Suhail\Desktop\Work\Machxo2_SPI\SPIsim\src\wave.asdb
+#  2:02 PM, Monday, July 2, 2018
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Suhail/Desktop/Work/Machxo2_SPI/SPIsim/src/wave.asdb'.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\diamond\3.10_x64\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 21 (7.75%) primitives and 250 (92.25%) other processes in SLP
+# SLP: 1048 (99.53%) signals in SLP and 5 (0.47%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7363 kB (elbread=1281 elab2=5772 kernel=308 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Suhail\Desktop\Work\Machxo2_SPI\SPIsim\src\wave.asdb
+#  2:03 PM, Monday, July 2, 2018
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Suhail/Desktop/Work/Machxo2_SPI/SPIsim/src/wave.asdb'.
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\diamond\3.10_x64\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 21 (7.75%) primitives and 250 (92.25%) other processes in SLP
+# SLP: 1048 (99.53%) signals in SLP and 5 (0.47%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7363 kB (elbread=1281 elab2=5772 kernel=308 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Suhail\Desktop\Work\Machxo2_SPI\SPIsim\src\wave.asdb
+#  2:03 PM, Monday, July 2, 2018
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Suhail/Desktop/Work/Machxo2_SPI/SPIsim/src/wave.asdb'.
+run 1000 Us
+# KERNEL: stopped at time: 1 ms
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\diamond\3.10_x64\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 21 (7.75%) primitives and 250 (92.25%) other processes in SLP
+# SLP: 1048 (99.53%) signals in SLP and 5 (0.47%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7363 kB (elbread=1281 elab2=5772 kernel=308 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Suhail\Desktop\Work\Machxo2_SPI\SPIsim\src\wave.asdb
+#  2:03 PM, Monday, July 2, 2018
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Suhail/Desktop/Work/Machxo2_SPI/SPIsim/src/wave.asdb'.
+run 10 ms
+# KERNEL: stopped at time: 10 ms
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\diamond\3.10_x64\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 21 (7.75%) primitives and 250 (92.25%) other processes in SLP
+# SLP: 1048 (99.53%) signals in SLP and 5 (0.47%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7363 kB (elbread=1281 elab2=5772 kernel=308 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Suhail\Desktop\Work\Machxo2_SPI\SPIsim\src\wave.asdb
+#  2:04 PM, Monday, July 2, 2018
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Suhail/Desktop/Work/Machxo2_SPI/SPIsim/src/wave.asdb'.
+run 1000 ms
+endsim
+# KERNEL: stopped at time: 208236715800 ps
+# VSIM: Simulation has finished.

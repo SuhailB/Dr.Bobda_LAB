@@ -1,0 +1,115 @@
+<HTML>
+<HEAD><TITLE>Lattice TCL Log</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="pn180702163746"></A><B><U><big>pn180702163746</big></U></B>
+#Start recording tcl command: 7/2/2018 16:37:27
+#Project Location: C:/Users/Suhail/Desktop/Work/Machxo2_SPI; Project name: platform1
+prj_project open "C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1.ldf"
+#Stop recording: 7/2/2018 16:37:46
+
+
+
+<A name="pn180711122915"></A><B><U><big>pn180711122915</big></U></B>
+#Start recording tcl command: 7/11/2018 12:26:51
+#Project Location: C:/Users/Suhail/Desktop/Work/Machxo2_SPI; Project name: platform1
+prj_project new -name "platform1" -impl "impl1" -dev LCMXO2-2000ZE-1UWG49CTR -synthesis "lse"
+prj_project save
+prj_project close
+#Stop recording: 7/11/2018 12:29:15
+
+
+
+<A name="pn180711141654"></A><B><U><big>pn180711141654</big></U></B>
+#Start recording tcl command: 7/11/2018 11:40:24
+#Project Location: C:/Users/Suhail/Desktop/Work/Machxo2_SPI; Project name: platform1
+prj_project new -name "platform1" -impl "impl1" -dev LCMXO2-2000ZE-1UWG49CTR -synthesis "lse"
+prj_project save
+prj_src add "C:/Users/Suhail/Downloads/aes-master/aes-master/src/rtl/aes_decipher_block.v" "C:/Users/Suhail/Downloads/aes-master/aes-master/src/rtl/aes_core.v" "C:/Users/Suhail/Downloads/aes-master/aes-master/src/rtl/aes.v" "C:/Users/Suhail/Downloads/aes-master/aes-master/src/rtl/aes_sbox.v" "C:/Users/Suhail/Downloads/aes-master/aes-master/src/rtl/aes_key_mem.v" "C:/Users/Suhail/Downloads/aes-master/aes-master/src/rtl/aes_encipher_block.v" "C:/Users/Suhail/Downloads/aes-master/aes-master/src/rtl/aes_inv_sbox.v"
+prj_run Synthesis -impl impl1
+prj_src add "C:/Users/Suhail/Downloads/aes-master/aes-master/src/tb/tb_aes_key_mem.v" "C:/Users/Suhail/Downloads/aes-master/aes-master/src/tb/tb_aes_encipher_block.v" "C:/Users/Suhail/Downloads/aes-master/aes-master/src/tb/tb_aes.v" "C:/Users/Suhail/Downloads/aes-master/aes-master/src/tb/tb_aes_core.v" "C:/Users/Suhail/Downloads/aes-master/aes-master/src/tb/tb_aes_decipher_block.v"
+prj_src syn_sim -src "C:/Users/Suhail/Downloads/aes-master/aes-master/src/tb/tb_aes_decipher_block.v" SimulateOnly
+prj_src syn_sim -src "C:/Users/Suhail/Downloads/aes-master/aes-master/src/tb/tb_aes_core.v" SimulateOnly
+prj_src syn_sim -src "C:/Users/Suhail/Downloads/aes-master/aes-master/src/tb/tb_aes.v" SimulateOnly
+prj_src syn_sim -src "C:/Users/Suhail/Downloads/aes-master/aes-master/src/tb/tb_aes_encipher_block.v" SimulateOnly
+prj_src syn_sim -src "C:/Users/Suhail/Downloads/aes-master/aes-master/src/tb/tb_aes_key_mem.v" SimulateOnly
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+#Stop recording: 7/11/2018 14:16:54
+
+
+
+<A name="pn180714155712"></A><B><U><big>pn180714155712</big></U></B>
+#Start recording tcl command: 7/12/2018 13:54:44
+#Project Location: C:/Users/Suhail/Desktop/Work/Machxo2_SPI; Project name: platform1
+prj_project open "C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1.ldf"
+prj_src remove "C:/Users/Suhail/Downloads/aes-master/aes-master/src/rtl/aes_decipher_block.v" "C:/Users/Suhail/Downloads/aes-master/aes-master/src/rtl/aes_core.v" "C:/Users/Suhail/Downloads/aes-master/aes-master/src/rtl/aes.v" "C:/Users/Suhail/Downloads/aes-master/aes-master/src/rtl/aes_sbox.v" "C:/Users/Suhail/Downloads/aes-master/aes-master/src/rtl/aes_key_mem.v" "C:/Users/Suhail/Downloads/aes-master/aes-master/src/rtl/aes_encipher_block.v" "C:/Users/Suhail/Downloads/aes-master/aes-master/src/rtl/aes_inv_sbox.v" "C:/Users/Suhail/Downloads/aes-master/aes-master/src/tb/tb_aes_key_mem.v" "C:/Users/Suhail/Downloads/aes-master/aes-master/src/tb/tb_aes_encipher_block.v" "C:/Users/Suhail/Downloads/aes-master/aes-master/src/tb/tb_aes_core.v" "C:/Users/Suhail/Downloads/aes-master/aes-master/src/tb/tb_aes_decipher_block.v" "C:/Users/Suhail/Downloads/aes-master/aes-master/src/tb/tb_aes.v"
+prj_src add "C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/platform1_tb.v" "C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/platform1_top.v" "C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/system_conf.v" "C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/platform1.v" "C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/platform1_inst.v" "C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/pmi_def.v"
+prj_src syn_sim -src "C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/platform1_tb.v" SimulateOnly
+prj_run Map -impl impl1
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src remove "C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/system_conf.v"
+prj_src remove "C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/platform1.v"
+prj_src remove "C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/platform1_inst.v"
+prj_src remove "C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1/soc/pmi_def.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+#Stop recording: 7/14/2018 15:57:12
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

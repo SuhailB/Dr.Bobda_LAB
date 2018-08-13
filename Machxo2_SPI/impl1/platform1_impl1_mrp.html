@@ -1,0 +1,943 @@
+<HTML>
+<HEAD><TITLE>Project Summary</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Mrp"></A>
+        Lattice Mapping Report File for Design Module 'platform1_top'
+
+
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -a MachXO2 -p LCMXO2-2000ZE -t WLCSP49 -s 1 -oc Commercial
+     platform1_impl1.ngd -o platform1_impl1_map.ncd -pr platform1_impl1.prf -mp
+     platform1_impl1.mrp -lpf
+     C:/Users/Suhail/Desktop/Work/Machxo2_SPI/impl1/platform1_impl1.lpf -lpf
+     C:/Users/Suhail/Desktop/Work/Machxo2_SPI/platform1.lpf -c 0 -gui -msgset
+     C:/Users/Suhail/Desktop/Work/Machxo2_SPI/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-2000ZEWLCSP49
+Target Performance:   1
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.10.0.111.2
+Mapped on:  08/13/18  14:00:17
+
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+   Number of registers:    518 out of  2229 (23%)
+      PFU registers:          518 out of  2112 (25%)
+      PIO registers:            0 out of   117 (0%)
+   Number of SLICEs:       637 out of  1056 (60%)
+      SLICEs as Logic/ROM:    601 out of  1056 (57%)
+      SLICEs as RAM:           36 out of   792 (5%)
+      SLICEs as Carry:         23 out of  1056 (2%)
+   Number of LUT4s:        1261 out of  2112 (60%)
+      Number used as logic LUTs:        1143
+      Number used as distributed RAM:    72
+      Number used as ripple logic:       46
+      Number used as shift registers:     0
+   Number of PIO sites used: 8 + 4(JTAG) out of 39 (31%)
+   Number of block RAMs:  6 out of 8 (75%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  Yes
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 1 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  2
+     Net interalClock: 291 loads, 291 rising, 0 falling (Driver: OSCH_inst )
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div: 68 loads, 68 rising, 0
+
+     falling (Driver: platform1_u/SPIFlashS_DAT_O_7__I_0/clk_div_16 )
+   Number of Clock Enables:  67
+     Net platform1_u/interalClock_enable_100: 1 loads, 1 LSLICEs
+     Net counter_2: 1 loads, 1 LSLICEs
+     Net platform1_u/PIO_OUT_1__N_987: 1 loads, 1 LSLICEs
+     Net platform1_u/interalClock_enable_118: 4 loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_52:
+     4 loads, 4 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_312: 36
+     loads, 36 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_7:
+     2 loads, 2 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_10:
+     2 loads, 2 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_99:
+     4 loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_12:
+     1 loads, 1 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_102: 2
+     loads, 2 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_111: 4
+     loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_19:
+     1 loads, 1 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_20:
+     1 loads, 1 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_177: 4
+     loads, 4 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_184: 4
+     loads, 4 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_191: 4
+     loads, 4 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_206: 4
+     loads, 4 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_221: 4
+     loads, 4 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_228: 4
+     loads, 4 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_235: 4
+     loads, 4 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_242: 4
+     loads, 4 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_249: 4
+     loads, 4 LSLICEs
+
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_256: 4
+     loads, 4 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_263: 4
+     loads, 4 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_270: 4
+     loads, 4 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_277: 4
+     loads, 4 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_284: 4
+     loads, 4 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_291: 4
+     loads, 4 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_298: 4
+     loads, 4 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_305: 4
+     loads, 4 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_309: 2
+     loads, 2 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_43:
+     1 loads, 1 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_45:
+     1 loads, 1 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_154: 4
+     loads, 4 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_199: 4
+     loads, 4 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_170: 1
+     loads, 1 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_162: 4
+     loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/wb_state_1: 1 loads, 1
+     LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_104: 1
+     loads, 1 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_146: 4
+     loads, 4 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_169: 4
+     loads, 4 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_123: 3
+
+     loads, 3 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_131: 4
+     loads, 4 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_139: 4
+     loads, 4 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_195: 1
+     loads, 1 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_214: 4
+     loads, 4 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_310: 1
+     loads, 1 LSLICEs
+     Net clk_div_enable_19: 4 loads, 4 LSLICEs
+     Net dword_wr_31__N_1809: 4 loads, 4 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/clk_div_enable_70:
+     32 loads, 32 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/clk_div_enable_39: 7
+     loads, 7 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/clk_div_enable_4: 1
+     loads, 1 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/clk_div_enable_51: 4
+     loads, 4 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/clk_div_enable_45: 4
+     loads, 4 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/clk_div_enable_24: 1
+     loads, 1 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/clk_div_enable_21: 1
+     loads, 1 LSLICEs
+     Net
+     platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/clk_div_enable_22: 1
+     loads, 1 LSLICEs
+     Net platform1_u/LM8/interalClock_enable_59: 4 loads, 4 LSLICEs
+     Net platform1_u/LM8/prom_enable: 11 loads, 3 LSLICEs
+     Net platform1_u/LM8/page_ptr3_7__N_693: 4 loads, 4 LSLICEs
+     Net platform1_u/LM8/page_ptr1_7__N_689: 8 loads, 8 LSLICEs
+     Net platform1_u/LM8/data_cyc: 6 loads, 6 LSLICEs
+     Net platform1_u/LM8/addr_cyc: 7 loads, 7 LSLICEs
+     Net platform1_u/LM8/u1_isp8_core/page_ptr2_7__N_691: 4 loads, 4 LSLICEs
+     Net platform1_u/LM8/u1_isp8_core/im_nxt_7__N_969: 5 loads, 5 LSLICEs
+     Net platform1_u/LM8/u1_isp8_core/interalClock_enable_44: 1 loads, 1 LSLICEs
+     
+   Number of LSRs:  13
+     Net reset_n_c: 2 loads, 2 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/n8751: 2 loads, 2 LSLICEs
+     Net n8767: 2 loads, 2 LSLICEs
+
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n8756: 4 loads, 4
+     LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/n8744: 1 loads, 1
+     LSLICEs
+     Net dword_wr_31__N_1809: 4 loads, 4 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/n8713: 24 loads,
+     24 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/n13031: 1 loads,
+     1 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/n8752: 1 loads,
+     1 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/n8748: 1 loads,
+     1 LSLICEs
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/n8768: 2 loads,
+     2 LSLICEs
+     Net platform1_u/LM8/core_rst_n: 74 loads, 74 LSLICEs
+     Net platform1_u/LM8/n13100: 1 loads, 1 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net n20101: 145 loads
+     Net platform1_u/n20090: 99 loads
+     Net platform1_u/selected_1: 98 loads
+     Net platform1_u/LM8/core_rst_n: 79 loads
+     Net n20100: 59 loads
+     Net platform1_u/n20102: 58 loads
+     Net platform1_u/LM8/prom_ready: 51 loads
+     Net platform1_u/ext_addr_0: 50 loads
+     Net platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_5: 50
+     loads
+     Net ext_addr_4: 48 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+     
+
+
+
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+   No errors or warnings present.
+
+
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| SPIFlashSCK         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| SPIFlashCEJ         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDPIO_OUT[0]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+| LEDPIO_OUT[1]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| SPIFlashSO          | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| reset_n             | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| SPIFlashWPJ         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| SPIFlashSI          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Block platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2
+     binarynonenoreg13416/scuba_vhi_inst undriven or does not drive anything -
+     clipped.
+Block platform1_u/LM8/u1_isp8_core/i1 undriven or does not drive anything -
+     clipped.
+Block platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO2off88/scuba_vhi_i
+     nst undriven or does not drive anything - clipped.
+Block platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO2off88/addsubd
+     undriven or does not drive anything - clipped.
+Block platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2
+     binarynonenoreg13416/mem_0_0/RAM1 undriven or does not drive anything -
+     clipped.
+Signal
+     platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO2off88/add_sub_inv
+     was merged into signal
+     platform1_u/LM8/u1_isp8_core/u1_lm8_alu/add_sel_N_820
+Signal platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO
+     2binarynonenoreg13416/dec0_wre3 was merged into signal
+     platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/sp_we_N_946
+Signal platform1_u/LM8/n20162 was merged into signal platform1_u/LM8/core_rst_n
+Signal platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/wren_inv_g
+     was merged into signal platform1_u/LM8/prom_enable
+Signal platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/interalClock_enable_11
+     was merged into signal
+     platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/wb_state_1
+Signal platform1_u/reset_n_N_43 was merged into signal reset_n_c
+Signal platform1_u/counter_2__N_176 was merged into signal counter_2
+Signal VCC_net undriven or does not drive anything - clipped.
+Signal platform1_u/LM8/GND_net undriven or does not drive anything - clipped.
+Signal platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/wren_inv
+     undriven or does not drive anything - clipped.
+Signal platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO2off88/scuba_vlo
+     undriven or does not drive anything - clipped.
+Signal platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/GND_net undriven or does
+     not drive anything - clipped.
+Signal platform1_u/LM8/u1_isp8_core/pmi_distributed_dpramMachXO2binarynonenoreg8
+     532_98/scuba_vhi undriven or does not drive anything - clipped.
+Signal platform1_u/LM8/u1_isp8_core/pmi_distributed_dpramMachXO2binarynonenoreg8
+     532/scuba_vhi undriven or does not drive anything - clipped.
+Signal platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/scuba_vlo
+     undriven or does not drive anything - clipped.
+Signal platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/scuba_vhi
+
+     undriven or does not drive anything - clipped.
+Signal
+     platform1_u/LM8/scratchpad_init.memspeedasyncdisablenoreg8112048/scuba_vlo
+     undriven or does not drive anything - clipped.
+Signal
+     platform1_u/LM8/scratchpad_init.memspeedasyncdisablenoreg8112048/scuba_vhi
+     undriven or does not drive anything - clipped.
+Signal platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/GND_net undriven
+     or does not drive anything - clipped.
+Signal platform1_u/LM8/u1_isp8_core/GND_net undriven or does not drive anything
+     - clipped.
+Signal platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO2off88/scuba_vhi
+     undriven or does not drive anything - clipped.
+Signal
+     platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO2off88/addsub_0/S0
+     undriven or does not drive anything - clipped.
+Signal platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO2off88/precin_ins
+     t30/S1 undriven or does not drive anything - clipped.
+Signal platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO2off88/precin_ins
+     t30/S0 undriven or does not drive anything - clipped.
+Signal platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO2off88/addsubd/S1
+     undriven or does not drive anything - clipped.
+Signal platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO2off88/co4d
+     undriven or does not drive anything - clipped.
+Signal platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO2off88/addsubd/CO
+     UT undriven or does not drive anything - clipped.
+Signal platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO2off88/co4
+     undriven or does not drive anything - clipped.
+Signal platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/add_1030_1/S0 undriven or
+     does not drive anything - clipped.
+Signal platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/add_1030_1/CI undriven or
+     does not drive anything - clipped.
+Signal platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/add_1030_11/CO undriven or
+     does not drive anything - clipped.
+Signal platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO
+     2binarynonenoreg13416/mem_0_0/DO2 undriven or does not drive anything -
+     clipped.
+Signal platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO
+     2binarynonenoreg13416/mem_0_0/DO3 undriven or does not drive anything -
+     clipped.
+Signal platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO
+     2binarynonenoreg13416/mem_0_0/DO1 undriven or does not drive anything -
+     clipped.
+Signal platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/sub_43_add_2_1/S0
+     undriven or does not drive anything - clipped.
+Signal platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/sub_43_add_2_1/CI
+     undriven or does not drive anything - clipped.
+Signal platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/sub_43_add_2_13/S1
+     undriven or does not drive anything - clipped.
+Signal platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/sub_43_add_2_13/CO
+     undriven or does not drive anything - clipped.
+Signal platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672_add_4
+     _1/S0 undriven or does not drive anything - clipped.
+Signal platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672_add_4
+     _1/CI undriven or does not drive anything - clipped.
+Signal platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672_add_4
+
+     _7/S1 undriven or does not drive anything - clipped.
+Signal platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672_add_4
+     _7/CO undriven or does not drive anything - clipped.
+Block platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO2off88/INV_0 was
+     optimized away.
+Block platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2
+     binarynonenoreg13416/LUT4_0 was optimized away.
+Block platform1_u/LM8/u1_isp8_core/u1_lm8_interrupt/core_rst_n_I_0_1_lut_rep_303
+     was optimized away.
+Block platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/AND2_t0 was
+     optimized away.
+Block platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/i3_1_lut was optimized
+     away.
+Block platform1_u/reset_n_I_0_1_lut was optimized away.
+Block platform1_u/counter_2__I_0_1_lut was optimized away.
+Block i5 was optimized away.
+Block platform1_u/LM8/i1 was optimized away.
+Block platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/INV_0 was
+     optimized away.
+Block platform1_u/LM8/u1_isp8_core/u1_lm8_alu/pmi_addsubMachXO2off88/scuba_vlo_i
+     nst was optimized away.
+Block platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/i1 was optimized away.
+Block platform1_u/LM8/u1_isp8_core/pmi_distributed_dpramMachXO2binarynonenoreg85
+     32_98/scuba_vhi_inst was optimized away.
+Block platform1_u/LM8/u1_isp8_core/pmi_distributed_dpramMachXO2binarynonenoreg85
+     32/scuba_vhi_inst was optimized away.
+Block platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/scuba_vlo_inst
+     was optimized away.
+Block platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/scuba_vhi_inst
+     was optimized away.
+Block platform1_u/LM8/scratchpad_init.memspeedasyncdisablenoreg8112048/scuba_vlo
+     _inst was optimized away.
+Block platform1_u/LM8/scratchpad_init.memspeedasyncdisablenoreg8112048/scuba_vhi
+     _inst was optimized away.
+Block platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/i1 was optimized
+     away.
+
+
+
+<A name="mrp_mem"></A><B><U><big>Memory Usage</big></U></B>
+
+    
+         
+    INFO: Design contains EBR with GSR enabled. The GSR is only applicable for
+         output registers except FIFO. 
+    /platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048:
+    EBRs: 4
+    RAM SLICEs: 0
+    Logic SLICEs: 0
+    PFU Registers: 0
+    -Contains EBR pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_1_0:  TYPE= DP8KC,
+         Width_A= 9,  Depth_A= 1024,  REGMODE_A= NOREG,  REGMODE_B= NOREG,
+         RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,
+         WRITEMODE_B= NORMAL,  GSR= ENABLED,  MEM_INIT_FILE= prom_init.mem,
+         MEM_LPC_FILE=
+         pmi_ram_dqMnhprom_initsadn18112048f3df93e__PMIS__2048__18__18H
+    -Contains EBR pmi_ram_dqMnhprom_initsadn18112048f3df93e_0_0_3:  TYPE= DP8KC,
+
+         Width_A= 9,  Depth_A= 1024,  REGMODE_A= NOREG,  REGMODE_B= NOREG,
+         RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,
+         WRITEMODE_B= NORMAL,  GSR= ENABLED,  MEM_INIT_FILE= prom_init.mem,
+         MEM_LPC_FILE=
+         pmi_ram_dqMnhprom_initsadn18112048f3df93e__PMIS__2048__18__18H
+    -Contains EBR pmi_ram_dqMnhprom_initsadn18112048f3df93e_0_1_2:  TYPE= DP8KC,
+         Width_A= 9,  Depth_A= 1024,  REGMODE_A= NOREG,  REGMODE_B= NOREG,
+         RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,
+         WRITEMODE_B= NORMAL,  GSR= ENABLED,  MEM_INIT_FILE= prom_init.mem,
+         MEM_LPC_FILE=
+         pmi_ram_dqMnhprom_initsadn18112048f3df93e__PMIS__2048__18__18H
+    -Contains EBR pmi_ram_dqMnhprom_initsadn18112048f3df93e_1_0_1:  TYPE= DP8KC,
+         Width_A= 9,  Depth_A= 1024,  REGMODE_A= NOREG,  REGMODE_B= NOREG,
+         RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,
+         WRITEMODE_B= NORMAL,  GSR= ENABLED,  MEM_INIT_FILE= prom_init.mem,
+         MEM_LPC_FILE=
+         pmi_ram_dqMnhprom_initsadn18112048f3df93e__PMIS__2048__18__18H
+/platform1_u/LM8/scratchpad_init.memspeedasyncdisablenoreg8112048:
+    EBRs: 2
+    RAM SLICEs: 0
+    Logic SLICEs: 0
+    PFU Registers: 0
+    -Contains EBR pmi_ram_dqMnhscratchpad_initsadn8112048f9ce2e6_0_1_0:  TYPE=
+         DP8KC,  Width_A= 4,  Depth_A= 2048,  REGMODE_A= NOREG,  REGMODE_B=
+         NOREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A=
+         NORMAL,  WRITEMODE_B= NORMAL,  GSR= ENABLED,  MEM_INIT_FILE=
+         scratchpad_init.mem,  MEM_LPC_FILE=
+         pmi_ram_dqMnhscratchpad_initsadn8112048f9ce2e6__PMIS__2048__8__8H
+    -Contains EBR pmi_ram_dqMnhscratchpad_initsadn8112048f9ce2e6_0_0_1:  TYPE=
+         DP8KC,  Width_A= 4,  Depth_A= 2048,  REGMODE_A= NOREG,  REGMODE_B=
+         NOREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A=
+         NORMAL,  WRITEMODE_B= NORMAL,  GSR= ENABLED,  MEM_INIT_FILE=
+         scratchpad_init.mem,  MEM_LPC_FILE=
+         pmi_ram_dqMnhscratchpad_initsadn8112048f9ce2e6__PMIS__2048__8__8H
+/platform1_u/LM8/u1_isp8_core/pmi_distributed_dpramMachXO2binarynonenoreg8532:
+    EBRs: 0
+    RAM SLICEs: 12
+    Logic SLICEs: 0
+    PFU Registers: 14
+/platform1_u/LM8/u1_isp8_core/pmi_distributed_dpramMachXO2binarynonenoreg8532_98
+     :
+    EBRs: 0
+    RAM SLICEs: 12
+    Logic SLICEs: 0
+    PFU Registers: 0
+/platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binar
+     ynonenoreg13416:
+    EBRs: 0
+    RAM SLICEs: 11
+    Logic SLICEs: 0
+    PFU Registers: 1
+/platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pmi_distributed_spramMachXO2binar
+     ynonenoreg13416/mem_0_0/RAMW:
+    EBRs: 0
+    RAM SLICEs: 1
+    Logic SLICEs: 0
+
+    PFU Registers: 0
+
+     
+
+OSC Summary
+-----------
+
+OSC 1:                                     Pin/Node Value
+  OSC Instance Name:                                OSCH_inst
+  OSC Type:                                         OSCH
+  STDBY Input:                                      NONE
+  OSC Output:                              NODE     interalClock
+  OSC Nominal Frequency (MHz):                      26.60
+
+
+
+<A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
+---------------
+
+Instance Name: OSCH_inst
+         Type: OSCH
+Instance Name: platform1_u/LM8/scratchpad_init.memspeedasyncdisablenoreg8112048/
+     pmi_ram_dqMnhscratchpad_initsadn8112048f9ce2e6_0_1_0
+         Type: DP8KC
+Instance Name: platform1_u/LM8/scratchpad_init.memspeedasyncdisablenoreg8112048/
+     pmi_ram_dqMnhscratchpad_initsadn8112048f9ce2e6_0_0_1
+         Type: DP8KC
+Instance Name: platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_r
+     am_dqMnhprom_initsadn18112048f3df93e_1_1_0
+         Type: DP8KC
+Instance Name: platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_r
+     am_dqMnhprom_initsadn18112048f3df93e_0_0_3
+         Type: DP8KC
+Instance Name: platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_r
+     am_dqMnhprom_initsadn18112048f3df93e_0_1_2
+         Type: DP8KC
+Instance Name: platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_r
+     am_dqMnhprom_initsadn18112048f3df93e_1_0_1
+         Type: DP8KC
+
+
+
+<A name="mrp_gsr"></A><B><U><big>GSR Usage</big></U></B>
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is 'counter_2'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+     Components with disabled GSR Property
+-------------------------------------
+
+     These components have the GSR property set to DISABLED. The components will
+
+     not respond to the reset signal 'counter_2' via the GSR component.
+
+     Type and number of components of the type: 
+   Register = 120 
+
+     Type and instance name of component: 
+   Register : platform1_u/counter_1669__i0
+   Register : platform1_u/counter_1669__i1
+   Register : platform1_u/counter_1669__i2
+   Register : platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/byte_wr__i1
+        
+   Register : platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/byte_wr__i2
+        
+   Register : platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/byte_wr__i3
+        
+   Register : platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/byte_wr__i4
+        
+   Register : platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/byte_wr__i5
+        
+   Register : platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/byte_wr__i6
+        
+   Register : platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/byte_wr__i7
+        
+   Register : platform1_u/LM8/save_data__i0
+   Register : platform1_u/LM8/ext_wb_state_61
+   Register : platform1_u/LM8/genblk2.D_ACK_I_d_60
+   Register : platform1_u/LM8/genblk1.first_fetch_59
+   Register : platform1_u/LM8/genblk1.first_fetch_59_rep_349
+   Register : platform1_u/LM8/save_data__i1
+   Register : platform1_u/LM8/save_data__i2
+   Register : platform1_u/LM8/save_data__i3
+   Register : platform1_u/LM8/save_data__i4
+   Register : platform1_u/LM8/save_data__i5
+   Register : platform1_u/LM8/save_data__i6
+   Register : platform1_u/LM8/save_data__i7
+   Register : platform1_u/LM8/u1_isp8_core/page_ptr3_i0_i0
+   Register : platform1_u/LM8/u1_isp8_core/page_ptr1_i0_i0
+   Register : platform1_u/LM8/u1_isp8_core/din_rd1_i0
+   Register : platform1_u/LM8/u1_isp8_core/wren_alu_rd_87
+   Register : platform1_u/LM8/u1_isp8_core/wren_il_rd_88
+   Register : platform1_u/LM8/u1_isp8_core/page_ptr2_i0_i0
+   Register : platform1_u/LM8/u1_isp8_core/page_ptr3_i0_i1
+   Register : platform1_u/LM8/u1_isp8_core/page_ptr3_i0_i2
+   Register : platform1_u/LM8/u1_isp8_core/page_ptr3_i0_i3
+   Register : platform1_u/LM8/u1_isp8_core/page_ptr3_i0_i4
+   Register : platform1_u/LM8/u1_isp8_core/page_ptr3_i0_i5
+   Register : platform1_u/LM8/u1_isp8_core/page_ptr3_i0_i6
+   Register : platform1_u/LM8/u1_isp8_core/page_ptr3_i0_i7
+   Register : platform1_u/LM8/u1_isp8_core/page_ptr1_i0_i1
+   Register : platform1_u/LM8/u1_isp8_core/page_ptr1_i0_i2
+   Register : platform1_u/LM8/u1_isp8_core/page_ptr1_i0_i3
+   Register : platform1_u/LM8/u1_isp8_core/page_ptr1_i0_i4
+   Register : platform1_u/LM8/u1_isp8_core/page_ptr1_i0_i5
+   Register : platform1_u/LM8/u1_isp8_core/page_ptr1_i0_i6
+   Register : platform1_u/LM8/u1_isp8_core/page_ptr1_i0_i7
+   Register : platform1_u/LM8/u1_isp8_core/din_rd1_i1
+
+   Register : platform1_u/LM8/u1_isp8_core/din_rd1_i2
+   Register : platform1_u/LM8/u1_isp8_core/din_rd1_i3
+   Register : platform1_u/LM8/u1_isp8_core/din_rd1_i4
+   Register : platform1_u/LM8/u1_isp8_core/din_rd1_i5
+   Register : platform1_u/LM8/u1_isp8_core/din_rd1_i6
+   Register : platform1_u/LM8/u1_isp8_core/din_rd1_i7
+   Register : platform1_u/LM8/u1_isp8_core/page_ptr2_i0_i1
+   Register : platform1_u/LM8/u1_isp8_core/page_ptr2_i0_i2
+   Register : platform1_u/LM8/u1_isp8_core/page_ptr2_i0_i3
+   Register : platform1_u/LM8/u1_isp8_core/page_ptr2_i0_i4
+   Register : platform1_u/LM8/u1_isp8_core/page_ptr2_i0_i5
+   Register : platform1_u/LM8/u1_isp8_core/page_ptr2_i0_i6
+   Register : platform1_u/LM8/u1_isp8_core/page_ptr2_i0_i7
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_interrupt/im_i0_i0
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_interrupt/ie_30
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_interrupt/im_i0_i1
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_interrupt/im_i0_i2
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_interrupt/im_i0_i3
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_interrupt/im_i0_i4
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_interrupt/im_i0_i5
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_interrupt/im_i0_i6
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_interrupt/im_i0_i7
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/carry_flag_158
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/addr_cyc_152
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/zero_flag_157
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/rst_exception_150
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pc_i0_i0
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/jump_address_i0_i0
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/ext_addr_cyc_153
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/data_cyc_154
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_i0
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/ret_reg_160
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/rst_n_reg_149
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/br_enb_159
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pc_i0_i1
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pc_i0_i2
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pc_i0_i3
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pc_i0_i4
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pc_i0_i5
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pc_i0_i6
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pc_i0_i7
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pc_i0_i8
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pc_i0_i9
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/pc_i0_i10
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/jump_address_i0_i1
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/jump_address_i0_i2
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/jump_address_i0_i3
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/jump_address_i0_i4
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/jump_address_i0_i5
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/jump_address_i0_i6
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/jump_address_i0_i7
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/jump_address_i0_i8
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/jump_address_i0_i9
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/jump_address_i0_i10
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_i1
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_i2
+
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_i3
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_dout_i0
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_addr_i1
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_io_wr_30
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_io_rd_31
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_mem_wr_32
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_mem_rd_33
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_dout_i1
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_dout_i2
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_dout_i3
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_dout_i4
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_dout_i5
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_dout_i6
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_dout_i7
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_addr_i2
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_addr_i3
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_addr_i4
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_addr_i5
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_addr_i6
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_addr_i7
+   Register : platform1_u/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_addr_i8
+
+     Components with synchronous local reset also reset by asynchronous GSR
+----------------------------------------------------------------------
+
+     These components have the GSR property set to ENABLED and the local reset
+     is synchronous. The components will respond to the synchronous local reset
+     and to the unrelated asynchronous reset signal 'counter_2' via the GSR
+     component.
+
+     Type and number of components of the type: 
+   Register = 53 
+
+     Type and instance name of component: 
+   Register : platform1_u/SPIFlashS_DAT_O_7__I_0/clk_cnt_1670__i0
+   Register : platform1_u/SPIFlashS_DAT_O_7__I_0/clk_cnt_1670__i1
+   Register : platform1_u/SPIFlashS_DAT_O_7__I_0/clk_cnt_1670__i2
+   Register : platform1_u/SPIFlashS_DAT_O_7__I_0/clk_cnt_1670__i3
+   Register : platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/byte_length_i1
+   Register : platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/write_data_i7
+   Register : platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/write_data_i6
+   Register : platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/write_data_i5
+   Register : platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/write_data_i4
+   Register : platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/write_data_i3
+   Register : platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/write_data_i2
+   Register : platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/write_data_i1
+   Register : platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/byte_length_i0
+   Register : platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/byte_length_i2
+   Register : platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/write_data_i0
+   Register : platform1_u/SPIFlashS_DAT_O_7__I_0/wb_intf_inst/cmd_bytes_i0
+   Register :
+        platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/read_data__i0
+   Register :
+        platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/cmd_dword_i0_i20
+   Register :
+        platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/read_data__i1
+
+   Register :
+        platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/read_data__i2
+   Register :
+        platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/read_data__i3
+   Register :
+        platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/read_data__i4
+   Register :
+        platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/read_data__i5
+   Register :
+        platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/read_data__i6
+   Register :
+        platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/read_data__i7
+   Register : platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/byte_cnt_16
+        74__i0
+   Register : platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/CS_186
+   Register : platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/byte_cnt_16
+        74__i1
+   Register :
+        platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672__i5
+   Register :
+        platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/bit_cnt_1672__i4
+   Register :
+        platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/cmd_dword_i0_i1
+   Register :
+        platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/cmd_dword_i0_i21
+   Register :
+        platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/cmd_dword_i0_i22
+   Register :
+        platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/cmd_dword_i0_i2
+   Register :
+        platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/cmd_dword_i0_i3
+   Register :
+        platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/cmd_dword_i0_i4
+   Register :
+        platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/cmd_dword_i0_i5
+   Register :
+        platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/cmd_dword_i0_i23
+   Register :
+        platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/cmd_dword_i0_i6
+   Register :
+        platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/cmd_dword_i0_i7
+   Register :
+        platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/cmd_dword_i0_i8
+   Register :
+        platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/cmd_dword_i0_i9
+   Register :
+        platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/cmd_dword_i0_i10
+   Register :
+        platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/cmd_dword_i0_i11
+   Register :
+        platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/cmd_dword_i0_i12
+   Register :
+        platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/cmd_dword_i0_i13
+   Register :
+        platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/cmd_dword_i0_i24
+   Register :
+
+        platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/cmd_dword_i0_i14
+   Register :
+        platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/cmd_dword_i0_i15
+   Register :
+        platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/cmd_dword_i0_i16
+   Register :
+        platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/cmd_dword_i0_i17
+   Register :
+        platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/cmd_dword_i0_i18
+   Register :
+        platform1_u/SPIFlashS_DAT_O_7__I_0/spi_flash_intf_inst/cmd_dword_i0_i19
+
+     EBR components with enabled GSR
+-------------------------------
+
+     These EBR components have the GSR property set to ENABLED. The components
+     will respond to the asynchronous reset signal 'counter_2' via the GSR
+     component.
+
+     Type and number of components of the type: 
+   DP8KC = 6
+
+     Type and instance name of component: 
+   DP8KC : platform1_u/LM8/scratchpad_init.memspeedasyncdisablenoreg8112048/pmi_
+        ram_dqMnhscratchpad_initsadn8112048f9ce2e6_0_1_0
+   DP8KC : platform1_u/LM8/scratchpad_init.memspeedasyncdisablenoreg8112048/pmi_
+        ram_dqMnhscratchpad_initsadn8112048f9ce2e6_0_0_1
+   DP8KC : platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_d
+        qMnhprom_initsadn18112048f3df93e_1_1_0
+   DP8KC : platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_d
+        qMnhprom_initsadn18112048f3df93e_0_0_3
+   DP8KC : platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_d
+        qMnhprom_initsadn18112048f3df93e_0_1_2
+   DP8KC : platform1_u/LM8/prom_init.memspeedasyncdisablenoreg18112048/pmi_ram_d
+        qMnhprom_initsadn18112048f3df93e_1_0_1
+
+
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+-------------------------
+
+   Total CPU Time: 1 secs  
+   Total REAL Time: 2 secs  
+   Peak Memory Usage: 52 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

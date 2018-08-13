@@ -1,0 +1,30 @@
+<Project ModBy="Inserter" SigType="0" Name="C:/Users/Suhail/Desktop/Work/Machxo2_SPI/SPIreveal.rvl" Date="2018-06-27">
+    <IP Version="1_6_042617"/>
+    <Design DesignEntry="Schematic/Verilog HDL" Synthesis="lse" DeviceFamily="MachXO2" DesignName="platform1"/>
+    <Core InsertDataset="0" Insert="1" Reveal_sig="162929989" Name="platform1_top_LA0" ID="0">
+        <Setting>
+            <Clock SampleClk="interalClock" SampleEnable="0" EnableClk="" EnableClk_Pri="0"/>
+            <TraceBuffer Implementation="0" BitTimeStamp="0" hasTimeStamp="0" IncTrigSig="0" BufferDepth="1024"/>
+            <Capture Mode="0" MinSamplesPerTrig="32"/>
+            <Event CntEnable="0" MaxEventCnt="8"/>
+            <TrigOut Polarity="0" MinPulseWidth="0" TrigOutNetType="1" EnableTrigOut="0" TrigOutNet="reveal_debug_platform1_top_LA0_net"/>
+            <DistRAM Disable="0"/>
+        </Setting>
+        <Dataset Name="Base">
+            <Trace>
+                <Bus Name="LEDPIO_OUT">
+                    <Sig Type="SIG" Name="LEDPIO_OUT:0"/>
+                    <Sig Type="SIG" Name="LEDPIO_OUT:1"/>
+                </Bus>
+                <Sig Type="SIG" Name="SPIFlashCEJ"/>
+                <Sig Type="SIG" Name="SPIFlashSCK"/>
+                <Sig Type="SIG" Name="SPIFlashSI"/>
+                <Sig Type="SIG" Name="SPIFlashSO"/>
+            </Trace>
+            <Trigger>
+                <TU Serialbits="0" Type="0" ID="1" Sig="reset_n,"/>
+                <TE MaxSequence="8" MaxEvnCnt="512" ID="1" Resource="1"/>
+            </Trigger>
+        </Dataset>
+    </Core>
+</Project>
